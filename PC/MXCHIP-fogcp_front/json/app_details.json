@@ -1,0 +1,12 @@
+{
+	"IsSuccess":true,
+	"Data":{
+		"ID":"72b72f72-3c2e-11e6-9d95-00163e103941",
+		"AppName":"ACA烤箱",
+		"ShortName":"烤箱1",
+		"Description":"",
+		"ListArr":[
+			{ "ID":"757fb2e4-48d9-11e6-9baf-00163e120d98","ProductName":"ACA烤箱","Brand":"ACA","Model":"GT320","ImageUrl":"../assets/pages/img/product/1.jpg","State":0}
+		]
+	}
+}

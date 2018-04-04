@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="/css/sb-admin.css" rel="stylesheet">   
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/common.css" rel="stylesheet" type="text/css" >
+    <link href="/css/uniform.css" rel="stylesheet" type="text/css" >
+    <link href="/css/public.css" rel="stylesheet">
+    <link href="/css/makeweb.css" rel="stylesheet">
+    <link href="/css/jquery.minicolors.css" rel="stylesheet">
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/jquery.minicolors.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="/scripts/common.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-infinite-scroll.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-file-upload-all.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/sidebarController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/Info/MakeWeb.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/Info/selectProduct.js"></script>
+    <script>
+        $(document).ready( function() {
+            $('.demo').each( function() {
+                $(this).minicolors({
+                    control: $(this).attr('data-control') || 'hue',
+                    defaultValue: $(this).attr('data-defaultValue') || '',
+                    inline: $(this).attr('data-inline') === 'true',
+                    letterCase: $(this).attr('data-letterCase') || 'lowercase',
+                    opacity: $(this).attr('data-opacity'),
+                    position: $(this).attr('data-position') || 'bottom left',
+                    change: function(hex, opacity) {
+                        var log;
+                        try {
+                            log = hex ? hex : 'transparent';
+                            if( opacity ) log += ', ' + opacity;
+                        } catch(e) {}
+                    },
+                    theme: 'default'
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrapper" ng-controller="MakeWebController">
+        <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Sidebar.html'" />
+        <div id="nav" ng-include="templateurl"></div>
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            {{OpType}}资讯页面
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>  
+                                <a href="index.html">Macco Admin</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-table"></i> {{OpType}}资讯页面
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ol class="breadcrumb">
+                            <li>
+                                <button class="btn btn-primary" ng-click="PreviewWeb()">预览</button>
+                            </li>
+                            <li>
+                                <button class="btn btn-primary" ng-disabled="!cansave" ng-click="SaveWeb()">保存</button>
+                            </li>
+                            <li>
+                                <button class="btn" ng-click="ReturnBack(this.token)">返回</button>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="SelectedType">
+                            <a ng-click="AddHtml(1)" class="list-group-item">Banner图片</a>
+                            <a ng-click="AddHtml(2)" class="list-group-item">视频图片</a>
+                            <a ng-click="AddHtml(3)" class="list-group-item">大标题</a>
+                            <a ng-click="AddHtml(4)" class="list-group-item">文字</a>
+                            <a ng-click="AddHtml(5)" class="list-group-item">图片</a>
+                            <a ng-click="AddHtml(6)" class="list-group-item">产品</a>
+                            <a ng-click="AddHtml(7)" class="list-group-item">正文小标题</a>
+                            <a ng-click="AddHtml(8)" class="list-group-item">引言</a>
+                            <a ng-click="AddHtml(9)" class="list-group-item">分割线</a>
+                        </div>
+                        <div class="SetType">
+                            <a class="list-group-item">文字编辑</a>
+                            <!-- 文本编辑框 -->
+                            <div id="EditText" class="EditText list-group-item">
+                                <div class="EditTextOption">
+                                    <label class="EditLabel">大小:</label>
+                                    <input class="EditInput form-control" type="text" id="TextSize">
+                                    <label class="EditLabel">px</label>
+                                </div>
+                                <div class="EditTextOption">
+                                    <label class="EditLabel">是否加粗:</label>
+                                    <input class="EditCheckBox" type="checkbox" id="TextCheck">
+                                </div>
+                                <div class="EditTextOption">
+                                    <label class="EditLabel">颜色:</label>
+                                    <input type="text" id="hue-demo" class="demo form-control" data-control="hue" value="">
+                                </div>
+                                <div class="EditTextOption">
+                                    <button class="btn btn-primary" id="SureText">确认</button>
+                                    <!-- <button class="btn" id="CancelText">取消</button> -->
+                                </div>
+                            </div>
+                            <!-- 文本编辑框结束 -->  
+                        </div>
+                    </div>
+                    <div class="col-lg-1">  
+                    </div>
+                    <div class="col-lg-4">
+                        <div id="WebHtml" class="WebHtml">
+                            <div id="mainBanner">
+                                <img class="mainBanner" id="BannerSrc" >
+                                <input type="file" id="BannerFile" style="display:none"  accept="image/*">
+                            </div> 
+                            <div class="clear"></div>                   
+                            <div id="mainVideo">
+                                <video controls class="mainVideo" id="VideoPoster" ng-model="Video" ngf-src="Video[0]"  ngf-select accept="audio/mp4,video/mp4, application/ogg, audio/ogg">{{Video[0].name}}</video>
+                                <input type="file" id="VideoFile" style="display:none"  accept="image/*">
+                                <input type="file" id="VideoSrcFile" style="display:none" accept="audio/mp4,video/mp4, application/ogg, audio/ogg">
+                            </div>
+                            <div class="clear"></div>
+                            <div id="mainTitle" class="addtext mainTitle edittext" contenteditable="true"></div>
+                            <div class="clear"></div>
+                            <div id="mainContent"></div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">  
+                        <a ng-click="CopyHtml()" class="list-group-item ">复制</a>
+                        <a ng-click="PasteHtml()" class="list-group-item ">粘贴</a>
+                        <!-- <button class="btn btn-primary" ng-click="CopyHtml()">复制</button>
+                        <button class="btn btn-primary" ng-click="PasteHtml()">粘贴</button> -->
+                    </div>
+                    <div class="col-lg-4"> 
+                        <div id="WebHtmlCopy" class="WebHtmlCopy"  contenteditable="true">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ClickMenu" class="ClickMenu">
+            <ul>
+                <li ng-click="ClickMenu(1)">文字</li>
+                <li ng-click="ClickMenu(2)">图片</li>
+                <li ng-click="ClickMenu(3)">产品</li>
+                <li ng-click="ClickMenu(4)">正文小标题</li>
+                <li ng-click="ClickMenu(5)">引言</li>
+                <li ng-click="ClickMenu(6)">分割线</li>
+                <li ng-click="ClickMenu()">取消</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- 生成代码 -->
+<div id="MakeHtml" style="display:none">
+    <div id="LayoutDiv1" class="container">
+        <div id="mainTitle"></div>
+        <div class="clear"></div>
+        <div id="mainZan">
+        </div>
+        <div class="clear"></div>
+        <div id="mainContent"></div>
+        <div class="clear"></div>
+        <div id="mainFooter">
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+</div>
+<!-- 生成代码结束-->
+
+<!-- 编辑 -->
+<div id="EditHtml" style="display:none">
+
+</div>
+<!-- 编辑代码-->
+</body>
+</html>

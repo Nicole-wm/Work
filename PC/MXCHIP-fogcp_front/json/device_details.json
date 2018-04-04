@@ -1,0 +1,51 @@
+{
+	"IsSuccess":true,
+	"Data":{
+		"ID":"4919d228-b60e-11e6-9e7a-00163e0390a5",
+		"DeciveVirtual":"false",
+		"BelongProID":"4919d228-b60e-11e6-9e7a-00163e0390a5",
+		"MAC":"JBQ9K2KSVEGU",
+		"FirmWare":"FOG_3165_TEST@2",
+		"ModuleName":"庆科模块SN",
+		"ModuleModel":"MiCOKit-3165",
+		"MiCOVersion":"",
+		"AppVersion":"",
+		"IsActive":false,
+		"IsOnline":true,
+		"ActiveTime":"2016-03-03T11:16:24.495Z",
+		"LastTime":"2016-11-11T11:11:11.895Z",
+		"OnlineCount":12,
+		"IsSub":false,
+		"ParentId":"",
+		"HisStates":{
+			"totalItems":150,
+			"ListArr":[
+				{ "ID":"1","Time":"2016-11-11T11:11:11.895Z","Content":"状态{isCommandsJson}"},
+				{ "ID":"2","Time":"2016-11-12T12:12:14.725Z","Content":"状态{isStatesJson}"},
+				{ "ID":"3","Time":"2016-11-13T09:05:10.965Z","Content":"状态{isStatesJson}"},
+				{ "ID":"4","Time":"2016-11-11T11:11:11.895Z","Content":"状态{isCommandsJson}"},
+				{ "ID":"5","Time":"2016-11-12T12:12:14.725Z","Content":"状态{isStatesJson}"},
+				{ "ID":"6","Time":"2016-11-13T09:05:10.965Z","Content":"状态{isStatesJson}"},
+				{ "ID":"7","Time":"2016-11-11T11:11:11.895Z","Content":"状态{isCommandsJson}"},
+				{ "ID":"8","Time":"2016-11-12T12:12:14.725Z","Content":"状态{isStatesJson}"},
+				{ "ID":"9","Time":"2016-11-13T09:05:10.965Z","Content":"状态{isStatesJson}"},
+				{ "ID":"10","Time":"2016-11-13T09:05:10.965Z","Content":"状态{isStatesJson}"}
+			]
+		},
+		"HisCommands":{
+			"totalItems":105,
+			"ListArr":[
+				{ "ID":"1","Time":"2016-10-15T08:56:11.895Z","Content":"命令{isCommandsJson}"},
+				{ "ID":"2","Time":"2016-10-10T12:13:14.725Z","Content":"命令{isCommandsJson}"},
+				{ "ID":"3","Time":"2016-10-05T09:16:10.965Z","Content":"命令{isCommandsJson}"},
+				{ "ID":"4","Time":"2016-11-11T11:11:11.895Z","Content":"命令{isCommandsJson}"},				{ "ID":"4","Time":"2016-11-11T11:11:11.895Z","Content":"状态{isCommandsJson}"},
+				{ "ID":"5","Time":"2016-11-12T12:12:14.725Z","Content":"命令{isCommandsJson}"},
+				{ "ID":"6","Time":"2016-11-13T09:05:10.965Z","Content":"命令{isCommandsJson}"},
+				{ "ID":"7","Time":"2016-11-11T11:11:11.895Z","Content":"命令{isCommandsJson}"},
+				{ "ID":"8","Time":"2016-11-12T12:12:14.725Z","Content":"命令{isCommandsJson}"},
+				{ "ID":"9","Time":"2016-11-13T09:05:10.965Z","Content":"命令{isCommandsJson}"},
+				{ "ID":"10","Time":"2016-11-13T09:05:10.965Z","Content":"命令{isCommandsJson}"}
+			]
+		}
+	}
+}

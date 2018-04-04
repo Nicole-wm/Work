@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Test</title>
+	<style type="text/css">
+		#PopMain{
+			width:350px;
+			height:300px;
+			position: fixed;
+			margin:auto;
+			left:0; 
+			right:0; 
+			top:0; 
+			bottom:0;
+			overflow:visible;
+			z-index:200;
+			background-color: #ffffff;
+		}
+		.PopContentText div{
+			margin:10px 0;
+		}
+		.PopTitle{
+			height:50px; 
+			line-height: 50px;
+		}
+
+		.PopTitleText{
+			float: left;
+			margin-left: 20px;
+			text-align: left;
+			font-size: 20px;
+			color: #FF6666;
+		}
+
+		.PopTitleClose{
+			height: 24px;
+			width: 24px;
+			margin: 13px;
+			float: right;
+			background-image: url('/Image/close.png');
+			cursor:pointer;
+		}
+
+		.PopTitleClose:hover{
+			background-image: url('/Image/close_h.png');
+		}
+
+		.PopContent{
+			clear: both;
+		}
+
+		.PopContentText,.PopContentBtn{
+			margin:0px auto;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.ConfirmBtn,.CancelBtn{
+			height: 30px;
+			padding-left: 10px;
+			padding-right:10px;
+			line-height: 30px;
+			margin: 0 15px;
+			display: inline-block;
+			color: #ffffff;
+			cursor:pointer;
+		}
+
+		.ConfirmBtn{
+			background-color:#FF6666;
+		}
+
+		.CancelBtn{
+			background-color:#CCCCCC;
+		}
+	</style>
+    <script src="~/Script/testpop.js"></script>
+</head>
+<body>
+	<div id="PopMain">
+		<div class="PopTitle">
+			<div class="PopTitleText">个人信息</div>
+			<div class="PopTitleClose" id="PopTitleClose"></div>
+		</div>
+		<div class="PopContent">
+			<div class="PopContentText">
+				<div>姓名：<input type="text"></div>
+				<div>年龄：<input type="text"></div>
+				<div>手机：<input type="text"></div>
+				<div>邮箱：<input type="text"></div>
+			</div>
+			<div class="PopContentBtn">
+				<div class="ConfirmBtn" id="ConfirmBtn">确认</div>
+				<div class="CancelBtn" id="CancelBtn">重置</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

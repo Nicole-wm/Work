@@ -1,0 +1,133 @@
+<div class="home_banner_bg">
+	<div class="page_mcontent container home_banner cursor_p" ui-sref="productcategories({ID:7})">
+		<img src="img/home/banner.jpg?v=18040301">
+	</div>
+</div>
+<div class="page_mcontent container">
+	<div class="blank_xl"></div>
+	<div class="home_content">
+		<div class="c1_left floatl h_cont">
+			<div class="c1_ltop bg_f font16 t_center f_thick">
+				<div class="hc_dtc">
+					<p class="font27">
+						日常保养
+					</p>
+					<p class="hc_dtext">——</p>
+					<p class="hc_dtext cursor_p" ui-sref="productcategories({ID:8})">
+						护肤
+					</p>
+					<p class="hc_dtext cursor_p" ui-sref="productcategories({ID:6})">
+						彩妆
+					</p>
+				</div>
+			</div>
+			<div class="blank_m"></div>
+			<div class="c1_lbottom border_g cursor_p" ui-sref="awards">
+				<img src="img/home/a1.jpg?v=2">
+			</div>
+			<div class="c1_ltext hc_text">
+				<span class="font16 floatl">FRANGI斩获德国IF设计大奖</span>
+				<div class="design_btn font14 floatr cursor_p"  ui-sref="awards">进入</div>
+			</div>
+		</div>
+		<div class="floatr h_cont cursor_p" ui-sref="productcategories({ID:8})">
+			<img src="img/home/a3.jpg?v=2">
+			<div class="hc_text">
+				<p class="font14">FRANGI经典</p>
+				<p class="font16">FRANGI芙蓉肌经典护肤系列</p>
+			</div>
+		</div>
+		<div class="hc1_middle floatr h_cont cursor_p" ui-sref="productcategories({ID:6})">
+			<img class="border_g" src="img/home/a2.jpg?v=2">
+			<div class="hc_text">
+				<p class="font14">最新单品</p>
+				<p class="font16">2018年FRANGI芙蓉肌彩妆系列</p>
+			</div>
+		</div>
+	</div>
+	<div class="blank_m"></div>
+	<div class="home_content">
+		<div class="floatl h_cont cursor_p" ui-sref="productcategories({ID:7})">
+			<img src="img/home/b1.jpg?v=2">
+		</div>
+		<div class="floatl h_cont cursor_p" ui-sref="top">
+			<img src="img/home/b2.jpg?v=2">
+		</div>
+		<div class="floatr h_cont cursor_p" ui-sref="productcategories({ID:8})">
+			<img src="img/home/b3.jpg?v=2">
+		</div>
+	</div>
+	<div class="blank_l"></div>
+	<div class="home_content">
+		<div class="hc3_left floatl h_cont bg_f font16 t_center f_thick">
+			<div class="hc_dtc">
+				<p class="font27">
+					美肌速成
+				</p>
+				<p class="hc_dtext">——</p>
+				<p class="hc_dtext cursor_p" ui-sref="productcategories({ID:5})">
+					面膜
+				</p>
+				<p class="hc_dtext cursor_p" ui-sref="product({ID:23})">
+					精油
+				</p>
+				<p class="hc_dtext cursor_p" ui-sref="product({ID:26})">
+					素颜霜
+				</p>
+			</div>
+		</div>
+		<div class="hc3_middle floatl cursor_p h_cont" ui-sref="product({ID:33})">
+			<img src="img/home/c2.jpg?v=2">
+		</div>
+		<div class="floatr h_cont cursor_p" ui-sref="product({ID:23})">
+			<img src="img/home/c3.jpg?v=2">
+		</div>
+	</div>
+	<div class="blank_s"></div>
+	<div class="blank_m"></div>
+	<div class="border_g cursor_p" ui-sref="product({ID:0})">
+		<img src="img/home/p6.jpg?v=2">
+	</div>
+	<div class="blank_m"></div>
+	<div class="blank_m"></div> 
+	<div class="home_prolist">
+		<div class="hpl_title font14">
+			<ul>
+				<li ng-mouseenter="curpro=1" ng-class="{'hplihover':curpro==1}">经典畅销</li>
+				<li ng-mouseenter="curpro=2" ng-class="{'hplihover':curpro==2}">人气热卖</li>
+				<li ng-mouseenter="curpro=3" ng-class="{'hplihover':curpro==3}">护肤系列</li>
+			</ul>
+		</div>
+		<div class="blank"></div>
+		<div class="hpl_pro">
+			<ul ng-show="curpro==1">
+				<li ng-repeat="item in HomeProArr.c1" ui-sref="product({ID:item.id})">
+					<img ng-src="{{item.thumbnail}}">
+					<p class="font16 t_ellipsis" title="{{item.pname}}" ng-bind="item.pname"></p>
+					<p class="font14 t_ellipsis" title="{{item.ename}}" ng-bind="item.ename"></p>
+					<div class="blank"></div>
+					<div class="hplp_btn font16">立刻购买</div>
+				</li>
+			</ul> 
+			<ul ng-show="curpro==2">
+				<li ng-repeat="item in HomeProArr.c2" ui-sref="product({ID:item.id})">
+					<img ng-src="{{item.thumbnail}}">
+					<p class="font16 t_ellipsis" title="{{item.pname}}" ng-bind="item.pname"></p>
+					<p class="font14 t_ellipsis" title="{{item.ename}}" ng-bind="item.ename"></p>
+					<div class="blank"></div>
+					<div class="hplp_btn font16">立刻购买</div>
+				</li>
+			</ul> 
+			<ul ng-show="curpro==3">
+				<li ng-repeat="item in HomeProArr.c3" ui-sref="productcategories({ID:item.catalogid})">
+					<img ng-src="{{item.thumbnail}}">
+					<p class="font16 t_ellipsis" title="{{item.pname}}" ng-bind="item.pname"></p>
+					<p class="font14 t_ellipsis" title="{{item.ename}}" ng-bind="item.ename"></p>
+					<div class="blank"></div>
+					<div class="hplp_btn font16">立刻购买</div>
+				</li>
+			</ul>   
+		</div>
+	</div>
+	<div class="blank_l"></div>
+</div>

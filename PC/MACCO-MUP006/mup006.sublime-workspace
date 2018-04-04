@@ -1,0 +1,797 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"d",
+				"document"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"im",
+				"images"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"b",
+				"border"
+			],
+			[
+				"tte",
+				"text-indent"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"m",
+				"margin-bottom"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"DI",
+				"div"
+			],
+			[
+				"in",
+				"inline-table"
+			],
+			[
+				"tabl",
+				"table-cell"
+			],
+			[
+				"table-c",
+				"table-column"
+			],
+			[
+				"table",
+				"table-cell"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"ta",
+				"table"
+			],
+			[
+				"tab",
+				"table-row"
+			],
+			[
+				"blo",
+				"inline-block"
+			],
+			[
+				"st",
+				"style	Tag"
+			],
+			[
+				"SPAN",
+				"span"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"fi",
+				"font-weight"
+			],
+			[
+				"o",
+				"overflow"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"h",
+				"height	Attr"
+			],
+			[
+				"f",
+				"form	Tag"
+			],
+			[
+				"c",
+				"css"
+			],
+			[
+				"a",
+				"alert"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"p",
+				"position"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"LI",
+				"line-height"
+			],
+			[
+				"ty",
+				"list-style-type"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"i",
+				"img	Tag"
+			],
+			[
+				"inde",
+				"indexFunction"
+			],
+			[
+				"A",
+				"autoPicSlide"
+			],
+			[
+				"IN",
+				"indexFunction"
+			],
+			[
+				"PI",
+				"picnum"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"re",
+				"background-repeat"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"to",
+				"top"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"DIV",
+				"div"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"s",
+				"style	Attr"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"inl",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/Spring.Zhao/Desktop/资讯61/zx61.html",
+			"settings":
+			{
+				"buffer_size": 3626,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Spring.Zhao/Desktop/资讯4.10/资讯53/public.css",
+			"settings":
+			{
+				"buffer_size": 2099,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Spring.Zhao/Desktop/资讯4.10/资讯53/zx53.html",
+			"settings":
+			{
+				"buffer_size": 3746,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Spring.Zhao/Desktop/资讯4.9/42/zx42.html",
+			"settings":
+			{
+				"buffer_size": 3654,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Instal",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: IN",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: t",
+				"Package Control: Install Package"
+			],
+			[
+				"to",
+				"View: Toggle Menu"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 476.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/workspace/MUP006",
+		"/D/workspace/MUP006/css"
+	],
+	"file_history":
+	[
+		"/C/Users/Spring.Zhao/Desktop/资讯51/zx51.html",
+		"/C/Users/Spring.Zhao/Desktop/资讯52/zx52.html",
+		"/C/Users/Spring.Zhao/Desktop/资讯52/public.css",
+		"/C/Users/Spring.Zhao/Desktop/资讯53/zx53.html",
+		"/C/Users/Spring.Zhao/Desktop/资讯53/public.css",
+		"/C/Users/Spring.Zhao/Desktop/活动1/activity.html",
+		"/C/Users/Spring.Zhao/Desktop/活动1/public.css",
+		"/C/Users/Spring.Zhao/Desktop/资讯51/public.css",
+		"/C/Users/Spring.Zhao/Desktop/资讯4.9/42/zx42.html",
+		"/C/Users/Spring.Zhao/Desktop/活动1",
+		"/C/Users/Spring.Zhao/Desktop/资讯4.9/资讯43/public.css",
+		"/D/workspace/MUP006/MakeUpDetail.html",
+		"/D/workspace/MUP006/coverList.html",
+		"/D/workspace/MUP006/makeupEffectList.html",
+		"/D/workspace/MUP006/Sidebar.html",
+		"/D/workspace/MUP006/brandList.html",
+		"/D/workspace/MUP006/coverDetails.html",
+		"/D/workspace/MUP006/productList.html",
+		"/D/workspace/MUP006/css/productList.css",
+		"/C/Users/Spring.Zhao/Desktop/资讯4.9/42/public.js",
+		"/C/Users/Spring.Zhao/Desktop/资讯4.9/42/public.css",
+		"/C/Users/Spring.Zhao/Desktop/zx41/zx41.hml",
+		"/C/Users/Spring.Zhao/Desktop/42/zx42.html",
+		"/C/Users/Spring.Zhao/Desktop/资讯43/Zx43.html",
+		"/C/Users/Spring.Zhao/Desktop/资讯43/public.css",
+		"/C/Users/Spring.Zhao/Desktop/资讯43/respond.min.js",
+		"/C/Users/Spring.Zhao/Desktop/资讯43/boilerplate.css",
+		"/C/Users/Spring.Zhao/Desktop/资讯4.8/zx3/zx31.html",
+		"/C/Users/Spring.Zhao/Desktop/zx41/public.css",
+		"/D/workspace/MUP006/css/makeupEffectList.css",
+		"/D/workspace/MUP006/css/new.css",
+		"/D/workspace/MUP006/CourseBookList.html",
+		"/D/workspace/MUP006/CourseBookDetails.html",
+		"/D/workspace/MUP006/css/brandList.css",
+		"/D/workspace/MUP006/brandDetails.html",
+		"/D/workspace/MUP006/css/CourseBookList.css",
+		"/C/Users/Spring.Zhao/Desktop/资讯4.8/zx32/zx32.html",
+		"/C/Users/Spring.Zhao/Desktop/资讯4.8/zx32/public.css",
+		"/D/workspace/MUP006/MakeUpList.html",
+		"/D/workspace/MUP006/MakeUpDetails.html",
+		"/C/Users/Spring.Zhao/Desktop/资讯4.8/zx33/zx33.html",
+		"/C/Users/Spring.Zhao/Desktop/资讯4.8/zx3/public.css",
+		"/C/Users/Spring.Zhao/Desktop/zx3/zx31.html",
+		"/C/Users/Spring.Zhao/Desktop/zx32/zx32.html",
+		"/C/Users/Spring.Zhao/Desktop/zx33/zx3.html",
+		"/C/Users/Spring.Zhao/Desktop/zx33/boilerplate.css",
+		"/C/Users/Spring.Zhao/Desktop/zx33/public.css",
+		"/C/Users/Spring.Zhao/Desktop/zx33/respond.min.js",
+		"/C/Users/Spring.Zhao/Desktop/zx33/zx33.html",
+		"/C/Users/Spring.Zhao/Desktop/NEW4.7/资讯1/zx.html",
+		"/C/Users/Spring.Zhao/Desktop/zx3/public.css",
+		"/C/Users/Spring.Zhao/Desktop/zx3/0&wxfrom=51.jpg",
+		"/C/Users/Spring.Zhao/Desktop/zx32/public.css",
+		"/D/workspace/MUP006/css/public.css",
+		"/D/workspace/MUP006/css/coverList.css",
+		"/D/workspace/MUP006/informationManager.html",
+		"/D/workspace/MUP006/css/activeManager.css",
+		"/D/workspace/MUP006/css/StyleManager.css",
+		"/D/workspace/MUP006/makeupTypeList.html",
+		"/D/workspace/MUP006/css/makeupTypeList.css",
+		"/D/workspace/MUP006/css/MakeUpDetail.css",
+		"/D/workspace/MUP006/css/productComment.css",
+		"/C/Users/Spring.Zhao/Desktop/NEW4.7/资讯3/zx3.html",
+		"/C/Users/Spring.Zhao/Desktop/NEW4.7/资讯3/public.css",
+		"/C/Users/Spring.Zhao/Desktop/NEW4.7/资讯1/public.css",
+		"/D/workspace/MUP006/css/MakeUpList.css",
+		"/C/Users/Spring.Zhao/Desktop/资讯2/zx",
+		"/C/Users/Spring.Zhao/Desktop/NEW4.7/资讯2/zx.html",
+		"/C/Users/Spring.Zhao/Desktop/NEW4.7/资讯2/public.css",
+		"/D/workspace/MUP006/productComment.html",
+		"/D/workspace/MUP006/ActivityManager.html",
+		"/D/workspace/MUP006/StyleManager.html",
+		"/C/Users/Spring.Zhao/Desktop/NEW4.7/New/zx.html",
+		"/C/Users/Spring.Zhao/Desktop/NEW4.7/New/public.css",
+		"/C/Users/Spring.Zhao/Desktop/资讯3/public.css",
+		"/C/Users/Spring.Zhao/Desktop/资讯3/zx3.html",
+		"/C/Users/Spring.Zhao/Desktop/New/zx.html",
+		"/C/Users/Spring.Zhao/Desktop/资讯2/public.css",
+		"/C/Users/Spring.Zhao/Desktop/new资讯/zx/1.css",
+		"/D/workspace/MUP006/viewProductDetails.html",
+		"/C/Users/Spring.Zhao/Desktop/new资讯4.3/ZX1/1.css",
+		"/C/Users/Spring.Zhao/Desktop/new资讯/zx4/1.css",
+		"/C/Users/Spring.Zhao/Desktop/new资讯/zx4/public.css",
+		"/C/Users/Spring.Zhao/Desktop/New/zx.css",
+		"/C/Users/Spring.Zhao/Desktop/new资讯/zx4/zx.html",
+		"/C/Users/Spring.Zhao/Desktop/new资讯/zx2/zx2.html",
+		"/C/Users/Spring.Zhao/Desktop/new资讯/zx3/1.css",
+		"/C/Users/Spring.Zhao/Desktop/new资讯/zx/zx.html",
+		"/C/Users/Spring.Zhao/Desktop/new资讯/zx2/1.css",
+		"/C/Users/Spring.Zhao/Desktop/new资讯/zx3/zx3.html",
+		"/C/Users/Spring.Zhao/Desktop/New210/New/FoundPassWordFourT.html",
+		"/D/workspace/MUP006/test.html",
+		"/D/workspace/MUP006/informationDetails.html",
+		"/D/workspace/MUP006/editStyle.html",
+		"/D/workspace/MUP006/editInformation.html",
+		"/D/workspace/MUP006/editActivity.html",
+		"/D/workspace/MUP006/css/bootstrap.css",
+		"/D/workspace/MUP006/ActivityDetails.html",
+		"/D/workspace/MUP006/New.html",
+		"/C/Users/Spring.Zhao/Desktop/ZX/ZX1/ZX1.html",
+		"/C/Users/Spring.Zhao/Desktop/ZX/ZX1/boilerplate.css",
+		"/C/Users/Spring.Zhao/Desktop/ZX/ZX1/1.css",
+		"/C/Users/Spring.Zhao/Desktop/ZX/ZX2/zxT.html",
+		"/C/Users/Spring.Zhao/Desktop/ZX/ZX2/boilerplate.css",
+		"/C/Users/Spring.Zhao/Desktop/ZX/ZX2/zx.css",
+		"/C/Users/Spring.Zhao/Desktop/ZX/zx3/zx3.html",
+		"/C/Users/Spring.Zhao/Desktop/ZX/zx3/zx3.css",
+		"/C/Users/Spring.Zhao/Desktop/ZX/zx4/zx4.html",
+		"/C/Users/Spring.Zhao/Desktop/ZX/zx4/zx4.css",
+		"/C/Users/Spring.Zhao/Desktop/new资讯/zx/public.css",
+		"/C/Users/Spring.Zhao/Desktop/new资讯/zx3/public.css",
+		"/D/workspace/MUP006/css/common.css",
+		"/D/workspace/MUP006/viewStyle.html",
+		"/D/workspace/MUP006/css/sb-admin.css",
+		"/D/workspace/MUP006/js/common.js",
+		"/D/workspace/MUP006/viewProductComment.html",
+		"/D/workspace/MUP006/viewInformationDetails.html",
+		"/D/workspace/MUP006/viewActivity.html",
+		"/C/Users/Spring.Zhao/Desktop/MUP006/StyleManager.html",
+		"/D/workspace/MUP006/StyleDetails.html",
+		"/C/Users/Spring.Zhao/Desktop/MUP006/ActivityManager.html",
+		"/C/Users/Spring.Zhao/Desktop/new资讯/zx2/public.css",
+		"/C/Users/Spring.Zhao/Desktop/new资讯/zx4/boilerplate.css",
+		"/D/workspace/MUP006/css/plugins/new.css",
+		"/C/Users/Spring.Zhao/Desktop/New210/New/FoundPassWordS.html",
+		"/C/Users/Spring.Zhao/Desktop/New210/CSS/FoundPassword.css",
+		"/C/Users/Spring.Zhao/Desktop/New210/New/FoundPassWordFour.html",
+		"/C/Users/Spring.Zhao/Desktop/New210/New/FoundPassWordF.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"img",
+			"c",
+			"100px",
+			".row {\n				display: table-row;\n				height: auto;\n			}\n",
+			"%;\n",
+			"mobilecustomerinformation",
+			"    \n",
+			".col-lg-6",
+			"collapse",
+			"aria-expanded",
+			"nav navbar-right top-nav",
+			"navbar navbar-inverse navbar-fixed-top",
+			"nav navbar-right top-nav",
+			"collapse navbar-collapse navbar-ex1-collapse",
+			";\n",
+			".mobileHead",
+			".mobileTitle",
+			"descMobileWrapper ",
+			"#descWrapper",
+			"#outerchainbar",
+			"#mobileSpotbar",
+			"#outerchainbar",
+			"padPic",
+			"outerchainbar",
+			"descMobileWrapper",
+			"centerIphoneContent",
+			"outerchainbar",
+			"descWrapper",
+			"centerContent",
+			"descWrapper",
+			"centerContent",
+			"mobileSpotbar",
+			"autoPicSlide",
+			"#slidebar",
+			">\n",
+			"slidebar",
+			"slide",
+			"spotbar",
+			"centerContent",
+			"tdcodewordblack",
+			"spotbar",
+			"copyright",
+			"footlogo",
+			"footpart",
+			"slidediv",
+			"iphone_store",
+			"#iphone_store img,#android_market img",
+			"#headlink img,#headlink_f img",
+			"headlinkWrapper",
+			"descText2",
+			"headbarlocate",
+			"#logo, #logo_f",
+			"logo_f",
+			"logo",
+			"#logo, #logo_f",
+			"#headline, #headline_f",
+			"environmentalTest",
+			"#descText2",
+			"#descText1",
+			"#descWrapper",
+			"descWrapper",
+			"address",
+			"version",
+			"testLink",
+			".logo",
+			"#headlinkWrapper",
+			"#headlink a, #headlink_f a",
+			"#headlink, #headlink_f",
+			"#headlinkopen",
+			"headlinkopen",
+			"#headlink, #headlink_f",
+			"  ",
+			"#outerchainbar",
+			" #weibo_f {\n    margin: 0;\nposition: relative;\ntop: -48px;\nright: -175px;\n}",
+			"#headlink a, #headlink_f a",
+			"	\n",
+			"headline",
+			"4"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/Spring.Zhao/Desktop/资讯61/zx61.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3626,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1724,
+								1724
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 243.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Spring.Zhao/Desktop/资讯4.10/资讯53/public.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2099,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1683,
+								1683
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 810.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Spring.Zhao/Desktop/资讯4.10/资讯53/zx53.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3746,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1350,
+								1350
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Spring.Zhao/Desktop/资讯4.9/42/zx42.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3654,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								3654
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "mup006.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Spring.Zhao\\Desktop\\ZX1\\ZX1.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 321.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

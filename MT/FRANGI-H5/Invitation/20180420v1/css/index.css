@@ -1,0 +1,189 @@
+/*******************Base*******************/
+html,body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    overflow-x: hidden;
+}
+img{
+    display:block;
+    margin: auto;
+    width: 100%;
+    border: 0;
+}
+.page-container{
+    width:100%;
+    height:100%;
+    background-color: #000;
+}
+
+/*******************音乐*******************/
+.music{
+    position: fixed;
+    right:20px;
+    top:20px;
+    z-index: 1000;
+}
+.open{
+    animation: moveRo 3.5s linear infinite both;
+    -webkit-animation: moveRo 3.5s linear 0s infinite both;
+    animation-delay:0;
+}
+.icon-music{
+    width:1rem;
+    height:1rem;
+    background: url(../img/base/btn-music.png);
+    background-size: 100% 100%;
+    display: block;
+    opacity: 0.5;
+}
+/*动画*/
+@-webkit-keyframes moveRo {
+    from {-webkit-transform: rotate(360deg);  }
+    to { -webkit-transform: rotate(-360deg); }
+}
+@keyframes moveRo {
+    from {  transform: rotate(-360deg)}
+    to {  transform: rotate(360deg); }
+}
+
+@-webkit-keyframes openRo {
+    from { }
+    to { -webkit-transform: translateY(100%);
+    }
+}
+@keyframes openRo {
+    from { }
+    to { -webkit-transform: translateY(100%) ; transform: translateY(100%);
+
+    }
+}
+
+/*******************Page*******************/
+.Moveswing{
+    animation: swing 5s linear 0s infinite both;
+    -webkit-animation: swing 5s linear 0s infinite both;
+}
+
+.Movelight,.MovelightSmall{
+    transform-origin: center bottom;
+    -webkit-transform-origin: center bottom;
+    animation: light 5s linear 0s infinite both;
+    -webkit-animation: light 5s linear 0s infinite both;
+}
+
+.MovelightSmall{
+    animation: light_small 4s linear 0s infinite both;
+    -webkit-animation: light_small 4s linear 0s infinite both;
+}
+
+.top{
+    position: relative;
+    height: 10.555556rem;
+}
+
+.top img{
+    position: absolute;
+}
+
+.boat{
+    left: 0;
+    bottom: 0;
+    width: 5.574074rem;
+    z-index: 100;
+}
+
+.bottle{
+    width: 1.62963rem;
+    height: 5.990741rem;
+    left:2.546296rem;
+    bottom: 1.759259rem;
+    z-index: 10;
+}
+
+.l1,.l2,.l22,.l3{
+    bottom: 1.759259rem;
+    z-index: 10;
+}
+
+.l1{
+    left: -1.5rem;
+    width: 6rem;
+    animation-delay:0.25s;
+    -webkit-animation-delay:0.25s;
+}
+
+.l2{
+    left: -0.5rem;
+    width: 5rem;
+    animation-delay:0.5s;
+    -webkit-animation-delay:0.5s;
+}
+
+.l3{
+    left: 2rem;
+    width:9.657407rem;
+    animation-delay:0.75s;
+    -webkit-animation-delay:0.75s;
+    transform-origin: left bottom;
+    -webkit-transform-origin: left bottom;
+}
+
+@keyframes swing
+{
+    0%{transform:rotate(2deg);}
+    25%{transform:rotate(-2deg);}
+    50%{transform:rotate(2deg);}
+    75%{transform:rotate(-2deg);}
+    100%{transform:rotate(2deg);}
+}
+
+@-webkit-keyframes swing 
+{
+    0%{transform:rotate(2deg);}
+    25%{transform:rotate(-2deg);}
+    50%{transform:rotate(2deg);}
+    75%{transform:rotate(-2deg);}
+    100%{transform:rotate(2deg);}
+}
+
+@keyframes light
+{
+    0%{transform:rotate(30deg);}
+    25%{transform:rotate(-30deg);}
+    50%{transform:rotate(30deg);}
+    75%{transform:rotate(-30deg);}
+    100%{transform:rotate(30deg);}
+}
+
+@-webkit-keyframes light 
+{
+    0%{transform:rotate(30deg);}
+    25%{transform:rotate(-30deg);}
+    50%{transform:rotate(30deg);}
+    75%{transform:rotate(-30deg);}
+    100%{transform:rotate(30deg);}
+}
+
+@keyframes light_small
+{
+    0%{transform:rotate(15deg);}
+    25%{transform:rotate(-15deg);}
+    50%{transform:rotate(15deg);}
+    75%{transform:rotate(-15deg);}
+    100%{transform:rotate(15deg);}
+}
+
+@-webkit-keyframes light_small 
+{
+    0%{transform:rotate(15deg);}
+    25%{transform:rotate(-15deg);}
+    50%{transform:rotate(15deg);}
+    75%{transform:rotate(-15deg);}
+    100%{transform:rotate(15deg);}
+}

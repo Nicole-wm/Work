@@ -1,0 +1,68 @@
+<div class="row" ng-controller="ProductDetailsBaseController">
+	<div class="col-md-12">
+		<div class="tab-pane active">
+			<div class="portlet light">
+				<div class="portlet-body form">
+					<form  class="form-horizontal" role="form" name="ProductDetail">
+						<div class="form-body">
+							<div class="form-group col-md-12"><h4>基本信息</h4></div>
+							<div class="form-group">
+								<label class="col-md-12">	产品名称：{{ProductName}}
+								</label>
+							</div>
+							<div class="form-group">
+								<label class="col-md-12">产品品牌：{{Brand}}
+								</label>
+							</div>
+							<div class="form-group">
+								<label class="col-md-12">产品型号：{{Model}}
+								</label>
+							</div>
+							<div class="form-group">
+								<label class="col-md-12">产品描述：{{Description}}
+								</label>
+							</div>
+							<div class="form-group">
+								<label class="col-md-12">
+									产品类别：{{ProCategoryText}}
+								</label>
+							</div>
+							<div class="form-group col-md-12"><h4>介绍信息</h4></div>
+							<div class="form-group">
+								<label class="col-md-12">产品图片：
+									<img ng-src="{{ImageUrl}}" style="max-width: 200px; max-height: 150px;">
+								</label>
+							</div>
+							<div class="form-group">
+								<label class="col-md-12">
+									产品介绍URL：{{Url}}
+								</label>
+							</div>
+							<div class="form-group">
+								<label class="col-md-12">产品配置说明：{{ProductConfig}}
+								</label>
+							</div>
+							<div class="form-group col-md-12"><h4>配置信息</h4></div>
+							<div class="form-group">
+								<label class="col-md-12">链接模式：{{LinkModeText}}</label>
+							</div>
+							<div class="form-group">
+								<label class="col-md-12">是否允许访客模式：{{GuestAllowText}}</label>
+							</div>
+							<div class="form-group">
+								<label class="col-md-12">
+									访客默认时长：{{GuestTime}}
+								</label>
+							</div>
+							<div class="form-group">
+								<label class="col-md-12">是否允许高级授权：{{TopGradeText}}
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- END BasicTable-->
+	</div>
+</div>

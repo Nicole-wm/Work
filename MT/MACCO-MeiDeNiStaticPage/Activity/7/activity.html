@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <style>
+        @font-face {
+            font-family: 'youyuan';
+            src: url(data:font/ttf;base64,FONTBASE64) format('truetype');
+        }
+    </style>
+    <link href="../css/public.css" rel="stylesheet" charset="utf-8">
+    <link href="../css/join.css" rel="stylesheet" charset="UTF-8">
+    <link href="css/activity.css" rel="stylesheet" charset="utf-8">    
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script> 
+    <script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/activity.js" charset="UTF-8"></script>
+</head>
+<body  ng-controller="activityController">
+    <div id="head" class="head RelatedImg">
+        <img id="model" src="images/banner.jpg">
+    </div>
+    <input type="hidden" ng-model="joinurl" ng-init="joinurl='/Activity/join.html'" />
+    <div ng-include="joinurl"></div>
+    <div class="clear"></div>
+    <div class="bigSize theme">完善肤质情况</div>
+    <div class="bigSize theme">欧缇丽5件套免费拿</div>
+    <div class="smallSize introduce">
+        <div>为更全面、更专业的</div>
+        <div>提升我们的产品点评/评测系统</div>
+    </div>
+    <div class="smallSize introduce">
+        <div>你们的每一份信息</div>
+        <div>对我们来说都格外珍贵</div>
+    </div>
+    <div class="smallSize introduce">
+        <div>告诉小美 你的皮肤信息</div>
+        <div style="color:#fe3d73;">欧缇丽5件套免费送啦~</div>
+    </div>
+    <div class="bigSize actionRule">参与规则：</div>
+    <div class="smallSize step one">
+        <span>Step 1：点击</span>
+        <span class="join smallSize">马上参与</span>
+    </div>
+    <div class="smallSize step">Step 2：仔细填写你的个人肤质档案；</div>
+    <div class="RulePictures">
+        <img src="images/1.jpg">
+    </div>
+    <div class="smallSize step">Step 3：提交的同时，将结果分享到你的朋友圈/微信/微博/QQ空间等（任何一个皆可）即算参加成功；</div>
+    <div class="RulePictures">
+        <img src="images/2.jpg">
+    </div>
+    <div class="smallSize">
+        <div style="text-align:center;">我们将从所有参与者中抽取10位可爱的幸运儿 </div>
+        <div style="text-align:center;">送上人见人爱的欧缇丽5件套啦 </div>
+    </div>
+    <div class="bigSize prize">活动奖品：</div>
+    <div class="smallSize">
+        <div style="text-align: inherit;"><span class="MaskNum">欧缇丽5件套</span></div>
+    </div>
+    <div class="RulePictures">
+        <img src="images/3.jpg">
+    </div>
+    <input type="hidden" ng-model="type" ng-init="type='toMarket'">
+    <input type="hidden" ng-model="shouldLogin" ng-init="shouldLogin='true'">
+    <input type="hidden" ng-model="ObjectID" ng-init="ObjectID=''">
+    <div ng-if="!IsFinish" ng-class="btnJoin_n" ng-click="Join()" ng-bind="title"></div>
+    <input type="hidden" ng-model="footerurl" ng-init="footerurl='/Activity/footer.html'" />
+    <div ng-include="footerurl"></div>
+</body>
+
+</html>

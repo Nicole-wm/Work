@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>首页</title>
+	<!-- build:css -->
+<link href="css/base.css" rel="stylesheet" charset="UTF-8"> 
+<link href="css/public.css" rel="stylesheet" charset="UTF-8"> 
+<link href="css/top.css" rel="stylesheet" charset="UTF-8">  
+<link href="css/footer.css" rel="stylesheet" charset="UTF-8"> 
+<!-- endbuild -->
+<!-- build:js -->
+<script src="js/jquery-1.9.1.min.js" charset="UTF-8"></script>
+<script src="js/avalon.js" charset="UTF-8"></script>
+<script src="js/dropdownlist.js" charset="UTF-8"></script>
+<script src="js/top.js" charset="UTF-8"></script>
+<script src="js/footer.js" charset="UTF-8"></script>
+<script src="js/public.js" charset="UTF-8"></script>
+<!-- endbuild -->
+	<link href="css/index.css" rel="stylesheet"/> 
+	<script src="js/index.js"></script>
+</head>
+<body ms-controller="indexController">
+	<div class="top_all">
+	<div class="top">
+		<div class="top_text">
+			<div class="top_text_l left">
+				<ul>
+					<li><a href="login.html" style="color:#cccccc">登录</a></li>
+					<li class="line"></li>
+					<li><a href="Register.html" style="color:#cccccc">注册</a></li>
+				</ul>
+			</div>
+			<div class="top_text_r right">
+				<ul>
+					<li><a style="color:#cccccc">测试版</a></li>
+					<li class="line"></a></li>
+					<li><a style="color:#cccccc">论坛</a></li>
+					<li class="line"></li>
+					<li><a href="index.html" style="color:#cccccc">首页</a></li>
+					<li class="line"></li>
+					<li><a style="color:#cccccc">加入收藏</a></li>
+					<li class="line"></li>
+					<li><a style="color:#cccccc">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Logo -->
+	<div class="Logo">
+		<a href="index.html"><img src="images/logo.png"></a>
+		<div class="SearchDiv htc">
+			<input id="SearchInput" type="text" value="搜索关键字">
+			<div class="icon SearchDiv_img">
+			</div>
+		</div>
+	</div>
+	<!-- Menu -->
+	<div class="Menu">
+		<div class="Menu_content">
+			<div class="menu_ul" id="menu_ul">
+				<ul>
+					<li class="menu_ul_select" id="Menu1" onmouseover="setMenu(1)" onclick="chooseMenu(1)"><a>首页</a></li>
+					<li class="double_line"></a></li>
+					<li id="Menu2" onmouseover="setMenu(2)"  onclick="chooseMenu(2)"><a>交易公开</a></li>
+					<li class="double_line"></li>
+					<li id="Menu3" onmouseover="setMenu(3)"   onclick="chooseMenu(3)"><a>交易平台</a></li>
+					<li class="double_line"></li>
+					<li id="Menu4" onmouseover="setMenu(4)"   onclick="chooseMenu(4)"><a>市场资信</a></li>
+					<li class="double_line"></li>
+					<li id="Menu5" onmouseover="setMenu(5)"  onclick="chooseMenu(5)"><a>交易数据</a></li>
+					<li class="double_line"></a></li>
+					<li id="Menu6" onmouseover="setMenu(6)"  onclick="chooseMenu(6)"><a>评标专家</a></li>
+					<li class="double_line"></li>
+					<li id="Menu7" onmouseover="setMenu(7)"  onclick="chooseMenu(7)"><a>行政监督</a></li>
+					<li class="double_line"></li>
+					<li id="Menu8" onmouseover="setMenu(8)"  onclick="chooseMenu(8)"><a>政策法规</a></li>
+					<li class="double_line"></li>
+					<li id="Menu9" onmouseover="setMenu(9)"  onclick="chooseMenu(9)"><a>市场动态</a></li>
+					<li class="double_line"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+	<div>
+		<div class="Menu_s">
+			<div class="menu_s_row">
+				<div class="menu_announcement">
+					<span class="announce_text">重要公告 :</span>
+					<div id="scrollDiv" class="scrollDiv">
+						<ul class="announc_list">
+							<li ms-repeat="announcList"><a ms-attr-href="Details.html?ID={{el.ID}}&Type=2" target="_blank" ms-attr-title="el.Title">{{el.Title}}</a> </li>
+						</ul>
+					</div>
+				</div>
+				<div class="menu_time">
+					<div class="time_img icon"></div>
+					<span>2016.3.4 15:26:38</span>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<!-- 轮播菜单 -->
+			<div class="Carousel">
+				<div id="BannerDiv" onmouseover="BannerHover()" onmouseout="BannerOut()">
+					<div class="BannerImgList">
+						<ul>
+							<li ms-repeat="BannerList" ms-visible="currentBanner === el.ID"><a ms-attr-href="Details.html?ID={{el.ID}}&Type=0" target="_blank"><img ms-attr-src="{{el.ImgUrl}}" ms-attr-alt="{{el.Title}}"></a></li>
+						</ul>
+					</div>
+					<div class="BannerImgTitle">
+					    <div class="BannerImgTitle_bg"></div>
+						<div class="text ellipsis"><a ms-attr-href="Details.html?ID={{CurBannerID}}&Type=0" target="_blank">{{CurBannerTitle}}</a></div>
+					</div>
+					<a href="#" ms-click="BtnBannerClick(1)" class="link toLeft"></a>
+					<a href="#" ms-click="BtnBannerClick(2)" class="link toRight"></a>
+				</div>
+			</div>
+			<!-- 平台动态 -->
+			<div class="DynamicPlatform htc">
+				<div class="blank_title">平台动态</div>
+				<div class="part_up">
+					<a ms-attr-href="Details.html?ID={{dpListFirst.ID}}&Type=3" target="_blank">
+						<div class="part_title">{{dpListFirst.Title}}
+						</div>
+						<div class="part_content">{{dpListFirst.Content}}
+						</div>
+					</a>
+				</div>
+				<hr style="border:1px dashed #eeeeee;" />
+				<div class="part_down">
+					<ul>  
+						<li ms-repeat="dpList"><a ms-attr-href="Details.html?ID={{el.ID}}&Type=3" target="_blank">{{el.Title}}</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="blank"></div>
+			<!-- 交易公开 -->
+			<div class="TradeOpenness">
+				<div class="Mk_Title">
+					<div class="icon Mk_img">交易公开
+					</div>
+				</div>
+				<div class="Mk_List">
+					<div class="List_title">
+						<ul id="TradeOpenness_NSul" class="NSul">
+							<li class="li_round" ms-class="li_selected_round:currentIndex === 1"></li>
+							<li class="li_text"  ms-mouseover="setTab(1)" ms-class="li_selected_text:currentIndex === 1">招标公告</li>
+							<li class="li_round" ms-class="li_selected_round:currentIndex === 1"></li>
+							<li class="li_round" ms-class="li_selected_round:currentIndex === 2"></li>
+							<li class="li_text"  ms-mouseover="setTab(2)" ms-class="li_selected_text:currentIndex === 2">开标记录</li>
+							<li class="li_round" ms-class="li_selected_round:currentIndex === 2"></li>
+							<li class="li_round" ms-class="li_selected_round:currentIndex === 3"></li>
+							<li class="li_text"  ms-mouseover="setTab(3)" ms-class="li_selected_text:currentIndex === 3">评标公示</li>
+							<li class="li_round" ms-class="li_selected_round:currentIndex === 3"></li>
+							<li class="li_round" ms-class="li_selected_round:currentIndex === 4"></li>
+							<li class="li_text"  ms-mouseover="setTab(4)" ms-class="li_selected_text:currentIndex === 4">中标公告</li>
+							<li class="li_round" ms-class="li_selected_round:currentIndex === 4"></li>
+							<li class="li_round" ms-class="li_selected_round:currentIndex === 5"></li>
+							<li class="li_text"  ms-mouseover="setTab(5)" ms-class="li_selected_text:currentIndex === 5">合同备案</li>
+							<li class="li_round" ms-class="li_selected_round:currentIndex === 5"></li>
+						</ul>
+					</div>
+					<div class="List_content">
+						<div id="content1" ms-visible="currentIndex ===1">
+							<div class="List_li">
+								<ul ms-repeat="zbggList">
+									<li class="li_first"><a ms-attr-href="Details.html?ID={{el.ID}}&Type=4" target="_blank">{{el.Title}}</a></li>
+									<li class="li_second">{{el.Time}}</li>
+									<li class="li_third red_text">招标中</li>
+								</ul>
+							</div>
+						</div>
+						<div id="content2" ms-visible="currentIndex ===2">
+							<div class="List_li">
+								<ul ms-repeat="kbjlList">
+									<li class="li_first"><a ms-attr-href="Details.html?ID={{el.ID}}&Type=5" target="_blank">{{el.Title}}</a></li>
+									<li class="li_second"></li>
+									<li class="li_third">{{el.Time}}</li>
+								</ul>
+							</div> 
+						</div>
+						<div id="content3" ms-visible="currentIndex ===3">
+							<div class="List_li">
+								<ul ms-repeat="pbgsList">
+									<li class="li_first"><a ms-attr-href="Details.html?ID={{el.ID}}&Type=6" target="_blank">{{el.Title}}</a></li>
+									<li class="li_second"></li>
+									<li class="li_third">{{el.Time}}</li>
+								</ul>
+							</div> 
+						</div>
+						<div id="content4" ms-visible="currentIndex ===4">
+							<div class="List_li">
+								<ul ms-repeat="zobggList">
+									<li class="li_first"><a ms-attr-href="Details.html?ID={{el.ID}}&Type=7" target="_blank">{{el.Title}}</a></li>
+									<li class="li_second"></li>
+									<li class="li_third">{{el.Time}}</li>
+								</ul>
+							</div> 
+						</div>
+						<div id="content5" ms-visible="currentIndex ===5">
+							<div class="List_li">
+								<ul ms-repeat="htbaList">
+									<li class="li_first"><a ms-attr-href="Details.html?ID={{el.ID}}&Type=8" target="_blank">{{el.Title}}</a></li>
+									<li class="li_second"></li>
+									<li class="li_third">{{el.Time}}</li>
+								</ul>
+							</div> 
+						</div>
+					</div>
+				</div>
+				<div class="NewNScontent">
+					<a href="Introduction0.html" target="_blank">
+						<div class="NNC_Div">
+							<p class="NNCRedText">建筑工程</p>
+							<p class="NNCGreyText">房建 交通 水利 铁路</p>
+						</div>
+					</a>
+					<a href="Introduction1.html" target="_blank">
+						<div class="NNC_Div">
+							<p class="CNNCRedText">政府采购</p>
+						</div>
+					</a>
+					<a href="Introduction2.html" target="_blank">
+						<div class="NNC_Div">
+							<p class="NNCRedText">货物资源</p>
+							<p class="NNCGreyText">货物 产权 土地</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<!-- 统一登录 -->
+			<div class="UniteLogin">
+				<div class="Mk_Title">
+					<div class="icon Mk_img">统一登录
+					</div>
+					<a href="register.html"><div class="blank_title">新用户注册</div></a>
+				</div>
+				<a href="login.html">
+					<div class="login_name">
+						<div class="ztb"><div class="ztb_img icon"></div>招标人</div>
+						<div class="tbr"><div class="tbr_img icon"></div>投标人</div>
+						<div class="zbdl"><div class="zbdl_img icon"></div>招标代理</div>
+						<div class="pbjg"><div class="pbjg_img icon"></div>评标机构</div>
+						<div class="pbzj"><div class="pbzj_img icon"></div>评标专家</div>
+						<div class="xzjd"><div class="xzjd_img icon"></div>行政监督</div>
+					</div>
+				</a>
+			</div>
+			<div class="blank"></div>
+			<!-- 评标专家 -->
+			<div class="BidEvaluationExpert">
+				<div class="Mk_Title">
+					<div class="icon Mk_img">评标专家
+					</div>
+				</div>
+				<div class="Mk_List">
+					<div class="List_title">
+						<ul id="BidEvaluationExpert_NSul" class="NSul">
+							<li class="li_round" ms-class="li_selected_round:currentIndex2 === 1"></li>
+							<li class="li_text" ms-mouseover="Tabchange(1)" ms-class="li_selected_text:currentIndex2 === 1">通知公告</li>
+							<li class="li_round" ms-class="li_selected_round:currentIndex2 === 1"></li>
+							<li class="li_round" ms-class="li_selected_round:currentIndex2 === 2"></li>
+							<li class="li_text" ms-mouseover="Tabchange(2)" ms-class="li_selected_text:currentIndex2 === 2">学习专区</li>
+							<li class="li_round" ms-class="li_selected_round:currentIndex2 === 2"></li>
+							<li class="li_round" ms-class="li_selected_round:currentIndex2 === 3"></li>
+							<li class="li_text" ms-mouseover="Tabchange(3)" ms-class="li_selected_text:currentIndex2 === 3">评委考试</li>
+							<li class="li_round" ms-class="li_selected_round:currentIndex2 === 3"></li>
+						</ul>
+					</div>
+					<div class="List_content">
+						<div id="BidContent1" ms-visible="currentIndex2 ===1">
+							<div class="List_li">
+								<ul ms-repeat="tzzqList">
+									<li class="li_first"><a ms-attr-href="Details.html?ID={{el.ID}}&Type=9" target="_blank">{{el.Title}}</a></li>
+									<li class="li_second">{{el.Time}}</li>
+								</ul>
+							</div>
+						</div>
+						<div id="BidContent2" ms-visible="currentIndex2 ===2">
+							<div class="List_li">
+								<ul ms-repeat="xxzqList">
+									<li class="li_first"><a ms-attr-href="Details.html?ID={{el.ID}}&Type=10" target="_blank">{{el.Title}}</a></li>
+									<li class="li_second">{{el.Time}}</li>
+								</ul>
+							</div>
+						</div>
+						<div id="BidContent3" ms-visible="currentIndex2 ===3">
+							<div class="List_li">
+								<ul ms-repeat="pwksList">
+									<li class="li_first"><a ms-attr-href="Details.html?ID={{el.ID}}&Type=11" target="_blank">{{el.Title}}</a></li>
+									<li class="li_second">{{el.Time}}</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 交易数据 -->
+			<div class="TransactionData">
+				<div class="Mk_Title">
+					<div class="icon Mk_img">交易数据
+					</div>
+				</div>
+				<div class="Table_title">
+					{{jysjTitle}}
+				</div>
+				<a href="TransactionData.html">
+					<div class="Table_content">
+						<table>
+							<tr>
+								<td></td>
+								<td width="60px"><span class="tc_title">项目数量</span></td>
+								<td width="60px"><span class="tc_title">交易金额</span></td>
+								<td width="60px"><span class="tc_title">中标金额</span></td>
+							</tr>
+							<tr ms-repeat="jysjList">
+								<td><span class="tc_title">{{el.Name}}</span></td>
+								<td><span class="tc_num">{{el.Count}}</span>项</td>
+								<td><span class="tc_num">{{el.TransAmount}}</span>项</td>
+								<td><span class="tc_num">{{el.BidAmount}}</span>项</td>
+							</tr>
+							<tr>
+								<td><span class="tc_title">总共</span></td>
+								<td><span class="tc_num">{{jysjCount1}}</span>项</td>
+								<td><span class="tc_num">{{jysjCount2}}</span>项</td>
+								<td><span class="tc_num">{{jysjCount3}}</span>项</td>
+							</tr>
+						</table>
+					</div>
+				</a>
+			</div>
+			<div class="blank"></div>
+			<!-- 行政监督 -->
+			<div class="AdministrativeSupervision">
+				<div class="Mk_Title">
+					<div class="icon Mk_img">行政监督
+					</div>
+				</div>
+				<div class="Ad_Title">
+					<a href="AdministrativeSupervision.html?page=2">
+						<div class="Ad_Title_Red">
+							<div class="ad_red_round"></div>
+							<div class="ad_red_text">监督公告</div>
+							<div class="ad_red_round"></div>
+						</div>
+					</a>
+					<a href="AdministrativeSupervision.html?page=1">
+						<div class="Ad_Title_Gray">
+							<div class="Adicon icon"></div>
+							大数据分析，智能化监督
+						</div>
+					</a>
+					<a href="AdministrativeSupervision.html?page=0">
+						<div class="Ad_Title_Gray">
+							<div class="Adicon icon"></div>
+							招标投标行政监督执法统一入口
+						</div>
+					</a>
+				</div>
+				<div class="Ad_List">
+					<div class="List_li">
+						<ul ms-repeat="jdggList">
+							<li class="li_first"><a ms-attr-href="Details.html?ID={{el.ID}}&Type=12" target="_blank">{{el.Title}}</a></li>
+							<li class="li_second">{{el.Time}}</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 联系我们 -->
+			<div class="ContactUs">
+				<a href="http://map.baidu.com/?newmap=1&s=inf%26uid%3Df8b159aa28ca33b825e0a0d4%26wd%3D%E5%8D%97%E4%BA%AC%E5%B8%82%E5%B7%A5%E7%A8%8B%E5%BB%BA%E8%AE%BE%E9%A1%B9%E7%9B%AE%E8%B4%A7%E7%89%A9%E6%8B%9B%E6%A0%87%E7%AE%A1%E7%90%86%E5%8A%9E%E5%85%AC%E5%AE%A4%26all%3D1%26c%3D289&from=alamap&tpl=map_singlepoint"  target="_blank">
+					<div class="Mk_Title">
+						<div class="icon Mk_img">联系我们
+						</div>
+					</div>
+					<div class="Map"><img src="images/map.png"></div>
+					<div class="Map_text">
+						<p><b>地址：</b>南京市玄武区成贤街118号科技中心四楼</p>
+						<p><b>电话：</b>025-83609390&nbsp;83368392</p>
+					</div>
+				</a>
+			</div>
+			<div class="blank"></div>
+			<!-- 市场资信 -->
+			<div class="MarketCredit">
+				<div class="Mk_Title">
+					<div class="icon Mk_img">市场资信
+					</div>
+				</div>
+				<div class="MC_Link">
+					<a href="MarketCredit.html?page=0">
+						<div class="MC_LinkDiv htc">
+							<div class="MC_LinkImg MLI1">
+							</div>
+							招标人资信
+						</div>
+					</a>
+					<a href="MarketCredit.html?page=1">
+						<div class="MC_LinkDiv htc">
+							<div class="MC_LinkImg MLI2">
+							</div>
+							投标人资信
+						</div>
+					</a>
+					<a href="MarketCredit.html?page=2">	
+						<div class="MC_LinkDiv htc">
+							<div class="MC_LinkImg MLI3">
+							</div>
+							代理机构资信
+						</div>
+					</a>
+					<a href="MarketCredit.html?page=3">
+						<div class="MC_LinkDiv htc">
+							<div class="MC_LinkImg MLI4">
+							</div>
+							平台机构资信
+						</div>	
+					</a>
+					<a href="MarketCredit.html?page=4">		
+						<div class="MC_LinkDiv htc">
+							<div class="MC_LinkImg MLI5">
+							</div>
+							资信动态
+						</div>
+					</a>
+				</div>
+			</div>
+			<!-- 关注我们 -->
+			<div class="FollowUs">
+				<div class="Mk_Title">
+					<div class="icon Mk_img">关注我们
+					</div>
+				</div>
+				<div class="erweima"><img src="images/erweima.png"></div>
+				<div class="erweima_text">
+					<p><b>打造全国先进的公共服务平台</b></p>
+				</div>
+			</div>
+			<div class="blank"></div>
+		</div>
+	</div>
+	<div class="footer">
+	<!-- 友情链接 -->
+	<div class="FriendlyLink">
+		<div class="blank_title">友情链接</div>
+		<div class="select">
+			<select id="select1">
+				<option value="">-- 国家部委网站 --</option>
+				<option value="http://www.chinabidding.com.cn/">中国采购与招标网</option>
+				<option value="http://www.ndrc.gov.cn/">国家发展和改革委员会</option>
+				<option value="http://www.ccgp.gov.cn/">政府采购网</option>
+			</select>
+		</div>
+		<div class="select">
+			<select id="select2">
+				<option value="">-- 江苏省政府机构网站 --</option>
+				<option value="http://www.jscd.gov.cn/">省交通运输厅</option>
+				<option value="http://www.jswater.gov.cn/">省水利厅</option>
+			</select>
+		</div>
+		<div class="select">
+			<select id="select3">
+				<option value="">-- 南京市政府机构网站 --</option>
+				<option value="http://www.nanjing.gov.cn/index.html">市人民政府</option>
+				<option value="http://www.njdpc.gov.cn/">市发展和改革委员会</option>
+				<option value="http://www.njcz.gov.cn/">市财政局</option>
+				<option value="http://www.njgt.gov.cn/">市土地资源和房屋管理局</option>
+				<option value="http://www.njszjw.gov.cn/index2286.htm">市城乡建设</option>
+				<option value="http://www.njgp.gov.cn/">市政府采购网</option>
+				<option value="http://www.njjj.gov.cn/">市监察局</option>
+				<option value="http://www.njaf.gov.cn/">市林业局</option>
+			</select>
+		</div>
+		<div class="select">
+			<select id="select4">
+				<option value="">-- 其他相关网站 --</option>
+				<option value="http://www.js.sgcc.com.cn/">江苏省电力公司</option>
+				<option value="http://www.njgcztbxh.com/">南京建设工程招标投标协会</option>
+				<option value="http://www.njinfo.gov.cn/">南京信息协会</option>
+			</select>
+		</div>
+	</div>
+	<div class="footer_all">
+		<div class="footer_t">
+			<ul>
+				<li><a href="AboutUs.html?page=0">平台简介</a></li>
+				<li class="line"></a></li>
+				<li><a href="AboutUs.html?page=1">联系我们</a></li>
+				<li class="line"></li>
+				<li><a href="AboutUs.html?page=2">招聘信息</a></li>
+				<li class="line"></li>
+				<li><a href="AboutUs.html?page=3">网站地图</a></li>
+				<li class="line"></li>
+				<li><a href="AboutUs.html?page=4">版权声明</a></li>
+			</ul>
+		</div>
+		<div class="footer_m clear">公司总机：021-88484678传真：021-88484118</div>
+		<div class="footer_b">版权所有：南京市招投标公共服务平台</div>
+	</div>
+</div>
+</body>
+</html>

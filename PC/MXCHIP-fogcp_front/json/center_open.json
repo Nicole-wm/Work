@@ -1,0 +1,19 @@
+{
+	"meta": {
+		"message": "已开通列表获取成功",
+		"code": 0
+	},
+	"data": [
+		{
+			"id": 1,
+			"title": "CP功能",
+			"description": "IP功能是xxxxxxxxxxx",
+			"url": "http://www.cpdescription.com/"
+		},{
+			"id": 2,
+			"title": "OTA功能",
+			"description": "OTA功能是xxxxxxxxxxx",
+			"url": "http://www.otadescription.com/"
+		}
+	]
+}

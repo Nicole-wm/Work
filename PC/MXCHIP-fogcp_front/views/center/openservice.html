@@ -1,0 +1,112 @@
+<div ng-controller="OpenServiceController">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="form-group col-lg-12"><h4 class="font-blue-steel">已开通业务</h4></div>
+			</div>
+			<div class="row" ng-show="OpensServiceCount==0">
+				<div class="form-group col-lg-12"><h4>暂无已开通业务</h4></div>
+			</div>
+			<div class="row search-content-3" ng-show="OpensServiceCount!=0">
+				<div class="col-md-2 col-sm-2 col-xs-6" ng-repeat="item in OpensService">
+					<div class="color-demo tooltips" data-toggle="modal" data-target="#modal_open_{{item.business.name}}">
+						<div class="color-view bg-blue-soft bg-font-blue-soft uppercase text-ellipsis" title="{{item.business.brief}}">{{item.business.name}}
+						</div>
+					</div>
+					<div class="modal fade" id="modal_open_{{item.business.name}}">
+						<div class="modal-dialog">
+							<div class="modal-content c-square">
+								<div class="modal-header">
+									<a id="modalCloseBtn" class="close" data-dismiss="modal" aria-hidden="true"></a>
+									<h4 class="modal-title">业务详情</h4>
+								</div>
+								<div class="modal-body">
+									<div class="portlet">
+										<div class="portlet-body form">
+											<form  class="form-horizontal" role="form" name="modaldetai_open">
+												<div class="form-group">
+													<label class="col-md-4 control-label">业务名</label>
+													<label class="col-md-6 control-label">
+														<span class=" pull-left">{{item.business.name}}</span>
+													</label>
+												</div>
+												<div class="form-group">
+													<label class="col-md-4 control-label">简介</label>
+													<label class="col-md-6 control-label pull-left"><span class=" pull-left">{{item.business.brief}}</span></label>
+												</div>
+												<div class="form-group">
+													<label class="col-md-4 control-label">介绍网址</label>
+													<label class="col-md-6 control-label pull-left"><span class="pull-left"><a href="{{item.introurl}}" target="_blank">{{item.business.introurl}}</a></span></label>
+												</div>
+												<div class="form-group">
+													<label class="col-md-4 control-label">业务状态</label>
+													<label class="col-md-6 control-label">
+														<span class=" pull-left">{{item.ischeckedText}}</span>
+													</label>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn red" ng-click="DoUnitFun(item,2)">关闭业务</button>
+									<button type="button" class="btn btn-default cancel" data-dismiss="modal">取消</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-lg-12"><h4 class="font-blue-steel">未开通业务</h4></div>
+			</div>
+			<div class="row" ng-show="ClosesServiceCount==0">
+				<div class="form-group col-lg-12"><h4>暂无未开通业务</h4></div>
+			</div>
+			<div class="row search-content-3" ng-show="ClosesServiceCount!=0">
+				<div class="col-md-2 col-sm-2 col-xs-6" ng-repeat="item in ClosesService">
+					<div class="color-demo tooltips" data-toggle="modal" data-target="#modal_close_{{item.name}}">
+						<div class="color-view bg-default bg-font-default uppercase text-ellipsis" title="{{item.brief}}">{{item.name}}
+						</div>
+					</div>
+					<div class="modal fade" id="modal_close_{{item.name}}">
+						<div class="modal-dialog">
+							<div class="modal-content c-square">
+								<div class="modal-header">
+									<a id="modalCloseBtn1" class="close" data-dismiss="modal" aria-hidden="true"></a>
+									<h4 class="modal-title">业务详情</h4>
+								</div>
+								<div class="modal-body">
+									<div class="portlet">
+										<div class="portlet-body form">
+											<form  class="form-horizontal" role="form" name="modaldetai_open">
+												<div class="form-group">
+													<label class="col-md-4 control-label">业务名</label>
+													<label class="col-md-6 control-label">
+														<span class=" pull-left">{{item.name}}</span>
+													</label>
+												</div>
+												<div class="form-group">
+													<label class="col-md-4 control-label">简介</label>
+													<label class="col-md-6 control-label pull-left"><span class=" pull-left">{{item.brief}}</span></label>
+												</div>
+												<div class="form-group">
+													<label class="col-md-4 control-label">介绍网址</label>
+													<label class="col-md-6 control-label pull-left"><span class="pull-left"><a href="{{item.introurl}}" target="_blank">{{item.introurl}}</a></span></label>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn blue-soft" ng-click="DoUnitFun(item,1)">开通业务</button>
+									<button type="button" class="btn btn-default cancel" data-dismiss="modal">取消</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

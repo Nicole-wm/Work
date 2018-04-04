@@ -1,0 +1,70 @@
+.mobilepublish{
+	display: none;
+}
+.col_id {
+	width:10%; 
+}
+.col_title{
+    width:15%; 
+}
+.col_keyno{
+	width:15%; 
+	word-wrap: break-word;
+}
+.col_type {
+	width:15%;
+	min-width: 305px;
+	min-width: 20px;
+}
+.col_cover_image {
+	width:15%;
+/* 	min-width: 182px; */
+}
+.col_publish{
+	width:7%;
+}
+.col_operation {
+	width:23%;
+}
+.mobileId,
+.mobileType,
+.mobileImage,
+.mobileTitle,
+.mobileKeyno,
+.mobilepublish,
+.mobileOperation{
+	display: none;
+ } 
+@media(max-width:768px) {
+.WrapContent {
+  height: 650px;
+  max-height: 650px;
+}
+
+.col_cover_image {
+	min-height: 256px;
+}
+.WrapContent > .col_cover_image:hover > img {
+	display: none;
+	-webkit-animation-name: "";
+	-moz-animation-name: "";
+	-o-animation-name: "";
+	-ms-animation-name: "";
+	animation-name: "";
+}
+.mobileId,
+.mobileType,
+.mobileImage,
+.mobileTitle,
+.mobileKeyno,
+.mobilepublish,
+.mobileOperation{
+    display: inline-block;
+    } 
+
+}
+@media(max-width:414px) {
+.mobilepublish{
+	display: inline-block;
+}
+}

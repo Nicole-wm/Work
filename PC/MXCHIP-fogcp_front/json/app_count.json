@@ -1,0 +1,19 @@
+{
+	"IsSuccess":true,
+	"Data":{
+		"DataArr1":[
+			{"name":"超级冰箱","value": "260"},
+			{"name":"可爱烤箱","value": "900"},
+			{"name":"热水器","value": "660"},
+			{"name":"电视","value": "200"},
+			{"name":"其他","value": "500"}
+		],
+		"DataArr2":[
+			{"name":"超级冰箱","value": "260"},
+			{"name":"可爱烤箱","value": "900"},
+			{"name":"热水器","value": "660"},
+			{"name":"电视","value": "200"},
+			{"name":"其他","value": "500"}
+		]
+	}
+}

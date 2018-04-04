@@ -1,0 +1,256 @@
+@charset "UTF-8";
+.clear{
+	clear: both;
+}
+.head>img,.petalBg>img,.maidRed>img{
+width: 100%;
+}
+.petal{
+	position: relative;
+}
+.petalBg{
+	position: absolute;
+	z-index: 99999;
+	width: 90%;
+	left: 4%;
+}
+.classroom{
+	position: absolute;
+	top: 15%;
+	width: 100%;
+	text-align: center;
+	color: #ff0054;
+
+}
+.maidRed{
+	position: absolute;
+	right: 0px;
+	top: 60px;
+	z-index: 9999;
+	width: 39%;
+}
+.textInfo{
+	top: 115px;
+	position: absolute;
+	width: 60%;
+	left: 4%;
+	height: 30px;
+    line-height: 30px;
+}
+.mainPoint{
+	background: #ff006c;
+	width: 128px;
+	height: 38px;
+	color: #ffffff;
+	line-height: 38px;
+	text-align: center;
+}
+.wrapDiv{
+	height: 320px;
+}
+.bigWordSize{
+	font-size: 1.625rem;
+}
+.smallWordSize{
+    font-size: 1rem;
+}
+.text{
+	font-size: 1rem;
+	width: 96%;
+	margin: 14px auto 52px auto;
+	height: 30px;
+    line-height: 30px;
+}
+.step{
+	height: 34px;
+	color: #ffffff;
+}
+#stepOne{
+	background: #ff4317;
+	
+}
+#stepTwo {
+  background: #ff4242;
+}
+.stepNum {
+float: left;
+	width: 30%;
+	margin-left: 15px;
+	line-height: 34px;
+}
+
+.stepName{
+   width: 66%;
+   float: right;
+   line-height: 34px;
+}
+.eyeMake-upImg{
+	float: left;
+	  width: 50%;
+
+}
+.eyeMake-upImg>img{
+	width: 100%;
+}
+.eyeMake-upInfo 
+{
+	float: right;
+	width: 44%;
+    margin-right: 12px;
+	margin-top: 16px;
+	line-height: 26px;
+}    
+
+.stepImg{
+	float: right;
+	width: 38%;
+		
+}
+.stepText {
+	float: left;
+	margin-top: 38px;
+    width: 60%;
+	margin-left: 2%; 
+	
+}
+.blusherBottomImg{
+	float: left;
+	width: 39%;
+}
+.blusherBottomInfo{
+	float: right;
+	margin-top: 55px;
+    margin-right: 2%;
+	  width: 59%;
+}
+.blusherImg >img{
+	width: 100%;
+}
+.blusherBottomImg>img{
+	width: 100%;
+}
+#stepThree{
+	background: #ff7e28;
+}
+.lipGlossImg {
+	width: 48%;
+}
+.lipGlossImg >img{
+	width: 100%;
+}
+.lipGlossInfo {
+	width: 46%;
+}
+.lastResult {
+  position: relative;
+}
+.allEffect {
+  position: absolute;
+  top: 4%;
+  width: 100%;
+  text-align: center;
+  color: #333333;
+  font-weight: 700;
+}
+.lastResult>img {
+  width: 100%;
+}
+
+
+@media (max-width: 375px){
+.smallWordSize{
+	font-size: 0.9375rem;
+}
+.maidRed {
+  width: 36%;
+}
+.textInfo {
+  width: 62%;
+}
+.bigWordSize{
+ font-size: 1.5rem;
+}
+.eyeMake-upImg {
+  width: 50%;
+}
+.eyeMake-upImg>img{
+	width: 100%;
+}
+.blusherBottomImg {
+  width: 37%;
+}
+.blusherBottomInfo {
+  width: 60%
+}
+}
+@media (max-width: 360px){
+.smallWordSize{
+  font-size: 0.875rem;
+}
+.bigWordSize{
+font-size: 1.437rem;
+}
+.stepNum {
+  width: 20%;
+}
+}
+@media (max-width: 320px){
+.smallWordSize{
+  font-size: 0.8125rem;
+}
+.bigWordSize{
+  font-size: 1.3125rem
+}
+.textInfo {
+	top: 85px;
+	width: 64%;
+	height: 25px;
+	line-height: 25px;
+}
+.maidRed {
+  top: 53px;
+  width: 35%;
+}
+.wrapDiv {
+  height: 240px;
+}
+.eyeMake-upImg {
+  width: 47%;
+}
+.eyeMake-upInfo {
+  width: 48%;
+  line-height: 20px;
+}
+.stepText {
+  width: 62%;
+  margin-top: 24px;
+}
+.stepImg {
+  width: 36%;
+}
+.stepImg >img{
+	width: 100%;
+}
+.blusherBottomImg {
+  width: 37%;
+}
+.blusherBottomImg>img{
+	width: 100%;
+}
+.blusherBottomInfo {
+  width: 61%;
+  margin-top: 30px;
+}
+.stepText {
+  width: 62%;
+}
+.lipGlossInfo {
+  width: 46%;
+}
+.lipGlossImg {
+	width: 50%;
+}
+.stepNum {
+	width: 20%;
+}
+}

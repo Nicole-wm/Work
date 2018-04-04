@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js" ng-app="FrangiApp"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js" ng-app="FrangiApp"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" ng-app="FrangiApp">
+<head>
+	<base href="/">
+	<title ng-bind="'FRANGI | ' + $state.current.data.pageTitle"></title> 
+	<title>FRANGI官方网站</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="icon" href="frangi.ico" type="image/x-icon">
+	<!-- pluginsCSS -->
+	<link rel="stylesheet" href="css/public.css"> 
+	<link rel="stylesheet" href="css/font-awesome.min.css"> 
+	<!-- pluginsJS -->   
+	<script src="js/plugins/angular.min.js"></script>
+	<script src="js/plugins/angular-ui-router.min.js"></script>   
+	<script src="js/plugins/ocLazyLoad.min.js"></script>  
+	<script src="js/plugins/jquery-3.2.1.min.js"></script>    
+	<script src="js/app.js?v=18040302"></script>     
+	<!--frangi.cn Baidu tongji analytics -->
+	<script src="js/baiduhm.js"></script> 
+	<script type="text/javascript">
+		if($(window).width()<='1024'){
+			var CurUrl="http://m.frangi.cn/";  
+			var hash = window.location.hash;
+			var CurPage=CurUrl+hash;
+			window.location = CurPage;
+		}
+	</script>
+</head>
+<body ng-controller="AppController">
+	<div class="page-wrapper"> 
+		<div class="page-top">
+			<div ng-include="'tpl/header.html'"></div> 
+		</div> 
+		<div class="page-content">
+			<div ui-view="" cache-view="false"></div>
+		</div>
+		<div class="page-bottom">
+			<div ng-include="'tpl/footer.html'"></div> 
+		</div>
+	</div>
+</body>
+</html>

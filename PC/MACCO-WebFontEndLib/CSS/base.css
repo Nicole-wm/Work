@@ -1,0 +1,65 @@
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+/*清除浏览器默认的一些样式*/
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    display: inline-block;
+    border-style: none;
+    vertical-align: bottom;
+}
+
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd {
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    list-style: none;	
+    font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", STHeiti, sans-serif;
+}
+
+.text::-ms-clear {
+    display: none;
+}
+
+::-ms-reveal {
+    display: none;
+}
+
+table {
+    table-layout: fixed;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+/*隐藏*/
+.hide {
+    display: none;
+}
+
+/*显示*/
+.show {
+    display: block;
+}
+
+.blank {
+    clear: both;
+    height: 20px;
+}
+

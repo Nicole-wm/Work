@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Macco Admin - Bootstrap Admin Template</title>
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/sb-admin.css" rel="stylesheet">
+	<link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="/css/common.css" rel="stylesheet">
+	<link href="/css/public.css" rel="stylesheet">
+	<link href="/css/connectProduct.css" rel="stylesheet">
+	<script type="text/javascript" src="/scripts/jquery.js"></script>
+	<script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/scripts/common.js"></script>
+	<script type="text/javascript" src="/scripts/Lib/node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-infinite-scroll.min.js"></script>
+	<script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-file-upload-all.js"></script>
+	<script type="text/javascript" src="/scripts/Lib/node_modules/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+	<script type="text/javascript" src="/scripts/app.js"></script>
+	<script type="text/javascript" src="/scripts/controllers/sidebarController.js"></script>
+	<script type="text/javascript" src="/scripts/controllers/Product/connectProductController.js"></script>
+	<script type="text/javascript" src="/scripts/controllers/Product/selectConnectProduct.js"></script>
+
+</head>
+<body>
+	<div id="wrapper">
+		<input type="hidden" ng-model="templateurl" ng-init="templateurl='/Sidebar.html'" />
+		<div id="nav" ng-include="templateurl"></div>
+		<div id="page-wrapper" style="float:right;" ng-controller="connectProductController">
+			<div class="container-fluid">
+				<!-- Page Heading -->
+				<div class="row">
+					<div class="col-lg-12">
+						<h1 class="page-header">品牌故事产品</h1>
+						<ol class="breadcrumb">
+							<li>
+								<i class="fa fa-dashboard"></i>
+								<a href="/index.html?Token={{Token}}">Macco Admin</a>
+							</li>
+							<li class="active">
+								<i class="fa fa-table"></i>品牌故事产品</li>
+							</ol>
+						</div>
+					</div>
+					<!-- /.row -->
+					<div class="row">
+						<div class="col-lg-6">
+							<div>
+								<h2 style="display:inline-block;">品牌故事产品列表</h2>
+								<button type="button" ng-click="this.AddNew(this.Token)" class="btn btn-primary" style="margin-bottom: 10px;margin-left: 20px;">新增</button>
+								<button type="button" ng-click="Submit()" class="btn btn-primary" style="margin-bottom: 10px;margin-left: 20px;">确定</button>
+								<button type="button" ng-click="ReturnBack(this.Token)" class="btn" style="margin-bottom: 10px;margin-left: 20px;">返回</button>
+							</div>
+							
+							<div class="DataContainer">
+								<div class="TableTitle">
+									<div class="col_id">唯一编码</div>
+									<div class="col_chinaName">中文名字</div>
+									<div class="col_cover_image_ban">图片</div>
+									<div class="con_operation">操作</div>
+								</div>
+								<div class="clearboth"></div>
+								
+								<div ng-repeat="item in items">
+									<div class="WrapContent">
+										<div class="col_id">
+											<span class="mobileId">唯一编码:</span>
+											<span ng-bind="item.KeyNo" ng-model="ID"></span>
+										</div>
+										<div class="col_chinaName">
+											<span class="mobilechinaName">中文名字:</span>
+											<span ng-bind="item.ProductCName" ng-model="ProductCName"></span>
+										</div>
+
+										<div class="col_cover_image_ban" >
+											<span class="mobileImage">品牌故事产品图片:</span>
+											<img ngf-select 
+											ng-model="item.StoryImage" 
+											ngf-src="item.StoryImage[0]" 
+											ngf-accept="'image/*'" style="background:url('{{item.ImageUrl}}');background-size:cover;cursor:pointer;">
+										</div>
+
+										<div class="con_operation">
+											<span class="mobileOperation">操作:</span>
+											<a ng-click="this.Delete(item.KeyNo)" class="btn btn-danger glyphicon glyphicon-trash"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.row -->
+					</div>
+					<!-- /.container-fluid -->
+				</div>
+				<!-- /#page-wrapper -->
+			</div>
+		</div>
+	</body>
+
+	</html>

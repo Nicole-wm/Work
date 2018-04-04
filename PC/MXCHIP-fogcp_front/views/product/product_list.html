@@ -1,0 +1,145 @@
+<div class="row">
+	<div class="col-md-12">
+		<!-- BEGIN Search Line -->
+		<div class="row">
+			<div class="form-group col-lg-3">
+				<div class="input-icon right">
+					<i ng-click="SearchProduct()" class="icon-magnifier"></i>
+					<input ng-model="Keyword" type="text" class="form-control" placeholder="请输入关键字"> 
+				</div>
+			</div>
+			<div class="form-group col-lg-3">
+				<select  ng-change="SearchProduct()" ng-model="ProCategory" ng-options="o.id as o.bigclass for o in ProCategorys" class="form-control">
+					<option value=""></option>
+				</select>
+			</div>
+			<div class="form-group col-lg-3">
+				<a ng-click="AddProduct()" class="btn bg-blue-steel bg-font-blue-steel">添加产品</a>
+			</div>
+		</div>
+		<!-- END Search Line -->
+		<!-- BEGIN:PRODUCT_LIST1 -->
+		<div class="row ">
+			<div class="form-group col-lg-12"><h4><i class="fa fa-square font-blue-steel"> 已上线 ({{ProductsOnlineCount}})</i></h4></div>
+		</div>
+		<div class="row" ng-show="ProductsOnlineCount===0">
+			<div class="form-group col-lg-12"><h4>暂无已上线产品</h4></div>
+		</div>
+		<div class="row search-content-3" ng-show="ProductsOnlineCount!==0">
+			<div class="col-md-4 col-sm-12" ng-repeat="product in ProductsOnline">
+				<div class="portlet blue-hoki box">
+					<div class="portlet-title">
+						<div class="caption" ng-mousedown="ProMouseDown(product.productid)" ng-mouseup="ProMouseUp(product.productid)"><span class="text-ellipsis" title="{{product.pname}}">产品名：{{product.pname}}</span></div>
+						<div class="actions">
+							<a ng-click="DataDumpFun(product.productid,product.istransfered)" class="btn btn-default btn-sm">
+								<i ng-show="!product.istransfered" class="fa fa-folder-o" title="开启数据转存"></i>
+								<i ng-show="product.istransfered" class="fa fa-folder" title="关闭数据转存"></i>
+							</a>
+							<a ng-click="DelectProFun(product.productid)" class="btn btn-default btn-sm">
+								<i class="fa fa-trash-o" title="删除"></i>
+							</a>
+						</div>
+					</div>
+					<div class="portlet-body" ng-mousedown="ProMouseDown(product.productid)" ng-mouseup="ProMouseUp(product.productid)"> 
+						<div class="row static-info">
+							<a>
+								<img ng-src="{{product.pic}}" style="width:100%"/>
+							</a>
+						</div>
+						<div class="row static-info">	
+							<div class="col-md-12">产品编号：{{product.productid}}</div>
+						</div>
+						<div class="row static-info">	
+							<div class="col-md-6"><p class="text-ellipsis" title="{{product.brand}}">品牌：{{product.brand}}</p></div>
+							<div class="col-md-6"><p class="text-ellipsis" title="{{product.model}}">型号：{{product.model}}</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END PRODUCT_LIST1 -->
+		<!-- BEGIN:PRODUCT_LIST2 -->
+		<div class="row ">
+			<div class="form-group col-lg-12"><h4><i class="fa fa-square-o "> 开发中 ({{ProductsDevelopCount}})</i></h4></div>
+		</div>
+		<div class="row" ng-show="ProductsDevelopCount===0">
+			<div class="form-group col-lg-12"><h4>暂无开发中产品</h4></div>
+		</div>
+		<div class="row search-content-3" ng-show="ProductsDevelopCount!==0">
+			<div class="col-md-4 col-sm-12" ng-repeat="product in ProductsDevelop">
+				<div class="portlet blue-hoki box">
+					<div class="portlet-title">
+						<div class="caption"><span class="text-ellipsis" title="{{product.pname}}">产品名：{{product.pname}}</span></div>
+						<div class="actions">
+							<a ng-click="DataDumpFun(product.productid,product.istransfered)" class="btn btn-default btn-sm">
+								<i ng-show="!product.istransfered" class="fa fa-folder-o" title="开启数据转存"></i>
+								<i ng-show="product.istransfered" class="fa fa-folder" title="关闭数据转存"></i>
+							</a>
+							<a ng-click="OnlineProFun(product.productid)" class="btn btn-default btn-sm">
+								<i class="fa fa-upload" title="上线"></i>
+							</a>
+							<a ng-click="DelectProFun(product.productid)" class="btn btn-default btn-sm">
+								<i class="fa fa-trash-o" title="删除"></i>
+							</a>
+						</div>
+					</div>
+					<div class="portlet-body">
+						<div class="row static-info">
+							<a ng-click="ProDetail(product.productid)">
+								<img ng-src="{{product.pic}}" style="width:100%"/>
+							</a>
+						</div>
+						<div class="row static-info">	
+							<div class="col-md-12">产品编号：{{product.productid}}</div>
+						</div>
+						<div class="row static-info">	
+							<div class="col-md-6"><p class="text-ellipsis" title="{{product.brand}}">品牌：{{product.brand}}</p></div>
+							<div class="col-md-6"><p class="text-ellipsis" title="{{product.model}}">型号：{{product.model}}</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END PRODUCT_LIST2 -->
+		<!-- BEGIN:PRODUCT_LIST3 -->
+		<div class="row ">
+			<div class="form-group col-lg-12"><h4><i class="fa fa-square-o "> 审核中 ({{ProductsPendingCount}})</i></h4></div>
+		</div>
+		<div class="row" ng-show="ProductsPendingCount===0">
+			<div class="form-group col-lg-12"><h4>暂无审核中产品</h4></div>
+		</div>
+		<div class="row search-content-3" ng-show="ProductsPendingCount!==0">
+			<div class="col-md-4 col-sm-12" ng-repeat="product in ProductsPending">
+				<div class="portlet blue-hoki box">
+					<div class="portlet-title">
+						<div class="caption"><span class="text-ellipsis" title="{{product.pname}}">产品名：{{product.pname}}</span></div>
+						<div class="actions">
+							<a ng-click="DataDumpFun(product.productid,product.istransfered)" class="btn btn-default btn-sm">
+								<i ng-show="!product.istransfered" class="fa fa-folder-o" title="开启数据转存"></i>
+								<i ng-show="product.istransfered" class="fa fa-folder" title="关闭数据转存"></i>
+							</a>
+							<a ng-click="DelectProFun(product.productid)" class="btn btn-default btn-sm">
+								<i class="fa fa-trash-o" title="删除"></i>
+							</a>
+						</div>
+					</div>
+					<div class="portlet-body">
+						<div class="row static-info">
+							<a href="#/product/product_details.html?ID={{product.productid}}">
+								<img ng-src="{{product.pic}}" style="width:100%"/>
+							</a>
+						</div>
+						<div class="row static-info">	
+							<div class="col-md-12">产品编号：{{product.productid}}</div>
+						</div>
+						<div class="row static-info">	
+							<div class="col-md-6"><p class="text-ellipsis" title="{{product.brand}}">品牌：{{product.brand}}</p></div>
+							<div class="col-md-6"><p class="text-ellipsis" title="{{product.model}}">型号：{{product.model}}</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END PRODUCT_LIST3 -->
+	</div>
+</div>

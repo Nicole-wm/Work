@@ -1,0 +1,68 @@
+.mobilepublish{
+	display: none;
+}
+.col_id {
+	width:10%; 
+}
+.col_name{
+  width:10%; 
+}
+.col_role {
+  width:10%; 
+}
+.col_type {
+  width:10%; 
+}
+.col_des {
+  width:10%; 
+}
+.col_state {
+  width:10%; 
+}
+.col_operating {
+  width:10%; 
+}
+.col_ip {
+  width:10%; 
+}
+.col_time {
+	width:10%; 
+}
+.col_operation{
+    width:10%; 
+}
+.mobileId,
+.mobileName,
+.mobileRole,
+.mobileType,
+.mobileDes,
+.mobileState,
+.mobileOperating,
+.mobileIP,
+.mobileTime,
+.mobileOperation{
+	display: none;
+ } 
+@media(max-width:768px) {
+.WrapContent {
+  height: 650px;
+  max-height: 650px;
+}
+.mobileId,
+.mobileName,
+.mobileRole,
+.mobileType,
+.mobileDes,
+.mobileState,
+.mobileOperating,
+.mobileIP,
+.mobileTime,
+.mobileOperation{
+    display: inline-block;
+} 
+}
+@media(max-width:414px) {
+.mobilepublish{
+	display: inline-block;
+}
+}

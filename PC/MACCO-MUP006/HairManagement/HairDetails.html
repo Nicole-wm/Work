@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/sb-admin.css" rel="stylesheet">   
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/common.css" rel="stylesheet" type="text/css" >
+    <link href="/css/uniform.css" rel="stylesheet" type="text/css" >
+    <link href="/css/public.css" rel="stylesheet">
+    <link href="/css/HairDetails.css" rel="stylesheet">
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/common.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-infinite-scroll.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-file-upload-all.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/dotImage.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/sidebarController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/Hair/HairDetail.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Sidebar.html'" />
+        <div id="nav" ng-include="templateurl"></div>
+        <div id="page-wrapper" ng-controller="HairDetailController">
+            <div class="container-fluid">
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            发型详情{{OperationType}}
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>  
+                                <a href="index.html">Macco Admin</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-table"></i> 发型详情{{OperationType}}
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div><h2 style="display:inline-block;">发型详情{{OperationType}}:</h2>
+                        </div>
+                    </div>
+                </div>
+                <form role="form" name="HairDetail" class="form-horizontal">
+                    <div class="HairDiv">
+                        <div class="form-group">
+                            <label>标题：</label>
+                            <div class="textipt" style="width: 40.95%;">
+                                <input name="Title" class="form-control" id="titleName" ng-model="Title" required ng-required="canEdit" ng-disabled="!canEdit">
+                            </div>
+                            <label ng-show="HairDetail.Title.$error.required" id="informationalert" class="formalert">*&nbsp;请填写标题</label>
+                        </div>
+                        <div class="SmallImage form-group">
+                            <label>提示图:</label>
+                            <img ngf-select ng-disabled="!canEdit" ng-model="SmallImg" ngf-src="SmallImg[0]" ngf-accept="'image/*'" ng-src="{{SmallImgUrl}}" style="width:150px;height:150px"></img>
+                            <img ng-model="SmallImg" ngf-src="SmallImg[0]" style="display:none;"/>
+                            <input type="hidden" ng-model="SmallImg[0].name" name="SmallImg" required ng-required="NeedSmallImg">
+                            <label ng-show="HairDetail.SmallImg.$error.required" id="informationalert" class="formalert">*&nbsp;请选择图片</label>
+                        </div>
+
+                        <div class="BigImage form-group">
+                            <label>效果图:</label>
+                            <button class="btn btn-primary" ng-show="chooseImg" ng-click="BtnUploadimage(1)">选择图片</button>
+                            <button class="btn" id="UndoBtn1" style="display:none" ng-click="UndoToDraw(1)">撤销上一步</button>
+                            <button class="btn" id="ReDrawBtn1" style="display:none" ng-click="ReToCanvas(1)">清空所有</button>
+                            <input type="file" ng-model="BigImgUrl"  id="ImgFile1" style="display:none"  accept="image/*"></br></br>
+                            <dot-Image class="DotImage" dots="Dots" imageurl="BigImgUrl" ng-click="AddDot($event,1)" ng-disabled="!canEdit"></dot-Image>
+                        </div>
+                        <div class="form-group">
+                            <label>效果图特征点：</label>
+                            <label ng-show="HairDetail.Feature1.$error.required||HairDetail.Feature2.$error.required||HairDetail.Feature3.$error.required||HairDetail.Feature4.$error.required||HairDetail.Feature5.$error.required||HairDetail.Feature6.$error.required||HairDetail.Feature7.$error.required" id="informationalert" class="formalert">*&nbsp;请输入特征点</label>
+                            <div style="margin:20px 50px;height:40px;clear:both">
+                                <span style="float:left">额头：</span>
+                                <input ng-model="Feature1" name="Feature1" type="text" class="form-control" style="width:100px;float:left"  required ng-required="canEdit" ng-blur="ISNumber(1,Feature1)"  ng-disabled="!canEdit"> 
+                            </div>
+                            <div style="margin:20px 50px;height:40px;clear:both">
+                                <span style="float:left">左上耳：</span>
+                                <input ng-model="Feature2" name="Feature2" type="text" class="form-control" style="width:100px;float:left"  required ng-required="canEdit" ng-blur="ISNumber(1,Feature2)"  ng-disabled="!canEdit"> 
+                                <span style="float:left;margin-left:20px">左下耳：</span>
+                                <input ng-model="Feature3" name="Feature3" type="text" class="form-control" style="width:100px;float:left"  required ng-required="canEdit" ng-blur="ISNumber(1,Feature3)"  ng-disabled="!canEdit"> 
+                                <span style="float:left;margin-left:20px">左上脸颊：</span>
+                                <input ng-model="Feature4" name="Feature4" type="text" class="form-control" style="width:100px;float:left"  required ng-required="canEdit" ng-blur="ISNumber(1,Feature4)"  ng-disabled="!canEdit"> 
+                            </div>
+                            <div style="margin:20px 50px;height:40px;clear:both">
+                                <span style="float:left">右上耳：</span>
+                                <input ng-model="Feature5" name="Feature5" type="text" class="form-control" style="width:100px;float:left"  required ng-required="canEdit" ng-blur="ISNumber(1,Feature5)"  ng-disabled="!canEdit"> 
+                                <span style="float:left;margin-left:20px">右下耳：</span>
+                                <input ng-model="Feature6" name="Feature6" type="text" class="form-control" style="width:100px;float:left"  required ng-required="canEdit" ng-blur="ISNumber(1,Feature6)"  ng-disabled="!canEdit"> 
+                                <span style="float:left;margin-left:20px">右上脸颊：</span>
+                                <input ng-model="Feature7" name="Feature7" type="text" class="form-control" style="width:100px;float:left"  required ng-required="canEdit" ng-blur="ISNumber(1,Feature7)"  ng-disabled="!canEdit"> 
+                            </div>
+                        </div>
+                        <div class="BigImage form-group">
+                            <label>距离图:</label>
+                            <button class="btn btn-primary" ng-show="chooseImg2" ng-click="BtnUploadimage(2)">选择图片</button>
+                            <button class="btn" id="UndoBtn2" style="display:none" ng-click="UndoToDraw(2)">撤销上一步</button>
+                            <button class="btn" id="ReDrawBtn2" style="display:none" ng-click="ReToCanvas(2)">清空所有</button>
+                            <input type="file" ng-model="SpecImage"  id="ImgFile2" style="display:none"  accept="image/*"></br></br>
+                            <dot-Image class="DotImage" dots="DisDots" imageurl="SpecImage" ng-click="AddDot($event,2)" ng-disabled="!canEdit"></dot-Image>
+                        </div>
+                        <div class="form-group">
+                            <label>距离图特征点：</label>
+                            <label ng-show="HairDetail.Distance1.$error.required||HairDetail.Distance2.$error.required||HairDetail.Distance3.$error.required||HairDetail.Distance4.$error.required||HairDetail.Distance5.$error.required||HairDetail.Distance6.$error.required||HairDetail.Distance7.$error.required" class="formalert">*&nbsp;请输入特征点</label>
+                            <div style="margin:20px 50px;height:40px;clear:both">
+                                <span style="float:left">左眼：</span>
+                                <input ng-model="Distance1" name="Distance1" type="text" class="form-control" style="width:100px;float:left"  required ng-required="canEdit" ng-blur="ISNumber(2,Distance1)"  ng-disabled="!canEdit"> 
+                                <span style="float:left;margin-left:20px">右眼：</span>
+                                <input ng-model="Distance2" name="Distance2" type="text" class="form-control" style="width:100px;float:left"  required ng-required="canEdit" ng-blur="ISNumber(2,Distance2)"  ng-disabled="!canEdit"> 
+                            </div>
+                            <div style="margin:20px 50px;height:40px;clear:both">
+                                <span style="float:left">左嘴：</span>
+                                <input ng-model="Distance3" name="Distance3" type="text" class="form-control" style="width:100px;float:left"  required ng-required="canEdit" ng-blur="ISNumber(2,Distance3)"  ng-disabled="!canEdit"> 
+                                <span style="float:left;margin-left:20px">右嘴：</span>
+                                <input ng-model="Distance4" name="Distance4" type="text" class="form-control" style="width:100px;float:left"  required ng-required="canEdit" ng-blur="ISNumber(2,Distance4)"  ng-disabled="!canEdit"> 
+                            </div>
+                            <div style="margin:20px 50px;height:40px;clear:both">
+                                <span style="float:left">左脸：</span>
+                                <input ng-model="Distance5" name="Distance5" type="text" class="form-control" style="width:100px;float:left"  required ng-required="canEdit" ng-blur="ISNumber(2,Distance5)"  ng-disabled="!canEdit"> 
+                                <span style="float:left;margin-left:20px">右脸：</span>
+                                <input ng-model="Distance6" name="Distance6" type="text" class="form-control" style="width:100px;float:left"  required ng-required="canEdit" ng-blur="ISNumber(2,Distance6)"  ng-disabled="!canEdit">
+                            </div> 
+                            <div style="margin:20px 50px;height:40px;clear:both">
+                                <span style="float:left">额头：</span>
+                                <input ng-model="Distance7" name="Distance7" type="text" class="form-control" style="width:100px;float:left"  required ng-required="canEdit" ng-blur="ISNumber(2,Distance7)"  ng-disabled="!canEdit"> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" ng-show="canEdit" ng-disabled="!HairDetail.Title.$valid||!HairDetail.SmallImg.$valid"class="btn btn-primary" ng-click="Submit()">提交</button>
+                        <button class="btn"   ng-click="ReturnBack()">返回</button>
+                    </div>
+                </form>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+</body>
+
+</html>

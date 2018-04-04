@@ -1,0 +1,65 @@
+
+.col_id {
+	width: 9%; 
+
+}
+.col_name {
+	width: 12%;
+	min-width: 305px;
+	min-width: 20px;
+	white-space: nowrap; text-overflow:ellipsis ;
+}
+.col_cover_image {
+	width: 19%;
+}
+.col_view {
+	width: 10%;
+}
+.col_likes {
+	width: 10%;
+}
+.col_operation {
+	width: 20%;
+}
+.col_description{
+   width:20%;
+}
+.mobileId,
+.mobileName,
+.mobileDescription,
+.mobileImage,
+.mobileView,
+.mobileLikes,
+.mobileOperation{
+	display: none;
+
+}
+
+@media(max-width:768px) {
+	.WrapContent {
+		height: 510px;
+		max-height: 510px;
+	}
+	.col_cover_image {
+		min-height: 256px;
+	}
+	.WrapContent > .col_cover_image:hover > img {
+		display: none;
+		-webkit-animation-name: "";
+		-moz-animation-name: "";
+		-o-animation-name: "";
+		-ms-animation-name: "";
+		animation-name: "";
+	} 
+	.mobileId,
+	.mobileTitle,
+	.mobileImage,
+	.mobileRead,
+	.mobileLikes,
+	.mobileCreatTime,
+	.mobileDescription,
+	.mobileOperation {
+		display: inline-block;
+	} 
+	
+}

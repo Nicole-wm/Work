@@ -1,0 +1,76 @@
+.pull-down{
+	margin-left: 10px;
+}
+.mobilepublish{
+	display: none;
+}
+.col_id {
+	width:10%; 
+}
+.col_title {
+	width:18%;
+}
+.col_keyno{
+	width:12%;
+	word-wrap: break-word;
+}
+.col_cover_image {
+	width:15%;
+}
+.col_publish{
+    width:5%;
+}
+.col_publish_time {
+	width:10%;
+}
+.col_operation {
+	width:20%;
+}
+.col_platform{
+	width: 10%;
+}
+.mobileId,
+.mobileTitle,
+.mobileImage,
+.mobileKeyno,
+.mobilePublishTime,
+.mobilePlatform,
+.mobileOperation{
+	display: none;
+ } 
+@media(max-width:768px) {
+.WrapContent {
+  height: 650px;
+  max-height: 650px;
+}
+
+.col_cover_image {
+	min-height: 256px;
+}
+.WrapContent > .col_cover_image:hover > img {
+	display: none;
+	-webkit-animation-name: "";
+	-moz-animation-name: "";
+	-o-animation-name: "";
+	-ms-animation-name: "";
+	animation-name: "";
+}
+.mobileId,
+.mobileTitle,
+.mobileImage,
+.mobileKeyno,
+.mobileJoin,
+.mobileStartTime,
+.mobileTerminalTime,
+.mobilePublishTime,
+.mobilePlatform,
+.mobileOperation{
+    display: inline-block;
+    } 
+
+}
+@media(max-width:414px) {
+.mobilepublish{
+	display: inline-block;
+}
+}

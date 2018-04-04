@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="maccoApp">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>产品详情</title>
+	<style>
+		@font-face {
+			font-family: 'youyuan';
+			src: url(data:font/ttf;base64,FONTBASE64) format('truetype');
+		}
+	</style>
+	<link href="css/productdetail.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script> 
+	<script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="/JS/node_modules/angular/ng-infinite-scroll.min.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/productDetailController.js" charset="UTF-8"></script>
+</head>
+<body ng-controller="productDetailController">
+	<div class="page">
+		<div class="top">
+			<div class="back" id="back" ng-click="GoBack()"><img src="image/back_pink.png" ng-hide="imgBackHide"></div>
+		</div>
+		<div class="p_content">
+		<div class="product">
+			<div class="product_image">
+				<img ng-src="{{Product.ProductImageUrl}}">
+			</div>
+			<div class="product_title">
+				<div class="pink_title" ng-bind="Product.ProductName">
+
+				</div>
+				<div class="zan_start">
+					<div class="starts">
+						<img ng-repeat="star in item.FullStars" src="image/start3.png">
+						<img ng-repeat="star in item.HalfStars" src="image/start2.png">
+						<img ng-repeat="star in item.EmptyStars" src="image/start1.png">
+					</div>
+					<span ng-bind="RankPercent"></span>
+				</div>
+			</div>
+		</div>
+		<div class="product_description">
+			<div class="de_title">产品说明
+			</div>
+			<table class="product_table">
+				<tr>
+					<td>名称</td>
+					<td ng-bind="Product.ProductName"></td>
+				</tr>
+				<tr>
+					<td>分类</td>
+					<td ng-bind="Product.CategoryName"></td>
+				</tr>
+				<tr>
+					<td>规格</td>
+					<td ng-bind="Product.Specification"></td>
+				</tr>
+				<tr>
+					<td>上市时间</td>
+					<td ng-bind="Product.OnMarketTime"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="Product_details">
+			<div class="de_title">产品详情
+			</div>
+			<div class="de_content" ng-bind="Product.Description">
+
+			</div>
+		</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="" ng-app="maccoApp">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>美的你-扒一扒各国皇室美人们都在用什么...</title>
+    <style>
+        @font-face {
+            font-family: 'youyuan';
+            src: url(data:font/ttf;base64,FONTBASE64) format('truetype');
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../public/boilerplate.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../public/comment.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../public/video.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="zx.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../public/publicComment.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../public/zan.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../public/imageLazyLoad.css" charset="utf-8">
+    <script type="text/javascript" src="/JS/config.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/ng-infinite-scroll.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/infoController.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/CommentCtrl.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/ZanCtrl.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/respond.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/imageLazyLoad.js"></script>
+</head>
+
+<body ng-controller="InformationController">
+    <div class="">
+        <div id="LayoutDiv1" class="container">
+            <div class="banner">
+                <img src="banner.jpg">
+            </div>
+            <div id="mainTitle">扒一扒各国皇室美人们都在用什么...</div>
+            <input type="hidden" ng-model="zanurl" ng-init="zanurl='/Info/zan.html'" />
+            <div id="add_zan" ng-include="zanurl"></div>
+            <div class="detail">好奇心是女人的天性，所以……今天我们要来扒的是，那些高、大、上的皇室御用妆品。
+            </div>
+            <div class="wrapIntroduceDiv">
+                日本皇室：THE GINZA
+            </div>
+            <div class="ProductImages"><img bn-lazy-src="1.jpg" src="../images/imageLoading.png"></div>
+            <div class="detail"> 资生堂隐藏大BOSS: THE GINZA 银座系列，最初是针对日本皇室研发的。THE GINZA看似简单的八件单品凝聚了资生堂最顶级的保养科技。</div>
+            <div class="wrapIntroduceDiv">
+                摩纳哥王妃：Lancaster
+            </div>
+            <div class="ProductImages"><img bn-lazy-src="2.jpg" src="../images/imageLoading.png"></div>
+            <div class="detail"> 1970年，兰嘉丝汀(Lancaster)为摩纳哥格蕾丝王妃量身定做专属护肤、彩妆系列，正式成为摩纳哥皇室御用护肤品牌。近半个世纪过来，照旧深得摩纳哥皇室钟情。</div>
+
+            <div class="wrapIntroduceDiv">
+                欧洲皇室：娇兰
+            </div>
+            <div class="ProductImages"><img bn-lazy-src="3.jpg" src="../images/imageLoading.png"></div>
+            <div class="detail">在1828年，身为医生和药剂师的法国青年开创造了“法国娇兰”品牌，并在巴黎Rue de Rivoli开设了第一家店。一个关乎全球美容界的美丽传奇自此展开，并在以后的岁月里，不断地演绎出令人惊喜震撼的美容佳作，也就此展开了与欧洲皇室的悠远渊源。</div>
+            <div class="wrapIntroduceDiv">
+                约瑟芬皇后：VIICODE
+            </div>
+            <div class="ProductImages"><img bn-lazy-src="4.jpg" src="../images/imageLoading.png"></div>
+            <div class="detail"> 据说，美容配方VII CODE是奥地利国王作为礼物敬献给拿破仑的约瑟芬皇后，年过半百的约瑟芬使用神秘配方后竟变得比自己的女儿还要年轻，创造了“不老的神话传说”。</div>
+            <div class="wrapIntroduceDiv">
+                西班牙皇室：Natura Bisse
+            </div>
+            <div class="ProductImages"><img bn-lazy-src="5.jpg" src="../images/imageLoading.png"></div>
+            <div class="detail"> Natura Bisse曾只为西班牙皇室提供。因为高昂的价格，那时只有好莱坞的名人消费的起而从好莱坞传播出来，直到现在全球的消费能力增长到承受的住，Natura Bisse的皇室奢华才开始扩展蔓延。</div>
+            <div class="wrapIntroduceDiv">
+                英国皇室：Royal Nectar
+            </div>
+            <div class="ProductImages"><img bn-lazy-src="6.jpg" src="../images/imageLoading.png"></div>
+            <div class="detail"> Royal Nectar蜂毒面膜因英国皇室钟爱而声名大噪，相信应该有许多美妞用过，来来来，快来分享一下拥有皇室同款的感受~</div>
+            <div class="wrapIntroduceDiv">
+                匈牙利皇室：Omorovicza
+            </div>
+            <div class="ProductImages"><img bn-lazy-src="7.jpg" src="../images/imageLoading.png"></div>
+            <div class="detail">匈牙利皇室顶级保养品牌，omorovicza的深层清洁面膜是其明星产品，多次获得清洁面膜大奖，非常温和，极其敏感的皮肤和孕妇都可以使用。</div>
+            <div class="wrapIntroduceDiv">
+                泰国皇室：Panpuri
+            </div>
+            <div class="ProductImages"><img bn-lazy-src="8.jpg" src="../images/imageLoading.png"></div>
+            <div class="detail">泰国皇室御用第一品牌Panpuri是泰国SPA产品中的顶级产品，从洗发水到面部化妆水、润唇膏 ，还有身体乳、按摩油 、冲凉液 ，以及手脚用磨砂、指甲润手乳等都有。很多五星级酒店包括Mandarin Oriental 、Four
+                Seasons 、Conrad 或者Sukhothai内的Spa都指定用它提供各式疗程 。</div>
+            <div class="countText">皇室同款什么的，我就静静的围观就好...卖俩儿肾才买得起的面霜什么的，我一点也不（mai）想（bu）要（qi）呢</div>
+        </div>
+    </div>
+    <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Info/comments.html'" />
+    <div id="add_comment" ng-include="templateurl"></div>
+</body>
+
+</html>

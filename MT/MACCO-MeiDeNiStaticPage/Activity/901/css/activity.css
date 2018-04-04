@@ -1,0 +1,201 @@
+@charset "UTF-8";
+.RelatedImg>img{
+width: 100%;
+}
+.time{
+	font-size: 0.828125rem;
+	margin-left: 12px;
+}
+.theme{
+    text-align: center;
+    color: #000000;
+}
+.bigSize{
+  font-size: 1.104375rem;
+  line-height: 24px;
+}
+.smallSize{
+  font-size: 0.9rem;
+}
+.relatedPictures>img{
+  width: 100%;
+}
+.cheek{
+  text-align: center;
+  margin-top: 9px;
+}
+.cheek>img{
+  width: 45%;
+  margin-right: 5px;
+}
+.relatedPictures{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 9px;
+}
+.introduce{
+  color: #999999;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+.luckyPersonList {
+  width: 100%;
+  text-align: center;
+}
+.luckyPerson>img {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  position: relative;
+  left: 20px;
+  top: 6px;
+}
+.luckyPersonName {
+  display: inline-block;
+  height: 2em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #f96e57;
+  border-bottom-left-radius: 1em;
+  max-width: 85%!important;
+  padding-right: 4px;
+  padding-left: 24px;
+  position: relative;
+  width: 100px;
+}
+.luckyPersonName:before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-top: 1.82em;
+  border-radius: 100%;
+  background-color: #f96e57;
+  right: 0;
+}
+.introduce>.MaskName{
+  color: #ff0000;
+  display: inline-block;
+}
+.comparison{
+  width: 80%;
+}
+.actionRule {
+  margin-top: 40px;
+  margin-left: 2%;
+  margin-bottom: 12px;
+  color: #ff4a83;
+}
+.one {
+  margin-bottom: 22px;
+}
+.step {
+  color: #5c5c5c;
+  margin-left: 2%;
+}
+.smallSize {
+ font-size: 0.85rem;
+}
+.smallSize>div{
+  line-height: 24px;
+}
+.join {
+  width: 75px;
+  height: 25px;
+  display: inline-block;
+  color: #ffffff;
+  background: #ff4a83;
+  margin-left: 6px;
+  text-align: center;
+  margin-right: 6px;
+  line-height: 25px;
+}
+.RulePictures{
+    width: 90%;
+    margin: 20px auto;
+}
+.RulePictures>img{
+  width: 100%;
+  
+}
+.prize {
+  margin-left: 2%;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  color: #ff4a83;
+}
+.prizePictrue{
+      margin-top: 10px;
+}
+.prizePictrue>img{
+    width: 100%;
+}
+.MaskNum{
+  margin-left: 10px;
+  margin-right: 30px;
+  
+}
+.Mask>div{
+    margin-left: 14px;
+}
+.MaskIntroduce{
+   color: #999999;
+}
+.MaskIntroduce>div{
+  margin-left: 10px;
+}
+.bottomText{
+  text-align: center;
+  margin-top: 30px;
+}
+.copyright{
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 0.75rem;
+}
+.headPortrait>img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 8px;
+}
+.WrapHead{
+  width: 86%;
+  margin: 0 auto;
+}
+.footer_blank {
+  height: 0px;
+}
+@media (max-width: 375px){
+.surplusDay {
+  width: 18%;
+}
+.smallSize {
+  font-size: 0.8rem;
+}
+.headPortrait>img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+}
+@media (max-width: 360px){
+.smallSize {
+  font-size: 0.76rem;
+}
+.headPortrait>img {
+  width: 37px;
+  height: 37px;
+}
+}
+
+@media (max-width: 320px){
+  .likeNum{
+      margin-top: 6px;
+  }
+.surplusDay {
+  width: 22%;
+}
+}

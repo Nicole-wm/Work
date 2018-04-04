@@ -1,0 +1,78 @@
+.ProductName
+{
+    -ms-transform: skew(-35deg);
+    -moz-transform: skew(-35deg);
+    -webkit-transform: skew(-35deg);
+    -o-transform: skew(-35deg);
+    transform: skew(-35deg);
+    padding-top: 3px;
+    border-right: 1px solid rgb(249, 110, 87);
+    border-left: 1px solid rgb(249,110,87);
+    width: 90%;
+    margin: 0 auto;
+    height: 20px;
+}
+.round{
+    position: relative;
+}
+.round:before{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: rgb(249, 110, 87);
+    left: 24px;
+}
+.round:after{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: rgb(249, 110, 87);
+    right: 26px;
+}
+.Name{
+  margin-top: -20px;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(249, 110, 87);
+}
+.ProductImages
+{
+    margin-bottom: 10px;
+}
+.footer {
+  z-index: 999999;
+}
+.groomPersonDiv{
+   margin-bottom: 20px;
+   margin-left: 10px;
+}
+.groomNum{
+    display: inline-block;
+    border: 1px solid rgb(249, 110, 87);
+    border-left: none; 
+    padding: 3px;
+    font-size: 0.8125em;
+}
+.groomPerson{
+    display: inline-block;
+    border: 1px solid rgb(249, 110, 87);
+    border-left: none;
+    border-right: none;
+    position: relative;
+    left: -10px;
+    padding: 3px;
+    font-size: 0.8125em;
+}
+@media(max-width:320px) {
+  .round:after {
+    right: 24px;
+}
+.round:before {
+  left: 20px;
+}
+}

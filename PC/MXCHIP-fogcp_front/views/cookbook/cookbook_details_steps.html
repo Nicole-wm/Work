@@ -1,0 +1,109 @@
+<div class="row" ng-controller="CookBookDetailsStepsController">
+	<div class="col-md-12">
+		<!-- BEGIN 步骤详情-->
+		<div class="portlet light bordered">
+			<div class="portlet-title">
+				<div class="table-toolbar">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="color-demo tooltips btn bg-blue-steel bg-font-blue-steel" data-original-title="点击添加步骤" data-toggle="modal" data-target="#myModal_step" ng-click="ClearForm()">添加操作步骤
+							</div>
+						</div>
+					</div>
+				</div> 
+				<div class="portlet-body">
+					<table class="table table-bordered table-hove">
+						<thead>
+							<tr>
+								<th> 步骤顺序 </th>
+								<th> 步骤图片 </th>
+								<th> 步骤说明 </th>
+								<th> 数据操作 </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="item in CBStepArr">
+								<td> {{item.Name}} </td>
+								<td>
+									<img ng-src="{{item.ImageUrl}}" alt="">
+								</td>
+								<td> {{item.Instruction}} </td>
+								<td>
+									<a data-toggle="modal" data-target="#myModal_step" class="btn bg-green-soft bg-font-green-soft btn-sm" ng-click="EditCBFun(item.ID)"> 编辑 </a>
+									<a class="btn bg-red bg-font-red btn-sm" ng-click="DeleteCBFun(item.ID)"> 删除 </a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- END 步骤详情-->
+		</div>
+	</div>
+	<div class="col-md-12">
+		<!-- BEGIN 步骤详情弹框-->
+		<input type="hidden" id="myModal_step_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_step">
+		<div id="myModal_step" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<a href="javascript:;" class="close" data-dismiss="modal" aria-hidden="true"></a>
+						<h4 class="modal-title">食谱原料</h4>
+					</div>
+					<div class="modal-body">
+						<div class="portlet">
+							<div class="portlet-body form">
+								<!-- BEGIN FORM-->
+								<form class="horizontal-form" name="CBFormula">
+									<input type="reset" id="FormReset" hidden="true">
+									<div class="form-body">
+										<div class="form-group row">
+											<div class="col-md-1"></div>
+											<label class="col-md-2 control-label">步骤顺序<span class="required"> * </span></label>
+											<div class="col-md-8">
+												<input ng-model="ModalName" name="ModalName"  type="text" class="form-control" placeholder="必填" required>
+											</div>
+										</div>
+										<div class="form-group row">
+											<div class="col-md-1"></div>
+											<label class="col-md-2 control-label">步骤图片<span class="required"> * </span></label>
+											<div class="col-md-8">
+												<div class="fileinput fileinput-new" data-provides="fileinput">
+													<div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+													<img id="ModalImageUrlId" ng-src="{{ModalImageUrl}}" alt="" /> 
+													</div>
+													<div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> 
+													</div>
+													<div>
+														<span class="btn default btn-file">
+															<span class="fileinput-new"> 选择图片 </span>
+															<span class="fileinput-exists"> 更换 </span>
+															<input type="file" name="..."> </span>
+															<a href="#" class="btn red fileinput-exists" data-dismiss="fileinput"> 删除 </a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group row">
+											<div class="col-md-1"></div>
+											<label class="col-md-2 control-label">步骤说明</label>
+											<div class="col-md-8">
+												<textarea name="ModalInstruction" ng-model="ModalInstruction" class="form-control" rows="3" ></textarea>
+											</div>
+										</div>
+										<div class="form-actions right">
+											<button type="button" class="btn btn-primary ok"  ng-disabled="!CBFormula.ModalName.$valid" type="submit" ng-click="EditFormulaFun()" >确认</button>
+											<button type="button" class="btn btn-default cancel" data-dismiss="modal">取消</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END 步骤详情弹框-->
+	</div>
+</div>

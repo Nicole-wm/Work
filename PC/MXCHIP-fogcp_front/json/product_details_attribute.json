@@ -1,0 +1,8 @@
+{
+	"IsSuccess":true,
+	"Data":[
+		{"ID":1,"ParaIdentifier": "KG_Light","ParaName":"炉灯开关","ParaKey":2,"ParaType":3,"Units":"","Minvalue":"0","Maxvalue":"1","Symbol":"","IsModify":1,"ParaDescription":"0=关，1=开","KeyArr":[{"KeyName":"asd","KeyValue":"123"},{"KeyName":"zxc","KeyValue":"789"}]},
+		{"ID":2,"ParaIdentifier": "KG_Fan","ParaName":"通风开关","ParaKey":1,"ParaType":2,"Units":"min","Minvalue":"1","Maxvalue":"2","Symbol":"","IsModify":0,"ParaDescription":"0=关，1=开","KeyArr":[{"KeyName":"KGZL","KeyValue":"1010"}]},
+		{"ID":3,"ParaIdentifier": "KG_Turn","ParaName":"转叉开关","ParaKey":3,"ParaType":1,"Units":"","Minvalue":"0","Maxvalue":"1","Symbol":"","IsModify":1,"ParaDescription":"","KeyArr":[]}
+	]
+}

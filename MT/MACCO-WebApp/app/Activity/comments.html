@@ -1,0 +1,61 @@
+<div class="commentStyle" ng-controller="CommentCtrl">
+    <div infinite-scroll='macco.nextPage()' infinite-scroll-listen-for-event="list:reload" infinite-scroll-disabled='macco.busy'
+    infinite-scroll-distance='1'>
+        <div class="PersonComment">
+            <div class="InfoList" ng-repeat="item in macco.items">
+                <div class="infocontent">
+                    <div class="com_avatar" name="scrollToThis">
+                        <div class="com_head">
+                            <img ng-src="{{item.Avatar}}">
+                        </div>
+                    </div>
+                    <div class="remarkNavContent">
+                        <div class="wrapPersonInfo">
+                            <span class="praisenName" ng-bind="item.NickName"></span>
+                            <span class="userage" ng-bind="item.BirthDay"></span>
+                            <span class="skinstyle" ng-show="item.ShowSkin"><img ng-src="{{item.skintype}}"></span>
+                            <img src="../image/hollowLike.png" class="likeBtn" ng-hide="item.IsCommentLiked" ng-click="LikeComment(item)">
+                            <img src="../image/zan_dow.png" class="likeBtn" ng-show="item.IsCommentLiked" ng-click="LikeComment(item)">
+                            <span class="likeNum" ng-bind="item.LikeCount"></span>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="commenttime" ng-bind="item.CreateTime"></div>
+                        <div class="commentContent" ng-bind="item.Comment"></div>
+                        <div class="imageshow">
+                            <img ng-src="{{item.AwardPic}}">
+                        </div>
+                        <div class="blank"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="refresh" ng-show="macco.busy">
+        <div class="refreshicon">
+            <div class="freshicon">
+                <div class="loading bar">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="refreshtext">正在刷新中</div>
+    </div>
+
+    <!--<div class="com_footer" ng-show="{{IsShowFooter}}" ng-click="download()">
+        <img src="../images/ICON_57.png">
+        <a class="try">颠覆性真人试妆体验</a>
+        <a class="btn">下载</a>
+    </div>-->
+    <div style="display:none">
+        <input type="button" id="ReloadData" value="reload" ng-click="reloadDataFn()" />
+    </div>
+</div>

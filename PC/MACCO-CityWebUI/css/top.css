@@ -1,0 +1,107 @@
+/******************************* 头部菜单栏 *****************************/
+.top{
+    height: 40px;
+    background-color: #000000;
+}
+
+.top_text{
+    height: 40px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.top_text_l,.top_text_r{
+    height: 40px;
+    line-height: 40px;
+    color: #cccccc;
+}
+
+.top_text li{
+    float: left;
+}
+
+.top_text .line{
+    display: inline;
+    width: 1px;
+    height: 11px;
+    overflow: hidden;
+    background: #cccccc;
+    margin:15px 7px;
+}
+/**Logo**/
+.Logo{
+    width: 1000px;
+    height: 158px;
+    margin: 0 auto;
+}
+.Logo img{
+    float: left;
+    margin-top:41px;
+}
+/* 搜索框 */
+.SearchDiv{
+    position: relative;
+    float: right;
+    height: 34px;
+    width:271px;
+    border:1px solid #dbdbdb;
+    margin-top:62px;
+    border-radius:7px;
+    background-color: #ffffff;
+}
+.SearchDiv input{
+    position: absolute;
+    left:2px;
+    top:3px;
+    width:223px;
+    height:28px;
+    line-height:28px;
+    border: 0px;
+    color: #959595;
+    text-indent:5px;
+}
+.SearchDiv_img{
+    position: absolute;
+    right: 0px;
+    background-position:-406px -18px;
+}
+/**Menu**/
+.Menu{
+    clear: both;
+    height:42px;
+    background-image:url(../images/background_line.png);
+    background-repeat: repeat-x;
+}
+.Menu_content{
+    height:43px;
+    width: 1000px;
+    margin: 0 auto;
+}
+.menu_ul{
+    height:43px;
+}
+.menu_ul li{
+    float: left;
+    width: 108px;
+    text-align: center;
+    line-height:42px;
+    cursor:pointer;
+    font-family:"微软雅黑";
+}
+.menu_ul_select{
+    background-color: #f14224;
+}
+.menu_ul li a{
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.menu_ul .double_line{
+    display: inline;
+    width:0px;
+    height:22px;
+    overflow: hidden;
+    border-left: 1px solid #7a7a7a;
+    border-right: 1px solid #a6a6a6;
+    margin-top:11px;
+}

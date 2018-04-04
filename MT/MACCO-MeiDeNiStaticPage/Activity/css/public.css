@@ -1,0 +1,57 @@
+@charset "UTF-8";
+body{
+	 background:#ffffff;   
+	 padding: 0;
+    margin: 0;
+    font-family: youyuan,"Droid Sans", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    color: #5c5c5c;
+}
+.clear{
+	clear: both;
+}
+/* 底部文字 */
+.bottomText{
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top:20px;
+}
+.copyright{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.875rem;
+}
+.footer_blank{
+  height: 60px;
+}
+.btnJoin_n{
+    width: 102px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #ff4a83;
+    color: #ffffff;
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    position: fixed;
+    bottom:30px;
+    right: 0px;
+    opacity: 0.8;
+}
+.btnJoinDisable_n {
+  width: 102px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #ccc;
+  color: #ffffff;
+  border-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  position: fixed;
+  bottom:0px;
+  right:0px;
+}

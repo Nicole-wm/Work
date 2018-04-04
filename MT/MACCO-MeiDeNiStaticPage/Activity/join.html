@@ -1,0 +1,21 @@
+<div>
+    <div class="activityTimeTitle">
+        <span class="describe_title">活动时间</span>
+        <span class="time_top" ng-bind="Time">待定</span>
+    </div>
+    <div class="progressBar_n">
+        <div class="pinkProgressBar_n" content="{{LeftDayStr}}" stats="{{LeftStatus}}" style="{{leftStyle}}"></div>
+    </div>
+    <div class="PersonListDiv_n">
+        <div class="joinTitle_n"><span ng-bind="JoinCount"></span>人参加</div>
+        <div class="HeadIcon">
+            <div class="fixedicon">参</div>
+            <div class="headicon">
+                <div class="hicon" ng-repeat="join in JoinList">
+                    <img ng-src="{{join.Avatar}}"></div>
+                </div>
+                <div class="num">{{JoinCountNew}}</div>
+            </div>
+        </div>
+    </div>
+</div>

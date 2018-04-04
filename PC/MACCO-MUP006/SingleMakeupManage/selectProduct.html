@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/css/sb-admin.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/common.css" rel="stylesheet" type="text/css">
+    <link href="/css/public.css" rel="stylesheet">
+</head>  
+<body>
+    <div>
+        <div style="display:inline-block;width: 100%;">
+            <div class="form-group input-group keyword" style="width:30% ;display: inline-block;min-width: 200px;">
+                <input ng-model="Keyword" type="text" class="form-control" style="width:90%;">
+                <span class="input-group-btn" style="display:inline-block;">
+                    <button class="btn btn-default" type="button" ng-click="Search()">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+            <div style="display:inline-block;width: 25%;margin-left:20px">
+               <select class="form-control" ng-change="Search()" ng-model="SelectBrand" ng-options="brand.ID as brand.CName for brand in Brands"></select>
+           </div>
+        <div>
+           <button type="button" ng-click="SureChoose()" class="btn btn-primary" style="margin-bottom: 10px;margin-left: 20px;">确认选择</button>
+       </div>
+   </div>
+   <div class="DataContainer" id="DataContainer" style="height:500px;overflow-y:scroll">
+    <div class="TableTitle">
+        <div class="col_id" style="width:25%">选择</div>
+        <div class="col_id"  style="width:25%">ID</div>
+        <div class="col_chinaName" style="width:25%">中文名</div>
+        <div class="col_cover_image" style="width:25%">图片</div>
+    </div>
+    <div class="clearboth"></div>
+    <div infinite-scroll='maccoData.nextPage()' infinite-scroll-parent='true' infinite-scroll-listen-for-event="list:search" infinite-scroll-disabled='maccoData.busy'
+    infinite-scroll-distance='1' infinite-scroll-container="DataContainer">
+    <div ng-repeat="item in maccoData.items">
+        <div class="WrapContent ">
+            <div class="col_id" style="width:25%">
+                <input type="checkbox" ng-model="item.Seleted">
+            </div>
+            <div class="col_id" style="width:25%">
+                <span class="mobileId">ID:</span>
+                <span ng-bind="item.ID"></span>
+            </div> 
+            <div class="col_chinaName" style="width:25%">
+                <span class="mobilechinaName">中文名:</span>
+                <span ng-bind="item.ProductCName"></span>
+            </div>
+            <div class="col_cover_image" style="width:25%;background: url('{{item.ProductImageUrl}}');background-size: cover;">
+                <span class="mobileImage">图片:</span>
+                <img src="{{item.ProductImageUrl}}">
+            </div>
+        </div>
+        <div class="clearboth"></div>
+    </div>
+</div>
+<!-- /#wrapper -->
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>产品</title>
+    <style>
+        @font-face {
+            font-family: 'youyuan';
+            src: url(data:font/ttf;base64,FONTBASE64) format('truetype');
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="css/index.css?v=101" media="screen" charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/mobiscroll.css?v=13" media="screen" charset="UTF-8">
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/ng-infinite-scroll.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/mobiscroll.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/productController.js?v=117" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/chart.js?v=15" charset="UTF-8"></script>
+</head>
+
+<body ng-controller="productController">
+    <div class="page" trigger="{{trigger}}">
+
+        <div class="topRefresh">
+            <div class="refresh" ng-show="macco.refresh">
+                <div class="refreshicon">
+                    <div class="freshicon">
+                        <div class="loading bar">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="refreshtext">正在刷新...</div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!--topbanner-->
+
+        <div class="topbanner">
+            <div class="productlogo">
+                <img ng-src="{{Product.BrandImageUrl}}">
+            </div>
+            <div class="productimageheight">
+                <div class="productimageborder">
+                    <div class="productimage">
+                        <img ng-src="{{Product.ProductImageUrl}}">
+                    </div>
+                </div>
+            </div>
+            <div style="height:12px"></div>
+            <div class="producttitle" ng-bind="Product.ProductName">
+
+            </div>
+            <div class="productscore">
+                <div class="scorenumber" ng-bind="RankPercent"></div>
+                <div class="starts">
+                    <span class="starposition">
+                        <img ng-repeat="star in FullStars" src="image/xin.png">
+                        <img ng-repeat="star2 in HalfStars" src="image/halfxin.png">
+                        <img ng-repeat="star3 in EmptyStars" src="image/emptyxin.png">
+                    </span>
+                </div>
+                <div class="likeCount" ng-bind="Product.LikeCount"></div>
+            </div>
+            <div class="productintr">
+                <span class="productml" ng-bind="Product.Specification"></span>
+                <span class="productprice" ng-bind="Product.Price"></span>
+                <span class="producttext">元</span>
+            </div>
+        </div>
+
+        <!--标签-->
+        <div class="comment_list_border">
+            <div class="comment_list" tagheight="{{tagheight}}">
+                <div class="comment_details">
+                    <div class="tag_comment">
+                        <div class="comment_add" ng-show="hasNoTags">
+                            还没有标签，添加一个吧
+                        </div>
+                        <div ng-repeat="tag in Tags" class="comment_detail" ng-click="ClickTag(tag)">
+                            <span class="comment_text" ng-bind="tag.TagName"></span>
+                            <span class="comment_count" ng-bind="tag.LikeCount"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment_pull" ng-click="ShowHideTags()">
+                <img src="image/pull.png">
+            </div>
+            <div class="comment_more" ng-click="AddTag()">
+                <img src="image/addtag.png">
+            </div>
+        </div>
+
+        <div class="blankbg"></div>
+        <div class="sumscore" ng-click="expressionClick()">
+            <div class="indexscore">
+                <span class="scoretext">综合得分 </span>
+                <span class="scoretext2" ng-bind="RankPercent"></span>
+                <span class="scorenum" ng-bind="Product.LikeCount"></span>
+                <div class="scoreheart">
+                    <img ng-repeat="star in FullStars" src="image/xin.png">
+                    <img ng-repeat="star2 in HalfStars" src="image/halfxin.png">
+                    <img ng-repeat="star3 in EmptyStars" src="image/emptyxin.png">
+                </div>
+            </div>
+            <div class="container">
+                <canvas id="areaThis"></canvas>
+            </div>
+            <div class="expression">
+                <div>
+                    <img src="image/bad2.png">
+                    <span class="imgtext bad">糟糕</span>
+                </div>
+                <div>
+                    <img src="image/common2.png">
+                    <span class="imgtext common">普通</span>
+                </div>
+                <div>
+                    <img src="image/nice2.png">
+                    <span class="imgtext nice">不错</span>
+                </div>
+                <div>
+                    <img src="image/good2.png">
+                    <span class="imgtext good">好评</span>
+                </div>
+                <div>
+                    <img src="image/verygood2.png">
+                    <span class="imgtext verygood">棒呆</span>
+                </div>
+            </div>
+        </div>
+        <div class="fixcomment">
+            <div class="commentbg" ng-bind="Comments"></div>
+            <div class="selectwidth">
+                <div class="commentselect">
+                    <div class="ageselect">
+                        <span class="ageafter"></span>
+                        <select class="agetext" ng-change="agetext()" ng-model="age">
+                            <option value="所有年龄">所有年龄</option>
+                            <option value="18岁以下">18岁以下</option>
+                            <option value="19-24岁">19-24岁</option>
+                            <option value="25-30岁">25-30岁</option>
+                            <option value="31-40岁">31-40岁</option>
+                        </select>
+                    </div>
+                    <div class="skinselect">
+                        <span class="skinafter"></span>
+                        <select class="skintext" ng-change="skintext()" ng-model="skin">
+                            <option value="所有肤质">所有肤质</option>
+                            <option value="干性肤质">干性肤质</option>
+                            <option value="油性肤质">油性肤质</option>
+                            <option value="混合肤质">混合肤质</option>
+                            <option value="中性肤质">中性肤质</option>
+                            <option value="敏感肤质">敏感肤质</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="commentdetail">
+                <div infinite-scroll='macco.nextPage()' infinite-scroll-listen-for-event="list:reload" infinite-scroll-disabled='macco.busy'
+                    infinite-scroll-distance='0'>
+                    <div class="commentlist" ng-repeat="item in macco.items">
+                        <div class="useravatar">
+                            <img ng-src="{{item.Avatar}}" class="userimg">
+                            <div class="prizelogo" ng-show="item.isprize">
+                                <img src="image/prize.png">
+                            </div>
+                            <div class="presslogo" ng-hide="item.assess">
+                                <img ng-src="{{item.assessurl}}">
+                                <span class="presstext" ng-class="item.stateColor" ng-bind="item.stateText"></span>
+                            </div>
+                        </div>
+                        <div class="commentright">
+                            <div class="userintr">
+                                <span ng-bind="item.NickName"></span>
+                                <span ng-bind="item.leftsign"></span>
+                                <span ng-bind="item.Age"></span>
+                                <span ng-bind="item.or"></span>
+                                <span ng-bind="item.SkinType"></span>
+                                <span ng-bind="item.rightsign"></span>
+                            </div>
+                            <div class="usercomment" ng-bind="item.Comment" ng-class="item.userPrizeComment">
+                            </div>
+                            <div class="commenttime" ng-bind="item.DateDiff">
+                            </div>
+                        </div>
+                        <span class="userhand" ng-click="ZanComment(item)">
+                        <span class="zancount">{{item.LikeCount}}</span>
+                        <img ng-hide="item.ShowCommentLike" src="image/zan_nor.png">
+                        <img ng-show="item.ShowCommentLike" src="image/zan_dow.png">
+                        <span ng-class="imgAnimate" ng-hide="item.isanimate">
+                                    <img src="image/zan_dow.png">
+                            </span>
+                        </span>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="nocomment">
+                        <img src="image/none.png" ng-show="macco.nocomment">
+                    </div>
+
+                    <div class="refresh" ng-show="macco.busy">
+                        <div class="refreshicon">
+                            <div class="freshicon">
+                                <div class="loading bar">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="refreshtext">正在加载中</div>
+                    </div>
+                </div>
+            </div>
+            <div style="display:none">
+                <input type="button" id="ReloadData" value="reload" ng-click="reloadDataFn()" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

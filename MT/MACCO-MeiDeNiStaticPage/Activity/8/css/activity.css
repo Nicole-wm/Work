@@ -1,0 +1,157 @@
+@charset "UTF-8";
+.RelatedImg>img{
+width: 100%;
+}
+.time{
+	font-size: 0.828125rem;
+	margin-left: 12px;
+}
+.theme{
+    text-align: center;
+    color: #000000;
+}
+.bigSize{
+  font-size: 1.104375rem;
+  line-height: 24px;
+}
+.smallSize{
+  font-size: 0.9rem;
+}
+.relatedPictures>img{
+  width: 100%;
+}
+.cheek{
+  text-align: center;
+  margin-top: 9px;
+}
+.cheek>img{
+  width: 45%;
+  margin-right: 5px;
+}
+.relatedPictures{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 9px;
+}
+.introduce{
+  color: #999999;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+.introduce>.MaskName{
+  color: #ff0000;
+  display: inline-block;
+}
+.comparison{
+  width: 80%;
+}
+.actionRule {
+  margin-top: 40px;
+  margin-left: 2%;
+  margin-bottom: 12px;
+  color: #ff4a83;
+}
+.one {
+  margin-bottom: 22px;
+}
+.step {
+  color: #5c5c5c;
+  margin-left: 2%;
+}
+.smallSize {
+ font-size: 0.85rem;
+}
+.smallSize>div{
+  line-height: 24px;
+}
+.join {
+  width: 75px;
+  height: 25px;
+  display: inline-block;
+  color: #ffffff;
+  background: #ff4a83;
+  margin-left: 6px;
+  text-align: center;
+  margin-right: 6px;
+  line-height: 25px;
+}
+.RulePictures{
+    width: 90%;
+    margin: 20px auto;
+}
+.RulePictures>img{
+  width: 100%;
+  
+}
+.prize {
+  margin-left: 2%;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  color: #ff4a83;
+}
+.MaskNum{
+  margin-left: 10px;
+  margin-right: 30px;
+  
+}
+.Mask>div{
+    margin-left: 14px;
+}
+.MaskIntroduce{
+   color: #999999;
+}
+.MaskIntroduce>div{
+  margin-left: 10px;
+}
+.bottomText{
+  text-align: center;
+  margin-top: 30px;
+}
+.copyright{
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 0.75rem;
+}
+.headPortrait>img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 8px;
+}
+.WrapHead{
+  width: 86%;
+  margin: 0 auto;
+}
+@media (max-width: 375px){
+.surplusDay {
+  width: 18%;
+}
+.smallSize {
+  font-size: 0.8rem;
+}
+.headPortrait>img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+}
+@media (max-width: 360px){
+.smallSize {
+  font-size: 0.76rem;
+}
+.headPortrait>img {
+  width: 37px;
+  height: 37px;
+}
+}
+
+@media (max-width: 320px){
+  .likeNum{
+      margin-top: 6px;
+  }
+.surplusDay {
+  width: 22%;
+}
+}

@@ -1,0 +1,305 @@
+/*************************base*************************/
+html,body{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: #fff;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color:#000;
+	overflow:hidden;
+}
+img{
+	display:block;
+	margin: auto;
+	width: 100%;
+}
+/*************************Sidebar*************************/
+.sidebar-container{
+	display: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index:2500;
+}
+
+.Top-SiderBtn{
+	position:fixed;
+	right: 0;
+	top: 0;
+	height: 1.5rem;
+	width: 15%;
+	z-index:3000;
+	padding-top:0.455rem;
+}
+.top-lineBtn{
+	margin:0 auto 0.25rem;
+	width:0.7rem;
+	height:0.029rem;
+	transform-origin:0% 0%;
+}
+.top-lineBtn-white{
+	background-color: #fff;
+	box-shadow:0px 0px 0.1rem #4C4C4C;
+}
+.top-lineBtn-black{
+	background-color: #4C4C4C;
+}
+.top-tlinepBtn{
+	animation: RotateTopClose 0.4s ease 0s 1 both;
+}
+.top-clinepBtn{
+	animation: RotateCenterClose 0.4s ease 0s 1 both;
+}
+.top-blinepBtn{
+	animation: RotateBottomClose 0.4s ease 0s 1 both;
+}
+.top-op-tlinepBtn{
+	animation: RotateOpTopClose 0.4s ease 0s 1 both;
+}
+.top-op-clinepBtn{
+	animation: RotateOpCenterClose 0.4s ease 0s 1 both;
+}
+.top-op-blinepBtn{
+	animation: RotateOpBottomClose 0.4s ease 0s 1 both;
+}
+@keyframes RotateTopClose{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(45deg);
+	}
+}
+
+@keyframes RotateCenterClose{
+	0%{
+		opacity: 1
+	}
+	100%{
+		opacity: 0
+	}
+}
+@keyframes RotateBottomClose{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		margin-top:-0.075rem;
+		transform:rotate(-45deg);
+	}
+}
+@keyframes RotateOpTopClose{
+	0%{
+		transform:rotate(45deg);
+	}
+	100%{
+		transform:rotate(0deg);
+	}
+}
+@keyframes RotateOpCenterClose{
+	0%{
+		opacity: 0
+	}
+	100%{
+		opacity: 1
+	}
+}
+@keyframes RotateOpBottomClose{
+	0%{
+		margin-top:-0.046rem;
+		transform:rotate(-45deg);
+	}
+	100%{
+		transform:rotate(0deg);
+	}
+}
+
+.Sidebar{
+	position: fixed;
+	top:0;
+	width: 100%;
+	height: 100%;
+	z-index:2500;
+}
+.Sidebar-content{
+	width: 100%;
+	height: 100%;
+	background-color: #0f0f0f;
+	color: #fff;
+	overflow-y:scroll;
+}
+.Sidebar-content ul li{
+	height: 1.759259rem;
+	line-height: 1.759259rem;
+	font-size: 0.444444rem;
+	margin-left: 0.648148rem;
+}
+.Sidebar-content .cutoff-line{
+	height: 0.018519rem;
+	line-height: 0;
+	margin-left: 0;
+	background-color: #282828;
+}
+.fadeInLeft{
+	display: block;
+	animation: fadeInLeft 1s ease 0s 1 both;
+}
+
+.fadeOutLeft{
+	display: block;
+	animation: fadeOutLeft 1s ease 0s 1 both;
+}
+
+@keyframes fadeInLeft{
+	0%{
+		opacity:0;
+		-webkit-transform:translate3d(-100%,0,0);
+		transform:translate3d(-100%,0,0)
+	}
+	100%{
+		opacity:1;
+		-webkit-transform:none;transform:none
+	}
+}
+@keyframes fadeOutLeft{
+	0%{
+		opacity:1;
+		-webkit-transform:none;transform:none
+	}
+	100%{
+		opacity:0;
+		-webkit-transform:translate3d(-100%,0,0);
+		transform:translate3d(-100%,0,0);
+		display: none;
+	}
+}
+
+/*************************Bottom*************************/
+.bottom-arr{
+	position: fixed;
+	width: 100%;
+	z-index: 2000;
+	opacity: 0;
+	bottom:0.8rem;
+	animation:BottomArrow 1.75s infinite;
+}
+.bottom-arr img{
+	width:1rem;
+}
+@keyframes BottomArrow
+{
+	0% {
+		opacity: 0;
+		bottom:0.5rem;
+	}
+	75% {
+		opacity: 0.5;
+		bottom:0.8rem;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+/*************************Guide*************************/
+.guide-tap{
+	position: absolute;
+	top:4rem;
+	left: 4.3rem;
+	width:2rem;
+	z-index: 2000;
+	animation:handTap 2.25s ease 0s 1 both;
+}
+
+@keyframes handTap
+{
+	0% {
+		opacity: 0.1;
+	}
+	25% {
+		opacity: 0.7;
+	}
+	50% {
+		opacity: 0.1;
+	}
+	75% {
+		opacity: 0.7;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.guide-around{
+	position: absolute;
+	top:4.2rem;
+	z-index: 2000;
+}
+.guide-around img{
+	position: absolute;
+}
+
+.hand-left{
+	opacity: 0;
+	width: 2rem;
+	left: 5rem;
+	animation:handleft 1.25s ease 1s 1 both;
+}
+
+.hand-right{
+	opacity: 0.5;
+	width: 2rem;
+	left: 4rem;
+	animation:handright 0.75s ease 0s 1 both;
+}
+
+.hand-img{
+	opacity: 0.7;
+	width: 2rem;
+	left: 4rem;
+	margin-top: 1.3rem;
+	animation:handslide 2s ease 0s 1 both;
+}
+
+@keyframes handslide
+{
+	0% {
+		left: 4rem;
+	}
+	50% {
+		left: 6rem;
+		opacity: 0.5;
+	}
+	100% {
+		left: 2.5rem;
+		opacity: 0;
+	}
+}
+@keyframes handleft
+{
+	0% {
+		left: 5rem;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		left: 1.5rem;
+		opacity: 0;
+	}
+}
+@keyframes handright
+{
+	0% {
+		left: 4rem;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		left: 6rem;
+		opacity: 0;
+	}
+}

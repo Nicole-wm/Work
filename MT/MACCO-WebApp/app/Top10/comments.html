@@ -1,0 +1,60 @@
+<div class="commentStyle" ng-controller="CommentCtrl">
+    <div class="s_menu">
+        <div class="HeadIcon">
+            <div class="fixedicon">赞</div>
+            <div class="headicon">
+                <div class="hicon" ng-repeat="AvatarData in LikeAvatarList">
+                    <img ng-src="{{AvatarData.Avatar}}">
+                </div>
+            </div>
+            <div class="headicon_num">{{NewLikeAvatarListCount}}</div>
+        </div>
+    </div>
+      <a href="#scrollToThis" style="display:none" id="scrollToThis"></a>
+      <div infinite-scroll='macco.nextPage()' infinite-scroll-listen-for-event="list:reload" infinite-scroll-disabled='macco.busy'
+            infinite-scroll-distance='1'>
+            <div class="PersonComment" ng-repeat="item in macco.items">
+                  <div class="InfoList">
+                        <div class="com_avatar" name="scrollToThis">
+                              <div class="com_head" isLike="{{item.IsLikedStr}}" content="{{item.PeiZan}}">
+                                    <img src="../images/headPortraitbig.png" ng-src="{{item.Avatar}}">
+                              </div>
+                        </div>
+                        <div class="remarkNavContent">
+                              <div class="wrapPersonInfo">
+                                    <span class="praisenName" ng-bind="item.NickName"></span>
+                                    <div class="likeBtn" ng-click="LikeComment(item)">
+                                          <span class="likeNum" ng-bind="item.LikeCount"></span>
+                                          <img src="../images/hollowLike.png" ng-hide="item.IsCommentLiked">
+                                          <img src="../images/zan_dow.png" ng-show="item.IsCommentLiked">
+                                    </div>
+                              </div>
+                              <div class="time" ng-bind="item.CreateTime"></div>
+                              <div class="commentContent" ng-bind="item.Comment"></div>
+                        </div>
+                        <div class="clear"></div>
+                  </div>
+            </div>
+            <div class="refresh" ng-show="macco.busy">
+                  <div class="refreshicon">
+                        <div class="freshicon">
+                              <div class="loading bar">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                              </div>
+                        </div>
+                  </div>
+            <div class="refreshtext">正在刷新中</div>         
+        </div>
+      </div> 
+
+      <div  style="display:none">
+            <input type="button" id="ReloadData" value="reload" ng-click="reloadDataFn()"/>
+      </div>
+</div>

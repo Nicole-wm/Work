@@ -1,0 +1,8 @@
+{
+	"IsSuccess":true,
+	"Data":[
+		{"ID":1,"Name": "1","Instruction":"控制电源","InterID":1,"InterName":"KG_Light","InterValue":"0"},
+		{"ID":2,"Name": "2","Instruction":"控制翻转","InterID":2,"InterName":"KG_Turn","InterValue":"1"},
+		{"ID":3,"Name": "3","Instruction":"控制通风","InterID":3,"InterName":"KG_Fan","InterValue":""}
+	]
+}

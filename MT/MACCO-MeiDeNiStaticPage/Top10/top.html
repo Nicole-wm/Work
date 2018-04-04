@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp" ng-controller="topController">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>{{Title}}</title>
+    <style>
+        @font-face {
+            font-family: 'youyuan';
+            src: url(data:font/ttf;base64,FONTBASE64) format('truetype');
+        }
+    </style>
+    <link href="css/publicTop.css?v=6" rel="stylesheet" type="text/css" charset="UTF-8" />
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/ng-infinite-scroll.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/topController.js?v=4" charset="UTF-8"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="banner">
+            <div class="back" style="display:none"> </div>
+            <img ng-src="{{TitleImage}}">
+            <div class="topBtn">
+                <img src="image/top10_btn.png">
+            </div>
+        </div>
+        <div class="bannerIntr" id="descText" ng-bind="Description">
+        </div>
+        <div class="spaceheight"></div>
+        <div class="spaceheight"></div>
+        <div class="spacebg"></div>
+        <div class="topdetail">
+            <div class="detail" ng-repeat="item in Details">
+                <div class="title">
+                    <span class="pronumber" ng-bind="item.Step"></span>
+                    <span ng-bind="item.Title"></span>
+                </div>
+                <div class="detailcontent" ng-bind="item.Content">
+
+                </div>
+                <div class="spaceheight"></div>
+                <div class="detailimage">
+                    <img ng-src="{{item.PicImageUrl}}">
+                </div>
+                <div class="userline">
+                    <div class="userimage">
+                        <img ng-src="{{item.Avatar}}">
+                    </div>
+                    <div class="username" ng-bind="item.NickName"></div>
+                </div>
+                <div class="clear"></div>
+                <div class="usercomment">
+                    <img src="image/hquotes.png">{{item.Comment}}
+                    <img src="image/tquotes.png">
+                </div>
+                <div class="spaceheight"></div>
+                <div class="productintr" ng-click='this[redirectFunc](item.ProductID)'>
+                    <div class="productimage">
+                        <img ng-src="{{item.ProductImage}}">
+                    </div>
+                    <div class="productdetail">
+                        <div class="producttitle" ng-bind="item.ProductCName">
+
+                        </div>
+                        <div class="productstar">
+                            <img ng-repeat="star in item.FullStars" src="image/start1.png">
+                            <img ng-repeat="star2 in item.HalfStars" src="image/start2.png">
+                            <img ng-repeat="star3 in item.EmptyStars" src="image/start3.png">
+                        </div>
+                        <div class="productcomment">
+                            <div class="commentimage">
+                                <img src="image/comment.png">
+                            </div>
+                            <div class="commentcount">
+                                <span ng-bind="item.CommentCount"></span>
+                                <span>评</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productrowBtn"><img src="image/row.png"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+                <div class="spaceheight"></div>
+                <div class="spaceheight"></div>
+            </div>
+        </div>
+        <div class="com_footer" ng-show="true" ng-click="download()">
+            <img src="image/download.png">
+        </div>
+    </div>
+</body>
+
+</html>

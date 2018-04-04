@@ -1,0 +1,27 @@
+<div class="inbox">
+	<div class="row">
+		<div class="col-md-2">
+			<div class="inbox-sidebar">
+				<ul class="inbox-nav">
+					<li ng-repeat="item in CurCate" ng-class="{'active':{{Curpage}}==item.ID}">
+						<a ng-click="CheckMenu(item.ID)">{{item.Name}}
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-10">
+			<div class="inbox-body">
+				<div class="inbox-header">  
+					<h4 class="pull-left">{{CurCate[Curpage-1].Name}}</h4>
+				</div>
+				<div class="inbox-content">
+					<div ng-show="Curpage==1" ng-include="'views/app/app_details_base.html'"></div>
+					<div ng-show="Curpage==2" ng-include="'views/app/app_details_binding.html'"></div> 
+					<div ng-show="Curpage==3" ng-include="'views/app/app_details_fun.html'"></div> 
+					<div ng-show="Curpage==4" ng-include="'views/app/app_details_wechat.html'"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> 

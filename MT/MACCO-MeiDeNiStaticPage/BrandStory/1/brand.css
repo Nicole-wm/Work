@@ -1,0 +1,67 @@
+@charset "UTF-8";
+.textInfo{
+	position: absolute;
+	top: 49%;
+	left: 34%;
+	text-indent: 30px;
+	width: 66%;
+	height: 30px;
+	line-height: 30px;
+}
+
+
+.textInfo>div{
+	text-indent: 33px;
+}
+.startText{
+	height: 32px;
+	line-height: 32px;
+}
+.lastText{
+	height: 32px;
+	line-height: 32px;
+	top: 190px;
+	position: absolute;
+}
+@media(max-width:414px){
+
+}
+@media(max-width:375px){
+.textInfo {
+	width: 64%;
+	font-size: 14px;
+	
+}
+.lastText{
+	height: 28px;
+   line-height: 28px;
+	top: 170px;
+	width: 102%;
+}
+.startText {
+	height: 28px;
+	line-height: 28px;
+}
+
+}
+@media(max-width:320px){
+.textInfo {
+   top: 49%;
+   font-size: 12px;
+   height: 24px;
+   line-height: 24px;
+}
+.lastText {
+top: 150px;
+height: 24px;
+line-height: 24px;
+width: 104%;
+}
+.startText {
+height: 24px;
+line-height: 24px;
+}
+.textInfo>div {
+text-indent: 30px;
+}
+}

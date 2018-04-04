@@ -1,0 +1,14 @@
+{
+	"IsSuccess":true,
+	"data":{
+		"count":20,
+		"result":[
+			{"ID":"s1","Name":"mxchip","Email":"mxchip@mxchip.com","SignTime":"2016-03-03 08:00:00"},
+			{"ID":"s2","Name":"fog","Email":"fog@mxchip.com","SignTime":"2016-03-03 09:15:02"},
+			{"ID":"s3","Name":"wang","Email":"wang@mxchip.com","SignTime":"2016-03-03 09:00:05"},
+			{"ID":"s4","Name":"li","Email":"li@mxchip.com","SignTime":"2016-03-03 10:12:14"},
+			{"ID":"s5","Name":"zhang","Email":"zhang@mxchip.com","SignTime":"2016-03-03 10:46:14"},
+			{"ID":"s6","Name":"zhang","Email":"zhang@mxchip.com","SignTime":"2016-03-03 10:46:14"}
+		]
+	}
+}

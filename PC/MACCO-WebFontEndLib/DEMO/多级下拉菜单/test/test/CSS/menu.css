@@ -1,0 +1,47 @@
+li{
+    cursor:pointer;
+    list-style: none;
+    width:50px;
+}
+
+.menu{
+    height: 50px;
+    line-height: 50px;
+    position:relative;
+}
+
+.content {
+    clear:both;
+    height:500px;
+    background-color: #cccccc;
+}
+
+.menu1,.menu2,.menu3{
+    height:50px;
+}
+
+.menu1{
+    background-color:#CCFFFF;
+}
+
+.menu2,.menu3{
+    background-color:#CCFFCC;
+    position:absolute;
+}
+
+.menu3{
+    background-color:#FFFFCC;
+    top:100px;
+}
+
+/*横向菜单*/
+.menu1 li,.menu2 li,.menu3 li{
+    float: left;
+    padding:0px 10px;
+}
+
+
+.menu1 li:hover,.menu2 li:hover,.menu3 li:hover{
+    background-color: #00CCFF;
+    color: #ffffff;
+}

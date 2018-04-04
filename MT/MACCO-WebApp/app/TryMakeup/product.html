@@ -1,0 +1,25 @@
+<div class="productintr " ng-click='this[redirectFunc](this.Product.ProductID)' style="cursor:pointer">
+    <div class="productimage">
+        <img ng-src="{{Product.ProductImageUrl}}">
+    </div>
+    <div class="productdetail">
+        <div class="producttitle" ng-bind="Product.ProductName">
+        </div>
+        <div class="productstar"> 
+            <img ng-repeat="star in FullStars" src="../images/start1.png">
+            <img ng-repeat="star2 in HalfStars" src="../images/start2.png">
+            <img ng-repeat="star3 in EmptyStars" src="../images/start3.png">
+        </div>
+        <div class="productcomment">
+            <div class="commentimage">
+                <img src="../images/comment.png">
+            </div>
+            <div class="commentcount">
+                <span ng-bind="Product.Comments"></span>
+                <span>评</span>
+            </div>
+        </div>
+    </div>
+    <div class="productrowBtn"><img src="../images/row.png"></div>
+    <div class="clear"></div>
+</div>

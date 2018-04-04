@@ -1,0 +1,34 @@
+@charset "utf-8";
+.TagsText{
+	text-align: center;
+}
+.TagsText1{
+	font-size: 18px;
+	color:#ff437a;
+	margin:10% 0px 9%;
+}
+.TagsText2,.TagsText3{
+	font-size:15px;
+	color:#999999;
+}
+.TagsText2{
+	margin-bottom:5%;
+}
+.TagsText3{
+	height:32px;
+	line-height: 32px;
+	margin-bottom:50px;
+}
+.TagsText3 span,.TagsText3 img{
+	display: inline;
+}
+.TagsText3 img{
+	width: 32px;
+	height: 32px;
+	margin:0 3px;
+}
+.BottomDiv{
+	position: fixed;
+	bottom: 0px;
+	left:0px;
+}

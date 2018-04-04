@@ -1,0 +1,80 @@
+.clear{
+	clear: both;
+}
+.form-actions{
+	margin-top: 80px;
+}
+.textipt{
+display: inline-block;
+width: 40%;
+}
+.formalert{
+	color: #f82f2f;
+	  height: 32px;
+  line-height: 32px;
+}
+.select{
+  min-width: 150px;
+  width: 40%;
+  float: left;
+}
+.form-horizontal .control-group {
+/*margin-bottom: 15px;*/
+}
+.form-horizontal .control-label {
+float: left;
+width: 120px;
+padding-top: 5px;
+text-align: right;
+}
+.form-horizontal .controls {
+  float: left;
+}
+div.uploader {
+-webkit-border-radius: 14px;
+-moz-border-radius: 14px;
+border-radius: 14px;
+}
+div.uploader {
+position: relative;
+overflow: hidden;
+cursor: default;
+}
+div.uploader {
+width: 190px;
+cursor: pointer;
+}
+div.uploader {
+background-position: 0px -297px;
+height: 28px;
+}
+div.uploader{
+	background-image: url(../img/sprite.png);
+background-repeat: no-repeat;
+-webkit-font-smoothing: antialiased;
+} 
+.form-horizontal .form-group{
+	margin-left: 90px;
+}
+.form-horizontal .number{
+	margin-left:45px;
+}
+.form-horizontal .form-actions {
+padding-left: 350px;
+}
+@media(max-width:1024px) {
+
+
+	#wrapper {
+		padding-left: 0;
+	}
+	.side-nav{
+		position: static;
+		margin-left: 0px;
+		width: 100%;
+	}
+	.side-nav>li>a {
+		width: 140px;
+	}
+
+}

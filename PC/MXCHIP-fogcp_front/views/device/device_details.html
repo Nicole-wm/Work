@@ -1,0 +1,174 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="portlet light portlet-fit bordered">
+			<div class="portlet-body">
+				<div class="form-body form">
+					<form  class="form-horizontal" role="form" name="DeviceDetail">
+						<div class="form-group col-md-12"></div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">所属产品</label>
+							<div class="col-md-4">
+								<input name="ProductName" ng-model="ProductName" type="text" class="form-control" placeholder="" ng-disabled="true">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">设备串号</label>
+							<div class="col-md-4">
+								<input name="MAC" ng-model="MAC" type="text" class="form-control" placeholder="" ng-disabled="true">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">固件版本</label>
+							<div class="col-md-4">
+								<input name="FirmWare" ng-model="FirmWare" type="text" class="form-control" ng-disabled="true">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">模块名称</label>
+							<div class="col-md-4">
+								<input name="ModuleName" ng-model="ModuleName" type="text" class="form-control" ng-disabled="true">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">模块型号</label>
+							<div class="col-md-4">
+								<input name="ModuleModel" ng-model="ModuleModel" type="text" class="form-control" ng-disabled="true">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">MiCO版本</label>
+							<div class="col-md-4">
+								<input name="MiCOVersion" ng-model="MiCOVersion" type="text" class="form-control" ng-disabled="true">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">App版本</label>
+							<div class="col-md-4">
+								<input name="AppVersion" ng-model="AppVersion" type="text" class="form-control" ng-disabled="true">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">是否有效</label>
+							<div class="col-md-4">
+								<input name="IsStatus" ng-model="IsStatusText" type="text" class="form-control" ng-disabled="true">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">是否激活</label>
+							<div class="col-md-4">
+								<input name="IsActive" ng-model="IsActiveText" type="text" class="form-control" ng-disabled="true">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">激活时间</label>
+							<div class="col-md-4">
+								<input name="ActiveTime" ng-model="ActiveTime" type="text" class="form-control" ng-disabled="true">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">在线状态</label>
+							<div class="col-md-4">
+								<input name="IsOnline" ng-model="IsOnlineText" type="text" class="form-control" ng-disabled="true">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">最后在线</label>
+							<div class="col-md-4">
+								<input name="LastTime" ng-model="LastTime" type="text" class="form-control" ng-disabled="true">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">累计上线</label>
+							<div class="col-md-4">
+								<input name="OnlineCount" ng-model="OnlineCount" type="text" class="form-control" ng-disabled="true">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">是否为子设备</label>
+							<div class="col-md-4">
+								<input name="IsSub" ng-model="IsSubText" type="text" class="form-control" ng-disabled="true">
+							</div>
+						</div>
+						<div class="form-group" ng-show="IsSub">
+							<label class="col-md-2 control-label">父设备ID</label>
+							<div class="col-md-4">
+								<input name="ParentId" ng-model="ParentId" type="text" class="form-control" ng-disabled="true">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">历史数据</label>
+							<div class="col-md-10">
+								<div class="portlet-body">
+									<div class="tabbable-custom">
+										<ul class="nav nav-tabs">
+											<li class="active">
+												<a href="#" data-target="#tab_5_1" data-toggle="tab" aria-expanded="true"> 状态 </a>
+											</li>
+											<li class="">
+												<a href="#" data-target="#tab_5_2"  data-toggle="tab" aria-expanded="false"> 命令 </a>
+											</li>
+										</ul>
+										<div class="tab-content">
+											<div class="tab-pane active" id="tab_5_1">
+												<div class="portlet">
+													<div class="portlet-body">
+														<table class="table table-striped table-bordered table-hover ">
+															<thead>
+																<tr>
+																	<th> 时间 </th>
+																	<th> 内容 </th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr ng-repeat="item in StateListArr">
+																	<td>{{item.ltimestamp*1000| date:'yyyy-MM-dd HH:mm:ss'}}</td>
+																	<td>{{item.payload}}</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="row">
+														<div class="col-md-12">
+															<uib-pagination total-items="StatetotalItems" ng-model="StatecurrentPage" max-size="maxSize" class="pagination" boundary-links="true" rotate="false" force-ellipses="true" num-pages="numPages" ng-change="pageChanged()"></uib-pagination>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane" id="tab_5_2">
+												<div class="portlet">
+													<div class="portlet-body">
+														<table class="table table-striped table-bordered table-hover ">
+															<thead>
+																<tr>
+																	<th> 时间 </th>
+																	<th> 内容 </th>
+																	<th> 终端用户 </th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr ng-repeat="item in CommandListArr">
+																	<td>{{item.ltimestamp*1000| date:'yyyy-MM-dd HH:mm:ss'}}</td>
+																	<td>{{item.payload}}</td>
+																	<td>{{item.enduserid}}</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="row">
+														<div class="col-md-12">
+															<uib-pagination total-items="CommandtotalItems" ng-model="CommandcurrentPage" max-size="maxSize" class="pagination" boundary-links="true" rotate="false" force-ellipses="true" num-pages="numPages" ng-change="pageChanged()"></uib-pagination>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

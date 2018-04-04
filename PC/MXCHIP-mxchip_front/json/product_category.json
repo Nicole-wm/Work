@@ -1,0 +1,12 @@
+{
+	"IsSuccess":true,
+	"data":[
+		{ "id":1,"bigclass":"冰箱"},
+		{ "id":2,"bigclass":"烤箱"},
+		{ "id":3,"bigclass":"热水器"},
+		{ "id":4,"bigclass":"电视"},
+		{ "id":5,"bigclass":"烤箱"},
+		{ "id":6,"bigclass":"吸尘器"},
+		{ "id":7,"bigclass":"空调"}
+	]
+}

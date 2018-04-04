@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="/css/sb-admin.css" rel="stylesheet">   
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/common.css" rel="stylesheet" type="text/css" >
+    <link href="/css/uniform.css" rel="stylesheet" type="text/css" >
+    <link href="/css/public.css" rel="stylesheet">
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="/scripts/common.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-infinite-scroll.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-file-upload-all.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/sidebarController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/Active/ActivityDetail.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Sidebar.html'" />
+        <div id="nav" ng-include="templateurl"></div>
+        <div id="page-wrapper" ng-controller="ActivityDetailController">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            活动详情{{OperationType}}
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>  
+                                <a href="index.html">Macco Admin</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-table"></i> 活动详情{{OperationType}}
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div><h2 style="display:inline-block;">活动详情{{OperationType}}:</h2>
+                        </div>
+                        <form role="form" name="ActiveDetail" class="form-horizontal">
+                            <div class="form-group">
+                                <label>标题：</label>
+                                <div class="textipt" style="width: 40.95%;">
+                                    <input name="Title" class="form-control" id="titleName" ng-model="Title" required ng-required="canEdit" ng-disabled="!canEdit">
+                                </div>
+                                <label ng-show="ActiveDetail.Title.$error.required" id="informationalert" class="formalert">*&nbsp;请填写标题</label>
+                            </div>
+                            <div class="form-group ">
+                                <div style="float: left;height: 50px;line-height: 50px;margin-right: 20px;font-weight: 700;">描述:</div>
+                                <div class="textipt" id="falseName" style="float:left;">
+                                <textarea class="form-control" name="ActiveDesc" ng-model="ActiveDesc" ng-disabled="!canEdit" required></textarea>
+                                </div>
+                                <div ng-show="ActiveDetail.ActiveDesc.$error.required" id="informationalert" class="formalert" style="float:left;height: 50px;line-height: 50px;font-weight: 700;">*&nbsp;请填写描述</div>
+                            </div>
+                            <div class="form-group">
+                                <label>横幅图片:</label>
+                                <div class="textipt" id="falseName" style="cursor:pointer">
+                                    <img ngf-select ng-disabled="!canEdit" ng-model="Banner" ngf-src="Banner[0]" ngf-accept="'image/*'" ng-src="{{BannerUrl}}"
+                                    style="width:375px;height:190px" id="selectBannerPic"></img>
+                                    <img ng-model="Banner" ngf-src="Banner[0]" style="display:none;" id="bannerpic"/>
+                                    <input type="hidden" ng-model="Banner[0].name" name="Banner" required ng-required="NeedBanner">
+                                </div>
+                                <label ng-show="ActiveDetail.Banner.$error.required" id="informationalert" class="formalert">*&nbsp;请选择图片(宽度：347px倍数)</label>
+                            </div>
+                            <div class="form-group">
+                                <label>首页图片:</label>
+                                <div class="textipt" id="falseName" style="cursor:pointer">
+                                    <img ngf-select ng-disabled="!canEdit" ng-model="BannerDetail" ngf-src="BannerDetail[0]" ngf-accept="'image/*'" ng-src="{{BannerDetailUrl}}"
+                                    style="width:375px;height:190px" id="selectBannerDetailPic"></img>
+                                    <img ng-model="BannerDetail" ngf-src="BannerDetail[0]" style="display:none;" id="bannerdetailpic"/>
+                                    <input type="hidden" ng-model="BannerDetail[0].name" name="BannerDetail" required ng-required="NeedBannerdetail">
+                                </div>
+                                <label ng-show="ActiveDetail.BannerDetail.$error.required" id="informationalert" class="formalert">*&nbsp;请选择图片(宽度：375px或414px倍数)</label>
+                            </div>
+                            <div class="form-group">
+                                <label>分享图片:</label>
+                                <div class="textipt" id="falseName" style="cursor:pointer">
+                                    <img ngf-select ng-disabled="!canEdit" ng-model="ShareImage" ngf-src="ShareImage[0]" ngf-accept="'image/*'" ng-src="{{ShareImageUrl}}" style="width:150px;height:150px" id="sharepicSelect" />
+                                    <img ng-model="ShareImage" ngf-src="ShareImage[0]" style="display:none" id="sharepic"/>
+                                    <input type="hidden" ng-model="ShareImage[0].size" name="ShareImage"  required ng-required="NeedShareImage">
+                                </div>
+                                <label ng-show="ActiveDetail.ShareImage.$error.required" id="informationalert" class="formalert">*&nbsp;请选择分享图片(宽高：150px,大小小于32k)</label>
+                            </div>
+                            <div class="form-group">
+                                <label>开始时间：</label>
+                                <div class="textipt" style="width:200px;">
+                                    <input name="StartTime" class="form-control" id="StartTime" ng-model="StartTime" required ng-required="canEdit" ng-disabled="!canEdit" >
+                                </div>
+                                <label ng-show="ActiveDetail.StartTime.$error.required" id="StartTimeFlag" class="formalert">*&nbsp;请选择开始时间</label>
+                            </div>
+                            <div class="form-group">
+                                <label>结束时间：</label>
+                                <div class="textipt" style="width:200px;">
+                                    <input name="TerminalTime" class="form-control" id="TerminalTime" ng-model="TerminalTime" required ng-required="canEdit" ng-disabled="!canEdit">
+                                </div>
+                                <label ng-show="ActiveDetail.TerminalTime.$error.required"  id="TerminalTimeFlag" class="formalert">*&nbsp;请选择结束时间</label>
+                            </div>
+                            <div class="control-group" ng-show="canEdit">
+                                <label class="control-label">内容:</label>
+                                <div class="controls">
+                                    <div class="uploader">
+                                        <input type="button" ngf-select  accept="application/x-zip-compressed" ng-model="Web" ng-disabled="!canEdit">
+                                        <span class="filename webFileName" style="-webkit-user-select: none;">{{Web[0].name}}</span>
+                                        <span class="action" style="-webkit-user-select: none; float:right;">浏览</span>
+                                    </div>
+                                    <span class="btn btn-primary" ng-click="WebConfirmUpload()">上传</span>
+                                    <span class="btn btn-primary" ng-disabled="!WebShowSubmit" ng-click="WebCancelUpload()">取消</span>
+                                    <label style="width:20px;"></label>
+                                    <label ng-bind="WebUploadProgress"></label>
+                                    <input type="hidden" ng-model="Web[0].name" name="Web" required ng-required="NeedBanner">
+                                    <label ng-show="ActiveDetail.Web.$error.required" id="informationalert" class="formalert">*&nbsp;请选择内容</label>
+                                </div>
+                            </div>
+                            <div class="control-group" ng-show="!canEdit">
+                                <label class="control-label">内容:</label>
+                                <div class="textipt" style="width: 40.95%; margin:5px 0px 0px 5px;">
+                                    <a ng-href="{{WebUrl}}" target="_blank">{{WebUrl}}</a>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                             <button type="submit" ng-show="canEdit" ng-disabled="!ActiveDetail.Title.$valid||!ActiveDetail.ActiveDesc.$valid||!ActiveDetail.Banner.$valid||!ActiveDetail.ShareImage.$valid||!ActiveDetail.BannerDetail.$valid||!ActiveDetail.StartTime.$valid||!ActiveDetail.TerminalTime.$valid||!WebUrl" class="btn btn-primary" ng-click="Submit()">提交</button>
+                             <button class="btn"  ng-click="ReturnBack()">返回</button>
+                         </div>
+                     </form>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</body>
+</html>

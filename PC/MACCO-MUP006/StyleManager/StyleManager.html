@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/sb-admin.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/common.css" rel="stylesheet" type="text/css">
+    <link href="/css/public.css" rel="stylesheet">
+    <link href="/css/StyleList.css" rel="stylesheet">
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/common.js"></script>-->
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-infinite-scroll.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-file-upload-all.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/sidebarController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/Style/StyleListController.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Sidebar.html'" />
+    <div id="nav" ng-include="templateurl"></div>
+    <div id="page-wrapper" style="float:right;" ng-controller="StyleListController">
+        <div class="container-fluid">
+           <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">样式管理</h1>
+                <ol class="breadcrumb">
+                    <li>
+                        <i class="fa fa-dashboard"></i>
+                        <a href="/index.html?Token={{Token}}">Macco Admin</a>
+                    </li>
+                    <li class="active">
+                        <i class="fa fa-table"></i>样式管理</li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div>             
+                        <h2 style="display:inline-block;">样式列表</h2>
+                        <button type="button" ng-click="this.AddNew(this.Token)" class="btn btn-primary" style="margin-bottom: 10px;margin-left: 20px;">新增样式</button>
+                    </div>
+                    <div  class="selectList" >
+                        <div class="pull-down first">
+                            <select class="form-control" ng-change="Search()" ng-model="SelectedCategoy" ng-options="category.ID as category.Desc for category in Categories"></select>
+                        </div>
+                        <div class="pull-down">
+                            <select class="form-control" ng-change="Search()" ng-model="SType" ng-options="stype.ID as stype.Name for stype in stypes">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="DataContainer">
+                        <div class="TableTitle">
+                            <div class="col_id">ID</div>
+                            <div class="col_keyno">唯一编码</div>
+                            <div class="col_type">类型</div>
+                            <div class="col_plies">层数</div>
+                            <div class="col_cover_image">图片</div>
+                            <div class="col_publish">是否发布</div>
+                            <div class="col_star">是否单品试妆</div>
+                            <div class="col_publish_time">创建时间</div>
+                            <div class="col_operation">操作</div>
+                        </div>
+                        <div class="clearboth"></div>
+                        <div infinite-scroll='macco.nextPage()' infinite-scroll-listen-for-event="list:search" infinite-scroll-disabled='macco.busy'
+                        infinite-scroll-distance='0'>
+                        <div ng-repeat="item in macco.items">
+                            <div class="WrapContent ">
+                                <div class="col_id">
+                                    <span class="mobileId">ID:</span>
+                                    <span ng-bind="item.ID"></span>
+                                </div>
+                                <div class="col_keyno">
+                                  <span class="mobileKeyno">唯一编码:</span>
+                                  <span ng-bind="item.KeyNo"></span>
+                              </div>
+                              <div class="col_type">
+                                <span class="mobiletype">分类:</span>
+                                <span ng-bind="item.CategoryName"></span>
+                            </div>
+                            <div class="col_plies">
+                                <span class="mobileplies">层数:</span>
+                                <span ng-bind="item.Level"></span>
+                            </div>
+                            <div class="col_cover_image" style="background-image: url('{{item.AlphaImage}}');    background-size:cover;background-color:#FF99CC">
+                                <span class="mobileImage">图片:</span><!-- 
+                                <img ng-src="{{item.ProductImageUrl}}"> -->
+                            </div>
+                            <div class="col_publish">
+                                <span class="mobilepublish">是否发布:</span>
+                                <span ng-bind="item.IsPublishText"></span>
+                            </div>
+                            <div class="col_star">
+                                <span class="mobileStar">是否单品试妆:</span>
+                                <span ng-bind="item.IsStarText"></span>
+                            </div>
+                            <div class="col_publish_time">
+                                <span class="mobilePublishTime">创建时间:</span>
+                                <span ng-bind="item.CreateTime"></span>
+                            </div>
+                            <div class="col_operation">
+                                <span class="mobileOperation">操作:</span>
+                                <a ng-click="this.Visit(item.ID,this.Token)" title="查看" class="btn btn-success glyphicon glyphicon-search"></a>
+                                <a ng-click="this.Update(item.ID,this.Token)" title="编辑" class="btn btn-info glyphicon glyphicon-edit"></a>
+                                <a ng-click="this.Delete(item.KeyNo)" title="删除" ng-disabled="item.IsDeletedFlag" class="btn btn-danger glyphicon glyphicon-trash"></a>
+                                <a ng-click="this.Publish(item.KeyNo,this.Token)" title="发布" ng-disabled="item.IsPublishFlag" class="btn btn-success glyphicon glyphicon-new-window"></a>
+                                <a ng-click="ToStar(item.KeyNo,this.Token)" title="设为单品试妆"  ng-disabled="!item.IsStarPublishFlag"  ng-show="!item.IsStarFlag" class="btn btn-info glyphicon glyphicon-star-empty"></a>
+                                <a ng-click="RemoveStar(item.KeyNo,this.Token)" title="取消设为单品试妆"  ng-disabled="!item.IsStarPublishFlag"  ng-show="item.IsStarFlag"  class="btn btn-info glyphicon glyphicon-star"></a>
+                            </div>
+                        </div>
+                        <div class="clearboth"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

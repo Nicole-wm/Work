@@ -1,0 +1,46 @@
+.DataContainer>div:nth-child(odd){
+	background-color: #f9f9f9;
+}
+.col_id {
+	width: 9%; 
+
+}
+.col_cover_image{
+	width: 15%;
+}
+.col_creat_time{
+		width: 10%;
+}
+.col_operation{
+		width: 66%;
+}
+.mobileId,
+.mobileCover_image,
+.mobileCreatTime,
+.mobileOperation{
+	display: none;
+}
+@media(max-width:768px) {
+.WrapContent {
+	height: 390px;
+	max-height: 390px; 
+}
+.col_cover_image {
+	min-height: 256px;
+}
+.WrapContent > .col_cover_image:hover > img {
+	display: none;
+	-webkit-animation-name: "";
+	-moz-animation-name: "";
+	-o-animation-name: "";
+	-ms-animation-name: "";
+	animation-name: "";
+} 
+.mobileId,
+.mobileCover_image,
+.mobileCreatTime,
+.mobileOperation{
+	    display: inline-block;
+} 
+
+}

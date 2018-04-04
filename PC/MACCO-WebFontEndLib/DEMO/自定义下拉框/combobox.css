@@ -1,0 +1,82 @@
+/********************下拉框*****************************/
+/*input框*/
+.select_result {
+    position: relative;
+    width: 150px;
+}
+.select{
+    width: 150px;
+}
+/*下拉图形*/
+.pull_img {
+    position: absolute;
+    display: block;
+    height: 18px;
+    width: 18px;
+    right: 1px;
+    top: 0px;
+    border-style: none;
+    cursor: pointer;
+    background: url("pull.png" ) no-repeat 0px 5px;
+}
+
+/*下拉面板*/
+.select_content {
+    position:absolute;
+}
+
+.select_content {
+    background: #ffffff;
+    border: 1px solid #afafaf;
+}
+
+.select_content ul {
+    padding: 0px;
+    border:1px solid #34d5e2;
+    margin:5px;
+}
+
+.select_content li {
+    height:20px;
+    line-height:20px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+.select_content li:hover {
+    background: #34d5e2;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.select_content table {
+    width: 200px;
+    table-layout: fixed;
+    border:1px solid #34d5e2;
+    margin:5px;
+}
+.select_content table td {
+    width: 100px;
+    border:1px solid #F00;
+}
+.select_content td:hover {
+    background: #34d5e2;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.select_content div {
+    border:1px solid #34d5e2;
+    margin:5px;
+    text-align: center;
+}
+
+.select_content div:hover {
+    background: #34d5e2;
+    cursor: pointer;
+    color: #ffffff;
+}
+

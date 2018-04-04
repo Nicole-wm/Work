@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <style>
+        @font-face {
+            font-family: 'youyuan';
+            src: url(data:font/ttf;base64,FONTBASE64) format('truetype');
+        }
+    </style>
+    <link href="../css/public.css" rel="stylesheet" charset="UTF-8">
+    <link href="../css/join.css" rel="stylesheet" charset="UTF-8">
+    <link href="css/activityend.css" rel="stylesheet" charset="UTF-8">
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script> 
+    <script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/activity.js" charset="UTF-8"></script>
+</head>
+
+<body ng-controller="activityController">
+    <div id="head" class="head RelatedImg">
+        <img id="model" src="images/8.jpg">
+    </div>
+    <input type="hidden" ng-model="joinurl" ng-init="joinurl='/Activity/join.html'" />
+    <div ng-include="joinurl"></div>
+    <div class="clear"></div>
+    <div class="WinningSingle">
+        <div class="SinglePromulgate">Kate双色眼影 中奖名单公布</div>
+        <div class="SingleName">1、圈圈圆圆圈圈</div>
+        <div class="SingleName">2、路倄</div>
+        <div class="SingleName">3、_黑猫警长的一只耳</div>
+    </div>
+    <div class="awardWay">
+        <div class="middleSize"><strong>如何领奖：</strong></div>
+        <div class="number">1. 请以上获奖的ID同学，打开微信——添加好友——搜索“<strong>美的你</strong>”——添加关注。</div>
+        <div class="number">2. 与小美在微信上及时获得联系，以便领奖。</div>
+        <div class="lastText middleSize"><strong>再次恭喜中奖的各位啦</strong></div>
+    </div>
+    <div class="Line"></div>
+    <div class="smallSize introduce">
+        <div>美图、自拍都是浮云</div>
+        <div>再多修图心机、化妆技巧</div>
+        <div class="makeUp">不如熟练掌握美的你App，一键上妆</div>
+        <div>让你素人秒变明星，称霸朋友圈就是这么简单咯~</div>
+    </div>
+    <div class="bigSize actionRule">活动规则：</div>
+    <div class="smallSize step">
+        <span>Step 1：点击</span>
+        <span class="join smallSize">马上参加</span>
+        <span>注册/登陆，并完善个人信息；</span>
+    </div>
+    <div class="relatedPictures">
+        <img src="images/11.jpg">
+    </div>
+    <div class="smallSize step">Step 2：选择“试妆间”里的任意妆容，为自己上妆；</div>
+    <div class="relatedPictures">
+        <img src="images/22.jpg">
+    </div>
+    <div class="smallSize step">Step 3：将上妆后的照片分享到微博/微信朋友圈、并截图；</div>
+    <div class="relatedPictures">
+        <img src="images/33.jpg">
+    </div>
+    <div class="smallSize step">Step 4：关注微信公众账号“美的你”：打开微信→添加好 友→搜索“美的你”→添加关注</div>
+    <div class="relatedPictures">
+        <img src="images/44.jpg">
+    </div>
+    <div class="smallSize step">Step 5：将你Po在朋友圈/微博试妆的截图，回复给微信公众 号，即算参加成功；</div>
+    <div class="relatedPictures">
+        <img src="images/55.jpg">
+    </div>
+    <div class="smallSize  Rescue">我们将从所有回复者中抽取
+        <span class="abstractNum">3</span>位幸运儿。</div>
+        <div class="bigSize prize">奖品：</div>
+        <div class="smallSize prizeIntroduce">KATE辉映双色眼影 3份</div>
+        <div class="smallSize prizeIntroduce">价值：129元</div>
+        <div class="relatedPictures">
+            <img src="images/66.jpg">
+        </div>
+        <div class="smallSize ProductIntroduce">日本开架王牌彩妆品牌，这款双色眼影是他家的经典配色， 打造深邃双眸，一盒搞定，就是这么简单咯~耀眼的钻石偏 光粉末，不论是单色使用或双色搭配，都让双眸璀璨动人， 打造最艳丽迷人的美目！</div>
+        <input type="hidden" ng-model="type" ng-init="type='tryMakeup'">
+        <input type="hidden" ng-model="shouldLogin" ng-init="shouldLogin='true'">
+        <input type="hidden" ng-model="ObjectID" ng-init="ObjectID=''">
+        <div ng-if="!IsFinish" ng-class="btnJoin_n" ng-click="Join()" ng-bind="title"></div>
+        <input type="hidden" ng-model="footerurl" ng-init="footerurl='/Activity/footer.html'" />
+        <div ng-include="footerurl"></div>
+    </body>
+    </html>

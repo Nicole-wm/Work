@@ -1,0 +1,33 @@
+.DataContainer>div:nth-child(odd){
+	background-color: #f9f9f9;
+}
+.col_id {
+	width: 9%; 
+
+}
+.col_name{
+	width: 15%;
+	min-width: 305px;
+	min-width: 20px;
+}
+.col_description {
+	width: 76%;
+}
+.mobileId,
+.mobileName,
+.mobileDescription{
+	display: none;
+}
+@media(max-width:768px) {
+.WrapContent {
+height: 112px;
+max-height: 112px; 
+}
+
+.mobileId,
+.mobileName,
+.mobileDescription{
+	    display: inline-block;
+} 
+
+}

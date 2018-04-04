@@ -1,0 +1,70 @@
+<div class="row">
+	<div class="form-group col-md-6">
+		<a href="#/product/product_add_read.html"><p class="form-group col-md-12  font-blue-steel"><i class="fa fa-question-circle font-blue-steel"> 了解如何填写 </i></p></a>
+	</div>
+<!-- 	<div class="col-md-6">
+	<p>
+		<div class="page-actions dis-inblock">
+			<div class="btn-group">
+				<a href="javascript:;" data-toggle="dropdown" data-hover="dropdown" ><i class="fa fa fa-question-circle font-blue-steel"> 导入已有的产品 </i></a>
+				<div class="dropdown-menu" role="menu">
+					<small>您在创建产品后可以导出相关格式文件，并在此导入以复制该产品；</small>
+				</div>
+			</div>
+		</div>
+		<div class="fileupload-buttonbar dis-inblock">
+			<span class="btn bg-blue-steel bg-font-blue-steel btn-sm fileinput-button">
+				<span> 导入 </span>
+				<input type="file" name="files[]" multiple="">
+			</span>
+		</div>
+	</p>
+</div> -->
+	<div class="col-md-12">
+		<!-- BEGIN BasicTable-->
+		<div class="tab-pane active">
+			<div class="portlet light">
+				<div class="portlet-body form">
+					<form  class="form-horizontal" role="form" name="ProductDetail">
+						<div class="form-body">
+							<div class="form-group">
+								<label class="col-md-2 control-label">产品名称<span class="required"> * </span></label>
+								<div class="col-md-4">
+									<input name="ProductName" ng-model="ProductName" type="text" class="form-control" placeholder="必填" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">产品品牌<span class="required"> * </span></label>
+								<div class="col-md-4">
+									<input name="Brand" ng-model="Brand" type="text" class="form-control" placeholder="必填" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">产品型号<span class="required"> * </span></label>
+								<div class="col-md-4">
+									<input name="Model" ng-model="Model"  type="text" class="form-control" placeholder="必填" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">产品类别<span class="required"> * </span></label>
+								<div class="col-md-4">
+									<select ng-model="ProCategory" ng-options="o.id as o.bigclass for o in ProCategorys" class="form-control" required>
+										<option value=""></option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label" for="title"></label>
+								<div class="col-md-5">
+									<input ng-disabled="!ProductDetail.ProductName.$valid||!ProductDetail.Brand.$valid||!ProductDetail.Model.$valid||!ProCategory" ng-click="AddProductFun()" class="btn blue-steel" type="submit" value="继续"/>
+									<input ng-click="BackFun(0)" class="btn bg-default bg-font-default" type="submit" value="返回"/>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END BasicTable-->
+</div>

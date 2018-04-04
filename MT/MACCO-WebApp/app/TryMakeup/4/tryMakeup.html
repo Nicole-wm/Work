@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+
+<head>
+    <!--include "../../../templetes/commonHead.html"-->
+    <!--include "../../../templetes/TryMakeup/tryMakeup.html"-->
+</head>
+
+<body ng-controller="ProductListCtrl" style="background: url('images/bg.png') repeat;">
+    <div id="head" class="head RelatedImg">
+        <img id="model1" ng-show="HasImage" ng-src="{{ImageUrl}}" src="images/model.jpg">
+        <img id="model" ng-show="!HasImage" src="images/model.jpg">
+        <div class="mask">
+            <img src="images/mask.png" id="mask">
+        </div>
+    </div>
+    <input type="hidden" ng-model="zanurl" ng-init="zanurl='/TryMakeup/zan.html'" />
+    <div id="add_zan" ng-include="zanurl"></div>
+    <div class="theme bigWordSize">你也可以拥有美凤眼</div>
+    <div class="clear"></div>
+    <div class="smallWordSize TextContent">
+        <div>有没有发现</div>
+        <div>生活中还是以单眼皮</div>
+        <div>内双的人居多哦</div>
+        <div>其实只要掌握正确的化妆技巧</div>
+        <div>你都可以通过眼妆让你的双眼变大</div>
+        <div>变美，下面和小美一起来学习眼影的画法吧！</div>
+    </div>
+    <div class="bigWordSize mainPointText">妆容要点</div>
+    <div class="smallWordSize TextContent">
+        <div>单眼皮、内双的眼形通常都是横长形的</div>
+        <div>建议选择大地色系的眼影来横向扩张眼睛形状</div>
+        <div>保持自然感</div>
+    </div>
+
+    <div class="wapStep bigWordSize" id="stepOne">
+        <div class="step ">Step 1</div>
+        <div class="stepName bigWordSize ">眼影的选择</div>
+        <div class="RelatedImg"><img src="images/1.jpg"></div>
+        <div class="ImgTextIntroduce bestSmallWordSize">一般在眼角外侧加入棕色来强调眼尾</div>
+    </div>
+    <div class="smallWordSize debriefing ">
+        用自带微闪的散粉给整个眼眶做定妆，上眼尾的外侧加入深棕色来勾勒轮廓，在用哑光的浅棕色来提升明亮度。
+    </div>
+    <div class="closeFrame"></div>
+    <div ng-controller="ProductStepCtrl" ng-model="productQuery" ng-init="productQuery='CourseStep1' ">
+        <div ng-include="'/TryMakeup/product.html'"></div>
+    </div>
+    <div class="wapStep bigWordSize" id="stepTwo">
+        <div class="step ">Step 2</div>
+        <div class="stepName bigWordSize ">眼线勾轮廓</div>
+        <div class="RelatedImg"><img src="images/2.jpg"></div>
+        <div class="ImgTextIntroduce bestSmallWordSize">用小号眼影刷将眼线沿着眼眶微微晕染开</div>
+    </div>
+    <div class="smallWordSize debriefing ">
+        想要打清爽又深邃的美凤眼的关键在于，无论眼线还是眼影，上下眼皮都要利用上，突出眼部轮廓并在视觉上让妆容更加自然。
+    </div>
+    <div class="closeFrame"></div>
+    <div ng-controller="ProductStepCtrl" ng-model="productQuery" ng-init="productQuery='CourseStep2' ">
+        <div ng-include="'/TryMakeup/product.html'"></div>
+    </div>
+    <div class="wapStep bigWordSize" id="stepThree">
+        <div class="step ">Step 3</div>
+        <div class="stepName bigWordSize ">唇妆注意</div>
+        <div class="RelatedImg"><img src="images/3.jpg"></div>
+    </div>
+    <div class="smallWordSize debriefing ">
+        与眼影相配的唇色也是让整个妆容和谐，提升你气质的关键哦。淡粉色、肉粉色都是不错的选择。
+    </div>
+    <div class="closeFrame"></div>
+    <div ng-controller="ProductStepCtrl" ng-model="productQuery" ng-init="productQuery='CourseStep3' ">
+        <div ng-include="'/TryMakeup/product.html'"></div>
+    </div>
+    <div class="summarize ">
+        <div class="heart summarizeHeart "></div>
+        <div class="bigWordSize lastText ">漂亮的美凤眼就这么完成啦！</div>
+        <div class="heart summarizeRightHeart "></div>
+    </div>
+    <div class="clear "></div>
+    <div class="lastImg ">
+        <img src="images/12.jpg ">
+    </div>
+    <input type="hidden" ng-model="templateurl" ng-init="templateurl='/TryMakeup/comments.html'" />
+    <div id="add_comment" ng-include="templateurl"></div>
+</body>
+
+</html>

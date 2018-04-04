@@ -1,0 +1,113 @@
+<div class="row" ng-controller="CookBookDetailsBaseController">
+	<div class="col-md-12">
+		<!-- BEGIN BasicTable-->
+		<div class="tab-pane active">
+			<div class="portlet light">
+				<div class="portlet-body form">
+					<form  class="form-horizontal" role="form" name="CBDetail">
+						<div class="form-body">
+							<div class="form-group">
+								<label class="col-md-2 control-label">所属产品<span class="required"> * </span></label>
+								<div class="col-md-4">
+									<select ng-model="BelongProID" ng-options="o.ID as o.ProductName for o in ProductArrs" class="form-control">
+										<option value=""></option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">食谱名称<span class="required"> * </span></label>
+								<div class="col-md-4">
+									<input name="Name" ng-model="Name" type="text" class="form-control" placeholder="必填" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">食谱简介<span class="required"> * </span></label>
+								<div class="col-md-4">
+									<textarea name="Description" ng-model="Description" class="form-control" rows="3" placeholder="必填" required></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">食谱类别<span class="required"> * </span></label>
+								<div class="col-md-4">
+									<select  ng-model="CBCategory" ng-options="o.ID as o.CategoryName for o in CBCategorys" class="form-control">
+										<option value=""></option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-md-2">食谱图片</label>
+								<div class="col-md-4">
+									<div class="fileinput fileinput-new" data-provides="fileinput">
+										<div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+											<img ng-src="{{ImageUrl}}" alt="" /> 
+										</div>
+										<div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> 
+										</div>
+										<div>
+											<span class="btn default btn-file">
+												<span class="fileinput-new"> 选择图片 </span>
+												<span class="fileinput-exists"> 更换 </span>
+												<input type="file" name="..."> </span>
+												<a href="#" class="btn red fileinput-exists" data-dismiss="fileinput"> 删除 </a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">标签</label>
+								<div class="col-md-4">
+									<input name="Tag" ng-model="Tag" type="text" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">所需时长</label>
+								<div class="col-md-4">
+									<input name="CookTime" ng-model="CookTime" type="text" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">小贴士</label>
+								<div class="col-md-4">
+									<textarea name="Tip" ng-model="Tip" class="form-control" rows="3"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">IteamID</label>
+								<div class="col-md-4">
+									<input name="IteamID" ng-model="IteamID" type="text" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">是否公开</label>
+								<div class="col-md-4">
+									<select ng-model="IsOpen" name="IsOpen" class="form-control">
+										<option value="True">是</option>
+										<option selected="selected" value="False">否</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">审核状态</label>
+								<div class="col-md-4">
+									<select ng-model="IsReview" name="IsReview" class="form-control">
+										<option selected="selected" value="False">已审核</option>
+										<option value="True">未审核</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label" for="title"></label>
+								<div class="col-md-5">
+									<input ng-disabled="!CBDetail.Name.$valid||!BelongProID" ng-click="EditProductFun(1)" class="btn bg-blue-steel bg-font-blue-steel" type="submit" value="确认"/>
+									<input ng-click="EditProductFun(0)" class="btn bg-default bg-font-default" type="submit" value="取消"/>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- END BasicTable-->
+	</div>
+</div>

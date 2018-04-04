@@ -1,0 +1,145 @@
+.KR_text{
+    padding:15px;
+    line-height:25px;
+}
+
+.Register_details{
+    padding:10px 20px 20px;
+}
+.select_role_div{
+    height:34px;
+    line-height:34px;
+    font-size: 14px;
+}
+.select_role_div span{
+    display: block;
+    float: left;
+}
+.select_role_div .wr_bold{
+    color: #343434;
+}
+.select_role_div .select{
+    float: left;
+}
+
+.Rselect{
+    float: left;
+    margin-left:10px;
+}
+
+.Register_details_Table{
+    margin-top:15px;
+}
+
+.Register_details_Table table{
+    width:100%;
+    font-size: 14px;
+}
+.Register_details_Table table tr{
+    height:50px;
+    line-height:50px;
+}
+.tb_left{
+    width:22%;
+    text-align:right;
+    color: #666666;
+}
+.tb_left span{
+    color: #f14224;
+    margin-right:5px;
+}
+.tb_middle{
+    width:39%;
+    padding-left:10px;
+}
+.tb_right{
+    width:39%;
+    font-size: 12px;
+}
+.Regist_text{
+    position: relative;
+    border: 2px solid #e4e4e7;
+    width: 250px;
+    height:30px;
+    border-radius:5px;
+    background-color: #ffffff;
+} 
+.Regist_text input{
+    position: absolute;
+    left:1px;
+    top:1px;
+    height: 28px;
+    width: 248px;
+    border: 0px;
+    text-indent: 1em;
+}
+.yzm{
+    background-image:url(../images/yzm.png);
+    width: 100px;
+    height: 35px;
+    float:left;
+    margin-left: 10px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+}
+.SecurityClassification span{
+    float: left;
+}
+
+.sc,.sc_select{
+    display: block;
+    margin-right: 5px;
+    height: 10px;
+    width:40px;
+}
+
+.sc{
+    background-color: #ededed; 
+}
+
+.sc_select{
+    background-color: #ffb791
+}
+
+.sc_text{
+    font-size: 12px;
+    height: 10px;
+    line-height: 10px;
+}
+.checkboxText{
+    text-decoration: underline;
+}
+.SubmitBtn{
+    background-image:url(../images/zc.png);
+    width: 150px;
+    height: 40px;
+    margin-left: 10px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+}
+
+.promptImg,.correctpromptImg{
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-top:16px;
+    margin-right:5px;
+}
+.promptImg{
+    background-image:url(../images/prompt.png);
+}
+.correctpromptImg{
+    background-image:url(../images/correctprompt.png);
+}
+.gery_text{
+    color: #d3d3d3;
+}
+.Wselect{
+    padding-top:22px;
+    text-align: left;
+}
+.Wselect .dropdown-input{
+    color: #666666;
+}

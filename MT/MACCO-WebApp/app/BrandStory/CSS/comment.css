@@ -1,0 +1,39 @@
+@charset "UTF-8";
+body{
+	background:#ffffff;   
+	padding: 0;
+	margin: 0;
+	font: 13px youyuan ,"Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+	color: #666666;
+}
+img{
+	width: 100%;
+}
+.brand{
+	position: relative;
+
+}
+.textInfo {
+  position: absolute;
+  top: 50%;
+  left: 29%;
+  text-indent: 30px;
+  width: 69.5%;
+  height: 30px;
+  line-height: 30px;
+}
+.textInfo>div{
+	text-indent: 33px;
+}
+@media(max-width:375px){
+.textInfo {
+	height: 26px;
+	line-height: 26px;
+	}
+}
+@media(max-width:360px){
+.textInfo {
+	height: 24px;
+	line-height: 24px;
+	}
+}

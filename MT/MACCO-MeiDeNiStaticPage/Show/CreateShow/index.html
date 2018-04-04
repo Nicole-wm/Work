@@ -1,0 +1,36 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  	<title>index</title>
+  	<link href="css/base.css" rel="stylesheet"/>  
+  	<link href="css/index.css" rel="stylesheet"/> 
+    <link href="css/addTag.css" rel="stylesheet"/>  
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script>
+  	<script src="js/jquery-1.9.1.min.js"></script>
+  	<script src="js/hammer.min.js"></script>
+    <script src="js/propagating.js"></script>
+  	<script src="js/index.js"></script>
+  </head>
+  <body ng-controller="indexCtrl">
+  	<div class="main"> 
+      <div id="AddTagsDiv" class="AddTagsDiv">
+        <div id="ShowImageDiv" class="ShowImageDiv"> 
+          <img id="HideImgDiv">
+          <div id="ShowNodeDiv"></div>
+        </div> 
+      </div>
+      <div id="TempText1" class="note_text noteFLeft noteTextTop2" style="display:none"></div>
+      <div id="TempText2" class="note_text noteFRight noteTextTop2" style="display:none"></div>
+      <div class="TagsText">
+        <div class="TagsText1">关于添加标签</div>
+        <div class="TagsText2">点击照片 选择添加相关信息</div>
+        <div class="TagsText3 Tip"><span>点击</span><img src="images/TagDot.png"><span>可改变标签样式和方向，长按删除</span></div>
+      </div>
+      <div class="BottomDiv" onclick="GetTagsJson()">
+        <img src="images/NextBtn.png">
+      </div>
+    </div>
+  </body>
+  </html>

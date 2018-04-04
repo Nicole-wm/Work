@@ -1,0 +1,247 @@
+<div class="page-sidebar navbar-collapse collapse">
+  <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" ng-class="{'page-sidebar-menu-closed': settings.layout.pageSidebarClosed}">
+    <li class="start nav-item">
+      <a href="#/guide.html">
+        <i class="icon-home"></i>
+        <span class="title" ng-bind-html="'引导' | translate"></span>
+      </a>
+    </li>
+    <li class="nav-item" ng-show="settings.role.cpOpen">
+      <a href="javascript:;">
+        <i class="font-blue" style="font-weight:600">CP</i>
+      </a>
+    </li>
+    <li class="nav-item" ng-show="settings.role.cpOpen">
+      <a href="javascript:;">
+        <i class="icon-diamond"></i>
+        <span class="title" ng-bind-html="'产品管理' | translate"></span>
+        <span class="arrow"></span>
+      </a>
+      <ul class="sub-menu">
+        <li>
+          <a href="#/product/product_list.html?type=0">
+            <i class="fa fa-th"></i>{{"产品列表" | translate}}
+          </a>
+        </li>
+        <li>
+          <a href="#/product/product_validationguide.html?type=0">
+            <i class="icon-link"></i>{{"产品验证" | translate}}
+          </a>
+        </li>
+        <li>
+          <a href="#/product/product_count.html?type=0">
+            <i class="fa fa-bar-chart"></i>{{"产品统计" | translate}}
+          </a>
+        </li> 
+      </ul>
+    </li>
+    <li class="nav-item" ng-show="settings.role.cpOpen">
+      <a href="javascript:;">
+        <i class="icon-puzzle"></i>
+        <span class="title" ng-bind-html="'应用管理' | translate"></span>
+        <span class="arrow"></span>
+      </a>
+      <ul class="sub-menu">
+        <li>
+          <a href="#/app/app_list.html">
+            <i class="fa fa-th"></i>  {{"应用列表" | translate}}
+          </a>
+        </li>
+        <li>
+          <a href="#/app/app_count.html">
+            <i class="fa fa-bar-chart"></i> {{"应用统计" | translate}}
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item" ng-show="settings.role.cpOpen">
+      <a href="javascript:;">
+        <i class="icon-settings"></i>
+        <span class="title" ng-bind-html="'设备管理' | translate"></span>
+        <span class="arrow"></span>
+      </a>
+      <ul class="sub-menu">
+        <li>
+          <a href="#/device/device_list.html">
+            <i class="fa fa-bars"></i> {{"设备列表" | translate}}
+          </a>
+        </li>
+        <li>
+          <a href="#/device/device_count.html">
+            <i class="fa fa-bar-chart"></i> {{"设备统计" | translate}}
+          </a>
+        </li> 
+      </ul>
+    </li>
+    <li class="nav-item" ng-show="settings.role.cpOpen">
+      <a href="javascript:;">
+        <i class="icon-briefcase"></i>
+        <span class="title" ng-bind-html="'用户管理' | translate">  </span>
+        <span class="arrow"></span>
+      </a>
+      <ul class="sub-menu">
+        <li>
+          <a href="#/user/user_list.html">
+            <i class="fa fa-bars"></i> {{"用户列表" | translate}}
+          </a>
+        </li>
+        <li>
+          <a href="#/user/user_count.html">
+            <i class="fa fa-bar-chart"></i> {{"用户统计" | translate}}
+          </a>
+        </li>
+      </ul>  
+    </li>
+    <!-- <li class="nav-item" ng-show="settings.role.cpOpen">
+       <a href="javascript:;">
+         <i class="icon-wallet"></i>
+         <span class="title" ng-bind-html="'食谱管理' | translate">  </span>
+         <span class="arrow"></span>
+       </a>
+       <ul class="sub-menu">
+         <li>
+           <a href="#/cookbook/cookbook_list.html">
+             <i class="fa fa-bars "></i> {{"食谱列表" | translate}}
+           </a>
+         </li>
+         <li>
+           <a href="#/cookbook/cookbook_count.html">
+             <i class="fa fa-bar-chart"></i> {{"食谱统计" | translate}}
+           </a>
+         </li>
+       </ul>
+     </li> --> 
+     <li class="nav-item" ng-show="settings.role.cpOpen">
+      <a href="javascript:;">
+        <i class="fa fa-folder"></i>
+        <span class="title" ng-bind-html="'OTA管理' | translate"> </span>
+        <span class="arrow"></span>
+      </a>
+      <ul class="sub-menu">
+        <li>
+          <a href="#/ota/tasks_list.html?type=0">
+            <i class="fa fa-bars"></i> {{"任务列表" | translate}}
+          </a>
+        </li>
+        <li>
+          <a href="#/ota/log_list.html?type=0">
+            <i class="fa fa-bars"></i> {{"日志列表" | translate}}
+          </a>
+        </li>
+      </ul>
+    </li> 
+    <li class="nav-item" ng-show="settings.role.ipOpen">
+      <a href="javascript:;">
+        <i class="font-blue" style="font-weight:600">IP</i>
+      </a>
+    </li>
+    <li class="nav-item" ng-show="settings.role.ipOpen">
+      <a href="javascript:;">
+        <i class="icon-diamond"></i>
+        <span class="title" ng-bind-html="'产品管理' | translate"></span>
+        <span class="arrow"></span>
+      </a>
+      <ul class="sub-menu">
+        <li>
+          <a href="#/product/product_list.html?type=1">
+            <i class="fa fa-th"></i>{{"产品列表" | translate}}
+          </a>
+        </li>
+        <li>
+          <a href="#/product/product_validationguide.html?type=1">
+            <i class="icon-link"></i>{{"产品验证" | translate}}
+          </a>
+        </li>
+        <li>
+          <a href="#/product/product_count.html?type=1">
+            <i class="fa fa-bar-chart"></i>{{"产品统计" | translate}}
+          </a>
+        </li> 
+      </ul>
+    </li>
+    <li class="nav-item" ng-show="settings.role.ipOpen">
+      <a href="javascript:;">
+        <i class="fa fa-folder"></i>
+        <span class="title" ng-bind-html="'OTA管理' | translate"> </span>
+        <span class="arrow"></span>
+      </a>
+      <ul class="sub-menu">
+        <li>
+          <a href="#/ota/tasks_list.html?type=1">
+            <i class="fa fa-bars"></i> {{"任务列表" | translate}}
+          </a>
+        </li>
+        <li>
+          <a href="#/ota/log_list.html?type=1">
+            <i class="fa fa-bars"></i> {{"日志列表" | translate}}
+          </a>
+        </li>
+      </ul>
+    </li> 
+    <li class="nav-item" ng-show="settings.role.otaOpen">
+      <a href="javascript:;">
+        <i class="font-blue" style="font-weight:600">OTA</i>
+      </a>
+    </li>
+    <li class="nav-item" ng-show="settings.role.otaOpen">
+      <a href="javascript:;">
+        <i class="icon-diamond"></i>
+        <span class="title" ng-bind-html="'产品管理' | translate"></span>
+        <span class="arrow"></span>
+      </a>
+      <ul class="sub-menu">
+        <li>
+          <a href="#/product/product_list.html?type=2">
+            <i class="fa fa-th"></i>{{"产品列表" | translate}}
+          </a>
+        </li><!-- 
+        <li>
+          <a href="#/product/product_validationguide.html?type=2">
+            <i class="icon-link"></i>{{"产品验证" | translate}}
+          </a>
+        </li> -->
+        <li>
+          <a href="#/product/product_count.html?type=2">
+            <i class="fa fa-bar-chart"></i>{{"产品统计" | translate}}
+          </a>
+        </li> 
+      </ul>
+    </li>
+    <li class="nav-item" ng-show="settings.role.otaOpen">
+      <a href="javascript:;">
+        <i class="fa fa-folder"></i>
+        <span class="title" ng-bind-html="'OTA管理' | translate"> </span>
+        <span class="arrow"></span>
+      </a>
+      <ul class="sub-menu">
+        <li>
+          <a href="#/ota/tasks_list.html?type=2">
+            <i class="fa fa-bars"></i> {{"任务列表" | translate}}
+          </a>
+        </li>
+        <li>
+          <a href="#/ota/log_list.html?type=2">
+            <i class="fa fa-bars"></i> {{"日志列表" | translate}}
+          </a>
+        </li>
+      </ul>
+    </li> 
+    <li class="nav-item">
+      <a href="javascript:;">
+      <i class="font-blue" style="font-weight:600">LORA</i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#/lora/application/app_list.html">
+        <i class="fa fa-th"></i>
+        <span class="title" ng-bind-html="'应用管理' | translate"></span>
+      </a>
+    </li> 
+     <li class="nav-item">
+      <a href="#/lora/gateway/gat_list.html">
+        <i class="fa fa-rss"></i>
+        <span class="title" ng-bind-html="'网关管理' | translate"></span>
+      </a>
+    </li> 
+  </ul>
+</div>

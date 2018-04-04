@@ -1,0 +1,94 @@
+<div class="page_mcontent container">
+	<div ng-include="'tpl/breadcrumb.html'"></div> 
+	<div class="pro_top">
+		<div class="pro_graph floatl">
+			<img ng-src="{{Cur_pro.banner}}">
+		</div> 
+		<div class="pro_info floatr">
+			<div class="pro_details">
+				<div class="pro_pname font38 t_ellipsis">
+					<span title="{{Cur_pro.pname}}" ng-bind="Cur_pro.pname"></span>
+				</div>
+				<div class="blank"></div>
+				<div class="pro_ename font18">
+					<span title="{{Cur_pro.ename}}" ng-bind="Cur_pro.ename"></span>
+				</div>
+				<div class="blank"></div>
+				<div class="pro_spec font14">
+					<span ng-bind="Cur_pro.spec"></span>
+					&nbsp;&nbsp;
+					<span ng-bind="Cur_pro.price"></span>
+				</div>
+				<div class="blank"></div>
+				<div class="pro_buy font14">
+					<span class="buy_info floatl">购买渠道</span>
+					<span class="pro_map floatr" ng-click="gotoPro()">产品说明</span>
+				</div>
+				<div class="blank_s"></div>
+				<div class="buy_way font12">
+					<a href="https://frangi.tmall.com/" target="_blank"><span class="dis_inblock t_center">FRANGI 天猫官方旗舰店</span></a>
+					<a href="http://mall.yhd.com/index-212789.html" target="_blank"><span class="dis_inblock t_center">FRANGI 1号店官方旗舰店</span></a>
+					<div class="blank_s"></div> 
+					<a href="https://frangi.jd.com/" target="_blank"><span class="dis_inblock t_center">FRANGI 京东官方旗舰店</span> </a>
+					<a href="http://frangi.suning.com/" target="_blank"><span class="dis_inblock t_center">FRANGI 苏宁官方旗舰店</span> </a>
+					<div class="blank_s"></div><!-- 
+					<span class="dis_inblock  t_center">FRANGI 微信官方旗舰店</span>  -->
+				</div>
+			</div>
+			<div class="border_e5"></div>
+			<div class="blank_s"></div>
+			<div class="pro_contact font12">
+				<span class="dis_block">联系我们</span>
+				<span class="dis_block">021-5175 7688</span>
+			</div>
+		</div> 
+	</div>
+	<div id="pro_content" class="border_e5"></div>
+	<div class="blank_m"></div>
+	<div class="pro_content">
+		<div class="con_pname font38 t_center">
+			<span ng-bind="Cur_pro.pname"></span>
+		</div>
+		<div class="blank"></div>
+		<div class="con_container m_center">
+			<p class="con_des font18">产品描述</p>
+			<div class="blank"></div>
+			<div class="con_suit font14">
+				<div class="con_suit_l floatl">
+					<p>适合人群</p>
+					<p>适合肤质</p>
+					<p>产品功效</p>
+					<div class="blank"></div>
+					<p ng-bind="Cur_pro.description"></p>
+				</div>
+				<div class="con_suit_r floatr">
+					<p ng-bind="Cur_pro.crowd"></p>
+					<p ng-bind="Cur_pro.skin"></p>
+					<p ng-bind="Cur_pro.effect"></p>
+				</div>
+			</div>
+			<div class="blank_s"></div>
+			<div class="pro_post">
+				<img ng-src="{{Cur_pro.post}}">
+			</div>
+		</div>
+	</div>
+	<div class="blank_l"></div>
+	<div class="border_e5"></div>
+	<div class="sug_part m_center">
+		<div class="blank_s"></div>
+		<p class="sug_title font14">相关推荐</p>
+		<div class="blank_s"></div>
+		<div class="sug_list">
+			<div class="sug_pro font12 floatl t_center" ng-repeat="item in Cur_sugAll">
+				<img class="sug_banner cursor_p" ng-src="{{item.banner}}" ui-sref="product({ID:{{item.id}}})">
+				<div class="blank_s"></div>
+				<p ng-bind="item.pname"></p>
+				<div class="blank"></div>
+				<p><span ng-bind="item.spec"></span>&nbsp;&nbsp;<span ng-bind="item.price"></span></p>
+			</div>
+			<div class="clear_both"></div>
+		</div>
+	</div>
+	<div class="blank_l"></div>
+</div>

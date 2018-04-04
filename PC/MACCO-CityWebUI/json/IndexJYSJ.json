@@ -1,0 +1,12 @@
+{
+	"IsSuccess":true,
+	"Data":{
+		"Title":"2016年交易数据（截止1月）",
+		"Projects":[
+		{ "Name":"工程","Count":"179","TransAmount":"86","BidAmount":"55" },
+		{ "Name":"采购","Count":"285","TransAmount":"14","BidAmount":"14" },
+		{ "Name":"产权","Count":"68","TransAmount":"4","BidAmount":"4" },
+		{ "Name":"土地","Count":"2","TransAmount":"5","BidAmount":"15" }
+		]
+	}
+}

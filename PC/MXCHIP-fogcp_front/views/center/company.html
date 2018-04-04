@@ -1,0 +1,171 @@
+<div ng-controller="CompanyController">
+	<div class="row" ng-show="companyStates==4">
+		<div class="form-group col-lg-3">
+		<a data-toggle="modal" data-original-title="点击修改认证信息" data-toggle="modal" data-target="#myModal_auth" ng-click="AuthFun()" class="btn bg-blue-steel bg-font-blue-steel">企业认证</a>
+		</div>
+	</div>
+	<div class="row" ng-show="companyStates!=4">
+		<div class="col-md-12">
+			<div class="portlet light bordered">
+				<div class="portlet-body">
+					<div class="row">
+						<div class="col-md-2">
+							<span class="pull-right" style="font-size:400%">
+								<i class="fa fa-check green-soft font-green-soft" ng-show="companyStates==2"></i>  
+								<i class="fa fa-close red-soft font-red-soft" ng-show="companyStates==1"></i> 
+								<i class="fa fa-circle-o-notch blue-soft font-blue-soft" ng-show="companyStates==3"></i>
+							</span>
+						</div>
+						<div class="col-md-7" ng-show="companyStates==2">
+							<h3>您已通过庆科云企业实名认证！</h3>
+							<p>企业名称：{{companyname}}&nbsp;&nbsp;&nbsp;&nbsp;生效时间：{{checkedtime|date:'yyyy-MM-dd HH:mm:ss'}}</p>
+						</div>
+						<div class="col-md-7" ng-show="companyStates==1">
+							<h3>您未通过庆科云企业实名认证，请重新修改认证资料！</h3>
+						</div>
+						<div class="col-md-7" ng-show="companyStates==3">
+							<h3>实名认证正在审核中！</h3>
+						</div>
+						<div class="col-md-3">
+							<h3></h3>
+							<a ng-show="companyStates!=1" class="blue-soft font-blue-soft font-sm" data-original-title="点击查看认证信息" data-toggle="modal" data-target="#myModal_auth" ng-click="AuthFun()">查看</a>
+							<a ng-show="companyStates==1" class="blue-soft font-blue-soft font-sm" data-original-title="点击修改认证信息" data-toggle="modal" data-target="#myModal_auth" ng-click="AuthFun()">修改</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<input type="hidden" id="myModal_auth_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_auth">
+			<div id="myModal_auth" class="modal fade">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<a id="CompanyModalCloseBtn" class="close" data-dismiss="modal" aria-hidden="true"></a>
+							<h4 class="modal-title">认证信息</h4>
+						</div>
+						<div class="modal-body">
+							<div class="portlet">
+								<form  class="form-horizontal" role="form" name="CompanyInfo">
+									<div class="form-body">
+										<div class="form-group">
+											<label class="col-md-3 control-label">企业全称<span class="required"> * </span></label>
+											<div class="col-md-4">
+												<input ng-disabled="companyStates==2||companyStates==3" name="companyname" ng-model="companyname" type="text" class="form-control" placeholder="必填" required>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">工商执照注册号<span class="required"> * </span></label>
+											<div class="col-md-4">
+												<input ng-disabled="companyStates==2||companyStates==3" name="bnumber" ng-model="bnumber" type="text" class="form-control" placeholder="必填" required>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">企业负责人/法人代表<span class="required"> * </span></label>
+											<div class="col-md-4">
+												<input ng-disabled="companyStates==2||companyStates==3" name="bentity" ng-model="bentity"  type="text" class="form-control" placeholder="必填" required>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">隶属企业<span class="required"> * </span></label>
+											<div class="col-md-4">
+												<input ng-disabled="companyStates==2||companyStates==3" name="subenter" ng-model="subenter"  type="text" class="form-control" placeholder="必填" required>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">企业注册地址<span class="required"> * </span></label>
+											<div class="col-md-4">
+												<input ng-disabled="companyStates==2||companyStates==3" name="braddress" ng-model="braddress"  type="text" class="form-control" placeholder="必填" required>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">办公电话<span class="required"> * </span></label>
+											<div class="col-md-4">
+												<input ng-disabled="companyStates==2||companyStates==3" name="tel" ng-model="tel"  type="text" class="form-control" placeholder="必填" required>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">官网地址</label>
+											<div class="col-md-4">
+												<input ng-disabled="companyStates==2||companyStates==3" name="url" ng-model="url"  type="text" class="form-control" placeholder="选填">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">组织机构代码<span class="required"> * </span></label>
+											<div class="col-md-4">
+												<div style="padding-top:10px">
+													<div class="fileinput fileinput-new" data-provides="fileinput">
+														<div class="fileinput-new thumbnail" style="width:200px; height:150px;" >
+															<div id="pic1_img">
+																<img ng-src="{{pic1}}" style="max-width: 200px; max-height: 150px;">
+															</div>  
+														</div>
+														<div id="pic1_name"></div>
+													</div>
+													<div id="pic1_btn">
+														<a ng-show="companyStates==1||companyStates==4" id="pic1_selectbtn" class='btn btn-primary'>选择文件</a>
+														<a ng-show="companyStates==1||companyStates==4" id="pic1_upbtn" class='btn btn-primary'>开始上传</a>
+													</div>
+													<input type="file" id="pic1_input" style="display:none">
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">工商执照<span class="required"> * </span></label>
+											<div class="col-md-4">
+												<div style="padding-top:10px">
+													<div class="fileinput fileinput-new" data-provides="fileinput">
+														<div class="fileinput-new thumbnail" style="width:200px; height:150px;" >
+															<div id="pic2_img">
+																<img ng-src="{{pic2}}" style="max-width: 200px; max-height: 150px;">
+															</div>  
+														</div>
+														<div id="pic2_name"></div>
+													</div>
+													<div id="pic2_btn">
+														<a ng-show="companyStates==1||companyStates==4" id="pic2_selectbtn" class='btn btn-primary'>选择文件</a>
+														<a ng-show="companyStates==1||companyStates==4" id="pic2_upbtn" class='btn btn-primary'>开始上传</a>
+													</div>
+													<input type="file" id="pic2_input" style="display:none">
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">税务登记证<span class="required"> * </span></label>
+											<div class="col-md-4">
+												<div style="padding-top:10px">
+													<div class="fileinput fileinput-new" data-provides="fileinput">
+														<div class="fileinput-new thumbnail" style="width:200px; height:150px;" >
+															<div id="pic3_img">
+																<img ng-src="{{pic3}}" style="max-width: 200px; max-height: 150px;">
+															</div>                                   
+														</div>
+														<div id="pic3_name"></div>
+													</div>
+													<div id="pic3_btn">
+														<a ng-show="companyStates==1||companyStates==4" id="pic3_selectbtn" class='btn btn-primary'>选择文件</a>
+														<a ng-show="companyStates==1||companyStates==4" id="pic3_upbtn" class='btn btn-primary'>开始上传</a>
+													</div>
+													<input type="file" id="pic3_input" style="display:none">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-group" ng-show="companyStates==1||companyStates==4">
+										<label class="col-md-5 control-label" for="title"></label>
+										<div class="col-md-3">
+											<input ng-disabled="!CompanyInfo.companyname.$valid||!CompanyInfo.bnumber.$valid||!CompanyInfo.bentity.$valid||!CompanyInfo.bentity.$valid||!CompanyInfo.subenter.$valid||!CompanyInfo.braddress.$valid||!CompanyInfo.tel.$valid" ng-click="CompanyInfoFun()" class="btn blue-steel" type="submit" value="确认"/>
+											<input class="btn bg-default bg-font-default" type="submit"  data-dismiss="modal" aria-hidden="true" value="取消"/>
+										</div>
+									</div>
+								</form> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

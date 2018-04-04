@@ -1,0 +1,54 @@
+<div class="modal-header">
+	<button type="button" class="close" ng-click="CancelSelectFun()"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	<h4 class="modal-title">选择产品<span class="title"></span></h4>
+</div>
+<div class="modal-body">
+	<div class="form-group">
+		<div class="portlet light">
+			<div class="portlet-body" ng-show="totalItems===0"><h4>暂无可绑定的产品</h4></div>
+			<div class="portlet-body"  ng-show="totalItems!==0" style="max-height:350px;overflow-y:scroll">
+				<table class="table table-striped table-bordered table-hover">
+					<thead>
+						<tr>
+							<th> </th>
+							<th> 产品ID </th>
+							<th> 产品图片 </th>
+							<th> 产品名称 </th>
+							<th> 品牌 </th>
+							<th> 型号 </th>
+							<th> 状态 </th>
+						</thead>
+						<tbody>
+							<tr ng-repeat="item in ModalListArr">
+								<td ng-show="SelectType!=1">
+									<label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+										<input type="checkbox" class="checkboxes" ng-model="item.Seleted"/>
+										<span></span>
+									</label>
+								</td>
+								<td ng-show="SelectType==1">
+									<label class="mt-radio mt-radio-single mt-radio-outline">
+										<input type="radio" name="VDev" value="{{item.productid}}" ng-model="item.Seleted"/>
+										<span></span>
+									</label>
+								</td>
+								<td>{{item.productid}}</td>
+								<td><img ng-src="{{item.pic}}"></td>
+								<td>{{item.pname}}</td>
+								<td>{{item.brand}}</td>
+								<td>{{item.model}}</td>
+								<td>
+									<span class="label label-sm label-info" ng-show="item.status"> {{item.StateText}} </span>
+									<span class="label label-sm label-warning" ng-show="!item.status"> {{item.StateText}} </span>
+								</td>
+							</tr>
+						</tbody>
+					</table> 
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer" >
+		<button type="button" class="btn btn-danger ok" ng-click="SureSelectFun()">确认</button>
+		<button type="button" class="btn btn-default cancel" ng-click="CancelSelectFun()">取消</button>
+	</div>

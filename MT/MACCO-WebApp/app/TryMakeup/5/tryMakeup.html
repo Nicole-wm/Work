@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+
+<head>
+    <!--include "../../../templetes/commonHead.html"-->
+    <!--include "../../../templetes/TryMakeup/tryMakeup.html"-->
+</head>
+
+<body ng-controller="ProductListCtrl" style="background: url('images/bg.png') repeat;">
+    <div id="head" class="head RelatedImg">
+        <img id="model1" ng-show="HasImage" ng-src="{{ImageUrl}}" src="images/model.jpg">
+        <img id="model" ng-show="!HasImage" src="images/model.jpg">
+        <div class="mask">
+            <img src="images/mask.png" id="mask">
+        </div>
+    </div>
+    <input type="hidden" ng-model="zanurl" ng-init="zanurl='/TryMakeup/zan.html'" />
+    <div id="add_zan" ng-include="zanurl"></div>
+
+    <div class="wrapDiv">
+        <div class="petal">
+            <div class="petalBg">
+                <img src="images/bg.png">
+                <div class="classroom bigWordSize">夏日的腮红彩妆课堂</div>
+            </div>
+            <div class="maidRed">
+                <img src="images/1.png">
+            </div>
+            <div class="textInfo smallWordSize">当你徜徉在夏日的碧海蓝天、灿烂阳光中，也不要忘记脸上那一抹少 女 红！很多人都标示不擅长描画，那么从现在开始，学习基本应用方法，彻底掌握更美的进阶技巧！</div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="mainPoint bigWordSize">妆容要点</div>
+    <div class="text smallWordSize">假睫毛out，轻刷睫毛即可。腮红和唇色保持同色系。无论可爱还是帅气，轻松搞定！</div>
+    <div class="step" id="stepOne">
+        <div class="stepNum smallWordSize">第一步</div>
+        <div class="stepName bigWordSize">眼影</div>
+    </div>
+    <div class="WrapEyeMake-up">
+        <div class="eyeMake-upImg">
+            <img src="images/2.jpg">
+        </div>
+        <div class="eyeMake-upInfo smallWordSize">眼妆要求清爽自然，底部眼睑也用珠光粉轻轻扫过即可。
+            <br>为了你的大眼睛，使劲往外刷睫毛吧！但千万别刷出苍蝇腿哦。</div>
+    </div>
+    <div class="clear"></div>
+    <div ng-controller="ProductStepCtrl" ng-model="productQuery" ng-init="productQuery='CourseStep1' ">
+        <div ng-include="'/TryMakeup/product.html'"></div>
+    </div>
+    <div class="wrapStep">
+        <div class="step" id="stepTwo">
+            <div class="stepNum smallWordSize">第二步</div>
+            <div class="stepName bigWordSize">腮红</div>
+        </div>
+        <div class="WrapTopBlusher">
+            <div class="blusherImg stepImg">
+                <img src="images/3.jpg">
+            </div>
+            <div class="blusherInfo smallWordSize stepText">使用时用腮红刷沾取腮红粉后，要在手背上打转，让粉深入到粉刷内部，然后在颧骨最高处呈圆形涂抹。这样呈现的效果更佳贴合。</div>
+        </div>
+        <div class="clear"></div>
+        <div class="WrapBottomBlusher">
+            <div class="blusherBottomImg">
+                <img src="images/4.jpg">
+            </div>
+            <div class="blusherBottomInfo smallWordSize">在颧骨及以下的小范围扫上蜜桃色的腮红，不需要扫的太长，到发际线之前就好了。</div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div ng-controller="ProductStepCtrl" ng-model="productQuery" ng-init="productQuery='CourseStep2' ">
+        <div ng-include="'/TryMakeup/product.html'"></div>
+    </div>
+    <div class="step" id="stepThree">
+        <div class="stepNum smallWordSize">第三步</div>
+        <div class="stepName bigWordSize">唇彩</div>
+    </div>
+    <div class="WrapLipGlossr">
+        <div class="lipGlossImg stepImg">
+            <img src="images/5.jpg">
+        </div>
+        <div class="lipGlossInfo smallWordSize stepText">抹上淡淡的同色系唇膏就好啦。夏天出门是不是又清爽又精神？</div>
+    </div>
+    <div class="clear"></div>
+    <div ng-controller="ProductStepCtrl" ng-model="productQuery" ng-init="productQuery='CourseStep3' ">
+        <div ng-include="'/TryMakeup/product.html'"></div>
+    </div>
+    <div class="lastResult">
+        <img src="images/6.jpg">
+        <div class="allEffect bigWordSize">夏日的腮红，清爽完成！</div>
+    </div>
+    <input type="hidden" ng-model="templateurl" ng-init="templateurl='/TryMakeup/comments.html'" />
+    <div id="add_comment" ng-include="templateurl"></div>
+</body>
+
+</html>

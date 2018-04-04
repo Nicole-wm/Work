@@ -1,0 +1,35 @@
+.col_id {
+	width:10%; 
+}
+.col_time {
+	width:15%;
+}
+.col_content{
+	width:55%;
+}
+.col_platform{
+	width:10%;
+}
+.col_operation{
+    width:10%;
+}
+.mobileId,
+.mobileTime,
+.mobileContent,
+.mobilePlatform,
+.mobileOperation{
+	display: none;
+ } 
+@media(max-width:768px) {
+.WrapContent {
+  height: 450px;
+  max-height: 450px;
+}
+.mobileId,
+.mobileTime,
+.mobileContent,
+.mobilePlatform,
+.mobileOperation{
+    display: inline-block;
+    } 
+}

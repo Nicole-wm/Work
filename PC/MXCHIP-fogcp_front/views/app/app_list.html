@@ -1,0 +1,57 @@
+<div class="row">
+	<div class="col-md-12">
+		<!-- BEGIN Search Line -->
+		<div class="row">
+			<div class="form-group col-lg-3">
+				<div class="input-icon right">
+					<i ng-click="SearchApp()" class="icon-magnifier"></i>
+					<input ng-model="Keyword" type="text" class="form-control" placeholder="请输入关键字"> 
+				</div>
+			</div>
+			<div class="form-group col-lg-3">
+				<a href="#/app/app_add.html" class="btn bg-blue-steel bg-font-blue-steel"> 添加应用</a>
+			</div>
+		</div>
+		<!-- END Search Line -->
+		<!-- BEGIN:app_list -->
+		<div class="row" ng-show="totalItems===0">
+			<div class="form-group col-lg-12"><h4>暂无应用</h4></div>
+		</div> 
+		<div class="row" ng-show="totalItems!==0">
+			<div class="col-md-4 col-sm-12" ng-repeat="item in ListArr">
+				<div class="portlet blue-hoki box">
+					<div class="portlet-title">
+						<div class="caption" ng-mousedown="AppMouseDown(item.appid)" ng-mouseup="AppMouseUp(item.appid)"><span class="text-ellipsis" title="{{item.name}}">应用名：{{item.name}}</span></div>
+						<div class="actions">
+							<a ng-click="EditAppFun(item.appid)" class="btn btn-default btn-sm">
+								<i class="fa fa-pencil" title="编辑"></i>
+							</a>
+							<a ng-click="DeleteAppFun(item.appid)" class="btn btn-default btn-sm">
+								<i class="fa fa-trash-o" title="删除"></i>
+							</a>
+						</div>
+					</div>
+					<div class="portlet-body" ng-mousedown="AppMouseDown(item.appid)" ng-mouseup="AppMouseUp(item.appid)">
+						<div class="row static-info">
+							<div class="col-md-4 name">应用编号：</div>
+							<div class="col-md-8 value" title="{{item.appid}}">{{item.appid}}</div>
+						</div>
+						<div class="row static-info">
+							<div class="col-md-4 name">应用类型：</div>
+							<div class="col-md-8 value text-ellipsis" title="{{item.AbilityTypeclass}}">{{item.AbilityTypeclass}}</div>
+						</div>
+						<div class="row static-info">
+							<div class="col-md-4 name">创建时间：</div>
+							<div class="col-md-8 value text-ellipsis" title="{{item.createtime}}">{{item.createtime|date:'yyyy-MM-dd HH:mm:ss'}}</div>
+						</div>
+						<div class="row static-info">
+							<div class="col-md-4 name">应用描述：</div>
+							<div class="col-md-8 value text-ellipsis" title="{{item.description}}">{{item.description}}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- BEGIN:app_list -->
+	</div>
+</div>

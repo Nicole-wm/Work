@@ -1,0 +1,50 @@
+.cate_tl{
+	width:50%;
+}
+.cate_tr{
+	width:50%;
+}
+.cate_id{
+	font-family: myNumFont , Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 10rem;
+	width: 60px;
+	height:115px;
+	line-height:115px;
+}
+.cate_stitle{
+	margin-left: 77px;
+}
+.cate_content{
+	font-size: 0;
+}
+.cate_content li{
+	width: 31%;
+	max-width: 440px;
+	max-height:520px;
+	min-height:450px;
+	margin:30px 0 0 3.5%;
+	display: inline-block;
+}
+.cate_content li:nth-child(3n+1){
+	margin-left:0;
+}
+.pro_img{
+	cursor: pointer;
+	width:99%;
+	max-width: 438px;
+	max-height: 388px;
+	border:1px #e5e5e5 solid;
+}
+.pro_buybtn{
+	background-color: #000000;
+	color: #ffffff;
+	padding:6px 16px;
+	cursor: pointer;
+}
+.pro_tag{
+	color: #9a9a9a;
+}
+.procate_details{
+	max-width: 355px;
+	width:72%;
+}

@@ -1,0 +1,61 @@
+<div class="row">
+	<div class="col-md-12">
+		<!-- BEGIN Search Line -->
+		<div class="row">
+			<div class="form-group col-lg-3">
+				<div class="input-icon right">
+					<i ng-click="SearchFun()" class="icon-magnifier"></i>
+					<input ng-model="Keyword" type="text" class="form-control" placeholder="请输入关键字"> 
+				</div>
+			</div>
+			<div class="form-group col-lg-3">
+				<select  ng-model="BelongProID" ng-options="o.ID as o.ProductName for o in ProductArrs" class="form-control">
+					<option value=""></option>
+				</select>
+			</div>
+			<div class="form-group col-lg-3">
+				<select  ng-change="SearchFun()" ng-model="CBCategory" ng-options="o.ID as o.CategoryName for o in CBCategorys" class="form-control">
+					<option value=""></option>
+				</select>
+			</div>
+			<div class="form-group col-lg-1">
+				<a ng-click="SearchFun()" class="btn bg-default bg-font-default">搜索 </a>
+			</div>
+			<div class="form-group col-lg-2">
+				<a href="#/cookbook/cookbook_add.html" class="btn bg-blue-steel bg-font-blue-steel"> <i class="fa fa-plus"></i> 添加食谱</a>
+			</div>
+		</div>
+		<!-- END Search Line -->
+		<div class="row" ng-show="{{CookBookCount}}===0">
+			<div class="form-group col-lg-12"><h4>暂无食谱</h4></div>
+		</div>
+		<div class="row search-content-3" ng-show="{{CookBookCount}}!==0">
+			<div class="col-md-4" ng-repeat="item in CookBookList">
+				<div class="tile-container">
+					<div class="tile-thumbnail">
+						<a href="#/cookbook/cookbook_details.html?ID={{item.ID}}" target="_blank">
+							<img ng-src="{{item.ImageUrl}}"/>
+						</a>
+					</div>
+					<div class="tile-title">
+						<h3>
+							<a href="#/cookbook/cookbook_details.html?ID={{item.ID}}"  target="_blank">{{item.Name}}</a>
+						</h3>
+						<a ng-click="DelectFun(item.ID)">
+							<i class="fa fa-trash-o font-red" title="删除"></i>
+						</a>
+						<div class="tile-desc">
+							<div class="row">
+								<div class="col-md-5"><p class="text-ellipsis" title="{{item.Brand}}">产品：{{item.ProductName}}</p></div>
+								<div class="col-md-5"><p class="text-ellipsis" title="{{item.Model}}">类别：{{item.CategoryName}}</p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<uib-pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize" class="pagination" boundary-links="true" rotate="false" num-pages="numPages" ng-change="pageChanged()"></uib-pagination>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,38 @@
+.pull-down {
+  margin-left: 10px;
+  width:15%;
+}
+.col_id {
+	width:20%; 
+}
+.col_people{
+	width:35%;
+}
+.col_record{
+	width:45%;
+}
+.mobileId,
+.mobilePeople,
+.mobileRecord{
+	display: none;
+}
+@media(max-width:768px) {
+.TableTitle,.WrapContent {
+  height: 320px;
+  max-height: 320px;
+}
+.mobileId,
+.mobilePeople,
+.mobileRecord{
+	    display: inline-block;
+} 
+@media(max-width:414px) {
+	.keyword{
+	   min-width: 100px;
+       width: 40%;
+	}
+	.pull-down {
+     width: 40%;
+	 margin-left: 20px;
+	}
+}

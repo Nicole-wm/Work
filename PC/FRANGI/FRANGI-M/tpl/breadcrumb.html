@@ -1,0 +1,11 @@
+<div class="breadcrumb_content">
+	<div class="blank_s"></div>
+	<ul class="breadcrumb">
+		<li><a ui-sref="home">首页</a></li>
+		<li ng-show="Cur_Cataid">&gt;</li>
+		<li ui-sref="productcategories({ID:{{Cur_Cataid}}})" ng-bind="Cur_Catalog"></li>
+		<li ng-show="Cur_Name">&gt;</li>
+		<li class="color_y" ng-bind="Cur_Name"></li>
+	</ul>
+	<div class="blank_m"></div>
+</div>

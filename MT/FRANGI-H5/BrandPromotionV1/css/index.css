@@ -1,0 +1,715 @@
+/*******************Base*******************/
+html,body {
+	position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+img{
+    display:block;
+    margin: auto;
+    width: 100%;
+    border: 0;
+}
+
+/*******************音乐*******************/
+.music{
+    position: absolute;
+    z-index: 1111;
+    left: 20px;
+    top: 20px;
+    z-index: 1000;
+}
+.open{
+    -webkit-animation: moveRo linear 3.5s  infinite;
+    animation-delay:0;
+}
+.icon-music{
+    width:1rem;
+    height:1rem;
+    background: url(../img/base/btn-music.png);
+    background-size: 100% 100%;
+    display: block;
+    opacity: 0.5;
+}
+/*动画*/
+@-webkit-keyframes moveRo {
+    from {-webkit-transform: rotate(360deg);  }
+    to { -webkit-transform: rotate(-360deg); }
+}
+@keyframes moveRo {
+    from {  transform: rotate(-360deg)}
+    to {  transform: rotate(360deg); }
+}
+
+@-webkit-keyframes openRo {
+    from { }
+    to { -webkit-transform: translateY(100%)
+    ;}
+}
+@keyframes openRo {
+    from { }
+    to { -webkit-transform: translateY(100%) ; transform: translateY(100%);
+
+    }
+}
+/*******************滑屏*******************/
+.swiper-container,.swiper-slide,.swiper-Home{
+    width:100%;
+    height:100%;
+}
+
+.addBig{
+    animation:AnaddBig 0.5s;
+    animation-fill-mode:forwards; 
+}
+
+@keyframes AnaddBig
+{
+    from {transform:scale(1.5)}
+    to {transform:scale(1)}
+}
+
+/*******************Public*******************/
+.pos-abs{
+    position: absolute;
+}
+.page-content{
+    position: absolute;
+    width:100%;
+}
+.bottom-arr{
+    bottom:0.5rem;
+    z-index: 10000;
+}
+.bottom-arr img{
+    width:0.6rem;
+}
+.p-title{
+    top:1.296296rem;
+    z-index: 10000;
+}
+.p-title img{
+    width: 4.703704rem;
+}
+.china-bg{
+    background-color: #ffffff;
+}
+.map-bg{
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+/*******************PageCss*******************/
+/*首页*/
+.home-logo{
+    top: 0.833333rem;
+}
+.home-logo img{
+    width:8.333333rem;
+}
+.home-poster{
+    z-index: -100;
+    bottom:0;
+}
+.home-text{
+    z-index: -10;
+    bottom:1.296296rem;
+    width:100%;
+}
+.home-title,.home-justforyou{
+    width:3.148148rem;
+    padding-bottom: 0.092593rem
+}
+.home-justforyou{
+    padding-bottom:0.277778rem
+}
+/*品牌故事*/
+.story-video-bg{
+    top:4rem;
+    height: 5.6rem;
+} 
+.story-video{
+    width: 100%;
+}
+.story-subtitle{
+    top:10.37037rem;
+}
+.story-subtitle img{
+    width: 6.342593rem;
+}
+.story-content{
+    top:10.5rem;
+}
+.story-content img{
+    width:7.62963rem;
+}
+/*合作技术*/
+.partner-video-bg{
+    top:4rem;
+    height: 5.6rem;
+} 
+.partner-video{
+    width: 100%;
+}
+.partner-logo-button{
+    top:4.8rem;
+}
+.partner-logo-button img{
+    width: 3.148148rem;
+    height:4.259259rem
+}
+.partner-intro{
+    top:10.37037rem;
+}
+.partner-intro img{
+    width:8.703704rem;
+}
+.partner-swiper-container{
+    height:10.12037rem;
+    top:4.009259rem;
+}
+/*在中国-首页*/
+.address-god-bg{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+}
+.address-subtitle{
+    top:4rem;
+}
+.address-subtitle img{
+    width: 6.185185rem;
+}
+.address-content{
+    top:5.8rem;
+}
+.address-content img{
+    width: 6.296296rem;
+}
+.address-floor{
+    bottom: 0;
+}
+.address-frangi-pic{
+    top:9rem;
+}
+.address-frangi-pic img{
+    width:1.944444rem;
+}
+.address-video-bg{
+    height: 100%;
+} 
+.address-video{
+    height: 100%;
+    width: 100%;
+}
+.address-map-content{
+    top: 4.555556rem;
+    left:0;
+    width:6.037037rem;
+}
+.address-video-bg{
+    z-index: 0;
+}
+/*在中国-地图*/
+.map-content,.shop-content,.com-content{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+}
+.map-content{
+    z-index: 100;
+}
+.shop-content{
+    z-index:-100;
+}
+.com-content{
+    z-index:-100;
+}
+.map-content img{
+    position: absolute;
+}
+.map-hand-com{
+    bottom:2rem;
+    right:0.5rem;
+    width:2rem;
+    -webkit-animation:infinite both;
+    -moz-animation:infinite both;
+}
+.map-hand{
+    top:5.5rem;
+    left:7.8rem;
+    width:0.9rem;
+    transform:rotate(-30deg);
+    -webkit-transform:rotate(-30deg);
+    -webkit-animation:infinite both;
+    -moz-animation:infinite both;
+}
+.map-icon{
+    width:0.194444rem;
+}
+.map-ad{
+    width:2.62963rem; 
+    height:2.62963rem; 
+}
+.map-icon1{
+    top:8.8rem;
+    left:4.55rem
+}
+.map-line1{
+    top:6.45rem;
+    left:4.72rem;
+    width: 2.287037rem;
+}
+.map-ad1{
+    top:3.93rem;
+    left:6.42rem;
+}
+.map-icon2{
+    top:9.15rem;
+    left:4.65rem
+}
+.map-line2{
+    top:9.13rem;
+    left:4.8rem;
+    width:2.037037rem
+}
+.map-ad2{
+    top:7.6rem;
+    left:6.89rem;
+}
+.map-icon3{
+    top:9.44rem;
+    left:4.46rem
+}
+.map-line3{
+    top:9.5rem;
+    left:4.55rem;
+    width: 0.648148rem
+}
+.map-ad3{
+    top:10.85rem;
+    left:4.4rem;
+}
+.map-icon4{
+    top:9.27rem;
+    left:2.87rem
+} 
+.map-line4{
+    top:9.5rem;
+    left:2.3rem;
+    width: 0.648148rem
+}
+.map-ad4{
+    top:11.8rem;
+    left:0.8rem;
+}
+.map-icon5{
+    top:9rem;
+    left:2.45rem;
+}
+.map-line5{
+    top:5.9rem;
+    left:1.7rem;
+    width:0.833333rem;
+}
+.map-ad5{
+    top:3.25rem;
+    left:0.2rem;
+}
+.map-pclose{
+    top: 3.8rem;
+    right:0.3rem;
+    width: 0.592593rem;
+    z-index: 1000;
+}
+/*线下门店*/
+.shop-swiper-container{
+    width: 100%;
+    height:8rem;
+    top:3.5rem;
+    background-color: #fff;
+    padding-top: 0.324074rem
+}
+.shop-intro-content{
+    height:3.240741rem;
+    background-color: #fff;
+    z-index: 1000;
+}
+.shop-intro{
+    top:11.5rem;
+    height:3rem;
+    background-color: #fff;
+    z-index: 10000;
+}
+.shop-intro-shop,.shop-intro-logo{
+    position: absolute;
+    left:0.7rem;
+    width:8.6rem;
+}
+.shop-intro-shop{
+    top:0.509259rem
+}
+.shop-intro-logo{
+    top:2.037037rem
+}
+/*公益合作*/
+.join-content-all{
+    position: absolute;
+    top:3.5rem;
+    height: 11rem;
+    width: 100%;
+    background-color: #ffffff;
+}
+.join-pic{
+    top:1.1rem;
+}
+.join-content{
+    top:3rem;
+}
+.join-content img{
+    width: 7.407407rem;
+}
+.join-com-pic{
+    top:5.8rem;
+}
+.join-com-logo{
+    top:8rem;
+}
+.join-com-logo img{
+    width:9.166667rem;
+}
+/*产品介绍*/
+.pro-bg{
+    width: 100%;
+    height: 100%;
+}
+/*产品-女神水*/
+.god-banner{
+    top:2.35rem;
+    left: 2.037037rem;
+    width: 2.416667rem
+}
+.god-title,.god-subtitle{
+    right:0.972222rem;
+}
+.god-title{
+    top:1.342593rem;
+    width: 4.935185rem;
+}
+.god-subtitle{
+    top:5.87963rem;
+    width:3.981481rem;
+}
+.god-intro{
+    top:9.833333rem;
+    left:0.972222rem;
+    width: 6.574074rem;
+}
+/*产品-面膜*/
+.mask-banner,.mask-subtitle,.mask-intro{
+    left:1.018519rem;
+}
+.mask-banner{
+    top:3.361111rem;
+    width:6.435185rem;
+}
+.mask-title{
+    top:1.296296rem;
+    right:1.018519rem;
+    width:5.601852rem;
+}
+.mask-subtitle{
+    top:8.87963rem;
+    width:2.546296rem;
+}
+.mask-intro{
+    top:9.814815rem;
+    width:7.685185rem;
+}
+/*系列产品Public*/
+.propub-hand{
+    position: absolute;
+    top:6.25rem;
+    left:5rem;
+    width:0.9rem;
+    transform:rotate(-30deg);
+    -webkit-transform:rotate(-30deg); /* Safari 和 Chrome */
+    -webkit-animation:infinite both;
+    -moz-animation:infinite both;
+}
+.propub-banner{
+    top:3.703704rem;
+    left:0.925926rem;
+    width:8.12037rem;
+}
+.propub-title{
+    top:1.314815rem;
+    right:1.018519rem;
+    width:4.111111rem;
+}
+.propub-title-left{
+    position: absolute;
+    width: 100%;
+    left:1.018519rem;
+}
+.propub-subtitle{
+    top:9.490741rem;
+    width:6.064815rem;
+}
+.propub-inttitle {
+    top:10.462963rem;
+}
+/*产品-Banner标题*/
+.pro-hydrotitle{
+    width:4.111111rem;
+}
+.pro-hydratitle{
+    width:5.0rem  
+}
+.pro-joytitle{
+    width: 4.138889rem;
+}
+.pro-revtitle{
+    width: 5.5rem;
+}
+.pro-revbanner{
+    top:3.453704rem;
+    width: 4.175926rem;
+    left: 2.907407rem;
+}
+/*产品-紫*/
+.hydro-inttitle{
+    width:6.064815rem;
+}
+.hydro-intro{
+    top:11.703704rem;
+    width:7.481481rem;
+}
+/*产品-绿*/
+.hydrationist-subtitle1{
+    width:7.407407rem
+}
+.hydrationist-inttitle{
+    top:11.388889rem;
+    width:7.388889rem
+}
+.hydrationist-intro{
+    top:12.287037rem;
+    width:7.416667rem
+}
+/*产品-粉*/
+.joyful-inttitle{
+    width:6.425926rem
+}
+.joyful-intro{
+    top:11.444444rem;
+    width:7.898148rem
+}
+/*产品-男士*/
+.revitalizing-inttitle{
+    width:7.314815rem
+}
+.revitalizing-intro{
+    top:11.898148rem;
+    width:6.814815rem;
+}
+.pro-revp1intro{
+    width: 6.453704rem;
+    height: 6.296296rem;
+}
+.pro-revp2intro{
+    width:7.740741rem;
+    height:5.518519rem;
+}
+.pro-revp1{
+    width: 0.472222rem;
+    height: 2.037037rem;
+}
+.pro-revp2{
+    width: 0.935185rem;
+    height: 1.685185rem;
+}
+/*产品详情*/
+.pro-intro-content{
+    visibility: hidden;
+    width:100%;
+    height: 12.5rem;
+    top:2rem;
+    background-image: url("../img/base/pro-pbg.png"); 
+    background-size: cover;
+}
+.pro-pline{
+    position: relative;
+    margin: auto;
+    top: 0.55rem;
+    width: 7.601852rem;
+    border: 1px solid #B2B2B2;
+    -webkit-transform:scale(1,0.5);
+    -moz-transform:scale(1,0.5);
+}
+.pro-gallery-top{
+    position: relative;
+    width:100%;
+    height: 8.8rem;
+    top:0.565rem
+}
+.pro-top-img img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.pro-pclose{
+    top: 0.166667rem;
+    width: 100%;
+    height: 0.592593rem;
+}
+.pro-pclose img{
+    position: absolute;
+    right: 0.648148rem;
+    width: 0.592593rem;
+    height: 0.592593rem;
+}
+.pro-gallery-thumbs {
+    position: relative;
+    width:100%;
+    height:3.65rem;
+    box-sizing: border-box;
+}
+.pro-thumbs-img img{
+    position: absolute;
+    bottom: 0.462963rem;
+    left: 50%;
+}
+.pro-thumbs-img .swiper-slide {
+    width: 11%;
+    opacity: 0.4;
+}
+.pro-thumbs-img .swiper-slide-active {
+    opacity: 1;
+}
+.pro-p1intro{
+    width: 6.842593rem;
+    height: 4.861111rem;
+}
+.pro-p2intro{
+    width: 6.805556rem;
+    height: 5.62963rem;
+}
+.pro-p3intro{
+    width: 5.935185rem;
+    height: 6.240741rem;
+}
+.pro-p4intro{
+    width: 6.75rem;
+    height:6.592593rem;
+}
+.pro-p5intro{
+    width: 7.111111rem;
+    height: 5.666667rem;
+}
+.pro-p6intro{
+    width: 7.490741rem;
+    height: 4.361111rem;
+}
+.pro-p1{
+    width: 0.416667rem;
+    height: 1.148148rem;
+}
+.pro-p2{
+    width: 0.416667rem;
+    height: 1.574074rem;
+}
+.pro-p3{
+    width: 0.5rem;
+    height: 1.87037rem;
+}
+.pro-p4{
+    width: 0.490741rem;
+    height:2.175926rem;
+}
+.pro-p5{
+    width:0.62037rem;
+    height:1.518519rem;
+}
+.pro-p6{
+    width:0.981481rem;
+    height:0.675926rem;
+}
+
+
+.backcover-more{
+    top: 13.5rem;
+    width: 2rem;
+    left: 4rem;
+}
+
+/*全国店铺*/
+.storeadd-t1{
+    top:3rem;
+}
+.storeadd-t1 img{
+    width:4.046296rem;
+    height:1.25rem;
+    position: relative;
+    z-index:100;
+}
+.storeadd-a1{
+    top:0.592593rem
+}
+.storeadd-a1 img{
+    width:10.0rem;
+    height:14.481481rem;
+}
+.storeadd-a2 {
+    top:2.981481rem
+}
+.storeadd-a2 img{
+    width:8.435185rem;
+    height:11.666667rem
+}
+/*经销商*/
+.agency-t1{
+    top:3rem
+}
+.agency-t1 img{
+    width:6.518519rem;
+    height:0.555556rem
+}
+.agency-a1{
+    top:3.7rem
+}
+.agency-a1 img{
+    width:8.898148rem;
+    height:12.166667rem;
+}
+/*招商优势*/
+.invest-t1{
+    top:3rem
+}
+.invest-t1 img{
+    width:2.490741rem;
+    height:0.555556rem
+}
+.invest-t2{
+    top:3.009259rem
+}
+.invest-t2 img{
+    width:7.416667rem;
+    height:5.861111rem
+}
+.invest-a1 {
+    top:9.787037rem
+}
+.invest-a1 img{
+    width:7.416667rem;
+    height:5.018519rem
+}

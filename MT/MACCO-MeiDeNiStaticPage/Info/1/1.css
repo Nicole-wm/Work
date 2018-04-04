@@ -1,0 +1,14 @@
+@charset "UTF-8";
+.title {
+	color: #C03;
+	font-weight: bold;
+}
+.ProductTitle {
+	color: #F00;
+	text-align: center;
+}
+.productName
+{
+	color:#FC6;
+}
+

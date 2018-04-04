@@ -1,0 +1,88 @@
+/*蒙版*/
+#mask{
+    width: 100%;
+    height:100%;  
+    position: fixed;
+    top:0px;
+    left: 0px;
+    z-index: 100; 
+    background-color:#000000;
+    filter:alpha(Opacity=50);-moz-opacity:0.5;opacity: 0.5; 
+}
+
+/*弹框*/
+#AlertPanel,#PopPanel{
+    width:0px;
+    height:0px;
+    position: fixed;
+    margin:auto;
+    left:0; 
+    right:0; 
+    top:0; 
+    bottom:0;
+    overflow:hidden;
+    z-index:200;
+    background-color: #ffffff;
+}
+
+#AlertPanel {
+    width:350px;
+    height:200px;
+}
+
+/*弹框标题及关闭按钮*/
+.AlertTitle{
+    height:50px; 
+    line-height: 50px;
+}
+
+.AlertTitleText{
+    float: left;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 20px;
+    color: #FF6666;
+}
+
+.AlertTitleClose{
+    height: 24px;
+    width: 24px;
+    margin: 13px;
+    float: right;
+    background-image: url('/Image/close.png');
+    cursor:pointer;
+}
+
+.AlertTitleClose:hover{
+    background-image: url('/Image/close_h.png');
+}
+
+/*弹框正文及对应按钮*/
+.AlertContent{
+    clear: both;
+}
+
+.AlertContentText,.AlertContentBtn{
+    margin:0px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.ConfirmBtn,.CancelBtn{
+    height: 30px;
+    padding-left: 10px;
+    padding-right:10px;
+    line-height: 30px;
+    margin: 0 15px;
+    display: inline-block;
+    color: #ffffff;
+    cursor:pointer;
+}
+
+.ConfirmBtn{
+    background-color:#FF6666;
+}
+
+.CancelBtn{
+    background-color:#CCCCCC;
+}

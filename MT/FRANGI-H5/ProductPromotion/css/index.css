@@ -1,0 +1,95 @@
+/*************************Banner*************************/
+.banner-container {
+	width: 100%;
+	height: 100%;
+}
+.banner-slide{
+	height:0;
+	overflow: hidden;
+}
+.banner-slide img {
+	position: relative;
+	top:-3.3rem;
+}
+.banner-slide-init1{
+	height:10rem;
+}
+.banner-slide-init1 img {
+	top:0;
+}
+.banner-slide-init2{
+	height:3.3rem;
+}
+.banner-slide-nex{
+	height:3.3rem;
+}
+.banner-slide-pre{
+	animation:SlidePre 0.75s;
+	animation-fill-mode:forwards; 
+}
+.banner-slide-pre img{
+	top:0;
+}
+.banner-slide-cur{
+	animation:SlideCur 0.75s;
+	animation-fill-mode:forwards; 
+}
+.banner-slide-cur img{
+	animation:SlideCurImg 0.75s;
+	animation-fill-mode:forwards; 
+}
+
+@keyframes SlidePre
+{
+	from {height:10rem;}
+	to {height:0;}
+}
+@keyframes SlideCur
+{
+	from {height:3.3rem}
+	to {height:10rem}
+}
+@keyframes SlideCurImg
+{
+	from {top:-3.3rem}
+	to {top:0}
+}
+
+.banner-slide-pre-op{
+	animation:SlidePreOp 0.75s;
+	animation-fill-mode:forwards; 
+}
+.banner-slide-pre-op img{
+	animation:SlidePreImgOp 0.75s;
+	animation-fill-mode:forwards; 
+}
+.banner-slide-cur-op{
+	animation:SlideCurOp 0.75s;
+	animation-fill-mode:forwards; 
+}
+.banner-slide-cur-op img{
+	animation:SlideCurImgOp 0.75s;
+	animation-fill-mode:forwards; 
+}
+
+@keyframes SlidePreOp
+{
+	from {height:0}
+	to {height:10rem;}
+}
+@keyframes SlidePreImgOp
+{
+	from {top:-3.3rem}
+	to {top:0}
+}
+@keyframes SlideCurOp
+{
+	from {height:10rem;}
+	to {height:3.3rem;}
+}
+@keyframes SlideCurImgOp
+{
+	from {top:0}
+	to {top:-3.3rem}
+}
+

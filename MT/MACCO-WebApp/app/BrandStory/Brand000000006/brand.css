@@ -1,0 +1,13 @@
+@charset "UTF-8";
+.textInfo>div{
+	text-indent: 33px;
+}
+
+@media(max-width:375px){
+}
+@media(max-width:320px){
+
+.textInfo>div {
+  text-indent: 30px;
+}
+}

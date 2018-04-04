@@ -1,0 +1,33 @@
+{
+	"IsSuccess":true,
+	"Data":{
+		"DataArr1":[
+			{"name":"巧克力蛋糕","value": "260"},
+			{"name":"抹茶卷","value": "900"},
+			{"name":"焦糖布丁","value": "660"},
+			{"name":"菠萝包","value": "200"},
+			{"name":"其他","value": "500"}
+		],
+		"DataArr2":[
+			{"name":"巧克力蛋糕","value": "100"},
+			{"name":"抹茶卷","value": "150"},
+			{"name":"焦糖布丁","value": "30"},
+			{"name":"菠萝包","value": "80"},
+			{"name":"其他","value": "100"}
+		],
+		"DataArr3":[
+			{"name":"巧克力蛋糕","value": "500"},
+			{"name":"抹茶卷","value": "43"},
+			{"name":"焦糖布丁","value": "210"},
+			{"name":"菠萝包","value": "30"},
+			{"name":"其他","value": "80"}
+		],
+		"DataArr4":[
+			{"name":"巧克力蛋糕","value": "240"},
+			{"name":"抹茶卷","value": "320"},
+			{"name":"焦糖布丁","value": "310"},
+			{"name":"菠萝包","value": "160"},
+			{"name":"其他","value": "200"}
+		]
+	}
+}

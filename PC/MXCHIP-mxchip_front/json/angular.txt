@@ -1,0 +1,19 @@
+   var CountUrl = window.$servie + 'count/homestat/';
+    $http.post(CountUrl).success(function (data) {
+        if (data.IsSuccess) {
+            StatArr=data.Data;
+            console.log(StatArr);
+        } else {
+            $window.alert('³ö´í');
+        }
+    });
+
+
+
+
+	var url = window.$servie + 'AdminApi/Information/FetchInfoList';
+	var param = {
+		PageSize: 10,
+		LastID: 0,
+		Keyword: ""
+	};

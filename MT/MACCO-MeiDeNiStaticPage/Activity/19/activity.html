@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <style>
+        @font-face {
+            font-family: 'youyuan';
+            src: url(data:font/ttf;base64,FONTBASE64) format('truetype');
+        }
+    </style>
+    <link href="../css/public.css" rel="stylesheet" charset="UTF-8">
+    <link href="css/activity.css" rel="stylesheet" charset="UTF-8">
+    <link href="../css/join.css" rel="stylesheet" charset="UTF-8">
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script> 
+    <script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/activity.js" charset="UTF-8"></script>
+</head>
+
+<body ng-controller="activityController">
+    <div id="head" class="head RelatedImg">
+        <img id="model" src="images/7.jpg">
+    </div>
+    <input type="hidden" ng-model="joinurl" ng-init="joinurl='/Activity/join.html'" />
+    <div ng-include="joinurl"></div>
+
+    <div class="clear"></div>
+    <div class="smallSize introduce">
+        <div>留下你的点评</div>
+        <div>就有机会赢得<span class="price">价值280元</span></div>
+        <div>欧缇丽葡萄籽莹润保湿水凝霜</div>
+        <div>换季保湿神器，免费送给您哦</div>
+    </div>
+    <div class="bigSize actionRule">参与规则：</div>
+    <div class="smallSize step one">
+        <span>Step 1：点击</span>
+        <span class="join smallSize">马上参与</span>
+    </div>
+    <div class="smallSize step">Step 2：到“美妆”栏目下选择你喜欢的/感兴趣的产品发表你的点评；</div>
+    <div class="relatedPictures">
+        <img src="images/2.jpg">
+    </div>
+    <div class="smallSize step">Step 3：并将您点评后的页面分享至你的微博/朋友圈即算参加成功。</div>
+    <div class="relatedPictures">
+        <img src="images/3.jpg">
+    </div>
+    <div class="smallSize describe">我们将从所有回复者中抽取2位清凉的幸运儿</div>
+    <div class="bigSize prize">奖品：</div>
+    <div class="smallSize step">价值280元的欧缇丽葡萄籽莹润保湿水凝霜</div>
+    <div class="relatedPictures">
+        <img src="images/4.jpg">
+    </div>
+    <input type="hidden" ng-model="type" ng-init="type='product'">
+    <input type="hidden" ng-model="shouldLogin" ng-init="shouldLogin='true'">
+    <input type="hidden" ng-model="ObjectID" ng-init="ObjectID=''">
+    <div ng-if="!IsFinish" ng-class="btnJoin_n" ng-click="Join()" ng-bind="title" class="btnJoin">马上参加</div>
+    <input type="hidden" ng-model="footerurl" ng-init="footerurl='/Activity/footer.html'" />
+    <div ng-include="footerurl"></div>
+</body>
+</html>

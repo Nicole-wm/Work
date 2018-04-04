@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="/css/sb-admin.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/common.css" rel="stylesheet" type="text/css">
+    <link href="/css/uniform.css" rel="stylesheet" type="text/css">
+    <link href="/css/public.css" rel="stylesheet">
+    <link href="/css/appuserlist.css" rel="stylesheet">
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="/scripts/common.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-infinite-scroll.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-file-upload-all.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/sidebarController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/AppUser/AppUserManager.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/AppUser/AddUser.js"></script>
+</head>
+
+<body >
+    <div id="wrapper">
+        <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Sidebar.html'" />
+        <div id="nav" ng-include="templateurl"></div>
+        <div id="page-wrapper" ng-controller="AppUserController">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                           App用户列表管理
+                       </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>
+                                <a href="index.html">Macco Admin</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-table"></i> App用户列表管理
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div>
+                            <h2 style="display:inline-block;"> App用户列表管理</h2>
+                        </div>
+                        <!-- /.row -->
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="selectList">
+                                    <div class="pull-down">
+                                        <label>开始时间</label>
+                                        <input name="StartTime" class="form-control" id="StartTime" ng-model="StartTime"
+                                        required>
+                                    </div>
+                                    <div class="pull-down">
+                                        <label>结束时间</label>
+                                        <input name="TerminalTime" class="form-control" id="TerminalTime" ng-model="TerminalTime"
+                                        required>
+                                    </div>
+                                    <div class="pull-down">
+                                        <button type="button" ng-click="showList()" class="btn btn-primary" style="margin-bottom:5px;margin-left:10px;">搜索</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-top:20px;">
+                            <label>总数：</label>
+                            <div class="textipt" style="width: 10%;">
+                                <input name="Title" class="form-control" id="titleName" ng-model="Sum" ng-disabled="1">
+                            </div>
+                            <label>人</label>
+                            <label>昨日：</label>
+                            <div class="textipt" style="width:10%;">
+                                <input name="Title" class="form-control" id="titleName" ng-model="LastDayCnt" ng-disabled="1">
+                            </div>
+                            <label>人</label>
+                           <label>查询范围：</label>
+                            <div class="textipt" style="width:10%;">
+                                <input name="Title" class="form-control" id="titleName" ng-model="Cnt" ng-disabled="1">
+                            </div>
+                            <label>人</label>
+                        </div>
+                        <div>
+                            <h3 style="display:inline-block;">App用户列表</h3>
+                            <button type="button" ng-click="AddInput()" class="btn btn-primary" style="margin-bottom: 10px;margin-left: 20px;">新增系统用户</button>
+                            <button type="button" ng-click="Submit()" class="btn btn-primary" style="margin-bottom: 10px;margin-left: 20px;">确定</button>
+                            <button type="button" ng-click="ReturnBack(this.Token)" class="btn" style="margin-bottom: 10px;margin-left: 20px;">返回</button>
+                        </div>
+
+                        <div class="DataContainer">
+                            <div class="TableTitle">
+                                <div class="col_id">UID</div>
+                                <div class="col_nickName">昵称</div>
+                                <div class="col_cover_image">头像</div>
+                                <div class="col_skin">肤质</div>
+                                <div class="col_time">注册时间</div>
+                                <div class="col_realName">真实用户名</div>
+                                <div class="col_mobile">联系方式</div>
+                                <div class="col_address">地址</div>
+                            </div>
+                            <div class="clearboth"></div>
+                            <div infinite-scroll='macco.nextPage()' infinite-scroll-listen-for-event="list:search" infinite-scroll-disabled='macco.busy' infinite-scroll-distance='0'>
+                            <div ng-repeat="item in macco.items">
+                                <div class="WrapContent">
+                                    <div class="col_id">
+                                        <span class="mobileId">UID:</span>
+                                        <span ng-bind="item.UID"></span>
+                                    </div>
+                                    <div class="col_nickName">
+                                        <span class="mobileNickName">昵称:</span>
+                                        <span ng-bind="item.NickName"></span>
+                                    </div>
+                                    <div class="col_cover_image" style="background: url('{{item.Avatar}}');background-size: cover;">
+                                        <span class="mobileImage">头像</span>
+                                        <img ng-src="{{item.Avatar}}">
+                                    </div>
+                                    <div class="col_skin">
+                                        <span class="mobileSkin">肤质:</span>
+                                        <span ng-bind="item.SkinType"></span>
+                                    </div>
+                                     <div class="col_time">
+                                        <span class="mobileTime">注册时间:</span>
+                                        <span ng-bind="item.CreateTime"></span>
+                                    </div>
+                                    <div class="col_realName">
+                                        <span class="mobileRealName">真实用户名:</span>
+                                        <span ng-bind="item.RealName" ></span>
+                                    </div>
+                                    <div class="col_mobile">
+                                        <span class="mobilemobile">联系方式:</span>
+                                        <span ng-bind="item.Mobile" ></span>
+                                    </div>
+                                    <div class="col_address">
+                                        <span class="mobileaddress">地址:</span>
+                                        <span ng-bind="item.Address"></span>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

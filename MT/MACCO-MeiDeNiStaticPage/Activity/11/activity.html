@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <style>
+        @font-face {
+            font-family: 'youyuan';
+            src: url(data:font/ttf;base64,FONTBASE64) format('truetype');
+        }
+    </style>
+    <link href="../css/comment.css" rel="stylesheet" charset="UTF-8">
+    <link href="../css/newpublic.css" rel="stylesheet" charset="UTF-8">
+
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/ng-infinite-scroll.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/newactivity.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/commentCtrl.js" charset="UTF-8"></script>
+</head>
+
+<body ng-controller="newactivityController">
+    <div class="banner">
+        <img src="banner.jpg" />
+    </div>
+    <div class="product_title">
+        <div class="title_content">
+            <div class="product_name"><b>科颜氏男士乳液</b></div>
+            <div class="product_free"><i>Free</i></div>
+            <div class="product_price">￥260.00</div>
+            <div class="join_person">
+                <div class="person_count" ng-bind="JoinCount"></div>
+                <div class="person">当前参加人数</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blank"></div>
+    <div class="product_introduce">
+        不要再错过表心意的机会啦，白色情人节替你张口说！ 给心上人、给父亲、给基友…都可以哦！Kiehl’s男士 明星单品，让你挂念的人每天都朝气满满，活力满满。 快来参与吧！
+    </div>
+    <div class="blank"></div>
+    <!--活动正在进行-->
+    <div class="join_method" ng-hide="activitying">
+        <div class="method">
+            <div class="firstline">参加方法</div>
+            <div ng-bind="shareline1"></div>
+            <div ng-bind="shareline2"></div>
+        </div>
+        <div class="time">
+            <div class="firstline">活动时间</div>
+            <div>
+                <span class="starttime" ng-bind="starttime"></span>
+                <span>--</span>
+                <span class="endtime" ng-bind="endtime"></span>
+            </div>
+        </div>
+    </div>
+
+    <!--活动已经结束-->
+    <div class="getPricePerson" ng-hide="activityed">
+        <div class="blank"></div>
+        <div class="nameList">中奖名单</div>
+        <div class="personName">
+            <span  ng-repeat="item in WinUsers" ng-bind="item.NickName"></span>
+        </div>
+        <div class="blank"></div>
+    </div>
+    <div class="own"></div>
+    <div class="own">举办方：上海魅客信息科技有限公司</div>
+    <div class="own">本活动与苹果公司及其子公司无关</div>
+    <div class="own"></div>
+    <!--晒照片-->
+    <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Activity/comments.html'" />
+    <div id="add_comment" ng-include="templateurl" ng-hide="activityed"></div>
+    
+    <div class="clear"></div>
+    <div class="fixblank"></div>
+    <input type="hidden" ng-model="type" ng-init="type='share'">
+    <input type="hidden" ng-model="shouldLogin" ng-init="shouldLogin='true'">
+    <input type="hidden" ng-model="ObjectID" ng-init="ObjectID=''">
+    <div  ng-click="Join()" ng-bind="title" class="btnJoin"></div>
+    <!--<input type="hidden" ng-model="footerurl" ng-init="footerurl='/Activity/footer.html'" />
+    <div ng-include="footerurl"></div>-->
+</body>
+</html>

@@ -1,0 +1,46 @@
+<div class="row">
+	<div class="col-md-12">
+		<!-- BEGIN Search Line -->
+		<div class="row">
+			<div class="form-group col-lg-3">
+				<div class="input-icon right">
+					<i ng-click="SearchApp()" class="icon-magnifier"></i>
+					<input ng-model="Keyword" type="text" class="form-control" placeholder="请输入关键字"> 
+				</div>
+			</div>
+		</div>
+		<!-- END Search Line -->
+		<!-- BEGIN:app_list -->
+		<div class="row" ng-show="totalItems===0">
+			<div class="form-group col-lg-12"><h4>暂无应用</h4></div>
+		</div> 
+		<div class="row" ng-show="totalItems!==0">
+			<div class="form-group col-lg-12">
+				<div class="portlet light bordered">
+					<div class="portlet-body">
+						<table class="table table-striped table-bordered table-hover ">
+							<thead>
+								<tr>
+									<th> 应用名称 </th> 
+									<th> 应用简称 </th>
+									<th> 应用ID </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="item in ListArr">
+									<td>
+									<a href="#/customer/app_details.html?ID={{item.id}}" target="_blank">{{item.name}}</a>
+									</td>
+									<td>{{item.shortname}}</td>
+									<td>{{item.appid}}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<uib-pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize" class="pagination" boundary-links="true" rotate="false" num-pages="numPages" ng-change="pageChanged()"></uib-pagination>
+				</div>
+			</div>
+		</div>
+		<!-- BEGIN:app_list -->
+	</div>
+</div>

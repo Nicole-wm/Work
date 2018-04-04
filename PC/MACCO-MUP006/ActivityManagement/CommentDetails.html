@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <link href="/css/CommentDetail.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+    <div>
+        <div style="width:100%;margin:20px 20px;">
+            <div class="form-group">
+                <label>选择获奖系统用户：</label>
+                <div class="textipt" style="width:50%;">
+                    <select class="form-control" ng-click="ChooseUser()" ng-model="UserId" ng-options="UserId.ID as UserId.NickName for UserId in UserIds">
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="comment" id="comment">
+            <form role="form" name="ActiveDetail" class="form-horizontal">
+                <div class="form-group">
+                    <label>用户名：</label>
+                    <div class="textipt" style="width: 40.95%;">
+                        <input name="Username" class="form-control" id="Username" ng-model="Username"  ng-disabled="!canEdit">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>头像:</label>
+                    <div class="textipt" id="falseName" style="cursor:pointer">
+                        <img ng-model="Avatar" ng-src="{{Avatar}}" style="width:100px;height:100px"></img>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label style="vertical-align: top;">内容：</label>
+                    <div class="textipt" style="width:60%;">
+                        <textarea name="Content" class="form-control" id="Content" ng-model="Content" required  style= "overflow:auto; resize:none;width:100%;height:150px;"></textarea>
+                    </div>
+                    <label style="vertical-align:top;" ng-show="ActiveDetail.Content.$error.required" id="informationalert" class="formalert">*&nbsp;请填写评论内容</label>
+                </div>
+                <div class="form-group">
+                    <label>图片:</label>
+                    <div class="textipt" id="falseName" style="cursor:pointer">
+                        <img ngf-select  ng-model="AwardPic" ngf-src="AwardPic[0]" ngf-accept="'image/*'" style="width:200px;height:200px"></img>
+                        <input type="hidden" ng-model="AwardPic[0].name" name="AwardPic" required >
+                    </div>
+                    <label ng-show="ActiveDetail.AwardPic.$error.required" id="informationalert" class="formalert">*&nbsp;请上传图片</label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" ng-disabled="!ActiveDetail.Content.$valid" class="btn btn-primary" ng-click="Submit()">提交</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

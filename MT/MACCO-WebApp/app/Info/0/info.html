@@ -1,0 +1,12 @@
+<!doctype html><html class="" ng-app="maccoApp"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>TestWeb</title><style>@font-face {font-family: 'youyuan';src: url(data:font/ttf;base64,FONTBASE64) format('truetype');}</style><link rel="stylesheet" type="text/css" href="../public/boilerplate.css" charset="utf-8"><link rel="stylesheet" type="text/css" href="../public/comment.css?v=1" charset="utf-8"><link rel="stylesheet" type="text/css" href="../public/video.css?v=1" charset="utf-8"><link rel="stylesheet" type="text/css" href="../public/publicComment.css?v=1" charset="utf-8"><link rel="stylesheet" type="text/css" href="../public/zan.css?v=1" charset="utf-8"><link rel="stylesheet" type="text/css" href="../public/imageLazyLoad.css" charset="utf-8"><script type="text/javascript" src="/JS/config.js" charset="utf-8"></script><script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="utf-8"></script><script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="utf-8"></script><script type="text/javascript" src="/JS/node_modules/angular/ng-infinite-scroll.min.js" charset="utf-8"></script><script type="text/javascript" src="../js/infoController.js?v=1" charset="utf-8"></script><script type="text/javascript" src="../js/CommentCtrl.js?v=1" charset="utf-8"></script><script type="text/javascript" src="../js/ZanCtrl.js?v=1" charset="utf-8"></script><script type="text/javascript" src="../js/imageLazyLoad.js"></script></head><body ng-controller="InformationController">
+    <div id="LayoutDiv1" class="container">
+        <div class="clear"></div><div id="mainBanner" class="banner"><img src="aa.jpg"></div><div class="clear"></div><div id="mainTitle">M.A.C VS TONYMOLY！两款砖红色唇膏对比</div>
+        <div class="clear"></div>
+        <div id="mainZan"><input type="hidden" ng-model="zanurl" ng-init="zanurl='/Info/zan.html'"><div id="add_zan" ng-include="zanurl"></div></div>
+        <div class="clear"></div>
+        <div id="mainContent"><div class="detail">因为秀智在某杂志画报上的妆容而在韩国大热的砖红色唇妆，小编今天也来试试哦~分别将两支砖红色唇膏对比：被认为是秀智用色的MAC chili和平价替代品TONYMOLY RD0唇甚至还有点偏粉。两者只需要买其一即可！上嘴几乎0差别！做省钱girl的话推荐入TONYMOLY~</div>
+        <div class="clear"></div>
+        <div id="mainFooter"><input type="hidden" ng-model="templateurl" ng-init="templateurl='/Info/comments.html'"><div id="add_comment" ng-include="templateurl"></div></div>
+        <div class="clear"></div>
+    </div>
+</body></html>

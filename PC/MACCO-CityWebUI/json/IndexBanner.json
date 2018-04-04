@@ -1,0 +1,10 @@
+{
+	"IsSuccess":true,
+	"Data":[
+		{ "ID":1,"Title":"中国招标投标公共服务平台正式上线试运行","ImgUrl":"images/pic_01.png"},
+		{ "ID":2,"Title":"我国招投标行业第一个行业规范正式发布","ImgUrl":"images/pic_02.png"},
+		{ "ID":3,"Title":"交易平台电子招投标试点取得阶段性成果","ImgUrl":"images/pic_03.png"},
+		{ "ID":4,"Title":"关于中国招标投标公共服务平台公开征集CA互联试点交易平台的通知","ImgUrl":"images/pic_04.png"},
+		{ "ID":5,"Title":"企业信用大数据服务平台首批8个分平台正式落地","ImgUrl":"images/pic_05.png"}
+	]
+}

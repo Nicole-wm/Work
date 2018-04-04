@@ -1,0 +1,25 @@
+.proval_ContentIcon{
+    margin:30px 0;
+}
+.proval_ContentIcon .icon1,.proval_ContentIcon .icon2{
+    display: block;
+    margin: auto;
+    width: 290px;
+    height: 86px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url('../img/product/proval.png') no-repeat;
+}
+.proval_ContentIcon .icon1{
+    background-position: 0 -88px;
+}
+.proval_Content{
+    padding: 10px 50px;
+}
+.proval_Content .text1{
+    padding:10px 0;
+    color: #808080;
+}
+.proval_Content .text1 p{
+    margin: 10px 0;
+}

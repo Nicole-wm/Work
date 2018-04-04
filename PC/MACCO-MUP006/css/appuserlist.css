@@ -1,0 +1,71 @@
+.count{
+	margin-top: 20px;
+}
+.col_id {
+	width:10%; 
+}
+.col_cover_image{
+   width:10%; 
+}
+.col_skin{
+    width: 10%;
+}
+.col_time{
+    width: 15%;
+}
+.col_nickName{
+	width:10%;
+}
+.col_realName {
+	width:10%;
+}
+.col_mobile{
+    width:15%;
+}
+.col_address{
+    width: 20%;
+}
+.mobileId,
+.mobileNickName,
+.mobileRealName,
+.mobilemobile,
+.mobileaddress,
+.mobileSkin,
+.mobileTime,
+.mobileImage{
+	display: none;
+ } 
+@media(max-width:768px) {
+.WrapContent {
+  height: 450px;
+  max-height: 450px;
+}
+.WrapContent {
+  width: 100%;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
+}
+.col_cover_image {
+	min-height: 256px;
+}
+.WrapContent > .col_cover_image:hover > img {
+	display: none;
+	-webkit-animation-name: "";
+	-moz-animation-name: "";
+	-o-animation-name: "";
+	-ms-animation-name: "";
+	animation-name: "";
+}
+.mobileId,
+.mobileNickName,
+.mobileRealName,
+.mobilemobile,
+.mobileaddress,
+.mobileSkin,
+.mobileTime,
+.mobileImag{
+    display: inline-block;
+    } 
+}

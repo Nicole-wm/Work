@@ -1,0 +1,32 @@
+<div class="row" ng-controller="ProductDetailsInfoController">
+	<div class="col-md-12">
+		<div class="portlet light">
+			<div class="portlet-body">
+				<div class="portlet-title tabbable-line">
+					<div class="tabbable-custom nav-justified">
+						<ul class="nav nav-tabs nav-justified">
+							<li class="active" id="tabM1">
+								<a ng-click="ProTab(1)" data-target="#tab1" data-toggle="tab"> 数据属性信息 </a>
+							</li>
+							<li id="tabM2">
+								<a ng-click="ProTab(2)" data-target="#tab2" data-toggle="tab"> 交互数据信息</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="portlet-body">
+					<!--BEGIN TABS-->
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+							<div data-ng-include="'views/product/product_details_attribute.html'"> </div>
+						</div>
+						<div class="tab-pane" id="tab2">
+							<div data-ng-include="'views/product/product_details_interactive.html'"> </div>
+						</div>
+					</div>
+					<!--END TABS-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

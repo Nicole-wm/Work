@@ -1,0 +1,60 @@
+.col_id {
+	width:10%; 
+}
+.col_cover_image {
+	width:10%;
+}
+.cover_bg{
+	position: center;
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+}
+.col_username{
+	width: 15%;
+}
+.col_content{
+    width: 40%;
+}
+.col_operation {
+	width: 15%;
+}
+.col_time{
+	width:10%;
+}
+.mobileId,
+.mobileImage,
+.mobileUsername,
+.mobileContent,
+.mobileTime,
+.mobileAsses,
+.mobileOperation{
+	display: none;
+ } 
+@media(max-width:768px) {
+.WrapContent {
+  height: 500px;
+  max-height: 500px;
+}
+
+.col_cover_image {
+	min-height: 256px;
+}
+.WrapContent > .col_cover_image:hover > img {
+	display: none;
+	-webkit-animation-name: "";
+	-moz-animation-name: "";
+	-o-animation-name: "";
+	-ms-animation-name: "";
+	animation-name: "";
+}
+.mobileId,
+.mobileImage,
+.mobileUsername,
+.mobileContent,
+.mobileTime,
+.mobileAsses,
+.mobileOperation{
+    display: inline-block;
+    } 
+}

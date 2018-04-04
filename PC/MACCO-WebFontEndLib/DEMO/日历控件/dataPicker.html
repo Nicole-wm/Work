@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="dataPicker.js"></script>
+</head>
+<body>
+	<div style="margin:40px auto;">
+        <input type="text" value="" maxlength="100" id="Txt_CreateDateST01" onclick="SelectDate(this,'yyyy 年')"
+            readonly="true" style="width: 265px; cursor: pointer" /><br />
+
+        <input type="text" value="" maxlength="100" id="Txt_CreateDateST02" onclick="SelectDate(this,'yyyy 年 MM 月')"
+            readonly="true" style="width: 265px; cursor: pointer" /><br />
+
+        <input type="text" value="" maxlength="100" id="Txt_CreateDateST03" onclick="SelectDate(this,'yyyy\/MM\/dd')"
+            readonly="true" style="width: 265px; cursor: pointer" /><br />
+
+        <input type="text" value="" maxlength="100" id="Text1" onclick="SelectDate(this,'yyyy-MM-dd hh时')"
+            readonly="true" style="width: 265px; cursor: pointer" /><br />
+
+        <input type="text" value=""  id="Text3" onclick="SelectDate(Text3,'yyyy-MM-dd hh:mm')" maxlength="100" readonly="readonly"  style="cursor: pointer;width: 265px;"
+             /><br />
+             
+        <input type="text"  maxlength="100" id="Text4" onclick="SelectDate(Text4,'yyyy年MM月dd日 hh时mm分ss秒')"  readonly="true" style="width: 265px; cursor: pointer" /><br />
+       <img src="calendar.png" onclick="SelectDate(Text4,'yyyy年MM月dd日 hh时mm分ss秒')">
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+.DataContainer>div:nth-child(n(a1+an)/2 ){
+	background-color: #f9f9f9;
+}
+.col_id {
+	width:10%; 
+}
+.col_chinaName {
+	width:20%;
+}
+.col_cover_image{
+	width:40%;
+}
+.col_joincount{
+	width:20%;
+}
+.mobileId,
+.mobilechinaName,
+.mobileImage,
+.mobilejoincount{
+	display: none;
+}
+@media(max-width:768px) {
+.WrapContent {
+	height: 550px;
+	max-height: 550px; 
+}
+.col_cover_image {
+	min-height: 256px;
+}
+.WrapContent > .col_cover_image:hover > img {
+	display: none;
+	-webkit-animation-name: "";
+	-moz-animation-name: "";
+	-o-animation-name: "";
+	-ms-animation-name: "";
+	animation-name: "";
+}
+.mobileId,
+.mobilechinaName,
+.mobileImage,
+.mobilejoincount{
+	 display: inline-block;
+} 
+}

@@ -1,0 +1,109 @@
+<div class="row" ng-controller="ProductDetailsBaseController">
+	<div class="col-md-12">
+		<form  class="form-horizontal" role="form" name="ProductDetail">
+			<div class="form-body">
+				<div class="form-group col-md-12"><h4>基本信息</h4></div>
+				<div class="form-group">
+					<label class="col-md-2 control-label">产品名称<span class="required"> * </span></label>
+					<div class="col-md-4">
+						<input name="ProductName" ng-model="ProductName" type="text" class="form-control" placeholder="必填" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-2 control-label">产品品牌<span class="required"> * </span></label>
+					<div class="col-md-4">
+						<input name="Brand" ng-model="Brand" type="text" class="form-control" placeholder="必填" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-2 control-label">产品型号<span class="required"> * </span></label>
+					<div class="col-md-4">
+						<input name="Model" ng-model="Model"  type="text" class="form-control" placeholder="必填" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-2 control-label">产品类别<span class="required"> * </span></label>
+					<div class="col-md-4">
+						<select ng-model="ProCategory" ng-options="o.id as o.bigclass for o in ProCategorys" class="form-control" required>
+							<option value=""></option>
+						</select>
+					</div>
+				</div>
+				<div ng-show="{{Curtype}}!==2">
+					<div class="form-group col-md-12"><h4>介绍信息</h4></div>
+					<div class="form-group">
+						<label class="col-md-2 control-label">产品描述</label>
+						<div class="col-md-4">
+							<textarea name="Description" ng-model="Description" class="form-control" rows="3"></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2">产品图片</label>
+						<div class="col-md-4">
+							<div class="fileinput fileinput-new" data-provides="fileinput">
+								<div class="fileinput-new thumbnail" style="width: 200px; height: 150px;" >
+									<div id="pro_img">
+										<img ng-src="{{ImageUrl}}" style="max-width: 200px; max-height: 150px;">
+									</div>                                   
+								</div>
+								<div id="pro_name"></div>
+							</div>
+							<div id="pro_btn">
+								<a id="pro_selectbtn" class='btn btn-primary'>选择文件</a>
+								<a id="pro_upbtn" class='btn btn-primary'>开始上传</a>
+							</div>
+							<input type="file" id="pro_input" style="display:none">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-2 control-label">产品介绍URL</label>
+						<div class="col-md-6">
+							<input ng-model="ProUrl" name="ProUrl" type="text" class="form-control" placeholder="">
+						</div>
+					</div>
+					<div class="form-group col-md-12"><h4>配置信息</h4></div>
+					<div class="form-group">
+						<label class="col-md-2 control-label">设备类型</label>
+						<div class="col-md-4">
+							<select ng-model="DeviceCategory" ng-options="o.ID as o.Deviceclass for o in DeviceCategorys" class="form-control">
+								<option value=""></option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-2 control-label">产品唯一标识</label>
+						<div class="col-md-4">
+							<select ng-model="ProUnique" ng-options="o.ID as o.Prouniqueclasss for o in ProUniques" class="form-control">
+								<option value=""></option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-2 control-label">联网方式</label>
+						<div class="col-md-4">
+							<select ng-model="LinkMode" ng-options="o.ID as o.LinkModeName for o in LinkModes" class="form-control">
+								<option value=""></option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-2 control-label">强制验证</label>
+						<div class="col-md-2">                
+							<select ng-model="ComVer"  class="form-control">
+								<option value="true">是</option>
+								<option value="false">否</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-3 control-label" for="title"></label>
+					<div class="col-md-5">
+						<input ng-disabled="!ProductDetail.ProductName.$valid||!ProductDetail.Brand.$valid||!ProductDetail.Model.$valid||!ProCategory" ng-click="EditProductFun(1)" class="btn bg-blue-steel bg-font-blue-steel" type="submit" value="确认"/>
+						<input ng-click="BackFun()" class="btn bg-default bg-font-default" type="submit" value="返回"/>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

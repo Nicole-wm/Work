@@ -1,0 +1,78 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="portlet light portlet-fit bordered">
+			<div class="portlet-title">
+				<div class="col-md-2 caption te  xt-ellipsis">
+					<span class="caption-subject bold font-blue-steel" title="{{otaTop.ofid}}">OTA文件ID:{{otaTop.ofid}}</span>
+				</div>
+				<div class="col-md-9 caption">
+					<span class="label label-default label-sm circle bg-default bg-font-default ">文件名：{{otaTop.file_name}}</span>
+					<p></p>
+					<span class="label label-default label-sm circle bg-default bg-font-default ">下载地址：{{otaTop.file_url}}</span>
+					<p></p>
+					<span class="label label-default label-sm circle bg-default bg-font-default ">固件版本号：{{otaTop.version}}</span>
+					<span class="label label-default label-sm circle bg-default bg-font-default ">所属产品：{{otaTop.product.pname}}</span>
+					<p></p>
+					<span class="label label-default label-sm circle bg-default bg-font-default ">上传时间：{{otaTop.upload_time|date:'yyyy-MM-dd HH:mm:ss'}}</span>
+					<span class="label label-default label-sm circle bg-default bg-font-default ">自定义：{{otaTop.customize}}</span>
+					<p></p>
+					<span class="label label-default label-sm circle bg-default bg-font-default ">升级说明：{{otaTop.description}}</span>
+				</div>
+				<div class="col-md-1 caption">
+					<a href="#/ota/task_details.html?OTA={{otaTop.ofid}}" class="btn bg-blue-steel bg-font-blue-steel "> 添加任务 </a>
+				</div>
+			</div>
+			<div class="row" ng-show="totalItems===0">
+			<div class="form-group col-lg-12"><h4>&nbsp;&nbsp;暂无任务</h4></div>
+			</div>
+			<div class="row" ng-show="totalItems!==0">
+				<div class="form-group col-lg-12">
+					<div class="portlet light bordered">
+						<div class="portlet-body">
+							<table class="table table-striped table-bordered table-hover">
+								<thead>
+									<tr>
+										<th> 任务ID </th><!-- 
+										<th> 生效时间 </th> -->
+										<th> 创建时间 </th>
+										<th> 更新时间 </th>
+										<th> 所属产品 </th>
+										<th> 更新进度 </th>
+										<th> 操作 </th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr ng-repeat="item in ListArr">
+										<td>
+											<a ng-click="DetailTask(item.otid)" target="_blank">{{item.otid}}</a>
+										</td>
+										<!-- <td>{{item.onset_time|date:'yyyy-MM-dd HH:mm:ss'}}</td> -->
+										<td>{{item.create_time|date:'yyyy-MM-dd HH:mm:ss'}}</td>
+										<td>{{item.update_time|date:'yyyy-MM-dd HH:mm:ss'}}</td>
+										<td>{{item.product.pname}}</td>
+										<td>{{item.progress}}</td>
+										<td>
+											<span ng-show="item.status==0">
+												<a class="btn bg-blue-steel bg-font-blue-steel btn-sm" ng-click="StartTaskFun(item.otid)"> 上线 </a><!-- 
+												<a class="btn purple btn-sm" ng-click="PushTaskFun(item.otid)"> 推送 </a> -->
+												<a class="btn bg-green-soft bg-font-green-soft btn-sm" ng-click="DetailTask(item.otid)"> 编辑 </a><!-- 
+												<a class="btn bg-red bg-font-red btn-sm" ng-click="DeleteFun(item.otid)"> 删除 </a> -->
+											</span>
+											<span ng-show="item.status==1">
+												<a class="btn yellow btn-sm"> 已上线 </a>
+											</span>
+											<span ng-show="item.status==2">
+												<a class="btn bg-default bg-font-default btn-sm"> 无效 </a>
+											</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<uib-pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize" class="pagination" boundary-links="true" rotate="false" num-pages="numPages" ng-change="pageChanged()"></uib-pagination>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

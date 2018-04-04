@@ -1,0 +1,13 @@
+{
+	"IsSuccess":true,
+	"data":{
+		"count":86,
+		"result":[
+			{ "id":"757fb2e4-48d9-11e6-9baf-00163e120d98","pname":"ACA烤箱","brand":"ACA","model":"GT320","pic":"../assets/pages/img/product/1.jpg","status":0},
+			{ "id":"8b1fd160-5473-11e6-9baf-00163e120d48","pname":"美菱冰箱","brand":"美菱","model":"tb-08","pic":"../assets/pages/img/product/2.jpg","status":1},
+			{ "id":"de371ea6-44ee-11e6-9d95-00163e103941","pname":"美的空调","brand":"美的","model":"TH-100","pic":"../assets/pages/img/product/3.jpg","status":2},
+			{ "id":"8b2fd160-5473-11e6-9baf-00163e120d34","pname":"海尔洗衣机","brand":"海尔","model":"PH30","pic":"../assets/pages/img/product/4.jpg","status":0},
+			{ "id":"de571ea6-44ee-11e6-9d95-00163e103912","pname":"LG电视","brand":"LG","model":"RT230","pic":"../assets/pages/img/product/5.jpg","status":1}
+		]
+	}
+}

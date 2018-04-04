@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>FRANGI</title>
+	<meta name="keywords" content="FRANGI礼盒系列" />
+	<meta name="description" content="风华正茂的年纪，让青春绽放的更持久！奢享礼盒，给你整套的呵护。" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="icon" href="../../IMG/frangi.ico" type="image/x-icon">
+	<!-- pluginsJS -->
+	<link rel="stylesheet" href="../../CSS/swiper.min.css">
+	<!-- publicCSS -->
+	<link rel="stylesheet" href="../css/base.css">
+	<!-- pageCSS -->
+	<link rel="stylesheet" href="../css/pro.css">
+	<!-- pluginsJS -->
+	<script src="../../JS/flexible_css.js"></script>
+	<script src="../../JS/flexible.js"></script>
+	<!-- h5.frangi.cn Baidu tongji analytics -->
+	<script src="../../JS/baiduhm.js"></script>
+</head>
+
+<body ng-app="FrangiApp" ng-controller="ProCtrl">
+	<!-- titlebar -->
+	<div ng-include="'../tpl/titlebar.html'"></div>
+	<!-- Content -->
+	<div id="ProContent">
+		<div class="Top-CenterTxt">礼盒系列</div>
+		<div class="Banner-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide banner-active">
+					<img src="../img/pro-gift/pro-op-1.jpg">
+					<img src="../img/pro-gift/pro-1.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="../img/pro-gift/pro-op-2.jpg">
+					<img src="../img/pro-gift/pro-2.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="../img/pro-gift/pro-op-3.jpg">
+					<img src="../img/pro-gift/pro-3.jpg">
+				</div>
+				<div class="swiper-slide banner-active">
+					<img src="../img/pro-gift/pro-op-4.jpg">
+					<img src="../img/pro-gift/pro-4.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="../img/pro-gift/pro-op-5.jpg">
+					<img src="../img/pro-gift/pro-5.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="PageX-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="PageY-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide page-content1"><img src="../img/base/loading.jpg" data-src="../img/pro-gift/content-1-1.jpg" class="swiper-lazy"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="PageY-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide page-content1"><img src="../img/base/loading.jpg" data-src="../img/pro-gift/content-2-1.jpg" class="swiper-lazy"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="PageY-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide page-content1"><img src="../img/base/loading.jpg" data-src="../img/pro-gift/content-3-1.jpg" class="swiper-lazy"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="PageY-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide page-content1"><img src="../img/base/loading.jpg" data-src="../img/pro-gift/content-4-1.jpg" class="swiper-lazy"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="PageY-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide page-content1"><img src="../img/base/loading.jpg" data-src="../img/pro-gift/content-5-1.jpg" class="swiper-lazy"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Sidebar -->
+	<div class="sidebar-container">
+		<div ng-include="'../tpl/sidebar.html'"></div>
+	</div>
+	<div class="guide-container" onclick="AroundClick()">
+		<div ng-include="'../tpl/guide-aronud.html'"></div>
+	</div>
+	<!-- pluginsJS -->
+	<script src="../../JS/jquery-3.2.1.min.js"></script>
+	<script src="../../JS/jweixin.js"></script>
+	<script src="../../JS/angular.min.js"></script>
+	<script src="../../JS/swiper.min.js"></script>
+	<!-- PublicJS -->
+	<script src="../js/base.js"></script>	
+	<script src="../js/weixinshare-pro.js"></script>
+	<script>
+		var app = angular.module('FrangiApp', []);
+		app.controller('ProCtrl', function($scope) {});	
+		/*产品详情滑屏*/
+		var PageXswiper = new Swiper('.PageX-container', {
+			spaceBetween: 10,
+			loop:true,
+			loopedSlides:5,
+			onTouchStart: function(swiper){
+				$(".guide-container").hide();
+			},
+			onSlideChangeEnd: function(swiper){
+				var TopTitle="礼盒系列";
+				switch(swiper.activeIndex%5)
+				{
+					case 0:
+					TopTitle="菁容焕采奢享礼盒";
+					break;
+					case 1:
+					TopTitle="雪颜晶透奢享礼盒";
+					break;
+					case 2:
+					TopTitle="玉肌水润奢享礼盒";
+					break;
+					case 3:
+					TopTitle="菁容焕采护肤礼盒";
+					break;
+					case 4:
+					TopTitle="玉肌水润护肤礼盒";
+					break;
+					default:
+					TopTitle="礼盒系列";
+				}
+				$(".Top-CenterTxt").html(TopTitle);
+			}
+		});
+
+		var Bannerswiper = new Swiper('.Banner-container', {
+			slideActiveClass:'banner-active',
+			spaceBetween: 10,
+			centeredSlides: true,
+			slidesPerView: 3,
+			loop:true,
+			loopedSlides:5
+		});
+
+		PageXswiper.params.control = Bannerswiper;
+		Bannerswiper.params.control = PageXswiper;
+
+		var PageYwiper = new Swiper('.PageY-container', {
+			paginationClickable: true,    
+			direction: 'vertical',
+			lazyLoading : true
+		});
+
+		wx.ready(function () {
+			var sharedata = {
+				title: 'FRANGI礼盒系列',
+				desc: '风华正茂的年纪，让青春绽放的更持久！奢享礼盒，给你整套的呵护。',
+				link:'http://h5.frangi.cn/ProductPromotion/view/pro-gift.html',
+				imgUrl: 'http://h5.frangi.cn/IMG/shareIco.png',
+				success: function () {
+				},
+				cancel: function () {
+				}
+			};
+			wx.onMenuShareAppMessage(sharedata);
+			wx.onMenuShareTimeline(sharedata);
+			wx.hideMenuItems({
+				menuList: [
+				'menuItem:share:qq',
+				'menuItem:share:QZone'
+				] 
+			});
+		});
+	</script>
+</body>
+</html> 

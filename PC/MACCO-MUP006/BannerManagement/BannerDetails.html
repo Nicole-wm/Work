@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/datepicker.css" rel="stylesheet">
+    <link href="/css/sb-admin.css" rel="stylesheet">   
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/common.css" rel="stylesheet" type="text/css" >
+    <link href="/css/uniform.css" rel="stylesheet" type="text/css" >
+    <link href="/css/public.css" rel="stylesheet">
+    <link href="/css/BannerDetails.css" rel="stylesheet">
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="/scripts/common.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-infinite-scroll.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-file-upload-all.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/sidebarController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/Banner/BannerDetail.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/Banner/selectBannerLink.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Sidebar.html'" />
+        <div id="nav" ng-include="templateurl"></div>
+        <div id="page-wrapper" ng-controller="BannerDetailController">
+            <div class="container-fluid">
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            横幅详情{{OperationType}}
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>  
+                                <a href="index.html">Macco Admin</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-table"></i> 横幅详情{{OperationType}}
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div><h2 style="display:inline-block;">横幅详情{{OperationType}}:</h2>
+                        </div>
+                        <form role="form" name="BannerDetail" class="form-horizontal">
+                            <div class="form-group">
+                                <label>图片:</label>
+                                <div class="textipt" id="falseName" style="cursor:pointer">
+                                    <img ngf-select ng-disabled="!canEdit" ng-model="Banner" ngf-src="Banner[0]" ngf-accept="'image/*'" ng-src="{{ImageUrl}}"
+                                    style="width:372px;height:120px" id="selectBannerRowPic"></img>
+                                    <img ng-model="Banner" ngf-src="Banner[0]" style="display:none;" id="bannerrowpic"/>
+                                    <input type="hidden" ng-model="Banner[0].name" name="Banner" required ng-required="NeedBanner">
+                                </div>
+                                <label ng-show="BannerDetail.Banner.$error.required" id="informationalert" class="formalert">*&nbsp;请选择图片</label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label" style="width:35px;margin-right:3px;">类型:</label>
+                                <div class="controls" style="width:10%;">
+                                    <select class="form-control" ng-model="SelectedCategoy" ng-options="category.ID as category.Desc for category in Categories" ng-disabled="!canEdit"></select>
+                                </div>
+                                <label ng-show="!SelectedCategoy" id="informationalert" class="formalert leixin">*&nbsp;请选择类型</label>
+                            </div>
+
+                            <div class="control-group" >
+                                <label class="control-label">链接:</label>
+                                <button type="button" ng-click="this.AddNew(this.Token)" class="btn btn-primary" style="margin-left:10px;" ng-disabled="!SelectedCategoy">选择</button>
+                            </div> 
+                        </br>
+                        <div class="textipt" style="width:80%; margin-left:100px;" ng-show="bannerlinkshow">
+                            <div class="DataContainer">
+                                <div class="TableTitle">
+                                    <div class="col_id">ID</div>
+                                    <div class="col_keyno">唯一编码</div>
+                                    <div class="col_title">标题</div>
+                                    <div class="col_cover_image">首页图片</div>
+                                </div>
+                                <div class="clearboth"></div>
+                                <div ng-model="item">
+                                    <div class="WrapContent ">
+                                        <div class="col_id">
+                                            <span class="mobileId">ID:</span><span ng-bind="item.ID"></span>
+                                        </div>
+                                        <div class="col_keyno">
+                                            <span class="mobileKeyno">唯一编码:</span><span ng-bind="item.KeyNo"></span>
+                                        </div>
+                                        <div class="col_title">
+                                            <span class="mobileTitle">标题:</span>
+                                            <a><span ng-bind="item.Title" ng-show="item.Title"></span></a>
+                                            <a><span ng-bind="item.Name" ng-show="item.Name"></span></a>
+                                        </div>
+                                        <div class="col_cover_image" ng-show="item.ImageUrl" style="background: url('{{item.ImageUrl}}');background-size:cover;">
+                                            <span class="mobileImage">图片:</span>
+                                            <img src="{{item.ImageUrl}}">
+                                        </div>
+
+                                        <div class="col_cover_image" ng-show="item.IndexImage" style="background:url('{{item.IndexImage}}');background-size:cover;">
+                                            <span class="mobileImage">图片:</span>
+                                            <img src="{{item.IndexImage}}">
+                                        </div>
+                                    </div>
+                                    <div class="clearboth"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" ng-show="canEdit"  ng-disabled="!item"  class="btn btn-primary" ng-click="Submit()">提交</button>
+                            <button class="btn"   ng-click="ReturnBack()">返回</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+</body>
+
+</html>

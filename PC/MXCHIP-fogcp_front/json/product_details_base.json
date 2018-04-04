@@ -1,0 +1,19 @@
+{
+	"IsSuccess":true,
+	"Data":{ 
+		"ID":1,
+		"State":0,
+		"ProductName":"ACA烤箱",
+		"Brand":"ACA",
+		"Model":"GT320",
+		"ImageUrl":"../assets/pages/img/product/1.jpg",
+		"Description":"新一代厨房革新产品",
+		"ProCategory":2,
+		"Url":"http://www.acachina.com/product/content/475.jhtml",
+		"ProductConfig":"",
+		"LinkMode":2,
+		"GuestAllow":"False",
+		"GuestTime":"5小时",
+		"TopGrade":"False"
+	}
+}

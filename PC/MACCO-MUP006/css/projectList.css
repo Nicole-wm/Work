@@ -1,0 +1,53 @@
+.mobilepublish{
+	display: none;
+}
+.col_id {
+	width:5%; 
+}
+.col_name{
+    width:15%; 
+}
+.col_des {
+	width:20%; 
+}
+.col_addrass{
+    width:20%; 
+}
+.col_time {
+	width:10%; 
+}
+.col_people{
+    width:10%; 
+}
+.col_operation{
+    width:20%; 
+}
+.mobileId,
+.mobileName,
+.mobileDes,
+.mobileAddrass,
+.mobileTime,
+.mobilePeople,
+.mobileOperation{
+	display: none;
+ } 
+@media(max-width:768px) {
+.WrapContent {
+  height: 650px;
+  max-height: 650px;
+}
+.mobileId,
+.mobileName,
+.mobileDes,
+.mobileAddrass,
+.mobileTime,
+.mobilePeople,
+.mobileOperation{
+    display: inline-block;
+} 
+}
+@media(max-width:414px) {
+.mobilepublish{
+	display: inline-block;
+}
+}

@@ -1,0 +1,27 @@
+{
+	"IsSuccess":true,
+	"Data":{
+		"Stat":{
+			"device_month":48,
+			"device_year":380,
+			"device_all":380,
+			"enduser_month":690,
+			"enduser_year":3300,
+			"enduser_all":3300
+		},
+		"ProActPer":[
+			{"name":"空调","value": "260"},
+			{"name":"烤箱","value": "900"},
+			{"name":"冰箱","value": "660"},
+			{"name":"洗衣机","value": "200"}
+		],
+		"AppUserCount":[
+			{"name":"无敌烤箱","value": "2055"},
+			{"name":"智能冰箱","value": "4022"},
+			{"name":"热水器","value": "1030"},
+			{"name":"如意冰箱","value": "3068"},
+			{"name":"美的空调","value": "2029"},
+			{"name":"智能冰箱","value": "2897"}
+		]
+	}
+}

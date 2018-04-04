@@ -1,0 +1,119 @@
+.phome{
+	position: relative;
+}
+.phome_content{
+	width: 100%;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.pfix_bottom{
+	background-color: #ffffff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 2.77rem;
+	z-index: 100;
+	width: 100%;
+}
+.price_bottom{
+	height: 1.38rem;
+	line-height:1.38rem;
+	border-top: 1px #000000 solid;
+	border-bottom: 1px #000000 solid;
+	font-size: 0;
+}
+.price_bl{
+	width: 20%;
+	height: 1.38rem
+}
+.price_bm{
+	width: 20%;
+	border-right: 1px #000000 solid;
+	border-left: 1px #000000 solid;
+}
+.price_br{
+	width: 59%;
+}
+.icon_back{
+	width: 1rem;
+	height: 0.7rem;
+	background-position: 0% 92%;
+	background-size: 1rem 3.5rem;
+	vertical-align: middle;
+}
+.buy_bottom{
+	height: 1.38rem;
+	line-height:1.38rem;
+	background-color: #000000;
+	color: #ffffff;
+}
+.pro_title{
+	height: 1.666667rem;
+	line-height:1.666667rem;
+	border-bottom: 1px #e5e5e5 solid;
+	position: relative;
+}
+.pro_titleh{
+	background-color: #e5e5e5;
+}
+.icon_add{
+	position: absolute;
+	right: 10%;
+	top:35%;
+	width: 0.4rem;
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg); 	
+	-moz-transform:rotate(90deg); 
+	-webkit-transform:rotate(90deg); 
+	-o-transform:rotate(90deg); 
+    background-size: 0.7rem 3rem;	
+}
+.pro_ct{
+	margin-right: 1rem;
+}
+.buy_way{
+	background-image: url(../img/base/buy.png);
+	background-repeat: no-repeat;
+	width:46%;
+	height:1.5rem;
+	border: 1px #e5e5e5 solid;
+}
+.by_1{
+    background-position: 50% 4%;
+    background-size: 3rem 7.5rem;
+}
+.by_2{
+    background-position: 50% 28%;
+    background-size: 3rem 7.5rem;
+}
+.by_3{
+    background-position: 50% 49%;
+    background-size: 3rem 7.5rem;
+}
+.by_4{
+    background-position: 50% 72%;
+    background-size: 2.7rem 7.5rem;
+}
+.by_5{
+    background-position: 50% 95%;
+    background-size: 2.7rem 7.5rem;
+}
+.by_1,.by_4{
+	margin-right:6%;
+}
+.sug_list{
+	width: 100%;
+}
+.sug_div{
+	display: inline-block;
+	width: 100%;
+	height: 2.45rem;
+}
+.sug_banner{
+	width: 3.8rem;
+}
+.sug_text{
+	margin-top: 0.45rem;
+}

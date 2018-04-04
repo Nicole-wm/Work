@@ -1,0 +1,14 @@
+{
+	"IsSuccess":true,
+	"data":{
+		"count":86,
+		"result":[
+			{ "id":"72b72f72-3c2e-11e6-9d95-00163e103941","username":"奥克斯海迅电器","email":"2753484574@qq.com","company":"佛山市海迅电器有限公司","phone":"13789546630","date_joined":"2016-03-03T11:16:24.495Z","status":1},
+			{ "id":"72b74f72-3c2e-19e6-9d95-00163e103941","username":"ACA烤箱","email":"ewrwe@qq.com","company":"北京智能研究院","phone":"1254546630","date_joined":"2016-03-03T11:16:24.495Z","status":2},
+			{ "id":"72b72f72-3c2e-12e6-9d95-00163e103941","username":"美的上海","email":"34132131234@qq.com","company":"上海电器","phone":"180196630","date_joined":"2016-03-03T11:16:24.495Z","status":0},
+			{ "id":"72b72f72-3c2e-14e6-9d95-00163e103941","username":"美菱空调","email":"435766@qq.com","company":"江苏电器","phone":"1478912630","date_joined":"2016-03-03T11:16:24.495Z","status":2},
+			{ "id":"72b72f72-3c2e-12e6-9d95-00163e103941","username":"智能老板家电","email":"史蒂夫35@qq.com","company":"123电器","phone":"1695546630","date_joined":"2016-03-03T11:16:24.495Z","status":1},
+			{ "id":"72b72f72-3c2e-18e6-9d95-00163e103941","username":"123","email":"4353v地方@qq.com","company":"一体机有人电器","phone":"13789546630","date_joined":"2016-03-03T11:16:24.495Z","status":0}
+		]
+	}
+}

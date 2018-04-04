@@ -1,0 +1,74 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="" ng-app="maccoApp">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>美的你-正确的橘色妆容你get到了吗？</title>
+    <style>
+        @font-face {
+            font-family: 'youyuan';
+            src: url(data:font/ttf;base64,FONTBASE64) format('truetype');
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../public/boilerplate.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../public/comment.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="zx.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../public/publicComment.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../public/zan.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../public/imageLazyLoad.css" charset="utf-8">
+    <script type="text/javascript" src="/JS/config.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/ng-infinite-scroll.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/infoController.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/CommentCtrl.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/ZanCtrl.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/respond.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/imageLazyLoad.js"></script>
+</head>
+
+<body ng-controller="InformationController">
+    <div class="">
+        <div id="" class="container">
+            <div class="banner">
+                <img src="banner.jpg">
+            </div>
+            <div id="mainTitle">正确的橘色妆容你get到了吗？</div>
+            <input type="hidden" ng-model="zanurl" ng-init="zanurl='/Info/zan.html'" />
+            <div id="add_zan" ng-include="zanurl"></div>
+            <div class="detail">橘色妆容是各个季节都可以搭配的妆容，正确的打开橘色妆容的姿势因该是，橘色妆容＋不要笑＝显瘦！真的显瘦哦~
+            </div>
+            <div class="productName"><img src="12.png"><strong> 用到的妆品</strong>
+                <div class="ProductImages"><img src="11.png" class="line"></div>
+            </div>
+            <div class="detail">这款妆容重点是爱丽小屋四色眼影02橘色，看中的是那个哑光橘色，但是画出来最喜欢的其实是左下角很闪的棕色。</div>
+            <div class="ProductImages"><img bn-lazy-src="1.jpg" src="../images/imageLoading.png"></div>
+            <div class="productName"><img src="12.png"><strong>眼妆</strong>
+                <div class="ProductImages"><img src="11.png" class="line"></div>
+            </div>
+            <div class="ProductImages"><img src="2.jpg"></div>
+            <div class="productName"><img src="12.png"><strong> 唇妆</strong>
+                <div class="ProductImages"><img src="11.png" class="line"></div>
+            </div>
+            <div class="ProductImages"><img src="3.jpg"></div>
+            <div class="productName"><img src="12.png"><strong>腮红</strong>
+                <div class="ProductImages"><img src="11.png" class="line"></div>
+            </div>
+            <div class="ProductImages"><img src="4.jpg"></div>
+            <div class="ProductImages"><img src="5.jpg"></div>
+            <div class="countText">
+                是不是有显瘦的效果呦~筒子们
+            </div>
+        </div>
+    </div>
+    <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Info/comments.html'" />
+    <div id="add_comment" ng-include="templateurl"></div>
+</body>
+
+</html>

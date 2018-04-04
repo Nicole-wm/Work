@@ -1,0 +1,253 @@
+.clear{
+    clear: both;
+}
+body{
+    background:#ffffff;   
+	padding: 0;
+    margin: 0;
+    /*font-family: youyuan,"Droid Sans", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", sans-serif;*/
+    font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",STHeiti,sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+	  
+}
+.banner{
+    width: 100%;
+    font-size:0;
+}
+img{
+    width: 100%;
+}
+.product_title{
+    width: 100%;
+    height: 50px;
+    background: #fafafa;
+}
+.title_content,.join_method,.product_introduce,.getPricePerson,.personName{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.product_introduce{
+       line-height: 25px; 
+}
+.title_content{
+    height: 100%;
+}
+.product_name,.product_free,.product_price{
+    float: left;
+    line-height: 50px;
+}
+.join_person{
+    float: right;
+    margin-top: 5px;
+}
+.product_name{
+    font-size: 17px;
+    color: #333333;
+}
+.product_free{
+    font-size: 19px;
+    font-family: Berlin Sans FB;
+    color: #ff437a;
+    margin-left: 5px;
+}
+.product_price{
+    font-size: 12px;
+    font-family: Helvetica;
+    color: #999999;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+.join_person{
+    float: right;
+}
+.person_count{
+    font-family: Helvetica;
+    font-size: 23px;
+    color: #ff437a;
+    text-align: right;
+}
+.person{
+    font-size: 12px;
+    color: #333333;
+    text-align: right;
+}
+.blank{
+    height: 20px;
+}
+.product_introduce{
+    color: #666666;
+}
+.join_method{
+    height: 43px;
+    font-size: 12px;
+    color: #999999;
+    text-align: center;
+    line-height: 18px;
+}
+.method{
+    width: 90%;
+    height: 43px;
+    line-height: 43px;
+    background: #fafafa;
+    position: relative;
+    margin: 0 auto;
+    
+}
+.firstline::before{
+  position: absolute;
+  content: "";
+  border-top: 1px solid #ff437a;
+  left: 0px;
+  width: 11px;
+}
+.firstline::after{
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 11px;
+  height: 11px;
+  border-left: 1px solid #ff437a;
+}
+.method::before{
+  position: absolute;
+  content: "";
+  border-top: 1px solid #ff437a;
+  right: 0px;
+  width: 11px;
+  bottom: 0;
+}
+.method::after{
+  position: absolute;
+  content: "";
+  border-right: 1px solid #ff437a;
+  right: 0px;
+  width: 11px;
+  height: 11px;
+  bottom: 0;
+}
+.time{
+    width: 47%;
+    height: 100%;
+    float: right;
+    background: #fafafa;
+}
+.method .firstline{
+    margin-top: 10px;
+}
+.time .firstline{
+    margin-top: 19px;
+}
+.starttime,.endtime{
+    font-size: 12px;
+    font-family: Helvetica;
+}
+.own{
+  height: 52px;
+  line-height: 52px;
+  color: #acacac;
+  font-size: 6px;
+  position: fixed;
+  right: 16px;
+  bottom: 30px;
+}
+.own[end='1']{
+  height: 52px;
+  line-height: 52px;
+  font-size: 5px;
+  color: #acacac;
+  margin:auto;
+  text-align: right;
+  font-size: 6px;
+  margin-right: 20px;
+}
+.own[end='0']{
+  color: #acacac;
+  text-align: right;
+  font-size: 6px;
+  position: fixed;
+  bottom: 36px;
+  right: 10px;
+}
+.fixblank{
+    width: 100%;
+    height: 44px;
+}
+.btnJoin{
+    color: #ffffff;
+    font-size: 20px;
+    background: #ff4a73;
+    line-height: 44px;
+    height: 44px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+}
+/*活动结束*/
+.getPricePerson{
+    background: #fafafa;
+    text-align: center;
+}
+.nameList{
+    color: #ff437a;
+    font-size: 15px;
+}
+.personName{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333333;
+    text-align: left;
+    line-height: 25px;
+}
+.personName span{
+    margin-right: 10px;
+}
+
+ @media screen and (max-width: 320px) {
+     .own[end='0'] {
+        /*position: relative;
+        margin-top: 20px;
+        bottom: 0px;
+        right: 0px;*/
+     }
+     .blank{
+         height: 10px;
+     }
+     .title_content,.join_method,.product_introduce{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .join_person{
+        margin-top: 7px;
+    }
+    .product_name{
+        font-size: 15px;
+    }
+    .product_free{
+        font-size: 17px;
+        margin-left: 2px;
+    }
+    .product_price{
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    .person_count{
+        font-size: 20px;
+    }
+    .person{
+        font-size: 10px;
+    }
+    .product_introduce{
+        font-size: 12px;
+    }
+    .personName {
+        font-size: 12px;
+    }
+    .firstline::after {
+     top: 0;
+    }
+    .method {
+    width: 100%;
+    }
+ }

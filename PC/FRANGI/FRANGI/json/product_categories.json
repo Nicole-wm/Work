@@ -1,0 +1,95 @@
+{
+	"IsSuccess": true,
+	"Data": {
+		"count": 6,
+		"result": [{
+			"id": "1",
+			"pname": "FRANGI 玉肌水润系列",
+			"ename": "Hydrationist Maximum Moisture",
+			"des": "瑞士CRB配方，专为补水及干性肌肤定制，特别添加鸢尾花根萃取精萃，补水保湿，弹润肌肤。",
+			"title": "深层润泽 补水活肤",
+			"subtitle": "肌肤Q弹亮泽的秘密，源自基底细胞的无限活力！",
+			"prolist": [9,10,12,11,13],
+			"banner": "img/product_categories/1/banner.png",
+			"post": "img/product_categories/1/post.jpg"
+		},
+		{
+			"id": "2",
+			"pname": "FRANGI 雪颜晶透系列",
+			"ename": "Joyful Snow Brightening",
+			"des": "瑞士CRB配方，专为雪颜肌定制，特别添加Vitalab绿咖啡精粹，使肌肤由内而外溢出光采。",
+			"title": "智能抑黑 一键亮白",
+			"subtitle": "卓越功效，缔造人人渴望的无暇净透美肌！",
+			"prolist": [15,14,17,16,18],
+			"banner": "img/product_categories/2/banner.png",
+			"post": "img/product_categories/2/post.jpg"
+		},
+		{
+			"id": "3",
+			"pname": "FRANGI 菁容焕采系列",
+			"ename": "Hydro Cocoon",
+			"des": "瑞士CRB配方，专为对抗初老肌肤定制，特别添加多种瑞士CRB植物提取精粹，帮组改善细纹，使肌肤丰盈紧实。",
+			"title": "初期抗老 焕然新生",
+			"subtitle": "独家干细胞活性物专利，直击衰老源点，定格青春现在时！",
+			"prolist": [6,7,5,3,2,4],
+			"banner": "img/product_categories/3/banner.png",
+			"post": "img/product_categories/3/post.jpg"
+		},
+		{
+			"id": "4",
+			"pname": "FRANGI 男士活力润养系列",
+			"ename": "Revitalizing For Men",
+			"des": "瑞士CRB男士定制配方，特别添加榆绣线菊提取精粹，重现男士肌肤健康神采与活力。",
+			"title": "清爽控油 润泽醒肤",
+			"subtitle": "独特质地润而不腻，带来一整天无忧(油)好心情！",
+			"prolist": [20,19],
+			"banner": "img/product_categories/4/banner.png",
+			"post": "img/product_categories/4/post.jpg"
+		},
+		{
+			"id": "5",
+			"pname": "FRANGI 面膜系列",
+			"ename": "FRANGI Mask",
+			"des": "精选天然植物原料精心研制而成，给予肌肤持久鲜活力量，多款系列功效，满足不同女性肤质的需求!",
+			"title": "深层滋养 持续保湿",
+			"subtitle": "给肌肤一场及时雨，全天水润不是梦！",
+			"prolist": [29,30,31,32,33,34,35],
+			"banner": "img/product_categories/5/banner.png",
+			"post": "img/product_categories/5/post.jpg"
+		},
+		{
+			"id": "6",
+			"pname": "FRANGI 彩妆系列",
+			"ename": "FRANGI Makeup",
+			"des": "精选天然安全的原料，功效卓越，同时有护肤和调理肌肤功效，演绎出精致动容的妆容。",
+			"title": "妆感自然 完美勾勒",
+			"subtitle": "妆彩人生，活出自己freestyle！",
+			"prolist": [25,26,27,28],
+			"banner": "img/product_categories/6/banner.png",
+			"post": "img/product_categories/6/post.jpg"
+		},
+		{
+			"id": "7",
+			"pname": "FRANGI 新品系列",
+			"ename": "FRANGI News",
+			"des": "全新产品，升级配方。新系列、新产品，满足肌肤更多需求。",
+			"title": "新品上市 魅力呈现",
+			"subtitle": "全新美肌新品 你值得拥有！",
+			"prolist": [0,23,21,22,24,25,26,27,28,33,34,35,36],
+			"banner": "img/product_categories/7/banner.png",
+			"post": "img/product_categories/7/post.jpg"
+		},
+		{
+			"id": "8",
+			"pname": "FRANGI 护肤系列",
+			"ename": "FRANGI Skin Care Series",
+			"des": "甄选护肤系列，专为亚洲肤质研发，定制专属你的美肌方案，让肌肤重回健康清透的状态！",
+			"title": "焕颜新肌 一套搞定",
+			"subtitle": "奢宠专属，解决肌肤各大问题！",
+			"prolist": [37,38,39,40],
+			"banner": "img/product_categories/8/banner.png",
+			"post": "img/product_categories/8/post.jpg"
+		}
+	]
+	}
+}

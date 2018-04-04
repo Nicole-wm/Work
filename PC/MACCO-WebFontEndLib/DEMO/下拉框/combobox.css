@@ -1,0 +1,53 @@
+/*input框*/
+.drop_box {
+    width: 638px;
+    height: 30px;
+    margin: auto;
+    border: 1px solid #afafaf;
+}
+
+/*下拉图形*/
+.drop_button {
+    position: absolute;
+    display: block;
+    height: 18px;
+    width: 18px;
+    right: 10px;
+    top: 2px;
+    border-style: none;
+    cursor: pointer;
+    background: url("pull.png" ) no-repeat 0px 5px;
+}
+
+/*下拉面板*/
+.bigpanel {
+    z-index: 10;
+    position: absolute;
+}
+
+.drop_panel {
+    background: #ffffff;
+    border: 1px solid #afafaf;
+    border-top: 1px solid #ffffff;
+}
+
+    .drop_panel ul {
+       padding: 0px;
+    }
+
+    .drop_panel li {
+        height: 25px;
+        line-height: 25px;
+        text-align: left;
+        text-indent: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+    }
+
+        .drop_panel li:hover {
+            background: #34d5e2;
+            cursor: pointer;
+            color: #ffffff;
+        }

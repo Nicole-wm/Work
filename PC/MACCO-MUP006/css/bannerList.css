@@ -1,0 +1,88 @@
+.pull-down{
+	margin-left: 10px;
+}
+.mobilepublish{
+	display: none;
+}
+.col_id {
+	width: 10%; 
+}
+.col_cover_image {
+	width: 15%;
+/* 	min-width: 182px; */
+}
+.col_type{
+	width:5%;
+}
+.col_title{
+	width:25%;
+	word-wrap: break-word;
+}
+.col_keyno{
+	width: 15%;
+	word-wrap: break-word;
+}
+
+.col_publish{
+    width: 5%;
+}
+.col_publish_time {
+	width: 15%;
+}
+.col_operation {
+	width:10%;
+}
+.col_brand{
+	width:15%;
+}
+.col_chinaName {
+	width: 15%;
+/* 	min-width: 182px; */
+}
+.mobileId,
+.mobileImage,
+.mobileType,
+.mobileTitle,
+.mobileKeyno,
+.mobilepublish,
+.mobilePublishTime,
+.mobileOperation,
+.mobileKeyno,
+.mobilebrand,
+.mobilechinaName{
+	display: none;
+ } 
+@media(max-width:768px) {
+.WrapContent {
+  height:520px;
+  max-height: 520px;
+}
+
+.col_cover_image {
+	min-height: 256px;
+}
+.WrapContent > .col_cover_image:hover > img {
+	display: none;
+	-webkit-animation-name: "";
+	-moz-animation-name: "";
+	-o-animation-name: "";
+	-ms-animation-name: "";
+	animation-name: "";
+}
+.mobileId,
+.mobileImage,
+.mobileType,
+.mobileTitle,
+.mobileKeyno,
+.mobilepublish,
+.mobilePublishTime,
+.mobileOperation{
+    display: inline-block;
+    } 
+
+}
+@media(max-width:414px) {
+.mobilepublish{
+	display: inline-block;
+}
+}

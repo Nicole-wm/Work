@@ -1,0 +1,313 @@
+/*******************Base*******************/
+html,body {
+	position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+img{
+    display:block;
+    margin: auto;
+    width: 100%;
+    border: 0;
+}
+
+/*******************音乐*******************/
+.music{
+    position: absolute;
+    z-index: 1111;
+    left: 20px;
+    top: 20px;
+    z-index: 1000;
+}
+.open{
+    -webkit-animation: moveRo linear 3.5s  infinite;
+    animation-delay:0;
+}
+.icon-music{
+    width:1rem;
+    height:1rem;
+    background: url(../img/base/btn-music.png);
+    background-size: 100% 100%;
+    display: block;
+    opacity: 0.5;
+}
+/*动画*/
+@-webkit-keyframes moveRo {
+    from {-webkit-transform: rotate(360deg);  }
+    to { -webkit-transform: rotate(-360deg); }
+}
+@keyframes moveRo {
+    from {  transform: rotate(-360deg)}
+    to {  transform: rotate(360deg); }
+}
+
+@-webkit-keyframes openRo {
+    from { }
+    to { -webkit-transform: translateY(100%)
+    ;}
+}
+@keyframes openRo {
+    from { }
+    to { -webkit-transform: translateY(100%) ; transform: translateY(100%);
+
+    }
+}
+/*******************滑屏*******************/
+.swiper-container,.swiper-slide,.swiper-Home{
+    width:100%;
+    height:100%;
+}
+
+/*******************Public*******************/
+.pos-abs{
+    position: absolute;
+}
+.page-content{
+    position: absolute;
+    width:100%;
+}
+.bottom-arr{
+    bottom:0.5rem;
+    z-index: 10000;
+}
+.bottom-arr img{
+    width:0.6rem;
+}
+.public-bg{
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 0;
+    background: url(../img/base/bg.jpg);
+    background-size: 100% ;
+    display: block;
+}
+/*******************PageCss*******************/
+/*p1*/
+.p1-t1{
+    top:1.712963rem
+}
+.p1-t1 img{
+    width:7.638889rem;
+    height:2.175926rem
+}
+.p1-t2{
+    top:3.3rem
+}
+.p1-t2 img{
+    width:4.583333rem;
+    height:0.703704rem
+}
+.p1-a1{
+    top:3.703704rem
+}
+.p1-a1 img{
+    width:10.0rem;
+    height:7.435185rem
+}
+.p1-a2{
+    top:11rem
+}
+.p1-a2 img{
+    width:4.453704rem;
+    height:1.212963rem
+}
+/*p2*/
+.p2-t1{
+    top:1.990741rem
+}
+.p2-t1 img{
+    width:6.685185rem;
+    height:2.018519rem
+}
+.p2-t2{
+    top:4.351852rem
+}
+.p2-t2 img{
+    width:7.740741rem;
+    height:1.898148rem
+}
+.p2-a1{
+    top:6.574074rem
+}
+.p2-a1 img{
+    width:6.157407rem;
+    height:5.092593rem
+}
+/*p3*/
+.p3-t1{
+    top:2.268519rem
+}
+.p3-t1 img{
+    width:3.972222rem;
+    height:1.027778rem
+}
+.p3-t2{
+    top:3.861111rem
+}
+.p3-t2 img{
+    width:8.361111rem;
+    height:0.509259rem
+}
+.p3-t3{
+    top:4.9rem
+}
+.p3-t3 img{
+    width:8.305556rem;
+    height:2.87037rem
+}
+.p3-t4{
+    top:8.1rem
+}
+.p3-t4 img{
+    width:7.935185rem;
+    height:2.018519rem
+}
+/*p4*/
+.p4-t1{
+    top:2.314815rem
+}
+.p4-t1 img{
+    width:6.0rem;
+    height:1.027778rem
+}
+.p4-t2{
+    top:3.981481rem
+}
+.p4-t2 img{
+    width:7.527778rem;
+    height:5.935185rem
+}
+/*p5*/
+.p5-t1{
+    top:2.546296rem
+}
+.p5-t1 img{
+    width:6.0rem;
+    height:1.027778rem
+}
+.p5-t2{
+    top:3.981481rem
+}
+.p5-t2 img{
+    width:8.064815rem;
+    height:3.25rem
+}
+.p5-a1{
+    top:6.5rem;
+    left:6.3rem;
+}
+.p5-a1 img{
+    margin:0;
+    width:2.546296rem;
+    height:5.027778rem;
+}
+/*p6*/
+.p6-t1{
+    top:2.546296rem
+}
+.p6-t1 img{
+    width:3.981481rem;
+    height:1.027778rem
+}
+.p6-t2{
+    top:4rem
+}
+.p6-t2 img{
+    width:7.805556rem;
+    height:2.333333rem;
+}
+.p6-a1{
+    top:6.5rem
+}
+.p6-a1 img{
+    width:6.935185rem;
+    height:5.916667rem
+}
+/*p7*/
+.p7-t1{
+    top:1.296296rem
+}
+.p7-t1 img{
+    width:2.712963rem;
+    height:0.953704rem
+}
+.p7-a1{
+    top:2.546296rem
+}
+.p7-a1 img{
+    width:2.222222rem;
+    height:3.12037rem
+}
+.p7-a2{
+    top:5.62963rem
+}
+.p7-a2 img{
+    width:8.203704rem;
+    height:3.12963rem
+}
+.p7-a3{
+    top:8.75rem
+}
+.p7-a3 img{
+    width:6.240741rem;
+    height:3.12037rem
+}
+/*p8*/
+.p8-t1{
+    top:1.990741rem
+}
+.p8-t1 img{
+    width:4.925926rem;
+    height:0.990741rem
+}
+.p8-t2{
+    top:3.703704rem
+}
+.p8-t2 img{
+    width:6.314815rem;
+    height:3.314815rem
+}
+.p8-a1,.p8-a2,.p8-a3{ 
+    top:7.555556rem
+}
+.p8-a1{ 
+    left:1.037037rem                  
+}
+.p8-a2{ 
+    left:3.851852rem                
+}
+.p8-a3{ 
+    left:6.666667rem               
+}
+.p8-a1 img,.p8-a2 img,.p8-a3 img{
+    margin:0;
+    width:2.407407rem;
+    height:3.546296rem;
+}
+/*p9*/
+.p9-a1{
+    top:0;
+}
+.p9-a1 img{
+    width:100%;
+    height:100%
+}
+.p9-a2{
+    top:1.435185rem;
+}
+.p9-a2 img{
+    width:6.027778rem;
+    height:2.018519rem;
+}
+.p9-a3{
+    top:7.592593rem
+}
+.p9-a3 img{
+    width:7.972222rem;
+    height:6.990741rem
+}

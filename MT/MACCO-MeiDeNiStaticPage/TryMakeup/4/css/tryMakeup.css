@@ -1,0 +1,174 @@
+@charset "UTF-8";
+body{
+    background: #ffdee1;
+}
+input{
+  display: none;
+}
+.head{
+  width: 100%;
+}
+.head>img{
+  width: 100%;
+}
+.clear{
+	clear: both;
+}
+.theme{
+      color: #ff0054;
+      text-align: center;
+      margin-top: 26px;
+    }
+.RelatedImg {
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 16px;
+      
+    }
+.RelatedImg>img{
+width: 100%;
+}
+.stepImg>img{
+  width: 45%;
+}
+.bigWordSize{
+	font-size: 1.625rem;
+}
+.smallWordSize{
+    font-size: 1rem;
+}
+.bestSmallWordSize{
+  font-size: 0.75rem;
+}
+.ImgTextIntroduce{
+  color: #737373;
+  text-align: center;
+}
+.TextContent{
+  margin: 0 auto;
+}
+.TextContent>div{
+  text-align: center;
+  line-height: 30px;
+}
+.mainPoint
+{
+  position: relative;
+}
+.mainPoint >img{
+   width: 40%;
+  margin-left: 20px;
+}
+
+.mainPointText{
+
+  text-align: center;
+  width: 100%;
+  color: #ff006c;
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+#stepThree {
+  margin-top: 46px;
+}
+.wapStep{
+  border: 12px solid #ffa8bc;
+  border-bottom: none;
+  width: 56%;
+  margin: 0 auto;
+  margin-top: 18px;
+}
+.closeFrame{
+  border: 12px solid #ffa8bc;
+  border-top: none;
+  width: 56%;
+  margin: 0 auto;
+  height: 12px;
+  margin-bottom: 16px;
+}
+.step{
+  font-size: 1.8975rem;
+  margin-left: 16px;
+  margin-top: 20px;
+}
+.stepName{
+  margin-left: 77px;
+  margin-top: 4px;
+  color: #ff006c;
+}
+.stepText{
+  margin-top: 27px;
+  margin-bottom: 33px;
+  line-height: 28px;
+  width: 55%;
+  text-indent: 15px;
+  margin-left: 102px;
+}
+
+.wrapStepTwo{
+  margin-top: 44px;
+
+}
+.lastText{
+    width: 100%;
+  text-align: center;
+}
+.summarize{
+  margin-top: 66px;
+}
+.lastImg{
+ 
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 88px;
+}
+.debriefing {
+  width: 76%;
+  margin: 0 auto;
+  margin: 8px auto 16px auto;
+}
+
+#stepThree {
+  margin-top: 44px;
+}
+@media (max-width: 375px){
+.smallWordSize{
+	font-size: 0.9375rem;
+}
+
+.bigWordSize{
+ font-size: 1.5rem;
+}
+
+
+}
+@media (max-width: 360px){
+.smallWordSize{
+  font-size: 0.875rem;
+}
+.bigWordSize{
+font-size: 1.437rem;
+}
+
+}
+@media (max-width: 320px){
+.smallWordSize{
+  font-size: 0.8125rem;
+}
+.bigWordSize{
+  font-size: 1.3125rem
+}
+.wapStep {
+  width: 70%;
+}
+.debriefing{
+  width: 78%;
+}
+.closeFrame{
+  width: 70%;
+}
+.bestSmallWordSize{
+  font-size: 0.535rem;
+}
+}

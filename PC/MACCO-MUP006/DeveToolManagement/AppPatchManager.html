@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="/css/sb-admin.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/public.css" rel="stylesheet">
+    <link href="/css/apppatchList.css" rel="stylesheet">
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="/scripts/common.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-infinite-scroll.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-file-upload-all.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/sidebarController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/Develop/AppPatchManager.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Sidebar.html'" />
+        <div id="nav" ng-include="templateurl"></div>
+        <div id="page-wrapper" style="float:right;" ng-controller="ProjectController">
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">热更新管理</h1>
+                    <ol class="breadcrumb">
+                        <li>
+                            <i class="fa fa-dashboard"></i>
+                            <a href="index.html">Macco Admin</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-table"></i>热更新管理
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row">
+               <div class="col-lg-6">
+                <div>             
+                    <h2 style="display:inline-block;">热更新列表</h2>
+                    <button type="button" ng-click="AddNew()" class="btn btn-primary" style="margin-bottom: 10px;margin-left: 20px;">新增</button>
+                </div>
+                <div id="DataContainer" class="DataContainer">
+                    <div class="TableTitle" data-grid-type="Title">
+                        <div class="col_id">ID</div>
+                        <div class="col_name">版本号</div>
+                        <div class="col_time">创建时间</div>
+                        <div class="col_operation">操作</div>
+                    </div>
+                    <div class="clearboth"></div>
+                    <div infinite-scroll='macco.nextPage()' infinite-scroll-listen-for-event="list:search" infinite-scroll-disabled='macco.busy'
+                    infinite-scroll-distance='0'>
+                    <div ng-repeat="item in macco.items">
+                        <div class="WrapContent">
+                            <div class="col_id">
+                                <span class="mobileId">ID:</span><span ng-bind="item.ID"></span>
+                            </div>
+                            <div class="col_name">
+                                <span class="mobileName">版本号:</span><span ng-bind="item.Version"></span>
+                            </div>
+                            <div class="col_time">
+                                <span class="mobileTime">创建时间:</span><span ng-bind="item.CreateTime"></span>
+                            </div>
+                            <div class="col_operation">
+                                <span class="mobileOperation">操作:</span>
+                                <a ng-click="Visit(item.ID)" title="查看" class="btn btn-success glyphicon glyphicon-search"></a>
+                                <a ng-click="Update(item.ID)" title="编辑" class="btn btn-info glyphicon glyphicon-edit"></a>
+                                <a ng-click="Delete(item.ID)" title="删除"  ng-disabled="item.IsDeletedFlag" class="btn btn-danger glyphicon glyphicon-trash"></a>
+                            </div>
+                        </div>
+                        <div class="clearboth"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

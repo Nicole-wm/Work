@@ -1,0 +1,119 @@
+<div class="row" ng-controller="CookBookDetailsControlController">
+	<div class="col-md-12">
+		<!-- BEGIN 控制详情-->
+		<div class="portlet light bordered">
+			<div class="portlet-title">
+				<div class="table-toolbar">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="color-demo tooltips btn bg-blue-steel bg-font-blue-steel" data-original-title="点击添加步骤" data-toggle="modal" data-target="#myModal_control" ng-click="ClearForm()">添加设备控制
+							</div>
+						</div>
+					</div>
+				</div> 
+				<div class="portlet-body">
+					<table class="table table-bordered table-hove">
+						<thead>
+							<tr>
+								<th> 控制名 </th>
+								<th> 控制指令 </th>
+								<th> 控制说明 </th>
+								<th> 数据操作 </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="item in CBControlArr">
+								<td> {{item.Name}} </td>
+								<td> {{item.InterName}} </td>
+								<td> {{item.Instruction}} </td>
+								<td>
+									<a data-toggle="modal" data-target="#myModal_control" class="btn bg-green-soft bg-font-green-soft btn-sm" ng-click="EditCBFun(item.ID)"> 编辑 </a>
+									<a class="btn bg-red bg-font-red btn-sm" ng-click="DeleteCBFun(item.ID)"> 删除 </a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- END 控制详情-->
+		</div>
+	</div>
+	<div class="col-md-12">
+		<!-- BEGIN 控制详情弹框-->
+		<input type="hidden" id="myModal_control_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_control">
+		<div id="myModal_control" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<a href="javascript:;" class="close" data-dismiss="modal" aria-hidden="true"></a>
+						<h4 class="modal-title">食谱设备控制</h4>
+					</div>
+					<div class="modal-body">
+						<div class="portlet">
+							<div class="portlet-body form">
+								<!-- BEGIN FORM-->
+								<form class="horizontal-form" name="CBFormula">
+									<input type="reset" id="FormReset" hidden="true">
+									<div class="form-body">
+										<div class="form-group row">
+											<div class="col-md-1"></div>
+											<label class="col-md-2 control-label">控制名<span class="required"> * </span></label>
+											<div class="col-md-8">
+												<input ng-model="ModalName" name="ModalName"  type="text" class="form-control" placeholder="必填" required>
+											</div>
+										</div>
+										
+										<div class="form-group row">
+											<div class="col-md-1"></div>
+											<label class="col-md-2 control-label">控制指令<span class="required"> * </span></label>
+											<div class="col-md-8">
+												<select ng-change="ChangeInter()" ng-model="ModalInter" ng-options="o.ID as o.InterName for o in Inters" class="form-control">
+													<option value=""></option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row" ng-show="IsInterFlag">
+											<div class="col-md-1"></div>
+											<div class="col-md-10">
+												<table class="table table-striped table-hover table-bordered">
+													<thead>
+														<tr>
+															<th width="30%"> 指令名 </th>
+															<th width="30%"> 说明 </th>
+															<th> 值 </th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>{{TableInter.InterIdentifier}}</td>
+															<td>{{TableInter.InterName}}</td>
+															<td>
+															<input ng-model="ModalInterValue" name="ModalInterValue"  type="text" class="form-control" placeholder="可填范围：{{TableInter.Minvalue}}—{{TableInter.Maxvalue}}" ng-blur="InterBlurFun()" >
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="form-group row">
+											<div class="col-md-1"></div>
+											<label class="col-md-2 control-label">控制说明</label>
+											<div class="col-md-8">
+												<textarea name="ModalInstruction" ng-model="ModalInstruction" class="form-control" rows="3" ></textarea>
+											</div>
+										</div>
+										<div class="form-actions right">
+											<button type="button" class="btn btn-primary ok"  ng-disabled="!CBFormula.ModalName.$valid" type="submit" ng-click="EditFormulaFun()" >确认</button>
+											<button type="button" class="btn btn-default cancel" data-dismiss="modal">取消</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END 控制详情弹框-->
+	</div>
+</div>

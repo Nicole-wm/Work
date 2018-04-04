@@ -1,0 +1,8 @@
+{
+	"IsSuccess":true,
+	"Data":[
+		{"ID":1,"InterName":"炉灯开关","InterIdentifier":"KG_Light","Minvalue":"0","Maxvalue":"1"},
+		{"ID":2,"InterName":"通风开关","InterIdentifier":"KG_Fan","Minvalue":"1","Maxvalue":"2"},
+		{"ID":3,"InterName":"转叉开关","InterIdentifier":"KG_Turn","Minvalue":"","Maxvalue":""}
+	]
+}

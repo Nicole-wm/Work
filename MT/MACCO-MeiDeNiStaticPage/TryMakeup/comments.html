@@ -1,0 +1,94 @@
+<div class="bottomDiv">
+  <div class="ZanDiv" ng-controller="ZanCtrl">
+    <div class="PercentDiv">
+      <div class="LikePercentText">{{LikeLinePercent}}%</div>
+      <div class="PercentLine" style="{{PercentLine}}" >
+        <div class="LikeLine"  style="{{LikePrecent}}" ></div>
+        <div class="UnlikeLine" style="{{UnLikePrecent}}" ></div>
+      </div>
+      <div class="UnlikePercentText">{{UnLikeLinePercent}}%</div>
+    </div>
+    <div class="BtnDiv">
+      <div class="LikeBtn" ng-click="LikeProductFn(1)">
+        <div class="LikeIcon">
+          <img src="../images/like.png ">
+        </div>
+        <div class="CountText">{{LikeCountText}}</div>
+        <span ng-class="likeAnimate" ng-hide="addlike">
+         +1
+       </span>
+     </div>
+     <div class="VSText">VS</div>
+     <div class="UnlikeBtn" ng-click="LikeProductFn(0)">
+       <div class="UnlikeIcon">
+         <img src="../images/unlike.png ">
+       </div>
+       <div class="CountText">{{UnLikeCountText}}</div>
+       <span ng-class="unlikeAnimate" ng-hide="addunlike">
+         +1
+       </span>
+     </div>
+   </div>
+ </div>
+
+ <div class="commentStyle" ng-controller="CommentCtrl">
+  <div class="s_menu">
+    {{CommentCount}}条评论
+  </div>
+  <a href="#scrollToThis" style="display:none" id="scrollToThis"></a>
+  <div infinite-scroll='macco.nextPage()' infinite-scroll-listen-for-event="list:reload" infinite-scroll-disabled='macco.busy'
+  infinite-scroll-distance='1'>
+  <div class="PersonComment" ng-repeat="item in macco.items">
+    <div class="InfoList">
+      <div class="com_avatar" name="scrollToThis">
+        <div class="com_head" isLike="{{item.IsLikedStr}}" content="{{item.PeiZan}}">
+          <img src="../images/headPortraitbig.png" ng-src="{{item.Avatar}}">
+        </div>
+        <div class="win_img" ng-show="item.isWin">
+         <img src="../images/win.png">
+        </div>
+      </div>
+      <div class="remarkNavContent">
+        <div class="wrapPersonInfo">
+          <span class="praisenName" ng-bind="item.NickName"></span>
+          <div class="HandlikeBtn" ng-click="LikeComment(item)">
+            <span class="likeNum" ng-bind="item.LikeCount"></span>
+            <img src="../images/hollowLike.png" ng-hide="item.IsCommentLiked">
+            <img src="../images/zan_dow.png" ng-show="item.IsCommentLiked">
+            <span ng-class="imgAnimate" ng-hide="item.isanimate">
+              <img src="../images/zan_dow.png">
+            </span>
+          </div>
+        </div>
+        <div class="commentContent" ng-bind="item.Comment" ng-class="{'commentContent_win':item.isWin===1}"></div>
+        <div class="time" ng-bind="item.DateDiff"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="refresh" ng-show="macco.busy">
+    <div class="refreshicon">
+      <div class="freshicon">
+        <div class="loading bar">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div class="refreshtext">正在刷新中</div>         
+  </div>
+</div> 
+<div class="com_footer" ng-show="{{IsShowFooter}}" ng-click="download()">
+  <img src="../images/download.png">
+</div>
+<div  style="display:none">
+    <input id="ReloadData" value="refresh" ng-click="reloadDataFn()"/>
+</div>
+</div>
+</div>

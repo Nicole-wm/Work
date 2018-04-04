@@ -1,0 +1,336 @@
+@charset "UTF-8";
+body{
+	  background:#ffffff;   
+	  padding: 0;
+    margin: 0;
+    font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    color: #5c5c5c;
+
+}
+.clear{
+	clear: both;
+}
+.RelatedImg>img{
+width: 100%;
+}
+.activityTime{
+	margin-top: 24px;
+	color: #6a6a6a;
+	margin-left: 15px;
+	margin-bottom: 50px;
+}
+.time{
+	font-size: 0.828125rem;
+	margin-left: 12px;
+}
+.progressBar{
+	position: relative;
+	background: #e4e4e4;
+	border-top-right-radius:0px;  
+	border-bottom-right-radius :0px;
+	border-top-left-radius:5px;  
+	border-bottom-left-radius :5px;
+	height: 15px;
+  margin: 0 auto;
+	width: 95.2%;
+  
+}
+.pinkProgressBar
+{
+	position: absolute;
+	background: #ff4a83;
+	border-top-right-radius:5px;  
+	border-bottom-right-radius :5px;
+	border-top-left-radius:0px;  
+	border-bottom-left-radius :0px;
+	width: 50%;
+	height: 15px;
+	right: 0;
+}
+.pinkProgressBar[stats="-1"]:before{
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      color: rgb(255, 255, 255);
+      width: 100px;
+      background-color: #7f7f7f;
+      box-sizing: border-box !important;
+      font-size: 0.8625rem;
+      position: absolute;
+      content: attr(content);
+      top: -50px;
+      left: -230px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+}
+.pinkProgressBar[stats="-1"]:after {
+   display: none;
+}
+
+.pinkProgressBar[stats="0"]:before{
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      color: rgb(255, 255, 255);
+      width: 100px;
+      background-color: #7f7f7f;
+      box-sizing: border-box !important;
+      font-size: 0.8625rem;
+      position: absolute;
+      content: attr(content);
+      top: -50px;
+      left: -90px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+}
+.pinkProgressBar[stats="0"]:after {
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid #7f7f7f;
+    border-left: 10px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    content: "";
+    bottom: 14px;
+    left: -10px;
+}
+
+.pinkProgressBar[stats="1"]:before{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: rgb(255, 255, 255);
+  width: 100px;
+  background-color: #7f7f7f;
+  box-sizing: border-box !important;
+  font-size: 0.8625rem;
+  position: absolute;
+  content: attr(content);
+  top: -50px;
+  left: -40px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center
+}
+
+.pinkProgressBar[stats="1"]:after {
+  width: 0px;
+  height: 0px;
+  border-top: 20px solid #7f7f7f;
+  border-left: 10px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  content: "";
+  bottom: 14px;
+  left: -10px;
+}
+
+.surplusDay{
+  padding: 8px 7px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: rgb(255, 255, 255);
+  max-width: 100%;
+  width: 17%;
+  background-color: #7f7f7f;
+  box-sizing: border-box !important;
+  font-size: 0.8625rem;
+  position: absolute;
+  top: -50px;
+  left: 45%
+
+}
+.surplusDay:after{
+  width: 0px;
+  height: 0px;
+  border-top: 20px solid #7f7f7f;
+  border-left: 10px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  content: attr(count);
+  bottom: -14px;
+  left: 24px;
+}
+.wrapPersonListDiv{
+  background: #f5f5f5;
+  margin: 30px auto 24px auto;
+}
+.joinPerson{
+  font-size: 1.10375rem;
+  color: #6a6a6a;
+  margin-left: 16px;
+  padding-top: 8px;
+}
+.heart {
+  float: left;
+  width: 5%;
+  margin: 10px 10px 0px 10px;
+}
+.heart>img {
+  width: 100%;
+}
+.headPortraitPerson {
+  padding: 0px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 28px;
+}
+
+.headPortraitPerson>span>img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.likeNum {
+  width: 25px;
+  height: 25px;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  line-height: 25px;
+  margin-top: 10px;
+  font-size: 0.7em;
+  background-color: #adadad;
+  color: white;
+  text-align: center;
+  float: right;
+}
+.PersonList{
+    margin-top: 20px;
+}
+
+.smallSize{
+   font-size: 0.8725rem;
+  
+}
+.bigSize{
+  font-size: 1.625rem;
+}
+.price,.describe{
+  color: #ff4a83;
+}
+.describe{
+  text-align: center;
+}
+.actionRule {
+  margin-top: 40px;
+  margin-left: 2%;
+  margin-bottom: 12px;
+  color: #ff4a83;
+}
+.join {
+  width: 75px;
+  height: 25px;
+  display: inline-block;
+  color: #ffffff;
+  background: #ff4a83;
+  margin-left: 6px;
+  text-align: center;
+  margin-right: 6px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.introduce
+{
+  color: #a7a7a7;
+  text-align: center;
+}
+smallSize {
+  font-size: 0.85rem;
+}
+.step {
+  color: #5c5c5c;
+  margin-left: 2%;
+}
+.one {
+  margin-bottom: 22px;
+}
+.relatedPictures>img{
+  width: 100%;
+}
+.cheek{
+  text-align: center;
+  margin-top: 9px;
+}
+.cheek>img{
+  width: 45%;
+  margin-right: 5px;
+
+}
+.relatedPictures{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.smallSize>div{
+  text-align: center;
+    line-height: 24px;
+}
+.prize {
+  margin-left: 2%;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  color: #ff4a83;
+}
+.btnJoin {
+  width: 102px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #ff4a83;
+  color: #ffffff;
+  border-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  opacity: 0.8;
+}
+@media (max-width: 375px){
+  .headPortraitPerson>span>img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.surplusDay {
+  width: 18%;
+}
+}
+@media (max-width: 360px){
+ .surplusDay {
+  width: 19%;
+}
+.headPortraitPerson>span>img {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+}
+}
+
+@media (max-width: 320px){
+  .likeNum{
+      margin-top: 6px;
+  }
+  .headPortraitPerson>span>img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.surplusDay {
+  width: 22%;
+}
+}

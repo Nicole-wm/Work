@@ -1,0 +1,122 @@
+<div>
+	<div class="row">
+		<div class="col-md-12">
+			<!-- BEGIN Search Line -->
+			<div class="row">
+				<div class="form-group col-lg-3">
+					<div class="input-icon right">
+						<i ng-click="SearchGat()" class="icon-magnifier"></i>
+						<input ng-model="Keyword" type="text" class="form-control" placeholder="请输入关键字"> 
+					</div>
+				</div>
+				<div class="form-group col-lg-2">
+					<a ng-click="addGat()" data-original-title="点击添加网关" data-toggle="modal" data-target="#myModal_gat" class="btn bg-blue-steel bg-font-blue-steel">添加网关</a>
+				</div>
+				<div class="form-group ">
+					<button ng-click="changeShow(1)" ng-class="{'blue-default':BtnPart==0,'blue-soft':BtnPart==1}"  type="button" class="btn">
+						<i class="fa fa-bars"></i>
+					</button>
+					<button ng-click="changeShow(2)" ng-class="{'blue-default':BtnPart==1,'green-soft':BtnPart==0}" type="button" class="btn">
+						<i class="fa fa-map"></i>
+					</button>
+				</div>
+			</div>
+			<div ng-show="BtnPart">
+				<div class="row" ng-show="totalItems===0">
+					<div class="form-group col-lg-12"><h4>暂无网关</h4></div>
+				</div> 
+				<div class="row" ng-show="totalItems!==0">
+					<div class="form-group col-lg-12">
+						<div class="portlet light bordered">
+							<div class="portlet-body">
+								<table class="table table-striped table-bordered table-hover ">
+									<thead>
+										<tr>
+											<th> 名称 </th>
+											<th> MAC地址 </th>
+											<th> 连接状态 </th>
+											<th> 网关型号 </th>
+											<th> 城市 </th>
+											<th> 区域 </th>
+											<th> 坐标 </th>
+											<th> SDK版本 </th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><a href="#/lora/gateway/gat_details.html?ID=23" target="_blank"> hl001 </a></td>
+											<td><a href="#/lora/gateway/gat_details.html?ID=23" target="_blank"> 32-CF-32-FF-FE-FD-D2-3D </a></td>
+											<td> 未连接	</td>
+											<td> RHF2S001 </td>
+											<td> 北京 </td>
+											<td> 昌平 </td>
+											<td> 空 </td>
+											<td> 空 </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<uib-pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize" class="pagination" boundary-links="true" rotate="false" num-pages="numPages" ng-change="pageChanged()"></uib-pagination>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div ng-show="!BtnPart">
+				<div class="col-md-12">
+					<div id="allmap" style="height:500px"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<input type="hidden" id="myModal_gat_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_gat">
+			<div id="myModal_gat" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<a href="javascript:;" class="close" data-dismiss="modal" aria-hidden="true"></a>
+							<h4 class="modal-title">添加网关</h4>
+						</div>
+						<div class="modal-body">
+							<div class="portlet">
+								<form  class="form-horizontal" role="form" name="GatInfo">
+									<div class="form-body">
+										<div class="form-group">
+											<label class="col-md-4 control-label">网关类型<span class="required"> * </span></label>
+											<div class="col-md-6">
+												<select  ng-change="SearchType()" ng-model="BelongGatType" ng-options="o.ID as o.Type for o in GatTypes" class="form-control">
+													<option value=""></option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-4 control-label">网关名称<span class="required"> * </span></label>
+											<div class="col-md-6">
+												<input name="gatName" ng-model="modalGatName" type="text" class="form-control" placeholder="必填" required>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-4 control-label">MAC地址<span class="required"> * </span>
+											</label>
+											<div class="col-md-6">
+												<input name="gatMac" ng-model="modalGatMac" type="text" class="form-control" placeholder="C8-46-32-0C-E4-21-6A-D2" required>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-4 control-label"></label>
+											<div class="col-md-5">
+												<button type="button" class="btn btn-primary ok" ng-disabled="!BelongGatType||!GatInfo.gatName.$valid||!GatInfo.gatMac.$valid"  type="submit" ng-click="ChangeGatInfoFun()" data-dismiss="modal">确认</button>
+												<button type="button" class="btn btn-default cancel" data-dismiss="modal">取消</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

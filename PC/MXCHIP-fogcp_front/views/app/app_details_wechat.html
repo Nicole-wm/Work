@@ -1,0 +1,103 @@
+<div ng-controller="AppDetailsWeChatController">
+	<div class="row">
+		<div class="col-md-12">
+			<form  class="form-horizontal" role="form" name="WechatDetail">
+				<div class="form-group col-md-12"></div>
+				<div class="form-group">
+					<label class="col-md-2 control-label">微信原始ID：<span class="required"> * </span></label>
+					<div class="col-md-4">
+						<input name="WXOriID" ng-model="WXOriID" type="text" class="form-control" placeholder="必填" required>
+					</div>
+				</div>
+				<!-- <div class="form-group col-md-12"></div>-->
+				<div class="form-group" ng-show="ListArr.length<1">
+					<div class="col-md-2 control-label">
+						<a ng-click="AddNew()" class="btn bg-blue-steel bg-font-blue-steel">添加产品</a>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="row">
+						<!--<div class="col-md-4 col-sm-12" ng-repeat="item in ListArr"> -->
+						<div class="col-md-1"></div>
+						<div class="col-md-5" ng-repeat="item in ListArr"> 
+							<div class="portlet blue-hoki box">
+								<div class="portlet-title">
+									<div class="caption"><span class="text-ellipsis" title="{{item.pname}}">产品名：{{item.pname}}</span></div>
+									<div class="actions">
+										<a ng-click="EditWXPFun(item)" class="btn btn-default btn-sm" data-original-title="点击修改产品配置" data-toggle="modal" data-target="#myModal_wx" >
+											<i class="fa fa-pencil" title="编辑"></i>
+										</a>
+										<a ng-click="DeleteWXPFun(item)" class="btn btn-default btn-sm">
+											<i class="fa fa-trash-o" title="删除"></i>
+										</a>
+									</div>
+								</div>
+								<div class="portlet-body">
+									<div class="row static-info">
+										<div class="col-md-12 name">产品编号：{{item.productid}}</div>
+									</div>
+									<div class="row static-info">
+										<div class="col-md-12 name">access_token_url：{{item.access_token_url}}</div>
+									</div>
+									<div class="row static-info">
+										<div class="col-md-12 name">wx_product_id：{{item.wx_product_id}}</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-3 control-label"></label>
+					<div class="col-md-5">
+						<input ng-disabled="!WechatDetail.WXOriID.$valid" ng-click="SureAppFun(1)" class="btn bg-blue-steel bg-font-blue-steel" type="submit" value="确认"/>
+						<input ng-click="BackFun()" class="btn bg-default bg-font-default" type="submit" value="返回"/>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<input type="hidden" id="myModal_wx_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_wx">
+			<div id="myModal_wx" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<a href="javascript:;" class="close" data-dismiss="modal" aria-hidden="true"></a>
+							<h4 class="modal-title">产品配置</h4>
+						</div>
+						<div class="modal-body">
+							<div class="portlet">
+								<form  class="form-horizontal" role="form" name="WXPInfo">
+									<div class="form-body">
+										<div class="form-group">
+											<label class="col-md-4 control-label">access_token_url：<span class="required"> * </span></label>
+											<div class="col-md-6">
+												<input name="atUrl" ng-model="atUrl" type="url" class="form-control" placeholder="必填 (例：http://www.baidu.com)" required>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-4 control-label">wx_product_id：<span class="required"> * </span>
+											</label>
+											<div class="col-md-6">
+												<input name="wxpID" ng-model="wxpID" type="text" class="form-control" placeholder="必填" required>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-4 control-label"></label>
+											<div class="col-md-5">
+												<button type="button" class="btn btn-primary ok" ng-disabled="!WXPInfo.atUrl.$valid||!WXPInfo.wxpID.$valid"  type="submit" ng-click="ChangeWXPInfoFun()" data-dismiss="modal">确认</button>
+												<button type="button" class="btn btn-default cancel" data-dismiss="modal">取消</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

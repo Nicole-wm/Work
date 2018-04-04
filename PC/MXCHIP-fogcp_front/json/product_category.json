@@ -1,0 +1,12 @@
+{
+	"IsSuccess":true,
+	"Data":[
+		{ "ID":1,"CategoryName":"冰箱"},
+		{ "ID":2,"CategoryName":"烤箱"},
+		{ "ID":3,"CategoryName":"热水器"},
+		{ "ID":4,"CategoryName":"电视"},
+		{ "ID":5,"CategoryName":"烤箱"},
+		{ "ID":6,"CategoryName":"吸尘器"},
+		{ "ID":7,"CategoryName":"空调"}
+	]
+}

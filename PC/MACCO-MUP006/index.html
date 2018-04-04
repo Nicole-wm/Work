@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="/css/sb-admin.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/common.css" rel="stylesheet" type="text/css">
+    <link href="/css/uniform.css" rel="stylesheet" type="text/css">
+    <link href="/css/public.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="/scripts/common.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-infinite-scroll.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-file-upload-all.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/sidebarController.js"></script>
+    <script type="text/javascript" src="/scripts/highcharts.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/index.js"></script>
+</head>
+
+<body >
+    <div id="wrapper">
+        <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Sidebar.html'" />
+        <div id="nav" ng-include="templateurl"></div>
+        <div id="page-wrapper" style="float:right;min-height:500px;clear:both" ng-controller="IndexAppController">
+            <div class="IndexBtnList">
+                <button type="button" ng-click="showMenu(3)" class="btn btn-primary">未发布管理</button>
+                <button type="button" ng-click="showMenu(1)" class="btn btn-primary">用户统计</button>
+                <button type="button" ng-click="showMenu(2)" class="btn btn-primary">发布统计</button>
+            </div>
+            <div id="chart1" class="Menu"  style="display:none">
+                <div class="indexContent">
+                    <div class="IndexMenu">
+                        <div class="pull-down NewPull">
+                            <select id="QuitTime" class="form-control" ng-change="showList(1)" ng-model="SType" ng-options="stype.ID as stype.Name for stype in stypes">
+                            </select>
+                        </div>
+                        <div class="selectList" >
+                            <div class="pull-down" style="width:200px;" >
+                                <label>开始时间</label><input name="StartTime" class="form-control" id="StartTime" ng-model="StartTime" required>
+                            </div>
+                            <div class="pull-down" style="width:200px;">
+                               <label>结束时间</label><input  name="TerminalTime" class="form-control" id="TerminalTime" ng-model="TerminalTime" required>
+                           </div>
+                           <div class="pull-down"  style="width:80px;">
+                               <button type="button" ng-click="showList(2)" class="btn btn-primary indexSearch">搜索</button>
+                           </div>
+                           <label>共计：{{Sum}}人</label>
+                       </div>
+                   </div>
+                   <div id="containerChart" style="margin:2%;">
+                   </div>
+               </div>
+           </div>
+           <div id="chart2"  class="Menu"  style="display:none">
+            <div class="indexContent" >
+                <div class="IndexMenu">
+                    <div class="pull-down NewPull">
+                        <select  class="form-control" ng-change="showList2()" ng-model="Category" ng-options="Category.ID as Category.Name for Category in Categorys">
+                        </select>
+                    </div>
+                    <div class="pull-down NewPull">
+                        <select id="QuitTime2" class="form-control" ng-change="showList2(1)" ng-model="SType2" ng-options="stype.ID as stype.Name for stype in stypes">
+                        </select>
+                    </div>
+                    <div class="selectList" >
+                        <div class="pull-down" style="width:200px;" >
+                            <label>开始时间</label><input name="StartTime" class="form-control" id="StartTime2" ng-model="StartTime2" required>
+                        </div>
+                        <div class="pull-down" style="width:200px;">
+                           <label>结束时间</label><input  name="TerminalTime" class="form-control" id="TerminalTime2" ng-model="TerminalTime2" required>
+                       </div>
+                       <div class="pull-down"  style="width:80px;">
+                        <button type="button" ng-click="showList2(2)" class="btn btn-primary indexSearch">搜索</button>
+                    </div>
+                    <label>共计：{{PublishCount}}条</label>
+                </div>
+            </div>
+            <div id="containerChart2" style="margin:2%;">
+            </div>
+        </div> 
+    </div>
+    <div id="chart3"  class="Menu">
+        <div class="indexContent">
+            <div class="IndexMenu">
+                <div class="pull-down" style="width:150px;">
+                    <select  class="form-control" ng-change="search()" ng-model="PublishCategory" ng-options="Category.ID as Category.Name for Category in Categorys">
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="DataContainer" class="DataContainer">
+            <div class="TableTitle" data-grid-type="Title">
+                <div class="col_id">ID</div>
+                <div class="col_keyno">唯一编码</div>
+                <div class="col_title">标题</div>
+                <div class="col_cover_image">首页图片</div>
+                <div class="col_publish_time">创建时间</div>
+                <div class="col_operation">操作</div>
+            </div>
+            <div class="clearboth"></div>
+            <div infinite-scroll='macco.nextPage()' infinite-scroll-listen-for-event="list:search" infinite-scroll-disabled='macco.busy'
+            infinite-scroll-distance='0'>
+            <div ng-repeat="item in macco.items">
+                <div class="WrapContent" style="height:150px">
+                    <div class="col_id">
+                        <span class="mobileId">ID:</span><span ng-bind="item.ID"></span>
+                    </div>
+                    <div class="col_keyno">
+                        <span class="mobileKeyno">唯一编码:</span><span ng-bind="item.KeyNo"></span>
+                    </div>
+                    <div class="col_title">
+                        <span class="mobileTitle">标题:</span>
+                        <a ng-click="Visit(item.ID)"><span ng-bind="item.Title"></span></a>
+                    </div>
+                    <div class="col_cover_image" style="background: url('{{item.ImageUrl}}');background-size:cover;">
+                        <span class="mobileImage">首页图片:</span>
+                        <img ng-src="{{item.ImageUrl}}" >
+                    </div>
+                    <div class="col_publish_time">
+                        <span class="mobilePublishTime">创建时间:</span>
+                        <span ng-bind="item.CreateTime"></span>
+                    </div>
+                    <div class="col_operation">
+                        <span class="mobileOperation">操作:</span>
+                        <div ng-show="CurType===0">
+                            <a ng-click="InfoVisit(item.ID)" title="查看" class="btn btn-success glyphicon glyphicon-search"></a>
+                            <a ng-click="InfoUpdate(item.ID,item.IsPublish,item.KeyNo)" title="编辑" class="btn btn-info glyphicon glyphicon-edit"></a>
+                            <a ng-click="InfoDelete(item.KeyNo)" title="删除" ng-disabled="item.IsDeletedFlag" class="btn btn-danger glyphicon glyphicon-trash"></a>
+                            <a ng-click="InfoPublish(item.KeyNo)" title="发布" ng-disabled="item.IsPublishFlag"  class="btn btn-success glyphicon glyphicon-new-window"></a>
+                            <a ng-click="InfoTimePublish(item.ID,this.Token)" title="定时发布" ng-disabled="item.IsTimePublishFlag"  class="btn btn-info glyphicon glyphicon-time"></a>
+                            <a ng-click="InfoPush(item.KeyNo,this.Token)" title="推送" class="btn btn-warning glyphicon glyphicon-bullhorn"></a>
+                            <a ng-click="InfoMakeWeb(item.KeyNo,item.ID,this.Token)" title="制作网页" class="btn btn-info glyphicon glyphicon-file"></a>
+                        </div>
+                        <div ng-show="CurType===1">
+                            <a ng-click="ActivityVisit(item.ID)" title="查看" class="btn btn-success glyphicon glyphicon-search"></a>
+                            <a ng-click="ActivityUpdate(item.ID,item.IsPublish)" title="编辑" class="btn btn-info glyphicon glyphicon-edit"></a>
+                            <a ng-click="ActivityDelete(item.KeyNo)" title="删除"  ng-disabled="item.IsDeletedFlag" class="btn btn-danger glyphicon glyphicon-trash"></a>
+                            <a ng-click="ActivityPublish(item.KeyNo)" title="发布" ng-disabled="item.IsPublishFlag"  class="btn btn-success glyphicon glyphicon-new-window"></a>
+                            <a ng-click="ActivityTimePublish(item.ID,this.Token)" title="定时发布" ng-disabled="item.IsTimePublishFlag"  class="btn btn-info glyphicon glyphicon-time"></a>
+                            <a ng-click="ActivityPush(item.KeyNo,this.Token)" title="推送" class="btn btn-warning glyphicon glyphicon-bullhorn"></a>
+                            <a ng-click="ActivityToHome(item.KeyNo,this.Token)" title="推至首页"  ng-show="!item.IsRecommendedFlag" class="btn btn-info glyphicon glyphicon-heart-empty"></a>
+                            <a ng-click="ActivityRemoveHome(item.KeyNo,this.Token)" title="取消推至首页" ng-show="item.IsRecommendedFlag"  class="btn btn-info glyphicon glyphicon-heart"></a>
+                        </div>
+                        <div ng-show="CurType===2">
+                            <a ng-click="TryMakeUpVisit(item.ID)" class="btn btn-success glyphicon glyphicon-search" title="查看" ></a>
+                            <a ng-click="TryMakeUpUpdate(item.ID,item.IsPublish,item.KeyNo)" class="btn btn-info glyphicon glyphicon-edit" title="编辑"></a>
+                            <a ng-click="TryMakeUpDelete(item.KeyNo)" class="btn btn-danger glyphicon glyphicon-trash" title="删除" ng-disabled="item.IsDeletedFlag"></a>
+                            <a ng-click="TryMakeUpPublish(item.KeyNo)" title="发布" class="btn btn-success glyphicon glyphicon-new-window" ng-disabled="item.IsPublishFlag" ></a>
+                            <a ng-click="TryMakeUpTimePublish(item.ID,this.Token)" title="定时发布" ng-disabled="item.IsTimePublishFlag"  class="btn btn-info glyphicon glyphicon-time"></a>
+                            <a ng-click="TryMakeUpPush(item.KeyNo,this.Token)" title="推送" class="btn btn-warning glyphicon glyphicon-bullhorn"></a>
+                        </div>
+                        <div ng-show="CurType===3">
+                            <a ng-click="ProductVisit(item.ID,this.Token)" title="查看" class="btn btn-success glyphicon glyphicon-search"></a>
+                            <a ng-click="ProductUpdate(item.ID,this.Token)" title="编辑" class="btn btn-info glyphicon glyphicon-edit"></a>
+                            <a ng-click="ProductDelete(item.KeyNo)" title="删除" ng-disabled="item.IsDeletedFlag" class="btn btn-danger glyphicon glyphicon-trash"></a>
+                            <a ng-click="ProductPublish(item.KeyNo,item.brandIsPublish,this.Token)" title="发布" ng-disabled="item.IsPublishFlag" class="btn btn-success glyphicon glyphicon-new-window"></a>
+                        </div>
+                        <div ng-show="CurType===4">
+                            <a ng-click="TopVisit(item.ID,item.KeyNo)" title="查看"  class="btn btn-success glyphicon glyphicon-search"></a>
+                            <a ng-click="TopUpdate(item.ID,item.KeyNo)" title="编辑" class="btn btn-info glyphicon glyphicon-edit"></a>
+                            <a ng-click="TopDelete(item.KeyNo)" title="删除" ng-disabled="item.IsDeletedFlag" class="btn btn-danger glyphicon glyphicon-trash"></a>
+                            <a ng-click="TopPublish(item.KeyNo)" title="发布" ng-disabled="item.IsPublishFlag"  class="btn btn-info glyphicon glyphicon-new-window"></a>
+                            <a ng-click="TopToHome(item.KeyNo,this.Token)" title="推至首页"  ng-show="!item.IsRecommendedFlag" class="btn btn-success glyphicon glyphicon-heart-empty"></a>
+                            <a ng-click="TopRemoveHome(item.KeyNo,this.Token)" title="取消推至首页" ng-show="item.IsRecommendedFlag"  class="btn btn-success glyphicon glyphicon-heart"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearboth"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

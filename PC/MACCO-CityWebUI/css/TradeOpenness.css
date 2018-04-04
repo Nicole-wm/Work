@@ -1,0 +1,105 @@
+/* 交易公开_今日统计 */
+.TodayStatistics{
+    width:230px;
+    height:260px;
+    margin-bottom: 20px;
+}
+.Stat_Content{
+    padding:25px 20px;
+}
+.Stat_Text{
+    font-size: 16px;
+}
+.Stat_Text .red_text{
+    font-weight: bold;
+}
+.Stat_Content li{
+    height:41px;
+}
+
+/* 交易公开_所有分类 */
+.TradeMk_List{
+    padding: 20px;
+}
+.TradeOpenness_Content .List_title {
+    width: 630px;
+}
+.Trade_time{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 23px;
+    border-bottom: 1px solid #eeeeee;
+}
+.Trade_time_li{
+    margin-left:50px;
+}
+.Trade_time_li li{
+    float: left;
+    width:45px;
+    height:20px;
+    line-height:20px;
+    text-align: center;
+    margin:14px 5px;
+    cursor:pointer;
+    border:1px solid #ffffff;
+}
+
+.Trade_time_li_select{
+    border: 1px solid #e6e6e6;
+    background-color: #eeeeee;
+}
+
+.ProjectList{
+    padding:20px 0px;
+    border-bottom: 1px solid #eeeeee;
+}
+.Project_name_Text{
+    float: left;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width:600px; 
+}
+.Project_name .time{
+    float: right;
+    font-size: 14px;
+}
+.Project_details{
+    clear: both;
+    padding-top:15px;
+}
+.Project_details span{
+    margin-right:20px;
+}
+.Project_process li{
+    float: left;
+    margin:15px 4px 0px;
+}
+
+.Project_process .li_arrow{
+    width: 30px;
+    height:30px;
+    background-image: url(../images/schedule.png);
+    background-repeat:no-repeat;
+    background-position:0px 8px;
+}
+
+.Project_process .li_text{
+    text-align: center;
+    height:30px;
+    width: 60px;
+    line-height:30px;
+    border: 1px solid #ffffff;
+    padding:0px 20px;
+}
+.Project_process .text_grey{
+    background-color: #eeeeee;
+}
+.Project_process .text_red{
+    background-color: #f14224;
+    color: #ffffff;
+}
+.Project_process .text_white{
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+}

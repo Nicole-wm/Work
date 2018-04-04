@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color:#737373;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    display: inline-block;
+    border-style: none;
+    vertical-align: bottom;
+}
+
+body{
+    color:#737373;
+    font-family:"宋体";
+    min-width: 1300px;
+    font-size: 12px;
+}
+body,p,ol,ul,li,dl,dt,dd{
+    margin:0px;
+    padding:0px;
+    list-style: none;	
+}
+li a{
+    color: #737373;
+}
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+/*隐藏*/
+.hide {
+    display: none;
+}
+
+/*显示*/
+.show {
+    display: block;
+}
+
+/* 右浮动 */
+.right{
+    float: right;
+}
+
+/* 左浮动 */
+.left{
+    float: left;
+}
+/*清浮动*/
+.clear {
+    clear: both;
+}
+
+/*空格10PX*/
+.blank{ 
+    clear:both;
+    height:10px;
+}
+
+.ellipsis{
+    display: block;
+    text-overflow: ellipsis; /* for IE */  
+    -moz-text-overflow: ellipsis; /* for Firefox,mozilla */  
+    overflow: hidden;  
+    white-space: nowrap;
+}
+
+.pointer{
+    cursor: pointer;
+}

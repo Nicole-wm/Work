@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+<!--include "../../../templetes/commonHead.html"-->
+<!--include "../../../templetes/TryMakeup/tryMakeup.html"-->
+</head>
+
+<body ng-controller="ProductListCtrl">
+    <div id="head" class="head RelatedImg">
+        <img id="model1" ng-show="HasImage" ng-src="{{ImageUrl}}" src="images/model.jpg">
+        <img id="model" ng-show="!HasImage" src="images/model.jpg">
+        <div class="mask">
+            <img src="images/mask.png" id="mask">
+        </div>
+    </div>
+    <input type="hidden" ng-model="zanurl" ng-init="zanurl='/TryMakeup/zan.html'" />
+    <div id="add_zan" ng-include="zanurl"></div>
+    <div class="theme bigWordSize">
+        <div>塑造初夏新颜
+        </div>
+        <div>夏季颜值提升攻略</div>
+    </div>
+    <div class="clear"></div>
+    <div class="smallWordSize TextContent">
+        <div>这个夏天的色彩</div>
+        <div>就是沐浴在绚烂阳光下的橘色 </div>
+        <div>我们就用它来打造出令人炫目的健康妆容吧！</div>
+    </div>
+    <div class="bigWordSize mainPointText">妆容要点：</div>
+    <div class="smallWordSize TextContent">
+        <div>较为日韩风格的荧光色</div>
+        <div>搭配眼头或在画好黑色眼线的</div>
+        <div>眼尾处上方再描绘一次也非常特别</div>
+        <div>如日常觉得夸张</div>
+        <div>海滩派对非常适宜！</div>
+    </div>
+
+    <div class="wapStep bigWordSize" id="stepOne">
+        <span class="step ">Step 1</span>
+        <span class="stepName bigWordSize ">清透底妆</span>
+    </div>
+    <div class="smallWordSize debriefing ">
+        夏日里最讨厌厚腻的底妆，此时选择一款自己喜欢的足够轻薄的底妆/BB霜打底就好啦。
+        <br> 为了不让妆容显得过于夸张，扫红部分就以清单的珊瑚色系修容粉来完成就好。
+    </div>
+    <div class="RelatedImg"><img src="images/1.png"></div>
+    <div ng-controller="ProductStepCtrl" ng-model="productQuery" ng-init="productQuery='CourseStep1' ">
+        <div ng-include="'/TryMakeup/product.html'"></div>
+    </div>
+    <div class="wapStep bigWordSize twoWrap" id="stepTwo">
+        <span class="step ">Step 2</span>
+        <span class="stepName bigWordSize ">缤纷眼线</span>
+    </div>
+    <div class="smallWordSize debriefing ">
+        靓丽的眼线最好搭配同色系的眼影，要比单独使用亮色眼线效果要更自然，但不宜眼妆过度浓艳，而使用这种颜色的眼线就不宜再叠加黑色眼线，会让整体造型显得俗套。
+    </div>
+    <div class="RelatedImg"><img src="images/2.png"></div>
+    <div ng-controller="ProductStepCtrl" ng-model="productQuery" ng-init="productQuery='CourseStep2' ">
+        <div ng-include="'/TryMakeup/product.html'"></div>
+    </div>
+    <div class="wapStep bigWordSize" id="stepThree">
+        <span class="step ">Step 3</span>
+        <span class="stepName bigWordSize ">亮色双唇</span>
+    </div>
+    <div class="smallWordSize debriefing ">
+        整个妆容的重点就是亮橘色的唇妆了！利用质地细腻的唇膏小心描绘唇部，让整个嘴唇呈现饱满健康的形态.
+    </div>
+    <div class="RelatedImg"><img src="images/3.png"></div>
+     <div ng-controller="ProductStepCtrl" ng-model="productQuery" ng-init="productQuery='CourseStep3' ">
+        <div ng-include="'/TryMakeup/product.html'"></div>
+    </div>
+    <div class="wapStep bigWordSize lastWrap" id="stepSucess">
+        <span class="stepName bigWordSize lastStepName">塑造初夏新颜妆完成啦</span>
+    </div>
+    <div class="RelatedImg lastImg ">
+        <img src="images/4.jpg ">
+    </div>
+    <input type="hidden" ng-model="templateurl" ng-init="templateurl='/TryMakeup/comments.html'" />
+    <div id="add_comment" ng-include="templateurl"></div>
+</body>
+</html>

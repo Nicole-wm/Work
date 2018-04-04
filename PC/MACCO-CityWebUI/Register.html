@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>注册</title>
+	<!-- build:css -->
+<link href="css/base.css" rel="stylesheet" charset="UTF-8"> 
+<link href="css/public.css" rel="stylesheet" charset="UTF-8"> 
+<link href="css/top.css" rel="stylesheet" charset="UTF-8">  
+<link href="css/footer.css" rel="stylesheet" charset="UTF-8"> 
+<!-- endbuild -->
+<!-- build:js -->
+<script src="js/jquery-1.9.1.min.js" charset="UTF-8"></script>
+<script src="js/avalon.js" charset="UTF-8"></script>
+<script src="js/dropdownlist.js" charset="UTF-8"></script>
+<script src="js/top.js" charset="UTF-8"></script>
+<script src="js/footer.js" charset="UTF-8"></script>
+<script src="js/public.js" charset="UTF-8"></script>
+<!-- endbuild --> 
+	<link href="css/register.css" rel="stylesheet" charset="UTF-8"/> 
+	<script src="js/register.js" charset="UTF-8"></script> 
+</head>
+<body>
+	<div class="top_all">
+	<div class="top">
+		<div class="top_text">
+			<div class="top_text_l left">
+				<ul>
+					<li><a href="login.html" style="color:#cccccc">登录</a></li>
+					<li class="line"></li>
+					<li><a href="Register.html" style="color:#cccccc">注册</a></li>
+				</ul>
+			</div>
+			<div class="top_text_r right">
+				<ul>
+					<li><a style="color:#cccccc">测试版</a></li>
+					<li class="line"></a></li>
+					<li><a style="color:#cccccc">论坛</a></li>
+					<li class="line"></li>
+					<li><a href="index.html" style="color:#cccccc">首页</a></li>
+					<li class="line"></li>
+					<li><a style="color:#cccccc">加入收藏</a></li>
+					<li class="line"></li>
+					<li><a style="color:#cccccc">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Logo -->
+	<div class="Logo">
+		<a href="index.html"><img src="images/logo.png"></a>
+		<div class="SearchDiv htc">
+			<input id="SearchInput" type="text" value="搜索关键字">
+			<div class="icon SearchDiv_img">
+			</div>
+		</div>
+	</div>
+	<!-- Menu -->
+	<div class="Menu">
+		<div class="Menu_content">
+			<div class="menu_ul" id="menu_ul">
+				<ul>
+					<li class="menu_ul_select" id="Menu1" onmouseover="setMenu(1)" onclick="chooseMenu(1)"><a>首页</a></li>
+					<li class="double_line"></a></li>
+					<li id="Menu2" onmouseover="setMenu(2)"  onclick="chooseMenu(2)"><a>交易公开</a></li>
+					<li class="double_line"></li>
+					<li id="Menu3" onmouseover="setMenu(3)"   onclick="chooseMenu(3)"><a>交易平台</a></li>
+					<li class="double_line"></li>
+					<li id="Menu4" onmouseover="setMenu(4)"   onclick="chooseMenu(4)"><a>市场资信</a></li>
+					<li class="double_line"></li>
+					<li id="Menu5" onmouseover="setMenu(5)"  onclick="chooseMenu(5)"><a>交易数据</a></li>
+					<li class="double_line"></a></li>
+					<li id="Menu6" onmouseover="setMenu(6)"  onclick="chooseMenu(6)"><a>评标专家</a></li>
+					<li class="double_line"></li>
+					<li id="Menu7" onmouseover="setMenu(7)"  onclick="chooseMenu(7)"><a>行政监督</a></li>
+					<li class="double_line"></li>
+					<li id="Menu8" onmouseover="setMenu(8)"  onclick="chooseMenu(8)"><a>政策法规</a></li>
+					<li class="double_line"></li>
+					<li id="Menu9" onmouseover="setMenu(9)"  onclick="chooseMenu(9)"><a>市场动态</a></li>
+					<li class="double_line"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+	<div>
+		<div class="Menu_s">
+			<div class="menu_s_row">
+				<div class="menu_announcement">
+					<span class="announce_text">重要公告 :</span>
+					<div id="scrollDiv" class="scrollDiv">
+						<ul class="announc_list">
+							<li>关于江苏省招投标公共服务平台公开征集CA互联试点交易平台的通知</li>
+							<li>关于昆明市严家山车辆段公共租赁住房项目的详情</li>
+							<li>关于翠溪路及高新中三道市政工程招标公示</li>
+						</ul>
+					</div>
+				</div>
+				<div class="menu_time">
+					<div class="time_img icon"></div>
+					<span>2016.3.4 15:26:38</span>
+				</div>
+			</div>
+		</div>
+		<div class="Content RegisterContent">
+			<div class="Content_left PublicBorder">
+				<div class="Mk_Title">
+				</div>
+				<div class="Register_details">
+					<div class="select_role_div">
+						<span>已选择：</span>
+						<span class="wr_bold" id="roleName">招标人</span>
+						<div class="Rselect">
+							<select id="Rselect">
+								<option value="">切换角色</option>
+								<option value="招标人">招标人</option>
+								<option value="投标人">投标人</option>
+								<option value="专家">专家</option>
+							</select>
+						</div>
+						<a href="login.html"><div class="red_text right pointer">立即登录</div></a>
+						<div class="right">已有账号，</div>
+					</div>
+					<div class="Register_details_Table">
+						<table>
+							<tr>
+								<td class="tb_left">
+									<div class="Wselect">
+										<select id="Wselect">
+											<option value="0">组织机构代码</option>
+											<option value="1">其他</option>
+										</select>
+									</div>
+								</td>
+								<td class="tb_middle">
+									<div class="Regist_text htc">
+										<input type="text">
+									</div>
+								</td>
+								<td class="tb_right">
+								</td>
+							</tr>
+							<tr>
+								<td class="tb_left">
+									<span>*</span>组织机构名称：
+								</td>
+								<td class="tb_middle">
+									<div class="Regist_text htc">
+										<input type="text">
+									</div>
+								</td>
+								<td class="tb_right">
+									<div class="promptImg"></div>
+									<div class="red_text">请输入长度6至20组织机构名称
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tb_left">
+									<span>*</span>账号管理员姓名：
+								</td>
+								<td class="tb_middle">
+									<div class="Regist_text htc">
+										<input type="text">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tb_left">
+									<span>*</span>账号管理员身份证号：
+								</td>
+								<td class="tb_middle">
+									<div class="Regist_text htc">
+										<input type="text">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tb_left">
+									<span>*</span>用户名：
+								</td>
+								<td class="tb_middle">
+									<div class="Regist_text htc">
+										<input type="text">
+									</div>
+								</td>
+								<td class="tb_right">
+									<div class="correctpromptImg"></div>
+									<div class="gery_text">用户名可以注册
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tb_left">
+									<span>*</span>手机号：
+								</td>
+								<td class="tb_middle">
+									<div class="Regist_text htc">
+										<input type="text">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tb_left">
+									<span>*</span>验证码：
+								</td>
+								<td class="tb_middle">
+									<div  style="width:100px;float:left" class="Regist_text htc">
+										<input type="text"  style="width:98px;">
+									</div>
+									<div class="yzm pointer">获取验证码</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tb_left">
+									<span>*</span>密码：
+								</td>
+								<td class="tb_middle">
+									<div class="Regist_text htc">
+										<input type="text">
+									</div>
+								</td>
+							</tr>
+							<tr style="height:15px;">
+								<td class="tb_left">
+								</td>
+								<td class="tb_middle">
+									<div class="SecurityClassification">
+										<span class="sc_select"></span>
+										<span class="sc"></span>
+										<span class="sc"></span>
+										<span class="sc_text">弱</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tb_left">
+									<span>*</span>确认密码：
+								</td>
+								<td class="tb_middle">
+									<div class="Regist_text htc">
+										<input type="text">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tb_left">
+								</td>
+								<td class="tb_middle">
+									<input type="checkbox">
+									<span  class="checkboxText pointer">同意《注册协议》</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="tb_left">
+								</td>
+								<td class="tb_middle">
+									<a href="index.html">
+										<div class="SubmitBtn pointer" id="RegisterBtn">立即注册</div>
+									</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="Content_right">
+				<div class="KindlyReminder PublicBorder">
+					<div class="Mk_Title">
+						<div class="icon Mk_img">温馨提示
+						</div>
+					</div>
+					<div class="KR_text">
+						在南京市招标投标公共服务平台注册
+						时，请先阅读《注册协议》，务必填
+						入真实准确信息，严禁虚假内容进行
+						填报，且注册信息中不允许含有任何
+						违法和不良信息。
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+	<!-- 友情链接 -->
+	<div class="FriendlyLink">
+		<div class="blank_title">友情链接</div>
+		<div class="select">
+			<select id="select1">
+				<option value="">-- 国家部委网站 --</option>
+				<option value="http://www.chinabidding.com.cn/">中国采购与招标网</option>
+				<option value="http://www.ndrc.gov.cn/">国家发展和改革委员会</option>
+				<option value="http://www.ccgp.gov.cn/">政府采购网</option>
+			</select>
+		</div>
+		<div class="select">
+			<select id="select2">
+				<option value="">-- 江苏省政府机构网站 --</option>
+				<option value="http://www.jscd.gov.cn/">省交通运输厅</option>
+				<option value="http://www.jswater.gov.cn/">省水利厅</option>
+			</select>
+		</div>
+		<div class="select">
+			<select id="select3">
+				<option value="">-- 南京市政府机构网站 --</option>
+				<option value="http://www.nanjing.gov.cn/index.html">市人民政府</option>
+				<option value="http://www.njdpc.gov.cn/">市发展和改革委员会</option>
+				<option value="http://www.njcz.gov.cn/">市财政局</option>
+				<option value="http://www.njgt.gov.cn/">市土地资源和房屋管理局</option>
+				<option value="http://www.njszjw.gov.cn/index2286.htm">市城乡建设</option>
+				<option value="http://www.njgp.gov.cn/">市政府采购网</option>
+				<option value="http://www.njjj.gov.cn/">市监察局</option>
+				<option value="http://www.njaf.gov.cn/">市林业局</option>
+			</select>
+		</div>
+		<div class="select">
+			<select id="select4">
+				<option value="">-- 其他相关网站 --</option>
+				<option value="http://www.js.sgcc.com.cn/">江苏省电力公司</option>
+				<option value="http://www.njgcztbxh.com/">南京建设工程招标投标协会</option>
+				<option value="http://www.njinfo.gov.cn/">南京信息协会</option>
+			</select>
+		</div>
+	</div>
+	<div class="footer_all">
+		<div class="footer_t">
+			<ul>
+				<li><a href="AboutUs.html?page=0">平台简介</a></li>
+				<li class="line"></a></li>
+				<li><a href="AboutUs.html?page=1">联系我们</a></li>
+				<li class="line"></li>
+				<li><a href="AboutUs.html?page=2">招聘信息</a></li>
+				<li class="line"></li>
+				<li><a href="AboutUs.html?page=3">网站地图</a></li>
+				<li class="line"></li>
+				<li><a href="AboutUs.html?page=4">版权声明</a></li>
+			</ul>
+		</div>
+		<div class="footer_m clear">公司总机：021-88484678传真：021-88484118</div>
+		<div class="footer_b">版权所有：南京市招投标公共服务平台</div>
+	</div>
+</div>
+</body>
+</html>

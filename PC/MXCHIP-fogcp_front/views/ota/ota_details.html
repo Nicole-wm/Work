@@ -1,0 +1,81 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="portlet light portlet-fit bordered">
+			<div class="portlet-body">
+				<div class="form-body form">
+					<form  class="form-horizontal" role="form" name="OTADetail">
+						<div class="form-group col-md-12"></div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">固件版本号</label>
+							<div class="col-md-4">
+								<input name="Software" ng-model="software" type="text" class="form-control" >
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">固件名称</label>
+							<div class="col-md-4">
+								<input name="Firmwaretype" ng-model="firmwaretype" type="text" class="form-control" >
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">任务描述</label>
+							<div class="col-md-4">
+								<textarea name="Description" ng-model="description" class="form-control" rows="3"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">自定义</label>
+							<div class="col-md-4">
+								<input name="Customize" ng-model="customize" type="text" class="form-control" >
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-2 control-label">固件文件<span class="required"> * </span></label></label>
+							<div class="col-md-4">
+								<div id="ota_btn">
+									<a id="ota_selectbtn" ng-click="FileClick()" class='btn btn-primary'>选择文件</a>
+									<a id="ota_upbtn" class='btn btn-primary'>开始上传</a>
+								</div>
+								<input type="file" id="ota_input" style="display:none">
+							</div>
+						</div>
+						<div ng-show="!showFileFlag">
+							<div class="form-group" ng-show="true">
+								<label class="col-md-2 control-label">文件名<span class="required"> * </span></label></label>
+								<div class="col-md-6">
+									<input name="CurFile_Name" class="form-control" id="CurFile_Name" ng-disabled="true" required>
+								</div>
+							</div>
+							<div class="form-group" ng-show="true">
+								<label class="col-md-2 control-label">文件大小<span class="required"> * </span></label></label>
+								<div class="col-md-4">
+									<input name="CurFile_Size" class="form-control" id="CurFile_Size" ng-disabled="true" required>
+								</div>
+							</div>
+							<div class="form-group" ng-show="true">
+								<label class="col-md-2 control-label">文件md5<span class="required"> * </span></label></label>
+								<div class="col-md-4">
+									<input name="CurFile_MD5" class="form-control" id="CurFile_MD5" ng-disabled="true" required>
+								</div>
+							</div>
+							<div class="form-group" ng-show="true">
+								<label class="col-md-2 control-label">文件下载地址<span class="required"> * </span></label></label>
+								<div class="col-md-9">
+									<input name="CurFile_Url" class="form-control" id="CurFile_Url" ng-disabled="true" required>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 control-label"></label>
+							<div class="col-md-5">
+								<input ng-disabled="!CheckDate" ng-click="SureFun(1)" class="btn bg-blue-steel bg-font-blue-steel" type="submit" value="确认"/>
+								<input  ng-show="!item.startflag" ng-click="SureFun(0)" class="btn bg-default bg-font-default" type="submit" value="取消"/>
+								<input  ng-show="item.startflag" ng-click="SureFun(0)" class="btn bg-default bg-font-default" type="submit" value="返回"/>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

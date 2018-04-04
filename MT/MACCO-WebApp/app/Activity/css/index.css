@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clear{
+   clear:both; 
+}
+body{
+    font-family: youyuan;
+}
+img{
+    width: 100%;
+}
+.activityItem{
+    width: 100%;
+}
+.activityIntro{
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+}
+.activityTitle{
+    float: left;
+    line-height: 50px;
+    font-size:17px;
+    color: #333333; 
+    text-indent: 20px;
+}
+.activityJoin{
+    float: right;
+    margin-right: 20px;
+}
+.joinCount{
+    font-size: 20px;
+    color: #333333;
+    line-height: 30px;
+}
+.jointext{
+    font-size: 10px;
+    color: #333333;
+}
+.activityImage{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.activityImage[iswin='1']:after{
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 0px;
+    height: 0px;
+    border-top:18px solid #ff437a; 
+    border-left:18px solid transparent; 
+    border-bottom:18px solid transparent; 
+    border-right:18px solid #ff437a; 
+}
+.activityContent[iswin='1']:after{
+    content: "中奖";
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    color: #ffffff;
+    font-size: 8px;
+    transform:rotate(45deg);
+}
+.activityContent{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.alignContent{
+    display: inline-block;
+    padding: 20px 10px;
+    background: #ffffff;
+    opacity: 0.8;
+    position: relative;
+    /*outline: 1px solid #7f7f7f;*/
+    outline: 1px solid #ffffff;
+    outline-offset: 10px;
+    
+}
+.PriceStyle{
+    font-size: 14px;
+    color: #151515;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.priceName{
+    font-size: 18px;
+    color: #333333;
+    font-weight: 800;
+    margin-top: 10px;
+    font-family: "Microsoft YaHei";
+}
+.downTime>span{
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 300;
+    background: #ff437a;
+    display: inline-block;
+    margin-top: 10px;
+    padding:5px 10px;
+    z-index: 3;
+    position: relative;
+}
+.imagebg{
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    font-size: 0px;
+}
+.joinPerson{
+    width: 95%;
+    height: 60px;
+    margin: auto;
+    position: relative;
+}
+.joinHint{
+    float: left;
+    line-height: 60px;
+}
+.joinHint span{
+    font-size: 8px;
+    color: #ffffff;
+    width: 12px;
+    height: 12px;
+    background: #ffbf00;
+    border-radius: 100%;
+    line-height: 12px;
+    text-align: center;
+    display: inline-block;
+}
+.joinAvatar{
+    width: 30px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.border_line{
+    width: 100%;
+    height: 5px;
+    background: #f5f5f5;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.mask{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.7;
+    z-index: 1;
+    display: none;
+}
+
+@media(max-width:414px){
+.alignContent {
+     margin-top: 71px;
+}
+}
+
+@media(max-width:375px){
+.alignContent {
+     margin-top: 58px;
+}
+}
+
+@media(max-width:360px){
+.alignContent {
+     margin-top: 70px;
+}
+}
+
+@media(max-width:320px){
+.alignContent {
+     margin-top: 39px;
+}
+}

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@media(max-width:414px){
+
+}
+@media(max-width:375px){
+}
+@media(max-width:320px){
+.brand {
+  margin-bottom: 20px;
+}
+}

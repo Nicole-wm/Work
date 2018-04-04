@@ -1,0 +1,51 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="portlet light portlet-fit bordered">
+			<div class="portlet-title">
+				<div class="col-md-3 caption text-ellipsis">
+					<span class="caption-proimg"><img ng-src="{{ImageUrl}}"/></span>
+					<span class="caption-subject bold font-blue-steel" title="{{ProductName}}"> {{ProductName}} </span>
+				</div>
+				<div class="col-md-7 caption">
+					<span class="btn btn-circle bg-default bg-font-default btn-sm"> 品牌：{{Brand}} </span>
+					<span class="btn btn-circle bg-default bg-font-default btn-sm"> 型号：{{Model}} </span>
+				</div>
+				<div class="col-md-2 caption">
+					<a ng-click="SureFun(1)" class="btn bg-blue-steel bg-font-blue-steel btn-sm"> 通过 </a>
+					<a ng-click="SureFun(0)" class="btn bg-default bg-font-default btn-sm"> 不通过</a>
+				</div>
+			</div>
+			<div class="portlet-body">
+				<div class="portlet-title tabbable-line">
+					<div class="tabbable-custom nav-justified">
+						<ul class="nav nav-tabs nav-justified">
+							<li class="active" id="tabM1">
+								<a ng-click="ProTab(1)" data-target="#tab1" data-toggle="tab"> 产品基本信息 </a>
+							</li>
+							<li id="tabM2">
+								<a ng-click="ProTab(2)" data-target="#tab2" data-toggle="tab"> 数据属性信息</a>
+							</li>
+							<li id="tabM3">
+								<a ng-click="ProTab(3)" data-target="#tab3" data-toggle="tab"> 交互数据信息 </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="portlet-body">
+					<!--BEGIN TABS-->
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+							<div data-ng-include="'views/customer/product_details_base.html'"> </div>
+						</div>
+						<div class="tab-pane" id="tab2">
+							<div data-ng-include="'views/customer/product_details_attribute.html'"> </div>
+						</div>
+						<div class="tab-pane"  id="tab3">
+							<div data-ng-include="'views/customer/product_details_interactive.html'"> </div>
+						</div>
+					</div>
+					<!--END TABS-->
+				</div>
+			</div>
+		</div>
+	</div>

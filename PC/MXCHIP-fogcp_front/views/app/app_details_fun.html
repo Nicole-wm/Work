@@ -1,0 +1,118 @@
+<div class="row" ng-controller="AppDetailsFunController">
+	<div class="col-md-12">
+		<div class="row">
+			<div class="form-group col-lg-12"><h4 class="font-blue-steel">已开通功能</h4></div>
+		</div>
+		<div class="row" ng-show="AlreadyUnitCount==0">
+			<div class="form-group col-lg-12"><h4>暂无已开通功能</h4></div>
+		</div>
+		<div class="row search-content-3" ng-show="AlreadyUnitCount!=0">
+			<div class="col-md-2 col-sm-2 col-xs-6" ng-repeat="item in AlreadyUnit">
+				<div class="color-demo tooltips" data-toggle="modal" data-target="#modal_{{item.busid}}">
+					<div class="color-view bg-blue-soft bg-font-blue-soft uppercase text-ellipsis" title="{{item.name}}">{{item.name}}
+					</div>
+				</div>
+				<div class="modal fade" id="modal_{{item.busid}}">
+					<div class="modal-dialog">
+						<div class="modal-content c-square">
+							<div class="modal-header">
+								<a  id="modalCloseBtn" class="close" data-dismiss="modal" aria-hidden="true"></a>
+								<h4 class="modal-title">功能配置</h4>
+							</div>
+							<div class="modal-body">
+								<div class="portlet">
+									<div class="portlet-body form">
+										<form  class="form-horizontal" role="form" name="modaldetai_{{item.busid}}">
+											<div class="form-group">
+												<label class="col-md-4 control-label">功能名</label>
+												<label class="col-md-6 control-label">
+													<span class=" pull-left">{{item.name}}</span>
+												</label>
+											</div>
+											<div class="form-group">
+												<label class="col-md-4 control-label">网址</label>
+												<label class="col-md-6 control-label pull-left"><span class=" pull-left">{{item.url}}</span></label>
+											</div>
+											<div class="form-group">
+												<label class="col-md-4 control-label">描述</label>
+												<label class="col-md-6 control-label pull-left"><span class=" pull-left">{{item.description}}</span></label>
+											</div>
+											<div class="form-group" ng-repeat="attr in item.Attrs">
+												<label class="col-md-4 control-label">{{attr.key}}</label>
+												<div class="col-md-6">
+													<input ng-model="attr.value" type="text" class="form-control"> 
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn red" ng-click="PutUnitFun(item,2)">关闭服务</button>
+								<button type="button" class="btn btn-primary ok" ng-click="PutUnitFun(item,1)" >确认</button>
+								<button type="button" class="btn btn-default cancel" data-dismiss="modal">取消</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-lg-12"><h4 class="font-blue-steel">未开通功能</h4></div>
+		</div>
+		<div class="row" ng-show="NotUnitCount==0">
+			<div class="form-group col-lg-12"><h4>暂无未开通功能</h4></div>
+		</div>
+		<div class="row search-content-3" ng-show="NotUnitCount!=0">
+			<div class="col-md-2 col-sm-2 col-xs-6" ng-repeat="item in NotUnit">
+				<div class="color-demo tooltips" data-toggle="modal" data-target="#modal_{{item.id}}" ng-click="ClearForm()">
+					<div class="color-view bg-default bg-font-default uppercase text-ellipsis" title="{{item.name}}">{{item.name}}
+					</div>
+				</div>
+				<div class="modal fade" id="modal_{{item.id}}">
+					<div class="modal-dialog">
+						<div class="modal-content c-square">
+							<div class="modal-header">
+								<a id="modalCloseBtn1" class="close" data-dismiss="modal" aria-hidden="true"></a>
+								<h4 class="modal-title">功能配置</h4>
+							</div>
+							<div class="modal-body">
+								<div class="portlet">
+									<div class="portlet-body form">
+										<form  class="form-horizontal" role="form" name="modaldetai_{{item.id}}">
+										    <input type="reset" id="FormReset" hidden="true">
+											<div class="form-group">
+												<label class="col-md-4 control-label">功能名</label>
+												<label class="col-md-6 control-label">
+													<span class=" pull-left">{{item.name}}</span>
+												</label>
+											</div>
+											<div class="form-group">
+												<label class="col-md-4 control-label">网址</label>
+												<label class="col-md-6 control-label pull-left"><span class=" pull-left">{{item.url}}</span></label>
+											</div>
+											<div class="form-group">
+												<label class="col-md-4 control-label">描述</label>
+												<label class="col-md-6 control-label pull-left"><span class=" pull-left">{{item.description}}</span></label>
+											</div>
+											<div class="form-group" ng-repeat="attr in item.Attrs">
+												<label class="col-md-4 control-label">{{attr.key}}</label>
+												<div class="col-md-6">
+													<input ng-model="attr.value" type="text" class="form-control"> 
+												</div>
+											</div> 
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary ok" ng-click="PutUnitFun(item,3)" >开通</button>
+								<button type="button" class="btn btn-default cancel" data-dismiss="modal">取消</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

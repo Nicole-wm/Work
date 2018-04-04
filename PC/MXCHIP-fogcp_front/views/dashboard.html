@@ -1,0 +1,127 @@
+<div class="row">
+    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+        <div class="dashboard-stat blue">
+            <div class="visual">
+                <i class="fa fa-comments"></i>
+            </div>
+            <div class="details">
+                <div class="number" ng-bind="device_month"></div>
+                <div class="desc"> 月新增设备数 </div>
+            </div>
+            <a class="more" href="#/device/device_count.html"> 查看详情
+                <i class="m-icon-swapright m-icon-white"></i>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+        <div class="dashboard-stat green">
+            <div class="visual">
+                <i class="fa fa-bar-chart-o"></i>
+            </div>
+            <div class="details">
+                <div class="number" ng-bind="device_year"></div>
+                <div class="desc"> 年新增设备数 </div>
+            </div>
+            <a class="more" href="#/device/device_count.html"> 查看详情
+                <i class="m-icon-swapright m-icon-white"></i>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+        <div class="dashboard-stat red">
+            <div class="visual">
+                <i class="fa fa-shopping-cart"></i>
+            </div>
+            <div class="details">
+                <div class="number" ng-bind="device_all"></div>
+                <div class="desc"> 全部设备数 </div>
+            </div>
+            <a class="more" href="#/device/device_count.html"> 查看详情
+                <i class="m-icon-swapright m-icon-white"></i>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+        <div class="dashboard-stat purple">
+            <div class="visual">
+                <i class="fa fa-globe"></i>
+            </div>
+            <div class="details">
+                <div class="number" ng-bind="enduser_month"></div>
+                <div class="desc"> 月新增用户数 </div>
+            </div>
+            <a class="more" href="#/user/user_count.html"> 查看详情
+                <i class="m-icon-swapright m-icon-white"></i>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+        <div class="dashboard-stat green-jungle">
+            <div class="visual">
+                <i class="fa fa-globe"></i>
+            </div>
+            <div class="details">
+                <div class="number" ng-bind="enduser_year"></div>
+                <div class="desc"> 年新增用户数 </div>
+            </div>
+            <a class="more" href="#/user/user_count.html"> 查看详情
+                <i class="m-icon-swapright m-icon-white"></i>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+        <div class="dashboard-stat yellow-gold">
+            <div class="visual">
+                <i class="fa fa-globe"></i>
+            </div>
+            <div class="details">
+                <div class="number" ng-bind="enduser_all"></div>
+                <div class="desc"> 全部用户数 </div>
+            </div>
+            <a class="more" href="#/user/user_count.html"> 查看详情
+                <i class="m-icon-swapright m-icon-white"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- END DASHBOARD STATS -->
+<div class="row">
+    <div class="col-md-6 col-sm-12">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-pie-chart font-green-haze"></i>
+                    <span class="caption-subject bold uppercase font-green-haze"> 每种产品的激活量占比 </span>
+                    <span class="caption-helper"></span>
+                </div>
+                <div class="tools">
+                    <a href="javascript:;" class="collapse"> </a>
+                    <a href="javascript:;" class="reload"> </a>
+                    <a href="javascript:;" class="fullscreen"> </a>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div id="chart_pie" class="chart" style="height: 400px;"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-bar-chart font-green-haze"></i>
+                    <span class="caption-subject bold uppercase font-green-haze"> 每种APP的用户数比较图 </span>
+                    <span class="caption-helper"></span>
+                </div>
+                <div class="tools">
+                    <a href="javascript:;" class="collapse"> </a>
+                    <a href="javascript:;" class="reload"> </a>
+                    <a href="javascript:;" class="fullscreen"> </a>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div id="chart_bar" class="chart" style="height: 400px;"> </div>
+            </div>
+        </div>
+    </div>
+</div>

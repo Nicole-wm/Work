@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <link href="/css/CommentDetail.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+    <div>
+        <div class="comment" id="comment" style="margin-top:20px">
+            <form role="form" name="AppUserDetail" class="form-horizontal">
+                <div class="form-group">
+                    <label>用户名：</label>
+                    <div class="textipt" style="width: 40.95%;">
+                        <input name="Username" class="form-control" id="Username" ng-model="Username" required ng-required="true">
+                    </div>
+                    <label ng-show="AppUserDetail.Username.$error.required" id="informationalert" class="formalert">*&nbsp;请填写用户名</label>
+                </div>
+                <div class="form-group">
+                    <label>头像:</label>
+                    <div class="textipt" id="falseName" style="cursor:pointer">
+                        <img ngf-select ng-model="Banner" ngf-src="Banner[0]" ngf-accept="'image/*'" ng-src="{{Avatar}}"
+                        style="width:100px;height:100px"  ng-src="Avatar" ></img>
+                        <input type="hidden" ng-model="Banner[0].name" name="Banner" required ng-required="true">
+                    </div>
+                    <label ng-show="AppUserDetail.Banner.$error.required" id="informationalert" class="formalert">*&nbsp;请选择头像</label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" ng-disabled="AppUserDetail.Banner.$error.required||AppUserDetail.Username.$error.required" class="btn btn-primary" ng-click="Submit()">提交</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

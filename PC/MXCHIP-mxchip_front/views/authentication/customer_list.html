@@ -1,0 +1,63 @@
+<div class="row">
+	<div class="col-md-12">
+		<!-- BEGIN Search Line -->
+		<div class="row">
+			<div class="form-group col-lg-3">
+				<div class="input-icon right">
+					<i ng-click="SearchUser()" class="icon-magnifier"></i>
+					<input ng-model="Keyword" type="text" class="form-control" placeholder="请输入关键字"> 
+				</div>
+			</div>
+			<div class="form-group col-lg-2">
+				<select  ng-change="SearchUser()" ng-model="DeciveState" ng-options="o.ID as o.StateName for o in CustStates" class="form-control">
+					<option value=""></option>
+				</select>
+			</div>
+			<div class="form-group col-lg-3">
+				<a ng-click="SearchUser()" class="btn bg-default bg-font-default">搜索</a>
+			</div>
+		</div>
+		<!-- END Search Line -->
+		<!-- BEGIN:app_list -->
+		<div class="row" ng-show="totalItems===0">
+			<div class="form-group col-lg-12"><h4>暂无客户</h4></div>
+		</div> 
+		<div class="row" ng-show="totalItems!==0">
+			<div class="form-group col-lg-12">
+				<div class="portlet light bordered">
+					<div class="portlet-body">
+						<table class="table table-striped table-bordered table-hover ">
+							<thead>
+								<tr>
+									<th> 用户名 </th>
+									<th> 邮箱 </th>
+									<th> 公司 </th>
+									<th> 联系方式 </th>
+									<th> 提交日期 </th>
+									<th> 审核状态 </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="item in ListArr">
+									<td>
+									<a href="#/authentication/customer_details.html?ID={{item.id}}&Page={{currentPage}}" target="_blank">{{item.user.user.username}}</a>
+									</td>
+									<td>{{item.user.user.email}}</td>
+									<td>{{item.name}}</td>
+									<td>{{item.telephone}}</td>
+									<td>{{item.committime}}</td>
+									<td>
+										<span class="label label-sm label-default" ng-show="!item.ischecked"> {{item.StatusText}} </span>
+										<span class="label label-sm label-info" ng-show="item.ischecked"> {{item.StatusText}} </span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<uib-pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize" class="pagination" boundary-links="true" rotate="false" num-pages="numPages" ng-change="pageChanged()"></uib-pagination>
+				</div>
+			</div>
+		</div>
+		<!-- BEGIN:app_list -->
+	</div>
+</div>

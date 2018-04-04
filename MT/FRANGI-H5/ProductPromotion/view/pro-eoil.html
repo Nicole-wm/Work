@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>FRANGI角鲨烷奢嫩精华油</title>
+	<meta name="keywords" content="FRANGI角鲨烷奢嫩精华油" />
+	<meta name="description" content="修护皮脂膜，锁水保湿提亮肤色！自由搭配简直护肤“神助攻”！" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="icon" href="../../IMG/frangi.ico" type="image/x-icon">
+	<!-- pluginsCSS -->
+	<link rel="stylesheet" href="../../CSS/animate.min.css">
+	<!-- pageCSS -->
+	<link rel="stylesheet" href="../css/pro-eoil.css">
+	<!-- pluginsJS -->
+	<script src="../../JS/flexible_css.js"></script>
+	<script src="../../JS/flexible.js"></script>
+	<!-- h5.frangi.cn Baidu tongji analytics -->
+	<script src="../../JS/baiduhm.js"></script>
+</head>
+
+<body>
+	<!-- Music-bg -->
+	<div class="music" onclick="MusicBgClick()">
+		<i class="icon-music open" play="1"></i>
+		<audio id="music-bg" src="../video/music-bg.mp3" loop="loop" autoplay="autoplay" loop="loop"></audio>
+	</div>
+	<div class="p-content">
+		<img src="../img/pro-eoil/1.png" class="a1">
+	</div>
+	<div class="p-content">
+		<div class="a2">
+			<img src="../img/pro-eoil/2-1.png" class="a2-1 animated bounce">
+			<img src="../img/pro-eoil/2-2.png" class="a2-2 animated bounce">
+			<img src="../img/pro-eoil/2-3.png" class="a2-3 animated bounce">
+		</div>
+	</div>
+	<div class="p-content">
+		<img src="../img/pro-eoil/3.png" class="a3">
+	</div>
+	<div class="p-content">
+		<div class="a4">
+			<img src="../img/pro-eoil/4-1.png" class="a4-1 animated bounceInLeft">
+			<img src="../img/pro-eoil/4-2.png" class="a4-2 animated bounceInRight">
+			<img src="../img/pro-eoil/4-3.png" class="a4-3 animated bounceInLeft">
+		</div>
+	</div>
+	<div class="p-content">
+		<img data-original="../img/pro-eoil/5.png" class="lazy a5">
+	</div>
+	<div class="p-content a6-content">
+		<img data-original="../img/pro-eoil/6-1.png" class="lazy a6-1">
+		<img data-original="../img/pro-eoil/6-2.png" class="lazy a6-2">
+		<img data-original="../img/pro-eoil/6-3.png" class="lazy a6-3">
+	</div>
+	<div class="p-content">
+		<img data-original="../img/pro-eoil/7.png" class="lazy a7">
+	</div>
+	<div class="p-content a8-content">
+		<img data-original="../img/pro-eoil/8-0.png" class="lazy a8-0">
+		<div class="a8-img">
+			<img src="../img/pro-eoil/8-1.png" class="lazy a8-1"> 
+			<img src="../img/pro-eoil/8-2.png" class="lazy a8-2">
+			<img src="../img/pro-eoil/8-3.png" class="lazy a8-3">
+			<img src="../img/pro-eoil/8-4.png" class="lazy a8-4">
+		</div>
+	</div>
+	<div class="p-content">
+		<img data-original="../img/pro-eoil/9.jpg?v=2" class="lazy a9">
+	</div>
+	<div class="p-content a10-content">
+		<img data-original="../img/pro-eoil/10-1.jpg" class="lazy a10-1">
+		<img data-original="../img/pro-eoil/10-2.png" class="lazy a10-2">
+		<img data-original="../img/pro-eoil/10-3.png" class="lazy a10-3">
+	</div>
+	<div class="p-content">
+		<img data-original="../img/pro-eoil/11.jpg" class="lazy a11">
+	</div>
+	<div class="p-content">
+		<img data-original="../img/pro-eoil/12.png" class="lazy a12">
+	</div>
+
+	<!-- pluginsJS -->
+	<script src="../../JS/jquery-3.2.1.min.js"></script>
+	<script src="../../JS/jweixin.js"></script>
+	<script src="../../JS/jquery.lazyload.min.js"></script>
+	<!-- PublicJS -->
+	<script src="../js/base.js"></script>	
+	<script src="../js/weixinshare-pro.js"></script>	
+	<script>
+		$("img.lazy").lazyload({
+			placeholder : "../img/base/loading.jpg",    
+			effect : "fadeIn"  
+		});
+		wx.ready(function () {
+			var sharedata = {
+				title: 'FRANGI角鲨烷奢嫩精华油',
+				desc: '修护皮脂膜，锁水保湿提亮肤色！自由搭配简直护肤“神助攻”！',
+				link:'http://h5.frangi.cn/ProductPromotion/view/pro-eoil.html',
+				imgUrl: 'http://h5.frangi.cn/IMG/shareIco.png',
+				success: function () {
+				},
+				cancel: function () {
+				}
+			};
+			wx.onMenuShareAppMessage(sharedata);
+			wx.onMenuShareTimeline(sharedata);
+			wx.hideMenuItems({
+				menuList: [
+				'menuItem:share:qq',
+				'menuItem:share:QZone'
+				] 
+			});
+		});
+		/*微信内-自动播放*/
+		function autoPlayAudio(id) {
+			var audio=document.getElementById(id);
+			wx.config({
+				debug: false,
+				appId: '',
+				timestamp: 1,
+				nonceStr: '',
+				signature: '',
+				jsApiList: []
+			});
+			wx.ready(function() {
+				audio.play();
+			});
+		}
+		/*背景音乐-自动播放*/
+		autoPlayAudio("music-bg");
+		/*背景音乐-播放暂停*/
+		function MusicBgClick(){
+			if($(".icon-music").attr("play") == "1"){
+				$(".icon-music").removeClass("open");
+				$(".icon-music").attr("play","0")
+				document.getElementById("music-bg").pause();
+			}else{
+				$(".icon-music").attr("play","1");
+				$(".icon-music").addClass("open");
+				document.getElementById("music-bg").play();
+			}
+		};
+
+		window.addEventListener('scroll', function () {
+			var this_scrollTop = $(this).scrollTop();
+			var a8Div = $(".a8-content").offset().top;
+			var a8Flag=a8Div-this_scrollTop;
+			if(a8Flag<1200&&a8Flag>-500){
+				$(".a8-img").show();
+			}else{
+				$(".a8-img").hide();
+			}
+		})
+	</script>
+</body>
+</html> 

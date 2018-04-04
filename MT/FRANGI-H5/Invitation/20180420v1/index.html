@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>FRANGI品牌推介会 | 邀请函</title>
+	<meta name="keywords" content="FRANGI品牌推介会 | 邀请函"/>
+	<meta name="description" content="FRANGI·新商机" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="icon" href="../../IMG/frangi.ico" type="image/x-icon">
+	<!-- pageCSS -->
+	<link rel="stylesheet" href="css/index.css?v=18040402"> 
+	<!-- pluginsJS -->
+	<script src="../../JS/flexible_css.js"></script>
+	<script src="../../JS/flexible.js"></script>
+	<!-- h5.frangi.cn Baidu tongji analytics -->
+	<script src="../../JS/baiduhm.js"></script>
+</head> 
+
+<body>
+	<div class="music" onclick="MusicBgClick()">
+		<i class="icon-music open" play="1"></i>
+		<audio id="music-bg" src="video/music-bg.mp3" loop="loop" autoplay="autoplay" loop="loop"></audio>
+	</div>
+	<div class="page-container">
+		<div class="top">
+			<img class="bg" src="img/bg.jpg">
+			<img class="bottle" src="img/bottle.png">
+			<img class="boat Moveswing" src="img/boat.png">
+			<img class="l1 Movelight" src="img/l1.png">
+			<img class="l2 Movelight" src="img/l2.png">
+			<img class="l3 MovelightSmall" src="img/l3.png"> 
+		</div>
+		<div class="content">
+			<img class="content_pic" src="img/content_pic.jpg?v=18040401">
+		</div> 
+	</div>
+</div> 
+
+<script src="../../JS/jquery-3.2.1.min.js"></script>
+<script src="../../JS/jweixin.js"></script>
+<script src="js/weixinshare.js"></script>
+<script>
+	/*微信内-自动播放*/
+	function autoPlayAudio(id) {
+		var audio=document.getElementById(id);
+		wx.config({
+			debug: false,
+			appId: '',
+			timestamp: 1,
+			nonceStr: '',
+			signature: '',
+			jsApiList: []
+		});
+		wx.ready(function() {
+			audio.play();
+		});
+	}
+	/*背景音乐-自动播放*/
+	autoPlayAudio("music-bg");
+	/*背景音乐-播放暂停*/
+	function MusicBgClick(){
+		if($(".icon-music").attr("play") == "1"){
+			$(".icon-music").removeClass("open");
+			$(".icon-music").attr("play","0")
+			document.getElementById("music-bg").pause();
+		}else{
+			$(".icon-music").attr("play","1");
+			$(".icon-music").addClass("open");
+			document.getElementById("music-bg").play();
+		}
+	};
+</script>
+</body>
+</html> 

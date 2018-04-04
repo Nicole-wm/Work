@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <style>
+        @font-face {
+            font-family: 'youyuan';
+            src: url(data:font/ttf;base64,FONTBASE64) format('truetype');
+        }
+    </style>
+    <link href="../css/public.css" rel="stylesheet" charset="UTF-8">
+    <!--<link href="../css/footer.css" rel="stylesheet">-->
+    <link href="../css/comment.css" rel="stylesheet" charset="UTF-8">
+    <link href="../css/comments.css" rel="stylesheet" charset="UTF-8">
+    <link href="../css/zan.css" rel="stylesheet" charset="UTF-8">
+    <link href="css/tryMakeup.css" rel="stylesheet" charset="UTF-8">
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/ng-infinite-scroll.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/TryMakeup/JS/dataSource.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/TryMakeup/JS/comments.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/TryMakeup/JS/zan.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/TryMakeup/JS/TryMakeup.js" charset="UTF-8"></script>
+</head>
+
+<body ng-controller="ProductListCtrl" style="background: url('images/bg.png') repeat;">
+    <div id="head" class="head RelatedImg">
+        <img id="model1" ng-show="HasImage" ng-src="{{ImageUrl}}" src="images/model.jpg">
+        <img id="model" ng-show="!HasImage" src="images/model.jpg">
+        <div class="mask">
+            <img src="images/mask.png" id="mask">
+        </div>
+    </div>
+   <input type="hidden" ng-model="zanurl" ng-init="zanurl='/TryMakeup/zan.html'" />
+<div id="add_zan" ng-include="zanurl"></div>
+    <div class="canvas">
+        <div class="theme bigWordSize">
+            <div>让男生怦然心动的</div>
+            <div>PINK少女妆教程</div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="smallWordSize TextContent">
+        <div>纯真的粉嫩气质,</div>
+        <div>淡淡的好似由内透出的天生的粉嫩感</div>
+        <div>如何把握呢</div>
+        <div>今天小美就教你哦！</div>
+    </div>
+    <div class="bigWordSize mainPointText">妆容要点</div>
+    <div class="smallWordSize TextContent">
+        <div>想要塑造让男生怦然心动的粉嫩妆容</div>
+        <div>重点在于眼妆及唇妆的部分</div>
+        <div>不要害怕粉色眼影会让眼睛看起来肿</div>
+        <div>跟着下面的步骤来画</div>
+        <div>一样能打造出闪闪动人的粉色眼妆噢！</div>
+    </div>
+    <div class="stepDiv">
+        <div class="wapStep bigWordSize" id="stepOne">
+            <span class="step step1">Step 1</span>
+            <span class="stepName bigWordSize ">无暇底妆</span>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="stepImg stepImg1">
+        <div class="picture">
+            <img src="images/1.jpg">
+        </div>
+    </div>
+    <div class="line topLine"></div>
+    <div class="smallWordSize debriefing ">打造少女妆的基础就是要塑造透明无瑕的肌肤，所以底妆的部分可以用气垫BB来完成，完成轻薄透亮的底妆效果</div>
+    <div class="line bottomLine"></div>
+    <div class="clear "></div>
+    <input type="hidden " ng-model="productQuery1 " ng-init="productQuery1='CourseStep1' ">
+    <div class="productList " ng-click='this[redirectFunc](this.Product.ProductID)' style="cursor:pointer
+                " ng-repeat="Product in Products | filter:productQuery1 as Result ">
+        <input class="ProductID " type="hidden " ng-bind="Product.ProductID ">
+        <div class="productPresentation ">
+            <div class="product ">
+                <img ng-src="{{Product.ProductImageUrl}} ">
+            </div>
+            <div class="productInfo ">
+                <div class="brand " ng-bind="Product.BrandName "></div>
+                <div class="productName " ng-bind="Product.ProductName "></div>
+                <div class="start ">
+                    <div class="startImg " ng-repeat="rank in Product.Ranks ">
+                        <img src="images/start.png ">
+                    </div>
+                </div>
+            </div>
+            <div class="eyeShadow " ng-switch="Product.CategoryID ">
+                <img ng-switch-when="14 " src="images/eyeShadow.png ">
+                <img ng-switch-when="12 " src="images/eyelasher.png ">
+                <img ng-switch-when="13 " src="images/eyelinner.png ">
+                <img ng-switch-when="4 " src="images/blush.png ">
+                <img ng-switch-when="7 " src="images/lipgloss.png ">
+                <img ng-switch-when="9 " src="images/lipstick.png ">
+				<img ng-switch-when="6" src="images/fundation.png">
+            </div>
+            <div class="praise ">
+                <img src="images/praise.png ">
+                <span class="praiseNum " ng-bind="Product.Comments ">9999</span>
+            </div>
+        </div>
+    </div>
+    <div class="stepDiv stepDivTwo">
+        <div class="wapStep bigWordSize" id="stepTwo">
+            <span class="step step2">Step 2</span>
+            <span class="stepName bigWordSize stepNameTwo">眼妆细节</span>
+        </div>
+    </div>
+    <div class="stepImg stepImg2">
+        <div class="picture picture2">
+            <img src="images/2.jpg">
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="line topLine twoLine"></div>
+    <div class="clear"></div>
+    <div class="smallWordSize debriefing ">黑色眼线打底、将睫毛根部填满，然后用眼影紧贴睫毛描绘晕染开，晕染的范围不能太大哦。</div>
+    <div class="line bottomLine twoLine"></div>
+    <div class="clear"></div>
+    <input type="hidden " ng-model="productQuery2 " ng-init="productQuery2='CourseStep2' ">
+    <div class="productList " ng-click='this[redirectFunc](this.Product.ProductID)' style="cursor:pointer
+                " ng-repeat="Product in Products | filter:productQuery2 as Result ">
+        <input class="ProductID " type="hidden " ng-bind="Product.ProductID ">
+        <div class="productPresentation ">
+            <div class="product ">
+                <img ng-src="{{Product.ProductImageUrl}} ">
+            </div>
+            <div class="productInfo ">
+                <div class="brand " ng-bind="Product.BrandName "></div>
+                <div class="productName " ng-bind="Product.ProductName "></div>
+                <div class="start ">
+                    <div class="startImg " ng-repeat="rank in Product.Ranks ">
+                        <img src="images/start.png ">
+                    </div>
+                </div>
+            </div>
+            <div class="eyeShadow " ng-switch="Product.CategoryID ">
+                <img ng-switch-when="14 " src="images/eyeShadow.png ">
+                <img ng-switch-when="12 " src="images/eyelasher.png ">
+                <img ng-switch-when="13 " src="images/eyelinner.png ">
+                <img ng-switch-when="4 " src="images/blush.png ">
+                <img ng-switch-when="7 " src="images/lipgloss.png ">
+                <img ng-switch-when="9 " src="images/lipstick.png ">
+				<img ng-switch-when="6" src="images/fundation.png">
+            </div>
+            <div class="praise ">
+                <img src="images/praise.png ">
+                <span class="praiseNum " ng-bind="Product.Comments ">9999</span>
+            </div>
+        </div>
+    </div>
+    <div class="stepDiv stepDivThree">
+        <div class="wapStep bigWordSize" id="stepThree">
+            <span class="step step3">Step 3</span>
+            <span class="stepName bigWordSize ">粉嫩双唇</span>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="stepImg stepImg3">
+        <div class="picture">
+            <img src="images/3.jpg">
+        </div>
+    </div>
+    <div class="line topLine"></div>
+    <div class="smallWordSize debriefing ">想要塑造让人忍不住想亲吻的粉嫩双唇，可以先用橙色唇膏打底，再涂上玫粉色唇膏，让颜色看起来更饱和.</div>
+    <div class="line bottomLine"></div>
+    <input type="hidden " ng-model="productQuery3 " ng-init="productQuery3='CourseStep3' ">
+    <div class="productList " ng-click='this[redirectFunc](this.Product.ProductID)' style="cursor:pointer" ng-repeat="Product in Products | filter:productQuery3 as Result ">
+        <input class="ProductID " type="hidden " ng-bind="Product.ProductID ">
+        <div class="productPresentation ">
+            <div class="product ">
+                <img ng-src="{{Product.ProductImageUrl}} ">
+            </div>
+            <div class="productInfo ">
+                <div class="brand " ng-bind="Product.BrandName "></div>
+                <div class="productName " ng-bind="Product.ProductName "></div>
+                <div class="start ">
+                    <div class="startImg " ng-repeat="rank in Product.Ranks ">
+                        <img src="images/start.png ">
+                    </div>
+                </div>
+            </div>
+            <div class="eyeShadow " ng-switch="Product.CategoryID ">
+                <img ng-switch-when="14 " src="images/eyeShadow.png ">
+                <img ng-switch-when="12 " src="images/eyelasher.png ">
+                <img ng-switch-when="13 " src="images/eyelinner.png ">
+                <img ng-switch-when="4 " src="images/blush.png ">
+                <img ng-switch-when="7 " src="images/lipgloss.png ">
+                <img ng-switch-when="9 " src="images/lipstick.png ">
+				<img ng-switch-when="6" src="images/fundation.png">
+            </div>
+            <div class="praise ">
+                <img src="images/praise.png ">
+                <span class="praiseNum " ng-bind="Product.Comments ">9999</span>
+            </div>
+        </div>
+    </div>
+    <div class="summarize ">
+        <div class="heart summarizeHeart "></div>
+        <div class="bigWordSize lastText ">
+            <div>好啦，白里透红</div>
+            <div>好似天生的粉嫩妆容完成啦！</div>
+        </div>
+        <div class="heart summarizeRightHeart "></div>
+    </div>
+    <div class="clear "></div>
+    <div class="RelatedImg lastImg ">
+        <img src="images/footer.jpg ">
+    </div>
+	<input type="hidden" ng-model="templateurl" ng-init="templateurl='/TryMakeup/comments.html'" />
+<div id="add_comment" ng-include="templateurl"></div>
+</body>
+
+</html>

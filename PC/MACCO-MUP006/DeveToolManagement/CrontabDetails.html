@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="/css/sb-admin.css" rel="stylesheet">   
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/common.css" rel="stylesheet" type="text/css" >
+    <link href="/css/uniform.css" rel="stylesheet" type="text/css" >
+    <link href="/css/public.css" rel="stylesheet">
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="/scripts/common.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-infinite-scroll.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-file-upload-all.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/sidebarController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/Develop/CrontabDetails.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Sidebar.html'" />
+        <div id="nav" ng-include="templateurl"></div>
+        <div id="page-wrapper" ng-controller="CrontabDetailController">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            定时器详情{{OperationType}}
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>  
+                                <a href="index.html">Macco Admin</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-table"></i>定时器详情{{OperationType}}
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div><h2 style="display:inline-block;">定时器详情{{OperationType}}:</h2>
+                        </div>
+                        <form role="form" name="CrontabDetail" class="form-horizontal">
+                            <div class="form-group">
+                                <label class="control-label">定时器名：</label>
+                                <div class="textipt" style="width: 40.95%;">
+                                    <input name="CrontabName" class="form-control" id="titleName" ng-model="CrontabName" required ng-required="canEdit" ng-disabled="!canEdit">
+                                </div>
+                                <label ng-show="CrontabDetail.CrontabName.$error.required" id="informationalert" class="formalert">*&nbsp;请填写服务器名</label>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">类型:</label>
+                                <div class="controls" style="width:10%;">
+                                    <select class="form-control" ng-model="SType" ng-options="stype.ID as stype.Name for stype in stypes" ng-disabled="!canEdit"></select>
+                                </div>
+                                <label ng-show="!SType" id="informationalert" class="formalert">*&nbsp;请选择类型</label>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">服务器名:</label>
+                                <div class="controls" style="width:10%;">
+                                    <select class="form-control" ng-model="ServerID" ng-options="server.ID as server.ServerName for server in Servers" ng-disabled="!canEdit">
+                                    </select>
+                                </div>
+                                <label ng-show="!ServerID" id="informationalert" class="formalert">*&nbsp;请选择服务器</label>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">项目名:</label>
+                                <div class="controls" style="width:10%;">
+                                    <select class="form-control" ng-model="ProjectID" ng-options="project.ID as project.ProjectName for project in Projects" ng-disabled="!canEdit">
+                                    </select>
+                                </div>
+                                <label ng-show="!ProjectID" id="informationalert" class="formalert">*&nbsp;请选择项目</label>
+                            </div>
+                            <div class="form-group" ng-show="canEdit">
+                                <label class="control-label">路径:</label>
+                                <div class="controls">
+                                    <div class="uploader">
+                                        <input type="button" ngf-select  accept="application/x-zip-compressed" ng-model="Web" ng-disabled="!canEdit">
+                                        <span class="filename webFileName" style="-webkit-user-select: none;">{{Web[0].name}}</span>
+                                        <span class="action" style="-webkit-user-select: none; float:right;">浏览</span>
+                                    </div>
+                                    <span class="btn btn-primary" ng-click="WebConfirmUpload()">上传</span>
+                                    <span class="btn btn-primary" ng-disabled="!WebShowSubmit" ng-click="WebCancelUpload()">取消</span>
+                                    <label style="width:20px;"></label>
+                                    <label ng-bind="WebUploadProgress"></label>
+                                    <input type="hidden" ng-model="Web[0].name" name="Web" required ng-required="NeedWeb">
+                                    <label ng-show="CrontabDetail.Web.$error.required" id="informationalert" class="formalert">*&nbsp;请上传路径</label>
+                                </div>
+                            </div>
+                            <div class="form-group" ng-show="!canEdit">
+                                <label class="control-label">路径:</label>
+                                <div class="textipt" style="width: 40.95%; margin:5px 0px 0px 5px;">
+                                    <a ng-href="{{WebUrl}}" target="_blank">{{WebUrl}}</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">日志表:</label>
+                                <div class="textipt" id="falseName" style="float:left;">
+                                    <textarea class="form-control" name="LogTableName" ng-model="LogTableName" ng-disabled="!canEdit" required></textarea>
+                                </div>
+                                <div ng-show="CrontabDetail.LogTableName.$error.required" id="informationalert" class="formalert" style="float:left;height: 50px;line-height: 50px;font-weight: 700;">*&nbsp;请填写日志表</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">命令:</label>
+                                <div class="textipt" id="falseName" style="float:left;">
+                                    <textarea class="form-control" name="Command" ng-model="Command" ng-disabled="!canEdit" required></textarea>
+                                </div>
+                                <div ng-show="CrontabDetail.Command.$error.required" id="informationalert" class="formalert" style="float:left;height: 50px;line-height: 50px;font-weight: 700;">*&nbsp;请填写命令</div>
+                            </div>
+
+                            <div class="form-group ">
+                                <label class="control-label">描述:</label>
+                                <div class="textipt" id="falseName" style="float:left;">
+                                    <textarea class="form-control" name="Description" ng-model="Description" ng-disabled="!canEdit" required></textarea>
+                                </div>
+                                <div ng-show="CrontabDetail.Description.$error.required" id="informationalert" class="formalert" style="float:left;height: 50px;line-height: 50px;font-weight: 700;">*&nbsp;请填写描述</div>
+                            </div>
+
+                            <div class="form-actions">
+                             <button type="submit" ng-show="canEdit" ng-disabled="!CrontabDetail.CrontabName.$valid||!CrontabDetail.Command.$valid||!CrontabDetail.Description.$valid||!ServerID||!ProjectID||!WebUrl" class="btn btn-primary" ng-click="Submit()">提交</button>
+                             <button class="btn"  ng-click="ReturnBack()">返回</button>
+                         </div>
+                     </form>
+                 </div>
+             </div>
+         </div>
+     </div>
+</body>
+</html>

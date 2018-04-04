@@ -1,0 +1,70 @@
+.WrapContent > .col_cover_image_ban > img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border:0px;
+}
+.mobilepublish{
+	display: none;
+}
+.pull-down {
+  margin-left: 10px;
+}
+.col_id {
+	width:19%; 
+}
+.col_chinaName {
+	width: 16%;
+	min-width: 305px;
+	min-width: 20px;
+}
+.col_cover_image_ban {
+	width: 15%;
+}
+.con_operation {
+	width: 50%;
+}
+.mobileId,
+.mobilechinaName,
+.mobileenglishName,
+.mobileImage,
+.mobileOperation{
+	display: none;
+}
+@media(max-width:768px) {
+.TableTitle,.WrapContent {
+  height: 470px;
+  max-height: 470px;
+}
+.col_cover_image_ban {
+	min-height: 256px;
+}
+.WrapContent > .col_cover_image_ban:hover > img {
+	width: 15%;
+	-webkit-animation-name: "";
+	-moz-animation-name: "";
+	-o-animation-name: "";
+	-ms-animation-name: "";
+	animation-name: "";
+}
+.mobileId,
+.mobilechinaName,
+.mobileenglishName,
+.mobileImage,
+.mobileOperation{
+	    display: inline-block;
+} 
+.mobilepublish{
+	display: inline-block;
+}
+}
+@media(max-width:414px) {
+	.keyword{
+	   min-width: 100px;
+       width: 40%;
+	}
+	.pull-down {
+     width: 40%;
+	 margin-left: 20px;
+	}
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/sb-admin.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/common.css" rel="stylesheet" type="text/css">
+    <link href="/css/uniform.css" rel="stylesheet" type="text/css">
+    <link href="/css/public.css" rel="stylesheet">
+    <link href="/css/addProductComment.css" rel="stylesheet">
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/common.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-infinite-scroll.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-file-upload-all.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/sidebarController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/Product/productDetailController.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Sidebar.html'" />
+        <div id="nav" ng-include="templateurl"></div>
+        <div id="page-wrapper" ng-controller="productDetailController">
+            <div class="container-fluid">
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">产品评论</h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>
+                                <a href="/index.html?Token={{Token}}">Macco Admin</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-table"></i>产品评论
+                                <span ng-bind="OperationType"></span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div>
+                            <h2 style="display:inline-block;">产品评论
+                                <span ng-bind="OperationType"></span>:</h2>
+                            </div>
+                            <form role="form" name="productDetail" class="form-horizontal">
+                                <div class="form-group">
+                                    <label >产品名称:</label>
+                                    <span></span>
+                                </div>
+                                <div class="form-group ">
+                                    <label >用户名:</label>
+                                    <div class="textipt">
+                                        <input class="form-control" name="ProductEName" ng-model="ProductEName">
+                                    </div>
+                                    <div class="produce" style="display:inline-block;">
+                                        <button ng-disabled="!productDetail.$valid" type="button" ng-click="Submit()" class="btn btn-primary">产生</button>
+                                    </div>
+                                </div>
+                                <div class="form-group" ng-show="!canEdit">
+                                    <label >图片:</label>
+                                    <div class="textipt" id="falseName">
+                                        <img ng-src="{{ProductImageUrl}}" style="width: 100px;height: 100px;"></img>
+                                    </div>
+                                </div>
+                                <div class="form-group" ng-show="canEdit">
+                                    <label >图片:</label>
+                                    <div class="textipt" id="falseName" style="cursor:pointer">
+                                        <img ngf-select ng-disabled="!canEdit" ng-model="ProductImage" ngf-src="ProductImage[0]" ngf-accept="'image/*'" ng-src="{{ProductImageUrl}}"
+                                        style="width: 100px;height: 100px;"></img>
+                                        <input type="hidden" ng-model="ProductImage[0].name" name="ProductImage" required ng-required="productImageNeed">
+                                    </div>
+                                    <label ng-show="productDetail.ProductImage.$error.required" id="informationalert" class="formalert">*&nbsp;请选择图片</label>
+                                </div>
+                                <div class="form-group ">
+                                    <div style="  float: left;height: 50px;line-height: 50px;margin-right: 4px;font-weight: 700;">评论内容:</div>
+                                    <div class="textipt" id="falseName" style="float:left;">
+                                        <textarea class="form-control" name="ProductDesc" ng-model="ProductDesc" required></textarea>
+                                    </div>
+                                    <div ng-show="productDetail.ProductDesc.$error.required" id="informationalert" class="formalert" style="float: left;height: 50px;line-height: 50px;font-weight: 700;">*&nbsp;请填写评论内容</div>
+                                </div>
+                                <div class="form-group ">
+                                    <label style="float: left;text-align: center;height: 30px;line-height: 30px;">评分 :</label>
+                                    <select ng-model="Rank" name="Rank" class="form-control select" required>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option selected>5</option>
+                                    </select>
+                                    <label ng-show="productDetail.Rank.$error.required" id="informationalert" class="formalert" style="width:20%;">*&nbsp;请填写评分</label>
+                                </div>
+                                <div class="form-actions">
+                                    <button ng-disabled="!productDetail.$valid" type="button" ng-click="Submit()" class="btn btn-primary">提交</button>
+                                    <button class="btn" ng-click="ReturnBack(this.Token)">返回</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /#page-wrapper -->
+        </div>
+        <!-- /#wrapper -->
+    </body>
+
+    </html>

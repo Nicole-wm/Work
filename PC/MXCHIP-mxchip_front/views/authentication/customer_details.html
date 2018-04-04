@@ -1,0 +1,84 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="portlet light portlet-fit bordered">
+			<div class="portlet-body">
+				<div class="form-body form">
+					<form  class="form-horizontal" role="form" name="CustomerDetail">
+						<div class="form-group col-md-12"></div>
+						<div class="form-group">
+							<label class="col-md-12">
+								公司名：{{companyname}}
+							</label>
+						</div>
+						<div class="form-group">
+							<label class="col-md-12">
+								工商执照注册号： {{bnumber}}
+							</label>
+						</div>
+						<div class="form-group">
+							<label class="col-md-12">
+								企业法人/负责人： {{bentity}}
+							</label>
+						</div>
+						<div class="form-group">
+							<label class="col-md-12">
+								隶属企业：{{subenter}} 
+							</label>
+						</div>
+						<div class="form-group">
+							<label class="col-md-12">
+								企业注册地址： {{braddress}}
+							</label>
+						</div>
+						<div class="form-group">
+							<label class="col-md-12">
+								办公电话： {{tel}}
+							</label>
+						</div>
+						<div class="form-group">
+							<label class="col-md-12">
+								官网地址：{{url}}
+							</label>
+						</div>
+						<div class="form-group">
+							<label class="col-md-12">
+								组织机构代码：
+							</label>
+							<div class="col-md-12">
+								<img ng-src="{{pic1}}" class="col-md-8">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-12">
+								工商执照：
+							</label>
+							<div class="col-md-12">
+								<img ng-src="{{pic2}}" class="col-md-8">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-12">
+								税务登记证：
+							</label>
+							<div class="col-md-12">
+								<img ng-src="{{pic3}}" class="col-md-8">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-12">
+								审核状态：{{StatusText}}
+							</label>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 control-label"></label>
+							<div class="col-md-5">
+								<input ng-click="SureFun(1)" class="btn bg-blue-steel bg-font-blue-steel" type="submit" value="通过"/>
+								<input ng-click="SureFun(0)" class="btn bg-default bg-font-default" type="submit" value="不通过"/>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

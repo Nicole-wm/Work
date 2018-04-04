@@ -1,0 +1,20 @@
+﻿.page{
+	width: 500px;
+	margin:100px auto;
+}
+.maccoError{
+	color: red;
+}
+em{
+	color: red;
+}
+label,.controls,.maccoError{
+	float: left;
+}
+.clear{
+	clear: both;
+}
+.btn{
+	margin-top: 50px;
+	margin-left: 100px;
+}

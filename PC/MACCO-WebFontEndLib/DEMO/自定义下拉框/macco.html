@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>下拉框</title>
+	<link rel="stylesheet" type="text/css" href="test.css">
+	<link rel="stylesheet" type="text/css" href="combobox.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="combobox.js"></script>
+	<script type="text/javascript" src="test.js"></script>
+</head>
+<body>
+	<div class="page">
+		<div class="main">
+			<label>下拉选择:</label>
+			<div class="controls" id="controls">
+				<div id="input_select" macco-select="true" macco-error-label=".select_error">
+					<div class="select_result" macco-select-result="true">
+						<input type="text" name="select" class="select" value="" required  macco-required="true">
+						<div class="pull_img"></div>
+					</div>
+					<div class="select_content" macco-select-content="true" style="display:none;">
+						<ul>
+							<li>测试列表</li>
+							<li>蓝色</li>
+							<li>白色</li>
+							<li>灰色</li>
+							<li>红色</li>
+						</ul>
+						<table>
+							<tbody>
+								<tr><td>测试表格</td><td>测试二</td></tr>
+								<tr><td>测试二</td><td>测试一</td></tr>
+								<tr><td>测试三</td><td>测试三</td></tr>
+							</tbody>
+						</table>
+						<div>
+							测试DIV
+							<p>数据一</p>
+							<p>数据二</p>
+							<p>数据三</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<label class="maccoError select_error">
+				<em>*</em>请选择
+			</label>
+		</div>
+		<div class="clear"></div>
+		
+		<button type="button" class="btn">确认</button>
+	</div>
+</body>
+</html>

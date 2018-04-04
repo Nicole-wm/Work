@@ -1,0 +1,653 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"di",
+				"div	Tag"
+			],
+			[
+				"h",
+				"height	Attr"
+			],
+			[
+				"f",
+				"form	Tag"
+			],
+			[
+				"d",
+				"disabled	Attr"
+			],
+			[
+				"c",
+				"css"
+			],
+			[
+				"a",
+				"alert"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"fo",
+				"for	for (…) {…}"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"p",
+				"position"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"b",
+				"bottom"
+			],
+			[
+				"m",
+				"margin-bottom"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"LI",
+				"line-height"
+			],
+			[
+				"ty",
+				"list-style-type"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"i",
+				"img	Tag"
+			],
+			[
+				"inde",
+				"indexFunction"
+			],
+			[
+				"A",
+				"autoPicSlide"
+			],
+			[
+				"IN",
+				"indexFunction"
+			],
+			[
+				"PI",
+				"picnum"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"re",
+				"background-repeat"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"to",
+				"top"
+			],
+			[
+				"DI",
+				"display"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"DIV",
+				"div"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"s",
+				"style	Attr"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"inl",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "informationManager.html",
+			"settings":
+			{
+				"buffer_size": 6364,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "StyleManager.html",
+			"settings":
+			{
+				"buffer_size": 10526,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "head.html",
+			"settings":
+			{
+				"buffer_size": 6332,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: IN",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: t",
+				"Package Control: Install Package"
+			],
+			[
+				"to",
+				"View: Toggle Menu"
+			],
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 424.0
+	},
+	"console":
+	{
+		"height": 476.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/workspace/MUP006"
+	],
+	"file_history":
+	[
+		"/D/workspace/MUP006/Sidebar.html",
+		"/D/workspace/MUP006/StyleManager.html",
+		"/D/workspace/MUP006/informationDetails.html",
+		"/C/Users/Spring.Zhao/Desktop/dsd",
+		"/C/Users/Spring.Zhao/Desktop/sfff",
+		"/C/Users/Spring.Zhao/Desktop/sfff.html",
+		"/C/Users/Spring.Zhao/Desktop/318/informationManager.html",
+		"/C/nginx-1.6.2/conf/nginx.conf",
+		"/C/Users/Spring.Zhao/Desktop/318/head.html",
+		"/C/Users/Spring.Zhao/Desktop/318/Sidebar.html",
+		"/C/Users/Spring.Zhao/Desktop/common.html",
+		"/C/Users/Spring.Zhao/Desktop/Sidebar .html",
+		"/C/Users/Spring.Zhao/Desktop/head.html",
+		"/C/Users/Spring.Zhao/Desktop/318/ActivityDetails.html",
+		"/C/Users/Spring.Zhao/Desktop/318/js/common.js",
+		"/C/Users/Spring.Zhao/Desktop/318/common.html",
+		"/C/Users/Spring.Zhao/Desktop/mstp_46_proteus/index.html",
+		"/C/Users/Spring.Zhao/Desktop/318/StyleManager.html",
+		"/C/Users/Spring.Zhao/Desktop/318/viewInformationDetails.html",
+		"/C/Users/Spring.Zhao/Desktop/318/ActivityManager.html",
+		"/C/Users/Spring.Zhao/Desktop/318/viewActivity.html",
+		"/C/Users/Spring.Zhao/Desktop/318/editStyle.html",
+		"/C/Users/Spring.Zhao/Desktop/318/viewStyle.html",
+		"/C/Users/Spring.Zhao/Desktop/startbootstrap-sb-admin-1.0.2/tables.html",
+		"/C/Users/Spring.Zhao/Desktop/318/StyleDetails.html",
+		"/C/Users/Spring.Zhao/Desktop/318/editInformation.html",
+		"/C/Users/Spring.Zhao/Desktop/318/informationDetails.html",
+		"/C/Users/Spring.Zhao/Desktop/318/css/unicorn.login.css",
+		"/C/Users/Spring.Zhao/Desktop/318/login.html",
+		"/C/Users/Spring.Zhao/Desktop/boostrap_demo/chat.html",
+		"/C/Users/Spring.Zhao/Desktop/boostrap_demo/form-common.html",
+		"/C/Users/Spring.Zhao/Desktop/startbootstrap-sb-admin-1.0.2/index.html",
+		"/C/Users/Spring.Zhao/Desktop/318/css/common.css",
+		"/C/Users/Spring.Zhao/Desktop/318/viewInformation.html",
+		"/C/Users/Spring.Zhao/Desktop/318/editActivity.html",
+		"/C/Users/Spring.Zhao/Desktop/联系我们1/contact.html",
+		"/C/Users/Spring.Zhao/Desktop/联系我们1/contact.js",
+		"/C/Users/Spring.Zhao/Desktop/318/css/uniform.css",
+		"/C/Users/Spring.Zhao/Desktop/startbootstrap-sb-admin-1.0.2/css/sb-admin.css",
+		"/C/Users/Spring.Zhao/Desktop/startbootstrap-sb-admin-1.0.2/forms.html",
+		"/C/Users/Spring.Zhao/Desktop/boostrap_demo/css/uniform.css",
+		"/C/Users/Spring.Zhao/Desktop/startbootstrap-sb-admin-1.0.2/css/common.css",
+		"/C/Users/Spring.Zhao/Desktop/318/tables.html",
+		"/C/Users/Spring.Zhao/Desktop/startbootstrap-sb-admin-1.0.2/bootstrap-elements.html",
+		"/C/Users/Spring.Zhao/Desktop/startbootstrap-sb-admin-1.0.2/README.md",
+		"/C/Users/Spring.Zhao/Desktop/startbootstrap-sb-admin-1.0.2/bootstrap-grid.html",
+		"/C/Users/Spring.Zhao/Desktop/startbootstrap-sb-admin-1.0.2/js/jquery.js",
+		"/C/Users/Spring.Zhao/Desktop/startbootstrap-sb-admin-1.0.2/js/bootstrap.min.js",
+		"/C/Users/Spring.Zhao/Desktop/startbootstrap-sb-admin-1.0.2/js/bootstrap.js",
+		"/C/Users/Spring.Zhao/Desktop/318/forms.html",
+		"/C/Users/Spring.Zhao/Desktop/startbootstrap-sb-admin-1.0.2/charts.html",
+		"/C/Users/Spring.Zhao/Desktop/boostrap_demo/js/unicorn.js",
+		"/C/Users/Spring.Zhao/Desktop/318/css/bootstrap.min.css",
+		"/C/Users/Spring.Zhao/Desktop/318/js/bootstrap.min.js",
+		"/C/Users/Spring.Zhao/Desktop/startbootstrap-sb-admin-1.0.2/css/bootstrap-rtl.css",
+		"/C/Users/Spring.Zhao/Desktop/startbootstrap-sb-admin-1.0.2/css/bootstrap.css",
+		"/C/Users/Spring.Zhao/Desktop/startbootstrap-sb-admin-1.0.2/css/bootstrap.min.css",
+		"/C/Users/Spring.Zhao/Desktop/联系我们1/contact.css",
+		"/C/Users/Spring.Zhao/Desktop/联系我们/contact.css",
+		"/C/Users/Spring.Zhao/Desktop/联系我们/contact.js",
+		"/C/Users/Spring.Zhao/Desktop/联系我们/contact.html",
+		"/C/Users/Spring.Zhao/Desktop/Web2.13/Piggy.html",
+		"/C/Users/Spring.Zhao/Desktop/Web2.13/piggy.css",
+		"/C/Users/Spring.Zhao/Desktop/Web2.13/Piggy.js",
+		"/C/Users/Spring.Zhao/Desktop/联系我们/count.html",
+		"/C/Users/Spring.Zhao/Desktop/Web2.13/contact.html",
+		"/C/Users/Spring.Zhao/Desktop/NewApp/New/FoundPassWordS.html",
+		"/C/Users/Spring.Zhao/Desktop/NewApp/CSS/FoundPassWordS.css",
+		"/C/Users/Spring.Zhao/Desktop/Web2.3/piggy.css",
+		"/C/Users/Spring.Zhao/Desktop/Web2.3/Piggy.js",
+		"/C/Users/Spring.Zhao/Desktop/Web2.3/Piggy.html",
+		"/C/Users/Spring.Zhao/Downloads/webfontkit-20150208-220600/stylesheet.css",
+		"/C/Users/Spring.Zhao/Desktop/font-sace/webfontkit-20150208-220600/stylesheet.css",
+		"/C/Users/Spring.Zhao/Desktop/NewApp/CSS/public.css",
+		"/C/Users/Spring.Zhao/Desktop/NewApp/CSS/Third.css",
+		"/C/Users/Spring.Zhao/Desktop/NewApp/New/FoundPassWordThird.html",
+		"/C/Users/Spring.Zhao/Desktop/within",
+		"/C/Users/Spring.Zhao/Desktop/NewApp/CSS/FoundPassWordFour.css",
+		"/C/Users/Spring.Zhao/Desktop/NewApp/New/FoundPassWordFour.html",
+		"/C/Users/Spring.Zhao/Desktop/NewApp/New/FoundPassWordF.html",
+		"/C/Users/Spring.Zhao/Desktop/NewApp/CSS/FoundPassWordF.css",
+		"/C/Users/Spring.Zhao/Desktop/NewApp/CSS/FoundPassword.css",
+		"/C/Users/Spring.Zhao/Desktop/NewApp/New/FoundPassword.html",
+		"/C/Users/Spring.Zhao/Desktop/Web2.2/Web2.2/Piggy.html",
+		"/C/Users/Spring.Zhao/Desktop/Web2.2/Web2.2/piggy.css",
+		"/C/Users/Spring.Zhao/Desktop/NewApp/New/Third",
+		"/C/Users/Spring.Zhao/Desktop/page/MAG/good/good.html",
+		"/C/Users/Spring.Zhao/Desktop/page/UVI/pass/pass.html",
+		"/C/Users/Spring.Zhao/Desktop/page/UVI/high/high.html",
+		"/C/Users/Spring.Zhao/Desktop/page/UVI/general/general.html",
+		"/C/Users/Spring.Zhao/Desktop/page/UVI/danger/danger.html",
+		"/C/Users/Spring.Zhao/Desktop/page/SSD/hot/hot.html",
+		"/C/Users/Spring.Zhao/Desktop/page/SSD/comfort/comfort.html",
+		"/C/Users/Spring.Zhao/Desktop/体感指数页面/cold/cold.html",
+		"/C/Users/Spring.Zhao/Desktop/page/Skin/moist/moist.html",
+		"/C/Users/Spring.Zhao/Desktop/page/Skin/moderato/moderato.html",
+		"/C/Users/Spring.Zhao/Desktop/page/Skin/dry/dry.html",
+		"/C/Users/Spring.Zhao/Desktop/page/MAG/optimization/optimization.html",
+		"/C/Users/Spring.Zhao/Desktop/page/UVI/trace/trace.html",
+		"/C/Users/Spring.Zhao/Desktop/page/SSD/cold/cold.html",
+		"/C/Users/Spring.Zhao/Desktop/zwxn/cs/bottom.css",
+		"/C/Users/Spring.Zhao/Desktop/zwxn/zwx/zwx.html",
+		"/C/Users/Spring.Zhao/Desktop/Web2.2/Piggy.js",
+		"/C/Users/Spring.Zhao/Desktop/Web2.2/Piggy.html",
+		"/C/Users/Spring.Zhao/Desktop/Web2.2/piggy.css",
+		"/C/Users/Spring.Zhao/Desktop/test/test.html",
+		"/C/Users/Spring.Zhao/Desktop/test/test.css",
+		"/C/Users/Spring.Zhao/Desktop/Web1.28/Piggy.html",
+		"/C/Users/Spring.Zhao/Desktop/Web1.28/piggy.css",
+		"/C/Users/Spring.Zhao/Desktop/Web1.28/Piggy.js",
+		"/C/Users/Spring.Zhao/AppData/Local/Temp/HZ$D.386.2592/piggy.css",
+		"/C/Users/Spring.Zhao/AppData/Local/Temp/HZ$D.386.2591/Piggy.html",
+		"/C/Users/Spring.Zhao/Desktop/Web/Piggy.js",
+		"/C/Users/Spring.Zhao/Desktop/Web/piggy.css",
+		"/C/Users/Spring.Zhao/Desktop/Web/Piggy.html",
+		"/C/Users/Spring.Zhao/AppData/Roaming/Sublime Text 3/Packages/User/Tag Package.sublime-settings",
+		"/C/Users/Spring.Zhao/AppData/Local/Temp/HZ$D.680.4453/Piggy.html",
+		"/C/Users/Spring.Zhao/AppData/Local/Temp/HZ$D.723.3075/piggy.css",
+		"/C/Users/Spring.Zhao/Desktop/Web/Web/piggy.css",
+		"/C/Users/Spring.Zhao/Desktop/Web/Web/Piggy.html",
+		"/C/Users/Spring.Zhao/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Spring.Zhao/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Spring.Zhao/Desktop/ZX1/ZX1.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mobilecustomerinformation",
+			"    \n",
+			".col-lg-6",
+			"collapse",
+			"aria-expanded",
+			"nav navbar-right top-nav",
+			"navbar navbar-inverse navbar-fixed-top",
+			"nav navbar-right top-nav",
+			"collapse navbar-collapse navbar-ex1-collapse",
+			";\n",
+			".mobileHead",
+			".mobileTitle",
+			"descMobileWrapper ",
+			"#descWrapper",
+			"#outerchainbar",
+			"#mobileSpotbar",
+			"#outerchainbar",
+			"padPic",
+			"outerchainbar",
+			"descMobileWrapper",
+			"centerIphoneContent",
+			"outerchainbar",
+			"descWrapper",
+			"centerContent",
+			"descWrapper",
+			"centerContent",
+			"mobileSpotbar",
+			"autoPicSlide",
+			"#slidebar",
+			">\n",
+			"slidebar",
+			"slide",
+			"spotbar",
+			"centerContent",
+			"tdcodewordblack",
+			"spotbar",
+			"copyright",
+			"footlogo",
+			"footpart",
+			"slidediv",
+			"iphone_store",
+			"#iphone_store img,#android_market img",
+			"#headlink img,#headlink_f img",
+			"headlinkWrapper",
+			"descText2",
+			"headbarlocate",
+			"#logo, #logo_f",
+			"logo_f",
+			"logo",
+			"#logo, #logo_f",
+			"#headline, #headline_f",
+			"environmentalTest",
+			"#descText2",
+			"#descText1",
+			"#descWrapper",
+			"descWrapper",
+			"address",
+			"version",
+			"testLink",
+			".logo",
+			"#headlinkWrapper",
+			"#headlink a, #headlink_f a",
+			"#headlink, #headlink_f",
+			"#headlinkopen",
+			"headlinkopen",
+			"#headlink, #headlink_f",
+			"  ",
+			"#outerchainbar",
+			" #weibo_f {\n    margin: 0;\nposition: relative;\ntop: -48px;\nright: -175px;\n}",
+			"#headlink a, #headlink_f a",
+			"	\n",
+			"headline",
+			"4"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "informationManager.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6364,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1164,
+								1164
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "StyleManager.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10526,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1083,
+								1083
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 810.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "head.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6332,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1889,
+								1889
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "viewStyle.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Spring.Zhao\\Desktop\\ZX1\\ZX1.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

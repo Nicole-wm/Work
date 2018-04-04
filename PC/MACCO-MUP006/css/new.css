@@ -1,0 +1,76 @@
+
+.pull-down {
+  margin-left: 10px;
+}
+.WrapContent {
+	width: 100%;
+	display: block;
+	min-height:210px; 
+}
+.col_id {
+	width:6%; 
+}
+.col_keyno{
+	width: 10%;
+	word-wrap: break-word;
+}
+.col_title {
+	width: 12%;
+	min-width: 305px;
+	min-width: 20px;
+	word-wrap: break-word;
+	
+}
+.col_cover_image {
+	width: 16%;
+}
+.col_read {
+	width:6%;
+}
+.col_likes {
+	width:6%;
+}
+.col_publish_time {
+	width: 12%;
+}
+.col_publish{	
+    width:6%;
+}
+.col_operation {
+	width: 14%;
+}
+.mobileId,.mobileKeyno,.mobileTitle,.mobileImage,.mobileRead,.mobileLikes,.mobilePublishTime,.mobileOperation{
+	display: none;
+
+}
+.btn-search{
+	margin-top: 6px;
+}
+
+@media(max-width:768px) {
+	.WrapContent {
+		height:750px;
+		max-height:750px;
+	}
+	.col_cover_image {
+		min-height: 256px;
+	}
+	.WrapContent > .col_cover_image:hover > img {
+		display: none;
+		-webkit-animation-name: "";
+		-moz-animation-name: "";
+		-o-animation-name: "";
+		-ms-animation-name: "";
+		animation-name: "";
+	} 
+	.mobileId,
+	.mobileTitle,
+	.mobileImage,
+	.mobileRead,
+	.mobileLikes,
+	.mobilePublishTime,
+	.mobileOperation {
+		display: inline-block;
+	} 
+	
+}

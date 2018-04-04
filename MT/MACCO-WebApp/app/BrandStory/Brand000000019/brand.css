@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.textInfo{
+	top: 49%;
+	left: 34%;
+	width: 66%;
+}
+@media(max-width:414px){
+
+}
+@media(max-width:375px){
+.textInfo {
+	width: 64%;
+}
+}
+@media(max-width:320px){
+}

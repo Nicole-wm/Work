@@ -1,0 +1,11 @@
+{
+	"IsSuccess":true,
+	"data":{
+		"count":3,
+		"result":[
+			{"id":1,"identifier": "KG_Light","pname":"炉灯开关","pkey":"readonly","ptype":"float","units":"","minvalue":"0","maxvalue":"1","symbol":"","ismodify":1,"description":"0=关，1=开","attributes":{"data":[{"KeyName":"asd","KeyValue":"123"},{"KeyName":"zxc","KeyValue":"789"}]}},
+			{"id":2,"identifier": "KG_Fan","pname":"通风开关","pkey":"alert","ptype":"boolean","units":"min","minvalue":"1","maxvalue":"2","symbol":"","ismodify":0,"description":"0=关，1=开","attributes":{"data":[{"KeyName":"KGZL","KeyValue":"1010"}]}},
+			{"id":3,"identifier": "KG_Turn","pname":"转叉开关","pkey":"writable","ptype":"string","units":"","minvalue":"0","maxvalue":"1","symbol":"","ismodify":1,"description":"","attributes":{"data":[]}}
+		]
+	}
+}

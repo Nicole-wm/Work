@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/sb-admin.css" rel="stylesheet">
+    <!-- <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="/css/public.css" rel="stylesheet" type="text/css">
+    <link href="/css/SingleMakeUp.css" rel="stylesheet" type="text/css">
+    <link href="/css/jquery.minicolors.css" rel="stylesheet">
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/common.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-infinite-scroll.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-file-upload-all.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/roundChart.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/sidebarController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/SingleTryMakeup/SingleTryMakeupController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/SingleTryMakeup/selectProduct.js"></script>
+    <script type="text/javascript" src="/scripts/jquery.minicolors.js"></script>
+   
+</head>
+
+<body>
+    <div id="wrapper">
+        <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Sidebar.html'" />
+        <div id="nav" ng-include="templateurl"></div>
+        <div id="page-wrapper" style="float:right;" ng-controller="SingleTryMakeupController">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">单品上妆</h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>
+                                <a href="/index.html?Token={{Token}}">Macco Admin</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-table"></i>单品上妆
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div>
+                            <h2 style="display:inline-block;">单品上妆</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div style="width:10%;margin-left:20px;">
+                            <h4>选择类型：</h4>
+                            <select class="form-control" ng-change="ChangeChoose()" ng-model="SelectedCategoy" ng-options="category.ID as category.Desc for category in Categories"></select>
+                        </div>
+                    </div>
+                </div>
+                <div id="SingleContent">
+                    <div class="ColorTable">
+                        <div id="container">
+                            <color-Wheel  colors="RGBs" width="600" height="500" slice="currentSlice" callback="colorWheelClick"></color-Wheel>
+                            
+                            <div class="FlexRight">
+                                <div class="DoColor">
+                                    <button type="button" class="btn btn-primary" ng-click="SubmitOrderColor()" ng-disabled="!SelectedCategoy" style="margin-left:50px;">确认排序</button>
+                                    <button type="button" class="btn btn-primary" ng-disabled="!SelectedCategoy" ng-click="AddColor()">新增颜色</button>
+                                    <button type="button" class="btn btn-primary" ng-disabled="!SelectedCategoy" ng-click="Publish()">发布</button>
+                                </div>
+                                <table id="chartData">
+                                    <tr>
+                                        <th width="165px;">KeyNo</th>
+                                        <th width="75px;">颜色</th>
+                                        <th width="65px;">图片</th>
+                                        <th width="110px;">操作</th>
+                                    </tr>
+                                    <tr ng-repeat="color in colors"  style="color:{{color.RGB}}">
+                                       <td ng-click="changeColorWheel(color)" ng-bind="color.KeyNo"></td>
+                                       <td ng-click="changeColorWheel(color)" ng-bind="color.RGB"></td>
+                                       <td ng-click="changeColorWheel(color)"><img ng-src="{{color.ImageUrl}}"></td>
+                                       <td>
+                                           <input id="up{{color.ID}}" type="button" name="up" value="上移">
+                                           <input id="down{{color.ID}}" type="button" name="down" value="下移">
+                                           <input id="delete{{color.ID}}" type="button" name="delete" value="删除">
+                                           <input id="update{{color.ID}}" type="button" name="update" value="编辑">
+                                       </td>
+                                   </tr>
+                               </table>
+                               <div class="addcolor">
+                                <div id="AddColor" style="display:none;margin:20px 50px">
+                                    <label>图片:</label>
+                                    <div class="textipt" id="falseName" style="cursor:pointer">
+                                        <img ngf-select ng-model="Banner" ngf-src="Banner[0]"  ng-src="{{BannerUrl}}" ngf-accept="'image/*'" style="width:200px;height:200px"></img>
+                                    </div>
+                                    <label style="margin-top:20px">颜色:</label>
+                                    <input type="text" id="hue-demo" class="demo form-control" data-control="hue" value="">
+                                    <div style="margin:20px">
+                                        <button type="button" id="AddColorBtn" class="btn btn-primary" ng-click="SubmitAddColor()" style="margin-bottom: 10px;margin-left: 20px;">确认新建</button>
+                                        <button type="button" id="UpdateColorBtn" class="btn btn-primary" ng-click="SubmitUpdateColor()" style="margin-bottom: 10px;margin-left: 20px;">确认编辑</button>
+                                        <button type="button" class="btn" ng-click="CancelAddColor()"style="margin-bottom: 10px;margin-left: 20px;">取消</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="ConnectContent" style="display:none;">
+                    <div class="col-lg-6" style="margin-top:20px;">
+                        <div>             
+                            <h4 style="display:inline-block;">关联的产品列表</h4>
+                            <button type="button" ng-click="ConnectProduct()" class="btn btn-primary" style="margin-bottom: 10px;margin-left: 20px;">新增</button>
+                            <button type="button" ng-model="ObjColorKeyNo" ng-click="SubmitConnectProduct()" class="btn btn-primary" style="margin-bottom: 10px;margin-left: 20px;">确认</button>
+                        </div>
+                        <div class="DataContainer">
+                            <div class="TableTitle">
+                                <div class="col_id">ID</div>
+                                <div class="col_keyno">唯一编码</div>
+                                <div class="col_brand">品牌</div>
+                                <div class="col_chinaName">中文名</div>
+                                <div class="col_englishName">英文名</div>
+                                <div class="col_cover_image">图片</div>
+                                <div class="col_operation">操作</div>
+                            </div>
+                            <div class="clearboth"></div>
+                            <div infinite-scroll='macco.nextPage()' infinite-scroll-listen-for-event="list:search" infinite-scroll-disabled='macco.busy'
+                            infinite-scroll-distance='0'>
+                            <div ng-repeat="item in items">
+                                <div class="WrapContent ">
+                                    <div class="col_id">
+                                        <span class="mobileId">ID:</span>
+                                        <span ng-bind="item.ID"></span>
+                                    </div>
+                                    <div class="col_keyno">
+                                      <span class="mobileKeyno">唯一编码:</span><span ng-bind="item.KeyNo"></span>
+                                  </div>
+                                  <div class="col_brand">
+                                    <span class="mobilebrand">品牌:</span>
+                                    <span ng-bind="item.BrandCName"></span>
+                                </div>
+                                <div class="col_chinaName">
+                                    <span class="mobilechinaName">中文名:</span>
+                                    <a ng-bind="item.ProductCName" ng-click="this.Visit(item.ID,this.Token)" ></a>
+                                </div>
+                                <div class="col_englishName">
+                                    <span class="mobileenglishName">英文名</span>
+                                    <span ng-bind="item.ProductEName"></span>
+                                </div>
+                                <div class="col_cover_image" style="background: url('{{item.ProductImageUrl}}');    background-size:cover;">
+                                    <span class="mobileImage">图片:</span>
+                                    <img ng-src="{{item.ProductImageUrl}}">
+                                </div>
+                                <div class="col_operation">
+                                    <span class="mobileOperation">操作:</span>
+                                    <a ng-click="this.DeleteConnectProduct(item.ID)" title="删除" ng-disabled="item.IsDeletedFlag" class="btn btn-danger glyphicon glyphicon-trash"></a>
+                                </div>
+                            </div>
+                            <div class="clearboth"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

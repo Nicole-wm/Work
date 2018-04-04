@@ -1,0 +1,32 @@
+$scope.ListArr.splice($scope.ListArr.indexOf(Item), 1);
+
+弹框等成功$scope.$apply();
+
+Common.confirm({
+                title: "产品编辑",
+                message: "确认提交产品基本信息？",
+                operate: function (reselt) {
+                    if (reselt) {
+                        Common.alert({
+                            message: "产品基本信息提交成功！",
+                            operate: function (reselt) {
+                                $scope.ReloadFun(currTabPage);
+                            }
+                        })
+                    } else {
+                    }
+                }
+            })
+
+Ajax请求的时候加Mask！！！！
+
+window.open('#/app/app_details.html?ID='+ID);
+
+window.location.href = '#/app/app_list.html';
+
+$scope.ReloadFun=function(){
+		/*window.location.href = '#/app/app_list.html';*/
+		window.history.go(-1);
+	}
+
+<a href="#/app/app_details.html?ID={{item.ID}}" target="_blank">

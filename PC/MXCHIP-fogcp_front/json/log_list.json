@@ -1,0 +1,12 @@
+{
+	"IsSuccess":true,
+	"data":{
+		"count":100,
+		"result":[
+			{ "id":"1","operatetype":"链接链接链接链接链接","operatetime":"2016-03-03T11:16:24.495Z"},
+			{ "id":"2","operatetype":"传输传输传输传输","operatetime":"2016-03-04T11:17:14.894Z"},
+			{ "id":"3","operatetype":"下载下载下载下载下载","operatetime":"2016-03-05T11:06:23.135Z"},
+			{ "id":"4","operatetype":"安装安装安装安装安装","operatetime":"2016-03-06T11:23:56.462Z"}
+		]
+	}
+}

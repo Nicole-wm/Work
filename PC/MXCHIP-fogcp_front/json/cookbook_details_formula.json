@@ -1,0 +1,10 @@
+{
+	"IsSuccess":true,
+	"Data":[
+		{"ID":1,"MaterName": "巧克力","MaterQuantity":"10g","MaterRemark":""},
+		{"ID":2,"MaterName": "面粉","MaterQuantity":"100g","MaterRemark":""},
+		{"ID":3,"MaterName": "奶油","MaterQuantity":"30g","MaterRemark":"新鲜"},
+		{"ID":4,"MaterName": "黄油","MaterQuantity":"10g","MaterRemark":""},
+		{"ID":5,"MaterName": "鸡蛋","MaterQuantity":"2个","MaterRemark":""}
+	]
+}

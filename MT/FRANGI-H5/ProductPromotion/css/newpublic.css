@@ -1,0 +1,60 @@
+/*************************base*************************/
+html,body{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color:#000;
+	overflow-x: hidden;
+}
+img{
+	display:block;
+	margin: auto;
+	width: 100%;
+	border: 0;
+}
+/*******************音乐*******************/
+.music{
+	position: fixed;
+	right:20px;
+	top:20px;
+	z-index: 1000;
+}
+.open{
+	-webkit-animation: moveRo linear 3.5s  infinite;
+	animation-delay:0;
+}
+.icon-music{
+	width:1rem;
+	height:1rem;
+	background: url(../img/base/btn-music.png);
+	background-size: 100% 100%;
+	display: block;
+	opacity: 0.5;
+}
+/*动画*/
+@-webkit-keyframes moveRo {
+	from {-webkit-transform: rotate(360deg);  }
+	to { -webkit-transform: rotate(-360deg); }
+}
+@keyframes moveRo {
+	from {  transform: rotate(-360deg)}
+	to {  transform: rotate(360deg); }
+}
+
+@-webkit-keyframes openRo {
+	from { }
+	to {-webkit-transform: translateY(100%);}
+}
+@keyframes openRo {
+	from { }
+	to {transform: translateY(100%);}
+}
+
+/*******************page*******************/
+.p-content{
+	display: block;
+	margin:0 auto;
+}

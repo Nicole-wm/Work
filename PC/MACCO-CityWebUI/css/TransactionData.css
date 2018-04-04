@@ -1,0 +1,67 @@
+.PDContent{
+    height: 1550px;
+}
+.choosePlatform{
+    margin:20px;
+}
+.Time1{
+    float: left;
+    margin-left: 20px;
+}
+.Time1 li{
+    float: left;
+    width: 80px;
+    height: 30px;
+}
+.Time1 .time_grey_line{
+    width: 1px;
+    background-color: #e6e6e6;
+}
+.timeText{
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #eeeeee;
+}
+.timeslected{
+    background-color: #f14224;
+    color: #ffffff;
+}
+.Time2{
+    float: right;
+    margin-right: 20px;
+}
+.StartTimeselect,.RedLine,.EndTimeselect{
+    float: left;
+}
+.RedLine{
+    margin:15px 10px;
+    height: 1px;
+    width:25px;
+    background-color: #f14224;
+}
+.DateContent{
+    clear: both;
+}
+.DateContentTitle{
+    padding:30px;
+    font-size: 20px;
+    font-family: "微软雅黑";
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.lineChart{
+    min-width:310px; 
+    height:350px; 
+    margin: 0 20px
+}
+
+.pieChart{
+    float: left;
+    margin-top:40px;
+    min-width:500px; 
+    height:300px; 
+    max-width:500px; 
+}

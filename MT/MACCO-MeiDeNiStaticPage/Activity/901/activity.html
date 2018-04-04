@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <style>
+        @font-face {
+            font-family: 'youyuan';
+            src: url(data:font/ttf;base64,FONTBASE64) format('truetype');
+        }
+    </style>
+    <link href="../css/public.css" rel="stylesheet" charset="utf-8">
+    <link href="../css/join.css" rel="stylesheet" charset="UTF-8">
+    <link href="css/activity.css" rel="stylesheet" charset="utf-8">
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/activity.js" charset="UTF-8"></script>
+</head>
+
+<body ng-controller="activityController">
+    <div id="head" class="head RelatedImg">
+        <img id="model" src="images/banner.jpg">
+    </div>
+    <input type="hidden" ng-model="joinurl" ng-init="joinurl='/Activity/join.html'" />
+    <div ng-include="joinurl"></div>
+    <div class="clear"></div>
+    <div class="smallSize introduce">
+        <div>❤ 阿玛尼黑管唇釉试用活动结束啦❤ </div>
+        <div>恭喜以下幸运儿哦</div>
+    </div>
+    <div class="luckyPersonList">
+        <div class="luckyPerson"><img src="images/luckyhead.jpg"><span class="luckyPersonName">没有耳朵的猫</span></div>
+        <div class="luckyPerson"><img src="images/luckyhead1.jpg"><span class="luckyPersonName">miss mouse</span></div>
+        <div class="luckyPerson"><img src="images/luckyhead2.jpg"><span class="luckyPersonName">明珠珠珠</span></div>
+        <div class="luckyPerson"><img src="images/luckyhead3.jpg"><span class="luckyPersonName">AI美美</span></div>
+        <div class="luckyPerson"><img src="images/luckyhead4.jpg"><span class="luckyPersonName">绿草坪</span></div>
+    </div>
+    <div class="smallSize introduce">
+        <div>我们会尽快将产品快递给大家 </div>
+    </div>
+    <input type="hidden" ng-model="type" ng-init="type='product'">
+    <input type="hidden" ng-model="shouldLogin" ng-init="shouldLogin='true'">
+    <input type="hidden" ng-model="ObjectID" ng-init="ObjectID='4999'">
+    <div ng-if="!IsFinish" ng-class="btnJoin_n" ng-click="Join()" ng-bind="title" class="btnJoin">马上参加</div>
+    <input type="hidden" ng-model="footerurl" ng-init="footerurl='/Activity/footer.html'" />
+    <div ng-include="footerurl"></div>
+</body>
+
+</html>

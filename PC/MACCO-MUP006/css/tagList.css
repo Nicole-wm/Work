@@ -1,0 +1,42 @@
+.pull-down {
+  margin-left: 10px;
+}
+.col_id {
+	width:10%; 
+}
+.col_content{
+	width:30%;
+}
+.col_likecount{
+	width:30%;
+}
+.col_operation{
+	width:30%;
+}
+.mobileId,
+.mobileContent,
+.mobileLikecount,
+.mobileOperation{
+	display: none;
+}
+@media(max-width:768px) {
+.TableTitle,.WrapContent {
+  height: 320px;
+  max-height: 320px;
+}
+.mobileId,
+.mobileContent,
+.mobileLikecount,
+.mobileOperation{
+	    display: inline-block;
+} 
+@media(max-width:414px) {
+	.keyword{
+	   min-width: 100px;
+       width: 40%;
+	}
+	.pull-down {
+     width: 40%;
+	 margin-left: 20px;
+	}
+}

@@ -1,0 +1,314 @@
+<div ng-controller="SecureController">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="portlet light bordered">
+				<div class="portlet-body">
+					<div class="row">
+						<div class="col-md-2">
+							<span>邮箱绑定</span>
+						</div>
+						<div class="col-md-7">
+							<span ng-show="EmailBind">{{CurEmail}}为您在庆科云填写的邮箱，可用于接收庆科云发送给您的各种通知</span>
+							<span ng-show="!EmailBind">您暂未在庆科云绑定邮箱，绑定邮箱可以找回密码以及进行安全验证</span>
+						</div>
+						<div class="col-md-3">
+							<span ng-show="EmailBind" class="item green-soft font-green-soft"> <span aria-hidden="true" class="icon-check"></span> &nbsp;<span class="font-sm">已设置</span></span>
+							<span ng-show="!EmailBind" class="item yellow-crusta font-yellow-crusta"><span aria-hidden="true" class="icon-close"></span> &nbsp;<span class="font-sm">未设置</span> </span>&nbsp;|&nbsp;
+							<a class="font-blue-soft font-sm" data-original-title="点击修改绑定邮箱" data-toggle="modal" data-target="#myModal_email" ng-click="ClearFun()"><span ng-show="EmailBind">修改</span><span ng-show="!EmailBind">设置</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="portlet light bordered">
+				<div class="portlet-body">
+					<div class="row">
+						<div class="col-md-2">
+							<span>手机绑定</span>
+						</div>
+						<div class="col-md-7"> 
+							<span ng-show="PhoneBind">{{CurPhone}} 为您在庆科云填写的手机，可以找回密码以及进行安全验证</span>
+							<span ng-show="!PhoneBind">您暂未在庆科云绑定手机，绑定手机可以找回密码以及进行安全验证</span>
+						</div>
+						<div class="col-md-3">
+							<span ng-show="PhoneBind" class="item green-soft font-green-soft"> <span aria-hidden="true" class="icon-check"></span> &nbsp;<span class="font-sm">已设置</span></span>
+							<span ng-show="!PhoneBind" class="item yellow-crusta font-yellow-crusta"> <span aria-hidden="true" class="icon-close"></span> &nbsp;<span class="font-sm">未设置</span> </span>&nbsp;|&nbsp;
+							<a class="font-blue-soft font-sm" data-original-title="点击修改绑定手机" data-toggle="modal" data-target="#myModal_phone" ng-click="ClearFun()"><span ng-show="PhoneBind">修改</span><span ng-show="!PhoneBind">设置</span></a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="portlet light bordered">
+				<div class="portlet-body">
+					<div class="row">
+						<div class="col-md-2">
+							<span>登录密码</span>
+						</div>
+						<div class="col-md-7">
+							<span>您可以更换密码，建议您定期更换密码，设置一个包含字母，符号或数字中至少两项且长度超过6位的密码。</span>
+						</div>
+						<div class="col-md-3">
+							<span class="item green-soft font-green-soft"> <span aria-hidden="true" class="icon-check"></span> &nbsp;<s8pan class="font-sm">已设置</span> </span>&nbsp;|&nbsp;
+							<a class="font-blue-soft font-sm" data-original-title="点击修改密码" data-toggle="modal" data-target="#myModal_pass" ng-click="ClearFun()">修改</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<input type="hidden" id="myModal_email_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_email">
+			<div id="myModal_email" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<a href="javascript:;" class="close" data-dismiss="modal" aria-hidden="true"></a>
+							<h4 class="modal-title">修改邮箱</h4>
+						</div>
+						<div class="modal-body">
+							<div class="portlet">
+								<form  class="form-horizontal" role="form" name="EmailInfo" novalidate>
+									<div class="form-body">
+										<div class="form-group">
+											<div class="col-md-1"></div>
+											<div class="col-md-10">
+												<h5>为了保证您的账号安全，<span ng-show="EmailBind">更换绑定邮箱时进行安全验证</span><span ng-show="!EmailBind">请尽快绑定邮箱</span></h5>
+											</div>
+										</div>
+										<div ng-show="EmailBind">
+											<div class="form-group">
+												<label class="col-md-3 text-right">原邮箱</label>
+												<div class="col-md-5">{{CurEmail}}</div>
+											</div>
+											<div ng-show="CheckStep1">
+												<div class="form-group">
+													<label class="col-md-3 control-label">验证方式</label>
+													<div class="col-md-6">
+														<select name="AuthWay" ng-model="ModalAuthWay" class="form-control">
+															<option ng-show="EmailBind" value="1">邮箱：{{CurEmail}}</option>
+															<option ng-show="PhoneBind" value="2">手机：{{CurPhone}}</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-3 control-label">验证码</label>
+													<div class="col-md-3">
+														<input name="VCod1" ng-model="ModalVCod1" type="text" class="form-control" required="">
+													</div>
+													<div class="col-md-3">
+														<input id="SeVCBtn1" ng-click="SeVCBtnFun(1)" class="btn red pull-left btn-sm" type="button" value="获取验证码"/>
+													</div>
+												</div>
+											</div>
+											<div ng-show="!CheckStep1">
+												<div class="form-group">
+													<label class="col-md-3 control-label">新邮箱</label>
+													<div class="col-md-5">
+														<input name="NewEmail" ng-model="ModalNewEmail" type="text" class="form-control" required="">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-3 control-label">验证码</label>
+													<div class="col-md-3">
+														<input name="CCod1" ng-model="ModalCCod1" type="text" class="form-control" required="">
+													</div>
+													<div class="col-md-3">
+														<input ng-disabled="!EmailInfo.NewEmail.$valid" id="SeVCBtn3" ng-click="SeVCBtnFun(3)" class="btn red pull-left btn-sm" type="button" value="获取验证码"/>
+													</div>
+												</div>
+											</div> 
+											<div class="form-group">
+												<label class="col-md-3 control-label" for="title"></label>
+												<div class="col-md-5">
+													<input ng-show="CheckStep1" ng-disabled="!ModalAuthWay||!EmailInfo.VCod1.$valid" ng-click="CheckInfoFun(1,ModalAuthWay)" class="btn blue-steel" type="button" value="下一步"/>
+													<input ng-show="!CheckStep1" ng-disabled="!EmailInfo.NewEmail.$valid||!EmailInfo.CCod1.$valid" ng-click="ChangeVInfoFun(1)" class="btn blue-steel" type="submit" value="确认"/>
+													<input class="btn bg-default bg-font-default" type="submit"  data-dismiss="modal" aria-hidden="true" value="取消"/>
+												</div>
+											</div>
+										</div>
+										<div ng-show="!EmailBind">
+											<div class="form-group">
+												<label class="col-md-3 control-label">新邮箱</label>
+												<div class="col-md-5">
+													<input name="NewEmail" ng-model="ModalNewEmail" type="text" class="form-control" required="">
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-md-3 control-label">验证码</label>
+												<div class="col-md-3">
+													<input name="CCod1" ng-model="ModalCCod1" type="text" class="form-control" required="">
+												</div>
+												<div class="col-md-3">
+													<input ng-disabled="!EmailInfo.NewEmail.$valid" id="SeVCBtn3" ng-click="SeVCBtnFun(3)" class="btn red pull-left btn-sm" type="button" value="获取验证码"/>
+												</div>
+											</div> 
+											<div class="form-group">
+												<label class="col-md-3 control-label" for="title"></label>
+												<div class="col-md-5">
+													<input ng-disabled="!EmailInfo.NewEmail.$valid||!EmailInfo.CCod1.$valid" ng-click="ChangeVInfoFun(1)" class="btn blue-steel" type="submit" value="确认"/>
+													<input class="btn bg-default bg-font-default" type="submit"  data-dismiss="modal" aria-hidden="true" value="取消"/>
+												</div>
+											</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<input type="hidden" id="myModal_phone_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_phone">
+			<div id="myModal_phone" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<a href="javascript:;" class="close" data-dismiss="modal" aria-hidden="true"></a>
+							<h4 class="modal-title">修改手机</h4>
+						</div>
+						<div class="modal-body">
+							<div class="portlet">
+								<form  class="form-horizontal" role="form" name="PhoneInfo" novalidate>
+									<div class="form-body">
+										<div class="form-group">
+											<div class="col-md-1"></div>
+											<div class="col-md-10">
+												<h5>为了保证您的账号安全，<span ng-show="PhoneBind">更换绑定手机时进行安全验证</span><span ng-show="!PhoneBind">请尽快绑定手机</span></h5>
+											</div>
+										</div>
+										<div ng-show="PhoneBind">
+											<div class="form-group">
+												<label class="col-md-3 text-right">原手机</label>
+												<div class="col-md-5">{{CurPhone}}</div>
+											</div>
+											<div ng-show="CheckStep2">
+												<div class="form-group">
+													<label class="col-md-3 control-label">验证方式</label>
+													<div class="col-md-6">
+														<select name="AuthWay" ng-model="ModalAuthWay" class="form-control">
+															<option ng-show="EmailBind" value="1">邮箱：{{CurEmail}}</option>
+															<option value="2">手机：{{CurPhone}}</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-3 control-label">验证码</label>
+													<div class="col-md-3">
+														<input name="VCod2" ng-model="ModalVCod2" type="text" class="form-control" required="">
+													</div>
+													<div class="col-md-3">
+														<input id="SeVCBtn2" ng-click="SeVCBtnFun(2)" class="btn red pull-left btn-sm" type="button" value="获取验证码"/>
+													</div>
+												</div>
+											</div>
+											<div ng-show="!CheckStep2">
+												<div class="form-group">
+													<label class="col-md-3 control-label">新手机</label>
+													<div class="col-md-5">
+														<input name="NewPhone" ng-model="ModalNewPhone" type="text" class="form-control" required="">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-3 control-label">验证码</label>
+													<div class="col-md-3">
+														<input name="CCod2" ng-model="ModalCCod2" type="text" class="form-control" required="">
+													</div>
+													<div class="col-md-3">
+														<input ng-disabled="!PhoneInfo.NewPhone.$valid" id="SeVCBtn4" ng-click="SeVCBtnFun(4)" class="btn red pull-left btn-sm" type="button" value="获取验证码"/>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-md-3 control-label" for="title"></label>
+												<div class="col-md-5">
+													<input ng-show="CheckStep2" ng-show="CheckStep1" ng-disabled="!ModalAuthWay||!PhoneInfo.VCod2.$valid" ng-click="CheckInfoFun(2,ModalAuthWay)" class="btn blue-steel" type="button" value="下一步"/>
+													<input ng-show="!CheckStep2" ng-disabled="!PhoneInfo.NewPhone.$valid||!PhoneInfo.CCod2.$valid" ng-click="ChangeVInfoFun(2)" class="btn blue-steel" type="submit" value="确认"/>
+													<input class="btn bg-default bg-font-default" type="submit"  data-dismiss="modal" aria-hidden="true" value="取消"/>
+												</div>
+											</div>
+										</div>
+										<div ng-show="!PhoneBind">
+											<div class="form-group">
+												<label class="col-md-3 control-label">新手机</label>
+												<div class="col-md-5">
+													<input name="NewPhone" ng-model="ModalNewPhone" type="text" class="form-control" required="">
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-md-3 control-label">验证码</label>
+												<div class="col-md-3">
+													<input name="CCod2" ng-model="ModalCCod2" type="text" class="form-control" required="">
+												</div>
+												<div class="col-md-3">
+													<input ng-disabled="!PhoneInfo.NewPhone.$valid" id="SeVCBtn4" ng-click="SeVCBtnFun(4)" class="btn red pull-left btn-sm" type="button" value="获取验证码"/>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-md-3 control-label" for="title"></label>
+												<div class="col-md-5">
+													<input ng-disabled="!PhoneInfo.NewPhone.$valid||!PhoneInfo.CCod2.$valid" ng-click="ChangeVInfoFun(2)" class="btn blue-steel" type="submit" value="确认"/>
+													<input class="btn bg-default bg-font-default" type="submit"  data-dismiss="modal" aria-hidden="true" value="取消"/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<input type="hidden" id="myModal_pass_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_pass">
+			<div id="myModal_pass" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<a href="javascript:;" class="close" data-dismiss="modal" aria-hidden="true"></a>
+							<h4 class="modal-title">修改密码</h4>
+						</div>
+						<div class="modal-body">
+							<div class="portlet">
+								<form  class="form-horizontal" role="form" name="PasswordInfo" novalidate>
+									<div class="form-body">
+										<div class="form-group">
+											<label class="col-md-3 control-label">当前密码</label>
+											<div class="col-md-5">
+												<input name="OldPassword" ng-model="OldPassword" type="password" class="form-control" placeholder="必填" required>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">新密码</label>
+											<div class="col-md-5">
+												<input name="NewPassword" ng-model="NewPassword" type="password" class="form-control" placeholder="必填" required>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">确认密码</label>
+											<div class="col-md-5 ">
+												<input name="SurePassword" ng-model="SurePassword"  type="password" class="form-control" placeholder="必填" required>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label" for="title"></label>
+											<div class="col-md-5">
+												<input ng-disabled="!PasswordInfo.OldPassword.$valid||!PasswordInfo.NewPassword.$valid||!PasswordInfo.SurePassword.$valid" ng-click="PasswordInfoFun()" class="btn blue-steel" type="submit" value="确认"/>
+												<input class="btn bg-default bg-font-default" type="submit"  data-dismiss="modal" aria-hidden="true" value="取消"/>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

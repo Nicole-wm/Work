@@ -1,0 +1,75 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="" ng-app="maccoApp">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>美的你-韩剧造型师最喜欢用的平价彩妆</title>
+<style>
+    @font-face {
+          font-family: 'youyuan';
+          src: url(data:font/ttf;base64,FONTBASE64) format('truetype');
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="../public/boilerplate.css" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../public/comment.css" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="zx.css" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../public/publicComment.css" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../public/zan.css" charset="utf-8">
+<script type="text/javascript" src="/JS/config.js" charset="utf-8"></script>
+<script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/JS/node_modules/angular/ng-infinite-scroll.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="../js/infoController.js" charset="utf-8"></script>
+<script type="text/javascript" src="../js/CommentCtrl.js" charset="utf-8"></script>
+<script type="text/javascript" src="../js/ZanCtrl.js" charset="utf-8"></script>
+<!-- 
+要详细了解文件顶部 html 标签周围的条件注释:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+如果您使用的是 modernizr (http://www.modernizr.com/) 的自定义内部版本，请执行以下操作:
+* 在此处将链接插入 js 
+* 将下方链接移至 html5shiv
+* 将“no-js”类添加到顶部的 html 标签
+* 如果 modernizr 内部版本中包含 MQ Polyfill，您也可以将链接移至 respond.min.js 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="LayoutDiv1">
+    <div id="mainTitle">韩剧造型师最喜欢用的平价彩妆</div>
+     <input type="hidden" ng-model="zanurl" ng-init="zanurl='/Info/zan.html'" />
+     <div id="add_zan" ng-include="zanurl"></div>
+    <div class="priductInfo">大家比较熟悉的欧美彩妆师爱用品牌有M.A.C.、BOBBI BROWN、MAKE UP FOREVER等，今天小美要来推荐的是韩剧造型师爱用的韩国本土彩妆品牌。这些品牌的彩妆不仅更适合我们亚洲人的肤色，而且平价好用，特别适合喜欢韩系妆容的妹子噢~</div>
+    <div class="title">TOO COOL FOR SCHOOL</div>
+    <div class="priductInfo">年轻并具活力的化妆品牌，以“上学也很有派”作为品牌中心理念，经常推崇创新，一支百元的单品同时可具有3种功效，包装可爱性价比也很高！</div>
+    <div class="productName">恐龙广场多功能CC霜</div>
+    <div class="priductInfo">这支CC霜超神奇的！底部管妆的CC霜除了水润皮肤还有控油光滑紧致皮肤的功效，最强大的是在管状的透明盖子上还有3种不同搭配，可以选择高光粉色的腮红、米色的遮瑕或浅粉色的高光，喜欢淡妆的话只需一支就能搞定完美妆容！</div>
+    <div class="ProductImages"><img src="1.jpg"></div>
+    <div id="ProductImgeT"><img src="2.jpg"></div>
+    <div class="title">CLIO</div>
+    <div class="priductInfo">由一群韩国顶级化妆师开发的品牌，他家的彩妆性价比高而且色号非常丰富，是韩国本土妹子常用的彩妆品牌。</div>
+    <div class="productName">防水眼线液笔</div>
+    <div class="priductInfo">超级防水防油，12小时也不会晕妆~棕色的还能用来画眉毛</div>
+    <div class="ProductImages"><img src="3.jpg"></div>
+    <div class="title">ARITAUM</div>
+    <div class="priductInfo">爱茉莉太平洋集团是亚洲最大的化妆品公司，旗下有多个化妆品牌，其中ARITAUM自己的彩妆在韩国绝对是平价口碑又好的产品。</div>
+    <div class="priductInfo">双头气垫唇膏</div>
+    <div class="priductInfo">绝对是画咬唇妆的神器呐！一头是保湿度与显色都超赞的口红，另外一头是气垫海绵头，可以利用海绵头的延展性打造灰常有亲和力的咬唇妆。</div>
+    <div class="ProductImages"><img  src="5.jpg"></div>
+    <div class="priductInfo">以上介绍的这些彩妆全部在100元以下或百元左右，棒子国真是开价彩妆小天堂！亲们对自己好一点，呼唤姐妹们一起来买买买！</div>
+    <div class="clear"></div>
+    <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Info/comments.html'" />
+    <div id="add_comment" ng-include="templateurl"></div>
+  </div>
+</div>
+
+</body>
+</html>

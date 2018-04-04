@@ -1,0 +1,11 @@
+{
+	"IsSuccess":true,
+	"data":{
+		"count":3,
+		"result":[
+			{"id":1,"name":"下管开关","commtype":0,"description":"控制下管开关的指令","product_parameter":[{"id":1,"product_parameter":{"identifier": "KG_Light","pname":"炉灯开关"},"is_required":1},{"ID":3,"product_parameter":{"identifier": "KG_Turn","pname":"转叉开关"},"is_required":0}],"metadata":{"data":[{"KeyName":"asd","KeyValue":"123"},{"KeyName":"zxc","KeyValue":"789"}]}},
+			{"id":2,"name":"上火烘烤","commtype":1,"description":"控制上火烘烤的指令","product_parameter":[{"id":2,"product_parameter":{"identifier": "KG_Fan","pname":"通风开关"},"is_required":1}],"metadata":{"data":[]}},
+			{"id":3,"name":"旋转烘烤","commtype":0,"description":"控制旋转烘烤的指令","product_parameter":[],"metadata":{"data":[{"KeyName":"asd","KeyValue":"123"}]}}
+		]
+	}
+}

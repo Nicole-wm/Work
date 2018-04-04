@@ -1,0 +1,11 @@
+dashboard_stat：智能产品中心-数据
+dashboard_pie：智能产品中心-每种产品的激活量占比
+dashboard_bar：智能产品中心-每种APP的用户数比较图
+
+product_category：产品管理-产品分类类别
+product_list：产品管理-产品列表
+product_details：产品管理-产品详情
+product_details_base：产品管理-产品详情-基础
+product_details_attribute：产品管理-产品详情-属性
+product_details_interactive：产品管理-产品详情-指令
+

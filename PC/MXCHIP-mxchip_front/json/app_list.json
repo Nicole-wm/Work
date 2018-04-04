@@ -1,0 +1,18 @@
+{
+	"IsSuccess":true,
+	"data":{
+		"count":86,
+		"result":[
+			{ "appid":"72b72f72-3c2e-11e6-9d95-00163e103941","name":"ACA烤箱","shortname":"烤箱1"},
+			{ "appid":"a2505efc-3c2e-11e6-9d95-00163e103941","name":"超级冰箱","shortname":"冰箱1"},
+			{ "appid":"0f3b5794-419b-11e6-9d95-00163e103941","name":"Super热水器","shortname":"热水器1"},
+			{ "appid":"8b1fd160-5473-11e6-9baf-00163e120d98","name":"哈喽电视","shortname":"电视1"},
+			{ "appid":"a2505efc-3c2e-11e6-9d95-00163e103941","name":"全自动洗衣机","shortname":"洗衣机1"},
+			{ "appid":"0f3b5794-419b-11e6-9d95-00163e103941","name":"美好微波炉","shortname":"微波炉1"},
+			{ "appid":"8b1fd160-5473-11e6-9baf-00163e120d98","name":"节能空调","shortname":"空调1"},
+			{ "appid":"72b72f72-3c2e-11e6-9d95-00163e103941","name":"天天烤箱","shortname":"烤箱2"},
+			{ "appid":"a2505efc-3c2e-11e6-9d95-00163e103941","name":"智能冰箱","shortname":"冰箱2"},
+			{ "appid":"0f3b5794-419b-11e6-9d95-00163e103941","name":"每天热水器","shortname":"热水器2"}
+		]
+	}
+}

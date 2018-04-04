@@ -1,0 +1,13 @@
+{
+	"IsSuccess":true,
+	"Data":{ 
+		"ID":"757fb2e4-48d9-11e6-9baf-00163e120d98",
+		"Password":"123",
+		"UserName":"Fog",
+		"CompanyName":"上海庆科信息科技有限公司",
+		"Location":"上海",
+		"Website":"http://www.mxchip.com",
+		"Description":"",
+		"ImageUrl":"../assets/pages/img/fogdefault.jpg"
+	}
+}

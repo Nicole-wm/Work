@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>  
+    <style>
+        @font-face {
+            font-family: 'youyuan';
+            src: url(data:font/ttf;base64,FONTBASE64) format('truetype');
+        }
+    </style>
+    <link href="../css/public.css" rel="stylesheet" charset="UTF-8">
+    <link href="../css/join.css" rel="stylesheet" charset="UTF-8">
+    <link href="css/activity.css" rel="stylesheet" charset="UTF-8">
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script> 
+    <script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/activity.js" charset="UTF-8"></script>
+</head>
+
+<body ng-controller="activityController">
+    <div id="head" class="head RelatedImg">
+        <img id="model" src="images/001.png">
+    </div>
+    <input type="hidden" ng-model="joinurl" ng-init="joinurl='/Activity/join.html'" />
+    <div ng-include="joinurl"></div>
+    <div class="clear"></div>
+    <div class="bigSize theme">加‘美的你’公众号</div>
+    <div class="bigSize theme">丽得姿面膜免费拿</div>
+    <div class="smallSize introduce">
+        <div>换季的日子里，小美让你舒舒坦坦敷！面！膜！</div>
+        <div>现在，关注小美的微信号</div>
+    </div>
+    <div class="smallSize introduce">
+        <div>就送你韩国面膜界的神话：<span class="MaskName" style="color: #ff0000;">丽得姿面膜</span>啦</div>
+    </div>
+    <div class="relatedPictures">
+        <img src="images/002.png">
+    </div>
+    <div class="smallSize introduce">
+        <div>美的你微信公众号：</div>
+    </div>
+    <div class="relatedPictures">
+        <img src="images/003.png">
+    </div>
+    <div class="smallSize introduce">
+        <div>20万女生的聚集地</div>
+        <div>扮靓秘籍&美妆技巧分享乐园</div>
+        <div>爱美女生都爱看的时尚公众号</div>
+    </div>
+    <div class="bigSize actionRule">参与规则：</div>
+    <div class="smallSize step one">
+        <span>Step 1：点击</span>
+        <span class="join smallSize">马上参与</span>
+        <span>将该活动分享到你的朋友圈/微博，并截图</span>
+    </div>
+    <div class="smallSize step">Step 2：关注微信公众账号“美的你”：打开微信 → 添加好友 →搜索“美的你”→ 添加关注</div>
+    <div class="RulePictures">
+        <img src="images/004.png">
+    </div>
+    <div class="smallSize step">Step 3：在公众号内回复“面膜”2字，即算参加成功；</div>
+    <div class="RulePictures">
+        <img src="images/005.png">
+    </div>
+    <div class="smallSize">
+        <div style="text-align:center;">我们将从所有回复者中抽取10位幸运儿，送出丽得姿面膜1盒。</div>
+    </div>
+    <div class="bigSize prize">活动奖品：</div>
+    <div class="smallSize">
+        <div style="text-align: inherit;"><span class="MaskNum">丽得姿面膜10盒</span><span>价值：120元/盒</span></div>
+    </div>
+    <div class="RulePictures">
+        <img src="images/006.png">
+    </div>
+    <div class="smallSize Mask" >
+        <div style="margin-left:10px;">韩国丽得姿氨基酸补水面膜：</div>
+    </div>
+    <div class="smallSize MaskIntroduce" >
+        <div>在韩国上市以来分分钟卖断货的丽得姿氨基酸面膜，拥有17种氨</div>
+        <div>基酸成分，补充皮肤保湿因子和神经酰胺成分，强化皮肤壁垒，</div>
+        <div>抵御外界伤害，让你的皮肤更水嫩无暇！</div>
+    </div>
+    <input type="hidden" ng-model="type" ng-init="type='toMarket'">
+    <input type="hidden" ng-model="shouldLogin" ng-init="shouldLogin='true'">
+    <input type="hidden" ng-model="ObjectID" ng-init="ObjectID=''">
+    <div ng-if="!IsFinish" ng-class="btnJoin_n" ng-click="Join()" ng-bind="title" class="btnJoin">马上参加</div>
+    <input type="hidden" ng-model="footerurl" ng-init="footerurl='/Activity/footer.html'" />
+    <div ng-include="footerurl"></div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+	"meta": {
+		"message": "功能组件列表获取成功",
+		"code": 0
+	},
+	"data": [
+		{
+			"id": 1,
+			"name": "id1",
+			"url": "http://www.id1.com/",
+			"attributes": {
+				"APPkey": "",
+				"megTemplateID": "",
+				"Secretket": "",
+				"sign": ""
+			},
+			"description": "id1"
+		},
+		{
+			"id": 2,
+			"name": "id2",
+			"url": "www.id2.com",
+			"attributes": {
+				"megTemplateID": ""
+			},
+			"description": "id2"
+		},
+		{
+			"id": 3,
+			"name": "id3",
+			"url": "www.id3.com",
+			"attributes": {
+				"APPkey": "",
+				"megTemplateID": ""
+			},
+			"description": "id3"
+		}
+	]
+}

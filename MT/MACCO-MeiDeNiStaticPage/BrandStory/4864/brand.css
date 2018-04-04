@@ -1,0 +1,26 @@
+@charset "UTF-8";
+.text{
+  position: relative;
+  top: -380px;
+  line-height: 24px;
+  width: 96%;
+  margin: 0 auto;
+}
+@media(max-width:375px){
+.text {
+  top: -350px
+}
+}
+@media(max-width:360px){
+.brand {
+	margin-bottom: 20px;
+}
+.text {
+  top: -360px
+}
+}
+@media(max-width:320px){
+.text {
+  top: -300px;
+}
+}

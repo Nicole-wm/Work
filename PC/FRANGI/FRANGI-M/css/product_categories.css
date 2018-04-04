@@ -1,0 +1,28 @@
+.pro_banner img{
+	width: 100%;
+}
+.pro_d{
+	clear: both;
+	position: relative;
+}
+.pro_l{
+	width: 40%;
+	margin:0.5rem 0;
+}
+.pro_r{
+	width:58%;
+	padding-right: 2%;
+	position: absolute;
+	top:50%;
+	left:70%;
+	transform: translate(-50%,-50%);
+}
+.pro_img{
+	width:100%;
+}
+.icon_arrow{
+	width: 0.7rem;
+	height: 0.5rem;
+	background-position: 0% -5%;
+	background-size: 0.9rem 2rem;
+}

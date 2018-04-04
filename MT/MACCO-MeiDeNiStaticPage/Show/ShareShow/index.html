@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>晒一晒</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/zan.css" media="screen" charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/addTag.css" media="screen" charset="UTF-8">
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/ng-infinite-scroll.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/hammer.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/index.js" charset="UTF-8"></script>
+</head>
+
+<body ng-controller="shareController">
+    <div id="container" class="container">
+        <div class="userInfo">
+            <div class="left">
+                <img ng-src="{{share.Avatar}}">
+                <span class="shareUser" ng-bind="share.NickName"></span>
+            </div>
+            <div class="right shareTime" ng-bind="share.DateDiff"></div>
+        </div>
+        <div class="clear"></div>
+        
+        <div id="TempText1" class="note_text noteFLeft noteTextTop2" style="display:none"></div>
+        <div id="TempText2" class="note_text noteFRight noteTextTop2" style="display:none"></div>
+        
+        <div class="uploadImg" id="uploadImg">
+            <div id="ShowImageDiv{{$index}}" class="ShowImageDiv" ng-class="banner.currentShow" ng-repeat="banner in share.ShowIndexDetail track by $index">
+                <img id="HideImgDiv{{$index}}" ng-src="{{banner.ImageUrl}}">
+                <div id="ShowNodeDiv{{$index}}" ng-bind-html="banner.NodeDivHtml"></div>
+            </div>
+        </div>
+        <div class="shareTag">
+            <div class="tagTitle" ng-bind="share.Description"></div>
+            <div class="tagList" id="tagList">
+                <div class="tagListMove">
+                    <span ng-repeat="tag in share.Tags" ng-bind="tag.TagName"></span>
+                </div>
+            </div>
+            <div class="blank"></div>
+        </div>
+        <div class="ZanDiv">
+            <div class="PercentDiv">
+                <div class="LikePercentText">{{LikeLinePercent}}%</div>
+                <div class="PercentLine" style="{{PercentLine}}">
+                    <div class="LikeLine" style="{{LikePrecent}}"></div>
+                    <div class="UnlikeLine" style="{{UnLikePrecent}}"></div>
+                </div>
+                <div class="UnlikePercentText">{{UnLikeLinePercent}}%</div>
+            </div>
+            <div class="BtnDiv">
+                <div class="LikeBtn" ng-click="LikeProductFn(1)">
+                    <div class="LikeIcon">
+                        <img src="image/like.png "></div>
+                    <div class="CountText">{{LikeCountText}}</div>
+                    <span ng-class="likeAnimate" ng-hide="addlike">+1</span>
+                </div>
+                <div class="VSText">VS</div>
+                <div class="UnlikeBtn" ng-click="LikeProductFn(0)">
+                    <div class="UnlikeIcon">
+                        <img src="image/unlike.png "></div>
+                    <div class="CountText">{{UnLikeCountText}}</div>
+                    <span ng-class="unlikeAnimate" ng-hide="addunlike">+1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="conmentTitle">
+            <div class="titleCount" ng-bind="allCommetnCount"></div>
+            <div class="titleText">条评论</div>
+            <div class="allTitle" ng-hide="allCommentTitle" ng-click="allTitleClick()">全部评论></div>
+        </div>
+        <div class="clear"></div>
+        <div class="commentList">
+            <div class="commentDetail" ng-repeat="comment in comments">
+                <div class="commentLeft">
+                    <img ng-src="{{comment.Avatar}}"></div>
+                <div class="commentRight">
+                    <div class="commentUser">
+                        <div class="commentUserName" ng-bind="comment.NickName"></div>
+                        <div class="commentZanCount" ng-click="ZanComment(comment)">
+                            <span class="zancount" ng-bind="comment.LikeCount"></span>
+                            <img ng-hide="comment.ShowCommentLike" src="image/zan_nor.png">
+                            <img ng-show="comment.ShowCommentLike" src="image/zan_dow.png">
+                            <span ng-class="imgAnimate" ng-hide="comment.isanimate">
+                            <img src="image/zan_dow.png"></span>
+                        </div>
+                    </div>
+                    <div class="commentText" ng-bind="comment.Comment"></div>
+                    <div class="commentTime" ng-bind="comment.commentTime"></div>
+                </div>
+            </div>
+        </div>
+        <div class="maylike">你可能会喜欢</div>
+        <div infinite-scroll='macco.nextPage()' infinite-scroll-listen-for-event="list:search" infinite-scroll-disabled='macco.busy'
+            infinite-scroll-distance='0'>
+            <div class="mayLikeList">
+                <div class="mayLikeDetail" ng-repeat="item in macco.items">
+                    <div class="likeImg" ng-click="goDetail(item.ID)">
+                        <img ng-src="{{item.ImageUrl}}"></div>
+                    <div class="likeTitle ellipsis_2" ng-bind="item.Description"></div>
+                    <div class="likeFrom ellipsis" ng-bind="item.TagSource"></div>
+                    <div class="likebottom">
+                        <div class="width26Div">
+                            <img ng-src="{{item.Avatar}}" class="width26"></div>
+                        <div class="bottomName ellipsis" ng-bind="item.NickName"></div>
+                        <div class="bottomLikeCount" ng-bind="item.LikeCount"></div>
+                        <div class="width10Div" ng-click="shareZan(item)">
+                            <img ng-hide="item.ShowMayLike" src="image/sys_like_nor.png" class="width10">
+                            <img ng-show="item.ShowMayLike" src="image/sys_like_dow.png" class="width10">
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="com_footer" ng-show="{{IsShowFooter}}" ng-click="download()">
+        <img src="image/download.png">
+    </div>
+</body>
+
+</html>

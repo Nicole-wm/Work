@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>晒一晒评论</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" charset="UTF-8">
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/ng-infinite-scroll.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/shareComment.js" charset="UTF-8"></script>
+</head>
+
+<body ng-controller="shareCommentController">
+    <div infinite-scroll='macco.nextPage()' infinite-scroll-listen-for-event="list:search" infinite-scroll-disabled='macco.busy'
+        infinite-scroll-distance='0'>
+        <div class="commentList">
+            <div class="commentDetail" ng-repeat="comment in macco.items">
+                <div class="commentLeft">
+                    <img ng-src="{{comment.Avatar}}"></div>
+                <div class="commentRight">
+                    <div class="commentUser">
+                        <div class="commentUserName" ng-bind="comment.NickName"></div>
+                        <div class="commentZanCount" ng-click="ZanComment(comment)">
+                            <span class="zancount" ng-bind="comment.LikeCount"></span>
+                            <img ng-hide="comment.ShowCommentLike" src="image/zan_nor.png">
+                            <img ng-show="comment.ShowCommentLike" src="image/zan_dow.png">
+                            <span ng-class="imgAnimate" ng-hide="comment.isanimate">
+                            <img src="image/zan_dow.png"></span>
+                        </div>
+                    </div>
+                    <div class="commentText" ng-bind="comment.Comment"></div>
+                    <div class="commentTime" ng-bind="comment.commentTime"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

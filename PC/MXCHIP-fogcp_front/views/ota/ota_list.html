@@ -1,0 +1,77 @@
+<div class="row" ng-controller="OTAListController">
+	<div class="col-md-12">
+		<div class="row">
+			<div class="form-group col-lg-3">
+				<div class="input-icon right">
+					<i ng-click="SearchOTA()" class="icon-magnifier"></i>
+					<input ng-model="Keyword" type="text" class="form-control" placeholder="请输入关键字"> 
+				</div>
+			</div>
+			<div class="form-group col-lg-3">
+				<a ng-click="AddOTA()" class="btn bg-blue-steel bg-font-blue-steel">添加OTA文件</a>
+			</div>
+		</div>
+		<div class="row" ng-show="totalItems===0">
+			<div class="form-group col-lg-12"><h4>暂无OTA</h4></div>
+		</div> 
+		<div class="row" ng-show="totalItems!==0">
+			<div class="row" >
+				<div class="col-md-4 col-sm-12" ng-repeat="item in ListArr">
+					<div class="portlet blue-hoki box">
+						<div class="portlet-title">
+							<div class="caption"><span class="text-ellipsis" title="{{item.ofid}}">文件ID：{{item.ofid}}</span></div>
+							<div class="actions">
+								<a ng-click="DoTaskFun(item.ofid)" class="btn btn-default btn-sm">
+									<i class="fa fa-pencil"></i> 任务
+								</a>
+							</div>
+						</div>
+						<div class="portlet-body">
+							<div class="row static-info">
+								<div class="col-md-4 name">文件名：</div>
+								<div class="col-md-8 value text-ellipsis" title="{{item.file_name}}">{{item.file_name}}</div>
+							</div>
+							<div class="row static-info">
+								<div class="col-md-4 name">下载地址：</div>
+								<div class="col-md-6 value text-ellipsis" title="{{item.file_url}}">{{item.file_url}}</div>
+								<div class="col-md-2 name">
+									<span data-original-title="点击展开下载地址" data-toggle="modal" data-target="#myModal_URL" ng-click="CopyUrl(item.file_url)" class="btn font-sm mt-code bg-default bg-font-default ">展开</span>
+								</div>
+							</div>
+							<div class="row static-info">
+								<div class="col-md-4 name">固件版本号：</div>
+								<div class="col-md-8 value text-ellipsis" title="{{item.version}}">{{item.version}}</div>
+							</div>
+							<div class="row static-info">
+								<div class="col-md-4 name">上传时间：</div>
+								<div class="col-md-8 value text-ellipsis">{{item.upload_time|date:'yyyy-MM-dd HH:mm:ss'}}</div>
+							</div>
+							<div class="row static-info">
+								<div class="col-md-4 name">升级说明：</div>
+								<div class="col-md-8 value text-ellipsis" title="{{item.description}}">{{item.description}}</div>
+							</div>
+							<div class="row static-info">
+								<div class="col-md-4 name">自定义：</div>
+								<div class="col-md-8 value text-ellipsis" title="{{item.customize}}">{{item.customize}}</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<uib-pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize" class="pagination" boundary-links="true" rotate="false" num-pages="numPages" ng-change="pageChanged()"></uib-pagination>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<input type="hidden" id="common_URL_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_URL">
+		<div id="myModal_URL" class="modal fade">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-body">
+					<h4><span class="message">{{ModalUrl}}</span></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

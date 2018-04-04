@@ -1,0 +1,50 @@
+.DataContainer,.DataContainer > div:first-child{
+	border:none;
+}
+.DataContainer > div:first-child{
+	height: 10px;
+}
+.PhotoWallImage,.PhotoWallImage >img,.photo_mask{
+	width: 187px;
+	height: 333px;
+}
+.PhotoWallImage{
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+.photo_mask{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index:1000;
+	background-color:#000000;/* IE6和部分IE7内核的浏览器(如QQ浏览器)下颜色被覆盖 */
+	background-color:rgba(0,0,0,0.5); /* IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂，但解析为透明 */
+	color: #ffffff;
+	font-size:100px;
+	line-height: 333px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.btnlist{
+	position: fixed;
+	right:10px;
+	top:0px;
+	bottom: 0px;
+	margin: auto;
+	height:115px;
+}
+.deletebtn,.topbtn{
+	width: 50px;
+	height: 50px;
+	background-color: #000000;
+	color: #ffffff;
+	line-height: 50px;
+	font-size: 18px;
+	text-align: center;
+	cursor: pointer;
+}
+.deletebtn{
+	margin-bottom:15px;
+}

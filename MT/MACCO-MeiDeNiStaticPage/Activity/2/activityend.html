@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <style>
+        @font-face {
+            font-family: 'youyuan';
+            src: url(data:font/ttf;base64,FONTBASE64) format('truetype');
+        }
+    </style>
+    <link href="../css/public.css" rel="stylesheet" charset="UTF-8">
+    <link href="../css/join.css" rel="stylesheet" charset="UTF-8">
+    <link href="css/activityend.css" rel="stylesheet" charset="UTF-8">
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script> 
+    <script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/activity.js" charset="UTF-8"></script>
+</head>
+
+<body  ng-controller="activityController">
+    <div id="head" class="head RelatedImg">
+        <img id="model" src="images/55.jpg">
+    </div>
+    <input type="hidden" ng-model="joinurl" ng-init="joinurl='/Activity/join.html'" />
+    <div ng-include="joinurl"></div>
+    <div class="clear"></div>
+    <div class="WinningSingle">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="announce bigSize">
+            <div>50元话费</div>
+            <div>中奖名单揭晓</div>
+        </div>
+    </div>
+    <div class="listDiv">
+        <div class="nameList1">
+            <div>1、黄丹格</div>
+            <div>2、阿琳</div>
+            <div>3、Weirdo</div>
+            <div>4、xxx</div>
+            <div>5、隐藏我的烦恼</div>
+        </div>
+        <div class="nameList2">
+            <div>1、黄丹格</div>
+            <div>2、阿琳</div>
+            <div>3、Weirdo</div>
+            <div>4、xxx</div>
+            <div>5、隐藏我的烦恼</div>
+        </div>
+        <div class="clear"> </div>
+    </div>
+    <div class="listDiv">
+        <div class="nameList2">
+            <div>1、黄丹格</div>
+            <div>2、阿琳</div>
+            <div>3、Weirdo</div>
+            <div>4、xxx</div>
+            <div>5、隐藏我的烦恼</div>
+        </div>
+        <div class="nameList1">
+            <div>1、黄丹格</div>
+            <div>2、阿琳</div>
+            <div>3、Weirdo</div>
+            <div>4、xxx</div>
+            <div>5、隐藏我的烦恼</div>
+        </div>
+        <div class="clear"> </div>
+    </div>
+    <div class="awardWay">
+        <div class="middleSize"><strong>如何领奖：</strong></div>
+        <div class="number">1. 请以上获奖的ID同学，打开微信——添加好友——搜索“<strong>美的你</strong>”——添加关注。</div>
+        <div class="number">2. 与小美在微信上及时获得联系，以便领奖。</div>
+        <div class="lastText middleSize"><strong>再次恭喜中奖的各位啦</strong></div>
+    </div>
+    <div class="Line"></div>
+    <div class="smallSize introduce">美的你全新上线, 你敢给我好评，我就送你
+        <span class="telephoneFare">话费</span>啦~</div>
+        <div class="relatedPictures">
+            <img src="images/11.jpg">
+        </div>
+        <div class="smallSize">
+            <div>看着我的眼神，</div>
+        </div>
+        <div class="bigSize actionRule">活动规则：</div>
+        <div class="smallSize step one">
+            <span>Step 1：点击</span>
+            <span class="join smallSize">马上参加</span>
+            <span>跳转至各大应用市场；</span>
+        </div>
+        <div class="smallSize step">Step 2：记得给小美【5星+好评留言】，并截图；</div>
+        <div class="relatedPictures">
+            <img src="images/22.jpg">
+        </div>
+        <div class="bigSize pat">注意:</div>
+        <div class="smallSize">
+            <div>1、苹果AppStore的点评需要2~5天后才能显示出来，所以 大家不要急，只要显示出来都算你们参加成功哦。</div>
+            <div>2、我们将在活动结束后3天抽选100为幸运者，为大家及时充值。</div>
+        </div>
+        <div class="bigSize prize">奖品：</div>
+        <div class="smallSize">
+            <div>50元话费（移动、联通、电信）</div>
+        </div>
+        <div class="relatedPictures">
+            <img src="images/66.jpg">
+        </div>
+        <input type="hidden" ng-model="type" ng-init="type='toMarket'">
+        <input type="hidden" ng-model="shouldLogin" ng-init="shouldLogin='true'">
+        <input type="hidden" ng-model="ObjectID" ng-init="ObjectID=''">
+        <div ng-if="!IsFinish" ng-class="btnJoin_n" ng-click="Join()" ng-bind="title"></div>
+        <input type="hidden" ng-model="footerurl" ng-init="footerurl='/Activity/footer.html'" />
+        <div ng-include="footerurl"></div>
+    </body>
+    </html>

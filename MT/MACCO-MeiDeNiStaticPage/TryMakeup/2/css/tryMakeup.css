@@ -1,0 +1,238 @@
+@charset "UTF-8";
+.clear{
+	clear: both;
+}
+.line{
+  height:5px;
+  background:#ff0024;
+}
+.maxHeightLine{
+  background:#ff0024;
+  height: 84px;
+  margin-top: 7px;
+}
+.head>img{
+  width: 100%;
+}
+.heart {   
+     position: relative;    
+     height: 30px;
+     margin-top: 54px;
+     margin-bottom: 49px;
+   } 
+.heart:before, .heart:after {    
+    position: absolute;    
+    content: "";  
+    left: 50%;    
+    top: 0;    
+    width: 18px;
+    height: 30px;
+    background: red;    
+    -moz-border-radius: 50px 50px 0 0; 
+    border-radius: 50px 50px 0 0;   
+    -webkit-transform: rotate(-44deg);       
+    -moz-transform: rotate(-44deg);         
+    -ms-transform: rotate(-44deg);         
+    -o-transform: rotate(-44deg);             
+    transform: rotate(-44deg);    
+    -webkit-transform-origin: 0 100%;        
+    -moz-transform-origin: 0 100%;        
+    -ms-transform-origin: 0 100%;         
+    -o-transform-origin: 0 100%;           
+    transform-origin: 0 100%; 
+  } 
+.heart:after {    
+       left: 46%;    
+    -webkit-transform: rotate(44deg);      
+    -moz-transform: rotate(44deg);        
+    -ms-transform: rotate(44deg);        
+    -o-transform: rotate(44deg);           
+    transform: rotate(44deg);    
+    -webkit-transform-origin: 100% 100%;      
+    -moz-transform-origin: 100% 100%;         
+    -ms-transform-origin: 100% 100%;        
+    -o-transform-origin: 100% 100%;             
+    transform-origin :100% 100%; 
+  }               
+    
+.RelatedImg>img{
+width: 100%;
+}
+
+.bigWordSize{
+	font-size: 1.625rem;
+}
+.smallWordSize{
+    font-size: 1rem;
+}
+
+.TextContent{
+  margin: 0 auto;
+  margin-top: 43px;
+  margin-bottom: 82px;
+}
+.TextContent>div{
+  text-align: center;
+  line-height: 30px;
+}
+.mainPoint
+{
+  position: relative;
+}
+.mainPoint >img{
+   width: 40%;
+  margin-left: 20px;
+}
+
+.mainPointText{
+  position: absolute;
+  bottom: 32px;
+  text-align: center;
+  width: 100%;
+}
+.step{
+  padding: 4px 10px;
+  border-radius: 10px;
+  border-top-left-radius: initial;
+  border-bottom-left-radius: initial;
+  box-sizing: border-box;
+  background: #ff0024;
+  height: 45px;
+  width: 64%;
+  margin-top: 77px;
+  color: #ffffff;
+}
+.direct{
+  width: 100%;
+  text-align: center;
+  margin: 56px auto;
+}
+#stepTwo{
+  margin-top: 65px;
+}
+.stepTwoContent{
+    margin-bottom: 71px;
+}
+.summarizeHeart:before,.summarizeHeart:after{
+  left: 75%;
+}
+.summarizeHeart:after {
+  left: 36%;
+}
+.summarizeHeart
+{
+  width: 10%;
+ height: 0px; 
+ margin-top: 0px; 
+ margin-bottom: 0px;
+ float: left;
+ margin-left: 30px;
+}
+.summarizeRightHeart{
+    margin-left: 290px;
+    height: 0px; 
+    margin-top: 0px; 
+    margin-bottom: 0px;
+}
+.summarizeRightHeart:before,summarizeRightHeart:after{
+   transform: rotate(-43deg);
+}
+.summarizeRightHeart:after{
+    left: 38%;
+}
+.lastText{
+    float: left;
+    width: 100%;
+  text-align: center;
+}
+.summarize{
+  margin-top: 109px;
+}
+.lastImg{
+   margin-top: 83px;
+}
+@media (max-width: 375px){
+.smallWordSize{
+	font-size: 0.9375rem;
+}
+
+.bigWordSize{
+ font-size: 1.5rem;
+}
+.heart:before, .heart:after{
+  width: 16px;
+  height: 28px;
+  transform: rotate(-45deg);
+}
+.heart:after {
+  left: 46%;
+  transform: rotate(45deg);
+}
+.summarizeHeart:after{
+    left: 35%;
+}
+.summarizeRightHeart:after{
+  left: 35%;
+}
+.summarizeHeart {
+  margin-left: 25px;
+}
+.summarizeRightHeart {
+  margin-left: 270px;
+}
+}
+@media (max-width: 360px){
+.smallWordSize{
+  font-size: 0.875rem;
+}
+.bigWordSize{
+font-size: 1.437rem;
+}
+.summarizeHeart {
+  margin-left: 23px;
+}
+.summarizeHeart:after {
+  left: 30%;
+}
+.summarizeRightHeart:after {
+  left: 33%;
+}
+}
+@media (max-width: 320px){
+.smallWordSize{
+  font-size: 0.8125rem;
+}
+.bigWordSize{
+  font-size: 1.3125rem
+}
+
+.heart:before, .heart:after {
+  width: 14px;
+  height: 23px;
+  transform: rotate(-45deg);
+}
+.heart:after {
+  left: 46%;
+  transform: rotate(45deg);
+}
+.summarizeHeart:before,.summarizeHeart:after{
+    transform: rotate(-42deg);
+}
+.summarizeHeart:after {
+  left: 39%;
+  transform: rotate(42deg);
+}
+.summarizeRightHeart:before,.summarizeRightHeart:after{
+    transform: rotate(-42deg);
+}
+.summarizeRightHeart:after{
+       left: 36%;
+  transform: rotate(42deg);
+}
+.summarizeRightHeart {
+  margin-left: 230px;
+}
+.summarizeHeart {
+  margin-left: 22px;
+}
+}

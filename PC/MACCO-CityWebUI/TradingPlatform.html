@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>交易平台</title>
+	<!-- build:css -->
+<link href="css/base.css" rel="stylesheet" charset="UTF-8"> 
+<link href="css/public.css" rel="stylesheet" charset="UTF-8"> 
+<link href="css/top.css" rel="stylesheet" charset="UTF-8">  
+<link href="css/footer.css" rel="stylesheet" charset="UTF-8"> 
+<!-- endbuild -->
+<!-- build:js -->
+<script src="js/jquery-1.9.1.min.js" charset="UTF-8"></script>
+<script src="js/avalon.js" charset="UTF-8"></script>
+<script src="js/dropdownlist.js" charset="UTF-8"></script>
+<script src="js/top.js" charset="UTF-8"></script>
+<script src="js/footer.js" charset="UTF-8"></script>
+<script src="js/public.js" charset="UTF-8"></script>
+<!-- endbuild -->
+</head>
+<body ms-controller="publicjs">
+	<div class="top_all">
+	<div class="top">
+		<div class="top_text">
+			<div class="top_text_l left">
+				<ul>
+					<li><a href="login.html" style="color:#cccccc">登录</a></li>
+					<li class="line"></li>
+					<li><a href="Register.html" style="color:#cccccc">注册</a></li>
+				</ul>
+			</div>
+			<div class="top_text_r right">
+				<ul>
+					<li><a style="color:#cccccc">测试版</a></li>
+					<li class="line"></a></li>
+					<li><a style="color:#cccccc">论坛</a></li>
+					<li class="line"></li>
+					<li><a href="index.html" style="color:#cccccc">首页</a></li>
+					<li class="line"></li>
+					<li><a style="color:#cccccc">加入收藏</a></li>
+					<li class="line"></li>
+					<li><a style="color:#cccccc">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Logo -->
+	<div class="Logo">
+		<a href="index.html"><img src="images/logo.png"></a>
+		<div class="SearchDiv htc">
+			<input id="SearchInput" type="text" value="搜索关键字">
+			<div class="icon SearchDiv_img">
+			</div>
+		</div>
+	</div>
+	<!-- Menu -->
+	<div class="Menu">
+		<div class="Menu_content">
+			<div class="menu_ul" id="menu_ul">
+				<ul>
+					<li class="menu_ul_select" id="Menu1" onmouseover="setMenu(1)" onclick="chooseMenu(1)"><a>首页</a></li>
+					<li class="double_line"></a></li>
+					<li id="Menu2" onmouseover="setMenu(2)"  onclick="chooseMenu(2)"><a>交易公开</a></li>
+					<li class="double_line"></li>
+					<li id="Menu3" onmouseover="setMenu(3)"   onclick="chooseMenu(3)"><a>交易平台</a></li>
+					<li class="double_line"></li>
+					<li id="Menu4" onmouseover="setMenu(4)"   onclick="chooseMenu(4)"><a>市场资信</a></li>
+					<li class="double_line"></li>
+					<li id="Menu5" onmouseover="setMenu(5)"  onclick="chooseMenu(5)"><a>交易数据</a></li>
+					<li class="double_line"></a></li>
+					<li id="Menu6" onmouseover="setMenu(6)"  onclick="chooseMenu(6)"><a>评标专家</a></li>
+					<li class="double_line"></li>
+					<li id="Menu7" onmouseover="setMenu(7)"  onclick="chooseMenu(7)"><a>行政监督</a></li>
+					<li class="double_line"></li>
+					<li id="Menu8" onmouseover="setMenu(8)"  onclick="chooseMenu(8)"><a>政策法规</a></li>
+					<li class="double_line"></li>
+					<li id="Menu9" onmouseover="setMenu(9)"  onclick="chooseMenu(9)"><a>市场动态</a></li>
+					<li class="double_line"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+	<div>
+		<div class="Menu_s">
+			<div class="menu_s_row">
+				<div class="menu_announcement">
+					<div class="pos_img"></div>
+					<div class="pos_text">
+						<span class="pos_text_1">位置：</span>
+						<span class="pos_text_2" ms-visible="currentIndex === 0">首页> </span>
+						<span class="pos_text_3" ms-visible="currentIndex === 0">交易平台</span>
+						<span class="pos_text_2" ms-visible="currentIndex != 0">首页> 交易平台 ></span>
+						<span class="pos_text_3" ms-visible="currentIndex === 1">南京市公共资源交易中心</span>
+						<span class="pos_text_3" ms-visible="currentIndex === 2">国义招标</span>
+						<span class="pos_text_3" ms-visible="currentIndex === 3">东风招投标交易中心</span>
+						<span class="pos_text_3" ms-visible="currentIndex === 4">苏州市公共资源交易中心</span>
+					</div>
+				</div>
+				<div class="menu_time">
+					<div class="time_img icon"></div>
+					<span>2016.3.4 15:26:38</span>
+				</div>
+			</div>
+		</div>
+		<div class="Content">
+			<div class="Content_left PublicBorder">
+				<div ms-visible="currentIndex === 0">
+					<div class="Mk_Title"></div>
+					<div class="TP_content">
+						<div class="Big_title ellipsis">交易平台</div>
+						<div class="Content_Text">
+							<p>根据《电子招标投标办法》规定，电子招标投标交易平台应当按照本办法和技术规范的规定，在任一电子招标投标公共服务平台注册登记，并向电子招标投标公共服务平台及时提供规定的信息。</p><p>电子招标投标公共服务平台应当开放数据接口、公布接口要求，与上一层级电子招标投标公共服务平台连接并注册登记，及时交换规定的信息，以及双方协商确定的其他信息。</p><p>系统对接栏目将提供以下服务：</p><p>标准规范：发布电子招标投标系统相关标准规范；</p><p>对接实施：引导、帮助电子招标投标系统各个平台之间的对接工作；</p><p>接口自检：为电子招标投标系统相关的专业化软件提供接口自我检测服务；</p><p>检测认证：发布电子招标投标系统各个平台检测认证相关的信息；</p><p>平台推广：按照基础应用平台+产品插件的模式，打造产品插件开发和应用的开放平台，促进电子招标投标系统的不断创新。</p>
+						</div>
+					</div>
+				</div>
+				<div ms-visible="currentIndex === 1">
+					<div class="Mk_Title"></div>
+					<div class="TP_content">
+						<div class="Big_title ellipsis">南京市公共资源交易中心</div>
+						<div class="Content_Text">
+							<p>根据《南京市公共资源交易中心主要职责内设机构和人员编制规定》（宁编字〔2014〕10号），南京市公共资源交易中心于2014年5月正式批准设立，为全额拨款副局级事业单位，由我市原有的市建设工程交易中心、市交通招投标服务中心、市货物招标投标交易中心、市政府采购中心、市产权交易中心、市土地交易中心等6家交易中心，从各职能部门中剥离出来整合建立，承担为全市公共资源交易活动提供场所、信息、咨询、见证等相关服务工作。</p>
+							<p>交易中心内设办公室、业务受理部、工程交易部、政府采购部、货物资源部和信息网络部等6个部门，具体工作职责如下：</p><p>1.负责为各类公共资源交易活动提供场所、设施服务；</p><p>2.负责全市公共资源交易公共服务平台系统和电子专业交易系统的建设、运营、维护和管理；</p><p>3.负责收集、存储和发布各类公共资源交易信息，为公共资源交易各方主体提供政策法规、企业、专业人员等信息咨询服务；</p><p>4.负责根据公共资源交易目录受理核验进场交易的市场主体资格和交易项目资料；</p><p>5.承担公共资源交易各类保证金的代收代退工作，按照政策规定收取综合服务费；</p><p>6.负责见证公共资源现场交易活动，维护交易活动秩序，整理、保存相关文本文书、电子介质等交易资料；</p><p>7.负责依法组织实施政府采购业务；</p><p>8.负责监控交易现场的违法违规行为，协助有关监管部门调查处理；</p><p>9.承办市委市政府交办的其他工作。</p>
+							<img src="images/njggzy.png" style="margin-left:-20px;">
+							<p>南京市公共资源交易中心各部室联系电话：</p><p>办  公  室： 025-68505917</p><p>业务受理部： 025-68505878</p><p>工程交易部：</p><p></p></p><p>信息网络部： 025-68505880</p>
+						</div>
+					</div>
+				</div>
+				<div ms-visible="currentIndex === 2">
+					<div class="Mk_Title"></div>
+					<div class="TP_content">
+						<div class="Big_title ellipsis">国义招标</div>
+						<div class="Content_Text">
+							<p>国义招标股份有限公司（原广东广机国际招标股份有限公司，简称国义招标），注册资本9160万元，是全国最大的专业招标采购服务商。公司拥有国家发改委、商务部、住建部、财政部授予的招标代理甲级资质和进出口经营权，传承60年国际采购经验，主要为医疗、交通、能源、电信、环保、市政工程等领域的客户提供招标代理服务及招标后续采购增值服务。2013年，公司招标额突破500亿元，已连续五年荣获中国招标代理机构十大顶级品牌称号。2014年8月19日，国义招标成功登陆“新三板”，成为中国第一家登陆资本市场的招标机构。</p><p>国义招标拥有一支具备扎实专业理论基础和丰富实践经验的专业队伍，公司员工中80%以上拥有中级以上职称，我司目前已有48名员工顺利考取了“招标师”资格，他们一方面精通招投标法律法规，同时也熟悉进出口贸易规则、熟悉国外金融组织贷款项目的采购程序，通晓国家进口优惠政策，可为用户提供各类项目（包括货物、工程、服务）的招标代理服务以及项目中涉及国际采购方面的政策咨询、引进方案策划（包括资金解决方案）、对外签订和执行国际采购合同，为客户策划办理国家政策许可范围内的进口设备免税手续，为用户办理报关、报检并将设备送到现场的一站式招标采购服务。</p><p>国义招标先后参与和承担的项目涉及交通、能源、通讯、环保、技改、医疗卫生等多个领域，经办的重点项目主要有： </p><p>联系人：徐丹丹、张惠敏</p><p>电  话：87768198－686、208</p><p>传  真：37658093</p><p>E-mail：xdd@gmg.cn</p>
+						</div>
+					</div>
+				</div>
+				<div ms-visible="currentIndex === 3">
+					<div class="Mk_Title"></div>
+					<div class="TP_content">
+						<div class="Big_title ellipsis">东风招投标交易中心</div>
+						<div class="Content_Text">
+							<p> 东风汽车（武汉）招标咨询有限公司成立于2003年，注册资本1000万元，注册地为武汉经济技术开发区，是东风汽车集团股份有限公司(在香港联交所上市，股票代码：00489.HK)的直属子公司；根据公司业务不断扩展的需要，2014年1月更名为东风（武汉）工程咨询有限公司。</p><p>公司现拥有《中华人民共和国国际招标机构甲级资格证书》、 《工程招标代理机构甲级资格证书》、 《中华人民共和国中央投资项目招标代理乙级资格证书》、《中华人民共和国政府采购代理机构乙级资格证书》。</p><p>公司主要业务范围：受托代理工程、货物、服务招标，工程造价咨询，建设工程项目管理，工程咨询（包括项目可研报告、环评报告编制，项目市场调查、工艺路线方案评审，进口设备减免税、项目后评价等）。公司人才资源雄厚，拥有一批长期从事招标代理工作的专门人才，其中中高级职称人员占职工总数的70%。公司总部设在武汉经济技术开发区，同时在十堰市和襄阳市设立了分部并拥有固定的办公场所，在北京市设立了北京分公司；公司办公设备设施齐全，拥有建筑面积近3000平方米的办公场所(其中有功能齐全的开评标厅19个)。公司拥有涵盖机电、化工、汽车、铸锻、冲压、机加、涂装、测试、航空、纺织、工民建等众多领域的专家库，现有专家1000多名，可以确保评标过程中的准确、科学和权威性。公司成立10年来，已承办了4000个各类项目招标代理业务，业务涉及汽车、机械、城建、化工、铁路、公路、水利、电力、环保、卫生、教育、科技、通讯等国民经济各领域，累计中标金额270亿元，节约资金近26亿元。
+							公司自成立以来，通过对内服务东风建设，对外拓展社会市场，以诚恳的服务态度、良好的业务质量，在维护国家利益、社会公共利益和招投标当事人的权益方面做出了较好的贡献。我们希望通过不断的努力为社会进步贡献自己的理念和力量。</p>
+						</div>
+					</div>
+				</div>
+				<div ms-visible="currentIndex === 4">
+					<div class="Mk_Title"></div>
+					<div class="TP_content">
+						<div class="Big_title ellipsis">苏州市公共资源交易中心</div>
+						<div class="Content_Text">
+							<p>为认真贯彻中办、国办《关于深化政务公开加强政务服务的意见》（中办发[2011]22号）和省、市有关加快推进统一规范公共资源交易中心建设的要求，进一步深化公共资源交易制度改革，建立统一规范的公共资源交易市场管理体系，苏州市于2012年12月17日正式成立苏州市公共资源交易管理委员会。</p><p>苏州市公共资源交易管理委员会为全市公共资源交易管理工作的组织领导机构，主要负责研究解决统一规范公共资源交易中心规划建设以及市场监管工作中的重大问题。管委会下设办公室，为全市公共资源交易管理专门机构，与市政务服务中心合署办公，主要职责为：统筹管理公共资源交易，指导协调各类公共资源交易管理工作，合同有关部门拟定公共资源交易的具体规则和制度，编制公共资源交易项目目录，加强市场交易活动的现场监管，建设和管理综合专家库，受理对公共资源交易的投诉，并协调调查处理。</p><p>按照“一委一办一中心”的运行模式，苏州市公共资源交易中心于2013年1月16日正式挂牌运行，目前下设产权交易分中心、政府采购分中心、国土分中心、建设工程分中心、交通工程分中心、水利工程分中心。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="Content_right">
+				<div class="TradingPlatformLink PublicBorder">
+					<div class="Mk_Title">
+						<div class="icon Mk_img">交易平台
+						</div>
+					</div>
+					<div class="right_list_Content">
+						<ul>
+							<li  ms-click="MenuClick(1)" class="li_text_right">
+								<span class="li_text_arr" ms-class="li_text_arr_selected:currentIndex === 1"></span>
+								<span class="wr_bold li_text_details ellipsis"  ms-class="li_text_details_selected:currentIndex === 1">南京市公共资源交易中心</span>
+							</li>
+							<li class="li_line"></li>
+							<li  ms-click="MenuClick(2)" class="li_text_right">
+								<span class="li_text_arr" ms-class="li_text_arr_selected:currentIndex === 2"></span>
+								<span class="wr_bold li_text_details ellipsis" ms-class="li_text_details_selected:currentIndex === 2">国义招标</span>
+							</li>
+							<li class="li_line"></li>
+							<li  ms-click="MenuClick(3)" class="li_text_right">
+								<span class="li_text_arr" ms-class="li_text_arr_selected:currentIndex === 3"></span>
+								<span class="wr_bold li_text_details ellipsis" ms-class="li_text_details_selected:currentIndex === 3">东风招投标交易中心</span>
+							</li>
+							<li class="li_line"></li>
+							<li  ms-click="MenuClick(4)" class="li_text_right">
+								<span class="li_text_arr" ms-class="li_text_arr_selected:currentIndex === 4"></span>
+								<span class="wr_bold li_text_details ellipsis" ms-class="li_text_details_selected:currentIndex === 4"1>苏州市公共资源交易中心</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="FollowUs PublicBorder">
+					<div class="Mk_Title">
+						<div class="icon Mk_img">关注我们
+						</div>
+					</div>
+					<div class="erweima"><img src="images/erweima.png"></div>
+					<div class="erweima_text">
+						<p><b>打造全国先进的公共服务平台</b></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+	<!-- 友情链接 -->
+	<div class="FriendlyLink">
+		<div class="blank_title">友情链接</div>
+		<div class="select">
+			<select id="select1">
+				<option value="">-- 国家部委网站 --</option>
+				<option value="http://www.chinabidding.com.cn/">中国采购与招标网</option>
+				<option value="http://www.ndrc.gov.cn/">国家发展和改革委员会</option>
+				<option value="http://www.ccgp.gov.cn/">政府采购网</option>
+			</select>
+		</div>
+		<div class="select">
+			<select id="select2">
+				<option value="">-- 江苏省政府机构网站 --</option>
+				<option value="http://www.jscd.gov.cn/">省交通运输厅</option>
+				<option value="http://www.jswater.gov.cn/">省水利厅</option>
+			</select>
+		</div>
+		<div class="select">
+			<select id="select3">
+				<option value="">-- 南京市政府机构网站 --</option>
+				<option value="http://www.nanjing.gov.cn/index.html">市人民政府</option>
+				<option value="http://www.njdpc.gov.cn/">市发展和改革委员会</option>
+				<option value="http://www.njcz.gov.cn/">市财政局</option>
+				<option value="http://www.njgt.gov.cn/">市土地资源和房屋管理局</option>
+				<option value="http://www.njszjw.gov.cn/index2286.htm">市城乡建设</option>
+				<option value="http://www.njgp.gov.cn/">市政府采购网</option>
+				<option value="http://www.njjj.gov.cn/">市监察局</option>
+				<option value="http://www.njaf.gov.cn/">市林业局</option>
+			</select>
+		</div>
+		<div class="select">
+			<select id="select4">
+				<option value="">-- 其他相关网站 --</option>
+				<option value="http://www.js.sgcc.com.cn/">江苏省电力公司</option>
+				<option value="http://www.njgcztbxh.com/">南京建设工程招标投标协会</option>
+				<option value="http://www.njinfo.gov.cn/">南京信息协会</option>
+			</select>
+		</div>
+	</div>
+	<div class="footer_all">
+		<div class="footer_t">
+			<ul>
+				<li><a href="AboutUs.html?page=0">平台简介</a></li>
+				<li class="line"></a></li>
+				<li><a href="AboutUs.html?page=1">联系我们</a></li>
+				<li class="line"></li>
+				<li><a href="AboutUs.html?page=2">招聘信息</a></li>
+				<li class="line"></li>
+				<li><a href="AboutUs.html?page=3">网站地图</a></li>
+				<li class="line"></li>
+				<li><a href="AboutUs.html?page=4">版权声明</a></li>
+			</ul>
+		</div>
+		<div class="footer_m clear">公司总机：021-88484678传真：021-88484118</div>
+		<div class="footer_b">版权所有：南京市招投标公共服务平台</div>
+	</div>
+</div>
+</body>
+</html>

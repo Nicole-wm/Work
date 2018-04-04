@@ -1,0 +1,195 @@
+@charset "UTF-8";
+.activityTimeTitle {
+  margin-top:15px;
+  margin-left: 15px;
+  color: #6a6a6a;
+  margin-bottom:57px;
+}
+.describe_title {
+  font-size: 1.1037rem;
+}
+.time_top {
+  font-size: 0.828125rem;
+  color:#999999;
+  margin-left:5px;
+}
+.progressBar_n {
+  position: relative;
+  background: #e4e4e4;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 10px;
+  margin: 0 15px;
+}
+.pinkProgressBar_n {
+  position: absolute;
+  background: #ff4a83;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  width: 50%;
+  height: 10px;
+  right: 0px;
+}
+.pinkProgressBar_n:before{
+ border-top-left-radius: 5px;
+ border-top-right-radius: 5px;
+ border-bottom-right-radius: 5px;
+ border-bottom-left-radius: 5px;
+ color: rgb(255, 255, 255);
+ width: 100px;
+ background-color: #7f7f7f;
+ box-sizing: border-box !important;
+ font-size: 0.8625rem;
+ position: absolute;
+ content: attr(content);
+ top: -50px;
+ left: -230px;
+ height: 35px;
+ line-height: 35px;
+ text-align: center;
+}
+.pinkProgressBar_n[stats="-1"]:before{
+  left: -230px;
+}
+.pinkProgressBar_n[stats="0"]:before{
+  left: -90px;
+}
+.pinkProgressBar_n[stats="1"]:before{
+  left: -10px;
+}
+.pinkProgressBar_n[stats="-1"]:after {
+ display: none;
+}
+.pinkProgressBar_n[stats="0"]:after,.pinkProgressBar_n[stats="1"]:after{
+  width: 0px;
+  height: 0px;
+  border-top: 20px solid #7f7f7f;
+  border-left: 10px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  content: "";
+  bottom: 14px;
+  left: -10px;
+}
+
+.PersonListDiv_n{
+  background-color:#f5f5f5;
+  margin:30px 0px;
+}
+
+.joinTitle_n{
+  padding:10px 20px 15px;
+}
+
+
+.HeadIcon{
+  height: 60px;
+  padding: 0 21px;
+}
+
+.HeadIcon >div{
+  display: inline-block;
+}
+
+.HeadIcon .fixedicon{
+  float: left;
+  margin-top:21px;
+  width:18px;
+  height: 18px;
+  border-radius:9px;
+  -webkit-border-radius:9px;
+  -moz-border-radius:9px;
+  font-size:10px;
+  line-height:18px;
+  color: #ffffff;
+  background-color:#ff9c00;
+  text-align: center;
+  font-size: 8px;
+}
+
+
+.HeadIcon .num{
+  float: right;
+  margin-top:18px;
+  width:24px;
+  height:24px;
+  border-radius:12px;
+  -webkit-border-radius:12px;
+  -moz-border-radius:12px;
+  font-size:11px;
+  line-height:24px;
+  color: #ffffff;
+  background-color:#adadad;
+  text-align:center;
+}
+
+.HeadIcon .headicon .hicon,.HeadIcon .headicon .hicon img{
+  width:34px;
+  height:34px;
+  border-radius:17px;
+  -webkit-border-radius:17px;
+  -moz-border-radius:17px;
+}
+
+.HeadIcon .headicon .hicon{
+  float:left;
+  margin-top:13px;
+  margin-left:10px;
+  background-color: #ffffff;
+}
+
+.HeadIcon .headicon{
+  width: 327px;
+  height: 50px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 410px){
+  .HeadIcon .headicon{
+    width:317px;
+  }
+}
+@media screen and (max-width: 400px){
+  .HeadIcon .headicon{
+    width:307px;
+  }
+}
+@media screen and (max-width: 390px){
+  .HeadIcon .headicon{
+    width:297px;
+  }
+}
+@media screen and (max-width: 380px){
+  .HeadIcon .headicon{
+    width:287px;
+  }
+}
+@media screen and (max-width: 370px){
+  .HeadIcon .headicon{
+    width: 273px;
+  }
+}
+@media screen and (max-width: 360px){
+  .HeadIcon .headicon{
+    width: 267px;
+  }
+}
+@media screen and (max-width: 350px){
+  .HeadIcon .headicon{
+    width: 247px;
+  }
+}
+@media screen and (max-width: 330px){
+  .HeadIcon .headicon{
+    width: 235px;
+  }
+  .HeadIcon .headicon .hicon{
+    margin-left:9px;
+  }
+}
+

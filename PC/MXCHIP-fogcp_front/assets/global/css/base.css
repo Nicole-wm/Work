@@ -1,0 +1,104 @@
+/*********************************
+ Fog
+ *********************************/
+ *{
+ 	margin:0;
+ 	padding:0
+ }
+ 
+ textarea{ resize:none;}
+ td img{
+ 	height:28px;
+ }
+ li{
+ 	list-style-type:none;
+ }
+ /* 文本超出省略号 */
+ .text-ellipsis{
+ 	display:block;
+ 	white-space:nowrap;
+ 	overflow:hidden; 
+ 	text-overflow:ellipsis;
+ 	cursor:pointer;
+ }
+
+ .dis-inblock{
+ 	display:inline-block
+ }
+
+ .caption-proimg img{
+ 	height:28px;
+ }
+
+ /* 加载页面 */
+ #mask{
+ 	display: none;
+ 	z-index:999999;
+ 	height:100%;
+ 	width: 100%;
+ 	position:fixed;
+ 	top:0px;
+ 	left: 0px;
+ 	background-color:#000000;/* IE6和部分IE7内核的浏览器(如QQ浏览器)下颜色被覆盖 */
+ 	background-color:rgba(0,0,0,0.5); /* IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂，但解析为透明 */
+ }
+ #mask div{
+ 	color: #ffffff;
+ 	font-size:80px;
+ 	width:410px;
+ 	height:90px;
+ 	position: fixed;
+ 	margin:auto;
+ 	left:0; 
+ 	right:0; 
+ 	top:0; 
+ 	bottom:0;
+ }
+
+ #common_confirm_model{
+ 	z-index: 11000 !important;
+ }
+
+ #common_alert_model{
+ 	z-index: 12000 !important;
+ }
+
+ ui-select-search input-xs ng-pristine ng-untouched ng-valid{
+ 	width: 200px;
+ }
+
+ .li-recharge{
+ 	float: left;
+ 	min-width: 65px;
+ 	height: 36px;
+ 	line-height: 36px;
+ 	margin-right: 20px;
+ 	padding: 0 5px;
+ 	background: #fdfdfd;
+ 	border: 1px solid #eeeeee;
+ 	color: #666;
+ 	cursor: pointer;
+ 	text-align: center;
+ }
+
+ .li-recharge-active{
+ 	border: 1px solid #108cee;
+ }
+
+ .li-recharge img{
+ 	height:25px;
+ 	margin:0px 5px;
+ 	vertical-align:middle;
+ }
+
+.OtherMoney{
+	width:100px;
+    font-size: 12px;
+    background: #fff;
+    vertical-align: middle;
+    color: #333;
+    border: 1px solid #eeeeee;
+    height: 36px;
+    padding: 0 10px;
+    line-height: 36px;
+}

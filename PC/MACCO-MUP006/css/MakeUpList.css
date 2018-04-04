@@ -1,0 +1,110 @@
+.WrapContent{
+	height:180px;
+    max-height: 180px;
+}
+.pull-down{
+margin-left: 10px;
+}
+.mobilepublish{
+	display: none;
+}
+.col_id {
+	width:5%; 
+
+}
+.col_name {
+	width: 10%;
+	min-width: 305px;
+	min-width: 20px;
+	white-space:wrap;
+}
+.col_cover_image {
+	width: 13%;
+}
+.col_make-upNum {
+	width: 5%;
+}
+.col_cover {
+	width:10%;
+}
+.col_publish{
+    width:4%;
+}
+.col_publish_time {
+	width:7%;
+}
+
+.col_read {
+	width: 5%;
+}
+.col_likes {
+	width: 5%;
+}
+.col_star{
+	width:4%;
+}
+.col_operation {
+	width:16%;
+}
+
+.col_keyno {
+	width: 10%;
+	word-wrap: break-word;
+}
+.mobileId,
+.mobileName,
+.mobileKeyno,
+.mobileImage,
+.mobileMake-upNum,
+.mobileCover,
+.mobileStar,
+.mobileRead,
+.mobileLikes,
+.mobilePublishTime,
+.mobileOperation{
+	display: none;
+
+}
+
+@media(max-width:768px) {
+.WrapContent {
+  height: 800px;
+  max-height: 800px;
+	}
+.col_cover_image {
+		min-height: 256px;
+	}
+.WrapContent > .col_cover_image:hover > img {
+		display: none;
+		-webkit-animation-name: "";
+		-moz-animation-name: "";
+		-o-animation-name: "";
+		-ms-animation-name: "";
+		animation-name: "";
+	} 
+	.mobileId,
+	.mobileName,
+	.mobileImage,
+	.mobileMake-upNum,
+	.mobileCover,
+	.mobileStar,
+	.mobileRead,
+	.mobileLikes,
+	.mobilePublishTime,
+	.mobileOperation {
+			display: inline-block;
+} 
+	
+}
+@media(max-width:414px) {
+.mobilepublish{
+   display: inline-block;
+}
+.pull-down {
+  width: 30%;
+  margin-left: 40px;
+}
+.keyword {
+  min-width: 100px;
+}
+}

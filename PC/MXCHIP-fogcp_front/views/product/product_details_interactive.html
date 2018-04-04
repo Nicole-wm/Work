@@ -1,0 +1,215 @@
+<div class="row" ng-controller="ProductDetailsInteractiveController">
+	<div class="col-md-12">
+		<div class="portlet light bordered">
+			<div class="portlet-title">
+				<div class="table-toolbar">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="color-demo tooltips btn bg-blue-steel bg-font-blue-steel" data-original-title="点击添加指令" data-toggle="modal" data-target="#myModal_command" ng-click="ClearForm()">
+								<i class="fa fa-plus"></i>添加指令
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="portlet box" ng-show="InterCount===0">
+				<div class="form-group col-lg-12"><h4>暂无交互数据信息</h4></div>
+			</div>
+			<!-- BEGIN 指令详情-->
+			<div class="portlet box grey-salsa" ng-show="InterCount!==0" ng-repeat="Inter in ProductInterArr">
+				<div class="portlet-title">
+					<div class="caption">
+						指令名：{{Inter.name}} 
+						<a data-toggle="modal" data-target="#myModal_command" class="btn bg-green-soft bg-font-green-soft btn-sm" ng-click="EditInterFun(Inter.id)"> 编辑 </a>
+						<a class="btn bg-red bg-font-red btn-sm" ng-click="DeleteInterFun(Inter.id)"> 删除 </a>
+					</div>
+					<div class="tools">
+						<a href="javascript:;" class="collapse" title="收起"> </a>
+					</div>
+				</div>
+				<div class="portlet-body" ng-show="Inter.product_parameter.length===0">
+					<div class="table"><h4>暂无相关属性信息</h4></div>
+				</div>
+				<div class="portlet-body" ng-show="Inter.product_parameter.length!==0">
+					<div class="table-scrollable">
+						<table class="table table-striped table-hover">
+							<thead>
+								<tr>
+									<th> 数据属性标识 </th>
+									<th> 数据属性名称 </th>
+									<th> 是否必须 </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="Para in Inter.product_parameter">
+									<td> {{Para.product_parameter.identifier}} </td>
+									<td> {{Para.product_parameter.pname}} </td>
+									<td>
+										<span class="label label-sm label-info" ng-show="Para.is_required"> {{Para.IsMustText}} </span>
+										<span class="label label-sm label-warning" ng-show="!Para.is_required"> {{Para.IsMustText}} </span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- END 指令详情-->
+		</div>
+	</div>
+	<div class="col-md-12">
+		<!-- BEGIN 指令详情弹框-->
+		<input type="hidden" id="myModal_command_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_command">
+		<div id="myModal_command" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<a href="javascript:;" class="close" data-dismiss="modal" aria-hidden="true"></a>
+						<h4 class="modal-title">产品交互指令</h4>
+					</div>
+					<div class="modal-body">
+						<div class="portlet">
+							<div class="portlet-body form">
+								<form id="productmodal" class="horizontal-form" name="productmodal">
+									<input type="reset" id="FormReset" hidden="true">
+									<div class="form-body">
+										<div class="form-group row">
+											<div class="col-md-1"></div>
+											<label class="col-md-2 control-label">指令名称<span class="required"> * </span></label>
+											<div class="col-md-8">
+												<input ng-model="ModalName" name="ModalName"  type="text" class="form-control" placeholder="必填" required >
+											</div>
+										</div>
+										<div class="form-group row">
+											<div class="col-md-1"></div>
+											<label class="col-md-2 control-label">指令类别<span class="required"> * </span></label>
+											<div class="col-md-8 md-radio-inline">
+												<div class="md-radio has-error">
+													<input ng-click="CheckFun(0)" ng-checked="ModalType==0"  name="ModalType" type="radio" id="radio1" class="md-radio btn">
+													<label for="radio1">
+														<span></span>
+														<span class="check"></span>
+														<span class="box"></span> 状态 
+													</label>
+												</div>
+												<div class="md-radio has-warning">
+													<input ng-click="CheckFun(1)" ng-checked="ModalType==1" name="ModalType" type="radio" id="radio2" class="md-radiobtn">
+													<label for="radio2">
+														<span></span>
+														<span class="check"></span>
+														<span class="box"></span> 命令 
+													</label>
+												</div>
+												<div id="form_commtype_error"></div>
+											</div>
+										</div>
+										<div class="form-group row">
+											<div class="col-md-1"></div>
+											<label class="col-md-2 control-label">描述</label>
+											<div class="col-md-8">
+												<textarea ng-model="ModalDesc" name="ModalDesc" class="form-control" rows="3"></textarea>
+											</div>
+										</div>
+										<div class="form-group row">
+											<div class="col-md-1"></div>
+											<label class="col-md-2 control-label">参数</label>
+											<div class="col-md-8">
+												<ui-select multiple ng-model="multipleDemo.selectedPara" theme="bootstrap" ng-disabled="disabled">
+													<ui-select-match placeholder="选择参数">{{$item.pname}}</ui-select-match>
+													<ui-select-choices repeat="para in ParaArr | propsFilter: {id: multipleDemo.selectedPara}"> {{para.pname}} - {{para.identifier}} </ui-select-choices>
+												</ui-select>
+											</div>
+										</div> 
+										<div class="form-group row">
+											<div class="col-md-1"></div>
+											<div class="col-md-10">
+												<table class="table table-striped table-hover table-bordered">
+													<thead>
+														<tr>
+															<th> 参数标识</th>
+															<th> 参数名称</th>
+															<th> 必须</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr ng-repeat="para in multipleDemo.selectedPara">
+															<td> {{para.identifier}}</td>
+															<td> {{para.pname}}</td>
+															<td> 
+																<div class="md-checkbox">
+																	<input ng-click="CheckPara(para)" ng-checked="para.IsMust" type="checkbox" id="checkbox{{para.id}}" class="md-check">
+																	<label for="checkbox{{para.id}}">
+																		<span class="inc"></span>
+																		<span class="check"></span>
+																		<span class="box"></span>
+																	</label>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="form-group row">
+											<div class="col-md-1"></div>
+											<label class="col-md-2 control-label">元数据</label>
+											<div class="col-md-8 control-label">
+												<a ng-click="AddKey()" class="btn bg-blue-steel bg-font-blue-steel  btn-sm">添加</a>
+											</div>
+										</div>
+										<div class="form-group row">
+											<div class="col-md-1"></div>
+											<div class="col-md-10">
+												<table class="table table-striped table-hover table-bordered" id="KeyTable">
+													<thead>
+														<tr>
+															<th width="30%"> 键名</th>
+															<th width="30%"> 键值</th>
+															<th> 操作</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr ng-show="CreatKeyFlag">
+															<td><input type="text" class="form-control input-small" ng-model="KeyName"></td>
+															<td><input type="text" class="form-control input-small" ng-model="KeyValue"></td>
+															<td>
+																<a class="btn bg-green-soft bg-font-green-soft btn-sm" ng-click="SaveNewKey(1)"> 保存 </a>
+																<a class="btn bg-red bg-font-red btn-sm" ng-click="SaveNewKey(0)"> 取消 </a>
+															</td> 
+														</tr>
+														<tr ng-repeat="Key in KeyArr" id="{{Key.ID}}">
+															<td ng-show="EditFlag!={{Key.ID}}"> {{Key.KeyName}} </td>
+															<td ng-show="EditFlag!={{Key.ID}}"> {{Key.KeyValue}} </td>
+															<td ng-show="EditFlag!={{Key.ID}}"> 
+																<a class="btn bg-green-soft bg-font-green-soft btn-sm" ng-click="EditKey(Key,Key.ID)"> 编辑 </a>
+																<a class="btn bg-red bg-font-red btn-sm" ng-click="DeleteKey(Key)"> 删除 </a> 
+															</td>
+															<td ng-show="EditFlag=={{Key.ID}}"> <input id="EditName{{Key.ID}}" type="text" class="form-control input-small" value="{{Key.KeyName}}"></td>
+															<td ng-show="EditFlag=={{Key.ID}}"> <input id="EditValue{{Key.ID}}" type="text" class="form-control input-small" value="{{Key.KeyValue}}"> </td>
+															<td ng-show="EditFlag=={{Key.ID}}">
+																<a class="btn bg-green-soft bg-font-green-soft btn-sm" ng-click="SaveEditKey(1,Key.ID)"> 保存 </a>
+																<a class="btn bg-red bg-font-red btn-sm" ng-click="SaveEditKey(0,Key.ID)"> 取消 </a>
+															</td> 
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="form-actions right">
+											<button type="button" class="btn btn-primary ok" ng-disabled="!productmodal.ModalName.$valid||(ModalType==-1)"  type="submit" ng-click="SureInterFun()" >确认</button>
+											<button type="button" class="btn btn-default cancel" data-dismiss="modal">取消</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END 指令详情弹框-->
+	</div>
+</div>
+<script type="text/javascript">
+	ComponentsBootstrapSelect.init(); 
+</script>

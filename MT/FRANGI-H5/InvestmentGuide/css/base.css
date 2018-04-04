@@ -1,0 +1,210 @@
+/*******************Base*******************/
+html,body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+img{
+    display:block;
+    margin: auto;
+    width: 100%;
+    border: 0;
+}
+/* 加载页面 */
+.mask{
+    display: none;
+    z-index:999999;
+    height:100%;
+    width: 100%;
+    position:fixed;
+    top:0px;
+    left: 0px;
+    background-color:#000000;/* IE6和部分IE7内核的浏览器(如QQ浏览器)下颜色被覆盖 */
+    background-color:rgba(0,0,0,0.6); /* IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂，但解析为透明 */
+    text-align: center;
+}
+.mask div{
+    color: #ffffff;
+    font-size:0.5rem;
+    height:1rem;
+    line-height: 1rem;
+    position: fixed;
+    margin:auto;
+    left:0; 
+    right:0; 
+    top:0; 
+    bottom:0;
+}
+.mask .result{
+    display: none;
+}
+/*******************音乐*******************/
+.music{
+    position: absolute;
+    z-index: 1111;
+    left: 20px;
+    top: 20px;
+    z-index: 1000;
+}
+.open{
+    -webkit-animation: moveRo linear 3.5s  infinite;
+    animation-delay:0;
+}
+.icon-music{
+    width:1rem;
+    height:1rem;
+    background: url(../img/base/btn-music.png);
+    background-size: 100% 100%;
+    display: block;
+    opacity: 0.5;
+}
+/*动画*/
+@-webkit-keyframes moveRo {
+    from {-webkit-transform: rotate(360deg);  }
+    to { -webkit-transform: rotate(-360deg); }
+}
+@keyframes moveRo {
+    from {  transform: rotate(-360deg)}
+    to {  transform: rotate(360deg); }
+}
+
+@-webkit-keyframes openRo {
+    from { }
+    to { -webkit-transform: translateY(100%)
+    ;}
+}
+@keyframes openRo {
+    from { }
+    to { -webkit-transform: translateY(100%) ; transform: translateY(100%);
+
+    }
+}
+/*******************滑屏*******************/
+.swiper-container,.swiper-slide{
+    width:100%;
+    height:100%;
+}
+/*******************Public*******************/
+.pos-abs{
+    position: absolute;
+}
+.page-content{
+    position: absolute;
+    width:100%;
+}
+.bottom-arr{
+    bottom:0.5rem;
+    z-index: 10000;
+}
+.bottom-arr img{
+    width:0.6rem;
+}
+.p-TLogo{
+    top:0.87963rem;
+}
+.p-TLogo img{
+    width:3.583333rem;
+    height:0.574074rem;
+}
+.p-Title{
+    top:1.666667rem;
+}
+/*******************Map*******************/
+.address-map-content{
+    top: 4.555556rem;
+    left:0;
+    width:6.037037rem;
+}
+.map-content{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    z-index: 100;
+}
+.map-content img{
+    position: absolute;
+}
+.map-icon{
+    width:0.194444rem;
+}
+.map-ad{
+    width:2.62963rem; 
+    height:2.62963rem; 
+}
+.map-icon1{
+    top:8.8rem;
+    left:4.55rem
+}
+.map-line1{
+    top:6.45rem;
+    left:4.72rem;
+    width: 2.287037rem;
+}
+.map-ad1{
+    top:3.93rem;
+    left:6.42rem;
+}
+.map-icon2{
+    top:9.15rem;
+    left:4.65rem
+}
+.map-line2{
+    top:9.13rem;
+    left:4.8rem;
+    width:2.037037rem
+}
+.map-ad2{
+    top:7.6rem;
+    left:6.89rem;
+}
+.map-icon3{
+    top:9.44rem;
+    left:4.46rem
+}
+.map-line3{
+    top:9.5rem;
+    left:4.55rem;
+    width: 0.648148rem
+}
+.map-ad3{
+    top:10.85rem;
+    left:4.4rem;
+}
+.map-icon4{
+    top:9.27rem;
+    left:2.87rem
+} 
+.map-line4{
+    top:9.5rem;
+    left:2.3rem;
+    width: 0.648148rem
+}
+.map-ad4{
+    top:11.8rem;
+    left:0.8rem;
+}
+.map-icon5{
+    top:9rem;
+    left:2.45rem;
+}
+.map-line5{
+    top:5.9rem;
+    left:1.7rem;
+    width:0.833333rem;
+}
+.map-ad5{
+    top:3.25rem;
+    left:0.2rem;
+}
+.map-pclose{
+    top: 3.8rem;
+    right:0.3rem;
+    width: 0.592593rem;
+    z-index: 1000;
+}

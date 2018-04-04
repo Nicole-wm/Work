@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+
+<head>
+    <!--include "../../../templetes/commonHead.html"-->
+    <!--include "../../../templetes/Top10/top.html"-->
+</head>
+
+<body ng-controller="topController">
+    <div class="content">
+        <div class="banner">
+            <div class="back" style="display:none"> </div>
+            <img ng-src="{{TitleImage}}">
+            <div class="topBtn">
+                <img src="../images/top10_btn.png">
+            </div>
+        </div>
+        <div class="bannerIntr" id="descText" ng-bind="Description">
+        </div>
+        <div class="spaceheight"></div>
+        <div class="spaceheight"></div>
+        <div class="spacebg"></div>
+        <div class="topdetail">
+            <div class="detail" ng-repeat="item in Details">
+                <div class="title">
+                    <span class="pronumber" ng-bind="item.Step"></span>
+                    <span ng-bind="item.Title"></span>
+                </div>
+                <div class="detailcontent" ng-bind="item.Content">
+
+                </div>
+                <div class="spaceheight"></div>
+                <div class="detailimage">
+                    <img ng-src="{{item.PicImageUrl}}">
+                </div>
+                <div class="userline">
+                    <div class="userimage">
+                        <img ng-src="{{item.Avatar}}">
+                    </div>
+                    <div class="username" ng-bind="item.NickName"></div>
+                </div>
+                <div class="clear"></div>
+                <div class="usercomment">
+                    <img src="../images/hquotes.png">{{item.Comment}}
+                    <img src="../images/tquotes.png">
+                </div>
+                <div class="spaceheight"></div>
+                <div class="productintr" ng-click='this[redirectFunc](item.ProductID)'>
+                    <div class="productimage">
+                        <img ng-src="{{item.ProductImage}}">
+                    </div>
+                    <div class="productdetail">
+                        <div class="producttitle" ng-bind="item.ProductCName">
+
+                        </div>
+                        <div class="productstar">
+                            <img ng-repeat="star in item.FullStars" src="../images/start1.png">
+                            <img ng-repeat="star2 in item.HalfStars" src="../images/start2.png">
+                            <img ng-repeat="star3 in item.EmptyStars" src="../images/start3.png">
+                        </div>
+                        <div class="productcomment">
+                            <div class="commentimage">
+                                <img src="../images/comment.png">
+                            </div>
+                            <div class="commentcount">
+                                <span ng-bind="item.CommentCount"></span>
+                                <span>评</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productrowBtn"><img src="../images/row.png"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+                <div class="spaceheight"></div>
+                <div class="spaceheight"></div>
+            </div>
+        </div>
+    </div>
+        <!--<input type="hidden" ng-model="templateurl" ng-init="templateurl='/Top10/comments.html'" />
+        <div id="add_comment" ng-include="templateurl"></div>-->
+        <!--include "../../../templetes/DownLoadFooter.html"-->
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+{
+	"IsSuccess":true,
+	"Data":[
+		{ "id":1,"primproname":"网站"},
+		{ "id":2,"primproname":"游戏"},
+		{ "id":3,"primproname":"移动应用"},
+		{ "id":4,"primproname":"电子商务"},
+		{ "id":5,"primproname":"智能设备"},
+		{ "id":6,"primproname":"医疗"},
+		{ "id":7,"primproname":"其他"}
+	]
+}

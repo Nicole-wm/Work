@@ -1,0 +1,464 @@
+/******************************** 中间 ********************************/
+.content{
+    width: 1000px;
+    margin:20px auto 0px;
+}
+.DynamicPlatform,.TradeOpenness,.UniteLogin,.BidEvaluationExpert,.TransactionData,.AdministrativeSupervision,.ContactUs,.MarketCredit,.FollowUs{
+    border: 1px solid #eeeeee;
+    border-radius:7px;
+    background-color: #ffffff;
+    behavior: url(css3.htc); 
+}
+.Carousel,.TradeOpenness,.BidEvaluationExpert,.AdministrativeSupervision,.MarketCredit{
+    float: left;
+}
+.DynamicPlatform,.UniteLogin,.TransactionData,.ContactUs,.FollowUs{
+    float: right;
+}
+.blank_title{
+    font-size: 16px;
+    font-weight: bold;
+    color: #343434;
+    font-family: "微软雅黑";
+}
+/********* 轮播菜单 *************/
+.Carousel{
+    height:277px;
+    width: 590px;
+    padding: 1px;
+    border: 3px solid #eeeeee;
+    position: relative;
+    overflow: hidden;
+}
+#BannerDiv{ 
+    height:277px;
+    width: 590px; 
+    overflow: hidden;
+    position: relative; 
+}
+.BannerImgTitle{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.BannerImgTitle_bg{
+    height: 40px;
+    cursor: pointer;
+    background-color: #000000;
+    filter: alpha(opacity=50);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.BannerImgTitle .text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding:0 10%;
+    width:80%;
+    z-index: 1000;
+    text-align: center;
+    color: #ffffff;
+}
+.BannerImgTitle .text a{
+    font-family:"微软雅黑";
+    font-size: 14px;
+    color: #ffffff;
+}
+#BannerDiv .toLeft,#BannerDiv .toRight{
+    position: absolute;
+    width:25px;
+    height:25px;    
+    top:125px;  
+    background: url(../images/arrow.png) no-repeat 0px 0px;
+} 
+#BannerDiv .toLeft{
+    left:5px;
+}
+#BannerDiv .toRight{
+    right:5px;
+    background-position: -25px 0px;
+}
+#BannerDiv .toLeft:hover{
+    background-position: 0px -25px;
+}
+#BannerDiv .toRight:hover{
+    background-position: -25px -25px;
+} 
+
+/********** 平台动态 ********/
+.DynamicPlatform{
+    width:342px;
+    height:243px;
+    padding: 20px;
+}
+.part_up{
+    padding: 20px 0px 15px;
+}
+.part_title{
+    cursor: pointer;
+    color:#f14224;
+    font-size: 14px;
+    line-height:20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.part_content{
+    color: #737373;
+    cursor: pointer;
+    height:50px;/* 
+    line-height:17px; */
+    line-height:23px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+}
+.part_down{
+    padding:15px 0px;
+    height:60px;
+    overflow: hidden;
+}
+.part_down li{
+    cursor: pointer;
+    height:30px;/* 
+    height:20px; */
+    list-style:disc;
+    list-style-position: inside; 
+    width:330px;/*对宽度的定义,根据情况修改*/
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+/********** 交易公开 ********/
+.TradeOpenness{
+    width:748px;
+    height: 368px;
+}
+.NewNScontent{
+    padding:10px 15px  20px;
+    height:90px;
+}
+.NNC_Div{
+    cursor: pointer;
+    float: left;
+    margin: 0 5px;
+    height:90px;
+    width:225px;
+    background-color: #eeeeee;
+    border:2px solid #e6e6e6;
+    text-align: center;
+}
+.NNCRedText,.CNNCRedText{
+    font-size: 18px;
+    color: #f14224;
+    font-family: "微软雅黑";
+}
+.NNCRedText{
+    margin-top:20px;
+}
+.CNNCRedText{
+    line-height:90px;
+}
+.NNCGreyText{
+    margin-top:8px;
+}
+.TradeOpenness .NScontent{
+    width: 708px;
+    height: 120px;
+    margin:0 auto;
+    padding:0px 20px 1px;
+}
+
+.TradeOpenness .grey li{
+    background-color: #eeeeee;
+}
+.TradeOpenness .NScontent ul{
+    clear: both;
+}
+
+.TradeOpenness .NScontent li{
+    cursor: pointer;
+    font-size: 12px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    width:105px;
+    color: #737373;
+}
+
+.TradeOpenness .NScontent li span{
+    color: #f14224;
+    margin-left:8px;
+}
+.TradeOpenness .NScontent .icon{
+    height:40px;
+    width:30px;
+    background-position:-310px -14px;
+}
+
+.TradeOpenness .NScontent .blank{
+    width:30px;
+}
+
+/********** 统一登录 ********/
+.UniteLogin{
+    width:230px;
+    height: 368px;
+}
+.UniteLogin .blank_title{
+    float: right;
+    line-height: 28px;
+    margin-right:10px;
+    cursor: pointer;
+}
+
+.login_name{
+    clear: both;
+    padding:12px 0px 12px 8px;
+}
+
+.login_name >div{
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    width:100px;
+    height:100px;
+    margin-right: 8px;
+    margin-bottom:8px;
+    color: #737373;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "微软雅黑";
+}
+.login_name >div:hover{
+    background-color: #eeeeee;
+}
+
+.ztb_img,.tbr_img,.zbdl_img,.pbjg_img,.pbzj_img,.xzjd_img{
+    margin:10px 25px 0px;
+    height:50px;
+}
+.ztb_img{
+    background-position:-60px -10px;
+}
+.tbr_img{
+    background-position:-10px -10px ;
+}
+.zbdl_img{
+    background-position:-105px -10px ;
+}
+.pbjg_img{
+    background-position:-155px -10px ;
+}
+.pbzj_img{
+    background-position:-255px -10px ;
+}
+.xzjd_img{
+    background-position:-205px -10px ;
+}
+/********** 评标专家 ********/
+.BidEvaluationExpert{
+    width:748px;
+    height:355px;
+}
+.BidEvaluationExpert .List_title{
+    width:330px;
+    margin: 0 auto;
+}
+.BidEvaluationExpert .Mk_List{
+    height:240px;
+}
+.BidEvaluationExpert .li_first{
+    width: 640px;
+}
+.BidEvaluationExpert .li_second{
+    margin-right: 0px;
+}
+.BidEvaluationExpert .List_content{
+    height:265px;
+}
+/********** 交易数据 ********/
+.TransactionData{
+    width:230px;
+    height:275px;
+}
+
+.Table_title{
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+}
+.Table_content{
+    width:219px;
+    height:207px;
+    border: 1px solid #e6e6e6;
+    margin: 0 auto;
+    background-color:#eeeeee; 
+    font-size: 12px;
+    text-align: center;
+    padding-left:5px;
+    color: #737373;
+}
+.Table_content table tr{
+    height:30px;
+}
+.tc_title{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "微软雅黑";
+}
+.tc_num{
+    color:#f14224;
+}
+/********** 行政监督 ********/
+.AdministrativeSupervision{
+    width:748px;
+    height:365px;
+}
+.Ad_Title_Red >div{
+    float: left;
+    cursor: pointer;
+}
+.Ad_Title{
+    margin: 20px 20px 0px;
+}
+.ad_red_round{
+    background-image:url(../images/titile_icon.png);
+    background-repeat:no-repeat;
+    width: 10px;
+    height: 10px;
+    background-position:0px 0px;
+    margin-top:11px;
+}
+.ad_red_text{
+    font-size: 16px;
+    font-weight: bold;
+    margin:5px 10px;
+    color: #f14224;
+    font-family: "微软雅黑";
+}
+.Ad_Title_Gray{
+    cursor: pointer;
+    margin-left: 10px;
+    float: right;
+    height: 30px;
+    width: 250px;
+    background-color: #e2e5e7;
+    color: #737373;
+    font-size:12px;
+    font-weight: bold;
+    line-height: 30px;
+    border: 1px solid #d2d2d2;
+}
+.Adicon{
+    float: left;
+    margin-left:15px;
+    height:30px;
+    width:30px;
+    background-position:-310px -18px;
+}
+.Ad_List{
+    height:220px;
+    /* height:160px; */
+    overflow: hidden;
+    width:710px;
+    padding: 20px 0px 20px 20px;
+}
+.Ad_List .List_li{
+    margin-top:0px;
+}
+.Ad_List .li_first{
+    width:647px;
+}
+.Ad_List .li_second{
+    margin-right:0px;
+}
+/********** 联系我们 ********/
+.ContactUs{
+    width:230px;
+    height: 445px;
+    margin-top:-80px;
+}
+.ContactUs .Map{
+    margin:20px 10px 0px;
+}
+
+.Map_text{
+    font-size: 12px;
+    padding:20px 12px;
+    color: #666666;
+}
+
+.Map_text p{
+    margin-bottom: 15px;
+}
+
+
+/********** 市场资信 ********/
+.MarketCredit{
+    width:748px;
+    height:210px;
+    color: #737373;
+}
+.MC_LinkDiv{
+    cursor: pointer;
+    height:40px;
+    line-height:40px;
+    margin-top:30px;
+    margin-left:52px;
+    float: left;
+    width:180px;
+    background-color: #e2e5e7;
+    border: 1px solid #d2d2d2;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "微软雅黑";
+}
+.MC_LinkImg{
+    float: left;
+    margin-left: 20px;
+    margin-right:10px;
+    background: url(../images/ico1.gif);
+    background-repeat:no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.MLI1{
+    background-position:-80px 0px;
+}
+.MLI2{
+    background-position:-80px -40px;
+}
+.MLI3{
+    background-position:-80px -80px;
+}
+.MLI4{
+    background-position:-80px -120px;
+}
+.MLI5{
+    background-position:0px -148px;
+} 
+/********** 关注我们 ********/
+.FollowUs{
+    width:230px;
+    height: 210px;
+}
+.erweima{
+    margin-top:20px; 
+    margin-left: 60px;
+}
+
+.erweima_text{
+    font-size: 12px;
+    padding:20px 12px;
+    color: #666666;
+}
+
+.erweima_text p{
+    color:#343434;
+    text-align: center;
+}

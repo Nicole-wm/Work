@@ -1,0 +1,64 @@
+.pull-down{
+  margin-bottom: 10px;
+}
+.mobilepublish{
+	display: none;
+}
+.DataContainer>div:nth-child(odd){
+	background-color: #f9f9f9;
+}
+.col_id {
+	width: 9%; 
+
+}
+.col_name{
+	width: 15%;
+	min-width: 305px;
+	min-width: 20px;
+}
+.col_makeUpNumber {
+	width: 18%;
+}
+.col_publish{
+	  width: 10%;
+}
+.col_publish_time {
+	width: 12%;
+}
+.col_operation {
+	width:21%;
+}
+.col_keyno {
+	width: 15%;
+	word-wrap: break-word;
+}
+.mobileId,
+.mobileName,
+.mobileKeyno,
+.mobileDescription,
+.mobilePublishTime,
+.mobileOperation{
+	display: none;
+}
+@media(max-width:768px) {
+.WrapContent {
+  height: 250px;
+  max-height: 250px;
+}
+.mobileId,
+.mobileName,
+.mobileDescription,
+.mobilePublishTime,
+.mobileOperation{
+	    display: inline-block;
+	    } 
+
+}
+@media(max-width:414px) {
+.mobilepublish{
+	display: inline-block;
+	}
+.pull-down {
+  width: 60%;	
+}
+}

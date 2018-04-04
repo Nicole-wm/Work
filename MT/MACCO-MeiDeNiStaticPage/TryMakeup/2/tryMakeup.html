@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <style>
+        @font-face {
+            font-family: 'youyuan';
+            src: url(data:font/ttf;base64,FONTBASE64) format('truetype');
+        }
+    </style>
+    <link href="../css/public.css" rel="stylesheet" charset="UTF-8">
+    <!--<link href="../css/footer.css" rel="stylesheet">-->
+    <link href="../css/comment.css" rel="stylesheet" charset="UTF-8">
+    <link href="../css/comments.css" rel="stylesheet" charset="UTF-8">
+    <link href="../css/zan.css" rel="stylesheet" charset="UTF-8">
+    <link href="css/tryMakeup.css" rel="stylesheet" charset="UTF-8">
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/ng-infinite-scroll.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/TryMakeup/JS/dataSource.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/TryMakeup/JS/comments.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/TryMakeup/JS/zan.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/TryMakeup/JS/TryMakeup.js" charset="UTF-8"></script>
+</head>
+
+<body ng-controller="ProductListCtrl" style="background: url('images/bg.png') repeat;">
+    <div id="head" class="head">
+        <img id="model1" ng-show="HasImage" ng-src="{{ImageUrl}}" src="images/model.png">
+        <img id="model" ng-show="!HasImage" src="images/model.png">
+        <div class="mask">
+            <img id="mask" src="images/mask.png">
+        </div>
+    </div>
+   <input type="hidden" ng-model="zanurl" ng-init="zanurl='/TryMakeup/zan.html'" />
+   <div id="add_zan" ng-include="zanurl"></div>
+    <div class="line"></div>
+    <div class="maxHeightLine"></div>
+    <div class="heart"></div>
+    <div class="clear"></div>
+    <div class="smallWordSize TextContent">
+        <div>绚丽的阳光,</div>
+        <div>你是不是想尝试让人心情愉悦的亮丽唇色呢?</div>
+        <div>橙色、玫红、红色</div>
+        <div>都会让你感受到夏日里不同的乐趣。</div>
+        <div>不要担心不能驾驭的问题，在这样明艳的季节中，</div>
+        <div>不妨为你的唇部加一点点俏皮和活力吧！</div>
+    </div>
+    <div class="mainPoint RelatedImg">
+        <img src="images/002.png">
+        <div class="bigWordSize mainPointText">妆容要点：</div>
+    </div>
+    <div class="smallWordSize TextContent">
+        <div>带有光泽，</div>
+        <div>甚至看起来油腻的底妆和皮肤死角统统out。</div>
+        <div>为了撑托鲜亮的红色，</div>
+        <div>底妆干净很重要哦！</div>
+    </div>
+    <div class="step bigWordSize" id="stepOne">Step 1 ：哑光底妆</div>
+    <div class="heart"></div>
+    <div class="RelatedImg">
+        <img src="images/003.png">
+    </div>
+    <div class="smallWordSize TextContent">
+        <div>为了提升肤质质感，</div>
+        <div>选择偏哑光系质感的粉底很重要。</div>
+        <div>另外，在化妆前最好去一下黑头、</div>
+        <div>敷一下收敛毛孔的面膜啊，</div>
+        <div>有助哑光妆容维持的更加持久。</div>
+    </div>
+     <div ng-controller="ProductStepCtrl" ng-model="productQuery" ng-init="productQuery='CourseStep1' ">
+        <div ng-include="'/TryMakeup/product.html'"></div>
+    </div>
+    <div class="step bigWordSize" id="stepTwo">Step 2：眼妆部分</div>
+    <div class="heart"></div>
+    <div class="RelatedImg">
+        <img src="images/004.png">
+    </div>
+    <div class="smallWordSize TextContent stepTwoContent">
+        <div>眼部统一用棕色系眼影，</div>
+        <div>在用黑色眼线细细勾勒，</div>
+        <div>下眼皮边缘则用棕色眼线与眼影呼应。</div>
+    </div>
+    <div ng-controller="ProductStepCtrl" ng-model="productQuery" ng-init="productQuery='CourseStep2' ">
+        <div ng-include="'/TryMakeup/product.html'"></div>
+    </div>
+    <div class="step bigWordSize" id="stepThree">Step 3：唇妆选择</div>
+    <div class="heart"></div>
+    <div class="RelatedImg">
+        <img src="images/005.png">
+    </div>
+    <div class="smallWordSize TextContent ">
+        <div>这个夏天的妆容流行秘诀</div>
+        <div>在于不经意流露出的女人味。</div>
+        <div>我们需要手机更多富有光泽和</div>
+        <div>血色感的甜美橙色唇彩来妆点。</div>
+    </div>
+    <div ng-controller="ProductStepCtrl" ng-model="productQuery" ng-init="productQuery='CourseStep3' ">
+        <div ng-include="'/TryMakeup/product.html'"></div>
+    </div>
+    <div class="summarize">
+        <div class="heart  summarizeHeart"></div>
+        <div class="bigWordSize lastText">夏季诱人唇妆完成啦</div>
+        <div class="heart summarizeRightHeart"></div>
+    </div>
+    <div class="clear"></div>
+    <div class="RelatedImg  lastImg">
+        <img src="images/006.png">
+    </div>
+<input type="hidden" ng-model="templateurl" ng-init="templateurl='/TryMakeup/comments.html'" />
+<div id="add_comment" ng-include="templateurl"></div>
+</body>
+
+</html>

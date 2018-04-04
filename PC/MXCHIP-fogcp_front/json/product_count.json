@@ -1,0 +1,19 @@
+{
+	"IsSuccess":true,
+	"Data":{
+		"DataArr1":[
+			{"name":"空调","value": "260"},
+			{"name":"烤箱","value": "900"},
+			{"name":"冰箱","value": "660"},
+			{"name":"洗衣机","value": "200"},
+			{"name":"其他","value": "500"}
+		],
+		"DataArr2":[
+			{"name":"空调","value": "260"},
+			{"name":"烤箱","value": "900"},
+			{"name":"冰箱","value": "660"},
+			{"name":"洗衣机","value": "200"},
+			{"name":"其他","value": "500"}
+		]
+	}
+}

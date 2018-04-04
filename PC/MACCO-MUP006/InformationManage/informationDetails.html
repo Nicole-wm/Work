@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/sb-admin.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/common.css" rel="stylesheet" type="text/css">
+    <link href="/css/uniform.css" rel="stylesheet" type="text/css">
+    <link href="/css/public.css" rel="stylesheet">
+    <link href="/css/makeweb.css" rel="stylesheet">
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/common.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-infinite-scroll.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-file-upload-all.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/sidebarController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/Info/InformationDetail.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Sidebar.html'" />
+        <div id="nav" ng-include="templateurl"></div>
+        <div id="page-wrapper" ng-controller="InformationDetailController">
+            <div class="container-fluid">
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            资讯详情{{OperationType}}
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>
+                                <a href="index.html">Macco Admin</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-table"></i> 资讯详情{{OperationType}}
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div>
+                            <h2 style="display:inline-block;">资讯详情{{OperationType}}:</h2>
+                        </div>
+                        <form role="form" name="InfoDetail" class="form-horizontal">
+                            <div class="form-group">
+                                <label>标题：</label>
+                                <div class="textipt" style="width: 40.95%;">
+                                    <input name="Title" class="form-control" id="titleName" ng-model="Title" required ng-required="NeedBanner" ng-disabled="!canEdit">
+                                </div>
+                                <label ng-show="InfoDetail.Title.$error.required" id="informationalert" class="formalert">*&nbsp;请填写标题</label>
+                            </div>
+                            <div class="form-group">
+                                <label>首页图片:</label>
+                                <div class="textipt" id="falseName" style="cursor:pointer">
+                                    <img ngf-select ng-disabled="!canEdit" ng-model="Banner" ngf-src="Banner[0]" ngf-accept="'image/*'" ng-src="{{ImageUrl}}"
+                                    style="width:372px;height:120px" id="imgSelect" />
+                                    <img ng-model="Banner" ngf-src="Banner[0]" style="display:none;" id="pic"/>
+                                    <input type="hidden" ng-model="Banner[0].name" name="Banner"  required ng-required="NeedBanner">                                   
+                                </div>
+                                <label ng-show="InfoDetail.Banner.$error.required" id="informationalert" class="formalert">*&nbsp;请选择首页图片</label>
+                            </div>
+
+                            <div class="form-group">
+                                <label>分享图片:</label>
+                                <div class="textipt" id="falseName" style="cursor:pointer">
+                                    <img ngf-select ng-disabled="!canEdit" ng-model="ShareImage" ngf-src="ShareImage[0]" ngf-accept="'image/*'" ng-src="{{ShareImageUrl}}" style="width:150px;height:150px" id="sharepicSelect" />
+                                    <img ng-model="ShareImage" ngf-src="ShareImage[0]" style="display:none" id="sharepic"/>
+                                    <input type="hidden" ng-model="ShareImage[0].size" name="ShareImage"  required ng-required="NeedShareImage">
+                                </div>
+                                <label ng-show="InfoDetail.ShareImage.$error.required" id="informationalert" class="formalert">*&nbsp;请选择分享图片</label>
+                            </div>
+
+                            <div class="form-group ">
+                                <div style="float: left;height: 50px;line-height: 50px;margin-right: 20px;font-weight: 700;">描述:</div>
+                                <div class="textipt" id="falseName" style="float:left;">
+                                    <textarea class="form-control" name="Description" ng-model="Description" ng-disabled="!canEdit" required></textarea>
+                                </div>
+                                <div ng-show="InfoDetail.Description.$error.required" id="informationalert" class="formalert" style="float:left;height: 50px;line-height: 50px;font-weight: 700;">*&nbsp;请填写描述</div>
+                            </div>
+                            <div class="control-group" ng-show="canEdit">
+                                <label class="control-label">内容:</label>
+                                <div class="controls">
+                                    <div class="uploader">
+                                        <input type="button" ngf-select  accept="application/x-zip-compressed" ng-model="Web" ng-disabled="!canEdit">
+                                        <span class="filename webFileName" style="-webkit-user-select: none;">{{Web[0].name}}</span>
+                                        <span class="action" style="-webkit-user-select: none; float:right;">浏览</span>
+                                    </div>
+                                    <span class="btn btn-primary" ng-click="WebConfirmUpload()">上传</span>
+                                    <span class="btn btn-primary" ng-disabled="!WebShowSubmit" ng-click="WebCancelUpload()">取消</span>
+                                    <label style="width:20px;"></label>
+                                    <label ng-bind="WebUploadProgress"></label><!-- 
+                                    <input type="hidden" ng-model="Web[0].name" name="Web" required ng-required="NeedBanner">
+                                    <label ng-show="InfoDetail.Web.$error.required" id="informationalert" class="formalert">*&nbsp;请选择内容</label> -->
+                                </div>
+                            </div>
+                            <div class="control-group" ng-show="!canEdit">
+                                <label class="control-label">内容:</label>
+                                <div class="textipt" style="width: 40.95%;">
+                                    <a ng-href="{{WebUrl}}" target="_blank">{{WebUrl}}</a>
+                                </div>
+                            </div>
+                            <div class="blank" style="height:50px;"></div>
+                            <div class="clear"></div>
+                            <div class="control-group" ng-show="canEdit">
+                                <label class="control-label">首页视频:</label>
+                                <div class="controls">
+                                    <div class="uploader">
+                                        <input type="button" ngf-select accept="audio/mp4,video/mp4, application/ogg, audio/ogg" ng-model="Video" ng-disabled="!canEdit">
+                                        <span class="filename videoFileName" style="-webkit-user-select: none;">{{Video[0].name}}</span>
+                                        <span class="action" style="-webkit-user-select: none; float:right;">浏览</span>
+                                        <video ngf-src="Video[0]" id="indexVideo"></video>
+                                    </div>
+                                    <input type="hidden" ng-model="Video[0].name" name="Video">
+                                    <label ng-show="InfoDetail.Video.$error.required" id="informationalert" class="formalert">*&nbsp;请选择首页视频</label>
+                                    <span class="btn btn-primary" ng-click="VideoConfirmUpload()">上传</span>
+                                    <span class="btn btn-primary" ng-disabled="!VideoShowSubmit" ng-click="VideoCancelUpload()">取消</span>
+                                    <label style="width:20px;"></label>
+                                    <label ng-bind="VideoUploadProgress"></label>
+                                </div>
+                            </div>
+
+                            <div class="control-group" ng-show="!canEdit">
+                                <label class="control-label">首页视频:</label>
+                                <div class="textipt" style="width: 40.95%;">
+                                 <a ng-href="{{VideoUrl}}" target="_blank">{{VideoUrl}}</a>
+                             </div>
+                         </div>
+                         <div class="clear"></div>
+                         <div class="form-actions">
+                            <button ng-show="canEdit" ng-disabled="!InfoDetail.Title.$valid||!InfoDetail.Banner.$valid||!InfoDetail.ShareImage.$valid||!InfoDetail.Description.$valid" ng-click="Submit()" type="button" class="btn btn-primary">提交</button>
+                            <button class="btn" ng-click="ReturnBack()">返回</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+</body>
+
+</html>

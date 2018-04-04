@@ -1,0 +1,14 @@
+{
+	"IsSuccess":true,
+	"data":{ 
+		"id":"72b72f72-3c2e-11e6-9d95-00163e103941",
+		"upgrade":1,
+		"accesstype":2,
+		"noticetype":2,
+		"progress":"70%",
+		"effectivetime":"2016-03-03T11:16:24.495Z",
+		"uploadTime":"2016-03-03T11:16:24.495Z",
+		"setuppeople":"fog1",
+		"startflag":false
+	}
+}

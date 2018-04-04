@@ -1,0 +1,158 @@
+<div class="row" ng-controller="ProductDetailsAttributeController">
+    <div class="col-md-12">
+        <!-- BEGIN 属性详情-->
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="portlet-body" ng-show="AttrCount===0">
+                    <div class="form-group col-lg-12"><h4>暂无数据属性信息</h4></div>
+                </div>
+                <div class="portlet-body" ng-show="AttrCount!==0">
+                    <table class="table table-bordered table-hove">
+                        <thead>
+                            <tr>
+                                <th> 属性标识 </th>
+                                <th> 属性名称 </th>
+                                <th> 读写类型 </th>
+                                <th> 数据类型 </th>
+                                <th> 参数单位 </th>
+                                <th> 数据操作 </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="attr in ProductAttrArr">
+                                <td> {{attr.identifier}} </td>
+                                <td> {{attr.pname}} </td>
+                                <td> {{attr.ParaKeyName}} </td>
+                                <td> {{attr.ParaTypeName}} </td>
+                                <td> {{attr.units}} </td>
+                                <td>
+                                    <a data-toggle="modal" data-target="#myModal_parameter" class="btn bg-blue-steel bg-font-blue-steel btn-sm" ng-click="EditProductFun(attr.id)"> 查看 </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- END 属性详情-->
+        </div>
+    </div>
+    <div class="col-md-12">
+        <!-- BEGIN 属性详情弹框-->
+        <input type="hidden" id="myModal_parameter_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_parameter">
+        <div id="myModal_parameter" class="modal fade">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a href="javascript:;" class="close" data-dismiss="modal" aria-hidden="true"></a>
+                        <h4 class="modal-title">产品功能属性</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="portlet">
+                            <div class="portlet-body form">
+                                <!-- BEGIN FORM-->
+                                <form id="productpara" class="horizontal-form" name="ProductParam">
+                                    <input type="reset" id="FormReset" hidden="true">
+                                    <div class="form-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                     属性标识：{{ParaIdentifier}}
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                    属性名称: {{ParaName}}
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                    读写类型：{{ParaKeyName}}
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                    数据类型：{{ParaTypeName}}
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>单位名称：{{Units}}</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>最小值：{{Minvalue}}</label>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>最大值：{{Maxvalue}}</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>单位符号：{{Symbol}}</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>
+                                                        <div class="checker">
+                                                            <input ng-checked="IsModify" name="IsModify" ng-click="CheckFun()" type="checkbox" class="checkbox dis-inblock" ng-disabled="1">是否允许修改
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label>属性描述：{{ParaDescription}}</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 portlet-body">
+                                                <table class="table table-striped table-hover table-bordered" id="KeyTable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th> 键名</th>
+                                                            <th> 键值</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr ng-repeat="Key in KeyArr" id="{{Key.ID}}">
+                                                            <td> {{Key.KeyName}} </td>
+                                                            <td> {{Key.KeyValue}} </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END 属性详情弹框-->
+    </div>
+</div>

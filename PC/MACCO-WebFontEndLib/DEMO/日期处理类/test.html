@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  <html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <script type="text/javascript" src="DateUtil.js" ></script>
+ 
+    <script type="text/javascript">
+        var date = new Date(); 
+        document.write("===========penngo test DateUtil.js==========" + "<br/>");
+        document.write("date========================================" + date + "<br/>");
+        document.write("isLeapYear==================================" + DateUtil.isLeapYear(date) + "<br/>");
+        document.write("dateToStr===================================" + DateUtil.dateToStr('yyyy-MM-dd HH:mm:ss', date) + "<br/>");
+        document.write("dateAdd('d', 2, date)=======================" + DateUtil.dateToStr('yyyy-MM-dd HH:mm:ss', DateUtil.dateAdd('d', 2, date)) + "<br/>");
+     
+        var date2 = DateUtil.dateAdd('s', 3, date);
+        document.write("dateDiff('s', date, date2)==================" + DateUtil.dateDiff('s', date, date2) + "<br/>");
+        document.write("strToDate('2013-01-16 00:27:23')============" + DateUtil.strToDate('2013-01-16 00:27:23') + "<br/>");
+        document.write("strFormatToDate=============================" + DateUtil.strFormatToDate('yyyy-MM-dd HH:mm:ss', '2013-01-16 00:27:23') + "<br/>");
+        document.write("dateToLong==================================" + DateUtil.dateToLong(date) + "<br/>");
+        document.write("longToDate==================================" + DateUtil.longToDate(DateUtil.dateToLong(date)) + "<br/>");
+        document.write("isDate('2013-01-16 00:27:23', 'yyyy-MM-dd HH:mm:ss')=" + DateUtil.isDate('2013-01-16', 'yyyy-MM-dd') + "<br/>");
+ 
+        document.write("datePart====================================" + DateUtil.datePart('m', date) + "<br/>");
+        document.write("maxDayOfDate================================" + DateUtil.maxDayOfDate(date) + "<br/>");
+    </script>
+  </head>
+  <body>
+  </body>
+  </html>

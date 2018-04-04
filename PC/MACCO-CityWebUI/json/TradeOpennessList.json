@@ -1,0 +1,38 @@
+{
+	"IsSuccess":true,
+	"Data":{
+		"PageDetails":{"AllPage":10,"CurPage":1,"AllPage1":24,"CurPage1":1,"AllPage2":2,"CurPage2":1,"AllPage3":8,"CurPage3":1,"AllPage4":19,"CurPage4":1,"AllPage5":56,"CurPage5":1},
+		"DataList":[
+			{ "ID":1,"Step":1,"Title":"中国招标投标公共服务平台正式上线试运行","Time":"2016-03-14","PlatformSource":"深圳市建设工程交易服务中心","Industry":"建设综合协调","Area":"昆明市"},
+			{ "ID":2,"Step":1,"Title":"我国招投标行业第一个行业规范正式发布","Time":"2016-03-10","PlatformSource":"昆明市公共资源交易中心","Industry":"总体规划","Area":"深圳市"},
+			{ "ID":3,"Step":3,"Title":"交易平台电子招投标试点取得阶段性成果","Time":"2016-03-14","PlatformSource":"深圳市建设工程交易服务中心","Industry":"绿化工程","Area":"昆明市"},
+			{ "ID":4,"Step":4,"Title":"关于中国招标投标公共服务平台公开征集CA互联试点交易平台的通知","Time":"2016-03-05","PlatformSource":"昆明市公共资源交易中心","Industry":"市容环境综合整治工程","Area":"昆明市"},
+			{ "ID":5,"Step":5,"Title":"企业信用大数据服务平台首批8个分平台正式落地","Time":"2016-03-12","PlatformSource":"深圳市建设工程交易服务中心","Industry":"建设综合协调","Area":"昆明市"},
+			{ "ID":6,"Step":4,"Title":"互联网招标采购助力全行业创新发展","Time":"2016-03-13","PlatformSource":"昆明市公共资源交易中心","Industry":"建设综合协调","Area":"深圳市"},
+			{ "ID":7,"Step":3,"Title":"人大代表关注招投标.8亿","Time":"2016-03-11","PlatformSource":"深圳市建设工程交易服务中心","Industry":"建设综合协调","Area":"昆明市"},
+			{ "ID":8,"Step":3,"Title":"推动电子招投标甘肃为企业提供免费电子标书","Time":"2016-03-12","PlatformSource":"昆明市公共资源交易中心","Industry":"建设综合协调","Area":"深圳市"},
+			{ "ID":9,"Step":1,"Title":"交通运输部电子招投标工作取得初步成效","Time":"2016-03-13","PlatformSource":"深圳市建设工程交易服务中心","Industry":"建设综合协调","Area":"昆明市"},
+			{ "ID":10,"Step":1,"Title":"今年50项上海市政府重点课题公开招标","Time":"2016-03-12","PlatformSource":"昆明市公共资源交易中心","Industry":"建设综合协调","Area":"深圳市"},
+			{ "ID":11,"Step":2,"Title":"最低价中标成众矢之的代表委员建议修改招标投标法","Time":"2016-03-14","PlatformSource":"深圳市建设工程交易服务中心","Industry":"建设综合协调","Area":"昆明市"},
+			{ "ID":12,"Step":2,"Title":"各地加强信用建设失信企业参加招投标越来越难","Time":"2016-03-14","PlatformSource":"深圳市建设工程交易服务中心","Industry":"建设综合协调","Area":"深圳市"},
+			{ "ID":13,"Step":4,"Title":"交易平台电子招投标试点取得阶段性成果","Time":"2016-03-05","PlatformSource":"昆明市公共资源交易中心","Industry":"市容环境综合整治工程","Area":"昆明市"},
+			{ "ID":14,"Step":5,"Title":"交通运输部电子招投标工作取得初步成效","Time":"2016-03-12","PlatformSource":"深圳市建设工程交易服务中心","Industry":"建设综合协调","Area":"昆明市"},
+			{ "ID":15,"Step":4,"Title":"三部委发布一带一路愿景与行动","Time":"2016-03-13","PlatformSource":"昆明市公共资源交易中心","Industry":"建设综合协调","Area":"深圳市"},
+			{ "ID":16,"Step":3,"Title":"部际联席会议以四个统一推动公共资源交易平台整合","Time":"2016-03-11","PlatformSource":"深圳市建设工程交易服务中心","Industry":"建设综合协调","Area":"昆明市"},
+			{ "ID":17,"Step":3,"Title":"2016信用建设要实现四大提升信用法起草提上日程","Time":"2016-03-12","PlatformSource":"昆明市公共资源交易中心","Industry":"建设综合协调","Area":"深圳市"},
+			{ "ID":18,"Step":1,"Title":"电子招投标检测认证人员首期培训班成功举办","Time":"2016-03-13","PlatformSource":"深圳市建设工程交易服务中心","Industry":"建设综合协调","Area":"昆明市"},
+			{ "ID":19,"Step":1,"Title":"上海建无形平台整合公共资源交易","Time":"2016-03-12","PlatformSource":"昆明市公共资源交易中心","Industry":"建设综合协调","Area":"深圳市"},
+			{ "ID":20,"Step":2,"Title":"青岛市改革招投标交易一年抠出12.8亿","Time":"2016-03-14","PlatformSource":"深圳市建设工程交易服务中心","Industry":"建设综合协调","Area":"昆明市"},
+            { "ID":4,"Step":4,"Title":"关于中国招标投标公共服务平台公开征集CA互联试点交易平台的通知","Time":"2016-03-05","PlatformSource":"昆明市公共资源交易中心","Industry":"市容环境综合整治工程","Area":"昆明市"},
+			{ "ID":5,"Step":5,"Title":"企业信用大数据服务平台首批8个分平台正式落地","Time":"2016-03-12","PlatformSource":"深圳市建设工程交易服务中心","Industry":"建设综合协调","Area":"昆明市"},
+			{ "ID":6,"Step":4,"Title":"互联网招标采购助力全行业创新发展","Time":"2016-03-13","PlatformSource":"昆明市公共资源交易中心","Industry":"建设综合协调","Area":"深圳市"},
+			{ "ID":7,"Step":3,"Title":"人大代表关注招投标.8亿","Time":"2016-03-11","PlatformSource":"深圳市建设工程交易服务中心","Industry":"建设综合协调","Area":"昆明市"},
+			{ "ID":8,"Step":3,"Title":"推动电子招投标甘肃为企业提供免费电子标书","Time":"2016-03-12","PlatformSource":"昆明市公共资源交易中心","Industry":"建设综合协调","Area":"深圳市"},
+			{ "ID":9,"Step":1,"Title":"交通运输部电子招投标工作取得初步成效","Time":"2016-03-13","PlatformSource":"深圳市建设工程交易服务中心","Industry":"建设综合协调","Area":"昆明市"},
+			{ "ID":10,"Step":1,"Title":"今年50项上海市政府重点课题公开招标","Time":"2016-03-12","PlatformSource":"昆明市公共资源交易中心","Industry":"建设综合协调","Area":"深圳市"},
+			{ "ID":11,"Step":2,"Title":"最低价中标成众矢之的代表委员建议修改招标投标法","Time":"2016-03-14","PlatformSource":"深圳市建设工程交易服务中心","Industry":"建设综合协调","Area":"昆明市"},
+			{ "ID":12,"Step":2,"Title":"各地加强信用建设失信企业参加招投标越来越难","Time":"2016-03-14","PlatformSource":"深圳市建设工程交易服务中心","Industry":"建设综合协调","Area":"深圳市"},
+			{ "ID":13,"Step":4,"Title":"交易平台电子招投标试点取得阶段性成果","Time":"2016-03-05","PlatformSource":"昆明市公共资源交易中心","Industry":"市容环境综合整治工程","Area":"昆明市"}
+		]
+	}
+}

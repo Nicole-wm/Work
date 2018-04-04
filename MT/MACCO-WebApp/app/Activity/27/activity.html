@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp" class="ng-scope">
+
+<head>
+    <!--include "../../../templetes/commonHead.html"-->
+    <!--include "../../../templetes/Activity/activity.html"-->
+</head>
+
+<body ng-controller="newactivityController">
+    <div class="banner">
+        <img src="banner.jpg" />
+    </div>
+    <div class="product_title">
+        <div class="title_content">
+            <div class="product_name"><b>Glo&Ray眼线礼盒</b></div>
+            <div class="product_free"><i>Free</i></div>
+            <div class="product_price">¥198.00</div>
+            <div class="join_person">
+                <div class="person_count" ng-bind="JoinCount"></div>
+                <div class="person">当前参加人数</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blank"></div>
+    <div class="product_introduce">
+        炫色潮妆，打破眼妆黑白灰！这款色彩缤纷、包装精美 的好心情礼盒，装载的不仅仅是打造美眸必备的产品， 更是慢慢的自我期许，转发参与，小美免费送！
+    </div>
+    <div class="blank"></div>
+    <!--活动正在进行-->
+    <div class="join_method" ng-hide="activitying">
+        <div class="method">
+            <div class="firstline" ng-bind="shareline1"></div>
+        </div>
+
+    </div>
+
+    <!--活动已经结束-->
+    <div class="getPricePerson" ng-hide="activityed">
+        <div class="blank"></div>
+        <div class="nameList">中奖名单</div>
+        <div class="personName">
+            <span ng-repeat="item in WinUsers" ng-bind="item.NickName"></span>
+        </div>
+        <div class="blank"></div>
+    </div>
+    <div class="own">本活由上海魅客信息科技有限公司 与苹果公司及其子公司无关</div>
+    <!--晒照片-->
+    <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Activity/comments.html'" />
+    <div id="add_comment" ng-include="templateurl" ng-hide="activityed"></div>
+    <div class="clear"></div>
+    <div class="fixblank"></div>
+    <input type="hidden" ng-model="type" ng-init="type='share'">
+    <input type="hidden" ng-model="shouldLogin" ng-init="shouldLogin='true'">
+    <input type="hidden" ng-model="ObjectID" ng-init="ObjectID=''">
+    <div ng-click="Join()" ng-bind="title" class="btnJoin"></div>
+    <!--<input type="hidden" ng-model="footerurl" ng-init="footerurl='/Activity/footer.html'" />
+    <div ng-include="footerurl"></div>-->
+</body>
+
+</html>

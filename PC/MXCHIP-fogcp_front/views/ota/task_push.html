@@ -1,0 +1,69 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="portlet light portlet-fit bordered">
+			<div class="portlet-body">
+				<div class="form-body form">
+					<form  class="form-horizontal" role="form" name="TaskPushDetail">
+						<div class="form-group col-md-12"></div>
+						<div class="form-group col-md-12">
+							<div class="col-md-6">
+								<a ng-click="AddPushFun()" data-original-title="点击添加推送" data-toggle="modal" data-target="#myModal_push" class="btn bg-blue-steel bg-font-blue-steel "> 添加推送 </a>
+							</div>
+						</div>
+						<div class="form-group col-md-12"></div>
+						<div class="form-group" ng-repeat="item in ListArr track by $index">
+							<label class="col-md-1 control-label">{{$index+1}}</label>
+							<div class="col-md-4">
+								<input ng-disabled="1" name="ArrName" ng-model="item" type="text" class="form-control" >
+							</div>
+							<div class="col-md-4">
+								<a class="btn bg-red bg-font-red btn-sm" ng-click="DeletePushFun(item)"> 删除 </a>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 control-label"></label>
+							<div class="col-md-5">
+								<input ng-show="ListArr!=0" ng-click="SureFun(1)" class="btn bg-blue-steel bg-font-blue-steel" type="submit" value="确认"/>
+								<input ng-show="ListArr!=0" ng-click="SureFun(0)" class="btn bg-default bg-font-default" type="submit" value="取消"/>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<input type="hidden" id="myModal_push_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_push">
+		<div id="myModal_push" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<a href="javascript:;" class="close" data-dismiss="modal" aria-hidden="true"></a>
+						<h4 class="modal-title">添加推送</h4>
+					</div>
+					<div class="modal-body">
+						<div class="portlet">
+							<div class="portlet-body form">
+								<form id="productpara" class="horizontal-form" name="ModalPush">
+									<input type="reset" id="FormReset" hidden="true">
+									<div class="form-body">
+										<div class="form-group">
+											<label class="col-md-4 control-label">设备串号或MAC地址<span class="required"> * </span></label>
+											<div class="col-md-6">
+												<input ng-model="modalpushName" name="ModalpushName" type="text" class="form-control" placeholder="必填" required>
+											</div>
+										</div>
+									</div>
+									<div class="form-actions right">
+										<button type="button" class="btn btn-primary ok"  ng-disabled="!ModalPush.ModalpushName.$valid" type="submit" ng-click="SurePushFun(ParaID)" data-dismiss="modal">确认</button>
+										<button type="button" class="btn btn-default cancel" data-dismiss="modal">取消</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

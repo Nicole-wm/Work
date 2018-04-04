@@ -1,0 +1,127 @@
+@charset "UTF-8";
+.RelatedImg>img{
+  width: 100%;
+}
+
+.theme{
+  color: #5c5c5c;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.bigSize{
+ font-size: 1.625rem;
+}
+.smallSize{
+ font-size: 1rem;
+}
+.introduce{
+  text-align: center;
+  color: #999999;
+}
+.makeUp,.actionRule,.abstractNum,.prize{
+  color: #ff4a83;
+}
+.actionRule{
+  margin-top: 40px;
+  margin-left: 2%;
+  margin-bottom: 12px;
+}
+.step{
+  color: #5c5c5c;
+  margin-left: 2%;
+}
+.join{
+  width: 75px;
+  height: 25px;
+  display: inline-block;
+  color: #ffffff;
+  background: #ff4a83;
+  margin-left: 6px;
+  text-align: center;
+  margin-right: 6px;
+  line-height: 25px;
+}
+.prize,.prizeIntroduce{
+  margin-left: 2%;
+}
+.btnJoin{
+  width: 102px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #ff4a83;
+  color: #ffffff;
+  border-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  position: fixed;
+  bottom:0px;
+  right:0px;
+  opacity: 0.8;
+}
+
+.btnJoinDisable {
+  width: 102px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #ccc;
+  color: #ffffff;
+  border-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  position: fixed;
+  bottom:0px;
+  right:0px;
+}
+
+.relatedPictures>img{
+  width: 100%;
+}
+
+.relatedPictures{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+.smallSize>div{
+  text-align: center;
+  line-height: 24px;
+}
+.Rescue{
+  margin: 25px auto 29px auto;
+  text-align: center;
+
+}
+.ProductIntroduce{
+  line-height: 24px;
+}
+@media (max-width: 375px){
+  .bigSize{
+   font-size: 1.5rem;
+ }
+ .smallWordSize{
+   font-size: 0.9375rem;
+ }
+}
+@media (max-width: 360px){
+  .smallSize{
+    font-size: 0.875rem;
+  }
+  .bigSize{
+    font-size: 1.437rem;
+  }
+}
+
+@media (max-width: 320px){
+  .likeNum{
+    margin-top: 6px;
+  }
+  .smallSize{
+    font-size: 0.8125rem;
+  }
+  .bigSize{
+    font-size: 1.3125rem
+  }
+}

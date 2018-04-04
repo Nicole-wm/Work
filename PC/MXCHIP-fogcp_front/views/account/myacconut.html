@@ -1,0 +1,24 @@
+<div ng-controller="MyaccountController">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row portlet light bordered">
+				<span>现金余额：<span class="font-yellow-gold">￥{{Account_amount}}</span> &nbsp;&nbsp;</span>
+				<input ng-click="RechargeFun()" class="btn blue-steel btn-sm" type="button" value="充值"  />
+			</div>
+			<div class="row portlet light bordered">
+				<span>余额预警：</span>
+				<input ng-show="warnflag==1" ng-click="WarnFun(1)" class="btn blue-steel btn-sm" type="button" value="开启"/>
+				<label ng-show="warnflag==2">
+					<span>{{BWarning}}&nbsp;元</span>
+					<input ng-click="WarnFun(2)" class="btn bg-default bg-font-default btn-sm" type="button" value="关闭"/>
+					<input ng-click="WarnFun(1)" class="btn blue-steel btn-sm" type="button" value="修改"/>
+				</label>
+				<label ng-show="warnflag==3" >
+					<input ng-model="BWarning" type="text" class="form-control input-sm" style="display:inline;width:80px;" onkeyup="(this.v=function(){this.value=this.value.replace(/[^\d+(\.\d+)?$]/,'');}).call(this)" placeholder="0">&nbsp;元
+					<input ng-click="WarnFun(3)" class="btn blue-steel btn-sm" type="button" value="确认"/>
+					<input ng-click="WarnFun()" class="btn bg-default bg-font-default btn-sm" type="button" value="取消"/>
+				</label>
+			</div>
+		</div>
+	</div>
+</div>

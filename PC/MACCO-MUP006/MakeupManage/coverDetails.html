@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Macco Admin - Bootstrap Admin Template</title>
+        <!-- Bootstrap Core CSS -->
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="/css/sb-admin.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/css/common.css" rel="stylesheet" type="text/css">
+        <link href="/css/uniform.css" rel="stylesheet" type="text/css">
+        <link href="/css/public.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="/scripts/jquery.js"></script>
+        <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/scripts/common.js"></script>
+        <script type="text/javascript" src="/scripts/Lib/node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-infinite-scroll.min.js"></script>
+        <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-file-upload-all.js"></script>
+        <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+        <script type="text/javascript" src="/scripts/app.js"></script>
+        <script type="text/javascript" src="/scripts/controllers/sidebarController.js"></script>
+        <script type="text/javascript" src="/scripts/controllers/TryMakeup/coverDetailsController.js"></script>
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Sidebar.html'" />
+            <div id="nav" ng-include="templateurl"></div>
+            <div id="page-wrapper" ng-controller="converDetailsController">
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="page-header">试妆封面{{OperationType}}</h1>
+                            <ol class="breadcrumb">
+                                <li>
+                                    <i class="fa fa-dashboard"></i>
+                                    <a href="/index.html?Token={{Token}}">Macco Admin</a>
+                                </li>
+                                <li class="active">
+                                    <i class="fa fa-table"></i>试妆封面{{OperationType}}</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div>
+                                <h2 style="display:inline-block;">试妆封面{{OperationType}}:</h2>
+                            </div>
+                            <form role="form" name="converDetail" class="form-horizontal">
+                                <div class="form-group">
+                                    <label>名称：</label>
+                                    <div class="textipt" style="width: 40.95%;">
+                                        <input class="form-control" name="categoryName" ng-model="categoryName" required ng-required="canEdit" ng-disabled="!canEdit">
+                                    </div>
+                                    <label id="informationalert" ng-show="converDetail.categoryName.$error.required"  class="formalert">*&nbsp;请填写名称</label>
+                                </div>
+                                <div class="form-group" ng-show="!canEdit">
+                                    <div class="textipt" id="falseName" style="cursor:pointer">
+                                        <img ng-src="{{CoverImageUrl}}" style="width:414px;height:735px;"></img>
+                                  
+                                    </div>
+                                </div>
+                                <div class="form-group" ng-show="canEdit">
+                                    <label>图片:</label>
+                                    <div class="textipt" id="falseName" style="cursor:pointer">
+                                        <img ngf-select 
+                                        ng-disabled="!canEdit"
+                                        ng-model="CoverImage" 
+                                        ngf-src="CoverImage[0]" 
+                                        ngf-accept="'image/*'"
+                                        ngf-default-src = "/img/placehold1.png"
+                                        ng-src="{{CoverImageUrl}}" style="width:414px;height:735px;"></img>
+                                        <input type="hidden" ng-model="CoverImage[0].name" name="CoverImage" required ng-required="NeedCategoryImage">
+                                    </div>
+                                    <label ng-show="converDetail.CoverImage.$error.required" id="informationalert" class="formalert">*&nbsp;请选择图片</label>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" ng-click="Submit()" ng-show="canEdit" ng-disabled="!converDetail.$valid" class="btn btn-primary">确定</button>
+                                    <button class="btn">
+                                        <a ng-click="ReturnBack(this.Token)">返回</a>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /#page-wrapper -->
+        </div>
+        <!-- /#wrapper -->
+    </body>
+
+</html>

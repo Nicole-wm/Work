@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <style>
+        @font-face {
+            font-family: 'youyuan';
+            src: url(data:font/ttf;base64,FONTBASE64) format('truetype');
+        }
+    </style>
+    <link href="../css/public.css" rel="stylesheet" charset="UTF-8">
+    <link href="../css/comments.css" rel="stylesheet" charset="UTF-8">
+    <link href="../css/zan.css" rel="stylesheet" charset="UTF-8">
+    <link href="css/tryMakeup.css" rel="stylesheet" charset="UTF-8">
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/ng-infinite-scroll.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/TryMakeup/JS/dataSource.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/TryMakeup/JS/comments.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/TryMakeup/JS/zan.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/TryMakeup/JS/TryMakeup.js" charset="UTF-8"></script>
+</head>
+
+<body ng-controller="ProductListCtrl" style="background: url('images/bg.png') repeat;">
+    
+    <input type="hidden" ng-model="zanurl" ng-init="zanurl='/TryMakeup/zan.html'" />
+    <div id="add_zan" ng-include="zanurl"></div>
+    <div class="clear"></div>
+    <div class="smallWordSize TextContent">
+        <div>这个夏天的色彩</div>
+        <div>就是沐浴在绚烂阳光下的橘色 </div>
+        <div>我们就用它来打造出令人炫目的健康妆容吧！</div>
+    </div>
+    <div class="RelatedImg"><img src="images/1.png"></div>
+    <div ng-controller="ProductStepCtrl" ng-model="productQuery" ng-init="productQuery='CourseStep1' ">
+        <div ng-include="'/TryMakeup/product.html'"></div>
+    </div>
+    <div class="smallWordSize debriefing ">
+        整个妆容的重点就是亮橘色的唇妆了！利用质地细腻的唇膏小心描绘唇部，让整个嘴唇呈现饱满健康的形态.
+    </div>
+    <input type="hidden" ng-model="templateurl" ng-init="templateurl='/TryMakeup/comments.html'" />
+    <div id="add_comment" ng-include="templateurl"></div>
+</body>
+</html>

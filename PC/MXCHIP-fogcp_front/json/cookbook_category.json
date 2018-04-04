@@ -1,0 +1,12 @@
+{
+	"IsSuccess":true,
+	"Data":[
+		{ "ID":1,"CategoryName":"儿童套餐"},
+		{ "ID":2,"CategoryName":"养生粥品"},
+		{ "ID":3,"CategoryName":"营养套餐"},
+		{ "ID":4,"CategoryName":"懒人套餐"},
+		{ "ID":5,"CategoryName":"风味小吃"},
+		{ "ID":6,"CategoryName":"快手菜"},
+		{ "ID":7,"CategoryName":"家常小菜"}
+	]
+}

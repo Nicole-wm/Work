@@ -1,0 +1,89 @@
+.WrapContent {
+  height: 200px;
+  max-height: 200px;
+}
+.pull-down{
+	margin-left: 10px;
+}
+.mobilepublish{
+	display: none;
+}
+.col_id {
+	width:5%; 
+}
+.col_title {
+	width:14%;
+	min-width: 305px;
+	min-width: 20px;
+}
+.col_keyno{
+	width:10%;
+	word-wrap: break-word;
+}
+.col_cover_image {
+	width: 15%;
+}
+.col_join {
+	width: 5%;
+}
+.col_start_time {
+	width: 8%;
+}
+.col_terminal_time {
+	width: 8%;
+}
+.col_publish{
+    width: 4%;
+}
+.col_publish_time {
+	width:8%;
+}
+.col_operation {
+	width:15%;
+}
+.mobileId,
+.mobileTitle,
+.mobileImage,
+.mobileKeyno,
+.mobileJoin,
+.mobileStartTime,
+.mobileTerminalTime,
+.mobilePublishTime,
+.mobileOperation{
+	display: none;
+ } 
+@media(max-width:768px) {
+.WrapContent {
+  height: 650px;
+  max-height: 650px;
+}
+
+.col_cover_image {
+	min-height: 256px;
+}
+.WrapContent > .col_cover_image:hover > img {
+	display: none;
+	-webkit-animation-name: "";
+	-moz-animation-name: "";
+	-o-animation-name: "";
+	-ms-animation-name: "";
+	animation-name: "";
+}
+.mobileId,
+.mobileTitle,
+.mobileImage,
+.mobileKeyno,
+.mobileJoin,
+.mobileStartTime,
+.mobileTerminalTime,
+.mobilePublishTime,
+.mobileOperation{
+    display: inline-block;
+    } 
+
+}
+@media(max-width:414px) {
+.mobilepublish{
+	display: inline-block;
+}
+}

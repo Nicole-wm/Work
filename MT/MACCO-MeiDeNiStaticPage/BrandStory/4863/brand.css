@@ -1,0 +1,18 @@
+@charset "UTF-8";
+.textInfo{
+	top: 49%;
+	left: 32%;
+	width: 67%;
+}
+@media(max-width:375px){
+.textInfo {
+	width: 65%;
+}
+}
+@media(max-width:360px){
+.brand {
+	margin-bottom: 20px;
+}
+}
+@media(max-width:320px){
+}

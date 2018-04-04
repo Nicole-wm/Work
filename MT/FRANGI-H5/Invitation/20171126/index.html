@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>FRANGI 期待与美丽的您一起绽放——邀请函</title>
+	<meta name="keywords" content="FRANGI 期待与美丽的您一起绽放——邀请函"/>
+	<meta name="description" content="暨素颜霜新品发布会,特邀金教授＆20时尚博主共话美颜肌密" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="icon" href="../../IMG/frangi.ico" type="image/x-icon">
+	<!-- pluginsCSS -->
+	<link rel="stylesheet" href="../../CSS/animate.min.css">
+	<!-- pageCSS -->
+	<link rel="stylesheet" href="css/index.css">
+	<!-- pluginsJS -->
+	<script src="../../JS/flexible_css.js"></script>
+	<script src="../../JS/flexible.js"></script>
+	<!-- h5.frangi.cn Baidu tongji analytics -->
+	<script src="../../JS/baiduhm.js"></script>
+</head>
+
+<body>
+	<!-- Music-bg -->
+	<div class="music" onclick="MusicBgClick()">
+		<i class="icon-music open" play="1"></i> 
+		<audio id="music-bg" src="video/music-bg.mp3" loop="loop" autoplay="autoplay" loop="loop"></audio> 
+	</div>
+	<div class="p-content">
+		<img src="img/bg.png?v=2">
+		<img src="img/pro.png" class="pro animated fadeInRight">
+		<video class="video" controls="controls" loop="loop" poster="video/intro.jpg" src="video/intro.mp4" webkit-playsinline="true" playsinline="true" x-webkit-airplay="allow"  x5-video-player-type="h5"  x5-video-player-fullscreen="true" x5-video-orientation="portraint" landscape style="object-fit:fill">
+		</video>
+	</div>
+	<!-- pluginsJS -->
+	<script src="../../JS/jquery-3.2.1.min.js"></script> 
+	<script src="../../JS/jweixin.js"></script>
+	<!-- PublicJS -->
+	<script src="js/weixinshare.js?v=1"></script>	
+	<script>
+		/*微信内-自动播放*/
+		function autoPlayAudio(id) {
+			var audio=document.getElementById(id);
+			wx.config({
+				debug: false,
+				appId: '',
+				timestamp: 1,
+				nonceStr: '',
+				signature: '',
+				jsApiList: []
+			});
+			wx.ready(function() {
+				audio.play();
+			});
+		}
+		/*背景音乐-自动播放*/
+		autoPlayAudio("music-bg");
+		/*背景音乐-播放暂停*/
+		function MusicBgClick(){
+			if($(".icon-music").attr("play") == "1"){
+				$(".icon-music").removeClass("open");
+				$(".icon-music").attr("play","0")
+				document.getElementById("music-bg").pause();
+			}else{
+				$(".icon-music").attr("play","1");
+				$(".icon-music").addClass("open");
+				document.getElementById("music-bg").play();
+			}
+		};
+
+		$(document).ready(function(){
+			var VHeight=$('.video').width()*3/4;
+			$('.video').css('height',VHeight+'px');
+			var tt = document.querySelector('.pro'); 
+			tt.addEventListener("webkitAnimationEnd", function(){ 
+				$('.pro').addClass('pro-ani');
+			}, false); 
+		});
+	</script>
+</body>
+</html> 

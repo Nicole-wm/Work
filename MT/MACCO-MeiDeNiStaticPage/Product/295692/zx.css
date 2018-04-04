@@ -1,0 +1,139 @@
+
+.priductInfo{
+	font-family: inherit;
+	font-style: normal;
+	font-weight: inherit;
+	text-align: inherit;
+	text-decoration: inherit;
+	color: rgb(79, 79, 79);
+	text-indent: 0px;
+	font-size: 18px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.priductInfo>span{
+	float: left;
+	padding-right: 0.1em;
+	font-size: 250%;
+	line-height: 1;
+	font-family: inherit;
+	font-style: normal;
+	font-weight: inherit;
+	text-align: inherit;
+	text-decoration: inherit;
+	color: rgb(79, 79, 79);
+}
+.packingInstruction{
+	box-sizing: border-box;
+	width: 50%;
+	float: left;
+	border: 0;
+	padding: 0.5em;
+	font-size:1rem;
+}
+.arrowsTo{
+	display: inline-block;
+	width: 1.2em;
+	height: 1.2em;
+	float: left;
+	padding: 0px 0.1em;
+	margin: 3px 7px 0px 0px;
+	color: white;
+	font-size: 1em;
+	text-align: center;
+	line-height: 1.2;
+	vertical-align: bottom;
+	font-weight: inherit;
+	text-shadow: 0px 1px;
+	font-family: inherit;
+	font-style: normal;
+	text-decoration: inherit;
+	border-color: rgb(249, 110, 87);
+	background-color: black;
+}
+.wrapImages{
+	float: right;
+	width: 50%;
+}
+.wrapImages {
+    float: right;
+    width: 50%;
+}
+.comparison {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    border: 0;
+    padding: 0.5em;
+    font-size: 1rem;
+}
+.ProductImages{
+	margin-top: 1.5em;
+	margin-bottom: -5px;
+}
+.wrapDiv{
+	display: inline-block;
+	vertical-align: top;
+	width: 0;
+	margin: -13px 0 0 2em;
+}
+.solidTriangle{
+	width: 0px;
+	border-bottom-width: 24px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(252, 160, 144);
+	border-left-width: 11px !important;
+	border-left-style: solid !important;
+	border-left-color: transparent !important;
+	border-right-width: 11px !important;
+	border-right-style: solid !important;
+	border-right-color: transparent !important;
+	border-top-color: rgb(252, 160, 144);
+}
+.hollowTriangle{
+	width: 0;
+	margin: -21px 1px 18px;
+	border-bottom: 22px solid #ffffff !important;
+	border-left: 10px solid transparent !important;
+	border-right: 10px solid transparent !important;
+}
+.productInstruction{
+	padding: 10px;
+	width: 100%;
+	margin-top: -20px;
+	border: 1px solid rgb(252, 160, 144);
+	box-shadow: rgb(204, 204, 204) 3px 3px 5px;
+	font-size: 1rem;
+}
+.textDescribe{
+	display: inline-block;
+	font-size: 175%;
+	z-index: 100;
+	padding: 0.1em 0.5em;
+	margin: -1.5em 0px 0px;
+	line-height: 1.2;
+	box-sizing: border-box;
+	text-align: right;
+	font-family: inherit;
+	font-style: normal;
+	font-weight: inherit;
+	text-decoration: inherit;
+	color: white;
+	border-color: rgb(249, 110, 87);
+	background-color: rgba(63, 65, 66, 0.682353);
+	position: absolute;
+	right: 0;
+}
+.textInfo{
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.eyeTap>img {
+    width: 48%;
+}
+.functionIntroduce>span {
+    width: 49%;
+    display: inline-block;
+    color: rgb(102, 102, 102);
+    font-size: 1rem;
+}

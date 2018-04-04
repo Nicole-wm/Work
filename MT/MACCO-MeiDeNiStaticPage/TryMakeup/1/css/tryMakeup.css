@@ -1,0 +1,226 @@
+@charset "UTF-8";
+body{
+  background: #ffdee1;
+
+}
+input{
+  display: none;
+}
+.head{
+  width: 100%;
+}
+.head>img{
+  width: 100%;
+}
+.clear{
+	clear: both;
+}
+.theme{
+      color: #ff0054;
+      text-align: center;
+      margin-top: 26px;
+      border-top: 1px solid #7d7d7d;
+      padding-top: 10px;
+      position: relative;
+}
+.theme:before{
+   content: "";
+  border-left: 1px solid #7d7d7d;
+  position: absolute;
+  top: -20px;
+  height: 200px;
+  left: 10px;
+}
+.RelatedImg {
+      width: 100%;
+      margin: 0 auto;
+     margin-bottom: 64px;
+}
+.RelatedImg>img{
+width: 100%;
+}
+.stepImg>img{
+  width: 45%;
+}
+.bigWordSize{
+	font-size: 1.625rem;
+}
+.smallWordSize{
+    font-size: 1rem;
+}
+.TextContent{
+  margin: 0 auto;
+}
+.TextContent>div{
+  text-align: center;
+  line-height: 30px;
+}
+.mainPoint
+{
+  position: relative;
+}
+.mainPoint >img{
+   width: 40%;
+  margin-left: 20px;
+}
+
+.mainPointText{
+
+  text-align: center;
+  width: 100%;
+  color: #ff006c;
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+.wapStep{
+  border: 3px solid #000000;
+  width: 69%;
+  left: 11%;
+  margin-top: 39px;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  position: relative;
+}
+.wapStep:before{
+  position: absolute;
+  content: "";
+  border-top: 1px solid #333333;
+  height: 1px;
+  width: 20%;
+  top: 30px;
+  left: -17%;
+  
+}
+.wapStep:after{
+  position: absolute;
+  content: "";
+  border-top: 1px solid #333333;
+  height: 1px;
+  width: 20%;
+  top: 30px;
+  right: -16%;
+  
+}
+.twoWrap{
+    left: 20%;
+}
+.twoWrap:before{
+    width: 20%;
+    left: -16%;
+}
+.twoWrap:after{
+  width: 20%;
+  right: -15%;
+}
+.lastWrap{
+  margin: 0 auto;
+  left: initial;
+  margin-top: 20px;
+
+}
+.lastWrap:before{
+  width: 20%;
+  left: -16%;
+}
+
+.step{
+  font-size: 1.8975rem;
+  margin-left: 16px;
+  margin-top: 20px;
+  color: #010101;
+}
+
+.stepName{
+  margin-left: 18px;
+  margin-top: 4px;
+  color: #000000;
+}
+.lastStepName{
+  margin-left: 12px;
+}
+.stepText{
+  margin-top: 27px;
+  margin-bottom: 33px;
+  line-height: 28px;
+  width: 55%;
+  text-indent: 15px;
+  margin-left: 102px;
+}
+
+.wrapStepTwo{
+  margin-top: 44px;
+
+}
+.lastText{
+    width: 100%;
+  text-align: center;
+}
+
+.lastImg{
+ 
+  width: 70%;
+  margin: 10px auto 14px auto;
+}
+.debriefing {
+  width: 89%;
+  margin: 20px auto 24px auto;
+}
+
+@media (max-width: 375px){
+.smallWordSize{
+	font-size: 0.9375rem;
+}
+
+.bigWordSize{
+ font-size: 1.5rem;
+}
+.lastStepName {
+  margin-left: 9px;
+}
+.twoWrap:after{
+  width: 20%;
+  right: -14.5%;
+}
+}
+@media (max-width: 360px){
+.smallWordSize{
+  font-size: 0.875rem;
+}
+.bigWordSize{
+font-size: 1.437rem;
+}
+
+}
+@media (max-width: 320px){
+.smallWordSize{
+  font-size: 0.8125rem;
+}
+.bigWordSize{
+  font-size: 1.3125rem
+}
+.theme:before{
+   height: 180px;
+}
+.wapStep {
+  width: 70%;
+}
+.debriefing {
+  width: 94%;
+}
+.twoWrap:after {
+  right: -21%;
+}
+.twoWrap:after {
+    width: 17%;
+    right: -13%;
+}
+.lastStepName {
+  margin-left: 7px;
+}
+.lastWrap:after{
+    right: -17%;
+}
+.lastWrap:before {
+  left: -17%;
+}
+}

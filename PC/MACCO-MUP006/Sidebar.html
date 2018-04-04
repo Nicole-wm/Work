@@ -1,0 +1,137 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" ng-controller="sidebarController">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/index.html?Token={{Token}}">Macco Admin</a>
+    </div>
+    <ul class="nav navbar-right top-nav">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span ng-bind="AdminUserName"></span> <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="/login.html"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div id="sidebar" class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav">
+            <li class="submenu" id="ShowManagement">
+                <a href="#" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> 晒一晒管理 <i class="fa fa-fw fa-caret-down"></i></a>
+                <ul style="display:none">
+                    <li>
+                        <a class="menu-link" href="/ShowManagement/ShowManager.html?Token={{Token}}">后台列表管理</a>
+                    </li>
+                    <li>
+                        <a class="menu-link" href="/ShowAppManagement/ShowManager.html?Token={{Token}}">App列表管理</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="submenu" id="ProductManagement">
+                <a href="#" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> 产品管理 <i class="fa fa-fw fa-caret-down"></i></a>
+                <ul style="display:none">
+                    <li>
+                        <a class="menu-link" href="/ProductManagement/productList.html?Token={{Token}}">产品列表</a>
+                    </li>
+
+                    <li>
+                        <a class="menu-link" href="/ProductManagement/brandList.html?Token={{Token}}">品牌列表</a>
+                    </li>
+
+                    <li>
+                        <a class="menu-link" href="/ProductManagement/bannerList.html?Token={{Token}}">横幅列表</a>
+                    </li>
+                    <li>
+                        <a class="menu-link" href="/TopManagement/TopManager.html?Token={{Token}}">Top管理</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="submenu" id="MakeupManage">
+                <a href="#" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> 上妆管理 <i class="fa fa-fw fa-caret-down"></i></a>
+                <ul  style="display:none">
+                    <li>
+                        <a class="menu-link" href="/MakeupManage/coverList.html?Token={{Token}}">妆容封面列表</a>
+                    </li>
+                    <li>
+                        <a class="menu-link" href="/MakeupManage/MakeUpList.html?Token={{Token}}">上妆列表</a>
+                    </li>
+                    <li>
+                       <a class="menu-link" href="/SingleMakeupManage/SingleMakeupManage.html?Token={{Token}}">单品上妆列表</a>
+                   </li> 
+                   <li>
+                       <a class="menu-link" href="/HairManagement/HairManagement.html?Token={{Token}}">发型列表</a>
+                   </li> 
+                   <li>
+                    <a class="menu-link" href="/StyleManager/StyleManager.html?Token={{Token}}">样式管理</a>
+                </li>
+            </ul>
+        </li>
+        <li class="submenu" id="IndexManagement">
+            <a href="#" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> 首页管理 <i class="fa fa-fw fa-caret-down"></i></a>
+            <ul style="display:none">
+                <li>
+                    <a class="menu-link" href="/BannerManagement/BannerManager.html?Token={{Token}}">横幅管理</a>
+                </li>
+                <li>
+                    <a class="menu-link" href="/CommentManagement/CommentManager.html?Token={{Token}}">评论管理</a>
+                </li>
+                <li>
+                    <a class="menu-link" href="/CommentWinManagement/CommentWinManager.html?Token={{Token}}">评论中奖管理</a>
+                </li>
+            </ul>
+        </li>
+        <li class="active">
+            <a class="menu-link" href="/InformationManage/informationManager.html?Token={{Token}}"><i class="fa fa-fw fa-table"></i> 资讯管理</a>
+        </li>
+        <li class="active">
+            <a class="menu-link" href="/ActivityManagement/ActivityManager.html?Token={{Token}}"><i class="fa fa-fw fa-table"></i> 活动管理</a>
+        </li>
+        <li class="submenu" id="BasicSettings">
+            <a href="#" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> 其他管理 <i class="fa fa-fw fa-caret-down"></i></a>
+            <ul style="display:none">
+                <li>
+                    <a class="menu-link" href="/PushManagement/PushManager.html?Token={{Token}}">推送管理</a>
+                </li>
+                <li>
+                   <a class="menu-link" href="/InputManagement/InputManager.html?Token={{Token}}">录入管理</a>
+               </li>
+               <li>
+                   <a class="menu-link" href="/AppUserManagement/AppUserList.html?Token={{Token}}">App用户管理</a>
+               </li> 
+               <li>
+                   <a class="menu-link" href="/UserManagement/UserManager.html?Token={{Token}}">后台用户管理</a>
+               </li> 
+               <li>
+                <a class="menu-link" href="/VersionManagement/VersionManager.html?Token={{Token}}">版本管理</a>
+            </li>
+            <li class="active">
+                <a class="menu-link" href="/PhotoWallManagement/PhotoWallManager.html?Token={{Token}}">照片墙管理</a>
+            </li>
+        </ul>
+    </li>
+    <li class="submenu" id="DeveToolManagement" ng-show="IsDeveloper">
+        <a href="#" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> 开发人员管理 <i class="fa fa-fw fa-caret-down"></i></a>
+        <ul style="display:none">
+            <li>
+                <a class="menu-link" href="/DeveToolManagement/ProjectManager.html?Token={{Token}}">项目管理</a>
+            </li>
+
+            <li>
+                <a class="menu-link" href="/DeveToolManagement/ServerManager.html?Token={{Token}}">服务器管理</a>
+            </li>
+            <li>
+                <a class="menu-link" href="/DeveToolManagement/CrontabManager.html?Token={{Token}}">定时器管理</a>
+            </li>
+            <li>
+                <a class="menu-link" href="/DeveToolManagement/AppPatchManager.html?Token={{Token}}">热更新管理</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+</div>
+<div id="mask"><div>loading……</div></div>
+</nav>

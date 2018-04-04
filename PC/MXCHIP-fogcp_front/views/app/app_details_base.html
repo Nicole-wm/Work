@@ -1,0 +1,71 @@
+<div class="row" ng-controller="AppDetailsBaseController">
+	<div class="col-md-12">
+		<form  class="form-horizontal" role="form" name="AppDetail">
+			<div class="form-group col-md-12"></div>
+			<div class="form-group">
+				<label class="col-md-2 control-label">应用名称<span class="required"> * </span></label>
+				<div class="col-md-4">
+					<input name="AppName" ng-model="AppName" type="text" class="form-control" placeholder="必填" required>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-md-2 control-label">应用描述<span class="required"> &nbsp;&nbsp; </span></label>
+				<div class="col-md-4">
+					<textarea name="Description" ng-model="Description" class="form-control" rows="3"></textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-md-2 control-label">拓展项<span> &nbsp;&nbsp; </span></label>
+				<div class="col-md-4">
+					<a ng-click="AddKey()" class="btn bg-blue-steel bg-font-blue-steel">添加</a>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-md-2 control-label"></label>
+				<div class="col-md-8">
+					<table class="table table-striped table-hover table-bordered" id="KeyTable">
+						<thead>
+							<tr>
+								<th width="30%"> 键名</th>
+								<th width="30%"> 键值</th>
+								<th> 操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-show="CreatKeyFlag">
+								<td><input type="text" class="form-control input-small" ng-model="KeyName"></td>
+								<td><input type="text" class="form-control input-small" ng-model="KeyValue"></td>
+								<td>
+									<a class="btn bg-green-soft bg-font-green-soft btn-sm" ng-click="SaveNewKey(1)"> 保存 </a>
+									<a class="btn bg-red bg-font-red btn-sm" ng-click="SaveNewKey(0)"> 取消 </a>
+								</td> 
+							</tr>
+							<tr ng-repeat="Key in KeyArr" id="{{Key.ID}}">
+								<td ng-show="EditFlag!={{Key.ID}}"> {{Key.KeyName}} </td>
+								<td ng-show="EditFlag!={{Key.ID}}"> {{Key.KeyValue}} </td>
+								<td ng-show="EditFlag!={{Key.ID}}"> 
+									<a class="btn bg-green-soft bg-font-green-soft btn-sm" ng-click="EditKey(Key,Key.ID)"> 编辑 </a>
+									<a class="btn bg-red bg-font-red btn-sm" ng-click="DeleteKey(Key)"> 删除 </a> 
+								</td>
+
+								<td ng-show="EditFlag=={{Key.ID}}"> <input id="EditName{{Key.ID}}" type="text" class="form-control input-small" value="{{Key.KeyName}}"></td>
+								<td ng-show="EditFlag=={{Key.ID}}"> <input id="EditValue{{Key.ID}}" type="text" class="form-control input-small" value="{{Key.KeyValue}}"> </td>
+								<td ng-show="EditFlag=={{Key.ID}}">
+									<a class="btn bg-green-soft bg-font-green-soft btn-sm" ng-click="SaveEditKey(1,Key.ID)"> 保存 </a>
+									<a class="btn bg-red bg-font-red btn-sm" ng-click="SaveEditKey(0,Key.ID)"> 取消 </a>
+								</td> 
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-md-3 control-label"></label>
+				<div class="col-md-5">
+					<input ng-disabled="!AppDetail.AppName.$valid" ng-click="SureAppFun(1)" class="btn bg-blue-steel bg-font-blue-steel" type="submit" value="确认"/>
+					<input ng-click="BackFun()" class="btn bg-default bg-font-default" type="submit" value="返回"/>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

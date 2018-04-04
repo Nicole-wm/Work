@@ -1,0 +1,54 @@
+.addLazyStyle{
+animation:myfirst 2s;
+-moz-animation:myfirst 2s; /* Firefox */
+-webkit-animation:myfirst 2s; /* Safari and Chrome */
+-o-animation:myfirst 2s; /* Opera */
+}
+
+@keyframes myfirst
+{
+from {
+	transform:scale(0.5);
+	opacity: 0.3;
+	}
+to {
+	transform:scale(1);
+	opacity: 1;
+	}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {
+	transform:scale(0.5);
+	opacity: 0.3;
+	}
+to {
+	transform:scale(1);
+	opacity: 1;
+	}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {
+	transform:scale(0.5);
+	opacity: 0.3;
+	}
+to {
+	transform:scale(1);
+	opacity: 1;
+	}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {
+	transform:scale(0.5);
+	opacity: 0.3;
+	}
+to {
+	transform:scale(1);
+	opacity: 1;
+	}
+}

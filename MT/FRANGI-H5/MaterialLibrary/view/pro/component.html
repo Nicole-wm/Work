@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>成分图</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="icon" href="../../../IMG/frangi.ico" type="image/x-icon">
+	<!-- publicCSS -->
+	<link rel="stylesheet" href="../../css/public.css">
+	<!-- pluginsJS -->
+	<script src="../../../JS/flexible_css.js"></script>
+	<script src="../../../JS/flexible.js"></script>
+	<!-- h5.frangi.cn Baidu tongji analytics -->
+	<script src="../../../JS/baiduhm.js"></script>
+</head>
+
+<body>
+	<!-- header-container-->
+	<!-- <header class="top-bar">
+		<a onclick="BackTagList()" class="page-back"></a>
+		<span>素材列表</span>
+	</header> -->
+	<!-- content-container --> 
+	<div id="container"></div>
+	<p class="noImg">暂无相关素材</p>
+	<div class="pic-close"></div>
+	<!-- pluginsJS -->
+	<script src="../../../JS/jquery-3.2.1.min.js"></script>
+	<script src="../../../JS/jquerywall.js"></script>
+	<!-- PublicJS -->
+	<script src="../../js/public.js"></script>
+	<script src="../../js/pro.js"></script>
+	<script>  
+		var CurPro = 'pro-god';
+		if(getQueryStringByKey('Pro')){
+			CurPro = getQueryStringByKey('Pro');
+		}else{
+			CurPro = 'pro-god';
+		}
+		var SNum=2;
+		var IENum=1;
+		var PNum=4;
+		var ImgUrl="../../img/"+CurPro+"/component/";
+		switch(CurPro)
+		{
+			case 'pro-god':
+			SNum=0;
+			break;
+			case 'pro-mask':
+			SNum=0;
+			break;
+			case 'pro-revitalizing':
+			SNum=0;
+			break;
+			case 'pro-hydro':
+			SNum=0;
+			break;
+			case 'pro-joyful':
+			SNum=0;
+			break;
+			case 'pro-hydra':
+			SNum=0;
+			break;
+			case 'pro-gift':
+			SNum=0;
+			break;
+			case 'pro-oil':
+			SNum=0;
+			break;
+			case 'pro-hand':
+			SNum=0;
+			break;
+			default:
+		}
+		if(SNum==0){
+			$('.noImg').show();
+		}else{
+			PageInit(SNum,IENum,PNum,ImgUrl);
+		}
+	</script>
+</body>
+</html> 
+

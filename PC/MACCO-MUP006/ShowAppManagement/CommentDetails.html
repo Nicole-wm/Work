@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <link href="/css/CommentDetail.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+    <div>
+        <div style="width:100%;margin:20px 20px;">
+            <button type="button" ng-click="ChooseUser()" class="btn btn-primary">选择用户</button>
+            <!-- <button type="button" ng-click="AddUser()" class="btn btn-primary" >新增用户</button> -->
+        </div>
+        <div class="comment" id="comment" ng-show="canshow">
+            <form role="form" name="ActiveDetail" class="form-horizontal">
+                <div class="form-group">
+                    <label>用户名：</label>
+                    <div class="textipt" style="width: 40.95%;">
+                        <input name="Username" class="form-control" id="Username" ng-model="Username" required ng-disabled="!canEdit" ng-required="canEdit">
+                    </div>
+                    <label ng-show="ActiveDetail.Username.$error.required" id="informationalert" class="formalert">*&nbsp;请填写用户名</label>
+                </div>
+                <div class="form-group">
+                    <label>头像:</label>
+                    <div class="textipt" id="falseName" style="cursor:pointer">
+                        <img ngf-select ng-disabled="!canEdit" ng-model="Banner" ngf-src="Banner[0]" ngf-accept="'image/*'" ng-src="{{Avatar}}"
+                        style="width:100px;height:100px"  ng-src="Avatar" ></img>
+                        <input type="hidden" ng-model="Banner[0].name" name="Banner" required ng-required="canEdit">
+                    </div>
+                    <label ng-show="ActiveDetail.Banner.$error.required" id="informationalert" class="formalert">*&nbsp;请选择头像</label>
+                </div>
+                <div class="form-group">
+                    <label style="vertical-align: top;">内容：</label>
+                    <div class="textipt" style="width:60%;">
+                        <textarea name="Content" class="form-control" id="Content" ng-model="Content" required  style= "overflow:auto; resize:none;width:100%;height:150px;"></textarea>
+                    </div>
+                    <label style="vertical-align: top;" ng-show="ActiveDetail.Content.$error.required" id="informationalert" class="formalert">*&nbsp;请填写评论内容</label>
+                </div>
+                <div class="form-group">
+                    <label>时间：</label>
+                    <div class="textipt" style="width:200px;">
+                        <input name="Time" class="form-control" id="Time" ng-model="Time" required ng-required="canEdit">
+                    </div>
+                    <label ng-show="ActiveDetail.Time.$error.required"  id="TerminalTimeFlag" class="formalert">*&nbsp;请选择时间</label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" ng-disabled="!ActiveDetail.Content.$valid" class="btn btn-primary" ng-click="Submit()">提交</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    $(function(){
+        $('#Time').val("");
+        var Time=0;
+        $('#Time').datetimepicker({
+            format: 'yyyy-mm-dd hh:ii', 
+            language: 'zh-CN', 
+            autoclose:true 
+        }).on('changeDate',function(ev){
+            Time = ev.date.valueOf();
+        });
+    });
+</script>

@@ -1,0 +1,865 @@
+﻿2017-09-12 16:36 get_sign 获取签名        
+2017-09-12 16:36 jsapi_ticket 过期    1497249373 < 1505205378    
+2017-09-12 16:36 access_token 过期    1497249372 < 1505205378    
+2017-09-12 16:36 access_token 过期  新的  access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-09-12 16:36 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-09-12 16:36 jsapi_ticket 过期   新的ticket kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+2017-09-12 16:36 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437xesptZsP4KDli0M01505205379http://h5.frangi.cn/FRANGI-H5/ProductPromotion/89ef324721b93c1383fa25d2731266d399ea0b83jsapi_ticket=kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA&noncestr=xesptZsP4KDli0M0&timestamp=1505205379&url=http://h5.frangi.cn/FRANGI-H5/ProductPromotion/2017-09-12 16:36 get_sign 获取签名        
+2017-09-12 16:36 jsapi_ticket 没过期  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437ioKnv64kl1tbSJUT1505205404http://h5.frangi.cn/FRANGI-H5/ProductPromotion/f618b166c57cabc603a130a1d244d1b7c8e80794jsapi_ticket=kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA&noncestr=ioKnv64kl1tbSJUT&timestamp=1505205404&url=http://h5.frangi.cn/FRANGI-H5/ProductPromotion/2017-09-12 16:36 get_sign 获取签名        
+2017-09-12 16:36 jsapi_ticket 没过期  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437p2lZi4Kxb2k1cScn1505205405http://h5.frangi.cn/FRANGI-H5/ProductPromotion/d87aa5e2130265ce92287589d6e3ae8e7a558422jsapi_ticket=kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA&noncestr=p2lZi4Kxb2k1cScn&timestamp=1505205405&url=http://h5.frangi.cn/FRANGI-H5/ProductPromotion/2017-09-12 16:37 get_sign 获取签名        
+2017-09-12 16:37 jsapi_ticket 没过期  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e4375kPsvzw8DoxNhggf1505205429http://h5.frangi.cn/FRANGI-H5/ProductPromotion/03549511be8d2eb023a10d8338b025ba9e08f810jsapi_ticket=kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA&noncestr=5kPsvzw8DoxNhggf&timestamp=1505205429&url=http://h5.frangi.cn/FRANGI-H5/ProductPromotion/2017-09-12 16:37 get_sign 获取签名        
+2017-09-12 16:37 jsapi_ticket 没过期  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437XEkPJGtWyWolk7c51505205465http://h5.frangi.cn/FRANGI-H5/wxconfig/myapi.phpa1332d411d549bd3a652b9eaa71b98ff1a360a15jsapi_ticket=kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA&noncestr=XEkPJGtWyWolk7c5&timestamp=1505205465&url=http://h5.frangi.cn/FRANGI-H5/wxconfig/myapi.php2017-09-12 16:48 get_sign 获取签名        
+2017-09-12 16:48 jsapi_ticket 没过期  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437IBobyDBBGRM2olqn1505206126http://h5.frangi.cn/FRANGI-H5/ProductPromotion/index.htmledf0de60f857648f133ddaae1ce7bd340b26dd07jsapi_ticket=kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA&noncestr=IBobyDBBGRM2olqn&timestamp=1505206126&url=http://h5.frangi.cn/FRANGI-H5/ProductPromotion/index.html2017-09-12 16:48 get_sign 获取签名        
+2017-09-12 16:48 jsapi_ticket 没过期  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437l4zXEcTsehjfEBpe1505206133http://h5.frangi.cn/FRANGI-H5/ProductPromotion/index.html412441ea70aa26d5fbc67bc6c797c9994c6cd122jsapi_ticket=kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA&noncestr=l4zXEcTsehjfEBpe&timestamp=1505206133&url=http://h5.frangi.cn/FRANGI-H5/ProductPromotion/index.html2017-11-29 09:57 get_sign 获取签名        
+2017-11-29 09:57 jsapi_ticket 过期    1505212579 < 1511920631    
+2017-11-29 09:57 access_token 过期    1505212579 < 1511920631    
+2017-11-29 09:57 access_token 过期  新的  access_token：     
+2017-11-29 09:57 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 09:57 jsapi_ticket 过期   新的ticket     
+2017-11-29 09:57 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437EfSRgGlCGtFjC0O01511920631http://localhost/FRANGI-H5/BrandPromotionV1/index.htmle873841b11a6fc865bc7819be536e6eefb76726ajsapi_ticket=&noncestr=EfSRgGlCGtFjC0O0&timestamp=1511920631&url=http://localhost/FRANGI-H5/BrandPromotionV1/index.html2017-11-29 09:57 get_sign 获取签名        
+2017-11-29 09:57 jsapi_ticket 过期    1505212579 < 1511920640    
+2017-11-29 09:57 access_token 过期    1505212579 < 1511920640    
+2017-11-29 09:57 access_token 过期  新的  access_token：     
+2017-11-29 09:57 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 09:57 jsapi_ticket 过期   新的ticket     
+2017-11-29 09:57 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437hOUIzoMcjlRfwaLc1511920640http://localhost/FRANGI-H5/MaterialLibrary/index.htmlec4d10d540af63a875e7a784827187bb58dd6cc8jsapi_ticket=&noncestr=hOUIzoMcjlRfwaLc&timestamp=1511920640&url=http://localhost/FRANGI-H5/MaterialLibrary/index.html2017-11-29 09:57 get_sign 获取签名        
+2017-11-29 09:57 jsapi_ticket 过期    1505212579 < 1511920641    
+2017-11-29 09:57 access_token 过期    1505212579 < 1511920641    
+2017-11-29 09:57 get_sign 获取签名        
+2017-11-29 09:57 jsapi_ticket 过期    1505212579 < 1511920641    
+2017-11-29 09:57 access_token 过期    1505212579 < 1511920641    
+2017-11-29 09:57 access_token 过期  新的  access_token：     
+2017-11-29 09:57 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 09:57 jsapi_ticket 过期   新的ticket     
+2017-11-29 09:57 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437uYPnD3ied2ZvEPEg1511920642http://localhost/FRANGI-H5/wxconfig/myapi.phpb519094eac5cfb6e74b0f2c1cd67531e3bde6d35jsapi_ticket=&noncestr=uYPnD3ied2ZvEPEg&timestamp=1511920642&url=http://localhost/FRANGI-H5/wxconfig/myapi.php2017-11-29 09:57 access_token 过期  新的  access_token：     
+2017-11-29 09:57 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 09:57 jsapi_ticket 过期   新的ticket     
+2017-11-29 09:57 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437iNGrfmcEvSVApeWx1511920642http://localhost/FRANGI-H5/MaterialLibrary/index.html0e6fc210341aee044cdd942659eff8fe5f5e2b4bjsapi_ticket=&noncestr=iNGrfmcEvSVApeWx&timestamp=1511920642&url=http://localhost/FRANGI-H5/MaterialLibrary/index.html2017-11-29 09:57 get_sign 获取签名        
+2017-11-29 09:57 jsapi_ticket 过期    1505212579 < 1511920643    
+2017-11-29 09:57 access_token 过期    1505212579 < 1511920643    
+2017-11-29 09:57 access_token 过期  新的  access_token：     
+2017-11-29 09:57 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 09:57 jsapi_ticket 过期   新的ticket     
+2017-11-29 09:57 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e43751yyRi3bDz7AIhTu1511920643http://localhost/FRANGI-H5/MaterialLibrary/index.htmlab13de72a2d02df86a74e1f49fea8b74f5672ef5jsapi_ticket=&noncestr=51yyRi3bDz7AIhTu&timestamp=1511920643&url=http://localhost/FRANGI-H5/MaterialLibrary/index.html2017-11-29 13:54 get_sign 获取签名        
+2017-11-29 13:54 jsapi_ticket 过期    1505212579 < 1511934892    
+2017-11-29 13:54 access_token 过期    1505212579 < 1511934892    
+2017-11-29 13:54 access_token 过期  新的  access_token：     
+2017-11-29 13:54 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 13:54 jsapi_ticket 过期   新的ticket     
+2017-11-29 13:54 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437SS31ciyH1KwD1nvN1511934892http://localhost/FRANGI-H5/Invitation/20171208/78193cfac984ac9393f11c3116cf3102c9c12003jsapi_ticket=&noncestr=SS31ciyH1KwD1nvN&timestamp=1511934892&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 13:54 get_sign 获取签名        
+2017-11-29 13:54 jsapi_ticket 过期    1505212579 < 1511934894    
+2017-11-29 13:54 access_token 过期    1505212579 < 1511934894    
+2017-11-29 13:54 access_token 过期  新的  access_token：     
+2017-11-29 13:54 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 13:54 jsapi_ticket 过期   新的ticket     
+2017-11-29 13:54 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437XW9jFroa9LlrnJSl1511934894http://localhost/FRANGI-H5/Invitation/20171208/07021cf0b415229056c255a2a22035696162f575jsapi_ticket=&noncestr=XW9jFroa9LlrnJSl&timestamp=1511934894&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 13:57 get_sign 获取签名        
+2017-11-29 13:57 jsapi_ticket 过期    1505212579 < 1511935064    
+2017-11-29 13:57 access_token 过期    1505212579 < 1511935064    
+2017-11-29 13:57 access_token 过期  新的  access_token：     
+2017-11-29 13:57 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 13:57 jsapi_ticket 过期   新的ticket     
+2017-11-29 13:57 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437KOaEOKfh2pGURods1511935064http://localhost/FRANGI-H5/Invitation/20171208/e1dd05ba0251903ddb5bb062c9305379ac9426fajsapi_ticket=&noncestr=KOaEOKfh2pGURods&timestamp=1511935064&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 13:58 get_sign 获取签名        
+2017-11-29 13:58 jsapi_ticket 过期    1505212579 < 1511935098    
+2017-11-29 13:58 access_token 过期    1505212579 < 1511935098    
+2017-11-29 13:58 access_token 过期  新的  access_token：     
+2017-11-29 13:58 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 13:58 jsapi_ticket 过期   新的ticket     
+2017-11-29 13:58 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437rgsujlaNnsLamXBN1511935098http://localhost/FRANGI-H5/Invitation/20171208/c458554d3fc2ab0de90cb39e040f66880f9fa6e2jsapi_ticket=&noncestr=rgsujlaNnsLamXBN&timestamp=1511935098&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 13:58 get_sign 获取签名        
+2017-11-29 13:58 jsapi_ticket 过期    1505212579 < 1511935104    
+2017-11-29 13:58 access_token 过期    1505212579 < 1511935104    
+2017-11-29 13:58 access_token 过期  新的  access_token：     
+2017-11-29 13:58 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 13:58 jsapi_ticket 过期   新的ticket     
+2017-11-29 13:58 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437HTNCPfa7NXT4IKJw1511935104http://localhost/FRANGI-H5/Invitation/20171208/3c59e64159a8db93ba7d815ca4db4aeb8b14113djsapi_ticket=&noncestr=HTNCPfa7NXT4IKJw&timestamp=1511935104&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 15:35 get_sign 获取签名        
+2017-11-29 15:35 jsapi_ticket 过期    1505212579 < 1511940923    
+2017-11-29 15:35 access_token 过期    1505212579 < 1511940923    
+2017-11-29 15:35 access_token 过期  新的  access_token：     
+2017-11-29 15:35 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 15:35 jsapi_ticket 过期   新的ticket     
+2017-11-29 15:35 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437zAdxJsHULQrwdzv01511940923http://localhost/FRANGI-H5/InvestmentGuideV1/index.htmlfad79ba670c0f0ef3503de64f7978d60a8676468jsapi_ticket=&noncestr=zAdxJsHULQrwdzv0&timestamp=1511940923&url=http://localhost/FRANGI-H5/InvestmentGuideV1/index.html2017-11-29 15:35 get_sign 获取签名        
+2017-11-29 15:35 jsapi_ticket 过期    1505212579 < 1511940957    
+2017-11-29 15:35 access_token 过期    1505212579 < 1511940957    
+2017-11-29 15:35 access_token 过期  新的  access_token：     
+2017-11-29 15:35 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 15:35 jsapi_ticket 过期   新的ticket     
+2017-11-29 15:35 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e43745wPt8VY5XnTo8Cb1511940957http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.html03dc4d89b4bb70b632cc9010626b40ca6f983fd0jsapi_ticket=&noncestr=45wPt8VY5XnTo8Cb&timestamp=1511940957&url=http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.html2017-11-29 15:36 get_sign 获取签名        
+2017-11-29 15:36 jsapi_ticket 过期    1505212579 < 1511940972    
+2017-11-29 15:36 access_token 过期    1505212579 < 1511940972    
+2017-11-29 15:36 access_token 过期  新的  access_token：     
+2017-11-29 15:36 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 15:36 jsapi_ticket 过期   新的ticket     
+2017-11-29 15:36 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437jGW8ySWn76KVyY5l1511940972http://localhost/FRANGI-H5/InvestmentGuide/applicant.html3988e8b4e748d0427e7af50fd6350f6ddbb6cdb7jsapi_ticket=&noncestr=jGW8ySWn76KVyY5l&timestamp=1511940972&url=http://localhost/FRANGI-H5/InvestmentGuide/applicant.html2017-11-29 15:52 get_sign 获取签名        
+2017-11-29 15:52 jsapi_ticket 过期    1505212579 < 1511941933    
+2017-11-29 15:52 access_token 过期    1505212579 < 1511941933    
+2017-11-29 15:52 access_token 过期  新的  access_token：     
+2017-11-29 15:52 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 15:52 jsapi_ticket 过期   新的ticket     
+2017-11-29 15:52 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e4378pftC90bNcs88ueo1511941933http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.htmla84df58c81f8fcfa2e8f4c5d59240aa34ff9b053jsapi_ticket=&noncestr=8pftC90bNcs88ueo&timestamp=1511941933&url=http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.html2017-11-29 15:52 get_sign 获取签名        
+2017-11-29 15:52 jsapi_ticket 过期    1505212579 < 1511941940    
+2017-11-29 15:52 access_token 过期    1505212579 < 1511941940    
+2017-11-29 15:52 access_token 过期  新的  access_token：     
+2017-11-29 15:52 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 15:52 jsapi_ticket 过期   新的ticket     
+2017-11-29 15:52 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437HUPD9TPf2FLVM5tD1511941940http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.htmlcda2a2099483535f83627816569c34413d99958ajsapi_ticket=&noncestr=HUPD9TPf2FLVM5tD&timestamp=1511941940&url=http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.html2017-11-29 15:52 get_sign 获取签名        
+2017-11-29 15:52 jsapi_ticket 过期    1505212579 < 1511941942    
+2017-11-29 15:52 access_token 过期    1505212579 < 1511941942    
+2017-11-29 15:52 access_token 过期  新的  access_token：     
+2017-11-29 15:52 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 15:52 jsapi_ticket 过期   新的ticket     
+2017-11-29 15:52 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437EtMvW8N06jEHxivF1511941942http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.html8ce9b11e0eb74986710376ad5a7f4787ddb5403ajsapi_ticket=&noncestr=EtMvW8N06jEHxivF&timestamp=1511941942&url=http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.html2017-11-29 15:52 get_sign 获取签名        
+2017-11-29 15:52 jsapi_ticket 过期    1505212579 < 1511941953    
+2017-11-29 15:52 access_token 过期    1505212579 < 1511941953    
+2017-11-29 15:52 access_token 过期  新的  access_token：     
+2017-11-29 15:52 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 15:52 jsapi_ticket 过期   新的ticket     
+2017-11-29 15:52 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437wJKWp7OejY13CoCG1511941953http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.htmlf97fab4315f636b426ea15f38acd3ed6d633360ajsapi_ticket=&noncestr=wJKWp7OejY13CoCG&timestamp=1511941953&url=http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.html2017-11-29 15:52 get_sign 获取签名        
+2017-11-29 15:52 jsapi_ticket 过期    1505212579 < 1511941954    
+2017-11-29 15:52 access_token 过期    1505212579 < 1511941954    
+2017-11-29 15:52 access_token 过期  新的  access_token：     
+2017-11-29 15:52 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 15:52 jsapi_ticket 过期   新的ticket     
+2017-11-29 15:52 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437Faci0kvel5Z0FTwp1511941956http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.html1bdd71829f0532443d2440330bc40db4437b3d56jsapi_ticket=&noncestr=Faci0kvel5Z0FTwp&timestamp=1511941956&url=http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.html2017-11-29 15:53 get_sign 获取签名        
+2017-11-29 15:53 jsapi_ticket 过期    1505212579 < 1511941991    
+2017-11-29 15:53 access_token 过期    1505212579 < 1511941991    
+2017-11-29 15:53 access_token 过期  新的  access_token：     
+2017-11-29 15:53 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 15:53 jsapi_ticket 过期   新的ticket     
+2017-11-29 15:53 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437U9ONViIdOz5HENdE1511941991http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.html1f70bcbdf286dedbb211b90a15bf5fe41b4e039cjsapi_ticket=&noncestr=U9ONViIdOz5HENdE&timestamp=1511941991&url=http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.html2017-11-29 15:53 get_sign 获取签名        
+2017-11-29 15:53 jsapi_ticket 过期    1505212579 < 1511941995    
+2017-11-29 15:53 access_token 过期    1505212579 < 1511941995    
+2017-11-29 15:53 access_token 过期  新的  access_token：     
+2017-11-29 15:53 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 15:53 jsapi_ticket 过期   新的ticket     
+2017-11-29 15:53 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437IIwytoWtZSYPZ5LY1511941995http://localhost/FRANGI-H5/Invitation/20171208/3fbf9e592ea30e14a2f371f45dd261565caa645cjsapi_ticket=&noncestr=IIwytoWtZSYPZ5LY&timestamp=1511941995&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:04 get_sign 获取签名        
+2017-11-29 16:04 jsapi_ticket 过期    1505212579 < 1511942673    
+2017-11-29 16:04 access_token 过期    1505212579 < 1511942673    
+2017-11-29 16:04 access_token 过期  新的  access_token：     
+2017-11-29 16:04 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:04 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:04 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437iSYKUMGSOuJHRomJ1511942674http://localhost/FRANGI-H5/Invitation/20171208/1a3dc66806b2bef2730d280152a2e3db7889fb1bjsapi_ticket=&noncestr=iSYKUMGSOuJHRomJ&timestamp=1511942674&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:07 get_sign 获取签名        
+2017-11-29 16:07 jsapi_ticket 过期    1505212579 < 1511942822    
+2017-11-29 16:07 access_token 过期    1505212579 < 1511942822    
+2017-11-29 16:07 access_token 过期  新的  access_token：     
+2017-11-29 16:07 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:07 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:07 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437GRwqtbJ3A6PMCEC61511942822http://localhost/FRANGI-H5/Invitation/20171208/e1caf14340acf31e3a26d0cfb4abc27661a60539jsapi_ticket=&noncestr=GRwqtbJ3A6PMCEC6&timestamp=1511942822&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:07 get_sign 获取签名        
+2017-11-29 16:07 jsapi_ticket 过期    1505212579 < 1511942834    
+2017-11-29 16:07 access_token 过期    1505212579 < 1511942834    
+2017-11-29 16:07 access_token 过期  新的  access_token：     
+2017-11-29 16:07 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:07 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:07 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437VHKnZy269iwuDyGm1511942834http://localhost/FRANGI-H5/Invitation/20171208/0cb7c999cc9ff10e049e1b0cfb8f383b77934925jsapi_ticket=&noncestr=VHKnZy269iwuDyGm&timestamp=1511942834&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:14 get_sign 获取签名        
+2017-11-29 16:14 jsapi_ticket 过期    1505212579 < 1511943259    
+2017-11-29 16:14 access_token 过期    1505212579 < 1511943259    
+2017-11-29 16:14 access_token 过期  新的  access_token：     
+2017-11-29 16:14 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:14 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:14 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437nDc61yuCgIWEiEae1511943259http://localhost/FRANGI-H5/Invitation/20171208/b93fb82a9d2fcad8d7d581ac64d41e69f8bc85f6jsapi_ticket=&noncestr=nDc61yuCgIWEiEae&timestamp=1511943259&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:14 get_sign 获取签名        
+2017-11-29 16:14 jsapi_ticket 过期    1505212579 < 1511943260    
+2017-11-29 16:14 access_token 过期    1505212579 < 1511943260    
+2017-11-29 16:14 access_token 过期  新的  access_token：     
+2017-11-29 16:14 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:14 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:14 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437HeEisHGezwNVD0MD1511943260http://localhost/FRANGI-H5/Invitation/20171208/69588787b265fbc6788e6a2f4a5ff8eb19451bcejsapi_ticket=&noncestr=HeEisHGezwNVD0MD&timestamp=1511943260&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:15 get_sign 获取签名        
+2017-11-29 16:15 jsapi_ticket 过期    1505212579 < 1511943343    
+2017-11-29 16:15 access_token 过期    1505212579 < 1511943343    
+2017-11-29 16:15 access_token 过期  新的  access_token：     
+2017-11-29 16:15 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:15 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:15 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e4377gjlikskWLQvKmLt1511943344http://localhost/FRANGI-H5/Invitation/20171208/8e76b8a82578e3041b808d986c29e667250def52jsapi_ticket=&noncestr=7gjlikskWLQvKmLt&timestamp=1511943344&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:15 get_sign 获取签名        
+2017-11-29 16:15 jsapi_ticket 过期    1505212579 < 1511943344    
+2017-11-29 16:15 access_token 过期    1505212579 < 1511943344    
+2017-11-29 16:15 access_token 过期  新的  access_token：     
+2017-11-29 16:15 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:15 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:15 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437sxzt9FbVBmFExt4k1511943344http://localhost/FRANGI-H5/Invitation/20171208/5a5aa26e2458e38e9abd84a53ce86e9398eb1b9bjsapi_ticket=&noncestr=sxzt9FbVBmFExt4k&timestamp=1511943344&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:15 get_sign 获取签名        
+2017-11-29 16:15 jsapi_ticket 过期    1505212579 < 1511943346    
+2017-11-29 16:15 access_token 过期    1505212579 < 1511943346    
+2017-11-29 16:15 access_token 过期  新的  access_token：     
+2017-11-29 16:15 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:15 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:15 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437Sy7C39CvDUXsqM0q1511943346http://localhost/FRANGI-H5/Invitation/20171208/1582a7a7095e78dd252a5e7d9f0f6d9010210ce0jsapi_ticket=&noncestr=Sy7C39CvDUXsqM0q&timestamp=1511943346&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:17 get_sign 获取签名        
+2017-11-29 16:17 jsapi_ticket 过期    1505212579 < 1511943436    
+2017-11-29 16:17 access_token 过期    1505212579 < 1511943436    
+2017-11-29 16:17 access_token 过期  新的  access_token：     
+2017-11-29 16:17 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:17 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:17 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437ypaUPsOqYMY1s7BE1511943436http://localhost/FRANGI-H5/Invitation/20171208/356bc286e3f52269372da3313d57b0615ce64e9fjsapi_ticket=&noncestr=ypaUPsOqYMY1s7BE&timestamp=1511943436&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:17 get_sign 获取签名        
+2017-11-29 16:17 jsapi_ticket 过期    1505212579 < 1511943437    
+2017-11-29 16:17 access_token 过期    1505212579 < 1511943437    
+2017-11-29 16:17 access_token 过期  新的  access_token：     
+2017-11-29 16:17 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:17 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:17 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437KJQJo3qqedKSPmAg1511943437http://localhost/FRANGI-H5/Invitation/20171208/0160d0403b96d72986bcc9a3017b7700151ac992jsapi_ticket=&noncestr=KJQJo3qqedKSPmAg&timestamp=1511943437&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:17 get_sign 获取签名        
+2017-11-29 16:17 jsapi_ticket 过期    1505212579 < 1511943462    
+2017-11-29 16:17 access_token 过期    1505212579 < 1511943462    
+2017-11-29 16:17 access_token 过期  新的  access_token：     
+2017-11-29 16:17 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:17 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:17 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e4371TfLSj0IKtdnf4Uz1511943462http://localhost/FRANGI-H5/Invitation/20171208/efd2cf366b9f24f9551a8e854e72e1780178c059jsapi_ticket=&noncestr=1TfLSj0IKtdnf4Uz&timestamp=1511943462&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:17 get_sign 获取签名        
+2017-11-29 16:17 jsapi_ticket 过期    1505212579 < 1511943463    
+2017-11-29 16:17 access_token 过期    1505212579 < 1511943463    
+2017-11-29 16:17 access_token 过期  新的  access_token：     
+2017-11-29 16:17 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:17 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:17 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437MVc8dGbQrEVzbGsv1511943463http://localhost/FRANGI-H5/Invitation/20171208/d50bdf170106aaac15a5dad1f26eb8a1104bbecejsapi_ticket=&noncestr=MVc8dGbQrEVzbGsv&timestamp=1511943463&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:18 get_sign 获取签名        
+2017-11-29 16:18 jsapi_ticket 过期    1505212579 < 1511943528    
+2017-11-29 16:18 access_token 过期    1505212579 < 1511943528    
+2017-11-29 16:18 access_token 过期  新的  access_token：     
+2017-11-29 16:18 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:18 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:18 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437jGuCAKZiEKHnKz7X1511943528http://localhost/FRANGI-H5/Invitation/20171208/3c4a44a5a81ace11b7847afc3abeb04f0c31faf5jsapi_ticket=&noncestr=jGuCAKZiEKHnKz7X&timestamp=1511943528&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:19 get_sign 获取签名        
+2017-11-29 16:19 jsapi_ticket 过期    1505212579 < 1511943570    
+2017-11-29 16:19 access_token 过期    1505212579 < 1511943570    
+2017-11-29 16:19 access_token 过期  新的  access_token：     
+2017-11-29 16:19 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:19 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:19 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437zgc7M7s3SXTDhOHu1511943571http://localhost/FRANGI-H5/Invitation/20171208/bfe1d1f0a23fe3b8a7ec31ca9e7466916f7f961fjsapi_ticket=&noncestr=zgc7M7s3SXTDhOHu&timestamp=1511943571&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:19 get_sign 获取签名        
+2017-11-29 16:19 jsapi_ticket 过期    1505212579 < 1511943589    
+2017-11-29 16:19 access_token 过期    1505212579 < 1511943589    
+2017-11-29 16:19 access_token 过期  新的  access_token：     
+2017-11-29 16:19 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:19 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:19 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437Ph7gE2V3pssRyamh1511943589http://localhost/FRANGI-H5/Invitation/20171208/73c2d95ce67115ffaa96df9c387b40005a1bc125jsapi_ticket=&noncestr=Ph7gE2V3pssRyamh&timestamp=1511943589&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:20 get_sign 获取签名        
+2017-11-29 16:20 jsapi_ticket 过期    1505212579 < 1511943602    
+2017-11-29 16:20 access_token 过期    1505212579 < 1511943602    
+2017-11-29 16:20 access_token 过期  新的  access_token：     
+2017-11-29 16:20 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:20 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:20 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437g6Jelu2V5qV8yQW61511943603http://localhost/FRANGI-H5/Invitation/20171208/44cae6adbb66724088fcf05c7067e979c1a3dbfajsapi_ticket=&noncestr=g6Jelu2V5qV8yQW6&timestamp=1511943603&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:20 get_sign 获取签名        
+2017-11-29 16:20 jsapi_ticket 过期    1505212579 < 1511943613    
+2017-11-29 16:20 access_token 过期    1505212579 < 1511943613    
+2017-11-29 16:20 access_token 过期  新的  access_token：     
+2017-11-29 16:20 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:20 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:20 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437bZX5UWB7TOH6IVHU1511943613http://localhost/FRANGI-H5/Invitation/20171208/c62453cc2ac331e439603235d154a36ce1dd79dfjsapi_ticket=&noncestr=bZX5UWB7TOH6IVHU&timestamp=1511943613&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:21 get_sign 获取签名        
+2017-11-29 16:21 jsapi_ticket 过期    1505212579 < 1511943663    
+2017-11-29 16:21 access_token 过期    1505212579 < 1511943663    
+2017-11-29 16:21 access_token 过期  新的  access_token：     
+2017-11-29 16:21 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:21 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:21 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437I5smzNrhcEmGAbB81511943663http://localhost/FRANGI-H5/Invitation/20171208/19d6bc1c90347a8a223594da17d82a16cc966d6bjsapi_ticket=&noncestr=I5smzNrhcEmGAbB8&timestamp=1511943663&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:22 get_sign 获取签名        
+2017-11-29 16:22 jsapi_ticket 过期    1505212579 < 1511943720    
+2017-11-29 16:22 access_token 过期    1505212579 < 1511943720    
+2017-11-29 16:22 access_token 过期  新的  access_token：     
+2017-11-29 16:22 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:22 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:22 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437n6vcnMbliFblNo831511943720http://localhost/FRANGI-H5/Invitation/20171208/b64941ace71bcf444fbf4acd01ae0779875c777fjsapi_ticket=&noncestr=n6vcnMbliFblNo83&timestamp=1511943720&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:22 get_sign 获取签名        
+2017-11-29 16:22 jsapi_ticket 过期    1505212579 < 1511943740    
+2017-11-29 16:22 access_token 过期    1505212579 < 1511943740    
+2017-11-29 16:22 access_token 过期  新的  access_token：     
+2017-11-29 16:22 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:22 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:22 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437Bh3ZbHn6WtTA0H8O1511943740http://localhost/FRANGI-H5/Invitation/20171208/f52538a5152e3caa3e15d7d9f2f9a68b93540000jsapi_ticket=&noncestr=Bh3ZbHn6WtTA0H8O&timestamp=1511943740&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:22 get_sign 获取签名        
+2017-11-29 16:22 jsapi_ticket 过期    1505212579 < 1511943766    
+2017-11-29 16:22 access_token 过期    1505212579 < 1511943766    
+2017-11-29 16:22 access_token 过期  新的  access_token：     
+2017-11-29 16:22 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:22 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:22 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e4372EPXjsQvry4TYtus1511943766http://localhost/FRANGI-H5/Invitation/20171208/2ff03ff7c75fda0e1b1f1a4915f8a29edadde247jsapi_ticket=&noncestr=2EPXjsQvry4TYtus&timestamp=1511943766&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:23 get_sign 获取签名        
+2017-11-29 16:23 jsapi_ticket 过期    1505212579 < 1511943802    
+2017-11-29 16:23 access_token 过期    1505212579 < 1511943802    
+2017-11-29 16:23 access_token 过期  新的  access_token：     
+2017-11-29 16:23 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:23 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:23 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437SAGRbsmicEt13Quz1511943802http://localhost/FRANGI-H5/Invitation/20171208/321981b2020b43b73fafbf6a960ab061f6c0659ejsapi_ticket=&noncestr=SAGRbsmicEt13Quz&timestamp=1511943802&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:23 get_sign 获取签名        
+2017-11-29 16:23 jsapi_ticket 过期    1505212579 < 1511943813    
+2017-11-29 16:23 access_token 过期    1505212579 < 1511943813    
+2017-11-29 16:23 access_token 过期  新的  access_token：     
+2017-11-29 16:23 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:23 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:23 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437WnGVTNwMtLkpd2G41511943813http://localhost/FRANGI-H5/Invitation/20171208/6dfeac0f0aab1531bae202acfe41733652098c56jsapi_ticket=&noncestr=WnGVTNwMtLkpd2G4&timestamp=1511943813&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:23 get_sign 获取签名        
+2017-11-29 16:23 jsapi_ticket 过期    1505212579 < 1511943823    
+2017-11-29 16:23 access_token 过期    1505212579 < 1511943823    
+2017-11-29 16:23 access_token 过期  新的  access_token：     
+2017-11-29 16:23 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:23 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:23 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437tKxUyz3Y7f8axyjb1511943823http://localhost/FRANGI-H5/Invitation/20171208/caead28768171498cdc8f61231e4fdbcee82a6e6jsapi_ticket=&noncestr=tKxUyz3Y7f8axyjb&timestamp=1511943823&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:23 get_sign 获取签名        
+2017-11-29 16:23 jsapi_ticket 过期    1505212579 < 1511943830    
+2017-11-29 16:23 access_token 过期    1505212579 < 1511943830    
+2017-11-29 16:23 access_token 过期  新的  access_token：     
+2017-11-29 16:23 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:23 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:23 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437sPh3H08SpNUgJreD1511943830http://localhost/FRANGI-H5/Invitation/20171208/4c3d76ebee36eaa2c13ef139b4f54e24b0ac2513jsapi_ticket=&noncestr=sPh3H08SpNUgJreD&timestamp=1511943830&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:23 get_sign 获取签名        
+2017-11-29 16:23 jsapi_ticket 过期    1505212579 < 1511943830    
+2017-11-29 16:23 access_token 过期    1505212579 < 1511943830    
+2017-11-29 16:23 access_token 过期  新的  access_token：     
+2017-11-29 16:23 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:23 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:23 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437SRYtjIep1gRdnk681511943831http://localhost/FRANGI-H5/Invitation/20171208/e2e4ad111d8dcee94c38808f518795590909e355jsapi_ticket=&noncestr=SRYtjIep1gRdnk68&timestamp=1511943831&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:23 get_sign 获取签名        
+2017-11-29 16:23 jsapi_ticket 过期    1505212579 < 1511943835    
+2017-11-29 16:23 access_token 过期    1505212579 < 1511943835    
+2017-11-29 16:23 access_token 过期  新的  access_token：     
+2017-11-29 16:23 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:23 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:23 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437JCdatVzReCY0OLFl1511943835http://localhost/FRANGI-H5/Invitation/20171208/65cbd4bca25c65a10076c54a53629cb63b068a50jsapi_ticket=&noncestr=JCdatVzReCY0OLFl&timestamp=1511943835&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:23 get_sign 获取签名        
+2017-11-29 16:23 jsapi_ticket 过期    1505212579 < 1511943836    
+2017-11-29 16:23 access_token 过期    1505212579 < 1511943836    
+2017-11-29 16:23 access_token 过期  新的  access_token：     
+2017-11-29 16:23 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:23 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:23 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437wGnYj9TuIoBAV2et1511943836http://localhost/FRANGI-H5/Invitation/20171208/7df0cf4861f03c799e4dbfa3e16d05d63a7b041ajsapi_ticket=&noncestr=wGnYj9TuIoBAV2et&timestamp=1511943836&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:24 get_sign 获取签名        
+2017-11-29 16:24 jsapi_ticket 过期    1505212579 < 1511943842    
+2017-11-29 16:24 access_token 过期    1505212579 < 1511943842    
+2017-11-29 16:24 access_token 过期  新的  access_token：     
+2017-11-29 16:24 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:24 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:24 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e4376JdpUKwI7ZkUNxcd1511943842http://localhost/FRANGI-H5/Invitation/20171208/a87823d3e7db52663b684c1a8dfc0605d031e12djsapi_ticket=&noncestr=6JdpUKwI7ZkUNxcd&timestamp=1511943842&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:24 get_sign 获取签名        
+2017-11-29 16:24 jsapi_ticket 过期    1505212579 < 1511943861    
+2017-11-29 16:24 access_token 过期    1505212579 < 1511943861    
+2017-11-29 16:24 access_token 过期  新的  access_token：     
+2017-11-29 16:24 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:24 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:24 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e4371iQy2qJy4cHTDyUN1511943861http://localhost/FRANGI-H5/Invitation/20171208/2dc62a80bdc253291ed92420e6ddb45b9df821eejsapi_ticket=&noncestr=1iQy2qJy4cHTDyUN&timestamp=1511943861&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:25 get_sign 获取签名        
+2017-11-29 16:25 jsapi_ticket 过期    1505212579 < 1511943910    
+2017-11-29 16:25 access_token 过期    1505212579 < 1511943910    
+2017-11-29 16:25 access_token 过期  新的  access_token：     
+2017-11-29 16:25 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:25 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:25 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437JlXEJYXlWsGHr4t11511943910http://localhost/FRANGI-H5/Invitation/20171208/1b57c0911a208e90b8645b5a28dafe531f632fa9jsapi_ticket=&noncestr=JlXEJYXlWsGHr4t1&timestamp=1511943910&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:25 get_sign 获取签名        
+2017-11-29 16:25 jsapi_ticket 过期    1505212579 < 1511943955    
+2017-11-29 16:25 access_token 过期    1505212579 < 1511943955    
+2017-11-29 16:25 access_token 过期  新的  access_token：     
+2017-11-29 16:25 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:25 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:25 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437hjvVtODzKHKrwipH1511943955http://localhost/FRANGI-H5/Invitation/20171208/dc76dc652f71215b093d3a3d00daaaa607d119dejsapi_ticket=&noncestr=hjvVtODzKHKrwipH&timestamp=1511943955&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:26 get_sign 获取签名        
+2017-11-29 16:26 jsapi_ticket 过期    1505212579 < 1511943965    
+2017-11-29 16:26 access_token 过期    1505212579 < 1511943965    
+2017-11-29 16:26 access_token 过期  新的  access_token：     
+2017-11-29 16:26 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:26 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:26 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437hBapsIO3TnID0qVn1511943965http://localhost/FRANGI-H5/Invitation/20171208/751688a5b04a53660e060fc0983afeb3c2e76a8cjsapi_ticket=&noncestr=hBapsIO3TnID0qVn&timestamp=1511943965&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:26 get_sign 获取签名        
+2017-11-29 16:26 jsapi_ticket 过期    1505212579 < 1511943975    
+2017-11-29 16:26 access_token 过期    1505212579 < 1511943975    
+2017-11-29 16:26 access_token 过期  新的  access_token：     
+2017-11-29 16:26 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:26 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:26 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437u7N6vbNbSIY3q78J1511943975http://localhost/FRANGI-H5/Invitation/20171208/c152f9a7fa048fe2ce6fe1bfa2c73fc2bcf25539jsapi_ticket=&noncestr=u7N6vbNbSIY3q78J&timestamp=1511943975&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:26 get_sign 获取签名        
+2017-11-29 16:26 jsapi_ticket 过期    1505212579 < 1511943975    
+2017-11-29 16:26 access_token 过期    1505212579 < 1511943975    
+2017-11-29 16:26 access_token 过期  新的  access_token：     
+2017-11-29 16:26 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:26 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:26 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437VEQvvjRQ5xYMnxkw1511943976http://localhost/FRANGI-H5/Invitation/20171208/23610fb518a332e4a8cd1cf550590a6371b4bf64jsapi_ticket=&noncestr=VEQvvjRQ5xYMnxkw&timestamp=1511943976&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:26 get_sign 获取签名        
+2017-11-29 16:26 jsapi_ticket 过期    1505212579 < 1511943986    
+2017-11-29 16:26 access_token 过期    1505212579 < 1511943986    
+2017-11-29 16:26 access_token 过期  新的  access_token：     
+2017-11-29 16:26 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:26 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:26 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437FzXBXa3eM7CqGJEt1511943986http://localhost/FRANGI-H5/Invitation/20171208/16efb89144531c7bdda347bdd36ed72579c9a520jsapi_ticket=&noncestr=FzXBXa3eM7CqGJEt&timestamp=1511943986&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:26 get_sign 获取签名        
+2017-11-29 16:26 jsapi_ticket 过期    1505212579 < 1511943997    
+2017-11-29 16:26 access_token 过期    1505212579 < 1511943997    
+2017-11-29 16:26 access_token 过期  新的  access_token：     
+2017-11-29 16:26 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:26 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:26 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437ftodPNlUGEyDqD0n1511943997http://localhost/FRANGI-H5/Invitation/20171208/787e4f621320060cc78a3dfa82b8a0b8e02b16d4jsapi_ticket=&noncestr=ftodPNlUGEyDqD0n&timestamp=1511943997&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:26 get_sign 获取签名        
+2017-11-29 16:26 jsapi_ticket 过期    1505212579 < 1511944004    
+2017-11-29 16:26 access_token 过期    1505212579 < 1511944004    
+2017-11-29 16:26 access_token 过期  新的  access_token：     
+2017-11-29 16:26 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:26 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:26 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437997DLRqMfXsbuADv1511944004http://localhost/FRANGI-H5/Invitation/20171208/ed09700ca49846530edc8b39d7f31d224a08de9fjsapi_ticket=&noncestr=997DLRqMfXsbuADv&timestamp=1511944004&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:27 get_sign 获取签名        
+2017-11-29 16:27 jsapi_ticket 过期    1505212579 < 1511944031    
+2017-11-29 16:27 access_token 过期    1505212579 < 1511944031    
+2017-11-29 16:27 access_token 过期  新的  access_token：     
+2017-11-29 16:27 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:27 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:27 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e4373FUs0jATj69jTkAf1511944031http://localhost/FRANGI-H5/Invitation/20171208/8f4a44d1eade24dc3e552eb8d8346e98b88bb5b6jsapi_ticket=&noncestr=3FUs0jATj69jTkAf&timestamp=1511944031&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:27 get_sign 获取签名        
+2017-11-29 16:27 jsapi_ticket 过期    1505212579 < 1511944069    
+2017-11-29 16:27 access_token 过期    1505212579 < 1511944069    
+2017-11-29 16:27 access_token 过期  新的  access_token：     
+2017-11-29 16:27 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:27 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:27 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437Z3CccXV83eCPQaCi1511944069http://localhost/FRANGI-H5/Invitation/20171208/e0e5bd2f7c33251366f6b4454243e91981b8e57djsapi_ticket=&noncestr=Z3CccXV83eCPQaCi&timestamp=1511944069&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:28 get_sign 获取签名        
+2017-11-29 16:28 jsapi_ticket 过期    1505212579 < 1511944096    
+2017-11-29 16:28 access_token 过期    1505212579 < 1511944096    
+2017-11-29 16:28 access_token 过期  新的  access_token：     
+2017-11-29 16:28 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:28 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:28 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437ln4qMPpgfeHWT1Bn1511944096http://localhost/FRANGI-H5/Invitation/20171208/26fd96958b14d4a4200240e57e1fa24c22054843jsapi_ticket=&noncestr=ln4qMPpgfeHWT1Bn&timestamp=1511944096&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:29 get_sign 获取签名        
+2017-11-29 16:29 jsapi_ticket 过期    1505212579 < 1511944182    
+2017-11-29 16:29 access_token 过期    1505212579 < 1511944182    
+2017-11-29 16:29 access_token 过期  新的  access_token：     
+2017-11-29 16:29 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:29 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:29 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437Fp8Kyg7WRRGpQcep1511944183http://localhost/FRANGI-H5/Invitation/20171208/c365bf88a136578fe772be36771ff6a1cce11fd7jsapi_ticket=&noncestr=Fp8Kyg7WRRGpQcep&timestamp=1511944183&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:29 get_sign 获取签名        
+2017-11-29 16:29 jsapi_ticket 过期    1505212579 < 1511944183    
+2017-11-29 16:29 access_token 过期    1505212579 < 1511944183    
+2017-11-29 16:29 access_token 过期  新的  access_token：     
+2017-11-29 16:29 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:29 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:29 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437dl5wQwgezIcTIcfW1511944183http://localhost/FRANGI-H5/Invitation/20171208/b88cbc79183d9b5e8b08b642f16d9a83a080d3ffjsapi_ticket=&noncestr=dl5wQwgezIcTIcfW&timestamp=1511944183&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-29 16:29 get_sign 获取签名        
+2017-11-29 16:29 jsapi_ticket 过期    1505212579 < 1511944189    
+2017-11-29 16:29 access_token 过期    1505212579 < 1511944189    
+2017-11-29 16:29 access_token 过期  新的  access_token：     
+2017-11-29 16:29 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:29 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:29 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437BumwGY73gVwoI2gk1511944189http://localhost/FRANGI-H5/Invitation/20171208/?pname=w&linkman=w&phone=w&address=w&arange=w&total=wa81fe1dad0412053e69ea68a85a6c0d4239beab5jsapi_ticket=&noncestr=BumwGY73gVwoI2gk&timestamp=1511944189&url=http://localhost/FRANGI-H5/Invitation/20171208/?pname=w&linkman=w&phone=w&address=w&arange=w&total=w2017-11-29 16:30 get_sign 获取签名        
+2017-11-29 16:30 jsapi_ticket 过期    1505212579 < 1511944259    
+2017-11-29 16:30 access_token 过期    1505212579 < 1511944259    
+2017-11-29 16:30 access_token 过期  新的  access_token：     
+2017-11-29 16:30 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:30 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:30 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437392L170rEDRK5u2h1511944259http://localhost/FRANGI-H5/Invitation/20171208/?pname=w&linkman=w&phone=w&address=w&arange=w&total=w30146290b58d11f4294f455899d377e6827b8dabjsapi_ticket=&noncestr=392L170rEDRK5u2h&timestamp=1511944259&url=http://localhost/FRANGI-H5/Invitation/20171208/?pname=w&linkman=w&phone=w&address=w&arange=w&total=w2017-11-29 16:31 get_sign 获取签名        
+2017-11-29 16:31 jsapi_ticket 过期    1505212579 < 1511944260    
+2017-11-29 16:31 access_token 过期    1505212579 < 1511944260    
+2017-11-29 16:31 access_token 过期  新的  access_token：     
+2017-11-29 16:31 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:31 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:31 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437g3PFoCn3lint4tUf1511944260http://localhost/FRANGI-H5/Invitation/20171208/?pname=w&linkman=w&phone=w&address=w&arange=w&total=w4adeaeed688aa0869de3e8efca1627dad93f77d4jsapi_ticket=&noncestr=g3PFoCn3lint4tUf&timestamp=1511944260&url=http://localhost/FRANGI-H5/Invitation/20171208/?pname=w&linkman=w&phone=w&address=w&arange=w&total=w2017-11-29 16:31 get_sign 获取签名        
+2017-11-29 16:31 jsapi_ticket 过期    1505212579 < 1511944280    
+2017-11-29 16:31 access_token 过期    1505212579 < 1511944280    
+2017-11-29 16:31 access_token 过期  新的  access_token：     
+2017-11-29 16:31 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:31 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:31 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437WmsvElQb8Pp1Y48X1511944280http://localhost/FRANGI-H5/Invitation/20171208/?pname=w&linkman=w&phone=w&address=w&arange=w&total=w8acbcaa8c6db0495251b1e2e8ee7acfdfe82dd42jsapi_ticket=&noncestr=WmsvElQb8Pp1Y48X&timestamp=1511944280&url=http://localhost/FRANGI-H5/Invitation/20171208/?pname=w&linkman=w&phone=w&address=w&arange=w&total=w2017-11-29 16:31 get_sign 获取签名        
+2017-11-29 16:31 jsapi_ticket 过期    1505212579 < 1511944285    
+2017-11-29 16:31 access_token 过期    1505212579 < 1511944285    
+2017-11-29 16:31 access_token 过期  新的  access_token：     
+2017-11-29 16:31 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:31 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:31 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437wIrGq9udWA1IX0YH1511944285http://localhost/FRANGI-H5/Invitation/20171208/?pname=2&linkman=2&phone=2&address=2&arange=2&total=26e6d8f2d0b4886f7efe8c8714d0877c941104b29jsapi_ticket=&noncestr=wIrGq9udWA1IX0YH&timestamp=1511944285&url=http://localhost/FRANGI-H5/Invitation/20171208/?pname=2&linkman=2&phone=2&address=2&arange=2&total=22017-11-29 16:32 get_sign 获取签名        
+2017-11-29 16:32 jsapi_ticket 过期    1505212579 < 1511944334    
+2017-11-29 16:32 access_token 过期    1505212579 < 1511944334    
+2017-11-29 16:32 access_token 过期  新的  access_token：     
+2017-11-29 16:32 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:32 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:32 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437sYzCmPaI5sQAC5jS1511944334http://localhost/FRANGI-H5/Invitation/20171208/?pname=2&linkman=2&phone=2&address=2&arange=2&total=22c36c15138cf1fa81333357276ca97e3655074c6jsapi_ticket=&noncestr=sYzCmPaI5sQAC5jS&timestamp=1511944334&url=http://localhost/FRANGI-H5/Invitation/20171208/?pname=2&linkman=2&phone=2&address=2&arange=2&total=22017-11-29 16:32 get_sign 获取签名        
+2017-11-29 16:32 jsapi_ticket 过期    1505212579 < 1511944336    
+2017-11-29 16:32 access_token 过期    1505212579 < 1511944336    
+2017-11-29 16:32 access_token 过期  新的  access_token：     
+2017-11-29 16:32 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:32 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:32 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437atNj2gaHfDp47Sm21511944336http://localhost/FRANGI-H5/Invitation/20171208/?pname=2&linkman=2&phone=2&address=2&arange=2&total=2b2ca2fe968320119b5ee8719fbf5bff3dbea7c7fjsapi_ticket=&noncestr=atNj2gaHfDp47Sm2&timestamp=1511944336&url=http://localhost/FRANGI-H5/Invitation/20171208/?pname=2&linkman=2&phone=2&address=2&arange=2&total=22017-11-29 16:40 get_sign 获取签名        
+2017-11-29 16:40 jsapi_ticket 过期    1505212579 < 1511944806    
+2017-11-29 16:40 access_token 过期    1505212579 < 1511944806    
+2017-11-29 16:40 access_token 过期  新的  access_token：     
+2017-11-29 16:40 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-29 16:40 jsapi_ticket 过期   新的ticket     
+2017-11-29 16:40 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+<<<<<<< HEAD
+wx99c6d016f620e437bLdLPjz4VBsfmtCL1511944806http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.html1e56fd05cf7eda1cf6e63c1b04618f20662cacdejsapi_ticket=&noncestr=bLdLPjz4VBsfmtCL&timestamp=1511944806&url=http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.html2017-12-06 17:09 get_sign 获取签名        
+2017-12-06 17:09 jsapi_ticket 过期    1505212579 < 1512551394    
+2017-12-06 17:09 access_token 过期    1505212579 < 1512551394    
+2017-12-06 17:09 access_token 过期  新的  access_token：     
+2017-12-06 17:09 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-12-06 17:09 jsapi_ticket 过期   新的ticket     
+2017-12-06 17:09 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e4378bQvJOXMoUNNZiBv1512551394http://localhost/FRANGI-H5/BrandPromotionV1/index.html00ce8d9ab2bef665dda1383f7ca9dc37066fd9d6jsapi_ticket=&noncestr=8bQvJOXMoUNNZiBv&timestamp=1512551394&url=http://localhost/FRANGI-H5/BrandPromotionV1/index.html2017-12-06 17:09 get_sign 获取签名        
+2017-12-06 17:09 jsapi_ticket 过期    1505212579 < 1512551395    
+2017-12-06 17:09 access_token 过期    1505212579 < 1512551395    
+2017-12-06 17:09 access_token 过期  新的  access_token：     
+2017-12-06 17:09 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-12-06 17:09 jsapi_ticket 过期   新的ticket     
+2017-12-06 17:09 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437WxRLgxRUVcdr6wAI1512551395http://localhost/FRANGI-H5/BrandPromotionV1/index.html4a8e7703074df431f579e2d3167c1835579152fcjsapi_ticket=&noncestr=WxRLgxRUVcdr6wAI&timestamp=1512551395&url=http://localhost/FRANGI-H5/BrandPromotionV1/index.html2017-12-06 17:12 get_sign 获取签名        
+2017-12-06 17:12 jsapi_ticket 过期    1505212579 < 1512551567    
+2017-12-06 17:12 access_token 过期    1505212579 < 1512551567    
+2017-12-06 17:12 access_token 过期  新的  access_token：     
+2017-12-06 17:12 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-12-06 17:12 jsapi_ticket 过期   新的ticket     
+2017-12-06 17:12 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437VK83qTKG6uoXlIsa1512551567http://localhost/FRANGI-H5/Invitation/20171218/e29c15c60d3f4b56b683aa4042283db9e0dab326jsapi_ticket=&noncestr=VK83qTKG6uoXlIsa&timestamp=1512551567&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-12-06 17:14 get_sign 获取签名        
+2017-12-06 17:14 jsapi_ticket 过期    1505212579 < 1512551657    
+2017-12-06 17:14 access_token 过期    1505212579 < 1512551657    
+2017-12-06 17:14 access_token 过期  新的  access_token：     
+2017-12-06 17:14 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-12-06 17:14 jsapi_ticket 过期   新的ticket     
+2017-12-06 17:14 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437efBjA1kh47gs5try1512551657http://localhost/FRANGI-H5/Invitation/20171218/03e91b08d2e770ffd60dc5544e4db824599d8dc2jsapi_ticket=&noncestr=efBjA1kh47gs5try&timestamp=1512551657&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-12-06 17:14 get_sign 获取签名        
+2017-12-06 17:14 jsapi_ticket 过期    1505212579 < 1512551666    
+2017-12-06 17:14 access_token 过期    1505212579 < 1512551666    
+2017-12-06 17:14 access_token 过期  新的  access_token：     
+2017-12-06 17:14 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-12-06 17:14 jsapi_ticket 过期   新的ticket     
+2017-12-06 17:14 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437WCnekPYIWjsWpXaO1512551666http://localhost/FRANGI-H5/Invitation/20171218/28fbe014352bffb374eb3f1c30be81fa99108a87jsapi_ticket=&noncestr=WCnekPYIWjsWpXaO&timestamp=1512551666&url=http://localhost/FRANGI-H5/Invitation/20171218/
+=======
+wx99c6d016f620e437bLdLPjz4VBsfmtCL1511944806http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.html1e56fd05cf7eda1cf6e63c1b04618f20662cacdejsapi_ticket=&noncestr=bLdLPjz4VBsfmtCL&timestamp=1511944806&url=http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.html2017-11-30 09:16 get_sign 获取签名        
+2017-11-30 09:16 jsapi_ticket 过期    1505212579 < 1512004604    
+2017-11-30 09:16 access_token 过期    1505212579 < 1512004604    
+2017-11-30 09:16 access_token 过期  新的  access_token：     
+2017-11-30 09:16 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 09:16 jsapi_ticket 过期   新的ticket     
+2017-11-30 09:16 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437PitIf3831nYDYqYR1512004605http://localhost/FRANGI-H5/BrandPromotionV1/index.htmld7bbb1baab7d1193f3755ee13cb65cee096f8b73jsapi_ticket=&noncestr=PitIf3831nYDYqYR&timestamp=1512004605&url=http://localhost/FRANGI-H5/BrandPromotionV1/index.html2017-11-30 09:16 get_sign 获取签名        
+2017-11-30 09:16 jsapi_ticket 过期    1505212579 < 1512004615    
+2017-11-30 09:16 access_token 过期    1505212579 < 1512004615    
+2017-11-30 09:16 access_token 过期  新的  access_token：     
+2017-11-30 09:16 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 09:16 jsapi_ticket 过期   新的ticket     
+2017-11-30 09:16 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437XIxZChteclz3chSq1512004615http://localhost/FRANGI-H5/Invitation/20171208/cdbd87d06fe873b174dbf4cf422d113573048afbjsapi_ticket=&noncestr=XIxZChteclz3chSq&timestamp=1512004615&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-30 09:16 get_sign 获取签名        
+2017-11-30 09:16 jsapi_ticket 过期    1505212579 < 1512004619    
+2017-11-30 09:16 access_token 过期    1505212579 < 1512004619    
+2017-11-30 09:17 access_token 过期  新的  access_token：     
+2017-11-30 09:17 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 09:17 jsapi_ticket 过期   新的ticket     
+2017-11-30 09:17 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e43732mEUBUUCX2l1EJ01512004620http://localhost/FRANGI-H5/Invitation/20171208/2fe25f086830465522972229da84f91fb8dada60jsapi_ticket=&noncestr=32mEUBUUCX2l1EJ0&timestamp=1512004620&url=http://localhost/FRANGI-H5/Invitation/20171208/2017-11-30 13:35 get_sign 获取签名        
+2017-11-30 13:35 jsapi_ticket 过期    1505212579 < 1512020122    
+2017-11-30 13:35 access_token 过期    1505212579 < 1512020122    
+2017-11-30 13:35 access_token 过期  新的  access_token：     
+2017-11-30 13:35 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 13:35 jsapi_ticket 过期   新的ticket     
+2017-11-30 13:35 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437lIaf4fv8YwFaq3En1512020122http://localhost/FRANGI-H5/InvestmentGuideV1/index.html9ce6254f68d5e62e6fbbaa237cc60a1b2f1aa478jsapi_ticket=&noncestr=lIaf4fv8YwFaq3En&timestamp=1512020122&url=http://localhost/FRANGI-H5/InvestmentGuideV1/index.html2017-11-30 13:35 get_sign 获取签名        
+2017-11-30 13:35 jsapi_ticket 过期    1505212579 < 1512020143    
+2017-11-30 13:35 access_token 过期    1505212579 < 1512020143    
+2017-11-30 13:35 access_token 过期  新的  access_token：     
+2017-11-30 13:35 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 13:35 jsapi_ticket 过期   新的ticket     
+2017-11-30 13:35 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437uu8d3IAFC1ITbwXI1512020143http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.htmlced8c9e40d5de015f175af36302d309d903617b5jsapi_ticket=&noncestr=uu8d3IAFC1ITbwXI&timestamp=1512020143&url=http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.html2017-11-30 13:38 get_sign 获取签名        
+2017-11-30 13:38 jsapi_ticket 过期    1505212579 < 1512020306    
+2017-11-30 13:38 access_token 过期    1505212579 < 1512020306    
+2017-11-30 13:38 access_token 过期  新的  access_token：     
+2017-11-30 13:38 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 13:38 jsapi_ticket 过期   新的ticket     
+2017-11-30 13:38 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e4374XSVYvrTRzYOdnhM1512020306http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.htmldad6c5bed7cffc2ea10b67ea574ed851b53cc12fjsapi_ticket=&noncestr=4XSVYvrTRzYOdnhM&timestamp=1512020306&url=http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.html2017-11-30 13:38 get_sign 获取签名        
+2017-11-30 13:38 jsapi_ticket 过期    1505212579 < 1512020308    
+2017-11-30 13:38 access_token 过期    1505212579 < 1512020308    
+2017-11-30 13:38 access_token 过期  新的  access_token：     
+2017-11-30 13:38 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 13:38 jsapi_ticket 过期   新的ticket     
+2017-11-30 13:38 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437ypBjyCp6LJzuapt01512020308http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.html097337dcfebf4de4c8015778eb132c9b00db293ajsapi_ticket=&noncestr=ypBjyCp6LJzuapt0&timestamp=1512020308&url=http://localhost/FRANGI-H5/InvestmentGuideV1/applicant.html2017-11-30 13:38 get_sign 获取签名        
+2017-11-30 13:38 jsapi_ticket 过期    1505212579 < 1512020310    
+2017-11-30 13:38 access_token 过期    1505212579 < 1512020310    
+2017-11-30 13:38 access_token 过期  新的  access_token：     
+2017-11-30 13:38 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 13:38 jsapi_ticket 过期   新的ticket     
+2017-11-30 13:38 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437sZSAFrCl0ItwpMQa1512020310http://localhost/FRANGI-H5/InvestmentGuideV1/597b9396235e01d99c03ca456eae76dd36dbad3ajsapi_ticket=&noncestr=sZSAFrCl0ItwpMQa&timestamp=1512020310&url=http://localhost/FRANGI-H5/InvestmentGuideV1/2017-11-30 13:38 get_sign 获取签名        
+2017-11-30 13:38 jsapi_ticket 过期    1505212579 < 1512020314    
+2017-11-30 13:38 access_token 过期    1505212579 < 1512020314    
+2017-11-30 13:38 access_token 过期  新的  access_token：     
+2017-11-30 13:38 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 13:38 jsapi_ticket 过期   新的ticket     
+2017-11-30 13:38 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437L8DOXknFLjOAVFZo1512020314http://localhost/FRANGI-H5/InvestmentGuideV1/27f1189566afbca1cac0a089cef0abe586f66a54jsapi_ticket=&noncestr=L8DOXknFLjOAVFZo&timestamp=1512020314&url=http://localhost/FRANGI-H5/InvestmentGuideV1/2017-11-30 14:01 get_sign 获取签名        
+2017-11-30 14:01 jsapi_ticket 过期    1505212579 < 1512021717    
+2017-11-30 14:01 access_token 过期    1505212579 < 1512021717    
+2017-11-30 14:01 access_token 过期  新的  access_token：     
+2017-11-30 14:01 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:01 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:01 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437P9l8LubikecpSfNY1512021717http://localhost/FRANGI-H5/Invitation/20171218/b69fcab43f8ad333a4389bf63dcde7151233e9b9jsapi_ticket=&noncestr=P9l8LubikecpSfNY&timestamp=1512021717&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:03 get_sign 获取签名        
+2017-11-30 14:03 jsapi_ticket 过期    1505212579 < 1512021794    
+2017-11-30 14:03 access_token 过期    1505212579 < 1512021794    
+2017-11-30 14:03 access_token 过期  新的  access_token：     
+2017-11-30 14:03 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:03 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:03 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437VEVtTftkmfxeFTia1512021794http://localhost/FRANGI-H5/Invitation/20171218/57dac3d4b560e69928c0b4df3f9a2260c8bb04f4jsapi_ticket=&noncestr=VEVtTftkmfxeFTia&timestamp=1512021794&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:04 get_sign 获取签名        
+2017-11-30 14:04 jsapi_ticket 过期    1505212579 < 1512021859    
+2017-11-30 14:04 access_token 过期    1505212579 < 1512021859    
+2017-11-30 14:04 access_token 过期  新的  access_token：     
+2017-11-30 14:04 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:04 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:04 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437ZAtqFXDtBup6RQfQ1512021859http://localhost/FRANGI-H5/Invitation/20171218/65ba47f03f0c1d335abe688a4e14932e0d386cb1jsapi_ticket=&noncestr=ZAtqFXDtBup6RQfQ&timestamp=1512021859&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:04 get_sign 获取签名        
+2017-11-30 14:04 jsapi_ticket 过期    1505212579 < 1512021870    
+2017-11-30 14:04 access_token 过期    1505212579 < 1512021870    
+2017-11-30 14:04 access_token 过期  新的  access_token：     
+2017-11-30 14:04 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:04 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:04 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437LfAK5kE7tFeeBPd71512021871http://localhost/FRANGI-H5/Invitation/20171218/3d31d35722e0e8aba5396918766bad5a814d0600jsapi_ticket=&noncestr=LfAK5kE7tFeeBPd7&timestamp=1512021871&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:04 get_sign 获取签名        
+2017-11-30 14:04 jsapi_ticket 过期    1505212579 < 1512021879    
+2017-11-30 14:04 access_token 过期    1505212579 < 1512021879    
+2017-11-30 14:04 access_token 过期  新的  access_token：     
+2017-11-30 14:04 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:04 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:04 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437T6T3lxvM6ZDfkHmw1512021879http://localhost/FRANGI-H5/Invitation/20171218/e56d47915112345f0cd6f69f976b00b51b7f4916jsapi_ticket=&noncestr=T6T3lxvM6ZDfkHmw&timestamp=1512021879&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:04 get_sign 获取签名        
+2017-11-30 14:04 jsapi_ticket 过期    1505212579 < 1512021898    
+2017-11-30 14:04 access_token 过期    1505212579 < 1512021898    
+2017-11-30 14:04 access_token 过期  新的  access_token：     
+2017-11-30 14:04 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:04 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:04 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437WADOjRJxJSSqdkBN1512021899http://localhost/FRANGI-H5/Invitation/20171218/ffb0fbc22f780069db7585bcdd839c900937b3b5jsapi_ticket=&noncestr=WADOjRJxJSSqdkBN&timestamp=1512021899&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:05 get_sign 获取签名        
+2017-11-30 14:05 jsapi_ticket 过期    1505212579 < 1512021917    
+2017-11-30 14:05 access_token 过期    1505212579 < 1512021917    
+2017-11-30 14:05 access_token 过期  新的  access_token：     
+2017-11-30 14:05 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:05 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:05 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e4376QlZbBIWDkwnNaZC1512021917http://localhost/FRANGI-H5/Invitation/20171218/b3e259bc1ee68b1f48becf0814ab1ea366d60110jsapi_ticket=&noncestr=6QlZbBIWDkwnNaZC&timestamp=1512021917&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:05 get_sign 获取签名        
+2017-11-30 14:05 jsapi_ticket 过期    1505212579 < 1512021939    
+2017-11-30 14:05 access_token 过期    1505212579 < 1512021939    
+2017-11-30 14:05 access_token 过期  新的  access_token：     
+2017-11-30 14:05 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:05 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:05 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437OJL8TY7KsdHnQ9Oy1512021939http://localhost/FRANGI-H5/Invitation/20171218/b2a543aa810f2b380991a58fab3255b01dd886b8jsapi_ticket=&noncestr=OJL8TY7KsdHnQ9Oy&timestamp=1512021939&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:06 get_sign 获取签名        
+2017-11-30 14:06 jsapi_ticket 过期    1505212579 < 1512021975    
+2017-11-30 14:06 access_token 过期    1505212579 < 1512021975    
+2017-11-30 14:06 access_token 过期  新的  access_token：     
+2017-11-30 14:06 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:06 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:06 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437aACHMYVcflHybtUW1512021975http://localhost/FRANGI-H5/Invitation/20171218/776151340eeef28673a3d9b08a51332baf566f26jsapi_ticket=&noncestr=aACHMYVcflHybtUW&timestamp=1512021975&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:07 get_sign 获取签名        
+2017-11-30 14:07 jsapi_ticket 过期    1505212579 < 1512022022    
+2017-11-30 14:07 access_token 过期    1505212579 < 1512022022    
+2017-11-30 14:07 access_token 过期  新的  access_token：     
+2017-11-30 14:07 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:07 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:07 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437619Ka6MeAD3cToEY1512022022http://localhost/FRANGI-H5/Invitation/20171218/40f60999dd4841356947bff9bbad37653d1a42bbjsapi_ticket=&noncestr=619Ka6MeAD3cToEY&timestamp=1512022022&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:07 get_sign 获取签名        
+2017-11-30 14:07 jsapi_ticket 过期    1505212579 < 1512022030    
+2017-11-30 14:07 access_token 过期    1505212579 < 1512022030    
+2017-11-30 14:07 access_token 过期  新的  access_token：     
+2017-11-30 14:07 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:07 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:07 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437cEfhwWsDRGEB6DeP1512022030http://localhost/FRANGI-H5/Invitation/20171218/6f68c5c9d736162856aefc46d932d59f6b4e7e96jsapi_ticket=&noncestr=cEfhwWsDRGEB6DeP&timestamp=1512022030&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:07 get_sign 获取签名        
+2017-11-30 14:07 jsapi_ticket 过期    1505212579 < 1512022046    
+2017-11-30 14:07 access_token 过期    1505212579 < 1512022046    
+2017-11-30 14:07 access_token 过期  新的  access_token：     
+2017-11-30 14:07 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:07 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:07 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437qIbpRLlOsI1FT2pj1512022046http://localhost/FRANGI-H5/Invitation/20171218/2be4993a2c813bb5f42915073b3649905c86cf7cjsapi_ticket=&noncestr=qIbpRLlOsI1FT2pj&timestamp=1512022046&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:07 get_sign 获取签名        
+2017-11-30 14:07 jsapi_ticket 过期    1505212579 < 1512022054    
+2017-11-30 14:07 access_token 过期    1505212579 < 1512022054    
+2017-11-30 14:07 access_token 过期  新的  access_token：     
+2017-11-30 14:07 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:07 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:07 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437V5raovp9By6IlnCX1512022054http://localhost/FRANGI-H5/Invitation/20171218/f3c828cb60df6655160300ec0ed628ff77f654f4jsapi_ticket=&noncestr=V5raovp9By6IlnCX&timestamp=1512022054&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:09 get_sign 获取签名        
+2017-11-30 14:09 jsapi_ticket 过期    1505212579 < 1512022164    
+2017-11-30 14:09 access_token 过期    1505212579 < 1512022164    
+2017-11-30 14:09 access_token 过期  新的  access_token：     
+2017-11-30 14:09 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:09 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:09 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437Aq8UtzWpyJF2bHHX1512022164http://localhost/FRANGI-H5/Invitation/20171218/26c07ab4c5a0095e968e8629f64883af1c2cd3ffjsapi_ticket=&noncestr=Aq8UtzWpyJF2bHHX&timestamp=1512022164&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:11 get_sign 获取签名        
+2017-11-30 14:11 jsapi_ticket 过期    1505212579 < 1512022292    
+2017-11-30 14:11 access_token 过期    1505212579 < 1512022292    
+2017-11-30 14:11 access_token 过期  新的  access_token：     
+2017-11-30 14:11 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:11 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:11 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437QkurD2YABHMnjNk81512022292http://localhost/FRANGI-H5/Invitation/20171218/ec5cb720eacf73d984ad5ba1f9b5ac36c05d1767jsapi_ticket=&noncestr=QkurD2YABHMnjNk8&timestamp=1512022292&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:12 get_sign 获取签名        
+2017-11-30 14:12 jsapi_ticket 过期    1505212579 < 1512022331    
+2017-11-30 14:12 access_token 过期    1505212579 < 1512022331    
+2017-11-30 14:12 access_token 过期  新的  access_token：     
+2017-11-30 14:12 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:12 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:12 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437xAi1c7SRVivcfmAg1512022331http://localhost/FRANGI-H5/InvestmentGuideV1/387dded27320003bde7c4157315bf61d6af1b6c6jsapi_ticket=&noncestr=xAi1c7SRVivcfmAg&timestamp=1512022331&url=http://localhost/FRANGI-H5/InvestmentGuideV1/2017-11-30 14:12 get_sign 获取签名        
+2017-11-30 14:12 jsapi_ticket 过期    1505212579 < 1512022333    
+2017-11-30 14:12 access_token 过期    1505212579 < 1512022333    
+2017-11-30 14:12 access_token 过期  新的  access_token：     
+2017-11-30 14:12 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:12 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:12 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437obBcDy9lJUEG19F01512022333http://localhost/FRANGI-H5/Invitation/20171218/7185d6c1e90d53261f8b838d49907e0554ca6a8bjsapi_ticket=&noncestr=obBcDy9lJUEG19F0&timestamp=1512022333&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:12 get_sign 获取签名        
+2017-11-30 14:12 jsapi_ticket 过期    1505212579 < 1512022351    
+2017-11-30 14:12 access_token 过期    1505212579 < 1512022351    
+2017-11-30 14:12 access_token 过期  新的  access_token：     
+2017-11-30 14:12 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:12 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:12 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437FSNbhQxfoiuBgQEN1512022351http://localhost/FRANGI-H5/Invitation/20171218/d97220b0781acca772a909f4df7d668d03dd7957jsapi_ticket=&noncestr=FSNbhQxfoiuBgQEN&timestamp=1512022351&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:14 get_sign 获取签名        
+2017-11-30 14:14 jsapi_ticket 过期    1505212579 < 1512022448    
+2017-11-30 14:14 access_token 过期    1505212579 < 1512022448    
+2017-11-30 14:14 access_token 过期  新的  access_token：     
+2017-11-30 14:14 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:14 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:14 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437wCdJP1Y3LTgnZsjr1512022448http://localhost/FRANGI-H5/Invitation/20171218/c88c934bac6eaefa756ed93c42441299963e99bbjsapi_ticket=&noncestr=wCdJP1Y3LTgnZsjr&timestamp=1512022448&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:14 get_sign 获取签名        
+2017-11-30 14:14 jsapi_ticket 过期    1505212579 < 1512022461    
+2017-11-30 14:14 access_token 过期    1505212579 < 1512022461    
+2017-11-30 14:14 access_token 过期  新的  access_token：     
+2017-11-30 14:14 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:14 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:14 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437zBEG15Cyl4LhTTKb1512022461http://localhost/FRANGI-H5/Invitation/20171218/1a04d6b09e76f92e627a607c9328d7b5df54fb76jsapi_ticket=&noncestr=zBEG15Cyl4LhTTKb&timestamp=1512022461&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:14 get_sign 获取签名        
+2017-11-30 14:14 jsapi_ticket 过期    1505212579 < 1512022462    
+2017-11-30 14:14 access_token 过期    1505212579 < 1512022462    
+2017-11-30 14:14 access_token 过期  新的  access_token：     
+2017-11-30 14:14 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:14 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:14 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437z9FRVkGhmGFJbSrf1512022463http://localhost/FRANGI-H5/Invitation/20171218/49c6374b17204061c541e6e1a007f81347987539jsapi_ticket=&noncestr=z9FRVkGhmGFJbSrf&timestamp=1512022463&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:14 get_sign 获取签名        
+2017-11-30 14:14 jsapi_ticket 过期    1505212579 < 1512022472    
+2017-11-30 14:14 access_token 过期    1505212579 < 1512022472    
+2017-11-30 14:14 access_token 过期  新的  access_token：     
+2017-11-30 14:14 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:14 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:14 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437x8VXBNaWwt5ClAnd1512022472http://localhost/FRANGI-H5/Invitation/20171218/25e2e8f44157b74e0db82b7fc3ca17707b3c6f8cjsapi_ticket=&noncestr=x8VXBNaWwt5ClAnd&timestamp=1512022472&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:14 get_sign 获取签名        
+2017-11-30 14:14 jsapi_ticket 过期    1505212579 < 1512022474    
+2017-11-30 14:14 access_token 过期    1505212579 < 1512022474    
+2017-11-30 14:14 access_token 过期  新的  access_token：     
+2017-11-30 14:14 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:14 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:14 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437PED246WD8sWeAsur1512022474http://localhost/FRANGI-H5/Invitation/20171218/6c7b8d75bb6ed4901fbc3b8af3c70b8e4ba43b58jsapi_ticket=&noncestr=PED246WD8sWeAsur&timestamp=1512022474&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:14 get_sign 获取签名        
+2017-11-30 14:14 jsapi_ticket 过期    1505212579 < 1512022476    
+2017-11-30 14:14 access_token 过期    1505212579 < 1512022476    
+2017-11-30 14:14 access_token 过期  新的  access_token：     
+2017-11-30 14:14 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:14 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:14 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437AhiPDIshniEJP4X81512022476http://localhost/FRANGI-H5/Invitation/20171218/59c875e6c5c0c30ac101e8c1f642aafdb45da057jsapi_ticket=&noncestr=AhiPDIshniEJP4X8&timestamp=1512022476&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:14 get_sign 获取签名        
+2017-11-30 14:14 jsapi_ticket 过期    1505212579 < 1512022478    
+2017-11-30 14:14 access_token 过期    1505212579 < 1512022478    
+2017-11-30 14:14 access_token 过期  新的  access_token：     
+2017-11-30 14:14 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:14 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:14 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437T5wllVEIp39Sq3az1512022478http://localhost/FRANGI-H5/Invitation/20171218/700c91207ca3d857b1752196987b2d0d540e6449jsapi_ticket=&noncestr=T5wllVEIp39Sq3az&timestamp=1512022478&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:14 get_sign 获取签名        
+2017-11-30 14:14 jsapi_ticket 过期    1505212579 < 1512022491    
+2017-11-30 14:14 access_token 过期    1505212579 < 1512022491    
+2017-11-30 14:14 access_token 过期  新的  access_token：     
+2017-11-30 14:14 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:14 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:14 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e4374jpS5tKv3JII2gKv1512022491http://localhost/FRANGI-H5/Invitation/20171218/bea20ac1d2e7f3ee58a145d628707918f22a6230jsapi_ticket=&noncestr=4jpS5tKv3JII2gKv&timestamp=1512022491&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:15 get_sign 获取签名        
+2017-11-30 14:15 jsapi_ticket 过期    1505212579 < 1512022515    
+2017-11-30 14:15 access_token 过期    1505212579 < 1512022515    
+2017-11-30 14:15 access_token 过期  新的  access_token：     
+2017-11-30 14:15 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:15 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:15 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e4378mEeJRoq6PUwaBVS1512022515http://localhost/FRANGI-H5/Invitation/20171218/7e64d189bfe4ef607acdb4f9707607ef0f29ebe9jsapi_ticket=&noncestr=8mEeJRoq6PUwaBVS&timestamp=1512022515&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:15 get_sign 获取签名        
+2017-11-30 14:15 jsapi_ticket 过期    1505212579 < 1512022536    
+2017-11-30 14:15 access_token 过期    1505212579 < 1512022536    
+2017-11-30 14:15 access_token 过期  新的  access_token：     
+2017-11-30 14:15 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:15 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:15 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e4378vCZptQVM5aaM9Ab1512022537http://localhost/FRANGI-H5/Invitation/20171218/0b93207b86f43b3c502874935f94f2d1eb1f36fbjsapi_ticket=&noncestr=8vCZptQVM5aaM9Ab&timestamp=1512022537&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 14:15 get_sign 获取签名        
+2017-11-30 14:15 jsapi_ticket 过期    1505212579 < 1512022552    
+2017-11-30 14:15 access_token 过期    1505212579 < 1512022552    
+2017-11-30 14:15 access_token 过期  新的  access_token：     
+2017-11-30 14:15 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 14:15 jsapi_ticket 过期   新的ticket     
+2017-11-30 14:15 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437FazvVYbdgq6nJtlq1512022552http://localhost/FRANGI-H5/Invitation/20171218/74aaf044d02c80b684984d1feaf6834394f46af8jsapi_ticket=&noncestr=FazvVYbdgq6nJtlq&timestamp=1512022552&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-11-30 17:38 get_sign 获取签名        
+2017-11-30 17:38 jsapi_ticket 过期    1505212579 < 1512034684    
+2017-11-30 17:38 access_token 过期    1505212579 < 1512034684    
+2017-11-30 17:38 access_token 过期  新的  access_token：     
+2017-11-30 17:38 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-11-30 17:38 jsapi_ticket 过期   新的ticket     
+2017-11-30 17:38 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437v81G3Dnp0Zmgzw7Y1512034684http://localhost/FRANGI-H5/Invitation/20171218/5c432329787955787618d5fff10b3cf6f948e9c9jsapi_ticket=&noncestr=v81G3Dnp0Zmgzw7Y&timestamp=1512034684&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-12-01 09:09 get_sign 获取签名        
+2017-12-01 09:09 jsapi_ticket 过期    1505212579 < 1512090569    
+2017-12-01 09:09 access_token 过期    1505212579 < 1512090569    
+2017-12-01 09:09 access_token 过期  新的  access_token：     
+2017-12-01 09:09 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-12-01 09:09 jsapi_ticket 过期   新的ticket     
+2017-12-01 09:09 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e4373HJifY8PANAucxsQ1512090569http://localhost/FRANGI-H5/Invitation/20171218/7009cc65b55a33a4ddbdf2e21fef6e2f4413247fjsapi_ticket=&noncestr=3HJifY8PANAucxsQ&timestamp=1512090569&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-12-01 09:10 get_sign 获取签名        
+2017-12-01 09:10 jsapi_ticket 过期    1505212579 < 1512090616    
+2017-12-01 09:10 access_token 过期    1505212579 < 1512090616    
+2017-12-01 09:10 access_token 过期  新的  access_token：     
+2017-12-01 09:10 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-12-01 09:10 jsapi_ticket 过期   新的ticket     
+2017-12-01 09:10 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e43754jiMWrednn84H171512090616http://localhost/FRANGI-H5/Invitation/20171218/302a4e2c5911243cce3b87c7efcd33d63c7c2a7ejsapi_ticket=&noncestr=54jiMWrednn84H17&timestamp=1512090616&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-12-01 09:10 get_sign 获取签名        
+2017-12-01 09:10 jsapi_ticket 过期    1505212579 < 1512090645    
+2017-12-01 09:10 access_token 过期    1505212579 < 1512090645    
+2017-12-01 09:10 access_token 过期  新的  access_token：     
+2017-12-01 09:10 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-12-01 09:10 jsapi_ticket 过期   新的ticket     
+2017-12-01 09:10 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e4372CEP5Z5jHGqWNwFX1512090645http://localhost/FRANGI-H5/Invitation/20171218/c1ff9792c5998e85778234861d170ecfe96d4781jsapi_ticket=&noncestr=2CEP5Z5jHGqWNwFX&timestamp=1512090645&url=http://localhost/FRANGI-H5/Invitation/20171218/2017-12-01 09:18 get_sign 获取签名        
+2017-12-01 09:18 jsapi_ticket 过期    1505212579 < 1512091106    
+2017-12-01 09:18 access_token 过期    1505212579 < 1512091106    
+2017-12-01 09:18 access_token 过期  新的  access_token：     
+2017-12-01 09:18 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-12-01 09:18 jsapi_ticket 过期   新的ticket     
+2017-12-01 09:18 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437mVceUrw0LB78eS3B1512091107http://localhost/FRANGI-H5/Invitation/20171218/dc34dc4e705f75b393914f91b56b144fe0109ba8jsapi_ticket=&noncestr=mVceUrw0LB78eS3B&timestamp=1512091107&url=http://localhost/FRANGI-H5/Invitation/20171218/
+>>>>>>> b42b65b3cc80b127066f9a70d18086e04d273080
+2017-12-13 10:48 get_sign 获取签名        
+2017-12-13 10:48 jsapi_ticket 过期    1505212579 < 1513133322    
+2017-12-13 10:48 access_token 过期    1505212579 < 1513133322    
+2017-12-13 10:48 access_token 过期  新的  access_token：     
+2017-12-13 10:48 access_token 新的  expire_time：  1505212579  --- access_token： JWvVhYVdZj5fWcoxus9p8KXk7WqC99J6vSACpP3qhZVR_m07dv6mGQtqsQlPv98cSNgpMyWCXa1zVkQRRNHIxLV5mTJoUoLaWfWo2jHQX-KmJUa2f_kS8Fdl5jUeZNiUHWYeAHAWLN    
+2017-12-13 10:48 jsapi_ticket 过期   新的ticket     
+2017-12-13 10:48 jsapi_ticket 新的  expire_time：  1505212579  --- jsapi_ticket： kgt8ON7yVITDhtdwci0qeWwj2nB5E0qAsVbDFSsYqB4AHp52SiQtIQiXcrj9jRZ4BGSrS_ASGI_iFcVC1knqOA    
+wx99c6d016f620e437WocWJDHqBFbzncbF1513133323http://localhost/FRANGI-H5/BrandPromotionV1/index.html00f002c7bbc66e73506a73ce74f4ceef4d5c7f6bjsapi_ticket=&noncestr=WocWJDHqBFbzncbF&timestamp=1513133323&url=http://localhost/FRANGI-H5/BrandPromotionV1/index.html

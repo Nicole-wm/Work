@@ -1,0 +1,90 @@
+.home_banner_bg{
+	background-color: #131123;
+}
+.home_banner{
+	width: 100%;
+	margin-top: 0.5%;
+}
+.h_cont{
+	width: 30%; 
+	margin: 0 1.6%;
+}
+.home_content{
+	min-width: 840px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.c1_ltop{
+	width: 100%;
+}
+.c1_ltop,.hc3_left{
+	display:table;
+	overflow:hidden;
+	_position:relative;
+}
+.hc_dtc{
+	min-width: 25%;
+	margin: 0 auto;
+	vertical-align:middle;
+	display:table-cell;
+	_position:absolute; 
+	_top:50%;
+	_left:50%;
+}
+.hc_dtext{
+	margin-bottom:2%;
+}
+.design_btn{
+	cursor: pointer;
+	background-color: #000;
+	color: #fff;
+	padding: 5px 15px;
+}
+.hc_text{
+	padding-top: 10px;
+}
+.c1_ltext{
+	padding-top:15px;
+}
+
+.hpl_title{
+	margin: 0 auto;
+	width: 420px;
+	height: 30px;
+	line-height: 30px;
+}
+.hpl_title li{
+	display: inline-block;
+	border:1px #000000 solid;
+	padding:0 30px;
+}
+.hplihover{
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
+}
+.hpl_pro{
+	max-width: 1200px;
+	margin:0 auto;
+	font-size: 0;
+}
+.hpl_pro li{
+	text-align: center;
+	display: inline-block;
+	width: 25%;
+	cursor: pointer;
+}
+.hpl_pro li img{
+	opacity: 0.8
+}
+.hpl_pro li:hover img{
+	opacity: 1
+}
+.hplp_btn{
+	margin:0 auto;
+	width:40%;
+	min-width: 70px;
+	height: 45px;
+	line-height: 45px;
+	border:1px #000000 solid;
+}

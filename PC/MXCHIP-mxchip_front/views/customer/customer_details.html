@@ -1,0 +1,72 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="portlet light portlet-fit bordered">
+			<div class="portlet-body">
+				<div class="form-body form">
+					<form  class="form-horizontal" role="form" name="CustomerDetail">
+						<div class="form-group col-md-12"></div>
+						<div class="form-group">
+							<label class="col-md-12">
+								用户名：{{username}}
+							</label>
+						</div>
+						<div class="form-group">
+							<label class="col-md-12">
+								用户邮箱： {{email}}
+							</label>
+						</div>
+						<div class="form-group">
+							<label class="col-md-12">
+								联系方式： {{phone}}
+							</label>
+						</div>
+						<div class="form-group">
+							<label class="col-md-12">
+								注册日期：{{date_joined}} 
+							</label>
+						</div>
+						<div class="form-group">
+							<label class="col-md-12">
+								最后登录： {{last_login}}
+							</label>
+						</div>
+						<div class="form-group">
+							<label class="col-md-12">
+								个人介绍：{{about_me}}
+							</label>
+						</div>
+						
+						<div class="form-group">
+							<label class="col-md-12">
+								头像：
+							</label>
+							<div class="col-md-12">
+								<img ng-src="{{headimage}}" class="col-md-3">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-12">
+								生日：{{birth_date}}
+							</label>
+						</div>
+						<div class="form-group">
+							<label class="col-md-12">
+								地区：{{location}}
+							</label>
+						</div>
+						<div class="form-group">
+							<label class="col-md-12">
+								所属公司： {{company}}
+							</label>
+						</div>
+						<div class="form-group">
+							<label class="col-md-12">
+								是否有效： {{isActiveText}}
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

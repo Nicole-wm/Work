@@ -1,0 +1,161 @@
+@charset "UTF-8";
+.RelatedImg>img{
+width: 100%;
+}
+.activityTime{
+	margin-top: 24px;
+	color: #6a6a6a;
+	margin-left: 15px;
+	margin-bottom: 50px;
+}
+
+.joinPerson{
+  font-size: 1.10375rem;
+  color: #6a6a6a;
+  margin-left: 16px;
+  padding-top: 8px;
+}
+.heart {
+  float: left;
+  width: 5%;
+  margin: 10px 10px 0px 10px;
+}
+.heart>img {
+  width: 100%;
+}
+.headPortraitPerson {
+  padding: 0px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 28px;
+}
+.PersonList{
+    margin-top: 20px;
+}
+.theme{
+    text-align: center;
+    color: #000000;
+}
+.bigSize{
+  font-size: 1.104375rem;
+}
+.smallSize{
+  font-size: 0.9rem;
+  
+}
+.relatedPictures>img{
+  width: 100%;
+}
+.cheek{
+  text-align: center;
+  margin-top: 9px;
+}
+.cheek>img{
+  width: 45%;
+  margin-right: 5px;
+
+}
+
+.relatedPictures{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 9px;
+}
+.introduce{
+  color: #999999;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+.introduce>.MaskName{
+  color: #ff0000;
+  display: inline-block;
+}
+.comparison{
+  width: 80%;
+}
+.actionRule {
+  margin-top: 40px;
+  margin-left: 2%;
+  margin-bottom: 12px;
+  color: #ff4a83;
+}
+.one {
+  margin-bottom: 22px;
+}
+.step {
+  color: #5c5c5c;
+  margin-left: 2%;
+}
+.smallSize {
+ font-size: 0.85rem;
+}
+.smallSize>div{
+  line-height: 24px;
+}
+.join {
+  width: 75px;
+  height: 25px;
+  display: inline-block;
+  color: #ffffff;
+  background: #ff4a83;
+  margin-left: 6px;
+  text-align: center;
+  margin-right: 6px;
+  line-height: 25px;
+}
+.RulePictures{
+    width: 90%;
+    margin: 20px auto;
+}
+.RulePictures>img{
+  width: 100%;
+  
+}
+.prize {
+  margin-left: 2%;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  color: #ff4a83;
+}
+.MaskNum{
+  margin-left: 10px;
+  margin-right: 30px;
+  
+}
+.Mask>div{
+    margin-left: 14px;
+}
+.MaskIntroduce{
+   color: #999999;
+   
+}
+.MaskIntroduce>div{
+  margin-left: 10px;
+}
+@media (max-width: 375px){
+
+.surplusDay {
+  width: 18%;
+}
+.smallSize {
+  font-size: 0.8rem;
+}
+}
+@media (max-width: 360px){
+ .surplusDay {
+  width: 19%;
+}
+.smallSize {
+  font-size: 0.76rem;
+}
+}
+
+@media (max-width: 320px){
+.surplusDay {
+  width: 22%;
+}
+
+}

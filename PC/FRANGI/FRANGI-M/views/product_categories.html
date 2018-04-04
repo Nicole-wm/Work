@@ -1,0 +1,34 @@
+<div class="container">
+	<div class="blank"></div>
+	<p class="blank_side font68" ng-bind="Cur_cate.pname"></p>
+	<div class="blank"></div>
+	<img class="pro_banner" ng-src="{{Cur_cate.banner}}">
+	<div class="blank_l"></div>
+	<div class="blank_side">
+		<div class="font40" ng-bind="Cur_cate.des"></div>
+		<div class="blank_m"></div>
+		<div>
+			<div class="icon floatl icon_arrow"></div>
+			<div class="floatl pro_title font40">深入了解{{Cur_pname}}</div>
+		</div>
+		<div class="blank_m"></div>
+		<p class="font50">精准定制</p>
+	</div>
+	<div class="blank_m"></div>
+	<div class="border_e5"></div>
+	<div class="pro_d" ng-repeat="item in Cur_proAll" ui-sref="product({ID:item.id})">
+		<div class="pro_l floatl"><img class="pro_img" ng-src="{{item.thumbnail}}"></div>
+		<div class="pro_r floatr">
+			<p class="font40" ng-bind="item.pname"></p>
+			<p class="pro_ename font36" ng-bind="item.ename"></p>
+			<div class="blank"></div>
+			<p class="font36">
+				<span ng-show="item.spec" title="{{item.spec}}" ng-bind="item.spec"></span>
+				<span ng-show="item.spec&&item.price">&nbsp;/&nbsp;</span>
+				<span ng-show="item.price" title="{{item.price}}" ng-bind="item.price"></span>
+			</p>
+		</div>
+		<div class="border_e5"></div>
+	</div>
+	<div class="blank_s"></div> 
+</div>

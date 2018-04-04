@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+    <head>
+        <title>登录页面</title>
+		<meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" href="css/unicorn.login.css" />
+        <script type="text/javascript" src="/scripts/jquery.js"></script>
+    	<script type="text/javascript" src="/scripts/Lib/node_modules/angular/angular.min.js"></script>
+    	<script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-infinite-scroll.min.js"></script>
+    	<script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-file-upload-all.js"></script>
+        <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    	<script type="text/javascript" src="/scripts/app.js" ></script>
+    	<script type="text/javascript" src="/scripts/controllers/loginController.js"></script>
+    </head>
+    <body ng-controller="loginController">
+        <div id="logo">
+            Macco Admin
+        </div>
+        <div id="loginbox">            
+			<p>输入用户名和密码继续.</p>
+		    <div class="input-group">
+		    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="testText" type="text" ng-model="username" placeholder="用户名" class="form-control"/>
+		    <span id="errLabel" style="display: none">测试错误</span>
+		    </div>
+		    <div class="input-group">
+		    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><input  type="password" ng-model="password" placeholder="密码" class="form-control" />
+		    </div>
+		    <div class="form-actions">
+		        <span class="pull-right"><input type="button" ng-click="Login()" class="btn btn-inverse" value="登录" /></span>
+		    </div>
+        </div>
+    </body>
+</html>

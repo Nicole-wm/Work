@@ -1,0 +1,59 @@
+.mobilepublish{
+	display: none;
+}
+.col_id {
+	width:10%; 
+}
+.col_cid{
+  width:10%;
+}
+.col_name{
+  width:10%; 
+}
+.col_type {
+  width:10%; 
+}
+.col_log {
+  width:10%; 
+}
+.col_time {
+	width:10%; 
+}
+.col_operation{
+  width:30%; 
+}
+.mobileId,
+.mobileCId,
+.mobileName,
+.mobileCommand,
+.mobileType,
+.mobileDes,
+.mobilePath,
+.mobileLog,
+.mobileTime,
+.mobileOperation{
+	display: none;
+ } 
+@media(max-width:768px) {
+.WrapContent {
+  height: 650px;
+  max-height: 650px;
+}
+.mobileId,
+.mobileCId,
+.mobileName,
+.mobileCommand,
+.mobileType,
+.mobileDes,
+.mobilePath,
+.mobileLog,
+.mobileTime,
+.mobileOperation{
+    display: inline-block;
+} 
+}
+@media(max-width:414px) {
+.mobilepublish{
+	display: inline-block;
+}
+}

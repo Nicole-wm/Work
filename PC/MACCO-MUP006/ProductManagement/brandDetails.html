@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/css/sb-admin.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/common.css" rel="stylesheet" type="text/css">
+    <link href="/css/uniform.css" rel="stylesheet" type="text/css">
+    <link href="/css/public.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!-- Bootstrap Core JavaScript -->
+<script type="text/javascript" src="/scripts/jquery.js"></script>
+<script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="/scripts/common.js"></script>
+<script type="text/javascript" src="/scripts/Lib/node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-infinite-scroll.min.js"></script>
+<script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-file-upload-all.js"></script>
+<script type="text/javascript" src="/scripts/Lib/node_modules/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+<script type="text/javascript" src="/scripts/app.js"></script>
+<script type="text/javascript" src="/scripts/controllers/sidebarController.js"></script>
+<script type="text/javascript" src="/scripts/controllers/Product/brandDetailController.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Sidebar.html'" />
+        <div id="nav" ng-include="templateurl"></div>
+        <div id="page-wrapper" ng-controller="brandDetailController">
+            <div class="container-fluid">
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">品牌详情</h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>
+                                <a href="/index.html?Token={{Token}}">Macco Admin</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-table"></i>品牌详情
+                                <span ng-bind="OperationType"></span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div>
+                            <h2 style="display:inline-block;">品牌详情
+                                <span ng-bind="OperationType"></span>:</h2>
+                            </div>
+                            <form name="brandDetail" role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <label>中文名:</label>
+                                    <div class="textipt">
+                                        <input class="form-control" name="cname" ng-model="cname" id="titleName" required ng-disabled="canEdit">
+                                    </div>
+                                    <label ng-show="brandDetail.cname.$error.required" class="formalert">*&nbsp;请填写中文名</label>
+                                </div>
+                                <div class="form-group ">
+                                    <label>英文名:</label>
+                                    <div class="textipt" id="falseName">
+                                        <input class="form-control" name="ename" ng-model="ename" required ng-disabled="canEdit">
+                                    </div>
+                                    <label ng-show="brandDetail.ename.$error.required" class="formalert">*&nbsp;请填写英文名</label>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>品牌logo:</label>
+                                    <div class="textipt" id="falseName" style="cursor:pointer">
+                                        <img ngf-select ng-disabled="canEdit" ng-model="Banner" ngf-src="Banner[0]" ngf-accept="'image/*'" ng-src="{{BannerUrl}}"
+                                        style="width:372px;height:120px" id="selectBannerPic"></img>
+                                        <img ng-model="Banner" ngf-src="Banner[0]" style="display:none;" id="bannerpic"/>
+                                        <input type="hidden" ng-model="Banner[0].name" name="Banner" required ng-required="NeedBanner">
+                                    </div>
+                                    <label ng-show="brandDetail.Banner.$error.required" id="informationalert" class="formalert">*&nbsp;请选择图片</label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>有品牌故事:</label>
+                                    <input type="checkbox" ng-model="hasStory" ng-click="hasStoryFn()" ng-disabled="canEdit">
+                                    <div class="control-group">
+                                        <label class="control-label" style="width:135px;margin-right:5px;">品牌故事图片:</label>
+                                        <div class="controls">
+                                         <div class="textipt" id="falseName" style="cursor:pointer">
+                                             <img ngf-select ng-disabled="!hasStory" ng-model="brandImage" ngf-src="brandImage[0]" ngf-accept="'image/*'" ng-src="{{BannerImageUrl}}"
+                                             style="width:414px;height:207px" id="imgSelect" />
+                                             <img ng-model="brandImage" ngf-src="brandImage[0]" style="display:none;" id="pic"/>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="clear"> </div>
+                                 <div class="blank" style="margin-top:20px;"></div>
+                                 <div class="control-group" ng-show="canEdit" >
+                                    <label class="control-label" style="width:135px;margin-right:5px;">网页:</label>
+                                    <div class="controls" style="margin-top:5px;">
+                                        <a ng-href="{{Web}}" target="_blank">{{Web}}</a>
+                                    </div>
+                                </div>
+                                <div class="control-group" ng-show="!canEdit">
+                                    <label class="control-label" style="width:135px;margin-right:5px;">网页:</label>
+                                    <div class="controls">
+                                       <div class="uploader">
+                                        <input type="button" ngf-select  accept="application/x-zip-compressed" ng-model="Web" ng-disabled="!hasStory">
+                                        <span class="filename webFileName" style="-webkit-user-select: none;">{{Web[0].name}}</span>
+                                        <span class="action" style="-webkit-user-select: none; float:right;">浏览</span>
+                                    </div>
+                                    <span class="btn btn-primary" ng-click="WebConfirmUpload()">上传</span>
+                                    <span class="btn btn-primary" ng-disabled="!WebShowSubmit" ng-click="WebCancelUpload()">取消</span>
+                                    <label style="width:20px;"></label>
+                                    <label ng-bind="WebUploadProgress"></label>
+                                    <label ng-show="ActiveDetail.Web.$error.required" id="informationalert" class="formalert">*&nbsp;请选择内容</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clear"> </div>
+                        <div class="form-actions">
+                            <input type="hidden" ng-model="brandImage" name="brandImage"  required ng-required="hasStory" ng-minlength="3">
+                            <input type="hidden" ng-model="Web" name="brandStory" required ng-required="hasStory"  ng-minlength="3">
+                            <button ng-disabled="!brandDetail.cname.$valid||!brandDetail.ename.$valid||!brandDetail.Banner.$valid||hasStoryflag" type="button" ng-hide="canEdit" ng-click="Submit()" class="btn btn-primary">提交</button>
+                            <button class="btn" ng-click="this.ReturnBack(this.Token)">返回</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+</div>
+<!-- /#wrapper -->
+</body>
+
+</html>

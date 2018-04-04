@@ -1,0 +1,343 @@
+<div ng-controller="GatDetailsBaseController">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row portlet light bordered">
+				<h4 class="pull-left">网关属性</h4><a class="font-blue-soft pull-right font-sm" data-original-title="点击查看网关属性" data-toggle="modal" data-target="#myModal_info1">修改</a>
+				<div class="portlet light">
+					<div class="portlet-body">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											网关名称：hl001
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											网关ID：928347fffe642383
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											MAC地址：92-83-47-FF-FE-64-23-83 
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											网关型号：RHF2S008
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row portlet light bordered">
+				<h4 class="pull-left">网关状态</h4>
+				<div class="portlet light">
+					<div class="portlet-body">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											连接状态：未连接
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											时延：空
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											最近连接时间：空
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											最新收包时间：空
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row portlet light bordered">
+				<h4 class="pull-left">SDK</h4>
+				<div class="portlet light">
+					<div class="portlet-body">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<label class="control-label">
+											SDK版本：空
+										</label>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label class="control-label">
+											SDK下载：空
+										</label>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label class="control-label">
+											SDK文档：空
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row portlet light bordered">
+				<h4 class="pull-left">地理位置</h4><a class="font-blue-soft pull-right font-sm" data-original-title="点击查看地理位置" data-toggle="modal" data-target="#myModal_info2">修改</a>
+				<div class="portlet light">
+					<div class="portlet-body">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											城市：北京
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											区域：昌平
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											地址：空
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											坐标：空
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row portlet light bordered">
+				<h4 class="pull-left">LoRa参数</h4><a class="font-blue-soft pull-right font-sm" data-original-title="点击查看LoRa参数" data-toggle="modal" data-target="#myModal_info3">修改</a>
+				<div class="portlet light">
+					<div class="portlet-body">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											TX Power：空
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											信道计划：空
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="text-center">
+				<a class="btn blue-soft">Ping</a>
+				<a class="btn blue-soft">重启</a>
+				<a class="btn red-soft">删除</a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<input type="hidden" id="myModal_info1_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_info1">
+			<div id="myModal_info1" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<a href="javascript:;" class="close" data-dismiss="modal" aria-hidden="true"></a>
+							<h4 class="modal-title">网关属性</h4>
+						</div>
+						<div class="modal-body">
+							<div class="portlet">
+								<form  class="form-horizontal" role="form" name="UserInfo">
+									<div class="form-body">
+										<div class="form-group">
+											<label class="col-md-3 control-label">网关名称</label>
+											<div class="col-md-5">
+												<input name="UserName" ng-model="ModalUserName" type="text" class="form-control" placeholder="必填">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">网关ID</label>
+											<div class="col-md-5">928347fffe642383
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">MAC地址</label>
+											<div class="col-md-5">92-83-47-FF-FE-64-23-83 
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">网关型号</label>
+											<div class="col-md-5">
+												<select  ng-change="SearchType()" ng-model="BelongGatType" ng-options="o.ID as o.Type for o in GatTypes" class="form-control">
+													<option value=""></option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label" for="title"></label>
+											<div class="col-md-5">
+												<input ng-click="InfoFun(1)" class="btn blue-steel" type="submit" value="确认"/>
+												<input class="btn bg-default bg-font-default" type="submit"  data-dismiss="modal" aria-hidden="true" value="取消"/>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<input type="hidden" id="myModal_info2_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_info2">
+			<div id="myModal_info2" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<a href="javascript:;" class="close" data-dismiss="modal" aria-hidden="true"></a>
+							<h4 class="modal-title">地理位置</h4>
+						</div>
+						<div class="modal-body">
+							<div class="portlet">
+								<form  class="form-horizontal" role="form" name="UserInfo">
+									<div class="form-body">
+										<div class="form-group">
+											<label class="col-md-3 control-label">城市</label>
+											<div class="col-md-5">
+												<input name="UserName" ng-model="ModalUserName" type="text" class="form-control" placeholder="必填">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">区域</label>
+											<div class="col-md-5">
+												<input name="UserName" ng-model="ModalUserName" type="text" class="form-control" placeholder="必填">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">地址</label>
+											<div class="col-md-5">
+												<input name="UserName" ng-model="ModalUserName" type="text" class="form-control" placeholder="必填">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">地址</label>
+											<div class="col-md-5">
+												<input name="UserName" ng-model="ModalUserName" type="text" class="form-control" placeholder="必填">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label" for="title"></label>
+											<div class="col-md-5">
+												<input ng-click="InfoFun(1)" class="btn blue-steel" type="submit" value="确认"/>
+												<input class="btn bg-default bg-font-default" type="submit"  data-dismiss="modal" aria-hidden="true" value="取消"/>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<input type="hidden" id="myModal_info3_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_info3">
+			<div id="myModal_info3" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<a href="javascript:;" class="close" data-dismiss="modal" aria-hidden="true"></a>
+							<h4 class="modal-title">LoRa参数</h4>
+						</div>
+						<div class="modal-body">
+							<div class="portlet">
+								<form  class="form-horizontal" role="form" name="UserInfo">
+									<div class="form-body">
+										<div class="form-group">
+											<label class="col-md-3 control-label">TX Power</label>
+											<div class="col-md-5">
+												<input name="UserName" ng-model="ModalUserName" type="text" class="form-control" placeholder="必填">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">信道计划</label>
+											<div class="col-md-5">
+												<input name="UserName" ng-model="ModalUserName" type="text" class="form-control" placeholder="必填">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label" for="title"></label>
+											<div class="col-md-5">
+												<input ng-click="InfoFun(1)" class="btn blue-steel" type="submit" value="确认"/>
+												<input class="btn bg-default bg-font-default" type="submit"  data-dismiss="modal" aria-hidden="true" value="取消"/>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

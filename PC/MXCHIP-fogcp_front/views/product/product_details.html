@@ -1,0 +1,27 @@
+<div class="inbox">
+	<div class="row">
+		<div class="col-md-2">
+			<div class="inbox-sidebar">
+				<ul class="inbox-nav">
+					<li ng-repeat="item in productCate" ng-class="{active:Curpage==item.ID}">
+						<a ng-click="CheckMenu(item.ID)">{{item.Name}}
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-10">
+			<div class="inbox-body">
+				<div class="inbox-header">  
+					<h4 class="pull-left">{{CurpageName}}</h4>
+				</div>
+				<div class="inbox-content">
+					<div ng-show="Curpage==1" ng-include="'views/product/product_details_base.html'"></div> 
+					<div ng-show="Curpage==2" ng-include="'views/product/product_details_info.html'"></div>
+					<div ng-show="Curpage==3" ng-include="'views/ota/ota_list.html'"></div> 
+					<div ng-show="Curpage==4" ng-include="'views/product/product_details_template.html'"></div> 
+				</div>
+			</div>
+		</div>
+	</div>
+</div> 

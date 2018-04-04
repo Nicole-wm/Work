@@ -1,0 +1,205 @@
+@charset "UTF-8";
+.RelatedImg>img{
+width: 100%;
+}
+.bigSize{
+  font-size: 1.625rem;
+}
+.smallSize{
+   font-size: 1rem;
+  
+}
+.theme{
+    text-align: center;
+    color: #000000;
+}
+.timeDate {
+  margin-left: 17%;
+}
+.WinningSingle{
+  margin-top: 80px;
+  position: relative;
+  padding-bottom: 5px;
+}
+.line{
+  width: 96%;
+  margin: 0 auto;
+  background: #e6c8b0;
+  height: 4px;
+  margin-bottom: 4px;
+}
+.announce{
+  width: 90%;
+  background: #fca090;
+  padding-top: 10px;
+  color: #ffffff;
+  position: absolute;
+  top: -73px;
+  left: 20px;
+}
+.announce>div{
+  text-align: center;
+  padding-bottom: 10px;
+}
+.listDiv{
+  width: 96%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.nameList1{
+  float: left;
+  background: #e6c8b0;
+  width: 47.1%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 11px;
+  
+}
+.nameList2{
+  float: left;
+  background: #fca090;
+  width: 47.1%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  
+}
+.nameList2>div,.nameList1>div{
+  padding-bottom: 10px;
+}
+.awardWay{
+    margin-top: 10px;
+}
+.relatedPictures>img{
+  width: 100%;
+}
+
+
+.relatedPictures{
+  width: 80%;
+  margin: 22px auto 22px auto;
+}
+.smallSize>div{
+  margin-left: 2%;
+    line-height: 24px;
+}
+.introduce{
+  color: #999999;
+  text-align: center;
+  margin-top: 20px;
+}
+.telephoneFare,.actionRule,.pat,.prize{
+  color: #ff4a83;
+}
+.actionRule{
+  margin-top: 40px;
+  margin-left: 2%;
+  margin-bottom: 12px;
+
+}
+.step{
+  color: #5c5c5c;
+  margin-left: 2%;
+}
+.join{
+  width: 75px;
+  height: 25px;
+  display: inline-block;
+  color: #ffffff;
+  background: #ff4a83;
+  margin-left: 6px;
+  text-align: center;
+  margin-right: 6px;
+  line-height: 25px;
+}
+.one{
+  margin-bottom: 22px;
+}
+.pat{
+  margin-left: 2%;
+  margin-bottom: 10px;
+}
+.prize{
+  margin-left: 2%;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.btnJoinDisable {
+  width: 102px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #ccc;
+  color: #5c5c5c;
+  border-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  position: fixed;
+  bottom:0px;
+  right:0px;
+  opacity: 0.8;
+}
+.awardWay {
+  width: 94.6%;
+}
+@media (max-width: 375px){
+  .headPortraitPerson>span>img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.bigSize{
+ font-size: 1.5rem;
+}
+.smallWordSize{
+	font-size: 0.9375rem;
+}
+.announce {
+  top: -65px;
+}
+.nameList1 ,.nameList2{
+  width: 46.8%;
+}
+}
+@media (max-width: 360px){
+.headPortraitPerson>span>img {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+}
+.smallSize{
+  font-size: 0.875rem;
+}
+.bigSize{
+font-size: 1.437rem;
+}
+.announce {
+  top: -63px;
+}
+.nameList1, .nameList2 {
+  width: 46.6%;
+}
+}
+
+@media (max-width: 320px){
+  .likeNum{
+      margin-top: 6px;
+  }
+  .headPortraitPerson>span>img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.smallSize{
+  font-size: 0.8125rem;
+}
+.bigSize{
+  font-size: 1.3125rem
+}
+.announce {
+  top: -57px;
+}
+.nameList1, .nameList2 {
+  width: 46.2%;
+}
+}

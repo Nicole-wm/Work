@@ -1,0 +1,112 @@
+/*******************Base*******************/
+html,body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+img{
+    display:block;
+    margin: auto;
+    width: 100%;
+    border: 0;
+}
+
+.page-container{
+    width:100%;
+    height:100%;
+    background-color: #fff;
+}
+.content,.foot{
+    width: 100%;
+}
+.content{
+    height:12rem;
+}
+.content div,.foot div{
+    position: absolute;
+    width: 100%;
+}
+.fadeInUp{
+    animation: fadeInUp 0.5s linear 0s 1 both;
+    -webkit-animation: fadeInUp 0.5s linear 0s 1 both;
+}
+.content_title{
+    margin-top: 8%;
+}
+.content_subtitle{
+    margin-top: 25%;
+    animation-delay:0.5s;
+    -webkit-animation-delay:0.5s;
+}
+.content_text1{
+    margin-top: 47%;
+    animation-delay:1s;
+    -webkit-animation-delay:1s;
+}
+.content_text2{
+    margin-top: 69%;
+    animation-delay:1.5s;
+    -webkit-animation-delay:1.5s;
+}
+.content_title img{
+    width:27%;
+}
+.content_subtitle img{
+    width:68%;
+}
+.content_text1 img{
+    width:36%;
+}
+.content_text2 img{
+    width:58%;
+}
+
+.foot_title{
+    margin-top:10%;
+}
+.foot_time{
+    margin-top:23%;
+}
+.foot_logo{
+    margin-top:33%;
+    margin-bottom: 12%
+}
+.foot_title img{
+    width:50%;
+}
+.foot_time img{
+    width:32%;
+}
+.foot_logo img{
+    width:17%;
+}
+
+@-webkit-keyframes fadeInUp{
+    0%{
+        opacity:0;
+        -webkit-transform:translate3d(0,100%,0);
+        transform:translate3d(0,100%,0)
+    }
+    100%{
+        opacity:1;
+        -webkit-transform:none;transform:none
+    }
+}
+@keyframes fadeInUp{
+    0%{
+        opacity:0;
+        -webkit-transform:translate3d(0,100%,0);
+        -ms-transform:translate3d(0,100%,0);
+        transform:translate3d(0,100%,0)
+    }
+    100%{
+        opacity:1;
+        -webkit-transform:none;
+        -ms-transform:none;transform:none
+    }
+}

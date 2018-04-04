@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<link rel="stylesheet" type="text/css" href="../public/boilerplate.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.jslides.css" media="screen" />
+<title>美的你-范爷戛纳花仙子仿妆</title>
+<script type="text/javascript" src="js/jQuery.js"></script>
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="../js/respond.min.js"></script>
+<script type="text/javascript" src="../js/public.js"></script>
+</head>
+<body class="keBody">
+<div class="gridContainer clearfix tn-article-section">
+	<div id="LayoutDiv1" class="container">
+		<div class="kePublic">
+		<!--效果html开始-->
+		<div class="wraper">
+		  <div id="scroll_pic_view" class="scroll_pic_view" style="overflow: hidden; ">
+		    <div id="scroll_pic_view_div" style="width: 3840px; -webkit-transition: -webkit-transform 0ms cubic-bezier(0.33, 0.66, 0.66, 1); -webkit-transform-origin: 0px 0px; -webkit-transform: translate(0px, 0px) translateZ(0px); ">
+		      <ul id="scroll_pic_view_ul">
+		        <li> <a href="#"> <img src="images/1.jpg" > </a> </li>
+		        <li> <a onclick="return false;"> <img src="images/2.jpg"> </a> </li>
+		        <li> <a onclick="return false;"> <img src="images/3.jpg" > </a> </li>
+		        <li> <a onclick="return false;"> <img src="images/4.jpg"> </a> </li>
+		        <li> <a onclick="return false;"> <img src="images/5.jpg"> </a> </li>
+		        <li> <a onclick="return false;"> <img src="images/6.jpg" > </a> </li>
+		        <li> <a onclick="return false;"> <img src="images/7.jpg"> </a> </li>
+		        <li> <a onclick="return false;"> <img src="images/8.jpg" > </a> </li>
+		        <li> <a onclick="return false;"> <img src="images/9.jpg"> </a> </li>
+		      </ul>
+		    </div>
+		    <div>
+		    <ol id="scroll_pic_nav" class="scroll_pic_nav">
+	      <script>
+				(function(d, $){
+					var scrollPicView = d.getElementById("scroll_pic_view"),
+					scrollPicViewDiv = d.getElementById("scroll_pic_view_div"),
+					lis = scrollPicViewDiv.querySelectorAll("li"),
+					w = scrollPicView.offsetWidth,
+					len = lis.length;
+					for(var i=0; i<len; i++){
+						lis[i].style.width = w+"px";
+						if(i == len-1){
+							scrollPicViewDiv.style.width = w * len + "px";
+						}
+					}
+
+					var scroll_pic_view = new iScroll('scroll_pic_view', { 
+						snap: true,
+						momentum: false,
+						hScrollbar: false,
+						useTransition: true,
+						onScrollEnd: function() {
+							$("#scroll_pic_nav li").removeClass("on").eq(this.currPageX).addClass("on");
+							//$("#scroll_pic_nav li.on").prev().addClass("left");
+							//$("#scroll_pic_nav li.on").next().removeClass("left");	
+							
+							var  list=$("#scroll_pic_nav li");
+							for(var k=0;k<list.length;k++){
+								if(k<this.currPageX)
+									$(list[k]).addClass("left");
+								else
+									$(list[k]).removeClass("left");
+							}												
+						}
+					});
+					//
+					var nav_lis = new Array(lis.length);
+					d.write('<li class="on"><span>1</span></li>');
+					for(var i=1; i<nav_lis.length; i++){										
+						d.write("<li><span>"+(i+1)+"</span></li>");				
+					}
+				})(document, $);
+			</script> 
+</ol>
+		        </div>
+		  </div>
+		</div>
+		<!--效果html结束-->
+		<div class="clear"></div>
+		</div>
+			</div>
+	</div>
+</body>
+</html>

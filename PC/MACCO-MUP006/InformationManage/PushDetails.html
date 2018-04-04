@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="/css/sb-admin.css" rel="stylesheet">   
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/common.css" rel="stylesheet" type="text/css" >
+    <link href="/css/uniform.css" rel="stylesheet" type="text/css" >
+    <link href="/css/public.css" rel="stylesheet">
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="/scripts/common.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-infinite-scroll.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-file-upload-all.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/sidebarController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/Info/Push.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Sidebar.html'" />
+        <div id="nav" ng-include="templateurl"></div>
+        <div id="page-wrapper" ng-controller="PushController">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            定时推送资讯
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>  
+                                <a href="index.html">Macco Admin</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-table"></i> 定时推送资讯
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div><h2 style="display:inline-block;">定时推送资讯:</h2>
+                        </div>
+                        <form role="form" name="PushDetail" class="form-horizontal">
+                            <div class="form-group">
+                                <label>推送时间：</label>
+                                <div class="textipt" style="width:200px;">
+                                    <input name="PushTime" class="form-control" id="PushTime" ng-model="PushTime" required ng-required="canEdit" >
+                                </div>
+                                <label ng-show="PushDetail.PushTime.$error.required" id="PublishTimeFlag" class="formalert">*&nbsp;请选择推送时间</label>
+                            </div>
+                            <div class="form-group">
+                                <label>内容：</label>
+                                <div class="textipt" style="width:40.95%;">
+                                    <input name="Content" class="form-control" id="titleName" ng-model="Content" required ng-required="canEdit" ng-disabled="!canEdit">
+                                </div>
+                                <label ng-show="PushDetail.Content.$error.required" id="informationalert" class="formalert">*&nbsp;请填写内容</label>
+                            </div>
+                            <div class="form-actions">
+                             <button type="submit" ng-disabled="PushDetail.PushTime.$error.required||PushDetail.Content.$error.required"  class="btn btn-primary" ng-click="Submit()">提交</button>
+                             <button class="btn"  ng-click="ReturnBack()">返回</button>
+                         </div>
+                     </form>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</body>
+</html>

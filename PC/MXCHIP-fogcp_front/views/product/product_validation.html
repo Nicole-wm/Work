@@ -1,0 +1,241 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="portlet light portlet-fit bordered">
+			<div class="portlet-body">
+				<h4>{{DebugMess}}调试</h4>
+				<hr>
+				<div class="row">
+					<div class="col-md-4">
+						<!-- 虚拟设备调试 -->
+						<div ng-show="Curstate==0">
+							<div class="panel panel-default bg-font-default">
+								<div class="panel-heading">
+									<h5 class="panel-title">虚拟设备绑定</h5>
+								</div> 
+								<div class="panel-body">
+									<div id="ChooseDiv">
+										<div class="form-group row">
+											<div class="col-md-8">
+												<select ng-change="SearchPro()" ng-model="BelongProID" ng-options="o.productid as o.pname for o in ProductArrs" class="form-control">
+													<option value="">选择产品</option>
+												</select>
+											</div>
+											<div class="col-md-4">
+												<button title="点击创建虚拟设备" ng-click="CreatVDevice()" ng-show="!adddevicebtn" class="btn btn-sm bg-blue-steel bg-font-blue-steel">创建虚拟设备</button>
+											</div>
+										</div>
+										<div class="form-group" ng-show="DeviceListFlag">
+											<table class="table table-striped table-bordered table-hover">
+												<thead>
+													<tr>
+														<th width="10%"> 选择 </th>
+														<th width="80%"> 设备ID </th>
+														<th width="10%"> 操作 </th>
+													</tr>
+												</thead>
+												<tbody> 
+													<tr ng-repeat="item in ListArr">
+														<td>
+															<label class="mt-radio mt-radio-single mt-radio-outline">
+																<input type="radio" name="VDev" value="{{item.deviceid}}" ng-model="$parent.SelectedID"/>
+																<span></span>
+															</label>
+														</td>
+														<td title="{{item.deviceid}}">{{item.deviceid}}</td>
+														<td>
+															<span ng-show="!item.isbinded">
+																<button class="btn bg-blue-steel bg-font-blue-steel btn-sm" data-original-title="点击绑定设备" data-toggle="modal" data-target="#myModal_ewm" ng-click="DoBindDevice(item.deviceid)"> 绑定 </button>
+															</span>
+															<span ng-show="item.isbinded">
+																<button class="btn bg-default bg-font-default btn-sm" ng-click="UnDoBindDevice(item.deviceid,item.enduserid)"> 解绑 </button>
+															</span>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="form-group" ng-show="SelectedID">
+										<button ng-disabled="conbtn" ng-click="ezconnect()" class="btn btn-sm bg-blue-steel bg-font-blue-steel">连接</button>
+										<button ng-disabled="disconbtn" ng-click="ezdisconnect()" class="btn btn-sm bg-blue-steel bg-font-blue-steel">断开</button>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default bg-font-default"  ng-show="SelectedID">
+								<div class="panel-heading">
+									<h5 class="panel-title">参数</h5>
+								</div>
+								<div class="panel-body">
+									<p>
+										<input name="VText" ng-model="VText" type="text" class="form-control" placeholder="发送内容" required>
+									</p>
+									<div class="row">
+										<div class="col-md-1">
+											<label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+												<input type="checkbox" ng-click="FunTimeCheck()" ng-model="TimeSendCheck"/>
+												<span></span>
+											</label>
+										</div>
+										<div class="col-md-7" ng-show="TimeSendCheck">
+											<input name="TimeSendInput" ng-model="TimeSendInput" type="text" class="form-control" placeholder="间隔时长（单位秒）" >
+										</div>
+									</div>
+									<p></p>
+									<button ng-disabled="!((VText&&!TimeSendCheck)||(VText&&TimeSendCheck&&TimeSendInput))||addtopbtn" class="btn btn-sm bg-blue-steel bg-font-blue-steel" ng-click="addtopic()">点击发送</button>
+								</div>
+							</div>
+						</div>
+						<!-- 虚拟app调试 -->
+						<div ng-show="Curstate==1">
+							<div class="panel panel-default bg-font-default">
+								<div class="panel-heading">
+									<h5 class="panel-title">虚拟app绑定</h5>
+								</div> 
+								<div class="panel-body">
+									<div id="appChooseDiv">
+										<div class="form-group row">
+											<div class="col-md-8">
+												<select  ng-change="SearchAppPro()" ng-model="AppBelongProID" ng-options="o.productid as o.pname for o in ProductArrs" class="form-control">
+													<option value="">选择产品</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row" ng-show="!appaddApp">
+											<div class="col-md-8">
+												<select  ng-change="SearchApp()" ng-model="BelongAppID" ng-options="o.appid as o.name for o in AppArrs" class="form-control">
+													<option value="">选择App</option>
+												</select>
+											</div>
+											<div class="col-md-4">
+												<button title="添加设备" ng-click="AddAppDevice()" ng-show="BelongAppID" class="btn btn-sm bg-blue-steel bg-font-blue-steel">绑定设备</button>
+											</div>
+										</div>
+										<div class="form-group" ng-show="appDeviceListFlag">
+											<table class="table table-striped table-bordered table-hover ">
+												<thead>
+													<tr>
+														<th> 选择 </th>
+														<th> 设备ID </th>
+														<th> 操作 </th>
+													</tr>
+												</thead>
+												<tbody> 
+													<tr ng-repeat="item in appListArr">
+														<td>
+															<label class="mt-radio mt-radio-single mt-radio-outline">
+																<input type="radio" name="VDev" value="{{item.device}}" ng-model="$parent.appSelectedID"/>
+																<span></span>
+															</label>
+														</td>
+														<td>{{item.device}}</td>
+														<td>
+															<span>
+																<button class="btn bg-default bg-font-default btn-sm" ng-click="UnDoBindDevice(item.device,item.enduser)"> 解绑 </button>
+															</span>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="form-group" ng-show="appSelectedID">
+										<button ng-click="appezconnect()" ng-disabled="appconbtn" class="btn btn-sm bg-blue-steel bg-font-blue-steel">连接</button>
+										<button ng-click="appezdisconnect()" ng-disabled="appdisconbtn" class="btn btn-sm bg-blue-steel bg-font-blue-steel">断开</button>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default bg-font-default" ng-show="appSelectedID">
+								<div class="panel-heading">
+									<h5 class="panel-title">参数</h5>
+								</div>
+								<div class="panel-body">
+									<p>
+										<input name="AText" ng-model="AText" type="text" class="form-control" placeholder="发送内容" required>
+									</p>
+									<div class="row">
+										<div class="col-md-1">
+											<label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+												<input type="checkbox" ng-click="FunTimeCheck()" ng-model="appTimeSendCheck"/>
+												<span></span>
+											</label>
+										</div>
+										<div class="col-md-7" ng-show="appTimeSendCheck">
+											<input name="appTimeSendInput" ng-model="appTimeSendInput" type="text" class="form-control" placeholder="间隔时长（单位秒）" >
+										</div>
+									</div>
+									<p></p>
+									<button ng-disabled="!((AText&&!appTimeSendCheck)||(AText&&appTimeSendCheck&&appTimeSendInput))||appaddtopbtn" class="btn btn-sm bg-blue-steel bg-font-blue-steel" ng-click="appaddtopic()">点击发送</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-4 bg-font-default" style="height:500px;overflow:scroll;">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h5 class="panel-title">发送</h5>
+							</div>
+							<div class="panel-body" ng-repeat="item in SendLog">
+								<p>
+									<span class="item-msg">{{item.message}}</span>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 bg-font-default" style="height:500px;overflow:scroll;">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h5 class="panel-title">接收</h5>
+							</div>
+							<div class="panel-body" ng-repeat="item in ComLog">
+								<p>
+									<span class="item-msg">{{item.message}}</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<input type="hidden" id="common_ewm_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_ewm">
+		<div id="myModal_ewm" class="modal fade">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div id="qrcode"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-12">
+		<input type="hidden" id="common_addappdev_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_addappdev">
+		<div id="myModal_addappdev" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title"><span class="title"></span></h4>
+					</div>
+					<div class="modal-body ">
+						<div class="form-group row">
+							<div class="col-md-1"></div>
+							<label class="col-md-3 control-label">设备MAC：<span class="required"> * </span></label>
+							<div class="col-md-8">
+								<input ng-model="ModalName" name="ModalName"  type="text" class="form-control" placeholder="必填" required >
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer" >
+						<button ng-click="SureAddApp()" ng-disabled="!ModalName" type="button" class="btn btn-danger ok"  data-dismiss="modal">确认</button>
+						<button type="button" class="btn btn-default cancel" data-dismiss="modal">取消</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+.wrapIntroduceDiv{
+  margin-top: 20px;
+  color: rgb(255, 133, 133);
+  margin-left: 20px;
+  font-size: 0.8125em;
+}
+.wrapIntroduceDiv{
+    margin-bottom: 10px;
+}
+.countText {
+    text-align: justify;
+}
+@media(max-width:375px){
+
+}
+@media(max-width:360px){
+
+}
+@media(max-width:320px) {
+}

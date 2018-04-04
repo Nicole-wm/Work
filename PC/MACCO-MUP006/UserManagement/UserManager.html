@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="/css/sb-admin.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/public.css" rel="stylesheet">
+    <link href="/css/userList.css" rel="stylesheet">
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="/scripts/common.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-infinite-scroll.min.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-file-upload-all.js"></script>
+    <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/sidebarController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/User/UserManager.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Sidebar.html'" />
+        <div id="nav" ng-include="templateurl"></div>
+        <div id="page-wrapper" style="float:right;" ng-controller="UserController">
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">后台用户管理</h1>
+                    <ol class="breadcrumb">
+                        <li>
+                            <i class="fa fa-dashboard"></i>
+                            <a href="index.html">Macco Admin</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-table"></i>后台用户管理
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row">
+               <div class="col-lg-6">
+                <div>             
+                    <h2 style="display:inline-block;">后台用户列表</h2>
+                    <button type="button" ng-click="AddInput()" class="btn btn-primary" style="margin-bottom: 10px;margin-left: 20px;">新增</button>
+                    <div class="addshow" ng-show="canadd" style="display:inline-block;width:900px;margin-bottom: 10px;margin-left:5%;">
+                        <div class="pull-down" style="width:150px">
+                            <input name="addpeople" class="form-control"  id="addpeople" placeholder="请输入用户名" ng-model="addpeople" required> 
+                        </div>
+                        <div class="pull-down" style="width:150px">
+                            <input type="password" name="addpassword" class="form-control"  id="addpassword" placeholder="请输入密码" ng-model="addpassword" required> 
+                        </div>
+                        <div class="pull-down">
+                            <select class="form-control" ng-change="showList()" ng-model="RoleID" ng-options="role.ID as role.RoleName for role in addroles"></select>
+                        </div>
+                        <div class="pull-down" style="width:50px;">
+                            <button type="button" ng-click="Sumbit()" class="btn btn-primary" style="margin-bottom:5px;">确认</button>
+                        </div>
+                        <div class="pull-down" style="width:50px;">
+                            <button type="button" ng-click="this.ReturnBack(this.Token)" class="btn" style="margin-bottom:5px;">取消</button>
+                        </div>        
+                    </div>
+                </div>
+                <div  class="selectList" >
+                    <div class="pull-down first" style="margin-bottom:10px;">
+                        <select class="form-control" ng-change="showList()" ng-model="SType" ng-options="role.ID as role.RoleName for role in roles"></select>
+                    </div>
+                </div>
+                <div id="DataContainer" class="DataContainer">
+                    <div class="TableTitle" data-grid-type="Title">
+                        <div class="col_id">ID</div>
+                        <div class="col_people">用户</div>
+                        <div class="col_record">角色</div>
+                        <div class="col_operation">操作</div>
+                    </div>
+                    <div class="clearboth"></div>
+                    <div ng-init='showList()'>
+                        <div ng-repeat="item in items">
+                            <div class="WrapContent">
+                                <div class="col_id">
+                                    <span class="mobileId">ID:</span><span ng-bind="item.ID"></span>
+                                </div>
+                                <div class="col_people">
+                                    <span class="mobilePeople">用户:</span><span ng-bind="item.UserName"></span>
+                                </div>
+                                <div class="col_record">
+                                    <span class="mobileRecord">角色:</span><span ng-bind="item.RoleName"></span>
+                                </div>
+                                <div class="col_operation">
+                                    <span class="mobileOperation">操作:</span>
+                                    <a ng-click="Delete(item.ID,item.Role)" title="删除" class="btn btn-danger glyphicon glyphicon-trash"></a>
+                                </div>
+                            </div>
+                            <div class="clearboth"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </body>
+        </html>

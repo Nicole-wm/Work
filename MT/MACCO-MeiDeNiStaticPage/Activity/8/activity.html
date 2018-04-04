@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <style>
+        @font-face {
+            font-family: 'youyuan';
+            src: url(data:font/ttf;base64,FONTBASE64) format('truetype');
+        }
+    </style>
+    <link href="../css/public.css" rel="stylesheet" charset="utf-8">
+    <link href="../css/join.css" rel="stylesheet" charset="UTF-8">
+    <link href="css/activity.css" rel="stylesheet" charset="utf-8">    
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script> 
+    <script type="text/javascript" src="/JS/jquery-2.1.4.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/node_modules/angular/angular.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/JS/config.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/activity.js" charset="UTF-8"></script>
+</head>
+
+<body  ng-controller="activityController">
+    <div id="head" class="head RelatedImg">
+        <img id="model" src="images/banner.jpg">
+    </div>
+    <input type="hidden" ng-model="joinurl" ng-init="joinurl='/Activity/join.html'" />
+    <div ng-include="joinurl"></div>
+    <div class="clear"></div>
+    <div class="bigSize theme">植村秀烟花眼线液</div>
+    <div class="bigSize theme">免费试用</div>
+    <div class="smallSize introduce">
+        <div>说说你对优质眼线笔的所有要求</div>
+        <div>就有机会赢得彩妆艺术大师</div>
+        <div>植村秀烟花十色眼线液1只</div>
+        <div style="color:#fe3d73;">价值220元，共计5份</div>
+    </div>
+    <div class="bigSize actionRule">参与规则：</div>
+    <div class="smallSize step one">
+        <span>Step 1：点击</span>
+        <span class="join smallSize">马上参与</span>
+    </div>
+    <div class="smallSize step">Step 2：到“植村秀烟花十色眼线液”页面下留下你对眼线液的期望和要求，就有机会获得试用资格；</div>
+    <div class="RulePictures">
+        <img src="images/1.jpg">
+    </div>
+    <div class="smallSize step">Step 3：收到产品7日内，撰写心得点评，能增加今后的试用信誉哦。</div>
+    <div class="bigSize prize">活动奖品：</div>
+    <div class="smallSize">
+        <div style="text-align: inherit;"><span class="MaskNum">植村秀烟花十色眼线液1只</span></div>
+    </div>
+    <div class="RulePictures">
+        <img src="images/2.jpg">
+    </div>
+    <input type="hidden" ng-model="type" ng-init="type='product'">
+    <input type="hidden" ng-model="shouldLogin" ng-init="shouldLogin='true'">
+    <input type="hidden" ng-model="ObjectID" ng-init="ObjectID='4579'">
+    <div ng-if="!IsFinish" ng-class="btnJoin_n" ng-click="Join()" ng-bind="title" class="btnJoin">马上参加</div>
+    <input type="hidden" ng-model="footerurl" ng-init="footerurl='/Activity/footer.html'" />
+    <div ng-include="footerurl"></div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+.selectList{
+	display:inline-block;
+	width: 100%;	
+}
+.col_id {
+	width: 25%; 
+}
+.col_keyno {
+	width:25%;
+}
+.col_title {
+	width: 25%;
+}
+.col_cover_image{
+	width: 25%;
+}
+
+.mobileId,
+.mobileKeyno,
+.mobileTitle,
+.mobileImage{
+	display: none;
+}
+@media(max-width:768px) {
+.WrapContent {
+ height: 650px;
+  max-height: 650px; 
+}
+.col_cover_image {
+	min-height: 256px;
+}
+.WrapContent > .col_cover_image:hover > img {
+	display: none;
+	-webkit-animation-name: "";
+	-moz-animation-name: "";
+	-o-animation-name: "";
+	-ms-animation-name: "";
+	animation-name: "";
+}
+.mobileId,
+.mobileKeyno,
+.mobileTitle,
+.mobileImage{
+	 display: inline-block;
+} 
+}
+@media(max-width:414px) {
+	.keyword{
+		  min-width: 100px;
+	}
+	.first{
+		margin-left: 30px;
+	}
+	.pull-down {
+  margin-right: 2px;
+   }
+   .selectList{
+	margin-bottom: 10px;
+   }
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>评标专家</title>
+	<!-- build:css -->
+<link href="css/base.css" rel="stylesheet" charset="UTF-8"> 
+<link href="css/public.css" rel="stylesheet" charset="UTF-8"> 
+<link href="css/top.css" rel="stylesheet" charset="UTF-8">  
+<link href="css/footer.css" rel="stylesheet" charset="UTF-8"> 
+<!-- endbuild -->
+<!-- build:js -->
+<script src="js/jquery-1.9.1.min.js" charset="UTF-8"></script>
+<script src="js/avalon.js" charset="UTF-8"></script>
+<script src="js/dropdownlist.js" charset="UTF-8"></script>
+<script src="js/top.js" charset="UTF-8"></script>
+<script src="js/footer.js" charset="UTF-8"></script>
+<script src="js/public.js" charset="UTF-8"></script>
+<!-- endbuild -->
+	<script src="js/BidEvaluationExpert.js" charset="UTF-8"></script>
+</head>
+<body ms-controller="BEEjs">
+	<div class="top_all">
+	<div class="top">
+		<div class="top_text">
+			<div class="top_text_l left">
+				<ul>
+					<li><a href="login.html" style="color:#cccccc">登录</a></li>
+					<li class="line"></li>
+					<li><a href="Register.html" style="color:#cccccc">注册</a></li>
+				</ul>
+			</div>
+			<div class="top_text_r right">
+				<ul>
+					<li><a style="color:#cccccc">测试版</a></li>
+					<li class="line"></a></li>
+					<li><a style="color:#cccccc">论坛</a></li>
+					<li class="line"></li>
+					<li><a href="index.html" style="color:#cccccc">首页</a></li>
+					<li class="line"></li>
+					<li><a style="color:#cccccc">加入收藏</a></li>
+					<li class="line"></li>
+					<li><a style="color:#cccccc">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Logo -->
+	<div class="Logo">
+		<a href="index.html"><img src="images/logo.png"></a>
+		<div class="SearchDiv htc">
+			<input id="SearchInput" type="text" value="搜索关键字">
+			<div class="icon SearchDiv_img">
+			</div>
+		</div>
+	</div>
+	<!-- Menu -->
+	<div class="Menu">
+		<div class="Menu_content">
+			<div class="menu_ul" id="menu_ul">
+				<ul>
+					<li class="menu_ul_select" id="Menu1" onmouseover="setMenu(1)" onclick="chooseMenu(1)"><a>首页</a></li>
+					<li class="double_line"></a></li>
+					<li id="Menu2" onmouseover="setMenu(2)"  onclick="chooseMenu(2)"><a>交易公开</a></li>
+					<li class="double_line"></li>
+					<li id="Menu3" onmouseover="setMenu(3)"   onclick="chooseMenu(3)"><a>交易平台</a></li>
+					<li class="double_line"></li>
+					<li id="Menu4" onmouseover="setMenu(4)"   onclick="chooseMenu(4)"><a>市场资信</a></li>
+					<li class="double_line"></li>
+					<li id="Menu5" onmouseover="setMenu(5)"  onclick="chooseMenu(5)"><a>交易数据</a></li>
+					<li class="double_line"></a></li>
+					<li id="Menu6" onmouseover="setMenu(6)"  onclick="chooseMenu(6)"><a>评标专家</a></li>
+					<li class="double_line"></li>
+					<li id="Menu7" onmouseover="setMenu(7)"  onclick="chooseMenu(7)"><a>行政监督</a></li>
+					<li class="double_line"></li>
+					<li id="Menu8" onmouseover="setMenu(8)"  onclick="chooseMenu(8)"><a>政策法规</a></li>
+					<li class="double_line"></li>
+					<li id="Menu9" onmouseover="setMenu(9)"  onclick="chooseMenu(9)"><a>市场动态</a></li>
+					<li class="double_line"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+	<div>
+		<div class="Menu_s">
+			<div class="menu_s_row">
+				<div class="menu_announcement">
+					<div class="pos_img"></div>
+					<div class="pos_text">
+						<span class="pos_text_1">位置：</span>
+						<span class="pos_text_2">首页> 评标专家 ></span>
+						<span class="pos_text_3" ms-visible="currentIndex === 0">通知公告</span>
+						<span class="pos_text_3" ms-visible="currentIndex === 1">学习专区</span>
+						<span class="pos_text_3" ms-visible="currentIndex === 2">评委考试</span>
+						<span class="pos_text_3" ms-visible="currentIndex === 3">资料下载</span>
+					</div>
+				</div>
+				<div class="menu_time">
+					<div class="time_img icon"></div>
+					<span>2016.3.4 15:26:38</span>
+				</div>
+			</div>
+		</div>
+		<div class="Content">
+			<div class="Content_left PublicBorder">
+				<div>
+					<div class="Mk_Title">
+						<div class="icon Mk_img">
+							<span ms-visible="currentIndex === 0">通知公告</span>
+							<span ms-visible="currentIndex === 1">学习专区</span>
+							<span ms-visible="currentIndex === 2">评委考试</span>
+							<span ms-visible="currentIndex === 3">资料下载</span>
+						</div>
+					</div>
+					<div class="Public_List_li">
+						<ul ms-repeat="PBZJList">
+							<li class="Public_li_first"><a ms-attr-href="Details.html?ID={{el.ID}}&Type={{typeID}}" target="_blank">{{el.Title}}</a></li>
+							<li class="Public_li_second">{{el.Time}}</li>
+						</ul>
+					</div>
+					<div class="Pagination">
+						<center>
+							<span>共 <span class="red_text">{{AllPage}}</span> 页</span>
+							<span class="PageBtn" ms-click="PageClick(1)" ms-visible="Page1===1">首页</span>
+							<span class="PageBtn" ms-click="PageClick(2)" ms-visible="Page2===1">上一页</span>
+							<span class="PageBtn" ms-click="PageClick(3)" ms-visible="Page3===1">下一页</span>
+							<span class="PageBtn" ms-click="PageClick(4)" ms-visible="Page4===1">末页</span>
+							<span>当前页是第 <span class="red_text">{{CurPage}}</span> 页</span>
+						</center>
+					</div>
+				</div>
+			</div>
+			<div class="Content_right">
+				<div class="BEELink PublicBorder">
+					<div class="Mk_Title">
+						<div class="icon Mk_img">评标专家
+						</div>
+					</div>
+					<div class="right_list_Content">
+						<ul>
+							<li ms-click="MenuClick(0)" class="li_text_right">
+								<span class="li_text_arr" ms-class="li_text_arr_selected:currentIndex === 0"></span>
+								<span class="wr_bold li_text_details ellipsis" ms-class="li_text_details_selected:currentIndex === 0">通知公告</span>
+							</li>
+							<li class="li_line"></li>
+							<li  ms-click="MenuClick(1)"class="li_text_right">
+								<span class="li_text_arr" ms-class="li_text_arr_selected:currentIndex === 1"></span>
+								<span class="wr_bold li_text_details ellipsis" ms-class="li_text_details_selected:currentIndex === 1">学习专区</span>
+							</li>
+							<li class="li_line"></li>
+							<li ms-click="MenuClick(2)" class="li_text_right">
+								<span class="li_text_arr" ms-class="li_text_arr_selected:currentIndex === 2"></span>
+								<span class="wr_bold li_text_details ellipsis" ms-class="li_text_details_selected:currentIndex === 2">评委考试</span>
+							</li>
+							<li class="li_line"></li>
+							<li  ms-click="MenuClick(3)" class="li_text_right">
+								<span class="li_text_arr" ms-class="li_text_arr_selected:currentIndex === 3"></span>
+								<span class="wr_bold li_text_details ellipsis" ms-class="li_text_details_selected:currentIndex === 3">资料下载</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="BEE_Link" >
+					<a href="http://www.njhwzbb.com/Judge/JudgeLogin" style="color:#737373">
+						<div class="BEE_Link_details PublicBorder">专家抽取在线申请
+						</div>
+						<div class="BEE_Link_details PublicBorder">招标公告自主发布
+						</div>
+						<div class="BEE_Link_details PublicBorder">中标候选人公示自主发布
+						</div>
+						<div class="BEE_Link_details PublicBorder">中标结果自组发布
+						</div>
+					</a>
+				</div>
+				<div class="FollowUs PublicBorder">
+					<div class="Mk_Title">
+						<div class="icon Mk_img">关注我们
+						</div>
+					</div>
+					<div class="erweima"><img src="images/erweima.png"></div>
+					<div class="erweima_text">
+						<p><b>打造全国先进的公共服务平台</b></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+	<!-- 友情链接 -->
+	<div class="FriendlyLink">
+		<div class="blank_title">友情链接</div>
+		<div class="select">
+			<select id="select1">
+				<option value="">-- 国家部委网站 --</option>
+				<option value="http://www.chinabidding.com.cn/">中国采购与招标网</option>
+				<option value="http://www.ndrc.gov.cn/">国家发展和改革委员会</option>
+				<option value="http://www.ccgp.gov.cn/">政府采购网</option>
+			</select>
+		</div>
+		<div class="select">
+			<select id="select2">
+				<option value="">-- 江苏省政府机构网站 --</option>
+				<option value="http://www.jscd.gov.cn/">省交通运输厅</option>
+				<option value="http://www.jswater.gov.cn/">省水利厅</option>
+			</select>
+		</div>
+		<div class="select">
+			<select id="select3">
+				<option value="">-- 南京市政府机构网站 --</option>
+				<option value="http://www.nanjing.gov.cn/index.html">市人民政府</option>
+				<option value="http://www.njdpc.gov.cn/">市发展和改革委员会</option>
+				<option value="http://www.njcz.gov.cn/">市财政局</option>
+				<option value="http://www.njgt.gov.cn/">市土地资源和房屋管理局</option>
+				<option value="http://www.njszjw.gov.cn/index2286.htm">市城乡建设</option>
+				<option value="http://www.njgp.gov.cn/">市政府采购网</option>
+				<option value="http://www.njjj.gov.cn/">市监察局</option>
+				<option value="http://www.njaf.gov.cn/">市林业局</option>
+			</select>
+		</div>
+		<div class="select">
+			<select id="select4">
+				<option value="">-- 其他相关网站 --</option>
+				<option value="http://www.js.sgcc.com.cn/">江苏省电力公司</option>
+				<option value="http://www.njgcztbxh.com/">南京建设工程招标投标协会</option>
+				<option value="http://www.njinfo.gov.cn/">南京信息协会</option>
+			</select>
+		</div>
+	</div>
+	<div class="footer_all">
+		<div class="footer_t">
+			<ul>
+				<li><a href="AboutUs.html?page=0">平台简介</a></li>
+				<li class="line"></a></li>
+				<li><a href="AboutUs.html?page=1">联系我们</a></li>
+				<li class="line"></li>
+				<li><a href="AboutUs.html?page=2">招聘信息</a></li>
+				<li class="line"></li>
+				<li><a href="AboutUs.html?page=3">网站地图</a></li>
+				<li class="line"></li>
+				<li><a href="AboutUs.html?page=4">版权声明</a></li>
+			</ul>
+		</div>
+		<div class="footer_m clear">公司总机：021-88484678传真：021-88484118</div>
+		<div class="footer_b">版权所有：南京市招投标公共服务平台</div>
+	</div>
+</div>
+</body>
+</html>

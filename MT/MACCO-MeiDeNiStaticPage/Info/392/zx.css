@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+.productName{
+  color: rgb(249, 110, 87);
+  margin-top: 10px;
+}
+.ProductImages{
+    margin-bottom: 10px;
+}
+.productName>img{
+    width: 8%;
+}
+.strong{
+   font-weight: 700;
+}
+.line{
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: rgb(249, 110, 87);
+}
+.special{
+  color: rgb(249, 110, 87);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Test</title>
+<link href="combobox.css" rel="stylesheet" type="text/css" />
+<script src="jquery-1.8.2.min.js"></script>
+<script src="combobox.js"></script>
+
+<script language="javascript">
+	$(document).ready(function () {
+	//选择公司下拉框
+    $("#txtcompany").jq_combobox({
+        textField: "CodeName",
+        valueField: "CodeValue",
+        data: [
+            { CodeName: "上海魅客技术信息有限公司", CodeValue: "111" },
+            { CodeName: "上海魅客技术信息有限公司上海魅客技术信息有限公司", CodeValue: "222" },
+             { CodeName: "上海魅客技术信息有限公司", CodeValue: "111" },
+            { CodeName: "上海魅客技术信息有限公司上海魅客技术信息有限公司", CodeValue: "222" },
+             { CodeName: "上海魅客技术信息有限公司", CodeValue: "111" },
+              { CodeName: "上海魅客技术信息有限公司", CodeValue: "111" },
+            { CodeName: "上海魅客技术信息有限公司上海魅客技术信息有限公司", CodeValue: "222" },
+             { CodeName: "上海魅客技术信息有限公司", CodeValue: "111" },
+            { CodeName: "上海魅客技术信息有限公司上海魅客技术信息有限公司", CodeValue: "222" },
+            { CodeName: "上海魅客技术信息有限公司上海魅客技术信息有限公司", CodeValue: "222" },
+            { CodeName: "上海魅客技术信息有限公司上海魅客技术信息有限公司上海魅客技术信息有限公司上海魅客技术信息有限公司上海魅客技术信息有限公司上海魅客技术信息有限公司", CodeValue: "333" }
+        ]
+    });
+	});
+</script>
+<style type="text/css">
+.txtcompany {
+  font-size: 14px;
+  width: 638px;
+  height: 28px;
+  line-height: 30px;
+  color: #666666;
+  text-indent: 10px;
+  border: 0px;
+}
+</style>
+</head>
+<body>
+<div class="main">
+  <input type="text" class="txtcompany" readonly="readonly" id="txtcompany">
+</div>
+</body>
+</html>

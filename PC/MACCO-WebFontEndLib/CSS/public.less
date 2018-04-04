@@ -1,0 +1,104 @@
+﻿/*按钮*/
+@color: #ffa833;
+
+.btn {
+    width: 138px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    position: relative;
+    .border-radius(7px);
+    behavior: url(/Content/PIE.htc);
+    text-align: center;
+    cursor: pointer;
+}
+
+    .btn.yellow {
+        background: @color;
+    }
+
+/* 奇数行 */
+.oddline {
+    background-color: @color;
+}
+
+/* 偶数行 */
+.evenline {
+    background-color: @color;
+}
+
+/*简单圆角半径*/
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+ 
+#demo {
+    .border-radius(20px);
+} 
+
+/*四角的半径定制*/
+.border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px) {
+    -webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+    -moz-border-radius: @topleft @topright @bottomright @bottomleft;
+    border-radius: @topleft @topright @bottomright @bottomleft;
+}
+ 
+#demo {
+    .border-radius-custom(20px, 20px, 0px, 0px);
+}
+
+/*文本超出显示省略号 Ellipsis(给li设置width或者max-width，再给li加上.text-autocut这个class)*/
+.text-autocut{
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-text-overflow:ellipsis;
+    -khtml-text-overflow: ellipsis; 
+    -icab-text-overflow: ellipsis; 
+    -moz-text-overflow: ellipsis; 
+    -o-text-overflow: ellipsis; 
+    text-overflow: ellipsis; 
+}
+
+/*内阴影*/
+.inner-shadow(@param1,@param2,@param3,@opacity){
+    -webkit-box-shadow:inset @param1 @param2 @param3 rgba(0, 0, 0, @opacity);
+       -moz-box-shadow:inset @param1 @param2 @param3 rgba(0, 0, 0, @opacity);
+            box-shadow:inset @param1 @param2 @param3 rgba(0, 0, 0, @opacity);
+}
+ 
+#demo{
+        .inner-shadow(0px, 0px, 10px, 0.4);
+}
+
+/*外阴影 */
+.box-shadow(@x: 0px, @y: 0px, @blur: 8px, @alpha: 0.5) {
+    -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+    -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+    box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+ 
+#demo{
+    .box-shadow(0px, 0px, 20px, 0.4);
+}
+
+/*三角形 Trangle(5个参数：宽度，颜色（上、右、下、左）)*/
+.trangle(@width: 8px, @pram1: transparent, @pram2: transparent, @pram3: transparent, @pram4: transparent){
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: @width;
+    border-color: @pram1 @pram2 @pram3 @pram4;
+}
+ 
+#demo{
+    .trangle(20px, #000, transparent, transparent, transparent)
+}
+
+/*透明度 或渐变 1为不透明 0透明*/
+.rgba(@rgba_a:.4,@rgb_b:40){
+    filter: alpha(opacity=@rgb_b); 
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=@{rgb_b})"; 
+    opacity:@rgb_a;    
+}

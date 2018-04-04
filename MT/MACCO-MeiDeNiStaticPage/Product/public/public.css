@@ -1,0 +1,91 @@
+@charset "utf-8";
+body {
+    font-family: youyuan ,"Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+    color: #666666;
+    padding: 0px;
+    margin: 0px;
+}
+img, object, embed, video {
+	max-width: 100%;
+}
+.ProductImages>img{
+    width: 100%;
+}
+.PerIntro >img{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.Name{
+  display: inline-block;
+  line-height: 30px;
+  height: 30px;
+  position: relative;
+  left: 20px;
+  font-size: 15px;
+}
+.job{
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  background: #ddaaea;
+  padding: 4px 10px;
+  position: relative;
+  left: 33px;
+  font-size: 11px;
+  color: #ffffff;
+}
+.PerIntro {
+  margin-left: 19px;
+  margin-top: 15px;
+}
+.ProductAttribute{
+    color: #ff4a83;
+    font-size: 15px;
+    width: 86%;
+    margin: 10px auto 0px auto;
+}
+.wrapStar>img{
+    width: 14px;
+    height: 12px;
+    margin-right: 3px;
+}
+.wrapStar{
+  margin: 0 auto;
+  margin-top: 8px;
+  display: inline-block;
+  margin-left: 26px;
+}
+.score{
+  display: inline-block;
+  font-size: 13px;
+}
+.detail{
+  clear: both;
+  font-size: 0.75rem;
+  color: #656565;
+  width: 86%;
+  word-break: break-all;
+  margin: 10px auto;
+  line-height: 24px;
+}
+.clear{
+	clear: both;
+}
+
+.personInfo{
+  padding: 0.7em 0px;
+  line-height: 1.6;
+  margin-left: 20px;
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 481px) {
+
+}
+
+/* 桌面电脑布局: 769px 至最高 1232px。样式继承自: 移动设备布局和平板电脑布局。 */
+
+@media only screen and (min-width: 769px) {
+
+}

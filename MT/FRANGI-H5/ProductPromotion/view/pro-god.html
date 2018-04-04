@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>FRANGI</title>
+	<meta name="keywords" content="FRANGI明星单品——女神水" />
+	<meta name="description" content="舒缓细嫩，深层修护，女神，护肤当然选择女神水！" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="icon" href="../../IMG/frangi.ico" type="image/x-icon">
+	<!-- pluginsJS -->
+	<link rel="stylesheet" href="../../CSS/swiper.min.css">
+	<!-- publicCSS -->
+	<link rel="stylesheet" href="../css/base.css">
+	<!-- pageCSS -->
+	<link rel="stylesheet" href="../css/pro.css">
+	<!-- pluginsJS -->
+	<script src="../../JS/flexible_css.js"></script>
+	<script src="../../JS/flexible.js"></script>
+	<!-- h5.frangi.cn Baidu tongji analytics -->
+	<script src="../../JS/baiduhm.js"></script>
+</head>
+
+<body ng-app="FrangiApp" ng-controller="ProCtrl">
+	<!-- titlebar -->
+	<div ng-include="'../tpl/titlebar.html'"></div>
+	<!-- Content -->
+	<div id="ProContent">
+		<div class="Top-CenterTxt">明星单品女神水</div>
+		<div class="PageY-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="../img/base/loading.jpg" data-src="../img/pro-god/content-1.jpg" class="swiper-lazy"></div>
+				<div class="swiper-slide"><img src="../img/base/loading.jpg" data-src="../img/pro-god/content-2.jpg" class="swiper-lazy"></div>
+				<div class="swiper-slide"><img src="../img/base/loading.jpg" data-src="../img/pro-god/content-3.jpg" class="swiper-lazy"></div>
+				<div class="swiper-slide"><img src="../img/base/loading.jpg" data-src="../img/pro-god/content-4.jpg" class="swiper-lazy"></div>
+				<div class="swiper-slide"><img src="../img/base/loading.jpg" data-src="../img/pro-god/content-5.jpg" class="swiper-lazy"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Sidebar -->
+	<div class="sidebar-container">
+		<div ng-include="'../tpl/sidebar.html'"></div>
+	</div>
+	<div class="bottom-container">
+		<div ng-include="'../tpl/bottom.html'"></div>
+	</div>
+	<!-- pluginsJS -->
+	<script src="../../JS/jquery-3.2.1.min.js"></script>
+	<script src="../../JS/jweixin.js"></script>
+	<script src="../../JS/angular.min.js"></script>
+	<script src="../../JS/swiper.min.js"></script>
+	<!-- PublicJS -->
+	<script src="../js/base.js"></script>	
+	<script src="../js/weixinshare-pro.js"></script>
+	<script>
+		var app = angular.module('FrangiApp', []);
+		app.controller('ProCtrl', function($scope) {});	
+		/*产品详情滑屏*/
+		var PageYwiper = new Swiper('.PageY-container', {
+			paginationClickable: true,    
+			direction: 'vertical',
+			lazyLoading : true,
+			onSlideChangeEnd: function(swiper){
+				$(".bottom-container").show();
+				if(swiper.activeIndex==4){
+					$(".bottom-container").hide();
+				}
+			}
+		});
+
+		wx.ready(function () {
+			var sharedata = {
+				title: 'FRANGI明星单品——女神水',
+				desc: '舒缓细嫩，深层修护，女神，护肤当然选择女神水！',
+				link:'http://h5.frangi.cn/ProductPromotion/view/pro-god.html',
+				imgUrl: 'http://h5.frangi.cn/IMG/shareIco.png',
+				success: function () {
+				},
+				cancel: function () {
+				}
+			};
+			wx.onMenuShareAppMessage(sharedata);
+			wx.onMenuShareTimeline(sharedata);
+			wx.hideMenuItems({
+				menuList: [
+				'menuItem:share:qq',
+				'menuItem:share:QZone'
+				] 
+			});
+		});
+	</script>
+</body>
+</html> 

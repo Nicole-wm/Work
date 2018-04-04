@@ -1,0 +1,92 @@
+<div class="row" ng-controller="CookBookDetailsFormulaController">
+    <div class="col-md-12">
+        <!-- BEGIN 原料详情-->
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+              <div class="table-toolbar">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="color-demo tooltips btn bg-blue-steel bg-font-blue-steel" data-original-title="点击添加原料" data-toggle="modal" data-target="#myModal_formula" ng-click="ClearForm()">添加原料配方
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="portlet-body">
+                <table class="table table-bordered table-hove">
+                    <thead>
+                        <tr>
+                            <th> 原料名称 </th>
+                            <th> 用量 </th>
+                            <th> 备注 </th>
+                            <th> 数据操作 </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in CBFormulaArr">
+                            <td> {{item.MaterName}} </td>
+                            <td> {{item.MaterQuantity}} </td>
+                            <td> {{item.MaterRemark}} </td>
+                            <td>
+                                <a data-toggle="modal" data-target="#myModal_formula" class="btn bg-green-soft bg-font-green-soft btn-sm" ng-click="EditCBFun(item.ID)"> 编辑 </a>
+                                <a class="btn bg-red bg-font-red btn-sm" ng-click="DeleteCBFun(item.ID)"> 删除 </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- END 原料详情-->
+    </div>
+    <div class="col-md-12">
+        <!-- BEGIN 原料详情弹框-->
+        <input type="hidden" id="myModal_formula_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_formula">
+        <div id="myModal_formula" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a href="javascript:;" class="close" data-dismiss="modal" aria-hidden="true"></a>
+                        <h4 class="modal-title">食谱原料</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="portlet">
+                            <div class="portlet-body form">
+                                <!-- BEGIN FORM-->
+                                <form class="horizontal-form" name="CBFormula">
+                                    <input type="reset" id="FormReset" hidden="true">
+                                    <div class="form-body">
+                                        <div class="form-group row">
+                                            <div class="col-md-1"></div>
+                                            <label class="col-md-2 control-label">原料名称<span class="required"> * </span></label>
+                                            <div class="col-md-8">
+                                                <input ng-model="ModalName" name="ModalName"  type="text" class="form-control" placeholder="必填" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-md-1"></div>
+                                            <label class="col-md-2 control-label">用量<span class="required"> * </span></label>
+                                            <div class="col-md-8">
+                                                <input ng-model="ModalQuantity" name="ModalQuantity"  type="text" class="form-control" placeholder="必填" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-md-1"></div>
+                                            <label class="col-md-2 control-label">备注</label>
+                                            <div class="col-md-8">
+                                                <textarea name="ModalRemark" ng-model="ModalRemark" class="form-control" rows="3" ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-actions right">
+                                            <button type="button" class="btn btn-primary ok"  ng-disabled="!CBFormula.ModalName.$valid||!CBFormula.ModalQuantity.$valid" type="submit" ng-click="EditFormulaFun()" >确认</button>
+                                            <button type="button" class="btn btn-default cancel" data-dismiss="modal">取消</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END 原料详情弹框-->
+    </div>
+</div>

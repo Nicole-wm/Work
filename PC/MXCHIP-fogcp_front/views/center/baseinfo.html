@@ -1,0 +1,247 @@
+<div ng-controller="BaseInfoController">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row portlet light bordered">
+				<h6>请完善以下信息,方便我们更好的为您服务</h6>
+			</div>
+			<div class="row portlet light bordered">
+				<h4 class="pull-left">基本信息</h4><a class="font-blue-soft pull-right font-sm" data-original-title="点击查看基本信息" data-toggle="modal" data-target="#myModal_pbase" ng-click="PbaseFun()">修改</a>
+				<div class="portlet light">
+					<div class="portlet-body">
+						<div class="col-md-3">
+							<img ng-src="{{ImageUrl}}" style="max-width: 200px; max-height: 150px;">
+						</div>
+						<div class="col-md-9">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											登录账号：{{UserEmail}}
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											真实姓名: {{Name}}
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											联系方式: {{Phone}}
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											属性：{{Attr}}
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row portlet light bordered">
+				<h4 class="pull-left">业务信息</h4><a class="font-blue-soft pull-right font-sm" data-original-title="点击查看业务信息" data-toggle="modal" data-target="#myModal_ebase">修改</a>
+				<div class="portlet light">
+					<div class="portlet-body">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											主要行业: 无
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											主营业务：无
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											公司名称: {{CompanyName}}
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											所属地区：{{Location}}
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											联系方式：无
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											公司网站: {{Website}}
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<input type="hidden" id="myModal_pbase_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_pbase">
+			<div id="myModal_pbase" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<a href="javascript:;" class="close" data-dismiss="modal" aria-hidden="true"></a>
+							<h4 class="modal-title">基本信息</h4>
+						</div>
+						<div class="modal-body">
+							<div class="portlet">
+								<form  class="form-horizontal" role="form" name="UserInfo">
+									<div class="form-body">
+										<div class="form-group">
+											<label class="col-md-3 control-label">头像图片</label>
+											<div class="col-md-5">
+												<div class="fileinput fileinput-new" data-provides="fileinput">
+													<div class="fileinput-new thumbnail" style="width: 200px; height: 150px;" >
+														<div id="user_img">
+															<img ng-src="{{ImageUrl}}" style="max-width: 200px; max-height: 150px;">
+														</div>                                   
+													</div>
+													<div id="user_name"></div>
+												</div>
+												<div id="user_btn">
+													<a id="user_selectbtn" class='btn btn-primary btn-sm'>修改头像</a>
+													<a id="user_upbtn" class='btn btn-primary btn-sm'>头像上传</a>
+												</div>
+												<input type="file" id="user_input" style="display:none">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">真实姓名</label>
+											<div class="col-md-5">
+												<input name="UserName" ng-model="ModalUserName" type="text" class="form-control" placeholder="王xx">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">联系方式</label>
+											<div class="col-md-5">
+												<input name="Phone" ng-model="ModalPhone" type="text" class="form-control">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">属性</label>
+											<div class="col-md-5">
+												<select  name="Att" ng-model="ModalAttr" class="form-control">
+													<option value="true">个人</option>
+													<option value="false">企业</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label" for="title"></label>
+											<div class="col-md-5">
+												<input ng-click="InfoFun(1)" class="btn blue-steel" type="submit" value="确认"/>
+												<input class="btn bg-default bg-font-default" type="submit"  data-dismiss="modal" aria-hidden="true" value="取消"/>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<input type="hidden" id="myModal_ebase_btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_ebase">
+			<div id="myModal_ebase" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<a href="javascript:;" class="close" data-dismiss="modal" aria-hidden="true"></a>
+							<h4 class="modal-title">业务信息</h4>
+						</div>
+						<div class="modal-body">
+							<div class="portlet">
+								<form  class="form-horizontal" role="form" name="UserInfo">
+									<div class="form-body">
+										<div class="form-group">
+											<label class="col-md-3 control-label">主要行业</label>
+											<div class="col-md-5">
+												<select ng-model="PrimProCategory" ng-options="o.id as o.primproname for o in PrimProCategorys" class="form-control" required>
+													<option value=""></option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">主营业务</label>
+											<div class="col-md-5">
+												<input name="PriBusiness" ng-model="ModalPriBusiness" type="text" class="form-control">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">公司名称</label>
+											<div class="col-md-5">
+												<input name="ModalCompanyName" ng-model="ModalCompanyName" type="text" class="form-control">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">所属地区</label>
+											<div class="col-md-5">
+												<input name="ModalLocation" ng-model="ModalLocation" type="text" class="form-control">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">联系方式</label>
+											<div class="col-md-5">
+												<input name="ModalComTel" ng-model="ModalComTel" type="text" class="form-control">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">公司网站</label>
+											<div class="col-md-5">
+												<textarea name="ModalWebsite" ng-model="ModalWebsite" class="form-control" rows="3"></textarea>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label" for="title"></label>
+											<div class="col-md-5">
+												<input ng-click="InfoFun(2)" class="btn blue-steel" type="submit" value="确认"/>
+												<input class="btn bg-default bg-font-default" type="submit" data-dismiss="modal" aria-hidden="true" value="取消"/>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

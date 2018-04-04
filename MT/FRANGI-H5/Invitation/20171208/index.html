@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>FRANGI跨界招商会 | 邀请函</title>
+	<meta name="keywords" content="FRANGI跨界招商会 | 邀请函"/>
+	<meta name="description" content="服装+美妆，多元化盈利模式，让您的服装生意更赚钱！" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<link rel="icon" href="../../IMG/frangi.ico" type="image/x-icon">
+	<!-- pluginsCSS -->
+	<link rel="stylesheet" href="../../CSS/animate.min.css">
+	<!-- pageCSS -->
+	<link rel="stylesheet" href="css/index.css">
+	<!-- pluginsJS -->
+	<script src="../../JS/flexible_css.js"></script>
+	<script src="../../JS/flexible.js"></script>
+	<!-- h5.frangi.cn Baidu tongji analytics -->
+	<script src="../../JS/baiduhm.js"></script>
+</head>
+
+<body>
+	<!-- Music-bg -->
+	<div class="music" onclick="MusicBgClick()">
+		<i class="icon-music open" play="1"></i> 
+		<audio id="music-bg" src="video/music-bg.mp3" loop="loop" autoplay="autoplay" loop="loop"></audio> 
+	</div>
+	<div class="p-content">
+		<img src="img/bg.jpg">
+		<div class="t-content">
+			<div class="p-b1">
+				<img src="img/b1.png">
+			</div>    
+			<div class="mask">
+				<div class="loading">正在申请中，请等待！</div>
+			</div>
+			<div class="p-form">
+				<form id="FormApp" onsubmit="return PostData()">
+					<input id="pname" name="pname" class="p-pname" type="text">
+					<input id="linkman" name="linkman" class="p-linkman" type="text">
+					<input id="phone" name="phone" class="p-phone" type="tel">
+					<input id="address" name="address" class="p-address" type="text">
+					<input id="arange" name="arange" class="p-arange" type="text">
+					<input id="total" name="total" class="p-total" type="text">
+					<input type="submit" class="p-submit" value=" ">
+				</form>
+			</div>
+			<div class="p-t1">
+				<img src="img/t1.png">
+			</div>
+		</div>
+	</div>
+	<!-- pluginsJS -->
+	<script src="../../JS/jquery-3.2.1.min.js"></script> 
+	<script src="../../JS/jweixin.js"></script>
+	<!-- PublicJS -->
+	<script src="js/weixinshare.js?v=1"></script>	
+	<script>
+		/*微信内-自动播放*/
+		function autoPlayAudio(id) {
+			var audio=document.getElementById(id);
+			wx.config({
+				debug: false,
+				appId: '',
+				timestamp: 1,
+				nonceStr: '',
+				signature: '',
+				jsApiList: []
+			});
+			wx.ready(function() {
+				audio.play();
+			});
+		}
+		/*背景音乐-自动播放*/
+		autoPlayAudio("music-bg");
+		/*背景音乐-播放暂停*/
+		function MusicBgClick(){
+			if($(".icon-music").attr("play") == "1"){
+				$(".icon-music").removeClass("open");
+				$(".icon-music").attr("play","0")
+				document.getElementById("music-bg").pause();
+			}else{
+				$(".icon-music").attr("play","1");
+				$(".icon-music").addClass("open");
+				document.getElementById("music-bg").play();
+			}
+		};
+
+		window.alert = function(name){   
+			var iframe = document.createElement("IFRAME");   
+			iframe.style.display="none";   
+			iframe.setAttribute("src",'');   
+			document.documentElement.appendChild(iframe);   
+			window.frames[0].window.alert(name);   
+			iframe.parentNode.removeChild(iframe);  
+		}; 
+
+		function PostData() {
+			$(".mask").show();
+			var ValFlag=true;
+			$("#FormApp input[type=text]").each(function(i){
+				var text = $(this).val();
+				if(text==""){
+					alert("请完整填写申请内容！");
+					ValFlag=false;
+					$(".mask").hide();
+					return false;
+				}
+			})
+			if(ValFlag){
+				$.ajax({
+					type: "POST",
+					url: "applicant.php",
+					data : $('#FormApp').serialize(),
+					success: function(msg) {
+						$(".mask").hide();
+						$('#FormApp')[0].reset(); 
+						alert("申请成功！");
+					}
+				});
+			}
+			return false;
+		}
+	</script>
+</body>
+</html> 

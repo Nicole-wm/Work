@@ -1,0 +1,80 @@
+<div class="container">
+	<div class="phome">
+		<div class="phome_content">
+			<p class="t_center font68" ng-bind="Cur_pro.pname"></p>
+			<div class="blank"></div>
+			<p class="t_center font36" ng-bind="Cur_pro.ename"></p>
+			<div class="blank_l"></div>
+			<img class="pro_banner" ng-src="{{Cur_pro.banner}}">
+		</div>
+	</div>
+	<div class="pfix_bottom">		
+		<div class="price_bottom t_center">
+			<div class="price_bl t_center floatl" ng-click="goBack()"> 
+				<div class="icon icon_back dis_inblock"></div> 
+			</div>
+			<div class="price_bm font40 floatl" ng-bind="Cur_pro.spec"></div>
+			<div class="price_br font40 floatl" ng-bind="Cur_pro.price"></div>
+		</div>
+		<div class="buy_bottom font50 t_center" ng-click="gotoBuy()">立刻购买</div>
+	</div>
+	<div class="pro_detail">
+		<div class="pro_title pro_titleh">
+			<div class="pt_text blank_side font50 floatl">产品描述</div>
+			<div class="icon icon_back floatr icon_add"></div> 
+		</div>
+		<div class="pro_content">
+			<div class="blank_s"></div>
+			<div class="blank_side font36">
+				<div class="floatl">
+					<p><span class="pro_ct">适合人群</span><span ng-bind="Cur_pro.crowd"></span></p>
+					<p><span class="pro_ct">适合肤质</span><span ng-bind="Cur_pro.skin"></span></p>
+					<p><span class="pro_ct">产品功效</span><span ng-bind="Cur_pro.effect"></span></p>
+					<div class="blank"></div>
+					<p ng-bind="Cur_pro.description"></p>
+				</div>
+			</div>
+			<div class="blank_s"></div>
+			<div class="blank_side">
+				<img ng-src="{{Cur_pro.post}}">
+			</div>
+			<div class="blank_s"></div>
+		</div>
+	</div>
+	<div class="pro_detail" id="buy_content">
+		<div class="pro_title">
+			<div class="pt_text blank_side font50 floatl">购买渠道</div>
+			<div class="icon icon_back floatr icon_add"></div> 
+		</div>
+		<div class="pro_content blank_side">
+			<div class="blank_s"></div>
+			<a href="https://frangi.tmall.com/" target="_blank"><div class="buy_way floatl by_1"></div></a>
+			<a href="https://frangi.jd.com/" target="_blank"><div class="buy_way floatl by_2"></div> </a>
+			<div class="blank_s"></div>   
+			<a href="http://frangi.suning.com/" target="_blank"><div class="buy_way floatl by_4"></div>   </a>
+			<a href="http://mall.yhd.com/index-212789.html" target="_blank"><div class="buy_way floatl by_3"></div></a>
+			<!-- <div class="buy_way floatl by_5"></div>  -->
+			<div class="blank_s"></div>
+		</div>
+	</div>
+	<div class="pro_detail">
+		<div class="pro_title">
+			<div class="pt_text blank_side font50 floatl">相关推荐</div>
+			<div class="icon icon_back floatr icon_add"></div> 
+		</div>
+		<div class="pro_content blank_side sug_list">
+			<div class="blank_s"></div>
+			<div class="sug_div" ng-repeat="item in Cur_sugAll" ui-sref="product({ID:{{item.id}}})">
+				<div class="sug_banner floatl">
+					<img class="sug_banner" ng-src="{{item.banner}}">
+				</div>
+				<div class="sug_text font36 floatl t_center">
+					<p ng-bind="item.pname"></p>
+					<div class="blank"></div>
+					<p><span ng-bind="item.spec"></span>&nbsp;&nbsp;<span ng-bind="item.price"></span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="blank_m"></div>
+</div>

@@ -1,0 +1,256 @@
+<div ng-controller="InvoiceController">
+	<div class="portlet-body">
+		<div class="tabbable-custom ">
+			<ul class="nav nav-tabs">
+				<li class="active">
+					<a data-target="#tab_in1" data-toggle="tab">发票列表</a>
+				</li>
+				<li>
+					<a data-target="#tab_in2" data-toggle="tab">发票信息</a>
+				</li>
+				<li>
+					<a data-target="#tab_in3" data-toggle="tab">寄送地址</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active" id="tab_in1">
+					<div class="portlet light">
+						<div class="portlet-body form">
+							<div class="row">
+								<div class="form-group col-lg-1"><input data-toggle="modal" data-target="#myModal_Invoice" type="button" value="申请发票" class="btn blue-steel btn-sm"/></div>
+							</div>
+							<div class="row">
+								<div class="form-group col-lg-5">
+									<div class="input-group input-large date-picker input-daterange" data-date="2017/04/05" data-date-format="yyyy/mm/dd">
+										<input type="text" class="form-control" name="from" ng-model="BTime">
+										<span class="input-group-addon"> 至 </span>
+										<input type="text" class="form-control" name="to" ng-model="ETime"> 
+									</div>
+								</div>
+								<div class="form-group col-lg-2">
+									<select  ng-change="SearchInvoice()" ng-model="InvoiceType" ng-options="o.ID as o.InvoiceName for o in InvoiceTypes" class="form-control">
+									</select>
+								</div>
+								<div class="form-group col-lg-1"><input ng-click="SearchDeal()" type="button" value="查找" class="btn blue-steel btn-sm"/></div>
+							</div>
+							<div class="row" ng-show="totalItems===0">
+								<div class="form-group col-lg-12"><h4>暂无发票记录</h4></div>
+							</div> 
+							<div class="row" ng-show="totalItems!==0">
+								<div class="form-group col-lg-12">
+									<div class="portlet light bordered">
+										<div class="portlet-body">
+											<div class="table-scrollable">
+												<table class="table table-striped table-bordered table-hover ">
+													<thead>
+														<tr>
+															<th> 申请开票时间 </th>
+															<th> 发票号 </th>
+															<th> 发票抬头 </th>
+															<th> 发票金额 </th>
+															<th> 发票内容 </th>
+															<th> 发票类型 </th>
+															<th> 状态 </th>
+															<th> 快递单号 </th>
+															<th> 备注 </th>
+															<th> 操作 </th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>2017-03-03T11:16:24.495Z</td>
+															<td>10135</td>
+															<td>上海庆科</td>
+															<td>200</td>
+															<td>账户开通短信服务</td>
+															<td>增值税普通发票</td>
+															<td>已通过 </td>
+															<td>5606110210386</td>
+															<td>无</td>
+															<td>
+																<a class="btn bg-green-soft bg-font-green-soft btn-sm" ng-click="EditInvoiceFun(item)" data-toggle="modal" data-target="#myModal_Invoice"> 编辑 </a>
+																<a class="btn bg-red bg-font-red btn-sm" ng-click="DeleteInvoiceFun(item.id)"> 删除 </a>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<uib-pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize" class="pagination" boundary-links="true" rotate="false" num-pages="numPages" ng-change="pageChanged()"></uib-pagination>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="tab_in2">
+					<div class="portlet light">
+						<div class="portlet-body form">
+							<div class="row portlet light bordered">
+								<span>发票类型：增值税普通发票</span>
+							</div>
+							<div class="row portlet light bordered">
+								<span>发票抬头：</span>
+								<input ng-model="BWarning" type="text" class="form-control input-sm" style="display:inline;width:200px;" placeholder="上海***有限公司">&nbsp;
+								<input ng-click="EditInvoiceName()" class="btn blue-steel btn-sm" type="button" value="保存修改"/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="tab_in3">
+					<div class="portlet light">
+						<div class="portlet-body form">
+							<div class="row" ng-show="totalItems===0">
+								<div class="form-group col-lg-12"><h4>暂无发票记录</h4></div>
+							</div> 
+							<div class="row" ng-show="totalItems!==0">
+								<div class="form-group col-lg-12">
+									<div class="portlet light bordered">
+										<div class="portlet-title">
+											<div class="caption">
+												<i class="fa fa-send"></i>
+												<span class="caption-subject">已保存了1条地址，还能保存9条地址</span>
+											</div>
+											<div class="actions">
+												<a  ng-click="ClearForm()" data-toggle="modal" data-target="#myModal_Address" class="btn btn-circle btn-icon-only btn-default">
+													<i class="fa fa-plus"></i>
+												</a>
+											</div>
+										</div>
+										<div class="portlet-body">
+											<div class="table-scrollable">
+												<table class="table table-hover">
+													<thead>
+														<tr>
+															<th> 收件人 </th>
+															<th> 联系方式 </th>
+															<th> 地址 </th>
+															<th> 邮编 </th>
+															<th> 操作 </th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td> Mark </td>
+															<td> 18018018018 </td>
+															<td>上海普陀长征镇金沙江路2145号B栋5号楼9楼</td>
+															<td> 21000 </td>
+															<td>
+																<a class="btn bg-green-soft bg-font-green-soft btn-sm" ng-click="EditAddressFun(item)" data-toggle="modal" data-target="#myModal_Address"> 编辑 </a>
+																<a class="btn bg-red bg-font-red btn-sm" ng-click="DeleteAddressFun(item.id)"> 删除 </a>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<uib-pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize" class="pagination" boundary-links="true" rotate="false" num-pages="numPages" ng-change="pageChanged()"></uib-pagination>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<input type="hidden" id="myModal_Invoice_btn" class="btn btn-primary" data-toggle="modal" data-target="#myModal_Invoice">
+			<div id="myModal_Invoice" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<a href="javascript:;" class="close" data-dismiss="modal" aria-hidden="true"></a>
+							<h4 class="modal-title">发票申请</h4>
+						</div>
+						<div class="modal-body">
+							<div class="portlet">
+								<form  class="form-horizontal" role="form" name="InvoiceInfo">
+									<div class="form-body">
+										<div class="form-group">
+											<label class="col-md-4 control-label">发票抬头</label>
+											<div class="col-md-5">
+												<input name="InvoiceName" ng-model="ModalInvoiceName" type="text" class="form-control" placeholder="上海***有限公司" ng-disabled="true">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-4 control-label">寄送地址</label>
+											<div class="col-md-7">
+												<select name="SendAddress" ng-model="ModalSendAddress" class="form-control">
+													<option value="true">上海普陀长征镇金沙江路2145号B栋5号楼9楼</option>
+													<option value="false">北京朝阳区人民广场</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-4 control-label" for="title"></label>
+											<div class="col-md-5">
+												<input ng-disabled="!ModalSendAddress" ng-click="AddInvoiceFun()" class="btn blue-steel" type="submit" value="确认"/>
+												<input class="btn bg-default bg-font-default" type="submit"  data-dismiss="modal" aria-hidden="true" value="取消"/>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<input type="hidden" id="myModal_Address_btn" class="btn btn-primary" data-toggle="modal" data-target="#myModal_Address">
+			<div id="myModal_Address" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<a class="close" data-dismiss="modal" aria-hidden="true"></a>
+							<h4 class="modal-title">地址信息</h4>
+						</div>
+						<div class="modal-body">
+							<div class="portlet">
+								<form  class="form-horizontal" role="form" name="AddressInfo">
+									<div class="form-body">
+										<div class="form-group">
+											<label class="col-md-4 control-label">收件人<span class="required"> * </span></label>
+											<div class="col-md-5">
+												<input name="ReceiptName" ng-model="ModalReceiptName" type="text" class="form-control" placeholder="必填" required>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-4 control-label">联系方式<span class="required"> * </span></label>
+											<div class="col-md-5">
+												<input name="ContactInfo" ng-model="ModalContactInfo" type="text" class="form-control" placeholder="必填" required >
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-4 control-label">收件地址<span class="required"> * </span></label>
+											<div class="col-md-7">
+												<input name="ExpressAddress" ng-model="ModalExpressAddress" type="text" class="form-control" placeholder="必填" required>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-4 control-label">邮编</label>
+											<div class="col-md-3">
+												<input name="PostCode" ng-model="ModalPostCode" type="text" class="form-control" placeholder="">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-4 control-label" for="title"></label>
+											<div class="col-md-5">
+												<input ng-disabled="!AddressInfo.ReceiptName.$valid||!AddressInfo.ContactInfo.$valid||!AddressInfo.ExpressAddress.$valid" ng-click="AddAddressFun()" class="btn blue-steel" type="submit" value="确认"/>
+												<input id="ModalAddressClose" class="btn bg-default bg-font-default" type="submit" data-dismiss="modal" aria-hidden="true" value="取消"/>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> 

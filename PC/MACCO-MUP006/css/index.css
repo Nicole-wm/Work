@@ -1,0 +1,84 @@
+.Menu{
+	margin: 20px 0px;
+}
+
+.IndexMenu{
+	display:inline-block;
+	width:100%; 
+	margin:0px 0px 0px 20px
+}
+.NewPull{
+	width:150px;
+	float:left;
+	margin:25px 50px 0px 0px
+}
+.indexSearch{
+	margin-bottom:5px;
+	margin-left:10px;
+}
+
+.DataContainer{
+	margin-top:10px;
+}
+.WrapContent {
+	width: 100%;
+	display: block;
+	height: 300px;
+	max-height: 368px; 
+}
+.col_id {
+	width:10%; 
+}
+.col_keyno{
+	width:15%;
+	word-wrap: break-word;
+}
+.col_title {
+	width:20%;
+	min-width: 305px;
+	min-width: 20px;
+	word-wrap: break-word;
+	
+}
+.col_cover_image {
+	width:15%;
+}
+.col_publish_time {
+	width:10%;
+}
+.col_operation {
+	width:30%;
+}
+.mobileId,.mobileKeyno,.mobileTitle,.mobileImage,.mobilePublishTime,.mobileOperation{
+	display: none;
+
+}
+.btn-search{
+	margin-top: 6px;
+}
+
+@media(max-width:768px) {
+	.WrapContent {
+		height: 508px;
+		max-height: 508px;
+	}
+	.col_cover_image {
+		min-height: 256px;
+	}
+	.WrapContent > .col_cover_image:hover > img {
+		display: none;
+		-webkit-animation-name: "";
+		-moz-animation-name: "";
+		-o-animation-name: "";
+		-ms-animation-name: "";
+		animation-name: "";
+	} 
+	.mobileId,
+	.mobileTitle,
+	.mobileImage,
+	.mobilePublishTime,
+	.mobileOperation {
+		display: inline-block;
+	} 
+	
+}

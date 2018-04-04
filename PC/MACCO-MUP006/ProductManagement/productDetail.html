@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maccoApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macco Admin - Bootstrap Admin Template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/css/sb-admin.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/common.css" rel="stylesheet" type="text/css">
+    <link href="/css/uniform.css" rel="stylesheet" type="text/css">
+    <link href="/css/public.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+            <script type="text/javascript" src="/scripts/jquery.js"></script>
+            <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+            <script type="text/javascript" src="/scripts/common.js"></script>
+            <script type="text/javascript" src="/scripts/Lib/node_modules/angular/angular.min.js"></script>
+            <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-infinite-scroll.min.js"></script>
+            <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ng-file-upload-all.js"></script>
+            <script type="text/javascript" src="/scripts/Lib/node_modules/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+            <script type="text/javascript" src="/scripts/app.js"></script>
+            <script type="text/javascript" src="/scripts/controllers/sidebarController.js"></script>
+            <script type="text/javascript" src="/scripts/controllers/Product/productDetailController.js"></script>
+        </head>
+        
+        <body>
+            <div id="wrapper">
+                <input type="hidden" ng-model="templateurl" ng-init="templateurl='/Sidebar.html'" />
+                <div id="nav" ng-include="templateurl"></div>
+                <div id="page-wrapper" ng-controller="productDetailController">
+                    <div class="container-fluid">
+                        <!-- Page Heading -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h1 class="page-header">产品详情</h1>
+                                <ol class="breadcrumb">
+                                    <li>
+                                        <i class="fa fa-dashboard"></i>
+                                        <a href="/index.html?Token={{Token}}">Macco Admin</a>
+                                    </li>
+                                    <li class="active">
+                                        <i class="fa fa-table"></i>产品详情
+                                        <span ng-bind="OperationType"></span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div>
+                                    <h2 style="display:inline-block;">产品详情<span ng-bind="OperationType"></span>:</h2>
+                                </div>
+                                <form role="form" name="productDetail" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label>中文名:</label>
+                                        <div class="textipt">
+                                            <input class="form-control" name="ProductCName" ng-model="ProductCName" required ng-disabled="!canEdit">
+                                        </div>
+                                        <label ng-show="productDetail.ProductCName.$error.required" id="informationalert" class="formalert">*&nbsp;请填写中文名</label>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label>英文名:</label>
+                                        <div class="textipt">
+                                            <input class="form-control" name="ProductEName" ng-model="ProductEName" ng-disabled="!canEdit">
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <div style="  float: left;height: 50px;line-height: 50px;margin-right: 20px;font-weight: 700;">描述:</div>
+                                        <div class="textipt" id="falseName" style="float:left;">
+                                            <textarea class="form-control" name="ProductDesc" ng-model="ProductDesc" ng-disabled="!canEdit" required></textarea>
+                                        </div>
+                                        <div ng-show="productDetail.ProductDesc.$error.required" id="informationalert" class="formalert" style="float: left;height: 50px;line-height: 50px;font-weight: 700;">*&nbsp;请填写描述</div>
+                                    </div>
+                                    <div class="form-group" ng-show="!canEdit">
+                                        <label style="width: 52px;">图片:</label>
+                                        <div class="textipt" id="falseName">
+                                            <img ng-src="{{ProductImageUrl}}" style="width:350px;height:350px;"></img>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" ng-show="canEdit">
+                                        <label style="width: 52px;">图片:</label>
+                                        <div class="textipt" id="falseName" style="cursor:pointer">
+                                            <img ngf-select 
+                                            ng-disabled="!canEdit"
+                                            ng-model="ProductImage" 
+                                            ngf-src="ProductImage[0]" 
+                                            ngf-accept="'image/*'"
+                                            ng-src="{{ProductImageUrl}}" style="width:350px;height:350px;" id="imgSelect"></img>
+                                            <img ng-model="ProductImage" ngf-src="ProductImage[0]" style="display:none;" id="pic"/>
+                                            <input type="hidden" ng-model="ProductImage[0].name" name="ProductImage" required ng-required="productImageNeed">
+                                        </div>
+                                        <label ng-show="productDetail.ProductImage.$error.required" id="informationalert" class="formalert">*&nbsp;请选择图片</label>
+                                    </div>
+
+                                    <div class="form-group ">
+                                        <label style="float: left;text-align: center;width: 50px;height: 30px;line-height: 30px;">价格 :</label>
+                                        <div class="textipt">
+                                            <input class="form-control" value="9999" name="Price" ng-model="Price" ng-disabled="!canEdit" required>
+                                        </div>
+                                        <label ng-show="productDetail.Price.$error.required" id="informationalert" class="formalert">*&nbsp;请填写价格</label>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label style="float: left;text-align: center;width: 50px;height: 30px;line-height: 30px;">规格 :</label>
+                                        <div class="textipt">
+                                            <input class="form-control" value="9999" name="Special" ng-model="Specification" ng-disabled="!canEdit" required>
+                                        </div>
+                                        <label ng-show="productDetail.Special.$error.required" id="informationalert" class="formalert">*&nbsp;请填写规格</label>
+                                    </div>
+                                    
+                                    <div class="form-group" ng-repeat="color in colors track by $index">
+                                        <label style="float: left;text-align: center;width: 50px;height: 30px;line-height: 30px;">颜色{{$index +1}}:</label>
+                                        <div class="textipt">
+                                            <input class="form-control" name="color" ng-model="colors[$index]" ng-blur="JudgeColor()" ng-disabled="!canEdit" required>
+                                            
+                                            <input type="button" value="删除" ng-show="canEdit" ng-click="DeleteColor($index)" ng-disabled="!canEdit">
+                                        </div>
+                                        <label ng-show="productDetail.color.$error.required" class="formalert">*必须输入颜色</label>
+                                    </div>
+                                    <div class="form-group ">
+                                       <input type="button" value="添加颜色" ng-click="AddNewColor()" ng-show="canEdit" ng-disabled="!canEdit">
+                                   </div>
+                                   <div class="form-group ">
+                                    <label style="float: left;text-align: center;width: 50px;height: 30px;line-height: 30px;">分类 :</label>
+                                    <select name="Category" class="form-control select" ng-disabled="!canEdit" ng-model="SelectedCategoy" required ng-options="category.ID as category.Desc for category in Categories">
+                                      
+                                    </select>
+                                    <label ng-show="productDetail.Category.$error.required" id="informationalert" class="formalert">*&nbsp;请填写分类</label>
+                                </div>
+                                <div class="form-group ">
+                                    <label style="float: left;text-align: center;width: 50px;height: 30px;line-height: 30px;">品牌 :</label>
+                                    <select  class="form-control select" ng-disabled="!canEdit" name="Brand"  ng-model="SelectBrand" required ng-options="brand.KeyNo as brand.CName for brand in Brands" required>
+                                        
+                                    </select>
+                                    <label ng-show="productDetail.Brand.$error.required" id="informationalert" class="formalert">*&nbsp;请填写品牌</label>
+                                </div>
+                                <div class="form-group ">
+                                    <label style="float: left;text-align: center;width: 50px;height: 30px;line-height: 30px;">评分 :</label>
+                                    <select ng-model="Rank" ng-disabled="!canEdit" name="Rank" class="form-control select"  required>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option selected>5</option>
+                                    </select>
+                                    <label ng-show="productDetail.Rank.$error.required" id="informationalert" class="formalert">*&nbsp;请填写评分</label>
+                                </div>
+                                
+                                <div class="form-group" ng-repeat="tag in tags track by $index">
+                                    <label style="float: left;text-align: center;width: 50px;height: 30px;line-height: 30px;">tag{{$index +1}}:</label>
+                                    <div class="textipt">
+                                        <label style="float: left;text-align: center;width: 50px;height: 30px;line-height: 30px;">内容</label>
+                                        <input class="form-control" name="TagName" ng-model="tags[$index].Name"  ng-blur="TagLikeName()"  ng-disabled="!canEdit" required>
+                                        <label style="float: left;text-align: center;width: 50px;height: 30px;line-height: 30px;">喜欢数</label>
+                                        <input type="text" min="1" class="form-control" name="TagLikeCount" ng-model="tags[$index].LikeCount" ng-disabled="!canEdit" ng-blur="TagLikeCount()" required>
+                                        <input type="button" value="删除"  ng-show="canEdit" ng-click="DeleteTag($index)" ng-disabled="!canEdit">
+                                    </div>
+                                    <label ng-show="productDetail.TagName.$error.required || productDetail.TagLikeCount.$error.required" class="formalert">*必须输入标签</label>
+                                </div>
+                                
+                                <div class="form-group ">
+                                   <input type="button" value="添加标签" ng-click="AddTag()" ng-show="canEdit" ng-disabled="!canEdit">
+                               </div>
+<!--                                <label style="">肌肤百分比 :</label>
+<div class="form-group ">
+ <div class="textipt">
+     <label>干性：</label>
+     <input class="form-control" value="9999" name="Skin1" ng-model="Skin1" ng-disabled="!canEdit" required>
+     <label>中性：</label>
+     <input class="form-control" value="9999" name="Skin2" ng-model="Skin2" ng-disabled="!canEdit" required>
+     <label>油性：</label>
+     <input class="form-control" value="9999" name="Skin3" ng-model="Skin3" ng-disabled="!canEdit" required>
+     <label>混合：</label>
+     <input class="form-control" value="9999" name="Skin4" ng-model="Skin4" ng-disabled="!canEdit" required>
+     <label>敏感：</label>
+     <input class="form-control" value="9999" name="Skin5" ng-model="Skin5" ng-disabled="!canEdit" required>
+ </div>
+ <label ng-show="productDetail.Skin1.$error.required || productDetail.Skin2.$error.required || productDetail.Skin3.$error.required || productDetail.Skin4.$error.required || productDetail.Skin5.$error.required" 
+ id="informationalert" 
+ class="formalert">*&nbsp;请填写肌肤百分比</label>
+                            </div>
+                            
+                            <label style="">年龄百分比 :</label>
+                            <div class="form-group ">
+ <div class="textipt">
+     <label>18以下：</label>
+     <div class="control-group">
+         <span>赞人数:</span>
+         <input class="form-control" value="9999" name="Age1Like" ng-model="Age1.Like" ng-disabled="!canEdit" required>
+         <span>呸人数:</span>
+         <input class="form-control" value="9999" name="Age1DisLike" ng-model="Age1.DisLike" ng-disabled="!canEdit" required>
+     </div>
+     
+     <label>19-24:</label>
+     <div class="control-group">
+         <span>赞人数:</span>
+         <input class="form-control" value="9999" name="Age2Like" ng-model="Age2.Like" ng-disabled="!canEdit" required>
+         <span>呸人数:</span>
+         <input class="form-control" value="9999" name="Age2DisLike" ng-model="Age2.DisLike" ng-disabled="!canEdit" required>
+     </div>
+     
+     <label>25-30:</label>
+     <div class="control-group">
+         <span>赞人数:</span>
+         <input class="form-control" value="9999" name="Age3Like" ng-model="Age3.Like" ng-disabled="!canEdit" required>
+         <span>呸人数:</span>
+         <input class="form-control" value="9999" name="Age3DisLike" ng-model="Age3.DisLike" ng-disabled="!canEdit" required>
+     </div>
+     
+     <label>30岁以上</label>
+     <div class="control-group">
+         <span>赞人数:</span>
+         <input class="form-control" value="9999" name="Age4Like" ng-model="Age4.Like" ng-disabled="!canEdit" required>
+         <span>呸人数:</span>
+         <input class="form-control" value="9999" name="Age4DisLike" ng-model="Age4.DisLike" ng-disabled="!canEdit" required>
+     </div>
+ </div>
+ <label ng-show="productDetail.Age1Like.$error.required || 
+ productDetail.Age2Like.$error.required || 
+ productDetail.Age3Like.$error.required || 
+ productDetail.Age4Like.$error.required || 
+ productDetail.Age1DisLike.$error.required || 
+ productDetail.Age2DisLike.$error.required || 
+ productDetail.Age3DisLike.$error.required || 
+ productDetail.Age4DisLike.$error.required" 
+ id="informationalert" 
+ class="formalert">*&nbsp;请填写年龄百分比</label>
+                            </div>
+                            <div class="control-group" ng-show="canEdit">
+ <label class="control-label">评测页面:</label>
+ <input type="checkbox" ng-model="hasEval" ng-click="hasEvalFn()" style="margin-top:10px;">
+ <br/>
+ <div class="controls" style="margin-left:90px;">
+     <div class="uploader">
+         <input type="button" ngf-select  accept="application/x-zip-compressed" ng-model="Web" ng-disabled="!hasEval">
+         <span class="filename webFileName" style="-webkit-user-select: none;">{{Web[0].name}}</span>
+         <span class="action" style="-webkit-user-select: none; float:right;">浏览</span>
+     </div>
+     <span class="btn btn-primary" ng-click="WebConfirmUpload()">上传</span>
+     <span class="btn btn-primary" ng-disabled="!WebShowSubmit" ng-click="WebCancelUpload()">取消</span>
+     <label style="width:20px;"></label>
+     <label ng-bind="WebUploadProgress"></label>
+     <input type="hidden" ng-model="Web[0].name" name="Web" required ng-required="NeedEval">
+     <label ng-show="ActiveDetail.Web.$error.required" id="informationalert" class="formalert">*&nbsp;请选择内容</label>
+ </div>
+                            </div>
+                            <div class="control-group" ng-show="!canEdit">
+ <label class="control-label">评测页面:</label>
+ <div class="textipt" style="width: 40.95%;margin:5px;">
+     <a ng-href="{{Web}}" target="_blank">{{Web}}</a>
+ </div>
+                            </div> -->
+                            <div class="form-actions">
+                                <button ng-show="canEdit"  ng-disabled="!productDetail.$valid||hasEvalflag" type="button" ng-click="Submit()" class="btn btn-primary">提交</button>
+                                <button class="btn" ng-click="ReturnBack(this.Token)">
+                                    返回
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+	"meta": {
+		"message": "已开通列表获取成功",
+		"code": 0
+	},
+	"data": [
+		{
+			"id": 3,
+			"title": "IP功能",
+			"description": "IP功能是xxxxxxxxxxx",
+			"url": "http://www.ipdescription.com/"
+		},{
+			"id": 4,
+			"title": "CP转存功能",
+			"description": "CP转存功能是xxxxxxxxxxx",
+			"url": "http://www.ipdescription.com/"
+		},{
+			"id": 5,
+			"title": "IP转存功能",
+			"description": "IP转存功能是xxxxxxxxxxx",
+			"url": "http://www.ipdescription.com/"
+		}
+	]
+}

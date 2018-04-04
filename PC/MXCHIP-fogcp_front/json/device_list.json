@@ -1,0 +1,14 @@
+{
+	"IsSuccess":true,
+	"data":{
+		"count":100,
+		"result":[
+			{ "deviceid":"72b72f72-3c2e-11e6-9d95-00163e103941","mac":"00016C06A629","product":{"pname":"ACA烤箱"},"onlinecount":10,"status":true,"onlinestatus":true,"is_virtual":true},
+			{ "deviceid":"90342b60-0617-11e6-a739-00163e0204c0","mac":"00235A159942","product":{"pname":"美的空调"},"onlinecount":0,"status":true,"onlinestatus":true,"is_virtual":false},
+			{ "deviceid":"32e63ebc-df57-11e5-a739-00163e0204c0","mac":"014B5G352542","product":{"pname":"海尔洗衣机"},"onlinecount":360,"status":true,"onlinestatus":false,"is_virtual":true},
+			{ "deviceid":"65b50978-0058-11e6-a739-00163e0204c0","mac":"00236Q159L42","product":{"pname":"美菱冰箱"},"onlinecount":0,"status":true,"onlinestatus":false,"is_virtual":false},
+			{ "deviceid":"287438da-e6a0-11e5-a739-00163e0204c0","mac":"102D2A659E42","product":{"pname":"ACA烤箱"},"onlinecount":16,"status":false,"onlinestatus":false,"is_virtual":true},
+			{ "deviceid":"0c8ad09e-217d-11e6-a739-00163e0204c0","mac":"242R5N158Y42","product":{"pname":"LG电视"},"onlinecount":175,"status":false,"onlinestatus":false,"is_virtual":false}
+		]
+	}
+}

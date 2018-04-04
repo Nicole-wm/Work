@@ -1,0 +1,54 @@
+.DataContainer>div:nth-child(n(a1+an)/2 ){
+	background-color: #f9f9f9;
+}
+.col_id {
+	width: 9%; 
+}
+.col_chinaName {
+	width: 16%;
+	min-width: 305px;
+	min-width: 20px;
+}
+.col_type {
+	width: 20%;
+}
+.col_cover_image{
+	width: 46%;
+}
+.mobileId,
+.mobilechinaName,
+.mobileenglishName,
+.mobileImage,
+.mobileprice,
+.mobiletype,
+.mobilebrand,
+.mobileOperation{
+	display: none;
+}
+@media(max-width:768px) {
+.WrapContent {
+	height: 550px;
+	max-height: 550px; 
+}
+.col_cover_image {
+	min-height: 256px;
+}
+.WrapContent > .col_cover_image:hover > img {
+	display: none;
+	-webkit-animation-name: "";
+	-moz-animation-name: "";
+	-o-animation-name: "";
+	-ms-animation-name: "";
+	animation-name: "";
+}
+.mobileId,
+.mobilechinaName,
+.mobileenglishName,
+.mobileImage,
+.mobileImage,
+.mobileprice,
+.mobiletype,
+.mobileOperation{
+	 display: inline-block;
+} 
+}

@@ -1,0 +1,186 @@
+/*******************Base*******************/
+html,body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #fff;
+  font-family:Helvetica;
+  font-size: 14px;
+}
+img{
+  display:block;
+  margin: auto;
+  width: 100%;
+  border: 0;
+}
+
+/*************************Top*************************/
+.top-bar{
+  position: relative;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  text-align: center;
+  font-size:0.52rem;
+  background-color:#000;
+  color: #fff;
+}
+.page-back{    
+  position: absolute;
+  width: 0.36rem;
+  height: 0.64rem;
+  top:0.38rem;
+  left:0.5rem;
+  background: url('../img/base/back-btn.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+/*************************Home*************************/
+.li-box{
+  overflow: hidden;
+}
+.li-box li {
+  width: 50%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  float: left;
+  padding:0.4832rem
+}
+.li-box li p {
+  font-size: 0.38rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  text-align: center;
+}
+
+/*************************Home*************************/
+.type-box{
+  overflow: hidden;
+}
+.type-box li {
+  width: 33.33333%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  float: left;
+}
+.type-box li p {
+  font-size: 0.35rem;
+  height:0.3rem;
+  line-height:0.3rem;
+  text-align: center;
+  margin:0.5rem;
+}
+.type-box li:nth-child(3n-1)::after,.type-box li:nth-child(3n)::after{
+  content: ' ';
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 0.2rem;
+  margin-top:-0.2rem;
+  margin-left:-0.2rem;
+  background-color: #fff;
+  position: absolute;
+}
+
+.type-btn{
+  width:1.25rem;
+  margin-top:0.6rem;
+}
+
+/*************************waterfall*************************/
+.noImg{
+  display: none;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate3d(-50%,-50%,0); 
+  font-size:0.5rem;
+}
+
+.waterfall_column{
+  width:50%;
+  display:inline-block; 
+  *display:inline;
+  zoom:1;  
+  vertical-align:top; 
+  overflow:hidden
+}
+#container .cell{ 
+  margin:0.1rem 0.05rem;
+}
+
+#container .FullScreen{
+  position: fixed;
+  top:0;
+  left:0;
+  margin:0;
+  height:100%;
+  width:100%;
+  background-color:#000;
+  z-index: 500;
+  animation:ShowPic 0.25s;
+  animation-fill-mode:forwards; 
+}
+.FullScreen img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate3d(-50%,-50%,0); 
+}
+
+.FullScreen:before{
+  content: "长按保存或发送"; 
+  display: block;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate3d(-50%,-50%,0); 
+  background-color:rgba(0,0,0,0.7);
+  color: #fff;
+  font-size:0.5rem;
+  padding:0.2rem 0.35rem;
+  border-radius: 0.5rem;
+  z-index:1000;
+  animation: fadeOut 2.5s linear forwards;
+}
+
+@keyframes fadeOut
+{
+  0% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.pic-close{  
+  position: fixed;
+  top:0.4rem;
+  right:0.4rem;
+  width:0.6rem;
+  height:0.6rem;
+  background-image: url("../img/base/pic-close.png"); 
+  background-size: cover;
+  z-index: 1000;
+  display: none;
+}
+
+@keyframes ShowPic
+{
+  from {
+    transform:scale(0.5);
+    opacity:0.5
+  }
+  to {
+    transform:scale(1);
+    opacity:1
+  }
+}

@@ -1,0 +1,277 @@
+.col-lg-1 a{
+	max-width: 88px;
+}
+#mainContent .ClickClear {
+	background-color: #eeeeee;
+	height:10px;
+	cursor: pointer;
+}
+.ClickMenu{
+	display:none;
+	background-color: #ffffff;
+	border: 1px solid #bbbbbb;
+	box-shadow:3px 3px 5px #888888;
+	color: #000000;
+	z-index: 10000;
+	width:100px;
+	height:210px;
+	position: absolute;
+}
+.ClickMenu ul{
+	margin:0px;
+	padding:0px;
+}
+.ClickMenu li{
+	font-size: 12px;
+	cursor: pointer;
+	text-align: center;
+	width: 100px;
+	height:30px;
+	line-height:30px;
+	list-style: none;
+	color: #555;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+.ClickMenu li:hover{    
+	color: #fff;
+    background-color: #337ab7;
+}
+.WebHtml,.WebHtmlCopy{
+	width:375px;
+	height: 627px;
+	overflow:auto;
+	border:2px solid #ccc;
+	color: #666666;
+}
+
+.WebHtml img,.WebHtml video,.addtext {
+	width:100%;
+	min-height:50px;
+	border:none;
+}
+
+#mainBanner,#mainVideo,#mainTitle{
+	display:none;
+}
+.ProductSetp,.ProductImages{
+	cursor: pointer;
+}
+.addtext{
+	background-color: #CCCCFF;
+	outline: 0; 
+	word-wrap: break-word;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.mainBanner,.mainVideo,.ProductImages{
+	background-color: #CCFFFF;
+	min-height:50px;
+}
+.mainVideo{
+	background-color: #CCFFCC;
+}
+.ProductImages{
+	background-color: #CCFF99;
+}
+
+.ProductSetp{
+	background-color: #FFFFCC;
+	height:92px;
+	line-height: 92px;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.ContentTitle{
+	color:#f96e57;
+	font-size:15px;
+	padding:5px 20px;
+	background-color:#FFCCFF;
+	min-height:0px;
+}
+.ProductSetp >img{
+	width: 80px;
+	height: 80px;
+	margin:6px;
+	float: left;
+}
+.mainTitle{
+	background: #FFCCCC;
+	text-align: center;
+	min-height:97px;
+	line-height:97px;
+	font-size: 18px;
+}
+
+.intro{
+	min-height: 25px;
+    background-image: url(../img/ql.png), url(../img/qr.png);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+    background-size:12px 12px;
+    margin:23px;
+    padding:0px 25px;
+    font-size: 15px;
+    word-wrap: break-word;
+    word-break: normal;
+    font-weight: 300;
+    line-height: 25px;
+}
+.pinkrules{
+	margin:0px 0px 30px;
+}
+.pinkrules span {
+    display: block;
+    color: #ff4a83;
+    font-size:15px;
+    line-height: 1;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #ff4a83;
+    margin:0 25px;
+    text-align: center;
+    height:7px;
+}
+.pinkrules span em {
+    display: inline-block;
+    font-style: normal;
+    background: #fff;
+    padding: 0 10px;
+}
+.detail{
+	padding:20px;
+	line-height:25px;
+	font-size:15px;
+}
+
+.selectList{
+	display:inline-block;
+	width: 100%;	
+}
+.DataContainer>div:nth-child(n(a1+an)/2 ){
+	background-color: #f9f9f9;
+}
+.first{
+	margin-left: 10px;
+}
+
+.mobilepublish{
+	display: none;
+}
+.col_id {
+	width: 10%; 
+
+}
+.col_chinaName {
+	width: 12%;
+	min-width: 305px;
+	min-width: 20px;
+}
+.col_englishName {
+	width: 8%;
+}
+.col_type{
+	width: 10%;
+}
+.col_cover_image {
+	width:20%;
+}
+.col_operation {
+	width: 40%;
+}
+.mobileId,
+.mobilechinaName,
+.mobileenglishName,
+.mobileImage,
+.mobiletype,
+.mobileOperation{
+	display: none;
+}
+@media(max-width:768px) {
+	.WrapContent {
+		height: 650px;
+		max-height: 650px; 
+	}
+	.col_cover_image {
+		min-height: 256px;
+	}
+	.WrapContent > .col_cover_image:hover > img {
+		display: none;
+		-webkit-animation-name: "";
+		-moz-animation-name: "";
+		-o-animation-name: "";
+		-ms-animation-name: "";
+		animation-name: "";
+	}
+	.mobileId,
+	.mobilechinaName,
+	.mobileenglishName,
+	.mobileImage,
+	.mobiletype,
+	.mobileOperation{
+		display: inline-block;
+	} 
+	.mobilepublish{
+		display: inline-block;
+	}
+
+}
+@media(max-width:414px) {
+	.keyword{
+		min-width: 100px;
+	}
+	.first{
+		margin-left: 30px;
+	}
+	.pull-down {
+		margin-right: 2px;
+	}
+	.selectList{
+		margin-bottom: 10px;
+	}
+}
+
+.selectType{
+	border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+	background-color: #ffffff;
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+/********************* 文本编辑 ******************/
+.SetType{
+	margin-top:20px;
+}
+.EditText{
+	padding: 0px;
+}
+
+.EditTextOption{
+	padding:10px;
+	clear: both;
+}
+
+.EditTextOption .EditLabel,.EditTextOption .EditInput,.EditTextOption .EditCheckBox,.EditTextOption .EditBtn{
+	float: left;
+}
+
+.EditTextOption .EditLabel{
+	margin-top:5px;
+	font-weight:normal;
+	padding:0 5px;
+}
+
+.EditTextOption .EditInput{
+	width:100px;
+	height:30px;
+	padding:0px 10px;
+}
+
+.EditTextOption .EditCheckBox{
+	margin:10px 0px 0px 5px;
+}
+
+.EditTextOption .demo{
+	padding:0px; 
+}
